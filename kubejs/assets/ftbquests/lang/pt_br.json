@@ -3305,5 +3305,6 @@
     "moni.quest.31EE6E41F509A8CF.description5": "By default, the context menu GUI is bound to &8Left Alt&r.",
     "moni.quest.31EE6E41F509A8CF.title": "Pocket-sized pocket dimensions",
     "moni.quest.31EE6E41F509A8CF.description2": "Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks.",
-    "moni.quest.31EE6E41F509A8CF.description1": "These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
+    "moni.quest.31EE6E41F509A8CF.description1": "These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing.",
+    "moni.task.3901C623BB44467A": "Any #moni:output_hatch"
 }
