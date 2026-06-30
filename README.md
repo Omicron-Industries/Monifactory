@@ -105,9 +105,10 @@ To spice up your Monifactory experience, you can add any of the following mods t
 4. Move the server.zip and forge installer into your server directory. The rest of the guide assumes your current directory is the server directory.
 5. Run the forge installer and install the forge server, this can be done with the command ``java -jar TheForgeInstallerName.jar --installServer``
 6. ``unzip server.zip``
-7. On Monifactory versions 0.12.X and older, move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
-8. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
-9. To upgrade an existing Monifactory server, see [FAQ.md](FAQ.md).
+7. If you have already or will install ProjectRed Illumination as an optional dependency for clients, you must remember to manually copy the mod ``ProjectRed-VERSION-illumination.jar`` from your client mods folder to the server mods folder to avoid crashes. Note: GTMolDraw is purely client side and thus does not need to be copied as well.
+8. On Monifactory versions 0.12.X and older, move the contents of the overrides folder (from server.zip) into the server directory, this can be done with the command ``mv overrides/* .``
+9. Use ``./run.sh`` to generate the eula.txt, then again after you accepted run it again to start the server. Modifying the server.properties file to change the port may be neccesary.
+10. To upgrade an existing Monifactory server, see [FAQ.md](FAQ.md).
 
 ## Contributing
 
