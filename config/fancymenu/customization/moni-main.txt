@@ -101,7 +101,7 @@ element {
 
 element {
   interactable = true
-  source = [source:web]https://raw.githubusercontent.com/ThePansmith/Monifactory/refs/heads/main/Monifactory_titlescreen_text.md
+  source = [source:web]https://raw.githubusercontent.com/Omicron-Industries/Monifactory/refs/heads/main/Monifactory_titlescreen_text.md
   source_mode = resource
   shadow = true
   scale = 0.5
@@ -227,7 +227,7 @@ element {
 }
 
 element {
-  source = [source:web]https://raw.githubusercontent.com/ThePansmith/MonifactoryAssets/refs/heads/main/menubg/monibgoverride.png
+  source = [source:web]https://raw.githubusercontent.com/Omicron-Industries/MonifactoryAssets/refs/heads/main/menubg/monibgoverride.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5

@@ -271,7 +271,7 @@ element {
 }
 
 element {
-  source = [source:web]https://raw.githubusercontent.com/ThePansmith/MonifactoryAssets/refs/heads/main/menubg/monibgoverride.png
+  source = [source:web]https://raw.githubusercontent.com/Omicron-Industries/MonifactoryAssets/refs/heads/main/menubg/monibgoverride.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
@@ -1182,7 +1182,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:143400da-a8ba-4fad-be7b-941722b6ce45-1736470073791][action_type:openlink] = https://github.com/ThePansmith/Monifactory/blob/main/FAQ.md
+  [executable_action_instance:143400da-a8ba-4fad-be7b-941722b6ce45-1736470073791][action_type:openlink] = https://github.com/Omicron-Industries/Monifactory/blob/main/FAQ.md
   [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:143400da-a8ba-4fad-be7b-941722b6ce45-1736470073791;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
@@ -1242,7 +1242,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:0606b6c8-533b-48d6-a249-69bdd82e51a3-1736470167779][action_type:openlink] = https://github.com/ThePansmith/Monifactory
+  [executable_action_instance:0606b6c8-533b-48d6-a249-69bdd82e51a3-1736470167779][action_type:openlink] = https://github.com/Omicron-Industries/Monifactory
   [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:0606b6c8-533b-48d6-a249-69bdd82e51a3-1736470167779;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png

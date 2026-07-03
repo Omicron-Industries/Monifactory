@@ -1,14 +1,14 @@
-<p align="center"><img src="https://github.com/ThePansmith/Monifactory/assets/70342772/4ac1d5e7-0610-4f44-bfed-b3b2022eecc0" height="250" alt="Logo"></p>
+<p align="center"><img src="https://github.com/Omicron-Industries/Monifactory/assets/70342772/4ac1d5e7-0610-4f44-bfed-b3b2022eecc0" height="250" alt="Logo"></p>
 <h1 align="center">Monifactory</h1>
 <p align="center"><b><i>A Remaster and Port of <a href="https://github.com/Nomi-CEu/Nomi-CEu"> Nomifactory CEu</a>, using <a href="https://github.com/GregTechCEu/GregTech-Modern"> GregTech CEu Modern</a> and other mods</i></b></p>
 <h1 align="center">
-    <a href="https://github.com/ThePansmith/Monifactory/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu?style=for-the-badge&logo=github" alt="License"></a>
-    <img src="https://img.shields.io/github/actions/workflow/status/ThePansmith/Monifactory/build_pr.yml?branch=main&style=for-the-badge&label=Dev%20Build" alt="GitHub Actions Workflow Status">
+    <a href="https://github.com/Omicron-Industries/Monifactory/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu?style=for-the-badge&logo=github" alt="License"></a>
+    <img src="https://img.shields.io/github/actions/workflow/status/Omicron-Industries/Monifactory/build_pr.yml?branch=main&style=for-the-badge&label=Dev%20Build" alt="GitHub Actions Workflow Status">
     <!-- <a href="https://discord.com/invite/zwQzqP8b6q"><img src="https://img.shields.io/discord/927050775073534012?style=for-the-badge&logo=discord&color=5865F2&labelColor=grey&label=+" alt="Discord"></a> -->
     <br>
     <a href="https://www.curseforge.com/minecraft/modpacks/Monifactory"><img src="https://cf.way2muchnoise.eu/monifactory.svg?badge_style=for_the_badge" alt="CurseForge"></a>
     <a href="https://www.curseforge.com/minecraft/modpacks/Monifactory"><img src="https://cf.way2muchnoise.eu/versions/For%20MC_Monifactory_all.svg?badge_style=for_the_badge" alt="MC Versions"></a>
-    <a href="https://github.com/ThePansmith/Monifactory/releases"><img src="https://img.shields.io/github/downloads/ThePansmith/Monifactory/total?style=for-the-badge&labelColor=grey&logo=github&label=+" alt="GitHub Downloads"></a>
+    <a href="https://github.com/Omicron-Industries/Monifactory/releases"><img src="https://img.shields.io/github/downloads/Omicron-Industries/Monifactory/total?style=for-the-badge&labelColor=grey&logo=github&label=+" alt="GitHub Downloads"></a>
 </h1>
 
 ## Features
@@ -53,7 +53,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 ## Installation:
 
 ### Hard/Expert Mode Installation:
-1. Download [``./pack-mode-switcher.bat``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
+1. Download [``./pack-mode-switcher.bat``](https://github.com/Omicron-Industries/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/Omicron-Industries/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
 2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
 - Windows:
     - Manual:
@@ -67,7 +67,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
            ```
            into Pre-launch command and specify your wanted mode.
 - Linux/Apple/GNU:
-1. Open [``./pack-mode-switcher.sh``](https://github.com/ThePansmith/Monifactory/blob/main/pack-mode-switcher.sh) and download the file to your Minecraft / Minecraft instance folder.
+1. Open [``./pack-mode-switcher.sh``](https://github.com/Omicron-Industries/Monifactory/blob/main/pack-mode-switcher.sh) and download the file to your Minecraft / Minecraft instance folder.
 1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.sh``.
 2. Follow the prompt to select your mode.
 
