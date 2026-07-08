@@ -49,7 +49,7 @@
 			description: [
 				"{moni.quest.2A511DB40C66CF35.description1}"
 				""
-				"[\"\",{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description3\"}]"
+				"[\"\",{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/monifactory\"}},{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description3\"}]"
 				""
 				"{moni.quest.2A511DB40C66CF35.description3}"
 			]
@@ -2092,9 +2092,9 @@
 				""
 				"{moni.quest.70026930847E8EC0.description3}"
 				"{@pagebreak}"
-				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/ThePansmith\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description3\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description4\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/ThePansmith/Monifactory\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description6\"}]"
+				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description4\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description6\"}]"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
