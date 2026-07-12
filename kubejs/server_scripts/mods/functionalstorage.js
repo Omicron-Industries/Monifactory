@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
             P: "gtceu:lv_electric_piston",
             D: "#functionalstorage:drawer"
         }).id("functionalstorage:compacting_drawer")
-        
+
         event.shaped("functionalstorage:simple_compacting_drawer", [
             "III",
             "IDP",
