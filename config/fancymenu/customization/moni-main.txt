@@ -1716,7 +1716,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:7ecdd4f3-7d21-4354-9615-f43ebeb3af08-1736470116664][action_type:openlink] = https://discord.com/invite/pC8eZQpWqK
+  [executable_action_instance:7ecdd4f3-7d21-4354-9615-f43ebeb3af08-1736470116664][action_type:openlink] = https://discord.gg/4jch9Rs2Cq
   [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:7ecdd4f3-7d21-4354-9615-f43ebeb3af08-1736470116664;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png

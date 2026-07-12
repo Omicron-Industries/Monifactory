@@ -4,7 +4,7 @@
 <h1 align="center">
     <a href="https://github.com/Omicron-Industries/Monifactory/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/Nomi-CEu/Nomi-CEu?style=for-the-badge&logo=github" alt="License"></a>
     <img src="https://img.shields.io/github/actions/workflow/status/Omicron-Industries/Monifactory/build_pr.yml?branch=main&style=for-the-badge&label=Dev%20Build" alt="GitHub Actions Workflow Status">
-    <!-- <a href="https://discord.com/invite/zwQzqP8b6q"><img src="https://img.shields.io/discord/927050775073534012?style=for-the-badge&logo=discord&color=5865F2&labelColor=grey&label=+" alt="Discord"></a> -->
+    <!-- <a href="https://discord.gg/4jch9Rs2Cq"><img src="https://img.shields.io/discord/927050775073534012?style=for-the-badge&logo=discord&color=5865F2&labelColor=grey&label=+" alt="Discord"></a> -->
     <br>
     <a href="https://www.curseforge.com/minecraft/modpacks/Monifactory"><img src="https://cf.way2muchnoise.eu/monifactory.svg?badge_style=for_the_badge" alt="CurseForge"></a>
     <a href="https://www.curseforge.com/minecraft/modpacks/Monifactory"><img src="https://cf.way2muchnoise.eu/versions/For%20MC_Monifactory_all.svg?badge_style=for_the_badge" alt="MC Versions"></a>
@@ -53,6 +53,7 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 ## Installation:
 
 ### Hard/Expert Mode Installation:
+**On versions 0.12.9 and older:**
 1. Download [``./pack-mode-switcher.bat``](https://github.com/Omicron-Industries/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/Omicron-Industries/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
 2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
 - Windows:

@@ -163,7 +163,7 @@ Essential is not officially supported, and various unsupported bugs and crashes 
 
 **Q. Where do I report an issue?**
 
-Check the [Known Issues document](KNOWN-ISSUES.md) first. If it's not there, report it to the [issue tracker](https://github.com/Omicron-Industries/Monifactory/issues), or get help on the [Discord](https://discord.gg/N8b2JEfAqb) in the #moni-support channel
+Check the [Known Issues document](KNOWN-ISSUES.md) first. If it's not there, report it to the [issue tracker](https://github.com/Omicron-Industries/Monifactory/issues), or get help on the [Discord](https://discord.gg/4jch9Rs2Cq) in the #moni-help channel
 
 <hr>
 
