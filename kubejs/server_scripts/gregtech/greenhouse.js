@@ -87,6 +87,8 @@ ServerEvents.recipes(event => {
     Greenhouse("minecraft", "chorus_flower", 1280, ["32x minecraft:chorus_fruit"], 4)
     Greenhouse("minecraft", "warped_fungus", 1280, ["64x minecraft:warped_stem", "32x minecraft:warped_wart_block", "16x minecraft:shroomlight"], 4)
     Greenhouse("minecraft", "crimson_fungus", 1280, ["64x minecraft:crimson_stem", "32x minecraft:nether_wart_block", "16x minecraft:shroomlight"], 4)
+    Greenhouse("ad_astra", "aeronos_mushroom", 1280, ["32x ad_astra:aeronos_stem", "64x ad_astra:aeronos_cap"], 3)
+    Greenhouse("ad_astra", "strophar_mushroom", 1280, ["32x ad_astra:strophar_stem", "64x ad_astra:strophar_cap"], 3)
     Greenhouse("thermal", "rubberwood_sapling", 1280, ["64x thermal:rubberwood_log"], 4)
 
     // //// Crops //////
@@ -162,6 +164,52 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
+    event.custom({
+        type: "thermal:insolator",
+        "ingredient": {
+            "item": "ad_astra:aeronos_mushroom"
+        },
+        "result": [
+            {
+                "item": "ad_astra:aeronos_stem",
+                "chance": 2.0
+            },
+            {
+                "item": "ad_astra:aeronos_cap",
+                "chance": 4.0
+            },
+            {
+                "item": "ad_astra:aeronos_mushroom",
+                "chance": 1.1
+            }
+        ],
+        "energy_mod": 3.0,
+        "water_mod": 2.0
+    }).id("kubejs:thermal/insolator/aeronos_mushroom")
+
+    event.custom({
+        type: "thermal:insolator",
+        "ingredient": {
+            "item": "ad_astra:strophar_mushroom"
+        },
+        "result": [
+            {
+                "item": "ad_astra:strophar_stem",
+                "chance": 2.0
+            },
+            {
+                "item": "ad_astra:strophar_cap",
+                "chance": 4.0
+            },
+            {
+                "item": "ad_astra:strophar_mushroom",
+                "chance": 1.1
+            }
+        ],
+        "energy_mod": 3.0,
+        "water_mod": 2.0
+    }).id("kubejs:thermal/insolator/strophar_mushroom")
+
     event.custom({
         type: "thermal:insolator",
         "ingredient": {
