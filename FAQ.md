@@ -71,7 +71,6 @@ By default, Monifactory only supports the mods included with it, and has *option
 **Q. How do I download Monifactory?**
 
 Stable releases of Monifactory can be downloaded from CurseForge using any launcher of your choice (PrismLauncher, CurseForge, etc.)
-Bleeding edge builds can be found [here](https://github.com/Omicron-Industries/Monifactory/releases).
 
 **Q. How do I play Hard Mode/Expert Mode?**
 
