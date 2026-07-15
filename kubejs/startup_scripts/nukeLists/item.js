@@ -141,6 +141,21 @@ global.itemNukeList = [
     /^gtmutils:uxv/,
     /^gtmutils:opv/,
 
+    // Turbine rotor rebalance
+    "gtceu:magnalium_turbine_blade",
+    "gtceu:wrought_iron_turbine_blade",
+    "gtceu:manganese_turbine_blade",
+    "gtceu:molybdenum_turbine_blade",
+    "gtceu:iron_turbine_blade",
+    "gtceu:neodymium_turbine_blade",
+    "gtceu:brass_turbine_blade",
+    "gtceu:cobalt_brass_turbine_blade",
+    "gtceu:rose_gold_turbine_blade",
+    "gtceu:sterling_silver_turbine_blade",
+    "gtceu:tungsten_turbine_blade",
+    "gtceu:iridium_turbine_blade",
+    "gtceu:chromium_turbine_blade",
+
     // Hammerlib
     /^hammerlib:/,
 

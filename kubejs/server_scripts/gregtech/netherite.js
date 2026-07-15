@@ -132,6 +132,7 @@ ServerEvents.recipes(event => {
         `${namespace}:${material}_huge_fluid_pipe`,
         `${namespace}:${material}_quadruple_fluid_pipe`,
         `${namespace}:${material}_nonuple_fluid_pipe`,
+        `${namespace}:${material}_turbine_blade`
     ]}
 
     let crystal_matrix_forms = tagPrefixes("crystal_matrix", "monilabs")
@@ -144,4 +145,12 @@ ServerEvents.recipes(event => {
             "kubejs:inert_nether_compound_ingot"
         )
     })
+
+    // Turbine rotors shouldn't be smithed, only the individual blades
+    event.recipes.gtceu.assembler("assemble_activated_netherite_turbine_blade")
+        .itemInputs("8x gtceu:activated_netherite_turbine_blade", "gtceu:long_magnalium_rod")
+        .itemOutputs(Item.of("gtceu:turbine_rotor", "{GT.PartStats:{Material:\"gtceu:activated_netherite\"}}"))
+        .duration(10 * GTValues.SECONDS)
+        .EUt(400)
+
 })
