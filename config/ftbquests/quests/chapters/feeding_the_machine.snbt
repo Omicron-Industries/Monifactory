@@ -344,29 +344,6 @@
 			y: 0.25d
 		}
 		{
-			dependencies: ["0562D9F4C441EAF9"]
-			description: [
-				"{moni.quest.186C14C113B6F3AD.description1}"
-				""
-				"{moni.quest.186C14C113B6F3AD.description2}"
-			]
-			id: "186C14C113B6F3AD"
-			rewards: [{
-				id: "5074404224B5E530"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "3C6395EDE0AE8FE3"
-				item: "gtceu:sculk_superconductor_single_wire"
-				type: "item"
-			}]
-			title: "{moni.quest.186C14C113B6F3AD.title}"
-			x: 4.25d
-			y: 5.25d
-		}
-		{
 			dependencies: [
 				"7E3A179376673590"
 				"7C89BC235C988689"
@@ -1840,12 +1817,6 @@
 					type: "item"
 				}
 				{
-					id: "43461F39D99C80A3"
-					item: "kubejs:stabilized_berkelium"
-					optional_task: true
-					type: "item"
-				}
-				{
 					id: "6C9F5279150C5A28"
 					item: "kubejs:stabilized_californium"
 					optional_task: true
@@ -2437,6 +2408,26 @@
 			title: "{moni.quest.0CEF53164D8B6496.title}"
 			x: 4.0d
 			y: 9.25d
+		}
+		{
+			dependencies: ["254D6D1470BC197E"]
+			description: [
+				"{moni.quest.5911900438648430.description1}"
+				""
+				"{moni.quest.5911900438648430.description2}"
+			]
+			hide_dependency_lines: true
+			id: "5911900438648430"
+			shape: "hexagon"
+			subtitle: "{moni.quest.5911900438648430.subtitle}"
+			tasks: [{
+				id: "6A6C0D5FFB29C9E1"
+				item: "gtceu:polyethyl_cyanoacrylate_plate"
+				type: "item"
+			}]
+			title: "{moni.quest.5911900438648430.title}"
+			x: -3.5d
+			y: 13.25d
 		}
 	]
 	title: "{moni.chapter.15E8BBD0CD310663.title}"

@@ -844,8 +844,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5301E546BAA69844.title}"
-			x: 0.75d
-			y: 5.0d
+			x: 1.0d
+			y: 5.25d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
@@ -976,7 +976,6 @@
 					type: "item"
 				}
 				{
-					count: 2L
 					id: "76CB286FDDD00D40"
 					item: "systeams:steam_dynamo"
 					type: "item"
@@ -2759,6 +2758,36 @@
 			title: "{moni.quest.02B78A0C4F3C4ECA.title}"
 			x: 1.0d
 			y: 11.25d
+		}
+		{
+			dependencies: ["3BD20358F137E7C6"]
+			description: [
+				"{moni.quest.7A67E519745A8361.description1}"
+				""
+				"{moni.quest.7A67E519745A8361.description2}"
+				"{moni.quest.7A67E519745A8361.description3}"
+				"{moni.quest.7A67E519745A8361.description4}"
+				"{moni.quest.7A67E519745A8361.description5}"
+				"{moni.quest.7A67E519745A8361.description6}"
+				"{moni.quest.7A67E519745A8361.description7}"
+				""
+				"{moni.quest.7A67E519745A8361.description8}"
+			]
+			hide_until_deps_visible: true
+			id: "7A67E519745A8361"
+			rewards: [{
+				id: "5E252CA9C37789FE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0E87A07E1757F58F"
+				item: "telepastries:nether_cake"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
 		}
 	]
 	title: "{moni.chapter.2763DAD954E0EED8.title}"

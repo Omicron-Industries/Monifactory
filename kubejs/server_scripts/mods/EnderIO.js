@@ -333,7 +333,7 @@ ServerEvents.recipes(event => {
         .inputFluids("thermal:ender 4000")
         .outputFluids("enderio:dew_of_the_void 2000")
         .duration(84)
-        .EUt(15)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     // Crafter
     event.replaceInput({ id: "enderio:crafter"}, "#forge:ingots/iron", "kubejs:resonating_crystal")
@@ -523,7 +523,7 @@ ServerEvents.recipes(event => {
         .itemInputs("9x gtceu:obsidian_plate", "minecraft:tnt")
         .itemOutputs("gtceu:dense_obsidian_plate")
         .duration(20)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Dark Steel Bars
     event.remove({ output: "enderio:dark_steel_bars" })

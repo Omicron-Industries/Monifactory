@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         .dimension("javd:void")
         .outputFluids(Fluid.of("gtceu:air", 10000))
         .circuit(4)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
         .duration(200)
 
     // Lost Cities Air (normal air)
@@ -45,13 +45,13 @@ ServerEvents.recipes(event => {
         .dimension("lostcities:lostcity")
         .outputFluids(Fluid.of("gtceu:air", 10000))
         .circuit(5)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
         .duration(200)
 
     // Nerfed Ender Air distillation - less Tritium
     event.recipes.gtceu.distillation_tower("distill_liquid_ender_air")
         .inputFluids("gtceu:liquid_ender_air 200000")
-        .outputFluids("gtceu:nitrogen_dioxide 130000", "gtceu:deuterium 50000", "gtceu:helium 15000", "gtceu:tritium 2000", "gtceu:krypton 1000", "gtceu:xenon 1000", "gtceu:radon 1000")
+        .outputFluids("gtceu:nitrogen_dioxide 128000", "gtceu:deuterium 50000", "gtceu:helium 15000", "gtceu:tritium 4000", "gtceu:krypton 1000", "gtceu:xenon 1000", "gtceu:radon 1000")
         .chancedOutput("gtceu:ender_pearl_dust", 1000, 0)
         .EUt(GTValues.VA[GTValues.IV])
         .duration(100 * 20)
@@ -62,13 +62,13 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("minecraft:lava", 1000))
         .itemOutputs("minecraft:netherrack")
         .duration(20)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Lava from Magma
     event.recipes.gtceu.chemical_reactor("lava_from_magma")
         .itemInputs("minecraft:magma_block")
         .outputFluids(Fluid.of("minecraft:lava", 1000))
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
         .duration(120)
 
     // Slime ball from plant ball
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
             .inputFluids(Fluid.of("minecraft:water"))
             .itemOutputs("8x kubejs:ender_spore")
             .duration(640)
-            .EUt(120)
+            .EUt(GTValues.VA[GTValues.MV])
     }
 
     // Change recipes for LV and MV macerators
@@ -143,8 +143,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus" })
     event.remove({ id: "gtceu:electric_blast_furnace/blast_cryolobus_gas" })
     const cryolobusFuels = [
-        [1000, 1800, "gtceu:cetane_boosted_diesel"],
-        [800, 1800, "gtceu:gasoline"],
+        [500, 1600, "gtceu:cetane_boosted_diesel"],
+        [400, 1600, "gtceu:gasoline"],
         [250, 1200, "gtceu:high_octane_gasoline"],
         [150, 900, "gtceu:jean_gasoline"]
     ]
@@ -156,7 +156,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("gtceu:hot_cryolobus_ingot")
             .duration(duration)
             .blastFurnaceTemp(6800)
-            .EUt(30720)
+            .EUt(GTValues.VA[GTValues.LuV])
 
         event.recipes.gtceu.electric_blast_furnace(`cryolobus_scale_${id.replace(/\W/g, "")}`)
             .itemInputs("4x kubejs:warden_horn")
@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("2x gtceu:hot_cryolobus_ingot")
             .duration(duration * 2)
             .blastFurnaceTemp(6800)
-            .EUt(30720)
+            .EUt(GTValues.VA[GTValues.LuV])
     }
 
     // Cryolobus Vac Freezer recipe
@@ -174,7 +174,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:cryolobus_ingot")
         .inputFluids(Fluid.of("kubejs:molten_cryotheum", 250))
         .duration(600)
-        .EUt(1920)
+        .EUt(GTValues.VA[GTValues.EV])
 
     // Alternative hv cutter
     event.shaped("gtceu:hv_cutter", [
@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:butadiene 1000")
         .circuit(25)
         .duration(300)
-        .EUt(7680)
+        .EUt(GTValues.VA[GTValues.IV])
 
     // Netherstar Crafting
     event.shaped("kubejs:nether_star_south", [
@@ -295,7 +295,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x #forge:sandstone")
         .itemOutputs("gtceu:saltpeter_dust")
         .duration(300)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // UHV+ Parallel Control Hatch
     event.shaped("monilabs:uhv_parallel_hatch", [
@@ -333,13 +333,13 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:oxygen 20786")
         .itemOutputs("20x gtceu:naquadah_alloy_ingot", "4x gtceu:invar_ingot", "2x gtceu:uranium_rhodium_dinaquadide_ingot", "gtceu:tin_ingot")
         .duration(20786)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.macerator("rhf_crushing")
         .itemInputs("gtceu:mega_blast_furnace")
         .itemOutputs("24x gtceu:stone_dust", "20x gtceu:naquadah_alloy_dust", "4x gtceu:invar_dust", "2x gtceu:rubber_dust")
         .duration(20786)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // BBC
     event.remove({ input: "gtceu:mega_vacuum_freezer" })
@@ -348,43 +348,13 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:oxygen 26976")
         .itemOutputs("18x gtceu:naquadah_alloy_ingot", "12x gtceu:stainless_steel_ingot", "12x gtceu:electrum_ingot", "gtceu:steel_block")
         .duration(26976)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.macerator("bbc_crushing")
         .itemInputs("gtceu:mega_vacuum_freezer")
         .itemOutputs("18x gtceu:naquadah_alloy_dust", "50x gtceu:small_rubber_dust", "49x gtceu:small_steel_dust", "12x gtceu:stainless_steel_dust")
         .duration(25408)
         .EUt(302)
-
-
-    // Ender Chest and Tank (gives the full slot version)
-    event.remove({ output: ["endertanks:ender_tank", "enderchests:ender_chest"] })
-
-    // Chest
-    event.shaped("enderchests:ender_chest", [
-        "ABA",
-        "DED",
-        "AFA"
-    ], {
-        A: "minecraft:blaze_rod",
-        B: "minecraft:white_wool",
-        D: "minecraft:obsidian",
-        E: "gtceu:steel_crate",
-        F: "minecraft:ender_pearl"
-    })
-
-    // Tank
-    event.shaped("endertanks:ender_tank", [
-        "ABA",
-        "DED",
-        "AFA"
-    ], {
-        A: "minecraft:blaze_rod",
-        B: "minecraft:white_wool",
-        D: "minecraft:obsidian",
-        E: "enderio:pressurized_fluid_tank",
-        F: "gtceu:ender_pearl_block"
-    })
 
     // Strings Recipe
     event.shaped("6x minecraft:string", [
@@ -420,37 +390,37 @@ ServerEvents.recipes(event => {
 
     // Resonating Crystal recipes
     event.recipes.gtceu.alloy_smelter("kubejs:resonating_redstone")
-        .itemInputs("minecraft:redstone_block", "kubejs:ender_shard")
+        .itemInputs("4x minecraft:redstone", "kubejs:ender_shard")
         .itemOutputs("kubejs:resonating_crystal")
         .duration(180)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     event.recipes.gtceu.alloy_smelter("kubejs:resonating_restonia")
         .itemInputs("gtceu:restonia_gem", "kubejs:ender_shard")
         .itemOutputs("kubejs:resonating_crystal")
         .duration(180)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     event.recipes.gtceu.autoclave("kubejs:resonating_pearl_autoclave")
         .itemInputs("minecraft:ender_pearl")
         .inputFluids("gtceu:redstone 1152")
         .itemOutputs("12x kubejs:resonating_crystal")
         .duration(900)
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.autoclave("kubejs:resonating_pulsating_autoclave")
         .itemInputs("kubejs:pulsating_dust")
         .inputFluids("gtceu:redstone 1152")
         .itemOutputs("12x kubejs:resonating_crystal")
         .duration(900)
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.autoclave("kubejs:resonating_ender_dust_autoclave")
         .itemInputs("#forge:dusts/ender_pearl")
         .inputFluids("gtceu:redstone 1152")
         .itemOutputs("12x kubejs:resonating_crystal")
         .duration(900)
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Ender Shard
     event.shapeless("8x kubejs:ender_shard", ["minecraft:ender_pearl"]).id("kubejs:ender_pearl")
@@ -553,8 +523,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:advanced_soldering_alloy 2304")
         .itemOutputs("gtceu:mega_blast_furnace")
         .duration(3000)
-        .EUt(30720)
-        .stationResearch(b => b.researchStack("gtceu:electric_blast_furnace").CWUt(16, 64000).EUt(30720))
+        .EUt(GTValues.VA[GTValues.LuV])
+        .stationResearch(b => b.researchStack("gtceu:electric_blast_furnace").CWUt(16, 64000).EUt(GTValues.VA[GTValues.LuV]))
 
     event.remove({ id: "gtceu:shaped/mega_vacuum_freezer" })
     event.recipes.gtceu.assembly_line("kubejs:mega_vacuum_freezer")
@@ -562,8 +532,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:advanced_soldering_alloy 2304")
         .itemOutputs("gtceu:mega_vacuum_freezer")
         .duration(3000)
-        .EUt(30720)
-        .stationResearch(b => b.researchStack("gtceu:vacuum_freezer").CWUt(16, 64000).EUt(30720))
+        .EUt(GTValues.VA[GTValues.LuV])
+        .stationResearch(b => b.researchStack("gtceu:vacuum_freezer").CWUt(16, 64000).EUt(GTValues.VA[GTValues.LuV]))
 
     event.recipes.minecraft.smelting("kubejs:pulsating_dust", ["gtceu:uraninite_dust"])
     event.recipes.minecraft.smelting("kubejs:pulsating_dust", ["kubejs:resonant_clathrate"])
@@ -618,20 +588,20 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:zpm_field_generator")
         .duration(600)
         .EUt(24000)
-        .stationResearch(b => b.researchStack("gtceu:luv_field_generator").CWUt(4, 16000).EUt(30720))
+        .stationResearch(b => b.researchStack("gtceu:luv_field_generator").CWUt(4, 16000).EUt(GTValues.VA[GTValues.LuV]))
 
     // Quantum Ring Assembler Recipes
     event.recipes.gtceu.assembler("kubejs:quantum_ring")
         .itemInputs("4x gtceu:stainless_steel_plate", "2x ae2:calculation_processor", "2x ae2:engineering_processor", "gtceu:quantum_star")
         .itemOutputs("ae2:quantum_ring")
         .duration(100)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.assembler("kubejs:quantum_link")
         .itemInputs("4x ae2:fluix_pearl", "4x ae2:quartz_glass", "gtceu:certus_quartz_plate")
         .itemOutputs("ae2:quantum_link")
         .duration(100)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Dragon Breath canning and uncanning
     event.recipes.gtceu.canner("dragon_breath_unbottling")
@@ -660,14 +630,14 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:high_octane_gasoline 8000", "gtceu:rocket_fuel 5000", "gtceu:chlorine_trifluoride 2000", "gtceu:tetraethyllead 1000", "gtceu:dragon_breath 500")
         .outputFluids("gtceu:jean_gasoline 16000")
         .duration(200)
-        .EUt(7680)
+        .EUt(GTValues.VA[GTValues.IV])
         .circuit(24)
 
     event.recipes.gtceu.chemical_reactor("kubejs:chloroethane")
         .inputFluids("gtceu:ethylene 1000", "gtceu:hydrochloric_acid 1000")
         .outputFluids("gtceu:chloroethane 1000")
         .duration(60)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .circuit(4)
 
     event.recipes.gtceu.chemical_reactor("kubejs:tetraethyllead")
@@ -676,19 +646,85 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:tetraethyllead 1000")
         .itemOutputs("8x gtceu:salt_dust", "3x gtceu:lead_dust")
         .duration(300)
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.chemical_reactor("kubejs:chlorine_trifluoride")
         .inputFluids("gtceu:fluorine 3000", "gtceu:chlorine 1000")
         .outputFluids("gtceu:chlorine_trifluoride 1000")
         .duration(60)
-        .EUt(7)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     event.recipes.gtceu.mixer("kubejs:sodium_lead_alloy")
         .itemInputs("gtceu:sodium_dust", "gtceu:lead_dust")
         .itemOutputs("2x gtceu:sodium_lead_alloy_dust")
         .duration(200)
-        .EUt(7)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    // Wither Gas consumption
+    event.recipes.gtceu.gas_turbine("wither_gas_generator")
+        .inputFluids("gtceu:wither_gas 1")
+        .duration(140)
+        .EUt(-GTValues.V[GTValues.LV])
+
+    // Wither Gas
+    event.recipes.gtceu.large_chemical_reactor("wither_gas")
+        .notConsumable("minecraft:nether_star")
+        .itemInputs("enderio:withering_powder", "2x gtceu:small_calcium_perchlorate_dust")
+        .inputFluids("gtceu:lpg 8000", "gtceu:nitrobenzene 10000", "gtceu:overbased_magnesium_sulfonate 500")
+        .outputFluids("gtceu:wither_gas 20000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // Calcium Perchlorate alternate recipe
+    event.recipes.gtceu.chemical_reactor("calcium_perchlorate_from_calcium_chloride")
+        .notConsumable("gtceu:rutile_dust")
+        .itemInputs("3x gtceu:calcium_chloride_dust")
+        .inputFluids("gtceu:oxygen 8000")
+        .itemOutputs("11x gtceu:calcium_perchlorate_dust")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // Tetrapropene (ehehehe environmental destruction be damned)
+    event.recipes.gtceu.chemical_reactor("tetrapropylene_from_propene")
+        .inputFluids("gtceu:propene 4000")
+        .outputFluids("gtceu:tetrapropylene 1000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.MV])
+        .circuit(4)
+
+    // Alkylbenzene
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_benzene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:benzene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000")
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_ethylbenzene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:ethylbenzene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000", "gtceu:ethylene 1000")
+        .duration(160)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.chemical_reactor("alkylbenzene_from_cumene")
+        .inputFluids("gtceu:phosphoric_acid 100", "gtceu:cumene 1000", "gtceu:tetrapropylene 1000", )
+        .outputFluids("gtceu:alkylbenzene 1000", "gtceu:propene 1000")
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.LV])
+
+    // Overbased Magnesium Sulfonate
+    event.recipes.gtceu.chemical_reactor("overbased_magnesium_sulfonate_from_magnesium")
+        .inputFluids("gtceu:alkylbenzene 1750", "gtceu:sulfur_trioxide 1750")
+        .itemInputs("gtceu:magnesium_dust")
+        .outputFluids("gtceu:overbased_magnesium_sulfonate 1750", "gtceu:hydrogen 1750")
+        .duration(80)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    event.recipes.gtceu.chemical_reactor("overbased_magnesium_sulfonate_from_magnesium_chloride")
+        .inputFluids("gtceu:alkylbenzene 1750", "gtceu:sulfur_trioxide 1750")
+        .itemInputs("3x gtceu:magnesium_chloride_dust")
+        .outputFluids("gtceu:overbased_magnesium_sulfonate 1750", "gtceu:hydrochloric_acid 1750")
+        .duration(60)
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Clay synthesis from Dust
     event.recipes.gtceu.forge_hammer("dust")
@@ -702,7 +738,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("minecraft:clay")
         .inputFluids("water")
         .duration(20)
-        .EUt(15)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     // Break Clay blocks into balls
     event.shapeless("4x minecraft:clay_ball", ["minecraft:clay"]);
@@ -721,19 +757,19 @@ ServerEvents.recipes(event => {
         .itemInputs("minecraft:magma_block")
         .itemOutputs("minecraft:ochre_froglight")
         .duration(20)
-        .EUt(15)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     event.recipes.gtceu.atomic_reconstruction("verdant_froglight")
         .itemInputs("minecraft:ochre_froglight")
         .itemOutputs("minecraft:verdant_froglight")
         .duration(20)
-        .EUt(15)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     event.recipes.gtceu.atomic_reconstruction("pearlescent_froglight")
         .itemInputs("minecraft:verdant_froglight")
         .itemOutputs("minecraft:pearlescent_froglight")
         .duration(20)
-        .EUt(15)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     // Sodium to Sodium Hydroxide
     event.recipes.gtceu.chemical_reactor("na_to_naoh")
@@ -742,7 +778,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("3x gtceu:sodium_hydroxide_dust")
         .outputFluids("gtceu:hydrogen 1000")
         .duration(50)
-        .EUt(120)
+        .EUt(GTValues.VA[GTValues.MV])
 
     // Patchouli Books that needed tweaking
     event.shapeless(Item.of("patchouli:guide_book", '{"patchouli:book":"laserio:laseriobook"}'), ["minecraft:book", "laserio:card_item"]).id("laserio:my_book_recipe_shapeless")
@@ -767,7 +803,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("minecraft:sand", 2500, 0)
         .outputFluids("gtceu:oil 1000")
         .duration(200)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .circuit(3)
 
     event.recipes.gtceu.centrifuge("oilsands_to_light_oil")
@@ -775,7 +811,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("minecraft:sand", 2500, 0)
         .outputFluids("gtceu:oil_light 500")
         .duration(200)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .circuit(4)
 
     event.recipes.gtceu.centrifuge("oilsands_to_heavy_oil")
@@ -783,7 +819,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("minecraft:sand", 2500, 0)
         .outputFluids("gtceu:oil_heavy 2000")
         .duration(200)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .circuit(2)
 
     event.recipes.gtceu.centrifuge("oilsands_to_raw_oil")
@@ -791,7 +827,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("minecraft:sand", 2500, 0)
         .outputFluids("gtceu:oil_medium 1000")
         .duration(200)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .circuit(1)
 
     // Fix ilmenite -> rutile stoich
@@ -803,7 +839,7 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:carbon_dioxide 2000")
         .duration(1600)
         .blastFurnaceTemp(1700)
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Germanium can be used in diodes
     event.recipes.gtceu.mixer("silicon_germanium_mixing")
@@ -917,4 +953,19 @@ ServerEvents.recipes(event => {
         .duration(64)
         .EUt(0.75 * GTValues.V[GTValues.LuV])
         .fusionStartEU(300000000)
+
+    // Allow MV GT superconductor to be cooled using chemical bath
+    event.recipes.gtceu.chemical_bath("magnesium_diboride_cool_down")
+        .itemInputs("gtceu:hot_magnesium_diboride_ingot")
+        .inputFluids("minecraft:water 100")
+        .itemOutputs("gtceu:magnesium_diboride_ingot")
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.chemical_bath("magnesium_diboride_cool_down_distilled_water")
+        .itemInputs("gtceu:hot_magnesium_diboride_ingot")
+        .inputFluids("gtceu:distilled_water 100")
+        .itemOutputs("gtceu:magnesium_diboride_ingot")
+        .duration(250)
+        .EUt(GTValues.VA[GTValues.MV])
 })

@@ -177,8 +177,8 @@ ServerEvents.recipes(event => {
     // Arsenopyrite metallurgy like Cobaltite
     event.recipes.gtceu.electric_blast_furnace("arsenopyrite_metallurgy")
         .itemInputs("gtceu:arsenopyrite_dust")
-        .inputFluids("gtceu:oxygen 2500")
-        .itemOutputs("2x gtceu:small_wrought_iron_dust", "gtceu:arsenic_trioxide_dust")
+        .inputFluids("gtceu:oxygen 3000")
+        .itemOutputs("gtceu:hematite_dust", "gtceu:arsenic_trioxide_dust")
         .outputFluids("gtceu:sulfur_dioxide 1000")
         .duration(100)
         .EUt(GTValues.VA[GTValues.MV])

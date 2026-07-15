@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             .circuit(circuit)
             .itemOutputs(output)
             .duration(60) // same for all recipes
-            .EUt(64) // same for all recipes
+            .EUt(GTValues.VHA[GTValues.MV]) // same for all recipes
     }
     if (doHNN) {
         // //// Machine Recipe //////
@@ -32,11 +32,11 @@ ServerEvents.recipes(event => {
             .addMaterialInfo(true)
             .stationResearch(b => b
                 .researchStack("gtceu:loot_superfabricator")
-                .EUt(1966080)
+                .EUt(GTValues.VA[GTValues.UHV])
                 .CWUt(108, 512000)
             )
             .duration(1200)
-            .EUt(1966080)
+            .EUt(GTValues.VA[GTValues.UHV])
 
         // //// Fabricator Recipes //////
 

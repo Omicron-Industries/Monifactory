@@ -3,8 +3,7 @@
  */
 ServerEvents.recipes(event => {
     event.remove({ id: "watercollector:watercollector" })
-    event.remove({ id: "thermal:device_water_gen" })
-    event.remove({ id: "thermal:device_rock_gen" })
+
 
     if (!doHarderRecipes) {
         event.recipes.gtceu.shaped("watercollector:watercollector", [
@@ -15,53 +14,6 @@ ServerEvents.recipes(event => {
             A: "gtceu:wrought_iron_plate",
             B: "minecraft:water_bucket"
         }).addMaterialInfo()
-
-        event.recipes.gtceu.shaped("thermal:device_water_gen", [
-            " B ",
-            "CWC",
-            "GSG"
-        ], {
-            G: "gtceu:iron_gear",
-            B: "minecraft:bucket",
-            W: "watercollector:watercollector",
-            S: "enderio:fused_quartz",
-            C: "#forge:ingots/copper"
-        }).id("kubejs:device_water_gen").addMaterialInfo();
-
-        event.recipes.gtceu.shaped("thermal:device_rock_gen", [
-            " P ",
-            "PNP",
-            "GHG"
-        ], {
-            G: "gtceu:iron_gear",
-            P: "#forge:plates/steel",
-            N: "#forge:pistons",
-            H: "minecraft:hopper"
-        }).id("kubejs:device_rock_gen").addMaterialInfo();
-    } else {
-        event.recipes.gtceu.shaped("thermal:device_water_gen", [
-            " B ",
-            "CWC",
-            "GSG"
-        ], {
-            G: "gtceu:iron_gear",
-            B: "minecraft:bucket",
-            W: "#enderio:fused_quartz",
-            S: "thermal:redstone_servo",
-            C: "#forge:ingots/copper"
-        }).id("kubejs:device_water_gen").addMaterialInfo();
-
-        event.recipes.gtceu.shaped("thermal:device_rock_gen", [
-            " P ",
-            "INI",
-            "GSG"
-        ], {
-            G: "gtceu:iron_gear",
-            S: "thermal:redstone_servo",
-            P: "#forge:plates/steel",
-            I: "#forge:plates/invar",
-            N: "#forge:pistons"
-        }).id("kubejs:device_rock_gen").addMaterialInfo();
     }
 
     // Infinite Cobble/Water cells

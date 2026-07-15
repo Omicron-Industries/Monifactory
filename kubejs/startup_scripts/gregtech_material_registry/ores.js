@@ -26,6 +26,16 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .oreSmeltInto(GTMaterials.Copper)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
+    // End
+    event.create("purpurite")
+        .dust().ore(2, 2)
+        .iconSet("rough")
+        .color(0xb18bc6).secondaryColor(0x561944)
+        .components(GTMaterials.Manganese, GTMaterials.Phosphate.multiply(5))
+        .formula("MnPO4")
+        .addOreByproducts(GTMaterials.Iron, GTMaterials.Phosphate)
+        .washedIn(GTMaterials.NitricAcid)
+
     // Moon
     event.create("dilithium")
         .gem().ore(2, 1)
@@ -50,12 +60,21 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .washedIn(GTMaterials.NitricAcid)
 
     // Mars
-    event.create("columbite")
+    event.create("wolframite")
         .dust().ore(2, 2)
-        .iconSet(GTMaterialIconSet.METALLIC)
-        .color(0x304868).secondaryColor(0x161a1e)
-        .components(GTMaterials.Iron.multiply(1), GTMaterials.Niobium.multiply(2), GTMaterials.Oxygen.multiply(6))
-        .addOreByproducts(GTMaterials.Manganese, GTMaterials.Tantalum, GTMaterials.Niobium)
+        .color(0xa0734e).secondaryColor(0x405275)
+        .components(GTMaterials.Iron.multiply(1), GTMaterials.Manganese.multiply(1), GTMaterials.Tungsten.multiply(2), GTMaterials.Oxygen.multiply(8))
+        .formula("(Fe,Mn)(WO3)O")
+        .addOreByproducts(GTMaterials.Iron, GTMaterials.Manganese, GTMaterials.get("fluorite"))
+        .washedIn(GTMaterials.NitricAcid)
+        .separatedInto(GTMaterials.Iron)
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("bismite")
+        .dust().ore(2, 2)
+        .color(0xd3e298).secondaryColor(0x43dbad)
+        .components(GTMaterials.Bismuth.multiply(2), GTMaterials.Oxygen.multiply(3))
+        .addOreByproducts(GTMaterials.Tin, GTMaterials.Bismuth)
         .washedIn(GTMaterials.NitricAcid)
 
     event.create("arsenopyrite")
@@ -75,6 +94,21 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .addOreByproducts(GTMaterials.Uraninite, GTMaterials.Potassium, GTMaterials.Vanadium)
         .washedIn(GTMaterials.NitricAcid)
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+
+    event.create("gallite")
+        .dust().ore(1, 2)
+        .color(0xedb376).secondaryColor(0x5b5563)
+        .components(GTMaterials.Copper.multiply(1), GTMaterials.Gallium.multiply(1), GTMaterials.Sulfur.multiply(2))
+        .addOreByproducts(GTMaterials.Chalcopyrite, GTMaterials.Gallium, GTMaterials.Gallium, GTMaterials.get("germanium_disulfide"))
+        .washedIn(GTMaterials.NitricAcid)
+
+    event.create("briartite")
+        .dust().ore()
+        .color(0xc4bf60).secondaryColor(0xa5a598)
+        .components(GTMaterials.Chalcocite.multiply(3), GTMaterials.Sphalerite.multiply(2), "3x germanium_disulfide")
+        .addOreByproducts(GTMaterials.Copper, GTMaterials.Sphalerite, GTMaterials.get("germanium_disulfide"))
+        .washedIn(GTMaterials.Mercury)
+        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
 
     // Venus
     event.create("cuprorhodsite")
@@ -109,21 +143,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .addOreByproducts(GTMaterials.Yttrium, GTMaterials.RareEarth, GTMaterials.Samarium)
         .washedIn(GTMaterials.NitricAcid)
 
-    event.create("gallite")
-        .dust().ore(1, 2)
-        .color(0xedb376).secondaryColor(0x5b5563)
-        .components(GTMaterials.Copper.multiply(1), GTMaterials.Gallium.multiply(1), GTMaterials.Sulfur.multiply(2))
-        .addOreByproducts(GTMaterials.Chalcopyrite, GTMaterials.Gallium, GTMaterials.Gallium, GTMaterials.get("germanium_disulfide"))
-        .washedIn(GTMaterials.NitricAcid)
-
-    event.create("briartite")
-        .dust().ore()
-        .color(0xc4bf60).secondaryColor(0xa5a598)
-        .components(GTMaterials.Chalcocite.multiply(3), GTMaterials.Sphalerite.multiply(2), "3x germanium_disulfide")
-        .addOreByproducts(GTMaterials.Copper, GTMaterials.Sphalerite, GTMaterials.get("germanium_disulfide"))
-        .washedIn(GTMaterials.Mercury)
-        .flags(GTMaterialFlags.DECOMPOSITION_BY_CENTRIFUGING)
-
     // Mercury
     event.create("laurite")
         .dust().ore()
@@ -132,28 +151,19 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("ruthenium", "2x sulfur")
         .addOreByproducts("pyrite", "ruthenium", "rhodium")
 
-    event.create("wolframite")
-        .dust().ore(2, 2)
-        .color(0xa0734e).secondaryColor(0x405275)
-        .components(GTMaterials.Iron.multiply(1), GTMaterials.Manganese.multiply(1), GTMaterials.Tungsten.multiply(2), GTMaterials.Oxygen.multiply(8))
-        .formula("(Fe,Mn)(WO3)O")
-        .addOreByproducts(GTMaterials.Iron, GTMaterials.Manganese, GTMaterials.get("fluorite"))
-        .washedIn(GTMaterials.NitricAcid)
-        .separatedInto(GTMaterials.Iron)
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create("bismite")
-        .dust().ore(2, 2)
-        .color(0xd3e298).secondaryColor(0x43dbad)
-        .components(GTMaterials.Bismuth.multiply(2), GTMaterials.Oxygen.multiply(3))
-        .addOreByproducts(GTMaterials.Tin, GTMaterials.Bismuth)
-        .washedIn(GTMaterials.NitricAcid)
-
     event.create("sperrylite")
         .gem().ore(2, 2)
         .color(0xaaa399).secondaryColor(0x37474F)
         .components(GTMaterials.Platinum.multiply(1), GTMaterials.Arsenic.multiply(2))
         .addOreByproducts(GTMaterials.Platinum, GTMaterials.Nickel, GTMaterials.Palladium)
+        .washedIn(GTMaterials.NitricAcid)
+
+    event.create("columbite")
+        .dust().ore(2, 2)
+        .iconSet(GTMaterialIconSet.METALLIC)
+        .color(0x304868).secondaryColor(0x161a1e)
+        .components(GTMaterials.Iron.multiply(1), GTMaterials.Niobium.multiply(2), GTMaterials.Oxygen.multiply(6))
+        .addOreByproducts(GTMaterials.Manganese, GTMaterials.Tantalum, GTMaterials.Niobium)
         .washedIn(GTMaterials.NitricAcid)
 
     // Glacio

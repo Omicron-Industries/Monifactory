@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.ZPM])
 
     event.recipes.gtceu.electric_blast_furnace("null_doped_boule")
-        .itemInputs("4x gtceu:meta_null_ingot", "64x gtceu:silicon_block", "16x kubejs:stabilized_berkelium")
+        .itemInputs("4x gtceu:meta_null_ingot", "64x gtceu:silicon_block", "16x kubejs:stabilized_curium")
         .inputFluids("kubejs:molten_pyrotheum 16000")
         .itemOutputs("kubejs:null_boule")
         .duration(18000)

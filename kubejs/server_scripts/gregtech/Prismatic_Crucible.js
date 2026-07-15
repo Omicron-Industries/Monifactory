@@ -5,8 +5,8 @@
 ServerEvents.recipes(event => {
     // Controller
     event.recipes.gtceu.assembly_line("prismatic_crucible")
-        .itemInputs("monilabs:dimensional_stabilization_netherite_casing", "6x gtceu:uv_sensor", "2x #gtceu:circuits/uhv", "2x gtceu:uhv_field_generator", "4x gtceu:uhv_electric_pump", "2x gtceu:dense_trinaquadalloy_plate", "16x gtceu:normal_laser_pipe", "12x gtceu:tritanium_single_cable")
-        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:polyether_ether_ketone 1152", "gtceu:omnium 1728")
+        .itemInputs("monilabs:dimensional_stabilization_netherite_casing", "kubejs:heart_of_a_universe", "6x gtceu:uv_sensor", "2x #gtceu:circuits/uhv", "2x gtceu:uhv_field_generator", "4x gtceu:uhv_electric_pump", "2x gtceu:dense_trinaquadalloy_plate", "16x gtceu:normal_laser_pipe", "12x gtceu:tritanium_single_cable")
+        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 1152", "gtceu:omnium 1728")
         .itemOutputs("monilabs:prismatic_crucible")
         .duration(20 * 120)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -177,17 +177,17 @@ ServerEvents.recipes(event => {
 
     // Prismatic Core Processing
     const priscoreRecipes = [
-        ["red", "yellow", "yellow", "red", 128, 128, "none"],
-        ["yellow", "green", "green", "blue", 192, 256, "none"],
-        ["green", "cyan", "cyan", "green", 192, 448, "none"],
-        ["cyan", "blue", "blue", "red", 256, 640, "none"],
-        ["blue", "magenta", "active", "blue", 256, 896, "none"],
-        ["active", "orange", "orange", "green", 384, 1152, "yellow"],
-        ["orange", "lime", "lime", "indigo", 384, 1536, "none"],
-        ["lime", "teal", "teal", "blue", 512, 1920, "cyan"],
-        ["teal", "azure", "azure", "orange", 512, 2432, "none"],
-        ["azure", "indigo", "indigo", "red", 768, 2944, "magenta"],
-        ["indigo", "pink", "supercritical", "teal", 768, 3712, "none"]
+        ["red", "yellow", "yellow", "red", 192, 192, "none"],
+        ["yellow", "green", "green", "blue", 288, 384, "none"],
+        ["green", "cyan", "cyan", "green", 288, 672, "none"],
+        ["cyan", "blue", "blue", "red", 384, 960, "none"],
+        ["blue", "magenta", "active", "blue", 384, 1344, "none"],
+        ["active", "orange", "orange", "green", 576, 1728, "yellow"],
+        ["orange", "lime", "lime", "indigo", 576, 2304, "none"],
+        ["lime", "teal", "teal", "blue", 768, 2880, "cyan"],
+        ["teal", "azure", "azure", "orange", 768, 3648, "none"],
+        ["azure", "indigo", "indigo", "red", 1152, 4416, "magenta"],
+        ["indigo", "pink", "supercritical", "teal", 1152, 5568, "none"]
     ]
 
     priscoreRecipes.forEach(([coreIn, prismacIn, coreOut, prismacOut, transMb, nullMb, prismacOutHM]) => {

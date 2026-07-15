@@ -59,6 +59,28 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
+    // End vein
+    event.add("end/purpurite", vein => {
+        vein.weight(50)
+        vein.density(1.0)
+        vein.clusterSize(30)
+        vein.layer(WorldGenLayers.ENDSTONE)
+        vein.dimensions("minecraft:the_end")
+        vein.heightRangeUniform(20, 60)
+        vein.veinedVeinGenerator(generator => generator
+            .oreBlock(GTMaterials.get("purpurite"), 2)
+            .oreBlock(GTMaterials.TricalciumPhosphate, 1)
+            .veininessThreshold(0.001)
+            .maxRichnessThreshold(0.1)
+            .minRichness(0.4)
+            .maxRichness(1.0)
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get("purpurite"))
+            .placement("above")
+        )
+    })
+
     // Moon veins
     event.add("moon/diamond", vein => {
         vein.weight(20)
@@ -221,20 +243,22 @@ GTCEuServerEvents.oreVeins(event => {
     })
 
     // Mars veins
-    event.add("mars/powellite", vein => {
-        vein.weight(20)
-        vein.density(0.9)
-        vein.clusterSize(45)
+    event.add("mars/wolframite", vein => {
+        vein.weight(45)
+        vein.density(0.8)
+        vein.clusterSize(40)
         vein.layer("mars")
         vein.dimensions("ad_astra:mars")
-        vein.heightRangeUniform(-40, 30)
-        vein.dikeVeinGenerator(generator => generator
-            .withBlock(GTMaterials.Scheelite, 2, -40, -10)
-            .withBlock(GTMaterials.Powellite, 2, -35, 10)
-            .withBlock(GTMaterials.Molybdenite, 2, -32, 30)
+        vein.heightRangeUniform(-40, 50)
+        vein.layeredVeinGenerator(generator => generator
+            .buildLayerPattern(pattern => pattern
+                .layer(l => l.weight(2).mat(GTMaterials.get("wolframite")).size(2, 4))
+                .layer(l => l.weight(2).mat(GTMaterials.Cassiterite).size(2, 3))
+                .layer(l => l.weight(1).mat(GTMaterials.get("bismite")).size(2, 4))
+            )
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.Powellite)
+            .surfaceRock(GTMaterials.get("wolframite"))
             .placement("above")
         )
     })
@@ -303,23 +327,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.BasalticMineralSand)
-            .placement("above")
-        )
-    })
-
-    event.add("mars/coltan", vein => {
-        vein.weight(30)
-        vein.density(0.5)
-        vein.clusterSize(60)
-        vein.layer("mars")
-        vein.dimensions("ad_astra:mars")
-        vein.heightRangeUniform(-40, 5)
-        vein.dikeVeinGenerator(generator => generator
-            .withBlock(GTMaterials.get("columbite"), 3, -40, -5)
-            .withBlock(GTMaterials.Tantalite, 2, -20, 5)
-        )
-        vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.get("columbite"))
             .placement("above")
         )
     })
@@ -406,6 +413,29 @@ GTCEuServerEvents.oreVeins(event => {
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Olivine)
+            .placement("above")
+        )
+    })
+
+    event.add("mars/gallite", vein => {
+        vein.weight(25)
+        vein.density(1.0)
+        vein.clusterSize(40)
+        vein.layer("mars")
+        vein.dimensions("ad_astra:mars")
+        vein.heightRangeUniform(20, 60)
+        vein.veinedVeinGenerator(generator => generator
+            .oreBlock(GTMaterials.Sphalerite, 4)
+            .oreBlock(GTMaterials.get("gallite"), 2)
+            .oreBlock(GTMaterials.Chalcopyrite, 2)
+            .oreBlock(GTMaterials.get("briartite"), 1)
+            .veininessThreshold(0.2)
+            .maxRichnessThreshold(0.4)
+            .minRichness(0.6)
+            .maxRichness(0.7)
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get("gallite"))
             .placement("above")
         )
     })
@@ -530,29 +560,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
     })
 
-    event.add("venus/gallite", vein => {
-        vein.weight(25)
-        vein.density(1.0)
-        vein.clusterSize(40)
-        vein.layer("venus")
-        vein.dimensions("ad_astra:venus")
-        vein.heightRangeUniform(20, 60)
-        vein.veinedVeinGenerator(generator => generator
-            .oreBlock(GTMaterials.Sphalerite, 4)
-            .oreBlock(GTMaterials.get("gallite"), 2)
-            .oreBlock(GTMaterials.Chalcopyrite, 2)
-            .oreBlock(GTMaterials.get("briartite"), 1)
-            .veininessThreshold(0.2)
-            .maxRichnessThreshold(0.4)
-            .minRichness(0.6)
-            .maxRichness(0.7)
-        )
-        vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.get("gallite"))
-            .placement("above")
-        )
-    })
-
     // Mercury veins
     event.add("mercury/copper-silver", vein => {
         vein.weight(40)
@@ -592,26 +599,6 @@ GTCEuServerEvents.oreVeins(event => {
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Cinnabar)
-            .placement("above")
-        )
-    })
-
-    event.add("mercury/wolframite", vein => {
-        vein.weight(45)
-        vein.density(0.8)
-        vein.clusterSize(40)
-        vein.layer("mercury")
-        vein.dimensions("ad_astra:mercury")
-        vein.heightRangeUniform(-40, 50)
-        vein.layeredVeinGenerator(generator => generator
-            .buildLayerPattern(pattern => pattern
-                .layer(l => l.weight(2).mat(GTMaterials.get("wolframite")).size(2, 4))
-                .layer(l => l.weight(2).mat(GTMaterials.Cassiterite).size(2, 3))
-                .layer(l => l.weight(1).mat(GTMaterials.get("bismite")).size(2, 4))
-            )
-        )
-        vein.surfaceIndicatorGenerator(indicator => indicator
-            .surfaceRock(GTMaterials.get("wolframite"))
             .placement("above")
         )
     })
@@ -690,6 +677,23 @@ GTCEuServerEvents.oreVeins(event => {
         )
         vein.surfaceIndicatorGenerator(indicator => indicator
             .surfaceRock(GTMaterials.Thorium)
+            .placement("above")
+        )
+    })
+
+    event.add("mercury/coltan", vein => {
+        vein.weight(30)
+        vein.density(0.5)
+        vein.clusterSize(60)
+        vein.layer("mercury")
+        vein.dimensions("ad_astra:mercury")
+        vein.heightRangeUniform(-40, 5)
+        vein.dikeVeinGenerator(generator => generator
+            .withBlock(GTMaterials.get("columbite"), 3, -40, -5)
+            .withBlock(GTMaterials.Tantalite, 2, -20, 5)
+        )
+        vein.surfaceIndicatorGenerator(indicator => indicator
+            .surfaceRock(GTMaterials.get("columbite"))
             .placement("above")
         )
     })

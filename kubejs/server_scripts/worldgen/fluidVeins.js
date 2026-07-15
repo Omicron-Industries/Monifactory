@@ -85,11 +85,11 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.dimensions("ad_astra:mars")
         vein.fluid(() => Fluid.of("gtceu:fluorine").fluid)
         vein.weight(35)
-        vein.minimumYield(100)
-        vein.maximumYield(250)
-        vein.depletionAmount(7)
-        vein.depletionChance(50)
-        vein.depletedYield(5)
+        vein.minimumYield(50)
+        vein.maximumYield(100)
+        vein.depletionAmount(1)
+        vein.depletionChance(100)
+        vein.depletedYield(0)
     })
 
     // Venus fluid veins

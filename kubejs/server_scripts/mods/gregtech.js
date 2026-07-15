@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         .itemInputs("kubejs:solidified_experience")
         .outputFluids(Fluid.of("enderio:xp_juice", 140))
         .duration(80)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // HNN MATTERS
     if (doHNN) {
@@ -17,17 +17,17 @@ ServerEvents.recipes(event => {
             .itemInputs("hostilenetworks:overworld_prediction")
             .outputFluids(Fluid.of("enderio:xp_juice", 200))
             .duration(40)
-            .EUt(32)
+            .EUt(GTValues.VA[GTValues.LV])
         event.recipes.gtceu.extractor("nether_experience_fluid")
             .itemInputs("hostilenetworks:nether_prediction")
             .outputFluids(Fluid.of("enderio:xp_juice", 400))
             .duration(80)
-            .EUt(32)
+            .EUt(GTValues.VA[GTValues.LV])
         event.recipes.gtceu.extractor("ender_experience_fluid")
             .itemInputs("hostilenetworks:end_prediction")
             .outputFluids(Fluid.of("enderio:xp_juice", 500))
             .duration(100)
-            .EUt(32)
+            .EUt(GTValues.VA[GTValues.LV])
     }
 
     event.recipes.gtceu.fluid_solidifier("one_experience_solid")
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("enderio:xp_juice", 140))
         .notConsumable("gtceu:ball_casting_mold")
         .duration(500)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
 
     // NETHER STAR RECIPES
     event.remove({ id: "hostilenetworks:living_matter/extraterrestrial/nether_star" })
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         .itemInputs("4x gtceu:nether_star_dust", "2x minecraft:tnt", "#forge:small_dusts/dark_ash")
         .itemOutputs("3x minecraft:nether_star")
         .duration(20)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     // Other Quantum Flux Recipes
     event.recipes.gtceu.mixer("quantum_flux_hm")
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         .inputFluids(Fluid.of("gtceu:mana", 250))
         .itemOutputs("8x kubejs:quantum_flux")
         .duration(100)
-        .EUt(480)
+        .EUt(GTValues.VA[GTValues.HV])
 
     event.recipes.gtceu.large_chemical_reactor("kubejs:omnic_quantum_flux")
         .itemInputs("redstone_arsenal:flux_gem", "4x kubejs:primal_mana", "gtceu:nether_star_dust")
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
             .notConsumable(stoneItem)
             .itemOutputs(stoneItem)
             .duration(16)
-            .EUt(60)
+            .EUt(GTValues.VHA[GTValues.MV])
             .adjacentFluids("minecraft:lava", "minecraft:water")
     }
 

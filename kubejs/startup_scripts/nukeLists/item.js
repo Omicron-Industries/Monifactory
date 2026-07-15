@@ -93,11 +93,6 @@ global.itemNukeList = [
     "enderio:glider_wing",
     "enderio:nutritious_stick",
 
-    // Ender Storage
-    // TODO: Need to add greggy recipes for these
-    "endertanks:ender_bucket",
-    "enderchests:ender_bag",
-
     // ExtendedAE
     "expatternprovider:silicon_block",
     "expatternprovider:circuit_cutter",
@@ -138,6 +133,7 @@ global.itemNukeList = [
     "gtceu:luv_solar_panel",
     "gtceu:zpm_solar_panel",
     "gtceu:uv_solar_panel",
+    /^gtceu:(ev|iv|luv|zpm|uv|uhv|uev|max)_\w+a_energy_converter/,
     /^gtceu:uiv/,
     /^gtceu:uxv/,
     /^gtceu:opv/,
@@ -287,6 +283,7 @@ global.itemNukeList = [
     "thermal:sawdust",
     "thermal:sulfur",
     "thermal:tar",
+    "thermal:tar_block",
     "thermal:refined_fuel_bucket",
     /^thermal:.*_cast$/,
 
@@ -296,7 +293,6 @@ global.itemNukeList = [
     "thermal:machine_pulverizer",
     "thermal:machine_smelter",
     "thermal:machine_centrifuge",
-    "thermal:machine_crucible",
     "thermal:machine_chiller",
     "thermal:machine_refinery",
     "thermal:machine_pyrolyzer",
@@ -471,6 +467,8 @@ global.itemNukeList = [
     "nuclearcraft:fuel_mixed_mix_241",
     "nuclearcraft:lithium_6",
     "nuclearcraft:lithium_7",
+    "nuclearcraft:berkelium_247",
+    "nuclearcraft:berkelium_248",
     "nuclearcraft:boron_10",
     "nuclearcraft:boron_11",
     "nuclearcraft:thorium_230",

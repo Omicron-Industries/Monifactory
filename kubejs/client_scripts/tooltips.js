@@ -230,8 +230,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:americium_243", "§eAm²⁴³");
     tooltip.add("nuclearcraft:curium_243", "§eCm²⁴³");
     tooltip.add("nuclearcraft:curium_245", "§eCm²⁴⁵");
-    tooltip.add("nuclearcraft:berkelium_247", "§eBk²⁴⁷");
-    tooltip.add("nuclearcraft:berkelium_248", "§eBk²⁴⁸");
     tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
     tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
 

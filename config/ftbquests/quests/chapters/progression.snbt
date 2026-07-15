@@ -990,10 +990,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"6F5BB99060FF03AC"
-				"5911900438648430"
-			]
+			dependencies: ["6F5BB99060FF03AC"]
 			description: ["{moni.quest.4EB9D1ADC4814330.description1}"]
 			id: "4EB9D1ADC4814330"
 			shape: "hexagon"
@@ -1068,7 +1065,7 @@
 			dependencies: [
 				"0F56F4E642BC2B85"
 				"44E2C12FC4C26CA9"
-				"187083EB66D95726"
+				"3E1A349F989835F7"
 			]
 			description: [
 				"{moni.quest.248ABB7F26EB72EE.description1}"
@@ -2403,6 +2400,7 @@
 			dependencies: [
 				"67663B49B80849C1"
 				"75DD12FBC8AA39FC"
+				"5911900438648430"
 			]
 			description: ["{moni.quest.01E542E1C9DAF5B4.description1}"]
 			id: "01E542E1C9DAF5B4"

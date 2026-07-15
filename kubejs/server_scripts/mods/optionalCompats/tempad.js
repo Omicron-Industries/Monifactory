@@ -29,7 +29,7 @@ if (Platform.isLoaded("tempad")) {
             .inputFluids(Fluid.of("gtceu:mana", 1000))
             .itemOutputs("tempad:he_who_remains_tempad")
             .duration(100)
-            .EUt(512)
+            .EUt(GTValues.VA[GTValues.HV])
     })
     console.log("Tempad compat scripts successfully loaded!")
 } else { console.log("Tempad was not found, skipping its compat scripts.") }

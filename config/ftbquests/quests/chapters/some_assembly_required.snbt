@@ -125,8 +125,8 @@
 			linked_quest: "27A80F018F59EF1E"
 			shape: "hexagon"
 			size: 1.1d
-			x: 14.025d
-			y: 2.75d
+			x: 14.75d
+			y: 4.675d
 		}
 		{
 			id: "171E1089E43EE76B"
@@ -1622,29 +1622,6 @@
 			title: "{moni.quest.1EA5F30C5ACADBA9.title}"
 			x: 10.5d
 			y: 7.25d
-		}
-		{
-			dependencies: ["27A80F018F59EF1E"]
-			description: ["{moni.quest.62C85A1F451C4855.description3}"]
-			id: "3E7250EFBFF03D89"
-			rewards: [{
-				id: "48E6352BC7E3A682"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "3A145740391DF5FD"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_2_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 14.75d
-			y: 4.75d
 		}
 		{
 			dependencies: [

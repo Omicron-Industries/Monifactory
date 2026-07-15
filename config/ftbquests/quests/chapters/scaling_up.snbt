@@ -967,7 +967,7 @@
 				}
 			]
 			title: "{moni.quest.4C475D22CC95EB93.title}"
-			x: -12.75d
+			x: -13.0d
 			y: 1.75d
 		}
 		{
@@ -1005,7 +1005,7 @@
 				}
 			]
 			title: "{moni.quest.77CEA89E47BB3B7A.title}"
-			x: -12.75d
+			x: -13.0d
 			y: -0.25d
 		}
 		{
@@ -1056,8 +1056,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2DCD08F30EC049D1.title}"
-			x: -12.75d
-			y: -2.25d
+			x: -13.0d
+			y: -2.75d
 		}
 		{
 			dependencies: [
@@ -1094,7 +1094,7 @@
 				}
 			]
 			title: "{moni.quest.6203088E30E34B45.title}"
-			x: -14.25d
+			x: -14.5d
 			y: -0.25d
 		}
 		{
@@ -1138,7 +1138,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.27CE1D6B9683755F.title}"
-			x: -14.25d
+			x: -14.5d
 			y: -2.25d
 		}
 		{
@@ -1986,7 +1986,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "5B04A772005B3D99"
-				item: "gtceu:tungsten_ingot"
+				item: "gtceu:tungsten_dust"
 				type: "item"
 			}]
 			title: "{moni.quest.3B3F46345D39CAE2.title}"
@@ -1994,7 +1994,7 @@
 			y: 8.75d
 		}
 		{
-			dependencies: ["3B3F46345D39CAE2"]
+			dependencies: ["6DC635766CD40FFF"]
 			description: [
 				"{moni.quest.14F1FF4656693711.description1}"
 				""
@@ -2014,7 +2014,7 @@
 			}]
 			title: "{moni.quest.14F1FF4656693711.title}"
 			x: 7.5d
-			y: 6.75d
+			y: 5.0d
 		}
 		{
 			dependencies: ["14F1FF4656693711"]
@@ -2413,7 +2413,10 @@
 			y: -0.25d
 		}
 		{
-			dependencies: ["3B3F46345D39CAE2"]
+			dependencies: [
+				"3B3F46345D39CAE2"
+				"6DC635766CD40FFF"
+			]
 			description: [
 				"{moni.quest.634E056463ED1532.description1}"
 				""
@@ -2668,8 +2671,8 @@
 				item: "enderio:slice_and_splice"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.5d
+			x: 12.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["634E056463ED1532"]
@@ -3465,7 +3468,7 @@
 				}
 			]
 			x: 6.0d
-			y: 4.25d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -3599,6 +3602,29 @@
 			title: "{moni.quest.386DB3C9E646764D.title}"
 			x: -8.75d
 			y: 7.5d
+		}
+		{
+			dependencies: ["27A80F018F59EF1E"]
+			description: ["{moni.quest.62C85A1F451C4855.description3}"]
+			id: "3E7250EFBFF03D89"
+			rewards: [{
+				id: "48E6352BC7E3A682"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "3A145740391DF5FD"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.25d
+			y: 5.5d
 		}
 		{
 			dependencies: ["785C6332FC7A07A5"]
@@ -3783,6 +3809,44 @@
 			title: "{moni.quest.6CFAAF68D4B10062.title}"
 			x: -0.75d
 			y: -11.0d
+		}
+		{
+			dependencies: [
+				"7A67E519745A8361"
+				"3000798ACA51BFDC"
+				"2DCD08F30EC049D1"
+			]
+			description: [
+				"{moni.quest.45DD07F2BB9C6A59.description1}"
+				""
+				"{moni.quest.45DD07F2BB9C6A59.description2}"
+				""
+				"{moni.quest.45DD07F2BB9C6A59.description3}"
+			]
+			hide_until_deps_visible: true
+			icon: "gtceu:liquid_nether_air_bucket"
+			id: "45DD07F2BB9C6A59"
+			rewards: [{
+				id: "5EEB9D28CDCA083B"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "485B18F9D8C07C54"
+					item: "gtceu:liquid_nether_air_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "64B2FB57C29031C6"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
+			title: "{moni.quest.45DD07F2BB9C6A59.title}"
+			x: -11.5d
+			y: -2.25d
 		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"

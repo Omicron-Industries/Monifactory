@@ -31,7 +31,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x035155).secondaryColor(0x04203d).iconSet("dull")
         .blastTemp(6800, "higher")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME)
-        .cableProperties(GTValues.V[GTValues.UV], 4, 0, true);
 
     event.create("cryococcus")
         .ingot().fluid()
@@ -39,18 +38,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x009295).secondaryColor(0x07303b).iconSet("dull")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
         .cableProperties(GTValues.V[GTValues.UHV], 4, 6, false);
-
-    event.create("sculk_superconductor")
-        .element(GTElements.get("sculk_superconductor"))
-        .color(0xffffff)
-        .iconSet("crystal")
-        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
-        .ignoredTagPrefixes([
-            TagPrefix.dust,
-            TagPrefix.dustSmall,
-            TagPrefix.dustTiny,
-        ])
 
 
     // Prismatic Crucible Materials

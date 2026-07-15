@@ -419,6 +419,8 @@
 				"{moni.quest.7D72B3FF808CE13C.description2}"
 				""
 				"{moni.quest.7D72B3FF808CE13C.description3}"
+				""
+				"{moni.quest.7D72B3FF808CE13C.description4}"
 			]
 			icon: "gtceu:gas_large_turbine"
 			id: "7D72B3FF808CE13C"
@@ -1062,6 +1064,7 @@
 			dependencies: [
 				"786AECA42F53B45A"
 				"4C0BCA64D5B409F2"
+				"0E9B96B17D140B99"
 			]
 			description: [
 				"{moni.quest.19084E91F357C8C2.description1}"

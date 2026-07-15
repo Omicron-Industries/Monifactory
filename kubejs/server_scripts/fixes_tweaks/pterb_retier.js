@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b
             .researchStack("gtceu:active_transformer")
             .duration(2400)
-            .EUt(7680)
+            .EUt(GTValues.VA[GTValues.IV])
         )
     // Same as above but with Living Soldering Alloy
     event.recipes.gtceu.assembly_line("pterb/living_soldering_alloy")
@@ -45,6 +45,6 @@ ServerEvents.recipes(event => {
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b
             .researchStack("gtceu:active_transformer")
             .duration(2400)
-            .EUt(7680)
+            .EUt(GTValues.VA[GTValues.IV])
         )
 })

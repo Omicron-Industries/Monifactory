@@ -268,13 +268,13 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:fluid_cell", "4x gtceu:iron_plate")
         .itemOutputs("ad_astra:gas_tank")
         .duration(100)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
     event.recipes.gtceu.assembler("ad_astra/large_gas_tank")
         .itemInputs("3x gtceu:fluid_cell", "12x gtceu:steel_plate")
         .itemOutputs("ad_astra:large_gas_tank")
         .duration(100)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
 
 
@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
         .itemInputs("9x gtceu:dense_steel_plate", "27x gtceu:concrete_dust")
         .itemOutputs("ad_astra:launch_pad")
         .duration(300)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
 
     // Oxygen Loading
@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
         .itemInputs(["8x gtceu:steel_plate", "4x ad_astra:wheel", "2x gtceu:lv_electric_motor", "ad_astra:radio", "gtceu:lv_sensor"])
         .itemOutputs("ad_astra:tier_1_rover")
         .duration(600)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
 
     const decormaterials = ["iron", "etrium", "steel", "desh", "ostrum", "calorite"]

@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     // Activated Nethline Line
     event.recipes.gtceu.chemical_bath("reactive_netherite_cluster")
         .itemInputs("kubejs:netherite_cluster")
-        .inputFluids("gtceu:berkelium 18")
+        .inputFluids("gtceu:californium 18")
         .itemOutputs("kubejs:reactive_netherite_cluster")
         .duration(300)
         .EUt(GTValues.VA[GTValues.LuV])

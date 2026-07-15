@@ -19,15 +19,6 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.remove({ id: "gtceu:extractor/extract_experience_attuned_dust"})
-    event.recipes.gtceu.chemical_bath("experience_attuned_vapor")
-        .itemInputs("gtceu:experience_attuned_dust")
-        .inputFluids("gtceu:americium_plasma 36")
-        .itemOutputs("gtceu:small_americium_dust")
-        .outputFluids("gtceu:experience_attuned 144")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.EV])
-
     event.recipes.gtceu.mixer("sculk_agar")
         .itemInputs("4x gtceu:potassium_cyanide_dust", "7x gtceu:biotite_dust", "9x gtceu:collagen_dust")
         .inputFluids("enderio:xp_juice 1500", "gtceu:experience_attuned 288")
