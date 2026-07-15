@@ -387,7 +387,10 @@
 			y: 1.25d
 		}
 		{
-			dependencies: ["1C30B0E57E195FD7"]
+			dependencies: [
+				"1C30B0E57E195FD7"
+				"2E8BFA2E719B1C47"
+			]
 			description: [
 				"{moni.quest.7460F22545A4EFB2.description1}"
 				""

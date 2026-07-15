@@ -958,9 +958,9 @@
 					type: "item"
 				}
 				{
-					id: "0FCD265BAF7F9526"
-					optional_task: true
-					type: "checkmark"
+					id: "38A5BF7FD03E9DE3"
+					item: "kubejs:moon_dust"
+					type: "item"
 				}
 			]
 			title: "{moni.quest.7DE2C9292A09FC76.title}"
@@ -1177,6 +1177,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["66FCC26399376B55"]
 			description: ["{moni.quest.6A8764DDD3489EE8.description1}"]
 			icon: "minecraft:ender_eye"
 			id: "6A8764DDD3489EE8"
@@ -1265,20 +1266,19 @@
 					type: "item"
 				}
 				{
-					id: "5E9025FFB64F653A"
-					item: "ad_astra:oxygen_distributor"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "56DF465E7E18B202"
-					item: "ad_astra:oxygen_sensor"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "4F363B5679515717"
-					item: "ad_astra:gravity_normalizer"
+					id: "0CD10AB892FC2DEF"
+					item: {
+						Count: 1
+						id: "ad_astra:gas_tank"
+						tag: {
+							BotariumData: {
+								StoredFluids: [{
+									Amount: 1000L
+									Fluid: "gtceu:oxygen"
+								}]
+							}
+						}
+					}
 					optional_task: true
 					type: "item"
 				}
@@ -1380,6 +1380,40 @@
 			title: "{moni.quest.7ACF867DECE1C37F.title}"
 			x: 3.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["281C7940CD437B69"]
+			description: [
+				"{moni.quest.4288A253129B1E75.description1}"
+				""
+				"{moni.quest.4288A253129B1E75.description2}"
+				""
+				"{moni.quest.4288A253129B1E75.description3}"
+				""
+				"{moni.quest.4288A253129B1E75.description4}"
+			]
+			icon: "ad_astra:space_painting"
+			id: "4288A253129B1E75"
+			tasks: [
+				{
+					id: "590467B0584D0075"
+					item: "ad_astra:oxygen_distributor"
+					type: "item"
+				}
+				{
+					id: "01DCC71F3DEA223F"
+					item: "ad_astra:oxygen_sensor"
+					type: "item"
+				}
+				{
+					id: "5AFCEFEA48FF7835"
+					item: "ad_astra:gravity_normalizer"
+					type: "item"
+				}
+			]
+			title: "{moni.quest.4288A253129B1E75.title}"
+			x: 3.5d
+			y: -3.0d
 		}
 	]
 	title: "{moni.chapter.68F29871402A6B1B.title}"

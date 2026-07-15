@@ -103,7 +103,7 @@ element {
   nine_slice_border_x = 5
   nine_slice_border_y = 5
   description = Click to view bases!
-  label = 
+  label =
   navigatable = false
   widget_active_state_requirement_container_identifier = d05d4dde-2544-44a4-9fda-04a2e3094fae-1736463655841
   [loading_requirement_container_meta:d05d4dde-2544-44a4-9fda-04a2e3094fae-1736463655841] = [groups:][instances:]
@@ -158,7 +158,7 @@ element {
 
 element {
   interactable = true
-  source = [source:web]https://gist.githubusercontent.com/ThePansmith/99767cf11961eab4c91171de402101d8/raw/Moni%2520Menu%2520Text.md
+  source = [source:web]https://raw.githubusercontent.com/Omicron-Industries/Monifactory/refs/heads/main/Monifactory_titlescreen_text.md
   source_mode = resource
   shadow = true
   scale = 0.5
@@ -271,7 +271,7 @@ element {
 }
 
 element {
-  source = [source:web]https://raw.githubusercontent.com/ThePansmith/MonifactoryAssets/refs/heads/main/menubg/monibgoverride.png
+  source = [source:web]https://raw.githubusercontent.com/Omicron-Industries/MonifactoryAssets/refs/heads/main/menubg/monibgoverride.png
   repeat_texture = false
   nine_slice_texture = false
   nine_slice_texture_border_x = 5
@@ -1182,7 +1182,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:143400da-a8ba-4fad-be7b-941722b6ce45-1736470073791][action_type:openlink] = https://github.com/ThePansmith/Monifactory/blob/main/FAQ.md
+  [executable_action_instance:143400da-a8ba-4fad-be7b-941722b6ce45-1736470073791][action_type:openlink] = https://github.com/Omicron-Industries/Monifactory/blob/main/FAQ.md
   [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:143400da-a8ba-4fad-be7b-941722b6ce45-1736470073791;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
@@ -1242,7 +1242,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:0606b6c8-533b-48d6-a249-69bdd82e51a3-1736470167779][action_type:openlink] = https://github.com/ThePansmith/Monifactory
+  [executable_action_instance:0606b6c8-533b-48d6-a249-69bdd82e51a3-1736470167779][action_type:openlink] = https://github.com/Omicron-Industries/Monifactory
   [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:0606b6c8-533b-48d6-a249-69bdd82e51a3-1736470167779;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png
@@ -1482,7 +1482,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328
-  [executable_action_instance:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797][action_type:closegui] = 
+  [executable_action_instance:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797][action_type:closegui] =
   [executable_block:73c841fc-d7fc-4ae2-a262-247e8f18910e-1717199065328][type:generic] = [executables:014d57f4-4ae8-4e52-955d-1b7b06452d9f-1736468891797;]
   backgroundnormal = [source:local]/config/fancymenu/assets/button.bg.png
   backgroundhovered = [source:local]/config/fancymenu/assets/button.bg.png

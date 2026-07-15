@@ -2126,6 +2126,7 @@
 				""
 				"{moni.quest.360B577684B1AB1B.description2}"
 			]
+			icon: "gtceu:soc_wafer"
 			id: "360B577684B1AB1B"
 			rewards: [{
 				id: "386430CD06FF62A0"
@@ -2134,9 +2135,25 @@
 			}]
 			tasks: [{
 				id: "237B8FA53789FE37"
-				item: "gtceu:soc_wafer"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:soc_wafer"
+							}
+							{
+								Count: 1b
+								id: "gtceu:soc"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
+			title: "{item.gtceu.soc_wafer}"
 			x: 0.0d
 			y: -4.25d
 		}
@@ -3661,7 +3678,7 @@
 			y: -1.75d
 		}
 		{
-			dependencies: ["4DB622A78605A2EB"]
+			dependencies: ["39FD6F1076559156"]
 			description: [
 				"{moni.quest.36B1B083B4FA439F.description1}"
 				""

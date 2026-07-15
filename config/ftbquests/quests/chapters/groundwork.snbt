@@ -1888,6 +1888,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"{moni.quest.0E010F5348FC89BF.description1}"
 				""
