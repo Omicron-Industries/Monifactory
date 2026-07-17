@@ -1181,7 +1181,7 @@
 				item: "minecraft:dirt"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.75d
 			y: 3.0d
 		}
 		{
@@ -1200,11 +1200,15 @@
 		{
 			dependencies: [
 				"4A0D7BD20D857B73"
-				"0C24E6D1F1D2A3AE"
 				"21CD97B41E37D290"
 				"2AC7A8036CA65AF3"
+				"779632FC75C4FE6C"
 			]
-			description: ["{moni.quest.483A64A744DA61C5.description1}"]
+			description: [
+				"{moni.quest.483A64A744DA61C5.description1}"
+				""
+				"{moni.quest.483A64A744DA61C5.description2}"
+			]
 			id: "483A64A744DA61C5"
 			subtitle: "{moni.quest.483A64A744DA61C5.subtitle}"
 			tasks: [{
@@ -1225,7 +1229,7 @@
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 6.75d
 			y: 2.0d
 		}
 		{
@@ -1301,6 +1305,21 @@
 			]
 			x: 2.5d
 			y: 1.5d
+		}
+		{
+			dependencies: [
+				"1FEC7E9025F6277A"
+				"0C24E6D1F1D2A3AE"
+			]
+			description: ["{moni.quest.3173BEB39CD72C40.description1}"]
+			id: "779632FC75C4FE6C"
+			tasks: [{
+				id: "3173BEB39CD72C40"
+				item: "gtceu:compost_mix_dust"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
 		}
 	]
 	title: "{moni.chapter.055C0B43FE14258F.title}"

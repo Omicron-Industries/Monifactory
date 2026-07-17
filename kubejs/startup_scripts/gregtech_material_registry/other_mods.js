@@ -286,4 +286,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)D");
 
     // Ardite isn't here since it's more closely related to nethline than actually being a TiC material.
+
+    // Compost Mix for GT-style Thermal Expansion Compost
+    event.create("compost_mix")
+        .dust()
+        .color(0x7C592D).iconSet("wood")
 })

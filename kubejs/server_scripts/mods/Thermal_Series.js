@@ -526,7 +526,7 @@ ServerEvents.recipes(event => {
         B: "minecraft:bucket",
         S: "#minecraft:saplings",
         R: "thermal:rf_coil",
-        C: "#forge:gears/copper"
+        C: "#forge:small_gears/copper"
     }).id("thermal:machine_insolator").addMaterialInfo()
 
     // Energy Cell
@@ -820,30 +820,32 @@ ServerEvents.recipes(event => {
 
     /* === misc thermals ===*/
     event.remove({ output: "thermal:phytogro" });
-    event.shapeless("16x thermal:phytogro", [
-        "2x #forge:dusts/wood",
-        "#forge:dusts/charcoal",
-        "#forge:dusts/saltpeter",
-        "2x #forge:gems/apatite" // ok idk HOW thermal manages to make tag recipe requirement AND regular item
-    ]).id("kubejs:phytogro_charcoal_gems_apatite");
-    event.shapeless("16x thermal:phytogro", [
-        "2x #forge:dusts/wood",
-        "#forge:dusts/charcoal",
-        "#forge:dusts/saltpeter",
-        "2x #forge:dusts/apatite"
-    ]).id("kubejs:phytogro_charcoal_dusts_apatite");
-    event.shapeless("16x thermal:phytogro", [
-        "2x #forge:dusts/wood",
-        "#forge:dusts/coal",
-        "#forge:dusts/saltpeter",
-        "2x #forge:gems/apatite"
-    ]).id("kubejs:phytogro_coal_gems_apatite");
-    event.shapeless("16x thermal:phytogro", [
-        "2x #forge:dusts/wood",
-        "#forge:dusts/coal",
-        "#forge:dusts/saltpeter",
-        "2x #forge:dusts/apatite"
-    ]).id("kubejs:phytogro_coal_dusts_apatite");
+    event.recipes.gtceu.mixer("phytogro_bone_meal")
+        .itemInputs("3x gtceu:fertilizer", "2x minecraft:bone_meal", "1x extendedcrafting:luminessence")
+        .inputFluids("enderio:xp_juice 500")
+        .itemOutputs("6x thermal:phytogro")
+        .duration(20 * 10)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.mixer("phytogro_compost")
+        .itemInputs("3x gtceu:fertilizer", "2x thermal:compost", "1x extendedcrafting:luminessence")
+        .inputFluids("enderio:xp_juice 500")
+        .itemOutputs("6x thermal:phytogro")
+        .duration(20 * 10)
+        .EUt(GTValues.VA[GTValues.HV])
+
+    // Mixer recipe for Thermal's Compost as an alternative to the Composter
+    event.recipes.gtceu.mixer("compost_mix_mixing")
+        .itemInputs("1x #forge:sawdust", "gtceu:bio_chaff")
+        .itemOutputs("1x gtceu:compost_mix_dust")
+        .duration(20)
+        .EUt(GTValues.VA[GTValues.ULV])
+    event.recipes.gtceu.fermenter("compost_fermenting")
+        .itemInputs("1x gtceu:compost_mix_dust")
+        .inputFluids("minecraft:water 50")
+        .itemOutputs("1x thermal:compost")
+        .outputFluids("gtceu:fermented_biomass 50")
+        .duration(7.5 * 20)
+        .EUt(0.25 * GTValues.V[GTValues.ULV])
 
     // Change Aqua Chow recipes to use Flour instead of raw Wheat
     event.replaceInput([{ id: "thermal:aquachow_4"}, {id: "thermal:deep_aquachow_4" }], "minecraft:wheat", "#forge:dusts/wheat")
