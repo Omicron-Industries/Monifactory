@@ -18,6 +18,10 @@
   - [Asset \& Data folder Organization](#asset--data-folder-organization)
 - [Optional Compats](#optional-compats)
 - [Updating Mods](#updating-mods)
+- [KubeJS Systems](#kubejs-systems)
+  - [Nukelists](#nukelists)
+  - [Deprecation Pipeline](#deprecation-pipeline)
+  - [Tiered Recipe Generator](#tiered-recipe-generation)
 
 
 ## Introduction ##
@@ -224,3 +228,26 @@ PERFORM THOROUGH CHECKS BEFORE UPDATING:
 | ------------- | ------------- |
 | HammerLib | Causes datapack errors when loading into existing worlds |
 | Solar Flux Reborn | Depends on an updated HammerLib |
+
+# KubeJS Systems #
+For assisting in pack development, several systems have been implemented in KubeJS to perform repetitive tasks en masse more easily.
+
+## Nukelists ##
+Part of the process for developing a modpack involves removing certain parts of some mods that aren't needed or wanted in the pack. There are several different objects that may need hiding and removal as a part of this - items, fluids, recipes, and tags.
+Nukelists hide and remove recipes that involve a certain item or fluid, as well as removing all tags from that item. 
+
+For adding an item to the nukelist, add the item's resource location or a regex matching that item's resource location to the definition of `global.itemNukeList` in [item.js](kubejs\startup_scripts\nukeLists\item.js).
+
+For adding a fluid to the nukelist, add the fluid's resource location or a regex matching that fluid's resource location to the definition of `global.fluidNukeList` in [fluid.js](kubejs\startup_scripts\nukeLists\fluid.js). This will also perform the equivalent operations as if the fluid's bucket were added to the item nukelist.
+
+## Deprecation Pipeline ##
+As this modpack updates over time, players will want to port their saves to newer releases. In some updates, however, certain objects may have their resource locations altered or be removed from the game entirely. Without use of the DataFixerUpper (DFU) library, this results in those objects disappearing from the save, causing the player to lose the object without recourse or refund.
+
+The Deprecation Pipeline acts as a "safety net" for certain cases of this type of issue. When properly configured, it creates a new, hidden, and otherwise unobtainable object with the same resource location as the removed object. This new object can then be used an in-game analog of a refund or exchange. The process of performing this refund or exchange is listed on the object's tooltip, and typically involves putting it in the crafting table or a GregTech machine.
+
+This process can be performed for items, fluids, and blocks. New deprecation entries should be put [deprecations.js](kubejs\startup_scripts\deprecations.js), and deprecation entries should be removed two minor versions after they are created.
+
+## Tiered recipe generation ##
+In GregTech, there are many cases of recipes that are highly similar to one another, but with minor differences in the inputs such as the type of plastic or rubber used, or the tier and quantity of circuit component consumed. The [Tiered Recipe Generator](kubejs\server_scripts\gregtech\tiered_recipes.js) offers a way to generate these types of recipes by copying existing recipes, then performing small modifications before registering the new recipe.
+
+This file also makes use of TypeScript to enforce strict typing. It is easily the most complicated KubeJS file, and beginners are recommended to avoid it. 
