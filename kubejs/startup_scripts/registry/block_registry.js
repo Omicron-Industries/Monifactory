@@ -139,6 +139,7 @@ StartupEvents.registry("block", event => {
     const casings = [
         "dark_soularium",
         "dark_steel",
+        "lead_shield"
     ]
 
     casings.forEach(casing => {

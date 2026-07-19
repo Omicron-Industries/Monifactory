@@ -74,12 +74,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .symbol("Dl")
 
     // NCN Isotope Fluids
-    event.create("uranium_233")
-        .protons(92)
-        .neutrons(141)
-        .symbol("U-233")
-        .isIsotope(true)
-
     event.create("plutonium_238")
         .protons(94)
         .neutrons(144)

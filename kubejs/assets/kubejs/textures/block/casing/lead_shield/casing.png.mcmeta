@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "kubejs:block/lead_shield/casing_ctm"
+    }
+}
