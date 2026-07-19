@@ -99,7 +99,7 @@
   "monilabs.prismatic.color_name.orange": "§6Orange§r",
   "monilabs.prismatic.color_name.pink": "§cPink§r",
   "monilabs.prismatic.color_name.red": "§4Red§r",
-  "monilabs.prismatic.color_name.teal": "§tTeal§r",
+  "monilabs.prismatic.color_name.teal": "§3Teal§r",
   "monilabs.prismatic.color_name.yellow": "§eYellow§r",
   "monilabs.prismatic.current_color": "Current color: %s",
   "monilabs.recipe.accepted_colors": "Accepted Initial Colors: ",
