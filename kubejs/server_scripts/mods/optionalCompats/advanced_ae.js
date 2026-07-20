@@ -5,7 +5,7 @@
 if (Platform.isLoaded("advanced_ae")) {
     console.log("Advanced AE found, loading compat scripts...")
     ServerEvents.recipes(event => {
-        //Removing Reaction Chamber shit
+        // Removing Reaction Chamber shit
         event.remove({ id: /advanced_ae:.*_chamber/ })
         event.remove({ id: "advanced_ae:certuscharger" })
         event.remove({ id: "advanced_ae:fluixcrystals" })
@@ -15,7 +15,7 @@ if (Platform.isLoaded("advanced_ae")) {
         event.remove({ id: "advanced_ae:fluixcrystalfromdust" })
         event.remove({ id: "advanced_ae:quantum_infusion" })
 
-        //Q. Crafter and Throughput Monitor
+        // Q. Crafter and Throughput Monitor
         event.remove({ id: "advanced_ae:quantumcrafter" })
         event.shaped("advanced_ae:quantum_crafter", [
             "CSC",
@@ -46,7 +46,7 @@ if (Platform.isLoaded("advanced_ae")) {
         event.remove({ id: "advanced_ae:throughput_monitor"})
         event.shapeless("advanced_ae:throughput_monitor", ["ae2:storage_monitor", "#gtceu:circuits/hv"]);
 
-        //Quantum CPU blocks
+        // Quantum CPU blocks
         event.remove({ id: "advanced_ae:quantumstructure" })
         event.recipes.gtceu.assembler("quantum_glass")
             .itemInputs("gtceu:laminated_glass", "4x #gtceu:circuits/ulv")
@@ -58,16 +58,16 @@ if (Platform.isLoaded("advanced_ae")) {
 
         event.remove({ id: "advanced_ae:quantumcore" })
         event.recipes.gtceu.assembly_line("quantum_cpu_core")
-        .itemInputs(
-            "2x mae2:16x_crafting_accelerator",
-            "2x megacells:256m_crafting_storage",
-            "32x ae2:singularity",
-            "16x #gtceu:circuits/zpm",
-            "12x advanced_ae:quantum_unit",
-            "12x advanced_ae:quantum_unit",
-            "24x advanced_ae:quantum_structure",
-            "24x advanced_ae:quantum_structure"
-        )
+            .itemInputs(
+                "2x mae2:16x_crafting_accelerator",
+                "2x megacells:256m_crafting_storage",
+                "32x ae2:singularity",
+                "16x #gtceu:circuits/zpm",
+                "12x advanced_ae:quantum_unit",
+                "12x advanced_ae:quantum_unit",
+                "24x advanced_ae:quantum_structure",
+                "24x advanced_ae:quantum_structure"
+            )
         .inputFluids("gtceu:advanced_soldering_alloy 2304")
         .itemOutputs("advanced_ae:quantum_core")
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -79,16 +79,16 @@ if (Platform.isLoaded("advanced_ae")) {
         )
         event.remove({ id: "advanced_ae:quantumcore" })
         event.recipes.gtceu.assembly_line("quantum_cpu_core/living_soldering_alloy")
-        .itemInputs(
-            "2x mae2:16x_crafting_accelerator",
-            "2x megacells:256m_crafting_storage",
-            "32x ae2:singularity",
-            "16x #gtceu:circuits/zpm",
-            "12x advanced_ae:quantum_unit",
-            "12x advanced_ae:quantum_unit",
-            "24x advanced_ae:quantum_structure",
-            "24x advanced_ae:quantum_structure"
-        )
+            .itemInputs(
+                "2x mae2:16x_crafting_accelerator",
+                "2x megacells:256m_crafting_storage",
+                "32x ae2:singularity",
+                "16x #gtceu:circuits/zpm",
+                "12x advanced_ae:quantum_unit",
+                "12x advanced_ae:quantum_unit",
+                "24x advanced_ae:quantum_structure",
+                "24x advanced_ae:quantum_structure"
+            )
         .inputFluids("gtceu:living_soldering_alloy 1152")
         .itemOutputs("advanced_ae:quantum_core")
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -115,7 +115,7 @@ if (Platform.isLoaded("advanced_ae")) {
             .itemOutputs("advanced_ae:quantum_storage_256")
             .duration(10 * 20)
             .EUt(GTValues.VA[GTValues.LuV])
-        
+
         event.remove({ id: "advanced_ae:quantumaccel" })
         event.recipes.gtceu.assembler("quantum_coprocessor")
             .itemInputs("advanced_ae:quantum_unit", "2x mae2:16x_crafting_accelerator", "#gtceu:circuits/luv")
@@ -123,19 +123,19 @@ if (Platform.isLoaded("advanced_ae")) {
             .itemOutputs("advanced_ae:quantum_accelerator")
             .duration(10 * 20)
             .EUt(GTValues.VA[GTValues.LuV])
-        
+
         event.remove({ id: "advanced_ae:quantumdataentangler" })
         event.recipes.gtceu.assembly_line("quantum_storage_multiplier")
-        .itemInputs(
-            "16x gtceu:neutronium_frame",
-            "32x advanced_ae:quantum_storage_256",
-            "24x #gtceu:circuits/uhv",
-            "4x gtceu:uv_field_generator",
-            "2x kubejs:heart_of_a_universe",
-            "32x gtceu:uhpic_chip",
-            "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
-            "gtceu:uv_parallel_hatch"
-        )
+            .itemInputs(
+                "16x gtceu:neutronium_frame",
+                "32x advanced_ae:quantum_storage_256",
+                "24x #gtceu:circuits/uhv",
+                "4x gtceu:uv_field_generator",
+                "2x kubejs:heart_of_a_universe",
+                "32x gtceu:uhpic_chip",
+                "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
+                "gtceu:uv_parallel_hatch"
+            )
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152")
         .itemOutputs("advanced_ae:data_entangler")
         .EUt(GTValues.VA[GTValues.UHV])
@@ -148,16 +148,16 @@ if (Platform.isLoaded("advanced_ae")) {
 
         event.remove({ id: "advanced_ae:quantummultithreader" })
         event.recipes.gtceu.assembly_line("quantum_coprocessor_multiplier")
-        .itemInputs(
-            "16x gtceu:neutronium_frame",
-            "32x advanced_ae:quantum_accelerator",
-            "24x #gtceu:circuits/uhv",
-            "4x gtceu:uv_field_generator",
-            "2x kubejs:heart_of_a_universe",
-            "32x gtceu:uhpic_chip",
-            "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
-            "gtceu:uv_parallel_hatch"
-        )
+            .itemInputs(
+                "16x gtceu:neutronium_frame",
+                "32x advanced_ae:quantum_accelerator",
+                "24x #gtceu:circuits/uhv",
+                "4x gtceu:uv_field_generator",
+                "2x kubejs:heart_of_a_universe",
+                "32x gtceu:uhpic_chip",
+                "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
+                "gtceu:uv_parallel_hatch"
+            )
         .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152")
         .itemOutputs("advanced_ae:quantum_multi_threader")
         .EUt(GTValues.VA[GTValues.UHV])
@@ -168,20 +168,20 @@ if (Platform.isLoaded("advanced_ae")) {
             .EUt(GTValues.VA[GTValues.UV])
         )
 
-        //Quantum Armour
+        // Quantum Armour
         event.remove({ id: "advanced_ae:quantum_helmet" })
         event.recipes.gtceu.assembly_line("quantum_helmet")
-        .itemInputs(
-            "gtceu:nanomuscle_helmet",
-            "gtceu:lapotronic_energy_orb_cluster",
-            "gtceu:luv_field_generator",
-            "2x gtceu:luv_fluid_regulator",
-            "8x gtceu:platinum_octal_cable",
-            "4x #gtceu:circuits/luv",
-            "8x megacells:accumulation_processor",
-            "12x gtceu:rhodium_plated_palladium_plate",
-            "16x gtceu:naquadah_plate"
-        )
+            .itemInputs(
+                "gtceu:nanomuscle_helmet",
+                "gtceu:lapotronic_energy_orb_cluster",
+                "gtceu:luv_field_generator",
+                "2x gtceu:luv_fluid_regulator",
+                "8x gtceu:platinum_octal_cable",
+                "4x #gtceu:circuits/luv",
+                "8x megacells:accumulation_processor",
+                "12x gtceu:rhodium_plated_palladium_plate",
+                "16x gtceu:naquadah_plate"
+            )
         .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
         .itemOutputs("advanced_ae:quantum_helmet")
         .EUt(GTValues.VA[GTValues.LuV])
@@ -193,16 +193,16 @@ if (Platform.isLoaded("advanced_ae")) {
         )
         event.remove({ id: "advanced_ae:quantum_chest" })
         event.recipes.gtceu.assembly_line("quantum_chestplate")
-        .itemInputs(
-            "gtceu:nanomuscle_chestplate",
-            "gtceu:lapotronic_energy_orb_cluster",
-            "gtceu:luv_field_generator",
-            "2x gtceu:luv_robot_arm",
-            "8x gtceu:platinum_octal_cable",
-            "4x #gtceu:circuits/luv",
-            "8x megacells:accumulation_processor",
-            "12x gtceu:rhodium_plated_palladium_plate",
-            "16x gtceu:naquadah_plate"
+            .itemInputs(
+                "gtceu:nanomuscle_chestplate",
+                "gtceu:lapotronic_energy_orb_cluster",
+                "gtceu:luv_field_generator",
+                "2x gtceu:luv_robot_arm",
+                "8x gtceu:platinum_octal_cable",
+                "4x #gtceu:circuits/luv",
+                "8x megacells:accumulation_processor",
+                "12x gtceu:rhodium_plated_palladium_plate",
+                "16x gtceu:naquadah_plate"
         )
         .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
         .itemOutputs("advanced_ae:quantum_chestplate")
@@ -215,17 +215,17 @@ if (Platform.isLoaded("advanced_ae")) {
         )
         event.remove({ id: "advanced_ae:quantum_leggings" })
         event.recipes.gtceu.assembly_line("quantum_leggings")
-        .itemInputs(
-            "gtceu:nanomuscle_leggings",
-            "gtceu:lapotronic_energy_orb_cluster",
-            "gtceu:luv_field_generator",
-            "2x gtceu:luv_electric_piston",
-            "8x gtceu:platinum_octal_cable",
-            "4x #gtceu:circuits/luv",
-            "8x megacells:accumulation_processor",
-            "12x gtceu:rhodium_plated_palladium_plate",
-            "16x gtceu:naquadah_plate"
-        )
+            .itemInputs(
+                "gtceu:nanomuscle_leggings",
+                "gtceu:lapotronic_energy_orb_cluster",
+                "gtceu:luv_field_generator",
+                "2x gtceu:luv_electric_piston",
+                "8x gtceu:platinum_octal_cable",
+                "4x #gtceu:circuits/luv",
+                "8x megacells:accumulation_processor",
+                "12x gtceu:rhodium_plated_palladium_plate",
+                "16x gtceu:naquadah_plate"
+            )
         .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
         .itemOutputs("advanced_ae:quantum_leggings")
         .EUt(GTValues.VA[GTValues.LuV])
@@ -237,17 +237,17 @@ if (Platform.isLoaded("advanced_ae")) {
         )
         event.remove({ id: "advanced_ae:quantum_boots" })
         event.recipes.gtceu.assembly_line("quantum_boots")
-        .itemInputs(
-            "gtceu:nanomuscle_boots",
-            "gtceu:lapotronic_energy_orb_cluster",
-            "gtceu:luv_field_generator",
-            "2x gtceu:luv_conveyor_module",
-            "8x gtceu:platinum_octal_cable",
-            "4x #gtceu:circuits/luv",
-            "8x megacells:accumulation_processor",
-            "12x gtceu:rhodium_plated_palladium_plate",
-            "16x gtceu:naquadah_plate"
-        )
+            .itemInputs(
+                "gtceu:nanomuscle_boots",
+                "gtceu:lapotronic_energy_orb_cluster",
+                "gtceu:luv_field_generator",
+                "2x gtceu:luv_conveyor_module",
+                "8x gtceu:platinum_octal_cable",
+                "4x #gtceu:circuits/luv",
+                "8x megacells:accumulation_processor",
+                "12x gtceu:rhodium_plated_palladium_plate",
+                "16x gtceu:naquadah_plate"
+            )
         .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
         .itemOutputs("advanced_ae:quantum_boots")
         .EUt(GTValues.VA[GTValues.LuV])
@@ -258,7 +258,7 @@ if (Platform.isLoaded("advanced_ae")) {
             .EUt(GTValues.VA[GTValues.LuV])
         )
 
-        //Quantum Armour Cards
+        // Quantum Armour Cards
         event.remove({ id: "advanced_ae:quantum_base_card" })
         event.recipes.gtceu.assembler("quantum_card_base")
             .itemInputs("ae2:advanced_card", "2x ae2:basic_card", "8x megacells:accumulation_processor", "4x ae2:logic_processor", "2x #gtceu:circuits/ev")
