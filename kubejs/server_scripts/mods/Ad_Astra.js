@@ -484,15 +484,15 @@ ServerEvents.tags("item", event => {
     ]
     if (Platform.isLoaded("advanced_ae")) {
         const spaceImmuneEquipment = [
-        "gtceu:quarktech_helmet",
-        "gtceu:quarktech_chestplate",
-        "gtceu:advanced_quarktech_chestplate",
-        "gtceu:quarktech_leggings",
-        "gtceu:quarktech_boots",
-        "advanced_ae:quantum_helmet",
-        "advanced_ae:quantum_chestplate",
-        "advanced_ae:quantum_leggings",
-        "advanced_ae:quantum_boots"
+            "gtceu:quarktech_helmet",
+            "gtceu:quarktech_chestplate",
+            "gtceu:advanced_quarktech_chestplate",
+            "gtceu:quarktech_leggings",
+            "gtceu:quarktech_boots",
+            "advanced_ae:quantum_helmet",
+            "advanced_ae:quantum_chestplate",
+            "advanced_ae:quantum_leggings",
+            "advanced_ae:quantum_boots"
         ]
     }
 
