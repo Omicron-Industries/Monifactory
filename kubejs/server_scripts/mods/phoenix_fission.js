@@ -12,6 +12,8 @@ ServerEvents.recipes(event => {
         {identifier: "235", category: "uranium", material1: GTMaterials.Uranium238, material2: GTMaterials.Uranium235, enrichment: true},
         {identifier: "233", category: "uranium", material1: GTMaterials.Uranium238, material2: GTMaterials.get("uranium_233"), enrichment: true},
         {identifier: "mix_237", category: "neptunium", material1: GTMaterials.Uranium238, material2: GTMaterials.Neptunium, enrichment: false},
+        {identifier: "mix_239", category: "plutonium", material1: GTMaterials.Uranium238, material2: GTMaterials.Plutonium239, enrichment: false},
+        {identifier: "mix_241", category: "plutonium", material1: GTMaterials.Uranium238, material2: GTMaterials.Plutonium241, enrichment: false},
         {identifier: "239", category: "plutonium", material1: GTMaterials.get("plutonium_240"), material2: GTMaterials.Plutonium239, enrichment: true},
         {identifier: "241", category: "plutonium", material1: GTMaterials.get("plutonium_240"), material2: GTMaterials.Plutonium241, enrichment: true},
     ]
@@ -99,19 +101,23 @@ ServerEvents.recipes(event => {
     decompdepleted("tbu", [GTMaterials.Thorium.multiply(GTValues.M * 3), GTMaterials.Uranium235.multiply(GTValues.M * 0.25), GTMaterials.get("uranium_233").multiply(GTValues.M * 2), GTMaterials.Neptunium.multiply(GTValues.M * 0.75)], GTValues.EV)
 
     // Uranium yields primarily isotopes of Plutonium (Especially Pu-239) with a little bit of Np-237 from U-235 fuels, and Americium from U-233 fuels.
-    decompdepleted("leu_233", [GTMaterials.Uranium238.multiply(GTValues.M * 3), GTMaterials.get("uranium_233").multiply(GTValues.M * 0.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 2), GTMaterials.Plutonium239.multiply(GTValues.M * 0.5), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25)], GTValues.IV)
-    decompdepleted("heu_233", [GTMaterials.Uranium238.multiply(GTValues.M * 2), GTMaterials.get("uranium_233").multiply(GTValues.M * 1.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 2), GTMaterials.Plutonium239.multiply(GTValues.M * 0.5), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25)], GTValues.IV)
-    decompdepleted("leu_235", [GTMaterials.Uranium238.multiply(GTValues.M * 3), GTMaterials.Uranium235.multiply(GTValues.M * 0.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 2), GTMaterials.Plutonium239.multiply(GTValues.M * 0.5), GTMaterials.Neptunium.multiply(GTValues.M * 0.5)], GTValues.IV)
-    decompdepleted("heu_235", [GTMaterials.Uranium238.multiply(GTValues.M * 2), GTMaterials.Uranium235.multiply(GTValues.M * 1.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 2), GTMaterials.Plutonium239.multiply(GTValues.M * 0.5), GTMaterials.Neptunium.multiply(GTValues.M * 0.5)], GTValues.IV)
+    decompdepleted("leu_233", [GTMaterials.Uranium238.multiply(GTValues.M * 3), GTMaterials.get("uranium_233").multiply(GTValues.M * 0.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 0.75), GTMaterials.Plutonium239.multiply(GTValues.M * 0.5), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25)], GTValues.IV)
+    decompdepleted("heu_233", [GTMaterials.Uranium238.multiply(GTValues.M * 2), GTMaterials.get("uranium_233").multiply(GTValues.M * 1.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 0.75), GTMaterials.Plutonium239.multiply(GTValues.M * 0.5), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25)], GTValues.IV)
+    decompdepleted("leu_235", [GTMaterials.Uranium238.multiply(GTValues.M * 3), GTMaterials.Uranium235.multiply(GTValues.M * 0.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 0.75), GTMaterials.Plutonium239.multiply(GTValues.M * 0.5), GTMaterials.Neptunium.multiply(GTValues.M * 0.5)], GTValues.IV)
+    decompdepleted("heu_235", [GTMaterials.Uranium238.multiply(GTValues.M * 2), GTMaterials.Uranium235.multiply(GTValues.M * 1.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 0.75), GTMaterials.Plutonium239.multiply(GTValues.M * 0.5), GTMaterials.Neptunium.multiply(GTValues.M * 0.5)], GTValues.IV)
 
     // MIX-237 yields a mix of Plutonium and Americium.
-    decompdepleted("mix_237", [GTMaterials.Uranium238.multiply(GTValues.M * 3), GTMaterials.Neptunium.multiply(GTValues.M * 0.25), GTMaterials.get("uranium_233").multiply(GTValues.M * 2), GTMaterials.Plutonium241.multiply(GTValues.M * 0.5), GTMaterials.Americium.multiply(GTValues.M * 0.25)], GTValues.IV)
+    decompdepleted("mix_237", [GTMaterials.Uranium238.multiply(GTValues.M * 3), GTMaterials.Neptunium.multiply(GTValues.M * 0.25), GTMaterials.get("uranium_233").multiply(GTValues.M * 1.75), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25), GTMaterials.Americium.multiply(GTValues.M * 0.25)], GTValues.IV)
+
+    // MIX-239 yields a bunch of Pu-240 for purer Plutonium fuel.
+    decompdepleted("mix_239", [GTMaterials.Uranium238.multiply(GTValues.M * 3), GTMaterials.Plutonium239.multiply(GTValues.M * 0.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 1.75), GTMaterials.Plutonium241.multiply(GTValues.M * 0.5), GTMaterials.Neptunium.multiply(GTValues.M * 0.5)], GTValues.LuV)
+    decompdepleted("mix_241", [GTMaterials.Uranium238.multiply(GTValues.M * 2), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 1.75), GTMaterials.Neptunium.multiply(GTValues.M * 0.5), GTMaterials.Americium.multiply(GTValues.M * 0.5), ], GTValues.LuV)
 
     // Plutonium fuels yield Curium. (Especially Cu-245, which comes from Pu-242) Pu-239 fuels yield a bit of Np-237, while Pu-241 fuels yield Am-243. LE fuels, with their high Pu-242 content, also yield Am-243.
-    decompdepleted("lep_239", [GTMaterials.get("plutonium_240").multiply(GTValues.M * 3), GTMaterials.Plutonium239.multiply(GTValues.M * 0.25), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25), GTMaterials.Curium.multiply(GTValues.M * 0.75), GTMaterials.Neptunium.multiply(GTValues.M * 0.75)], GTValues.LuV)
-    decompdepleted("hep_239", [GTMaterials.get("plutonium_240").multiply(GTValues.M * 2), GTMaterials.Plutonium239.multiply(GTValues.M * 1.25), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25), GTMaterials.Curium.multiply(GTValues.M * 0.75), GTMaterials.Neptunium.multiply(GTValues.M * 0.75)], GTValues.LuV)
-    decompdepleted("lep_241", [GTMaterials.get("plutonium_240").multiply(GTValues.M * 3), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25), GTMaterials.Curium.multiply(GTValues.M * 0.75), GTMaterials.Americium.multiply(GTValues.M * 0.5), GTMaterials.Californium.multiply(GTValues.M * 0.25)], GTValues.LuV)
-    decompdepleted("hep_241", [GTMaterials.get("plutonium_240").multiply(GTValues.M * 2), GTMaterials.Plutonium241.multiply(GTValues.M * 1.25), GTMaterials.Curium.multiply(GTValues.M * 0.75), GTMaterials.Americium.multiply(GTValues.M * 0.5), GTMaterials.Californium.multiply(GTValues.M * 0.25)], GTValues.LuV)
+    decompdepleted("lep_239", [GTMaterials.get("plutonium_240").multiply(GTValues.M * 3), GTMaterials.Plutonium239.multiply(GTValues.M * 0.25), GTMaterials.Plutonium241.multiply(GTValues.M * 0.5), GTMaterials.Curium.multiply(GTValues.M * 0.5), GTMaterials.Neptunium.multiply(GTValues.M * 0.75)], GTValues.LuV)
+    decompdepleted("hep_239", [GTMaterials.get("plutonium_240").multiply(GTValues.M * 2), GTMaterials.Plutonium239.multiply(GTValues.M * 1.25), GTMaterials.Plutonium241.multiply(GTValues.M * 0.5), GTMaterials.Curium.multiply(GTValues.M * 0.5), GTMaterials.Neptunium.multiply(GTValues.M * 0.75)], GTValues.LuV)
+    decompdepleted("lep_241", [GTMaterials.get("plutonium_240").multiply(GTValues.M * 3), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25), GTMaterials.Americium.multiply(GTValues.M * 0.5), GTMaterials.Curium.multiply(GTValues.M * 0.5), GTMaterials.Californium.multiply(GTValues.M * 0.25)], GTValues.LuV)
+    decompdepleted("hep_241", [GTMaterials.get("plutonium_240").multiply(GTValues.M * 2), GTMaterials.Plutonium241.multiply(GTValues.M * 1.25), GTMaterials.Americium.multiply(GTValues.M * 0.5), GTMaterials.Curium.multiply(GTValues.M * 0.5), GTMaterials.Californium.multiply(GTValues.M * 0.25)], GTValues.LuV)
 
     /*
     // Americium yields Curium. (Cu-243 from Americium-241, and Cu-245 from  Americium-243) LEA, with its high Am-243 content, also yields Pu-239.
@@ -119,6 +125,6 @@ ServerEvents.recipes(event => {
     decompdepleted("americium_hea_242", "3x nuclearcraft:curium_245", "2x nuclearcraft:californium_251", "2x nuclearcraft:californium_252", "nuclearcraft:californium_250", GTValues.LuV)
     */
 
-    // Common fissile byproducts: Xenon, Iodine, [Steep drop] Caesium, Processed Fissile Waste
-    // Rare fissile byproducts: Fissile products: Inert Metal Mixture, Rare Earth, Barium, Molybdenum (Zirconium)
+    // Common fissile byproducts: Xenon, Iodine, [Steep drop] Caesium, [Rare fissile byproducts]
+    // Rare fissile byproducts: Fissile products: Inert Metal Mixture, Rare Earth, Barium, Tin, Molybdenum (Zirconium)
 })

@@ -27,6 +27,8 @@ const fission_fuels = [
     {identifier: "235", category: "uranium", baseHeat: 50, depletionTime: 240, enrichment: true},
     {identifier: "233", category: "uranium", baseHeat: 55, depletionTime: 230, enrichment: true},
     {identifier: "mix_237", category: "neptunium", baseHeat: 40, depletionTime: 200, enrichment: false},
-    {identifier: "239", category: "plutonium", baseHeat: 60, depletionTime: 200, enrichment: true},
-    {identifier: "241", category: "plutonium", baseHeat: 70, depletionTime: 160, enrichment: true},
+    {identifier: "mix_239", category: "plutonium", baseHeat: 60, depletionTime: 200, enrichment: false},
+    {identifier: "mix_241", category: "plutonium", baseHeat: 70, depletionTime: 180, enrichment: false},
+    {identifier: "239", category: "plutonium", baseHeat: 80, depletionTime: 120, enrichment: true},
+    {identifier: "241", category: "plutonium", baseHeat: 90, depletionTime: 100, enrichment: true},
 ]
