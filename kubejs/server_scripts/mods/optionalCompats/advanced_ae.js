@@ -203,7 +203,7 @@ if (Platform.isLoaded("advanced_ae")) {
                 "8x megacells:accumulation_processor",
                 "12x gtceu:rhodium_plated_palladium_plate",
                 "16x gtceu:naquadah_plate"
-        )
+            )
             .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
             .itemOutputs("advanced_ae:quantum_chestplate")
             .EUt(GTValues.VA[GTValues.LuV])
