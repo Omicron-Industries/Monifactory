@@ -508,6 +508,37 @@ if (Platform.isLoaded("create")) {
     );
 }
 
+// Advanced AE Compat
+// Removes all those boring solutions, useless crafting components, and whatever
+if (Platform.isLoaded("advanced_ae")) {
+    global.itemNukeList.push(
+        "advanced_ae:adv_pattern_encoder",
+        "advanced_ae:adv_pattern_provider_capacity_upgrade",
+        "advanced_ae:adv_pattern_provider_part",
+        "advanced_ae:adv_pattern_provider_upgrade",
+        "advanced_ae:adv_pattern_provider",
+        "advanced_ae:advanced_io_bus_part",
+        "advanced_ae:import_export_bus_part",
+        "advanced_ae:printed_quantum_processor",
+        "advanced_ae:quantum_alloy_block",
+        "advanced_ae:quantum_alloy_plate",
+        "advanced_ae:quantum_alloy_slab",
+        "advanced_ae:quantum_alloy_stairs",
+        "advanced_ae:quantum_alloy_wall",
+        "advanced_ae:quantum_alloy",
+        "advanced_ae:quantum_infused_dust",
+        "advanced_ae:quantum_processor_press",
+        "advanced_ae:quantum_processor",
+        "advanced_ae:quantum_storage_128",
+        "advanced_ae:quantum_storage_component",
+        "advanced_ae:reaction_chamber",
+        "advanced_ae:shattered_singularity",
+        "advanced_ae:small_adv_pattern_provider_part",
+        "advanced_ae:small_adv_pattern_provider",
+        "advanced_ae:stock_export_bus_part",
+    )
+}
+
 // If not doing boilers, nuke them.
 if (!global.doBoilers) {
     global.itemNukeList.push(
