@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "kubejs:block/casing/lead_shield/casing"
+    "all": "phoenix_fission:block/casings/lead_lined/casing"
   }
 }

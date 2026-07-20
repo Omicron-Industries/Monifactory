@@ -98,7 +98,7 @@ ServerEvents.recipes(event => {
     */
 
     // Thorium yields U-233, U-235, and Np-237 IRL.
-    decompdepleted("tbu", [GTMaterials.Thorium.multiply(GTValues.M * 3), GTMaterials.Uranium235.multiply(GTValues.M * 0.25), GTMaterials.get("uranium_233").multiply(GTValues.M * 2), GTMaterials.Neptunium.multiply(GTValues.M * 0.75)], GTValues.EV)
+    decompdepleted("tbu", [GTMaterials.Thorium.multiply(GTValues.M * 3), GTMaterials.Uranium235.multiply(GTValues.M * 0.25), GTMaterials.get("uranium_233").multiply(GTValues.M * 1.75), GTMaterials.Neptunium.multiply(GTValues.M * 0.25)], GTValues.EV)
 
     // Uranium yields primarily isotopes of Plutonium (Especially Pu-239) with a little bit of Np-237 from U-235 fuels, and Americium from U-233 fuels.
     decompdepleted("leu_233", [GTMaterials.Uranium238.multiply(GTValues.M * 3), GTMaterials.get("uranium_233").multiply(GTValues.M * 0.25), GTMaterials.get("plutonium_240").multiply(GTValues.M * 0.75), GTMaterials.Plutonium239.multiply(GTValues.M * 0.5), GTMaterials.Plutonium241.multiply(GTValues.M * 0.25)], GTValues.IV)

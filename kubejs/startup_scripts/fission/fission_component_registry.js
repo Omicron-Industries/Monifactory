@@ -16,7 +16,7 @@ StartupEvents.registry("block", event => {
                 .amountPerCycle(1)
                 .fuelKey(`phoenix_fission:${identifier}_fuel`)
                 .outputKey(`phoenix_fission:depleted_${identifier}_fuel`)
-                .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+                .textureAll("phoenix_fission:block/mechanic/fuel_cell")
 
             // High-enriched fuels
             identifier = `he${fuelType.category.charAt(0)}_${fuelType.identifier}`
@@ -26,7 +26,7 @@ StartupEvents.registry("block", event => {
                 .amountPerCycle(1)
                 .fuelKey(`phoenix_fission:${identifier}_fuel`)
                 .outputKey(`phoenix_fission:depleted_${identifier}_fuel`)
-                .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+                .textureAll("phoenix_fission:block/mechanic/fuel_cell")
         } else {
             identifier = fuelType.identifier;
             event.create(`phoenix_fission:${identifier}_fuel_rod`, "fission_fuel_rod")
@@ -35,7 +35,7 @@ StartupEvents.registry("block", event => {
                 .amountPerCycle(1)
                 .fuelKey(`phoenix_fission:${identifier}_fuel`)
                 .outputKey(`phoenix_fission:depleted_${identifier}_fuel`)
-                .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+                .textureAll("phoenix_fission:block/mechanic/fuel_cell")
         }
     })
 
@@ -43,12 +43,12 @@ StartupEvents.registry("block", event => {
     event.create("phoenix_fission:reactor_heat_vent", "fission_cooler")
         .isPassive(true)
         .flatCoolingHUt(20.0)
-        .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+        .textureAll("phoenix_fission:block/mechanic/cooler_cell")
 
     event.create("phoenix_fission:cryotheum_heat_sink", "fission_cooler")
         .isPassive(true)
         .flatCoolingHUt(50.0)
-        .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+        .textureAll("phoenix_fission:block/mechanic/cooler_cell")
 
     // I wish negative cooling values would work.
     // This could be nice as a way to artificially heat a reactor.
@@ -56,7 +56,7 @@ StartupEvents.registry("block", event => {
     event.create("phoenix_fission:pyrotheum_passive_heater", "fission_cooler")
         .isPassive(true)
         .flatCoolingHUt(-200.0)
-        .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+        .textureAll("phoenix_fission:block/mechanic/fuel_cell")
     */
 
     // Active Cooling
@@ -66,7 +66,7 @@ StartupEvents.registry("block", event => {
         .isPassive(false)
         .requiredCoolantMaterialId("minecraft:water")
         .outputCoolantFluidId("gtceu:steam")
-        .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+        .textureAll("phoenix_fission:block/mechanic/cooler_cell")
 
     event.create("phoenix_fission:distilled_water_cooler", "fission_cooler")
         .coolerTemperature(295)
@@ -74,7 +74,7 @@ StartupEvents.registry("block", event => {
         .isPassive(false)
         .requiredCoolantMaterialId("gtceu:distilled_water")
         .outputCoolantFluidId("gtceu:superheated_steam")
-        .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+        .textureAll("phoenix_fission:block/mechanic/cooler_cell")
 
     event.create("phoenix_fission:ice_cooler", "fission_cooler")
         .coolerTemperature(273)
@@ -82,7 +82,7 @@ StartupEvents.registry("block", event => {
         .isPassive(false)
         .requiredCoolantMaterialId("gtceu:ice")
         .outputCoolantFluidId("gtceu:distilled_water")
-        .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+        .textureAll("phoenix_fission:block/mechanic/cooler_cell")
 
     event.create("phoenix_fission:sodium_potassium_cooler", "fission_cooler")
         .coolerTemperature(293)
@@ -90,7 +90,7 @@ StartupEvents.registry("block", event => {
         .isPassive(false)
         .requiredCoolantMaterialId("gtceu:sodium_potassium")
         .outputCoolantFluidId("gtceu:hot_sodium_potassium")
-        .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+        .textureAll("phoenix_fission:block/mechanic/cooler_cell")
 
     event.create("phoenix_fission:liquid_helium_cooler", "fission_cooler")
         .coolerTemperature(100)
@@ -98,18 +98,18 @@ StartupEvents.registry("block", event => {
         .isPassive(false)
         .requiredCoolantMaterialId("gtceu:liquid_helium")
         .outputCoolantFluidId("gtceu:helium")
-        .textureAll("gtceu:block/casings/mechanic/fuel_cell")
+        .textureAll("phoenix_fission:block/mechanic/cooler_cell")
 
     // Moderators
     event.create("phoenix_fission:graphite_moderator", "fission_moderator")
         .euBoost(15)
         .fuelDiscount(5)
-        .textureAll("gtceu:block/casings/mechanic/moderation_cell")
+        .textureAll("phoenix_fission:block/mechanic/moderation_cell")
 
     event.create("phoenix_fission:beryllium_moderator", "fission_moderator")
         .euBoost(10)
         .fuelDiscount(10)
-        .textureAll("gtceu:block/casings/mechanic/moderation_cell")
+        .textureAll("phoenix_fission:block/mechanic/moderation_cell")
 
     // Example components saved for later
     /*
@@ -132,6 +132,37 @@ StartupEvents.registry("block", event => {
         .texture("phoenix_fission:block/fission/blanket_base")
         .tintColor(0x7DE7FF);
     */
+
+    event.create("phoenix_fission:lead_lined_casing")
+        // .textureAll("phoenix_fission:block/casings/lead_lined/casing")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true);
+
+    event.create("phoenix_fission:lead_lined_glass")
+        .textureAll("phoenix_fission:block/casings/lead_lined/glass")
+        .soundType("glass")
+        .renderType("cutout")
+        .resistance(6).hardness(5)
+        .tagBlock("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .defaultCutout()
+        .requiresTool(true);
+
+    event.create("phoenix_fission:control_rod")
+        .displayName("Fission Control Rod")
+        .soundType("metal")
+        .resistance(6).hardness(5)
+        .renderType("solid")
+        .notSolid()
+        .fullBlock(false)
+        .noValidSpawns(true)
+        .property(BlockProperties.WATERLOGGED)
+        .tag("mineable/pickaxe")
+        .tagBlock("forge:mineable/wrench")
+        .requiresTool(true)
 })
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
