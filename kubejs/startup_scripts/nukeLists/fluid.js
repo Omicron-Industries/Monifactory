@@ -51,6 +51,14 @@ global.fluidNukeList = [
 
 ]
 
+// Advanced AE Compat
+if (Platform.isLoaded("advanced_ae")) {
+    global.fluidNukeList.push(
+        "advanced_ae:quantum_infusion",
+        "advanced_ae:quantum_infusion_source"
+    )
+}
+
 StartupEvents.postInit(event => {
     /**
      * NuclearCraft is most easily dealt with by removing *everything* but a select few fluids
