@@ -68,15 +68,15 @@ if (Platform.isLoaded("advanced_ae")) {
                 "24x advanced_ae:quantum_structure",
                 "24x advanced_ae:quantum_structure"
             )
-        .inputFluids("gtceu:advanced_soldering_alloy 2304")
-        .itemOutputs("advanced_ae:quantum_core")
-        .EUt(GTValues.VA[GTValues.ZPM])
-        .duration(60 * 20)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
-            .researchStack("advanced_ae:quantum_unit")
-            .duration(120 * 20)
-            .EUt(GTValues.VA[GTValues.LuV])
-        )
+            .inputFluids("gtceu:advanced_soldering_alloy 2304")
+            .itemOutputs("advanced_ae:quantum_core")
+            .EUt(GTValues.VA[GTValues.ZPM])
+            .duration(60 * 20)
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack("advanced_ae:quantum_unit")
+                .duration(120 * 20)
+                .EUt(GTValues.VA[GTValues.LuV])
+            )
         event.remove({ id: "advanced_ae:quantumcore" })
         event.recipes.gtceu.assembly_line("quantum_cpu_core/living_soldering_alloy")
             .itemInputs(
@@ -89,15 +89,15 @@ if (Platform.isLoaded("advanced_ae")) {
                 "24x advanced_ae:quantum_structure",
                 "24x advanced_ae:quantum_structure"
             )
-        .inputFluids("gtceu:living_soldering_alloy 1152")
-        .itemOutputs("advanced_ae:quantum_core")
-        .EUt(GTValues.VA[GTValues.ZPM])
-        .duration(60 * 20)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
-            .researchStack("advanced_ae:quantum_unit")
-            .duration(120 * 20)
-            .EUt(GTValues.VA[GTValues.LuV])
-        )
+            .inputFluids("gtceu:living_soldering_alloy 1152")
+            .itemOutputs("advanced_ae:quantum_core")
+            .EUt(GTValues.VA[GTValues.ZPM])
+            .duration(60 * 20)
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack("advanced_ae:quantum_unit")
+                .duration(120 * 20)
+                .EUt(GTValues.VA[GTValues.LuV])
+            )
 
         event.remove({ id: "advanced_ae:quantumunit" })
         event.recipes.gtceu.assembler("quantum_crafting_unit")
@@ -136,15 +136,15 @@ if (Platform.isLoaded("advanced_ae")) {
                 "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
                 "gtceu:uv_parallel_hatch"
             )
-        .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152")
-        .itemOutputs("advanced_ae:data_entangler")
-        .EUt(GTValues.VA[GTValues.UHV])
-        .duration(240 * 20)
-        .stationResearch(b => b
-            .researchStack("advanced_ae:quantum_storage_256")
-            .CWUt(72, 384000)
-            .EUt(GTValues.VA[GTValues.UV])
-        )
+            .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152")
+            .itemOutputs("advanced_ae:data_entangler")
+            .EUt(GTValues.VA[GTValues.UHV])
+            .duration(240 * 20)
+            .stationResearch(b => b
+                .researchStack("advanced_ae:quantum_storage_256")
+                .CWUt(72, 384000)
+                .EUt(GTValues.VA[GTValues.UV])
+            )
 
         event.remove({ id: "advanced_ae:quantummultithreader" })
         event.recipes.gtceu.assembly_line("quantum_coprocessor_multiplier")
@@ -158,15 +158,15 @@ if (Platform.isLoaded("advanced_ae")) {
                 "32x gtceu:fine_ruthenium_trinium_americium_neutronate_wire",
                 "gtceu:uv_parallel_hatch"
             )
-        .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152")
-        .itemOutputs("advanced_ae:quantum_multi_threader")
-        .EUt(GTValues.VA[GTValues.UHV])
-        .duration(240 * 20)
-        .stationResearch(b => b
-            .researchStack("advanced_ae:quantum_accelerator")
-            .CWUt(72, 384000)
-            .EUt(GTValues.VA[GTValues.UV])
-        )
+            .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:tritanium 1152")
+            .itemOutputs("advanced_ae:quantum_multi_threader")
+            .EUt(GTValues.VA[GTValues.UHV])
+            .duration(240 * 20)
+            .stationResearch(b => b
+                .researchStack("advanced_ae:quantum_accelerator")
+                .CWUt(72, 384000)
+                .EUt(GTValues.VA[GTValues.UV])
+            )
 
         // Quantum Armour
         event.remove({ id: "advanced_ae:quantum_helmet" })
@@ -182,15 +182,15 @@ if (Platform.isLoaded("advanced_ae")) {
                 "12x gtceu:rhodium_plated_palladium_plate",
                 "16x gtceu:naquadah_plate"
             )
-        .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
-        .itemOutputs("advanced_ae:quantum_helmet")
-        .EUt(GTValues.VA[GTValues.LuV])
-        .duration(30 * 20)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
-            .researchStack("gtceu:nanomuscle_helmet")
-            .duration(45 * 20)
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
+            .itemOutputs("advanced_ae:quantum_helmet")
             .EUt(GTValues.VA[GTValues.LuV])
-        )
+            .duration(30 * 20)
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack("gtceu:nanomuscle_helmet")
+                .duration(45 * 20)
+                .EUt(GTValues.VA[GTValues.LuV])
+            )
         event.remove({ id: "advanced_ae:quantum_chest" })
         event.recipes.gtceu.assembly_line("quantum_chestplate")
             .itemInputs(
@@ -204,15 +204,15 @@ if (Platform.isLoaded("advanced_ae")) {
                 "12x gtceu:rhodium_plated_palladium_plate",
                 "16x gtceu:naquadah_plate"
         )
-        .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
-        .itemOutputs("advanced_ae:quantum_chestplate")
-        .EUt(GTValues.VA[GTValues.LuV])
-        .duration(30 * 20)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
-            .researchStack("gtceu:nanomuscle_chestplate")
-            .duration(45 * 20)
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
+            .itemOutputs("advanced_ae:quantum_chestplate")
             .EUt(GTValues.VA[GTValues.LuV])
-        )
+            .duration(30 * 20)
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack("gtceu:nanomuscle_chestplate")
+                .duration(45 * 20)
+                .EUt(GTValues.VA[GTValues.LuV])
+            )
         event.remove({ id: "advanced_ae:quantum_leggings" })
         event.recipes.gtceu.assembly_line("quantum_leggings")
             .itemInputs(
@@ -226,15 +226,15 @@ if (Platform.isLoaded("advanced_ae")) {
                 "12x gtceu:rhodium_plated_palladium_plate",
                 "16x gtceu:naquadah_plate"
             )
-        .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
-        .itemOutputs("advanced_ae:quantum_leggings")
-        .EUt(GTValues.VA[GTValues.LuV])
-        .duration(30 * 20)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
-            .researchStack("gtceu:nanomuscle_leggings")
-            .duration(45 * 20)
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
+            .itemOutputs("advanced_ae:quantum_leggings")
             .EUt(GTValues.VA[GTValues.LuV])
-        )
+            .duration(30 * 20)
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack("gtceu:nanomuscle_leggings")
+                .duration(45 * 20)
+                .EUt(GTValues.VA[GTValues.LuV])
+            )
         event.remove({ id: "advanced_ae:quantum_boots" })
         event.recipes.gtceu.assembly_line("quantum_boots")
             .itemInputs(
@@ -248,15 +248,15 @@ if (Platform.isLoaded("advanced_ae")) {
                 "12x gtceu:rhodium_plated_palladium_plate",
                 "16x gtceu:naquadah_plate"
             )
-        .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
-        .itemOutputs("advanced_ae:quantum_boots")
-        .EUt(GTValues.VA[GTValues.LuV])
-        .duration(30 * 20)
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b
-            .researchStack("gtceu:nanomuscle_boots")
-            .duration(45 * 20)
+            .inputFluids("gtceu:advanced_soldering_alloy 576", "gtceu:battery_alloy 1152")
+            .itemOutputs("advanced_ae:quantum_boots")
             .EUt(GTValues.VA[GTValues.LuV])
-        )
+            .duration(30 * 20)
+            ["scannerResearch(java.util.function.UnaryOperator)"](b => b
+                .researchStack("gtceu:nanomuscle_boots")
+                .duration(45 * 20)
+                .EUt(GTValues.VA[GTValues.LuV])
+            )
 
         // Quantum Armour Cards
         event.remove({ id: "advanced_ae:quantum_base_card" })
