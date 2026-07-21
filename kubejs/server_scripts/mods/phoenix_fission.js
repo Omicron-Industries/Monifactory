@@ -25,53 +25,86 @@ ServerEvents.recipes(event => {
             // Fuel recipe
             event.shaped(`phoenix_fission:${identifier}_fuel`, ["ABB", "BBB", "BBB"], { A: ChemicalHelper.getDust(fuel_type.material2, GTValues.M).asIngredient(), B: ChemicalHelper.getDust(fuel_type.material1, GTValues.M).asIngredient() })
             // GT Fuel recipe
-            event.recipes.gtceu.forming_press(`kubejs:${identifier}_press`)
+            event.recipes.gtceu.forming_press(`phoenix_fission:${identifier}_press`)
                 .notConsumable(GTItems.SHAPE_MOLD_CYLINDER)
                 .itemInputs(ChemicalHelper.getDust(fuel_type.material1, 8 * GTValues.M), ChemicalHelper.getDust(fuel_type.material2, GTValues.M))
                 .itemOutputs(`phoenix_fission:${identifier}_fuel`)
                 .duration(20 * GTValues.SECONDS)
                 .EUt(48)
             // Recycle unused fuel
-            event.recipes.gtceu.thermal_centrifuge(`kubejs:${identifier}_decomp`)
+            event.recipes.gtceu.thermal_centrifuge(`phoenix_fission:${identifier}_decomp`)
                 .itemInputs(`phoenix_fission:${identifier}_fuel`)
                 .itemOutputs(ChemicalHelper.getDust(fuel_type.material1, 8 * GTValues.M), ChemicalHelper.getDust(fuel_type.material2, GTValues.M))
                 .duration(80 * GTValues.SECONDS)
                 .EUt(48)
+            // Fuel rod recipe
+            event.recipes.gtceu.canner(`phoenix_fission:${identifier}_fuel_rod`)
+                .itemInputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of(`phoenix_fission:${identifier}_fuel`))
+                .itemOutputs(Item.of(`phoenix_fission:${identifier}_fuel_rod`))
+                .duration(10 * GTValues.SECONDS)
+                .EUt(GTValues.VHA[GTValues.ULV])
+            event.recipes.gtceu.canner(`phoenix_fission:uncan_${identifier}_fuel_rod`)
+                .itemOutputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of(`phoenix_fission:${identifier}_fuel`))
+                .itemInputs(Item.of(`phoenix_fission:${identifier}_fuel_rod`))
+                .duration(5 * GTValues.SECONDS)
+                .EUt(GTValues.VHA[GTValues.ULV])
 
             // High-enriched fuels
             identifier = `he${fuel_type.category.charAt(0)}_${fuel_type.identifier}`
             // Fuel recipe
             event.shaped(`phoenix_fission:${identifier}_fuel`, ["AAA", "ABB", "BBB"], { A: ChemicalHelper.getDust(fuel_type.material2, GTValues.M).asIngredient(), B: ChemicalHelper.getDust(fuel_type.material1, GTValues.M).asIngredient() })
             // GT Fuel recipe
-            event.recipes.gtceu.forming_press(`kubejs:${identifier}_press`)
+            event.recipes.gtceu.forming_press(`phoenix_fission:${identifier}_press`)
                 .notConsumable(GTItems.SHAPE_MOLD_CYLINDER)
                 .itemInputs(ChemicalHelper.getDust(fuel_type.material1, 5 * GTValues.M), ChemicalHelper.getDust(fuel_type.material2, 4 * GTValues.M))
                 .itemOutputs(`phoenix_fission:${identifier}_fuel`)
                 .duration(20 * GTValues.SECONDS)
                 .EUt(48)
             // Recycle unused fuel
-            event.recipes.gtceu.thermal_centrifuge(`kubejs:${identifier}_decomp`)
+            event.recipes.gtceu.thermal_centrifuge(`phoenix_fission:${identifier}_decomp`)
                 .itemInputs(`phoenix_fission:${identifier}_fuel`)
                 .itemOutputs(ChemicalHelper.getDust(fuel_type.material1, 5 * GTValues.M), ChemicalHelper.getDust(fuel_type.material2, 4 * GTValues.M))
                 .duration(80 * GTValues.SECONDS)
                 .EUt(48)
+            // Fuel rod recipe
+            event.recipes.gtceu.canner(`phoenix_fission:${identifier}_fuel_rod`)
+                .itemInputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of(`phoenix_fission:${identifier}_fuel`))
+                .itemOutputs(Item.of(`phoenix_fission:${identifier}_fuel_rod`))
+                .duration(10 * GTValues.SECONDS)
+                .EUt(GTValues.VHA[GTValues.ULV])
+            event.recipes.gtceu.canner(`phoenix_fission:uncan_${identifier}_fuel_rod`)
+                .itemOutputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of(`phoenix_fission:${identifier}_fuel`))
+                .itemInputs(Item.of(`phoenix_fission:${identifier}_fuel_rod`))
+                .duration(5 * GTValues.SECONDS)
+                .EUt(GTValues.VHA[GTValues.ULV])
         } else {
             identifier = fuel_type.identifier;
             // Fuel recipe
             event.shaped(`phoenix_fission:${identifier}_fuel`, ["ABB", "BBB", "BBB"], { A: ChemicalHelper.getDust(fuel_type.material2, GTValues.M).asIngredient(), B: ChemicalHelper.getDust(fuel_type.material1, GTValues.M).asIngredient() })
             // GT Fuel recipe
-            event.recipes.gtceu.forming_press(`kubejs:${identifier}_press`)
+            event.recipes.gtceu.forming_press(`phoenix_fission:${identifier}_press`)
                 .notConsumable(GTItems.SHAPE_MOLD_CYLINDER)
                 .itemInputs(ChemicalHelper.getDust(fuel_type.material1, 8 * GTValues.M), ChemicalHelper.getDust(fuel_type.material2, GTValues.M))
                 .itemOutputs(`phoenix_fission:${identifier}_fuel`)
                 .duration(20 * GTValues.SECONDS)
                 .EUt(48)
             // Recycle unused fuel
-            event.recipes.gtceu.thermal_centrifuge(`kubejs:${identifier}_decomp`)
+            event.recipes.gtceu.thermal_centrifuge(`phoenix_fission:${identifier}_decomp`)
                 .itemInputs(`phoenix_fission:${identifier}_fuel`)
                 .itemOutputs(ChemicalHelper.getDust(fuel_type.material1, 8 * GTValues.M), ChemicalHelper.getDust(fuel_type.material2, GTValues.M))
                 .duration(80 * GTValues.SECONDS)
                 .EUt(48)
+            // Fuel rod recipe
+            event.recipes.gtceu.canner(`phoenix_fission:${identifier}_fuel_rod`)
+                .itemInputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of(`phoenix_fission:${identifier}_fuel`))
+                .itemOutputs(Item.of(`phoenix_fission:${identifier}_fuel_rod`))
+                .duration(10 * GTValues.SECONDS)
+                .EUt(GTValues.VHA[GTValues.ULV])
+            event.recipes.gtceu.canner(`phoenix_fission:uncan_${identifier}_fuel_rod`)
+                .itemOutputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of(`phoenix_fission:${identifier}_fuel`))
+                .itemInputs(Item.of(`phoenix_fission:${identifier}_fuel_rod`))
+                .duration(5 * GTValues.SECONDS)
+                .EUt(GTValues.VHA[GTValues.ULV])
         }
     });
 
@@ -127,4 +160,133 @@ ServerEvents.recipes(event => {
 
     // Common fissile byproducts: Xenon, Iodine, [Steep drop] Caesium, [Rare fissile byproducts]
     // Rare fissile byproducts: Fissile products: Inert Metal Mixture, Rare Earth, Barium, Tin, Molybdenum (Zirconium)
+
+    // Reactor component recipes
+    event.recipes.gtceu.assembler("phoenix_fission:lead_lined_casing")
+        .itemInputs(Item.of("gtceu:tungsten_steel_frame"), Item.of("gtceu:lead_plate", 6))
+        .inputFluids(Fluid.of("gtceu:concrete", 144))
+        .itemOutputs(Item.of("phoenix_fission:lead_lined_casing", 2))
+        .duration(10 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.HV])
+        .addMaterialInfo(true)
+
+    event.shapeless("phoenix_fission:lead_lined_glass", ["phoenix_fission:lead_lined_casing", "gtceu:tempered_glass"])
+
+    event.recipes.gtceu.forming_press("phoenix_fission:control_rod")
+        .notConsumable(Item.of("gtceu:rod_extruder_mold"))
+        .itemInputs(Item.of("gtceu:silver_dust", 2), Item.of("gtceu:cadmium_dust"))
+        .itemOutputs(Item.of("phoenix_fission:control_rod"))
+        .duration(7 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    event.recipes.gtceu.assembler("phoenix_fission:control_rod_assembly")
+        .itemInputs(Item.of("phoenix_fission:control_rod", 4), Item.of("gtceu:ferroboron_plate", 3), Item.of("gtceu:mv_electric_motor"), Item.of("minecraft:chain", 4))
+        .itemOutputs(Item.of("phoenix_fission:control_rod_assembly", 2))
+        .duration(10 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.HV])
+        .addMaterialInfo(true)
+
+    // Empty Reactor Component (+ alternate recipe)
+    event.recipes.gtceu.shaped("2x phoenix_fission:empty_reactor_component", [
+        "PGP",
+        "GTG",
+        "PGP"
+    ], {
+        T: "gtceu:tough_alloy_frame",
+        P: "gtceu:stainless_steel_ingot",
+        G: "gtceu:tempered_glass"
+    })
+    event.recipes.gtceu.shaped("2x phoenix_fission:empty_reactor_component", [
+        "PGP",
+        "GTG",
+        "PGP"
+    ], {
+        T: "gtceu:tough_alloy_frame",
+        P: "gtceu:vanadium_steel_ingot",
+        G: "gtceu:tempered_glass"
+    })
+
+    // Passive coolers
+    event.recipes.gtceu.canner("phoenix_fission:reactor_heat_vent")
+        .itemInputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of("gtceu:heat_vent"))
+        .itemOutputs(Item.of("phoenix_fission:reactor_heat_vent"))
+        .duration(10 * GTValues.SECONDS)
+        .EUt(GTValues.VHA[GTValues.ULV])
+    event.recipes.gtceu.canner("phoenix_fission:uncan_reactor_heat_vent")
+        .itemOutputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of("gtceu:heat_vent"))
+        .itemInputs(Item.of("phoenix_fission:reactor_heat_vent"))
+        .duration(5 * GTValues.SECONDS)
+        .EUt(GTValues.VHA[GTValues.ULV])
+
+    event.recipes.gtceu.canner("phoenix_fission:cryotheum_heat_sink")
+        .itemInputs(Item.of("phoenix_fission:empty_reactor_component"))
+        .inputFluids(Fluid.of("kubejs:molten_cryotheum"))
+        .itemOutputs(Item.of("phoenix_fission:cryotheum_heat_sink"))
+        .duration(10 * GTValues.SECONDS)
+        .EUt(GTValues.VHA[GTValues.ULV])
+    event.recipes.gtceu.canner("phoenix_fission:uncan_cryotheum_heat_sink")
+        .itemOutputs(Item.of("phoenix_fission:empty_reactor_component"))
+        .outputFluids(Fluid.of("kubejs:molten_cryotheum"))
+        .itemInputs(Item.of("phoenix_fission:cryotheum_heat_sink"))
+        .duration(5 * GTValues.SECONDS)
+        .EUt(GTValues.VHA[GTValues.ULV])
+
+    // Active coolers
+    let coolants = [
+        {namespace: "minecraft", coolantID: "water"},
+        {namespace: "gtceu", coolantID: "distilled_water"},
+        {namespace: "gtceu", coolantID: "ice"},
+        {namespace: "gtceu", coolantID: "sodium_potassium"},
+        {namespace: "gtceu", coolantID: "liquid_helium"},
+    ]
+    coolants.forEach(coolant_type => {
+        event.recipes.gtceu.canner(`phoenix_fission:${coolant_type.coolantID}_cooler`)
+            .itemInputs(Item.of("phoenix_fission:empty_reactor_component"))
+            .inputFluids(coolant_type.namespace + ":" + coolant_type.coolantID)
+            .itemOutputs(Item.of(`phoenix_fission:${coolant_type.coolantID}_cooler`))
+            .duration(10 * GTValues.SECONDS)
+            .EUt(GTValues.VHA[GTValues.ULV])
+        event.recipes.gtceu.canner(`phoenix_fission:uncan_${coolant_type.coolantID}_cooler`)
+            .itemOutputs(Item.of("phoenix_fission:empty_reactor_component"))
+            .outputFluids(coolant_type.namespace + ":" + coolant_type.coolantID)
+            .itemInputs(Item.of(`phoenix_fission:${coolant_type.coolantID}_cooler`))
+            .duration(5 * GTValues.SECONDS)
+            .EUt(GTValues.VHA[GTValues.ULV])
+    })
+
+    // Moderators
+    event.recipes.gtceu.canner("phoenix_fission:graphite_moderator")
+        .itemInputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of("gtceu:graphite_dust", 9))
+        .itemOutputs(Item.of("phoenix_fission:graphite_moderator"))
+        .duration(10 * GTValues.SECONDS)
+        .EUt(GTValues.VHA[GTValues.ULV])
+    event.recipes.gtceu.canner("phoenix_fission:uncan_graphite_moderator")
+        .itemOutputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of("gtceu:graphite_dust", 9))
+        .itemInputs(Item.of("phoenix_fission:graphite_moderator"))
+        .duration(5 * GTValues.SECONDS)
+        .EUt(GTValues.VHA[GTValues.ULV])
+
+    event.recipes.gtceu.canner("phoenix_fission:beryllium_moderator")
+        .itemInputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of("gtceu:beryllium_dust", 9))
+        .itemOutputs(Item.of("phoenix_fission:beryllium_moderator"))
+        .duration(10 * GTValues.SECONDS)
+        .EUt(GTValues.VHA[GTValues.ULV])
+    event.recipes.gtceu.canner("phoenix_fission:uncan_beryllium_moderator")
+        .itemOutputs(Item.of("phoenix_fission:empty_reactor_component"), Item.of("gtceu:beryllium_dust", 9))
+        .itemInputs(Item.of("phoenix_fission:beryllium_moderator"))
+        .duration(5 * GTValues.SECONDS)
+        .EUt(GTValues.VHA[GTValues.ULV])
+
+    // Controller
+    event.recipes.gtceu.shaped("gtceu:fission_reactor", [
+        "RIR",
+        "PCP",
+        "TIT"
+    ], {
+        C: "phoenix_fission:lead_lined_casing",
+        P: "gtceu:ev_electric_pump",
+        I: "#gtceu:circuits/iv",
+        R: "phoenix_fission:control_rod",
+        T: "gtceu:tungsten_large_fluid_pipe"
+    }).addMaterialInfo()
 })

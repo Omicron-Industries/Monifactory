@@ -46,7 +46,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(PhoenixFissionPredicates.fissionFuelRods())
                 .or(PhoenixFissionPredicates.fissionModerators())
             )
-            .where("R", Predicates.blocks("phoenix_fission:control_rod"))
+            .where("R", Predicates.blocks("phoenix_fission:control_rod_assembly"))
             .where("#", Predicates.any())
             .build())
         .workableCasingModel("phoenix_fission:block/casings/lead_lined/casing",

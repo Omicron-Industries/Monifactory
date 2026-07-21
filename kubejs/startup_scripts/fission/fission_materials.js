@@ -4,15 +4,15 @@
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("ferroboron")
-        .ingot().fluid()
+        .ingot()
         .color(0x676767).iconSet("dull")
         .flags(GTMaterialFlags.GENERATE_PLATE)
         .components(GTMaterials.Steel.multiply(4), GTMaterials.Boron.multiply(1))
 
     event.create("tough_alloy")
-        .ingot().fluid()
+        .ingot()
         .color(0x0d1d2d).iconSet("metallic")
-        .flags(GTMaterialFlags.GENERATE_PLATE)
-        .components(GTMaterials.get("ferroboron"), GTMaterials.Lithium)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME)
+        .components(GTMaterials.Steel.multiply(4), GTMaterials.Boron, GTMaterials.Lithium.multiply(2))
 
 })

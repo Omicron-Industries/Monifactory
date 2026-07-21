@@ -151,8 +151,8 @@ StartupEvents.registry("block", event => {
         .defaultCutout()
         .requiresTool(true);
 
-    event.create("phoenix_fission:control_rod")
-        .displayName("Fission Control Rod")
+    event.create("phoenix_fission:control_rod_assembly")
+        .displayName("Fission Control Rod Assembly")
         .soundType("metal")
         .resistance(6).hardness(5)
         .renderType("solid")
@@ -163,6 +163,11 @@ StartupEvents.registry("block", event => {
         .tag("mineable/pickaxe")
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true)
+})
+
+StartupEvents.registry("item", event => {
+    event.create("phoenix_fission:control_rod")
+        .maxStackSize(16)
 })
 
 GTCEuStartupEvents.registry("gtceu:material", event => {

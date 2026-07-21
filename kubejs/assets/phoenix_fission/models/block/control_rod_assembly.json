@@ -4,8 +4,8 @@
 	"parent": "minecraft:block/block",
 	"texture_size": [48, 32],
 	"textures": {
-		"0": "phoenix_fission:block/control_rod",
-		"particle": "phoenix_fission:block/control_rod"
+		"0": "phoenix_fission:block/control_rod_assembly",
+		"particle": "phoenix_fission:block/control_rod_assembly"
 	},
 	"elements": [
 		{
