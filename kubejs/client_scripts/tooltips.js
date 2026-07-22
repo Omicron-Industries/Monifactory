@@ -274,4 +274,18 @@ ItemEvents.tooltip(tooltip => {
     if (Platform.isLoaded("tempad")) {
         tooltip.add("tempad:tempad", Text.translatable("tempad.tempad.tooltip"))
     }
+
+    // Advanced AE
+    if (Platform.isLoaded("advanced_ae")) {
+        tooltip.add([
+            "advanced_ae:water_breathing_card",
+            "advanced_ae:hp_buffer_card",
+            "advanced_ae:evasion_card",
+            "advanced_ae:regeneration_card",
+            "advanced_ae:strength_card",
+            "advanced_ae:attack_speed_card",
+            "advanced_ae:luck_card",
+            "advanced_ae:swim_speed_card"
+        ], Text.translatable("advanced_ae.disabled_card.tooltip"))
+    }
 })
