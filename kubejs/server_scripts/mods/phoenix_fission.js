@@ -289,4 +289,18 @@ ServerEvents.recipes(event => {
         R: "phoenix_fission:control_rod",
         T: "gtceu:tungsten_large_fluid_pipe"
     }).addMaterialInfo()
+
+    // High Pressure Steam Turbine recipes
+    // Steam recipe is at -20% efficiency compared to regular Steam Turbines, though the significantly increased scalability may be worth it for some
+    event.recipes.gtceu.hp_steam_turbine("steam")
+        .inputFluids("#forge:steam 640")
+        .outputFluids("gtceu:distilled_water 4")
+        .duration(0.4 * GTValues.SECONDS)
+        .EUt(-GTValues.V[GTValues.LV])
+
+    event.recipes.gtceu.hp_steam_turbine("superheated_steam")
+        .inputFluids("gtceu:superheated_steam 640")
+        .outputFluids("gtceu:distilled_water 160")
+        .duration(4 * GTValues.SECONDS)
+        .EUt(-GTValues.V[GTValues.MV])
 })

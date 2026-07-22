@@ -9,6 +9,23 @@ const RelativeDirection = Java.loadClass("com.gregtechceu.gtceu.api.pattern.util
 const PhoenixFissionPredicates = Java.loadClass("net.phoenix.phoenix_fission.api.pattern.PhoenixFissionPredicates")
 const PhoenixPartAbility = Java.loadClass("net.phoenix.phoenix_fission.api.machine.PhoenixPartAbility")
 const PhoenixFissionBlocks = Java.loadClass("net.phoenix.phoenix_fission.common.data.block.PhoenixFissionBlocks")
+const LargeTurbineMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.generator.LargeTurbineMachine")
+const TraceabilityPredicate = Java.loadClass("com.gregtechceu.gtceu.api.pattern.TraceabilityPredicate")
+const SimplePredicate = Java.loadClass("com.gregtechceu.gtceu.api.pattern.predicates.SimplePredicate")
+const IRotorHolderMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.feature.multiblock.IRotorHolderMachine")
+const MetaMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.MetaMachine")
+
+GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
+
+    // High Pressure Steam Turbine recipe type
+    event.create("hp_steam_turbine")
+        .category("multiblock")
+        .setEUIO("out")
+        .setMaxIOSize(0, 0, 1, 1)
+        .setSlotOverlay(false, false, GuiTextures.CENTRIFUGE_OVERLAY)
+        .setProgressBar(GuiTextures.PROGRESS_BAR_GAS_COLLECTOR, FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.TURBINE)
+})
 
 GTCEuStartupEvents.registry("gtceu:machine", event => {
     // Fission Reactor
@@ -50,6 +67,54 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
             .build())
         .workableCasingModel("phoenix_fission:block/casings/lead_lined/casing",
             "gtceu:block/multiblock/fission_reactor")
+
+    // Predicate for Large Turbine rotor holder ripped pretty much straight from GTM
+    let rotorHolderPredicate = new TraceabilityPredicate(
+        new SimplePredicate((state) => {
+            let rotorHolderMachine = MetaMachine.getMachine(state.getWorld(), state.getPos());
+            return rotorHolderMachine instanceof IRotorHolderMachine &&
+                state.getWorld().getBlockState(state.getPos().relative(rotorHolderMachine.self().getFrontFacing())).isAir()
+        },
+        /**
+         * This nameless function below has been a nightmare. All it does is retrieve list of rotor holder blocks that can go in the spot for the multi previews, but Rhino/JS didn't want to supply it in the correct type.
+         * I was forced to create a new predicate from scratch and use the candidates from that instead. It's ugly, but it works!
+         */
+        () => Predicates.ability(PartAbility.ROTOR_HOLDER, GTValues.ALL_TIERS.slice(GTValues.IV)).common[0].candidates.get()
+        )
+    )
+        .addTooltips(Component.translatable("gtceu.multiblock.pattern.clear_amount_3"))
+        .addTooltips(Component.translatable("gtceu.multiblock.pattern.error.limited.1", GTValues.VN[GTValues.IV]))
+        .setExactLimit(1)
+
+    // High Pressure Steam Turbine
+    event.create("high_pressure_steam_turbine", "multiblock")
+        .machine((holder) => new LargeTurbineMachine(holder, GTValues.IV))
+        .rotationState(RotationState.ALL)
+        .recipeTypes("hp_steam_turbine")
+        .recipeModifiers((machine, recipe) => LargeTurbineMachine.recipeModifier(machine, recipe))
+        .appearanceBlock(GTBlocks.CASING_TITANIUM_TURBINE)
+        .generator(true)
+        .pattern(definition => FactoryBlockPattern.start(/* RelativeDirection.FRONT, RelativeDirection.UP, RelativeDirection.RIGHT */)
+            .aisle("CCCFFC", "CHHC#C", "CCCFFC")
+            .aisle("CHHC#C", "RGGGGE", "CHHC#C")
+            .aisle("CCCFFC", "C@HC#C", "CCCFFC")
+            .where("@", Predicates.controller(Predicates.blocks(definition.get())))
+            .where("G", Predicates.blocks(GTBlocks.CASING_TITANIUM_GEARBOX.get()))
+            .where("C", Predicates.blocks(GTBlocks.CASING_TITANIUM_TURBINE.get()))
+            .where("F", Predicates.frames(GTMaterials.HSSG))
+            .where("R", rotorHolderPredicate)
+            .where("E", Predicates.abilities(PartAbility.OUTPUT_ENERGY).setExactLimit(1))
+            .where("H", Predicates.blocks(GTBlocks.CASING_TITANIUM_TURBINE.get())
+                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
+                .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
+                .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1)))
+            .where("#", Predicates.any())
+            .build())
+        .tooltips(
+            Component.translatable("gtceu.universal.tooltip.base_production_eut", GTValues.V[GTValues.IV] * 2),
+            Component.translatable("gtceu.multiblock.turbine.efficiency_tooltip", GTValues.VNF[GTValues.IV]))
+        .workableCasingModel("gtceu:block/casings/mechanic/machine_casing_turbine_titanium",
+            "gtceu:block/multiblock/generator/large_steam_turbine")
 })
 
 
