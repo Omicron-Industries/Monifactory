@@ -110,7 +110,7 @@ if (Platform.isLoaded("advanced_ae")) {
 
         event.remove({ id: "advanced_ae:quantumstorage256" })
         event.recipes.gtceu.assembler("quantum_storage")
-            .itemInputs("advanced_ae:quantum_unit", "2x megacells:cell_component_256m", "#gtceu:circuits/luv")
+            .itemInputs("advanced_ae:quantum_unit", "megacells:cell_component_256m", "#gtceu:circuits/luv")
             .inputFluids("gtceu:advanced_soldering_alloy 144")
             .itemOutputs("advanced_ae:quantum_storage_256")
             .duration(10 * 20)
@@ -128,7 +128,7 @@ if (Platform.isLoaded("advanced_ae")) {
         event.recipes.gtceu.assembly_line("quantum_storage_multiplier")
             .itemInputs(
                 "16x gtceu:neutronium_frame",
-                "32x advanced_ae:quantum_storage_256",
+                "2x advanced_ae:quantum_storage_256",
                 "24x #gtceu:circuits/uhv",
                 "4x gtceu:uv_field_generator",
                 "2x kubejs:heart_of_a_universe",
