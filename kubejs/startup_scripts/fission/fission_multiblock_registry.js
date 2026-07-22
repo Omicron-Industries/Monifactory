@@ -30,7 +30,6 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .or(Predicates.abilities(PartAbility.EXPORT_ITEMS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.IMPORT_FLUIDS).setPreviewCount(1))
                 .or(Predicates.abilities(PartAbility.EXPORT_FLUIDS).setPreviewCount(1))
-                .or(Predicates.abilities(PartAbility.MAINTENANCE).setExactLimit(1))
                 .or(Predicates.abilities(PhoenixPartAbility.FISSION_SCRAM).setMaxGlobalLimited(1).setPreviewCount(0))
                 .or(Predicates.abilities(PhoenixPartAbility.FISSION_SENSOR).setMaxGlobalLimited(3).setPreviewCount(0))
             )
