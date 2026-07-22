@@ -85,6 +85,9 @@ config/defaultworldtype/world-presets.txt
 !/config/NuclearCraft/fission.toml
 !/config/NuclearCraft/materials.toml
 
+# Phoenix Fission
+!/config/phoenix_fission.yaml
+
 # SolarFlux
 !/config/solarflux
 

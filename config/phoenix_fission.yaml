@@ -1,0 +1,163 @@
+fission:
+  # Enable the base Fission Reactor multiblock.
+  fissionReactorEnabled: true
+
+  # Enable the High-Performance Breeder Reactor multiblock.
+  breederReactorEnabled: true
+
+  # Enable the Molten Salt Reactor multiblock.
+  msrEnabled: true
+
+  # The Fluid that poisons the Molten Salt Reactor's efficiency
+  msrReactorPoisoningOutputFluid: minecraft:lava
+
+  # Enable the Nuke block.
+  nukeEnabled: true
+
+  # If false, the reactor produces no EU/t at all.
+  # Heat, fuel consumption, and cooling still function normally.
+  # Use this for heat-only or steam-only pack configs.
+  enableDirectEUOutput: false
+
+  # If false, coolant fluid is never consumed or required (cooling still reduces heat via temperature differential).
+  coolingRequiresCoolant: true
+
+  # If true, every installed cooler type contributes its cooling each tick. If false, only one coolant loop is processed.
+  coolantUsageAdditive: true
+
+  # If true, all installed blanket types are processed each breeding cycle. If false, only the highest-tier blanket is used.
+  blanketUsageAdditive: true
+
+  heatModel:
+    # Safe operating temperature threshold in Kelvin.
+    # Meltdown sequence begins when the reactor temperature exceeds this value.
+    # Actual HU threshold = maxSafeTempK * heatCapacity (scales with multi size).
+    # Default 1000 K matches old 100 000 HU behaviour for a 100-block reactor.
+    maxSafeTempK: 1000.0
+
+    # Heat floor - reactor cannot cool below ambient temperature.
+    minHeat: 0.0
+
+    # Absolute temperature ceiling in Kelvin to prevent numeric overflow.
+    # Actual HU ceiling = maxHeatClampTempK * heatCapacity (scales with multi size).
+    # Default 2500 K matches old 250 000 HU behaviour for a 100-block reactor.
+    maxHeatClampTempK: 2500.0
+
+    # Heat capacity per structural block (HU per Kelvin per block).
+    # Temperature (K) = storedHeat (HU) / heatCapacity.
+    # heatCapacity = blockCount * heatCapacityPerBlock.
+    # Larger reactors therefore have a higher HU buffer at the same K threshold,
+    # giving bigger structures a greater safety margin without changing the K thresholds.
+    heatCapacityPerBlock: 1.0
+
+    # Ambient temperature in Kelvin.
+    # Initialized as room temperature (293K). Passive cooling pulls toward this value.
+    ambientTemperatureHU: 293.0
+
+    # Fuel heat conductivity constant (C_fuel).
+    # Scales how effectively your fuel rods emit thermal energy.
+    # Formula: baseHeatRate * ((totalRods+1)/2) * (1 + temp/maxSafeTemp)^2 * parallels * moderatorBonus * reactivity * C_fuel
+    fuelConductivity: 1.0
+
+    # Exponent scaling for the fuel consumption rate curve. Xefyr recommends: 4.0
+    fuelConsumptionExponent: 4.0
+
+    # Exponent scaling for the fuel heat generation curve. Xefyr recommends: 2.0
+    heatGenerationExponent: 2.0
+
+    # Active cooling conductivity constant (C_active).
+    # Scales how effectively coolant cells transfer heat away.
+    # Formula: (coolantTemp - reactorTemp) * parallels * C_active
+    activeCoolingConductivity: 0.25
+
+    # Passive cooling conductivity constant (C_passive).
+    # Scales the thermal leak rate to ambient air.
+    # Formula: (ambientTemp - reactorTemp) * C_passive
+    passiveCoolingConductivity: 0.005
+
+    # How quickly the reactor ramps reactivity up or down when control state changes, as a fraction per tick.
+    # 1.0 = instant transition, 0.02 = ~1-second ramp, 0.005 = ~4-second ramp.
+    reactivityRampRatePerTick: 0.02
+
+  # Base GT recipe parallels contributed by each installed fuel rod.
+  parallelsPerFuelRod: 1
+
+  # Hard ceiling on total GT recipe parallels.
+  maxParallels: 256
+
+  euOutput:
+    # EU generated per unit of heat activity per tick.
+    euPerHeatUnit: 1.0
+
+    # Optional EU/t ceiling. Set <= 0 for no cap.
+    maxGeneratedEUt: 0
+
+    # Minimum EU/t while the reactor is active. Set 0 to allow zero output.
+    minGeneratedEUt: 1024
+
+    # Exponent for the heat-to-power curve. 1 = linear, >1 rewards high heat.
+    powerCurveExponent: 2.0
+
+    # Heat fraction of maxSafeHeat at which EU generation begins. 0.0 = always generating.
+    powerStartFraction: 0.0
+
+  # Maximum bonus percent applied to heat production and EU output after long continuous run. Example: 30 = up to +30%.
+  burnBonusMaxPercent: 30.0
+
+  # Seconds of continuous running required to reach the full burn bonus.
+  burnBonusRampSeconds: 1200.0
+
+  # Maximum total fuel discount percent that moderators can contribute.
+  maxFuelDiscountPercent: 90
+
+  # Maximum total EU/heat boost percent that moderators can contribute.
+  maxEUBoostPercent: 100
+
+  meltdown:
+    # Grace period in seconds when heat barely exceeds maxSafeHeat.
+    baseGraceSeconds: 60.0
+
+    # Minimum grace period in seconds when heat is far above maxSafeHeat.
+    minGraceSeconds: 15.0
+
+    # Severity multiplier - higher values shorten the grace period faster as heat rises.
+    excessHeatSeverity: 1.0
+
+    # If true, dropping back below maxSafeHeat cancels the meltdown timer.
+    clearTimerWhenSafe: true
+
+  explosion:
+    # If true, replaces blocks with air/fire. If false, uses standard GT explosion (drops items).
+    destructiveExplosion: false
+
+    # Base explosion power added before fuel scaling.
+    baseExplosionPower: 2.0
+
+    # Additional explosion power per installed fuel rod.
+    # Power = baseExplosionPower + (rodCount * perRod) + (avgFuelHeat * perHeatUnit).
+    explosionPowerPerFuelRod: 1.5
+
+    # Additional explosion power per unit of average fuel rod base heat production.
+    explosionPowerPerHeatUnit: 0.001
+
+  # Cube radius in blocks. Total affected volume is (2r+1)^3.
+  nukeCubeRadius: 16
+
+  # Hard cap on nuke cube radius to prevent insane values.
+  nukeCubeRadiusCap: 48
+
+  # Fuse time in ticks before the nuke detonates (20 ticks = 1 second).
+  nukeFuseTicks: 120
+
+  # Blocks processed per tick during the nuke wipe pass.
+  nukeBatchPerTick: 4000
+
+  # Skip blocks containing a BlockEntity (machines, chests, etc.) during the nuke wipe.
+  nukeSkipBlockEntities: true
+
+  # Skip blocks in unloaded chunks (prevents forced chunk loading).
+  nukeSkipUnloadedChunks: true
+
+  # Replace destroyed blocks with fire instead of air.
+  nukeReplaceWithFire: false
+
