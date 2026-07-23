@@ -270,6 +270,9 @@ ItemEvents.tooltip(tooltip => {
         "packagedexexcrafting:epic_crafter"
     ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
 
+    // Battery Buffer tooltips
+    tooltip.add(/gtceu:.*_battery_buffer_.*/, Text.translatable("block.gtceu.battery_buffer.tooltip"))
+
     // Tempad
     if (Platform.isLoaded("tempad")) {
         tooltip.add("tempad:tempad", Text.translatable("tempad.tempad.tooltip"))
