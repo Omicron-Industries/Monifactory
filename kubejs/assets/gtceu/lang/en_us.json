@@ -601,4 +601,6 @@
     "material.gtceu.titanite_slurry": "Titanite Slurry",
     "material.gtceu.malachite_slurry": "Malachite Slurry",
     "material.gtceu.olivine_slurry": "Olivine Slurry"
+    "block.gtceu.battery_buffer.tooltip": "§cEach battery provides 2A input and 1A output!"
+}
 }
