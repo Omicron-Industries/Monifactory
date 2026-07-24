@@ -1,8 +1,8 @@
 {
-    "block.functionalstorage.framed_storage_controller": "Framed Drawer Controller",
-    "block.functionalstorage.storage_controller": "Drawer Controller",
-    "item.functionalstorage.diamond_upgrade": "Aluminium Upgrade",
-    "item.functionalstorage.gold_upgrade": "Steel Upgrade",
-    "item.functionalstorage.netherite_upgrade": "Stainless Steel Upgrade",
-    "item.functionalstorage.copper_upgrade": "Bronze Upgrade"
+    "block.functionalstorage.framed_storage_controller": "Ierāmētas atviltknes kontrolieris",
+    "block.functionalstorage.storage_controller": "Atvilktnes kontrolieris",
+    "item.functionalstorage.diamond_upgrade": "Alumīnija uzlabojums",
+    "item.functionalstorage.gold_upgrade": "Tērauda uzlabojums",
+    "item.functionalstorage.netherite_upgrade": "Nerūsoša tērauda uzlabojums",
+    "item.functionalstorage.copper_upgrade": "Bronzas uzlabojums"
 }

@@ -13,5 +13,17 @@
     "tag.item.moni.input_bus": "アイテム搬入バス",
     "tag.item.moni.input_hatch": "液体搬入ハッチ",
     "tag.item.moni.output_hatch": "液体搬出ハッチ",
-    "tag.item.moni.coins": "コイン"
+    "tag.item.moni.coins": "コイン",
+    "tag.item.moni.muffler_hatch": "マフラーハッチ",
+    "tag.item.moni.parallel_hatch": "並列制御ハッチ",
+    "tag.item.moni.rotor_holder": "ローターホルダー",
+    "tag.item.moni.substation_input_hatch": "大型蓄電器用エネルギーハッチ",
+    "tag.item.moni.maintenance_hatch": "メンテナンスハッチ",
+    "tag.item.moni.energy_hatch": "エネルギーハッチ",
+    "tag.item.moni.substation_output_hatch": "蓄電器用ダイナモハッチ",
+    "tag.item.gtceu.circuits/universal": "ユニバーサル回路",
+    "tag.item.moni.laser_target_hatch": "レーザー照準ハッチ",
+    "tag.item.moni.laser_source_hatch": "レーザー照射ハッチ",
+    "tag.item.moni.dynamo_hatch": "ダイナモハッチ",
+    "tag.item.moni.heating_coil": "EBFコイル"
 }

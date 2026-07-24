@@ -2868,7 +2868,8 @@
     "moni.quest.7C5CE283172CD952.title": "Ender Fluid Link",
     "moni.quest.7C5CE283172CD952.subtitle": "All out of spaghetti?",
     "moni.quest.7C5CE283172CD952.description1": "The &6Ender Fluid Link&r is a cover that you can place on the sides of machines.",
-    "moni.quest.7C5CE283172CD952.description2": "When interacted with, it opens a GUI that allows you to specify which channel it will interact with, either pushing or pulling fluids from all other links on the same frequency.",    "moni.quest.4288A253129B1E75.description1": "If you wish to create an off-Earth base or otherwise conduct operations longer than a mining trip, &3Ad Astra&r offers a few machines that will be helpful or even necessary to your objective.",
+    "moni.quest.7C5CE283172CD952.description2": "When interacted with, it opens a GUI that allows you to specify which channel it will interact with, either pushing or pulling fluids from all other links on the same frequency.",
+    "moni.quest.4288A253129B1E75.description1": "If you wish to create an off-Earth base or otherwise conduct operations longer than a mining trip, &3Ad Astra&r offers a few machines that will be helpful or even necessary to your objective.",
     "moni.quest.4288A253129B1E75.description2": "1. The &3Oxygen Distibutor&r. When supplied with &aRedstone Flux (RF)&r and &9Oxygen&r, this machine creates a breathable volume of air around it which expands to fit the environment it's contained in up to six thousand (6000) blocks in volume. It also prevents &9Water&r in this area from freezing, and is therefore necessary for the operation of a &3Rock Crusher&r.",
     "moni.quest.4288A253129B1E75.description3": "2. The &3Oxygen Sensor&r. This block emits a redstone signal and displays a green light when it's in an oxygenated environment. Check one before you take your helmet off to ensure you don't suffocate!",
     "moni.quest.4288A253129B1E75.description4": "3. The &3Gravity Normalizer&r. This machine unlocks in &5EV&r, and when supplied with &aRF&r it allows you to control gravity nearby similar to the Oxygen Distributor. If the low gravity on &bThe Moon&r or in &bOrbit&r bothers you, then give it a whirl!",
@@ -3310,5 +3311,16 @@
     "moni.quest.31EE6E41F509A8CF.title": "Pocket-sized pocket dimensions",
     "moni.quest.31EE6E41F509A8CF.description2": "Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks.",
     "moni.quest.31EE6E41F509A8CF.description1": "These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing.",
-    "moni.task.3901C623BB44467A": "Any #moni:output_hatch"
+    "moni.task.3901C623BB44467A": "Any #moni:output_hatch",
+    "moni.task.52571DFFC6CB4D85": "Any Qualifying ZPM Machine",
+    "moni.task.01AFBFF0D9532F27": "Any Qualifying EV Machine",
+    "moni.task.04444449DCA34F30": "Any Qualifying LV Machine",
+    "moni.task.4E566F8EF19BE210": "Any Qualifying IV Machine",
+    "moni.task.553B2A8341469AE8": "Any Qualifying LuV Machine",
+    "moni.task.1FEF896D9E8055D5": "Any Qualifying HV Machine",
+    "moni.task.4BB940DD5512BB62": "Any Qualifying MAX Machine",
+    "moni.task.2A5B75587F16782E": "Any Qualifying MV Machine",
+    "moni.task.22F57F4F6D41251B": "Any Qualifying UEV Machine",
+    "moni.task.2A4AFA6140DAFF4D": "Any Qualifying UHV Machine",
+    "moni.task.088FB8F945D0645E": "Any Qualifying UV Machine"
 }
