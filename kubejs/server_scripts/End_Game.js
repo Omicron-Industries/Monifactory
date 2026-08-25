@@ -5,19 +5,19 @@
 ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembler("neutron_emitter_plutonium")
-        .itemInputs("1x nuclearcraft:heavy", "1x gtceu:dense_rhodium_plated_palladium_plate",)
+        .itemInputs("1x phoenix_fission:heavy_radiation_shielding", "1x gtceu:dense_rhodium_plated_palladium_plate",)
         .inputFluids("gtceu:americium 432")
         .itemOutputs("kubejs:neutron_emitter")
         .duration(1600)
         .EUt(GTValues.VA[GTValues.UV])
     event.recipes.gtceu.assembler("neutron_emitter_curium")
-        .itemInputs("1x nuclearcraft:heavy", "1x gtceu:dense_rhodium_plated_palladium_plate",)
+        .itemInputs("1x phoenix_fission:heavy_radiation_shielding", "1x gtceu:dense_rhodium_plated_palladium_plate",)
         .inputFluids("gtceu:curium 288")
         .itemOutputs("kubejs:neutron_emitter")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.UV])
     event.recipes.gtceu.assembler("neutron_emitter_californium")
-        .itemInputs("1x nuclearcraft:heavy", "1x gtceu:dense_rhodium_plated_palladium_plate",)
+        .itemInputs("1x phoenix_fission:heavy_radiation_shielding", "1x gtceu:dense_rhodium_plated_palladium_plate",)
         .inputFluids("gtceu:californium 144")
         .itemOutputs("kubejs:neutron_emitter")
         .duration(1200)
@@ -299,7 +299,7 @@ ServerEvents.recipes(event => {
         B: "kubejs:stabilized_plutonium",
         C: "kubejs:stabilized_californium",
         F: "gtceu:zpm_field_generator",
-        P: "nuclearcraft:plate_elite",
+        P: "phoenix_fission:heavy_radiation_shielding",
         Z: "#gtceu:circuits/zpm"
     })
 

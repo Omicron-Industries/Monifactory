@@ -1,5 +1,0 @@
-[{
-  "type": "purpur",
-  "heat": 95,
-  "placement_rule": ["#nuclearcraft:fission_reactor_casing", "iron_heat_sink"]
-}]

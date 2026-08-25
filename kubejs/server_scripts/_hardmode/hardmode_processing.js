@@ -357,7 +357,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.large_chemical_reactor("tributyl_phosphate")
             .inputFluids("gtceu:phosphoryl_chloride 1000", "gtceu:butanol 3000")
             .outputFluids("gtceu:tributyl_phosphate 1000")
-            .duration(600).EUt(23040)
+            .duration(600).EUt(GTValues.VA[GTValues.IV])
 
         // Rare Earth
         event.recipes.gtceu.electrolyzer("electrolyzing_rare_earth_with_tributyl_phosphate")

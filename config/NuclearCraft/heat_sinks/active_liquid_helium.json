@@ -1,5 +1,0 @@
-[{
-  "type": "active_liquid_helium",
-  "heat": 420,
-  "placement_rule": ["redstone_heat_sink", "#nuclearcraft:fission_reactor_casing"]
-}]

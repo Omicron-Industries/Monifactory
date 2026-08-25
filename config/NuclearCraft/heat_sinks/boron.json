@@ -1,5 +1,0 @@
-[{
-  "type": "boron",
-  "heat": 160,
-  "placement_rule": ["quartz_heat_sink", "#nuclearcraft:fission_reactor_casing|#nuclearcraft:moderators"]
-}]

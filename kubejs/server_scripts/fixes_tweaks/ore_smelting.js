@@ -4,8 +4,6 @@
 
 ServerEvents.recipes(event => {
     // Remove overlapping ore blocks to ingot/dust recipes
-    event.remove({ id: /^minecraft:nuclearcraft_\w+_ore$/ })
-
     event.remove({ id: /^minecraft:\w+_from_smelting_[\w_]+_ore$/ })
     event.remove({ id: /^minecraft:\w+_from_blasting_[\w_]+_ore$/ })
 

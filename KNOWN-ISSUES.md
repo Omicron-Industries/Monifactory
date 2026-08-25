@@ -55,10 +55,6 @@ The most frequent offenders are listed below:
 
 GTM is being actively developed. You may run into bugs, but these are addressed relatively quickly. Please ensure you aren't creating a duplicate report before notifying the devs of an issue or submitting a bug report to the Github page above.
 
-**Issues with [Nuclearcraft: Neoteric](https://github.com/igentuman/NuclearCraft-Neoteric)**
-
-Nuclearcraft: Neoteric is not in a great state. Many features (including some aspects of fission reactors!) are incomplete or buggy
-
 **Issues with [LaserIO](https://github.com/Direwolf20-MC/LaserIO/issues)**
 
 Occasionally, there can be the occasional issue or feature request you may have. Send these to LaserIO directly. 

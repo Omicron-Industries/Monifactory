@@ -1,0 +1,5 @@
+{
+    "ldlib": {
+        "connection": "phoenix_fission:block/casings/lead_lined/casing_ctm"
+    }
+}

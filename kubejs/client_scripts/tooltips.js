@@ -215,24 +215,6 @@ ItemEvents.tooltip(tooltip => {
         })
     })
 
-    // NuclearCraft
-    tooltip.add("nuclearcraft:rhodochrosite_dust", "§eMnCO₃");
-    tooltip.add("nuclearcraft:tough_alloy_ingot", "§eLiFeB");
-    tooltip.add("nuclearcraft:ferroboron_ingot", "§eFe₄B");
-    tooltip.add("nuclearcraft:hard_carbon_ingot", "§eFe₃C");
-    tooltip.add("nuclearcraft:uranium_233", "§eU²³³");
-    tooltip.add("nuclearcraft:plutonium_238", "§ePu²³⁸");
-    tooltip.add("nuclearcraft:plutonium_242", "§ePu²⁴²");
-    tooltip.add("nuclearcraft:neptunium_236", "§eNp²³⁶");
-    tooltip.add("nuclearcraft:neptunium_237", "§eNp²³⁷");
-    tooltip.add("nuclearcraft:americium_241", "§eAm²⁴¹");
-    tooltip.add("nuclearcraft:americium_242", "§eAm²⁴²");
-    tooltip.add("nuclearcraft:americium_243", "§eAm²⁴³");
-    tooltip.add("nuclearcraft:curium_243", "§eCm²⁴³");
-    tooltip.add("nuclearcraft:curium_245", "§eCm²⁴⁵");
-    tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
-    tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
-
     tooltip.addAdvanced(["/^kubejs:.+infinity_dust_block$/", "kubejs:infinity_dust_block"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.infinity_dust_block.tooltip"))
     })

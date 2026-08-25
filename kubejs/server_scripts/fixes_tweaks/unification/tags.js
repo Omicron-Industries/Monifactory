@@ -79,10 +79,16 @@ ServerEvents.tags("item", event => {
     // For stonecutting Marble
     event.add("moni:marble", /^(gtceu:(marble|polished_marble|marble_bricks|cracked_marble_bricks|chiseled_marble|marble_tile|marble_small_tile|marble_windmill_a|marble_windmill_b|small_marble_bricks|square_marble_bricks))$/)
 
-    // We're making these Nuclearcraft storage blocks function solely as moderators, so they should not have the tags
-    event.remove("forge:storage_blocks", ["nuclearcraft:beryllium_block", "nuclearcraft:graphite_block"]);
-    event.remove("forge:storage_blocks/beryllium", "nuclearcraft:beryllium_block");
-    event.remove("forge:storage_blocks/graphite", "nuclearcraft:graphite_block");
+    event.add("forge:plastic_plates", "gtceu:polyvinyl_chloride_plate")
+    event.add("forge:plastic_plates", "gtceu:polybenzimidazole_plate")
+    event.add("forge:plastic_plates", "gtceu:polyethylene_plate")
+    event.add("forge:plastic_plates", "gtceu:polytetrafluoroethylene_plate")
+    event.add("forge:plastic_plates", "gtceu:polyethyl_cyanoacrylate_plate")
+    event.add("forge:plastic_plates", "gtceu:polyether_ether_ketone_plate")
+
+    event.add("forge:rubber_plates", "gtceu:silicone_rubber_plate")
+    event.add("forge:rubber_plates", "gtceu:styrene_butadiene_rubber_plate")
+    event.add("forge:rubber_plates", "gtceu:rubber_plate")
 
     // AE2 P2P Attunements
     event.add("mae2:p2p_attunements/pattern_p2p_tunnel", "expatternprovider:pattern_modifier");
@@ -99,11 +105,6 @@ ServerEvents.tags("block", event => {
     event.add("minecraft:bamboo_plantable_on", compacted_sand);
     event.add("minecraft:azalea_grows_on", compacted_sand);
     event.add("framedblocks:camo_sustain_plant", compacted_sand);
-
-    // We're making these Nuclearcraft storage blocks function solely as moderators, so they should not have the tags
-    event.remove("forge:storage_blocks", ["nuclearcraft:beryllium_block", "nuclearcraft:graphite_block"]);
-    event.remove("forge:storage_blocks/beryllium", "nuclearcraft:beryllium_block");
-    event.remove("forge:storage_blocks/graphite", "nuclearcraft:graphite_block");
 
     unifyChisel(event);
 })

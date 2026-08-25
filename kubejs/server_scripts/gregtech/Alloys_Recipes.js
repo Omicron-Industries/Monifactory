@@ -72,23 +72,12 @@ ServerEvents.recipes(event => {
     alloySmeltingVariant(
         ["4x #forge:dusts/steel", "4x #forge:ingots/steel"],
         ["#forge:dusts/boron"],
-        "5x nuclearcraft:ferroboron", 15, GTValues.VA[GTValues.MV], true);
+        "5x gtceu:ferroboron", 15, GTValues.VA[GTValues.MV], true);
 
     alloySmeltingVariant(
-        ["#forge:ingots/ferroboron"],
-        ["#forge:dusts/lithium"],
-        "2x nuclearcraft:tough_alloy", 15, GTValues.VHA[GTValues.LV], false);
-
-    alloySmeltingVariant(
-        ["#forge:dusts/diamond", "#forge:gems/diamond"],
-        ["3x #forge:dusts/steel", "3x #forge:ingots/steel"],
-        "nuclearcraft:hard_carbon", 15, GTValues.VA[GTValues.HV], true);
-
-    event.recipes.gtceu.alloy_smelter("kubejs:fission_reactor_glass")
-        .itemInputs("nuclearcraft:fission_reactor_casing", "#forge:glass/colorless")
-        .itemOutputs("nuclearcraft:fission_reactor_glass")
-        .duration(50)
-        .EUt(GTValues.VHA[GTValues.LV])
+        ["5x #forge:dusts/ferroboron", "5x #forge:ingots/ferroboron"],
+        ["2x #forge:dusts/lithium"],
+        "7x gtceu:tough_alloy", 15, GTValues.VHA[GTValues.LV], false);
 
     event.remove({ output: "minecraft:netherite_ingot" })
     event.recipes.gtceu.alloy_smelter("kubejs:netherite_ingot")
