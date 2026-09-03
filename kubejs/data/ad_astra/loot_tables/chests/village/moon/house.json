@@ -1,143 +1,175 @@
 {
     "type": "minecraft:chest",
     "pools": [
-      {
-        "bonus_rolls": 0.0,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 12.0,
-                  "min": 6.0
+        {
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10,
+                                "min": 6
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "ad_astra:moon_sand",
+                    "weight": 25
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "ad_astra:moon_sand",
-            "weight": 40
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 3.0,
-                  "min": 1.0
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 3,
+                                "min": 1
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:iron_nugget",
+                    "weight": 7
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "minecraft:iron_nugget",
-            "weight": 10
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 12.0,
-                  "min": 3.0
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 12,
+                                "min": 3
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:iron_ingot",
+                    "weight": 7
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "minecraft:iron_ingot",
-            "weight": 10
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 4.0,
-                  "min": 2.0
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 4,
+                                "min": 2
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "ad_astra:cheese",
+                    "weight": 15
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "ad_astra:cheese",
-            "weight": 15
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 2.0,
-                  "min": 1.0
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 2,
+                                "min": 1
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:emerald",
+                    "weight": 5
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "minecraft:emerald",
-            "weight": 5
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 4.0,
-                  "min": 2.0
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 4,
+                                "min": 2
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:bread",
+                    "weight": 10
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "minecraft:bread",
-            "weight": 10
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 9.0,
-                  "min": 3.0
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 9,
+                                "min": 3
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:soul_torch",
+                    "weight": 10
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "minecraft:soul_torch",
-            "weight": 10
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 4.0,
-                  "min": 2.0
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:soul_lantern",
+                    "weight": 7,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 2,
+                                "max": 6
+                            }
+                        }
+                    ]
                 },
-                "function": "minecraft:set_count"
-              }
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 4,
+                                "min": 2
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:coal",
+                    "weight": 10
+                }
             ],
-            "name": "minecraft:coal",
-            "weight": 10
-          }
-        ],
-        "rolls": {
-          "type": "minecraft:uniform",
-          "max": 8.0,
-          "min": 3.0
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 8,
+                "min": 3
+            }
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ad_astra:chests/village/moon/aeronos"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "ad_astra:chests/village/moon/strophar"
+                }
+            ]
         }
-      }
     ]
-  }
+}

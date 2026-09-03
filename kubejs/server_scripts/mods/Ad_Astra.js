@@ -472,6 +472,7 @@ ServerEvents.tags("fluid", event => {
     event.add("ad_astra:fuel", "gtceu:rocket_fuel")
     event.add("ad_astra:fuel", "gtceu:jean_gasoline")
     event.add("ad_astra:efficient_fuel", "gtceu:jean_gasoline")
+    event.add("ad_astra:efficient_fuel", "ad_astra:fuel")
 })
 
 ServerEvents.tags("item", event => {

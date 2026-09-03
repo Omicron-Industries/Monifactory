@@ -1,119 +1,292 @@
 {
     "type": "minecraft:chest",
     "pools": [
-      {
-        "bonus_rolls": 0.0,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "ad_astra:launch_pad",
-            "weight": 2
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 4.0,
-                  "min": 2.0
+        {
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 4,
+                                "min": 2
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:emerald",
+                    "weight": 5
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "minecraft:emerald",
-            "weight": 5
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 6.0,
-                  "min": 3.0
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 6,
+                                "min": 3
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:coal",
+                    "weight": 10
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "minecraft:coal",
-            "weight": 10
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 2.0,
-                  "min": 1.0
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 2,
+                                "min": 1
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:diamond",
+                    "weight": 3
                 },
-                "function": "minecraft:set_count"
-              }
-            ],
-            "name": "minecraft:diamond",
-            "weight": 3
-          },
-          {
-            "type": "minecraft:item",
-            "functions": [
-              {
-                "add": false,
-                "count": {
-                  "type": "minecraft:uniform",
-                  "max": 5.0,
-                  "min": 2.0
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 5,
+                                "min": 2
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:redstone",
+                    "weight": 5
                 },
-                "function": "minecraft:set_count"
-              }
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10,
+                                "min": 2
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "gtceu:fluorite_gem",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 8,
+                                "min": 2
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "gtceu:vanadium_ingot",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10,
+                                "min": 2
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "gtceu:graphite_dust",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 20,
+                                "min": 4
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "ae2:certus_quartz_crystal",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:rutile_gem",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:bronze_plate",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 32
+                            }
+                        }
+                    ]
+                }
             ],
-            "name": "minecraft:redstone",
-            "weight": 5
-          }
-        ],
-        "rolls": {
-          "type": "minecraft:uniform",
-          "max": 9.0,
-          "min": 3.0
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 9,
+                "min": 3
+            }
+        },
+        {
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:launch_pad",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:fuel_bucket",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bucket",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:gas_tank",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{BotariumData:{StoredFluids:[{Amount:500L,Fluid:\"gtceu:oxygen\"}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:space_helmet",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:space_suit",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{BotariumData:{StoredFluids:[{Amount:750,Fluid:\"gtceu:oxygen\"}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:space_pants",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:space_boots",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:ti_69",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:radio",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "ad_astra:zip_gun",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{BotariumData:{StoredFluids:[{Amount:1000L,Fluid:\"gtceu:oxygen\"}]}}"
+                        }
+                    ]
+                }
+            ],
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 2,
+                "min": 1
+            }
+        },
+        {
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:iron_plate",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 32
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:steel_plate",
+                    "weight": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 6,
+                                "max": 32
+                            }
+                        }
+                    ]
+                }
+            ],
+            "rolls": {
+                "type": "minecraft:binomial",
+                "n": 2,
+                "p": 0.3
+            }
         }
-      },
-      {
-        "bonus_rolls": 0.0,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:bucket",
-            "weight": 10
-          },
-          {
-            "type": "minecraft:item",
-            "name": "ad_astra:space_helmet",
-            "weight": 5
-          },
-          {
-            "type": "minecraft:item",
-            "name": "ad_astra:space_suit",
-            "weight": 5
-          },
-          {
-            "type": "minecraft:item",
-            "name": "ad_astra:space_pants",
-            "weight": 5
-          },
-          {
-            "type": "minecraft:item",
-            "name": "ad_astra:space_boots",
-            "weight": 5
-          }
-        ],
-        "rolls": {
-          "type": "minecraft:uniform",
-          "max": 2.0,
-          "min": 1.0
-        }
-      }
     ]
-  }
+}

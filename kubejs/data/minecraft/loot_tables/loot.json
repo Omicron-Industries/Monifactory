@@ -1,0 +1,533 @@
+{
+    "_comment": "For Venus Pygro structure chests",
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:binomial",
+                "n": 2,
+                "p": 0.3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:vibrant_thruster",
+                    "weight": 30,
+                    "functions": []
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:reinforced_thruster",
+                    "weight": 35
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:electrum_micro_miner_frame",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:electrum_micro_miner_core",
+                    "weight": 40
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:signalum_micro_miner_frame",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:signalum_micro_miner_core",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:warp_core",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:warp_controller",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "thermal:energy_cell_frame",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "thermal:fluid_cell_frame",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:gravitation_engine_unit",
+                    "weight": 10
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 5
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_nugget",
+                    "weight": 100,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "weight": 100,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 12
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:quartz",
+                    "weight": 40,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 9
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:quartz_bricks",
+                    "weight": 30,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 16
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:prismarine_crystals",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:prismarine_shard",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:basalt",
+                    "weight": 40,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 40
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:polished_basalt",
+                            "weight": 30,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ],
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 2,
+                                        "max": 20
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:polished_blackstone_bricks",
+                            "weight": 30,
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 2,
+                                        "max": 20
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:alternatives",
+                            "children": [
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:warped_stem",
+                                    "weight": 30,
+                                    "conditions": [
+                                        {
+                                            "condition": "minecraft:random_chance",
+                                            "chance": 0.7
+                                        }
+                                    ],
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_count",
+                                            "count": {
+                                                "min": 3,
+                                                "max": 21
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:warped_hyphae",
+                                    "weight": 30,
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_count",
+                                            "count": {
+                                                "min": 2,
+                                                "max": 16
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:warped_planks",
+                                    "weight": 25,
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_count",
+                                            "count": {
+                                                "min": 6,
+                                                "max": 30
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:obsidian",
+                            "weight": 20,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.7
+                                }
+                            ],
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 2,
+                                        "max": 8
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:crying_obsidian",
+                            "weight": 20,
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 2,
+                                        "max": 6
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:crimson_fungus",
+                            "weight": 100,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ],
+                            "functions": []
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:warped_fungus",
+                            "weight": 100
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "position": {
+                                    "y": {
+                                        "min": 130
+                                    }
+                                },
+                                "structure": "ad_astra:pygro_village"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_scrap",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:monazite_gem",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:lithium_chloride_dust",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:rhodium_ingot",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:gallium_ingot",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:yttrium_dust",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "gtceu:dilithium_gem",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "type": "minecraft:binomial",
+                "n": 2,
+                "p": 0.2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_helmet",
+                    "weight": 40
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_chestplate",
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_leggings",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_boots",
+                    "weight": 45
+                },
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:golden_sword",
+                            "weight": 80,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:crossbow",
+                            "weight": 50,
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

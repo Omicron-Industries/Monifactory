@@ -12,7 +12,6 @@ global.fluidNukeList = [
     "ad_astra:oxygen",
     "ad_astra:hydrogen",
     "ad_astra:oil",
-    "ad_astra:fuel",
     "ad_astra:cryo_fuel",
 
     // Ender IO
