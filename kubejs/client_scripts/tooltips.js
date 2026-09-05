@@ -279,6 +279,21 @@ ItemEvents.tooltip(tooltip => {
         tooltip.add("tempad:tempad", Text.translatable("tempad.tempad.tooltip"))
     }
 
+    // Advanced AE
+    if (Platform.isLoaded("advanced_ae")) {
+        tooltip.add([
+            "advanced_ae:water_breathing_card",
+            "advanced_ae:auto_feeding_card",
+            "advanced_ae:hp_buffer_card",
+            "advanced_ae:evasion_card",
+            "advanced_ae:regeneration_card",
+            "advanced_ae:strength_card",
+            "advanced_ae:attack_speed_card",
+            "advanced_ae:luck_card",
+            "advanced_ae:swim_speed_card"
+        ], Text.translatable("advanced_ae.disabled_card.tooltip"))
+    }
+
     // Integrated Dynamics & Tunnels
     if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
         tooltip.add("integrateddynamics:on_the_dyanmics_of_integration", Text.translatable("integrateddynamics.on_the_dynamics_of_integration.tooltip"))
