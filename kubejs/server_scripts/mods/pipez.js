@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
         "N  "
     ], {
         P: "#forge:ingots/iron",
-        R: "redstone_arsenal:obsidian_rod",
+        R: "#forge:rods/long/lead",
         N: "#forge:nuggets/iron"
     }).id("pipez:wrench")
 
