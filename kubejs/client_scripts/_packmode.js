@@ -7,7 +7,6 @@ const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;
 const doCompacting = !!global.doCompacting;
 const doConverters = !!global.doConverters;
-const doEUP2P = !!global.doEUP2P
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
 const doHarderRecipes = !!global.doHarderRecipes;

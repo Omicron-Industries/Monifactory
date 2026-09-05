@@ -14,6 +14,7 @@ ItemEvents.tooltip(tooltip => {
     }
 
     tooltip.add("kubejs:microminer_t2half", Text.translatable("item.kubejs.microminer_t2half.desc"))
+    tooltip.add("kubejs:microminer_t3half", Text.translatable("item.kubejs.microminer_t3half.desc"))
     tooltip.add("kubejs:microminer_t4half", Text.translatable("item.kubejs.microminer_t4half.desc"))
 
     tooltip.addAdvanced(["/kubejs:stabilized_microminer/"], (item, adv, text) => {
@@ -230,8 +231,6 @@ ItemEvents.tooltip(tooltip => {
     tooltip.add("nuclearcraft:americium_243", "§eAm²⁴³");
     tooltip.add("nuclearcraft:curium_243", "§eCm²⁴³");
     tooltip.add("nuclearcraft:curium_245", "§eCm²⁴⁵");
-    tooltip.add("nuclearcraft:berkelium_247", "§eBk²⁴⁷");
-    tooltip.add("nuclearcraft:berkelium_248", "§eBk²⁴⁸");
     tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
     tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
 
@@ -272,8 +271,16 @@ ItemEvents.tooltip(tooltip => {
         "packagedexexcrafting:epic_crafter"
     ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
 
+    // Battery Buffer tooltips
+    tooltip.add(/gtceu:.*_battery_buffer_.*/, Text.translatable("block.gtceu.battery_buffer.tooltip"))
+
     // Tempad
     if (Platform.isLoaded("tempad")) {
         tooltip.add("tempad:tempad", Text.translatable("tempad.tempad.tooltip"))
+    }
+
+    // Integrated Dynamics & Tunnels
+    if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
+        tooltip.add("integrateddynamics:on_the_dyanmics_of_integration", Text.translatable("integrateddynamics.on_the_dynamics_of_integration.tooltip"))
     }
 })

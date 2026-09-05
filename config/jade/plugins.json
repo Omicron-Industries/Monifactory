@@ -9,7 +9,6 @@
     "color_info": true,
     "sculk_vat_xp_info": true,
     "omnic_synth_info": true,
-    "virtual_particle_synth_info": true,
     "microverse_info": true
   },
   "minecraft": {
@@ -117,6 +116,9 @@
   "telepastries": {
     "bites": true
   },
+  "phoenix_fission": {
+    "fission_machine_info": true
+  },
   "functionalstorage": {
     "armory": true
   },
@@ -165,6 +167,9 @@
     "hud.rgb16": true,
     "hud": true,
     "hud.redstone": true
+  },
+  "pipez": {
+    "pipe": true
   },
   "waystones": {
     "waystone": true

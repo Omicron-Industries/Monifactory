@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
     // Controller Recipes
     event.recipes.gtceu.assembly_line("antimatter_manipulator")
         .itemInputs("monilabs:dimensional_stabilization_netherite_casing", "#gtceu:circuits/uv", "2x gtceu:uv_field_generator", "2x gtceu:double_activated_netherite_plate", "2x gtceu:uv_emitter", "2x gtceu:uv_electric_pump", "3x gtceu:neutronium_normal_fluid_pipe", "32x gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire")
-        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:omnium 576", "gtceu:polybenzimidazole 1152")
+        .inputFluids("gtceu:living_soldering_alloy 1152", "gtceu:omnium 576", "gtceu:polyethyl_cyanoacrylate 1152")
         .itemOutputs("gtceu:antimatter_manipulator")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UV])
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.assembly_line("antimatter_collider")
         .itemInputs("6x monilabs:dimensional_stabilization_netherite_casing", "8x #gtceu:circuits/uv", "16x gtceu:double_activated_netherite_plate", "24x gtceu:hsse_frame", "4x gtceu:uv_field_generator", "6x gtceu:uv_emitter", "10x gtceu:uv_electric_pump", "10x gtceu:superconducting_coil", "10x gtceu:neutronium_large_fluid_pipe", "64x gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire", "64x gtceu:fine_enriched_naquadah_trinium_europium_duranide_wire")
-        .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:omnium 1152", "gtceu:polybenzimidazole 2304")
+        .inputFluids("gtceu:living_soldering_alloy 2304", "gtceu:omnium 1152", "gtceu:polyethyl_cyanoacrylate 2304")
         .itemOutputs("gtceu:antimatter_collider")
         .duration(600)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -74,10 +74,10 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.anti_collider("annihilation_neutronium")
         .inputFluids("kubejs:antimatter_fuel 1", "gtceu:neutronium 1")
         .duration(1)
-        .EUt(-536870912)
+        .EUt(-GTValues.V[GTValues.UIV] * 16)
 
     event.recipes.gtceu.anti_collider("annihilation_infinity")
         .inputFluids("kubejs:antimatter_fuel 1", "gtceu:infinity 1")
         .duration(1)
-        .EUt(-536870912 * 16)
+        .EUt(-GTValues.V[GTValues.OpV] * 256)
 })

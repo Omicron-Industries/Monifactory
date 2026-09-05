@@ -21,7 +21,6 @@ ServerEvents.recipes(event => {
         ["minecraft:prismarine_shard", "minecraft:prismarine_crystals", GTValues.VA[GTValues.MV], "prismarine_crystals"],
         ["minecraft:prismarine_crystals", "minecraft:prismarine_shard", GTValues.VA[GTValues.MV], "prismarine_shards"],
         ["gtceu:steel_ingot", "gtceu:damascus_steel_ingot", GTValues.VA[GTValues.MV], "damascus_steel"],
-        ["gtceu:diamatine_block", "kubejs:starry_diamond_block", GTValues.VA[GTValues.MV], "starry_diamond"],
         ["minecraft:dried_kelp", "minecraft:wither_rose", GTValues.VA[GTValues.LV], "wither_rose"],
         ["gtceu:plant_ball", "minecraft:kelp", GTValues.VA[GTValues.LV], "kelp"],
         ["minecraft:obsidian", "minecraft:crying_obsidian", GTValues.VA[GTValues.LV], "crying_obsidian"],
@@ -85,7 +84,7 @@ ServerEvents.recipes(event => {
         event.recipes.gtceu.atomic_reconstruction(`kubejs:${level}_universal_circuit`)
             .itemInputs(`#gtceu:circuits/${level}`)
             .itemOutputs(`kubejs:${level}_universal_circuit`)
-            .EUt(32)
+            .EUt(GTValues.VA[GTValues.LV])
             .duration(5)
     })
 

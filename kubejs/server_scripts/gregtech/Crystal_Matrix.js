@@ -29,6 +29,12 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     // Crystal Matrix Line
+    event.recipes.gtceu.forge_hammer("crystal_seeds_from_exquisite_diamond")
+        .itemInputs("gtceu:exquisite_diamond_gem")
+        .chancedOutput("kubejs:crystal_seeds", 500, 0)
+        .duration(200)
+        .EUt(GTValues.VA[GTValues.EV])
+
     const wafers = [
         ["gtceu:", "naquadah_wafer"],
         ["gtceu:", "neutronium_wafer"],
@@ -36,66 +42,74 @@ ServerEvents.recipes(event => {
     ]
 
     wafers.forEach((wafer, index) => {
-        event.recipes.gtceu.assembler(`raw_substrate_${wafer[1]}`)
-            .itemInputs(wafer[0] + wafer[1], "4x gtceu:gold_foil", "4x gtceu:graphene_dust", "32x gtceu:diamond_dust")
+        event.recipes.gtceu.assembler(`raw_substrate_from_${wafer[1]}`)
+            .itemInputs(wafer[0] + wafer[1], "4x gtceu:gold_foil", "4x gtceu:graphene_dust", "2x gtceu:cobalt_dust", "1x kubejs:crystal_seeds")
             .inputFluids("gtceu:nichrome 288")
-            .itemOutputs(Item.of("kubejs:raw_nanotube_substrate", 4 ** (index + 1)))
-            .duration(320)
-            .EUt((4 ** index) * GTValues.VA[GTValues.LuV])
+            .itemOutputs("kubejs:nanotube_substrate")
+            .duration(480)
+            .EUt(GTValues.VA[GTValues.ZPM])
             .cleanroom(CleanroomType.CLEANROOM)
     })
 
-    event.recipes.gtceu.forming_press("graphite_electrode")
-        .notConsumable("gtceu:rod_extruder_mold")
-        .itemInputs("1x gtceu:graphite_dust", "1x gtceu:small_cobalt_dust")
-        .itemOutputs("kubejs:graphite_electrode")
-        .duration(7 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
-        .addMaterialInfo(true)
+    const carbon_containing_fluids = [
+        { name: "acetylene", amount: 1 },
+        { name: "ethylene", amount: 1.5 },
+        { name: "ethanol", amount: 2 },
+        { name: "methane", amount: 2.5 }
+    ]
+    carbon_containing_fluids.forEach( fluid_type => {
+        event.recipes.gtceu.autoclave(`nanotube_growing_in_${fluid_type.name}`)
+            .itemInputs("kubejs:nanotube_substrate", "2x gtceu:diamond_dust")
+            .inputFluids(Fluid.of("gtceu:" + fluid_type.name, 1000 * fluid_type.amount))
+            .chancedOutput("kubejs:grown_nanotube_substrate", 7000, 0)
+            .chancedOutput("kubejs:failed_nanotube_substrate", 3000, 0)
+            .chancedItemOutputLogic(ChanceLogic.XOR)
+            .duration(2880 * fluid_type.amount)
+            .EUt(GTValues.VA[GTValues.IV])
+            .cleanroom(CleanroomType.CLEANROOM)
+    })
 
-    // Fortunately, no need to fix materialInfos because the difference is too small to affect recycling recipes
-    event.replaceInput({ id: /^gtceu:shaped\/\w+_arc_/, not: [{id: "gtceu:shaped/lv_arc_furnace"}, {id: "gtceu:shaped/mv_arc_furnace"}, {id: "gtceu:shaped/hv_arc_furnace"}] }, "gtceu:graphite_dust", "kubejs:graphite_electrode")
+    event.recipes.gtceu.macerator("recycle_failed_nanotube_substrate")
+        .itemInputs("kubejs:failed_nanotube_substrate")
+        .itemOutputs("kubejs:crystal_seeds")
+        .chancedOutput("gtceu:gold_dust", 9500, 0)
+        .chancedOutput("2x gtceu:cobalt_dust", 9000, 0)
+        .chancedOutput("2x gtceu:nichrome_dust", 9500, 0)
+        .duration(800)
+        .EUt(GTValues.VA[GTValues.LV])
 
-    event.recipes.gtceu.arc_furnace("nanotube_arcing")
-        .chancedInput("2x kubejs:graphite_electrode", 1200, 0)
-        .inputFluids("gtceu:helium 50")
-        .itemOutputs("kubejs:nanotube_soot")
-        .duration(40)
-        .EUt(GTValues.VA[GTValues.EV])
-
-    event.recipes.gtceu.autoclave("substrate_preparation")
-        .itemInputs("kubejs:raw_nanotube_substrate", "kubejs:nanotube_soot")
-        .itemOutputs("kubejs:prepared_nanotube_substrate")
-        .inputFluids("gtceu:distilled_water 100")
-        .duration(15 * 20)
-        .EUt(GTValues.VA[GTValues.HV])
-        .cleanroom(CleanroomType.CLEANROOM)
-
-    event.recipes.gtceu.chemical_reactor("nanotube_growing")
-        .itemInputs("kubejs:prepared_nanotube_substrate")
-        .itemOutputs("kubejs:grown_nanotube_substrate")
-        .inputFluids("gtceu:acetylene 750", "gtceu:nitrogen 1000")
-        .duration(120)
-        .EUt(GTValues.VA[GTValues.LuV])
-
-    event.recipes.gtceu.laser_engraver("nanotube_separation")
-        .notConsumable("#forge:lenses/red")
+    event.recipes.gtceu.cutter("nanotube_separation")
         .itemInputs("kubejs:grown_nanotube_substrate")
-        .itemOutputs("kubejs:carbon_nanotubes")
-        .duration(120)
-        .EUt(GTValues.VA[GTValues.IV])
+        .itemOutputs("4x kubejs:carbon_nanotubes")
+        .chancedOutput("kubejs:nanotube_substrate", 9500, 0)
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.EV])
         .cleanroom(CleanroomType.CLEANROOM)
+
+    event.recipes.gtceu.macerator("recycle_nanotubes")
+        .itemInputs("kubejs:carbon_nanotubes")
+        .itemOutputs("gtceu:small_carbon_dust")
+        .chancedOutput("kubejs:crystal_seeds", 1500, 0)
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.ULV])
+
+    event.recipes.gtceu.macerator("recycle_nanotube_mesh")
+        .itemInputs("kubejs:adhered_matrix_mesh")
+        .itemOutputs("gtceu:small_carbon_dust", "gtceu:small_nether_star_dust")
+        .chancedOutput("kubejs:crystal_seeds", 1500, 0)
+        .duration(240)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     event.recipes.gtceu.chemical_bath("nanotube_bathing")
         .itemInputs("kubejs:carbon_nanotubes")
         .itemOutputs("kubejs:adhered_matrix_mesh")
-        .inputFluids("gtceu:nether_star 144")
-        .duration(120)
+        .inputFluids("gtceu:nether_star 36")
+        .duration(60)
         .EUt(GTValues.VA[GTValues.LuV])
         .cleanroom(CleanroomType.CLEANROOM)
 
     event.recipes.gtceu.electric_blast_furnace("matrix_blasting")
-        .itemInputs("kubejs:adhered_matrix_mesh")
+        .itemInputs("4x kubejs:adhered_matrix_mesh")
         .itemOutputs("monilabs:hot_crystal_matrix_ingot")
         .duration(750)
         .EUt(GTValues.VA[GTValues.ZPM])
@@ -103,7 +117,7 @@ ServerEvents.recipes(event => {
         .circuit(1)
 
     event.recipes.gtceu.electric_blast_furnace("matrix_blasting_gas")
-        .itemInputs("kubejs:adhered_matrix_mesh")
+        .itemInputs("4x kubejs:adhered_matrix_mesh")
         .itemOutputs("monilabs:hot_crystal_matrix_ingot")
         .inputFluids("gtceu:krypton 10")
         .duration(500)
@@ -112,8 +126,27 @@ ServerEvents.recipes(event => {
         .circuit(2)
 
     event.recipes.gtceu.macerator("matrix_macerating")
-        .itemInputs("kubejs:adhered_matrix_mesh")
+        .itemInputs("4x kubejs:adhered_matrix_mesh")
         .itemOutputs("monilabs:crystal_matrix_dust")
         .duration(0.6 * 20)
         .EUt(GTValues.VA[GTValues.LV])
+
+    event.recipes.gtceu.forge_hammer("matrix_mesh_into_foil")
+        .itemInputs("kubejs:adhered_matrix_mesh")
+        .itemOutputs("monilabs:crystal_matrix_foil")
+        .duration(0.6 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+
+    // Old Electrode stuff which is kinda cool I think
+    event.recipes.gtceu.forming_press("graphite_electrode")
+        .notConsumable("gtceu:rod_extruder_mold")
+        .itemInputs("2x gtceu:graphite_dust", "1x gtceu:small_cobalt_dust")
+        .itemOutputs("kubejs:graphite_electrode")
+        .duration(7 * 20)
+        .EUt(GTValues.VA[GTValues.MV])
+        .addMaterialInfo(true)
+
+    // Fortunately, no need to fix materialInfos because the difference is too small to affect recycling recipes
+    event.replaceInput({ id: /^gtceu:shaped\/\w+_arc_/, not: [{id: "gtceu:shaped/lv_arc_furnace"}, {id: "gtceu:shaped/mv_arc_furnace"}, {id: "gtceu:shaped/hv_arc_furnace"}] }, "gtceu:graphite_dust", "kubejs:graphite_electrode")
+
 })

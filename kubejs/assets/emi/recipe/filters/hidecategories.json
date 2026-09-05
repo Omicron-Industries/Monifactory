@@ -153,9 +153,6 @@
             "category": "thermal:crystallizer"
         },
         {
-            "category": "thermal:crucible"
-        },
-        {
             "category": "thermal:chiller"
         },
         {

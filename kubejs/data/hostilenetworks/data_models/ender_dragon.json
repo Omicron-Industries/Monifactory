@@ -15,10 +15,6 @@
     },
     "trivia": "hostilenetworks.trivia.ender_dragon",
     "fabricator_drops": [{
-            "item": "minecraft:dragon_breath",
-            "count": 2
-        },
-        {
             "item": "kubejs:dragon_lair_data",
             "count": 1
         },

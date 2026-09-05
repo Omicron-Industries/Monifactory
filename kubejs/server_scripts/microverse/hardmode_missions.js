@@ -103,6 +103,30 @@ ServerEvents.recipes(event => {
             .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
     })
 
+    // T3.5
+    // A series of missions damaging Microverses by a flat 40% over 20s
+    microverse_mission(event, "3half", 1, 20, GTValues.VA[GTValues.EV], 100).forEach(builder => {
+        builder
+            .damageRate(100)
+            .requiredMicroverse(3) // Shattered
+    })
+
+    microverse_mission(event, "3half", 1, 20, GTValues.VA[GTValues.IV], 100).forEach(builder => {
+        builder
+            .damageRate(100)
+            .requiredMicroverse(4) // Corrupted
+    })
+
+    if(doHostileMicroverse) {
+        // Hostile-type Microverses instead get pacified
+        microverse_mission(event, "3half", 1, 20, GTValues.VA[GTValues.EV], 100).forEach(builder => {
+            builder
+                .damageRate(-500)
+                .requiredMicroverse(2) // Hostile
+                .updateMicroverse(1) // Normal
+        })
+    }
+
     // T4.5
     microverse_mission(event, "4half", 2, undefined, undefined, 100).forEach(builder => {
         builder

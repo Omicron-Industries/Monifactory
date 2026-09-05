@@ -15,7 +15,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
         event.create("pyromellitic_dianhydride")
             .dust()
-            .fluid()
             .color(0xB48C63)
             .components("10x carbon", "2x hydrogen", "6x oxygen")
             .formula("C6H2(C2O3)2");
@@ -44,6 +43,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .fluid()
             .color(0x915A23)
             .components("1x pyromellitic_dianhydride", "1x oxydianiline")
-            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.STICKY)
+            .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.STICKY)
     }
 })

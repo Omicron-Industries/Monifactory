@@ -42,4 +42,8 @@ ServerEvents.recipes(event => {
 
     // Remove Thermal gunpowder recipes - they use empty tags a Mixer recipe already exists
     event.remove({ id: /^thermal:gunpowder/ })
+
+    // Remove recipes relating to Americium Plasma that aren't caught by the nukelist for some reason
+    event.remove({ id: "gtceu:plasma_generator/americium" })
+    event.remove({ id: "gtceu:fusion_reactor/plutonium_241_and_hydrogen_gas_to_americium_plasma" })
 })

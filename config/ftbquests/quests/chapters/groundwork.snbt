@@ -269,7 +269,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["61AD3760E271B431"]
+			dependencies: ["61CC4AD6FAE15248"]
 			description: [
 				"{moni.quest.5F109188BE4D9767.description1}"
 				""
@@ -369,7 +369,12 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["5B0200011DF8E1B6"]
+			dependencies: [
+				"5B0200011DF8E1B6"
+				"45FA4FF0B16B3879"
+				"5F109188BE4D9767"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"{moni.quest.61AD3760E271B431.description1}"
 				""
@@ -377,29 +382,13 @@
 				""
 				"{moni.quest.61AD3760E271B431.description3}"
 				""
-				"{@pagebreak}"
 				"{moni.quest.61AD3760E271B431.description4}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.61AD3760E271B431.description5}"
 				""
 				"{moni.quest.61AD3760E271B431.description6}"
-				""
-				"{moni.quest.61AD3760E271B431.description7}"
-				""
-				"{moni.quest.61AD3760E271B431.description8}"
-				""
-				"{@pagebreak}"
-				"{moni.quest.61AD3760E271B431.description9}"
-				""
-				"{moni.quest.61AD3760E271B431.description10}"
-				""
-				"{moni.quest.61AD3760E271B431.description11}"
-				""
-				"{moni.quest.61AD3760E271B431.description12}"
-				""
-				"{moni.quest.61AD3760E271B431.description13}"
 			]
-			icon: "gtceu:tiny_gallium_arsenide_dust"
+			icon: "gtceu:small_gallium_dust"
 			id: "61AD3760E271B431"
 			shape: "hexagon"
 			size: 1.25d
@@ -2200,11 +2189,18 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			tasks: [{
-				id: "2F9C846B8ABD620C"
-				item: "laserio:energy_overclocker_card_tier_3"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2F9C846B8ABD620C"
+					item: "laserio:energy_overclocker_card_tier_3"
+					type: "item"
+				}
+				{
+					id: "71545946FA1828C9"
+					item: "pipez:advanced_upgrade"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.53205E306EE07F6F.title}"
 			x: 5.75d
 			y: 10.0d
@@ -2337,10 +2333,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"61AD3760E271B431"
-				"64ABEB1EF9F81EA4"
-			]
+			dependencies: ["64ABEB1EF9F81EA4"]
 			description: [
 				"{moni.quest.45FA4FF0B16B3879.description1}"
 				""
@@ -2497,40 +2490,6 @@
 			title: "{moni.quest.7C5CE283172CD952.title}"
 			x: 10.25d
 			y: 2.0d
-		}
-		{
-			dependencies: [
-				"5357A16B5BF62C96"
-				"4F4D0F44B615AF4C"
-			]
-			description: [
-				"{moni.quest.7ABC7057BC2E8CE4.description1}"
-				""
-				"{moni.quest.7ABC7057BC2E8CE4.description2}"
-			]
-			icon: "gtceu:oxalic_acid_solution_bucket"
-			id: "7ABC7057BC2E8CE4"
-			rewards: [{
-				id: "63338D828354FAAE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "7D564A2C88DE58B3"
-					item: "gtceu:oxalic_acid_solution_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6E5CE9387C5205B1"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
-			title: "{moni.quest.7ABC7057BC2E8CE4.title}"
-			x: 6.0d
-			y: 5.5d
 		}
 		{
 			dependencies: ["1EBF9D9EADB7C451"]
@@ -2693,6 +2652,39 @@
 			title: "{moni.quest.31EE6E41F509A8CF.title}"
 			x: 5.0d
 			y: 0.75d
+		}
+		{
+			dependencies: ["61AD3760E271B431"]
+			description: [
+				"{moni.quest.2B7B623879D6E94A.description1}"
+				""
+				"{moni.quest.2B7B623879D6E94A.description2}"
+				""
+				"{moni.quest.2B7B623879D6E94A.description3}"
+				"{@pagebreak}"
+				"{moni.quest.2B7B623879D6E94A.description4}"
+				""
+				"{moni.quest.2B7B623879D6E94A.description5}"
+				""
+				"{moni.quest.2B7B623879D6E94A.description6}"
+				"{@pagebreak}"
+				"{moni.quest.2B7B623879D6E94A.description7}"
+				""
+				"{moni.quest.2B7B623879D6E94A.description8}"
+				""
+				"{moni.quest.2B7B623879D6E94A.description9}"
+				""
+				"{moni.quest.2B7B623879D6E94A.description10}"
+			]
+			icon: "gtceu:lv_ore_washer"
+			id: "2B7B623879D6E94A"
+			tasks: [{
+				id: "0B7B0FFB3FEE3F79"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.2B7B623879D6E94A.title}"
+			x: -1.25d
+			y: -12.5d
 		}
 	]
 	title: "{moni.chapter.0E9D23BEF4A86E57.title}"

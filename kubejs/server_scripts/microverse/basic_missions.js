@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:power_thruster")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "32x gtceu:raw_molybdenite",
+                "16x gtceu:raw_molybdenite",
                 "32x ad_astra:moon_sand",
                 "24x gtceu:raw_dilithium",
                 "32x gtceu:raw_fluorite",
@@ -155,9 +155,9 @@ ServerEvents.recipes(event => {
             .requiredMicroverse(1) // Normal
             .itemOutputs(
                 "64x gtceu:raw_scheelite",
-                "64x gtceu:raw_scheelite",
+                "32x gtceu:raw_scheelite",
                 "64x gtceu:raw_tungstate",
-                "64x gtceu:raw_tungstate",
+                "32x gtceu:raw_tungstate",
             )
     })
 

@@ -4,9 +4,9 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:hsse_frame", "6x gtceu:tungsten_carbide_plate", "4x minecraft:nether_star", "2x gtceu:iv_sensor", "#gtceu:circuits/iv", "8x #forge:storage_blocks/diamatine", Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT(), Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT())
         .inputFluids("gtceu:advanced_soldering_alloy 576")
         .itemOutputs("kubejs:dischargement_core")
-        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT()).EUt(480).duration(1200))
+        ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack(Item.of("kubejs:bathyal_energy_core", "{Damage:2000000}").weakNBT()).EUt(GTValues.VA[GTValues.HV]).duration(1200))
         .duration(1200)
-        .EUt(30720)
+        .EUt(GTValues.VA[GTValues.LuV])
         .addMaterialInfo(true)
 
     // event.recipes.extendedcrafting.shaped_table("extendedcrafting:auto_flux_crafter", [

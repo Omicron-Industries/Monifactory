@@ -16,13 +16,13 @@ ServerEvents.recipes(event => {
                 .itemInputs("#forge:ingots/iron", carbonSource)
                 .itemOutputs("gtceu:steel_ingot")
                 .duration(150)
-                .EUt(16)
+                .EUt(GTValues.VHA[GTValues.LV])
 
             event.recipes.gtceu.alloy_smelter(`steel_wrought_${carbonSource.replace(/\W/g, "")}`) // The replace line removes non alphanumeric chars, regex is magic
                 .itemInputs("#forge:ingots/wrought_iron", carbonSource)
                 .itemOutputs("gtceu:steel_ingot")
                 .duration(100)
-                .EUt(16)
+                .EUt(GTValues.VHA[GTValues.LV])
 
             event.shapeless("gtceu:steel_dust", ["gtceu:wrought_iron_dust", carbonSource])
         })
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:sticky_resin")
             .itemOutputs("gtceu:rubber_plate")
             .duration(20)
-            .EUt(8)
+            .EUt(GTValues.VA[GTValues.ULV])
 
         // Alternative LV motor recipe
         event.remove({ id: "gtceu:shaped/electric_motor_lv_steel" })
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
             .itemInputs("2x gtceu:tin_single_cable", "2x gtceu:iron_rod", "gtceu:magnetic_iron_rod", "4x gtceu:fine_copper_wire")
             .itemOutputs("gtceu:lv_electric_motor")
             .duration(100)
-            .EUt(30)
+            .EUt(GTValues.VA[GTValues.LV])
 
         // Alternative LV piston recipe
         event.shaped("gtceu:lv_electric_piston", [
@@ -145,31 +145,7 @@ ServerEvents.recipes(event => {
         })
     }
 
-    if(doHarderRecipes) {
-        event.recipes.gtceu.shaped("thermal:dynamo_numismatic", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:zeron_100_plate",
-            C: "ironfurnaces:diamond_furnace",
-            D: "enderio:vibrant_gear",
-            E: "kubejs:redstone_transmission_coil"
-        }).addMaterialInfo()
-    } else {
-        event.recipes.gtceu.shaped("thermal:dynamo_numismatic", [
-            " A ",
-            "BCB",
-            "DED"
-        ], {
-            A: "kubejs:excitationcoil",
-            B: "gtceu:vibrant_alloy_plate",
-            C: "ironfurnaces:diamond_furnace",
-            D: "enderio:vibrant_gear",
-            E: "kubejs:redstone_transmission_coil"
-        }).addMaterialInfo()
-
+    if(!doHarderRecipes) {
         // Make clay electrolysis an LV recipe
         event.remove({ id: "gtceu:electrolyzer/decomposition_electrolyzing_clay" })
         event.recipes.gtceu.electrolyzer("clay_electrolysis_lv")
@@ -177,7 +153,7 @@ ServerEvents.recipes(event => {
             .itemOutputs("2x gtceu:sodium_dust", "2x gtceu:silicon_dust", "gtceu:lithium_dust", "2x gtceu:aluminium_dust")
             .outputFluids("minecraft:water 6000")
             .duration(364)
-            .EUt(15)
+            .EUt(GTValues.VHA[GTValues.LV])
 
         // Monified distill tower
         event.recipes.gtceu.shaped("gtceu:distillation_tower", [

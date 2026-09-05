@@ -26,6 +26,7 @@ global.fluidNukeList = [
     "enderio:vapor_of_levity",
 
     // GregTech Modern
+    "gtceu:americium_plasma",
     "gtceu:molten_kanthal",
     "gtceu:iron_ii_chloride",   // Removing the FluidProperty causes errors in GT's hard-coded recipes
 

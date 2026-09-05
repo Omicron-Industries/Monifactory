@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         "TTT"
     ], {
         I: "gtceu:double_dark_soularium_plate",
-        C: "laserio:energy_overclocker_card_tier_8",
+        C: "gtceu:cryolobus_frame",
         F: "enderio:weather_crystal",
         T: Item.of("kubejs:vibrant_thruster").weakNBT()
     }).id("kubejs:ironjetpacks/thrusters/dark_soularium")

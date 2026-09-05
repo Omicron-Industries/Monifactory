@@ -1371,75 +1371,34 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["7FA0E6F3B466576C"]
+			dependencies: [
+				"7FA0E6F3B466576C"
+				"39D4174834F3879D"
+			]
 			description: [
 				"{moni.quest.08948A23B3A17923.description1}"
 				""
 				"{moni.quest.08948A23B3A17923.description2}"
 				""
 				"{moni.quest.08948A23B3A17923.description3}"
+				""
+				"{moni.quest.08948A23B3A17923.description4}"
 			]
-			icon: "laserio:energy_overclocker_card_tier_1"
 			id: "08948A23B3A17923"
-			rewards: [
-				{
-					id: "188CE9F6FC9651C5"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "39E06530B218DD26"
-					item: "laserio:laser_wrench"
-					type: "item"
-				}
-				{
-					id: "7FB65345A2F557BA"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 15
-							}
-						}
-						id: "laserio:card_holder"
-					}
-					type: "item"
-				}
-				{
-					id: "7CC1F9ADC8629E4B"
-					item: {
-						Count: 1
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "laserio:laseriobook"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "188CE9F6FC9651C5"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
-			tasks: [
-				{
-					count: 2L
-					id: "08FD1127B1241CA4"
-					item: "laserio:laser_node"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "0DB1F6DB193A74AB"
-					item: { Count: 2, id: "laserio:card_energy" }
-					type: "item"
-				}
-				{
-					id: "543B7790E7B6ECF4"
-					item: "laserio:energy_overclocker_card_tier_1"
-					type: "item"
-				}
-			]
+			tasks: [{
+				count: 6L
+				id: "39A6A20C833ABC94"
+				item: "pipez:energy_pipe"
+				type: "item"
+			}]
 			title: "{moni.quest.08948A23B3A17923.title}"
-			x: 0.0d
+			x: 0d
 			y: 12.5d
 		}
 		{
@@ -1867,7 +1826,7 @@
 			description: [
 				"{moni.quest.17E92ED356B6737F.description1}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description1\"},{\"color\":\"blue\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description2\"},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description3\"},{\"color\":\"green\",\"underlined\":true,\"translate\":\"moni.quest.17E92ED356B6737F.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description.hover_text4\"}}},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description5\"},{\"color\":\"red\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description6\"}]"
+				"[\"\",{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description1\"},{\"color\":\"blue\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description2\"},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description3\"},{\"color\":\"green\",\"underlined\":true,\"translate\":\"moni.quest.17E92ED356B6737F.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description.hover_text4\"}}},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description5\"}]"
 				""
 				"{moni.quest.17E92ED356B6737F.description3}"
 				""

@@ -41,77 +41,82 @@ const solder_rules = [
 
     // UV+ recipes exclusively use Living Solder
     [(javaRecipe) => {
+        /** @type {GTJSONRecipe} */
         let recipe = JSON.parse(javaRecipe.json.toString())
         let eut = recipe.tickInputs?.eu?.length
             ? recipe.tickInputs.eu[0].content
-            : null
-        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            : 0
+        let hasSolder = recipe.inputs?.fluid?.some(i =>
             i.content.value.some(v => "tag" in v
                 ? v.tag === "forge:soldering_alloy"
                 : v.fluid === "gtceu:soldering_alloy"
             )
-        )
+        ) ?? false
         return eut > GTValues.V[GTValues.ZPM] && hasSolder
     }, true, 3, 4],
 
     // ZPM recipes can use Lead-Free Soldering alloy or Living Solder
     [(javaRecipe) => {
+        /** @type {GTJSONRecipe} */
         let recipe = JSON.parse(javaRecipe.json.toString())
         let eut = recipe.tickInputs?.eu?.length
             ? recipe.tickInputs.eu[0].content
-            : null
-        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            : 0
+        let hasSolder = recipe.inputs?.fluid?.some(i =>
             i.content.value.some(v => "tag" in v
                 ? v.tag === "forge:soldering_alloy"
                 : v.fluid === "gtceu:soldering_alloy"
             )
-        )
+        ) ?? false
         return eut > GTValues.V[GTValues.LuV] && hasSolder
     }, true, 2, 4],
 
     // IV+ recipes use Advanced Soldering Alloy
     [(javaRecipe) => {
+        /** @type {GTJSONRecipe} */
         let recipe = JSON.parse(javaRecipe.json.toString())
         let eut = recipe.tickInputs?.eu?.length
             ? recipe.tickInputs.eu[0].content
-            : null
-        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            : 0
+        let hasSolder = recipe.inputs?.fluid?.some(i =>
             i.content.value.some(v => "tag" in v
                 ? v.tag === "forge:soldering_alloy"
                 : v.fluid === "gtceu:soldering_alloy"
             )
-        )
+        ) ?? false
         return eut > GTValues.V[GTValues.EV] && hasSolder
     }, true, 2, 3],
 
     // EV recipes use Soldering Alloy or Lead-Free Soldering Alloy
     // Would be [1, 3] if not for the fact that that creates an infinite loop
     [(javaRecipe) => {
+        /** @type {GTJSONRecipe} */
         let recipe = JSON.parse(javaRecipe.json.toString())
         let eut = recipe.tickInputs?.eu?.length
             ? recipe.tickInputs.eu[0].content
-            : null
-        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            : 0
+        let hasSolder = recipe.inputs?.fluid?.some(i =>
             i.content.value.some(v => "tag" in v
                 ? v.tag === "forge:soldering_alloy"
                 : v.fluid === "gtceu:soldering_alloy"
             )
-        )
+        ) ?? false
         return eut > GTValues.V[GTValues.HV] && hasSolder
     }, false, 2, 3],
 
     // Remove HV+ recipes that use Liquid Tin
     [(javaRecipe) => {
+        /** @type {GTJSONRecipe} */
         let recipe = JSON.parse(javaRecipe.json.toString())
         let eut = recipe.tickInputs?.eu?.length
             ? recipe.tickInputs.eu[0].content
-            : null
-        let hasSolder = recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
+            : 0
+        let hasSolder = recipe.inputs?.fluid?.some(i =>
             i.content.value.some(v => "tag" in v
                 ? v.tag === "forge:tin"
                 : v.fluid === "gtceu:tin"
             )
-        )
+        ) ?? false
         return eut > GTValues.V[GTValues.MV] && hasSolder
     }, true, 0, 0],
 
@@ -230,6 +235,7 @@ function parseRecipe(recipe) {
      */
     let register = (registerEvent, newRecipeId, machineName) => {
         /** @type {Internal.GTRecipeSchema$GTRecipeJS} */
+        // @ts-expect-error
         let newRecipe = registerEvent.recipes.gtceu[machineName](newRecipeId).duration(duration)
 
         if(newInputItems) for (let i of newInputItems)

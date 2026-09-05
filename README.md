@@ -98,6 +98,7 @@ To spice up your Monifactory experience, you can add any of the following mods t
 6. [Modular Routers](https://www.curseforge.com/minecraft/mc-mods/modular-routers)
 7. [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
 8. [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
+9. [Integrated Dynamics](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics) and [Integrated Tunnels](https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels) (Needs both installed)
 
 ### Dedicated Server Installation:
 1. Download a server.zip file from the releases page.

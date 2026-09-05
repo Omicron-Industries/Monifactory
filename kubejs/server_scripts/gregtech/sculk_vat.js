@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         .notConsumable("minecraft:sculk_catalyst")
         .itemInputs("1x minecraft:stone")
         .outputFluids("gtceu:sculk 288")
-        .xpRange(56000, 88000)
+        .xpRange(12000, 56000)
         .duration(20 * 3)
         .EUt(GTValues.VA[GTValues.HV])
 
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
         .itemInputs("2x kubejs:petri_dish_sculk", "kubejs:hadal_shard")
         .inputFluids("gtceu:mutagen 250", "gtceu:glycerol 1250", "gtceu:isoprene 750")
         .outputFluids("gtceu:hadal_sculk 2000")
-        .xpRange(100000, 120000)
+        .xpRange(96000, 120000)
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
