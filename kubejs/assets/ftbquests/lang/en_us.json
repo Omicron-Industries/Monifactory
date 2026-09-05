@@ -1369,6 +1369,8 @@
     "moni.quest.37BE175EEC2ABD59.description6": "A &3Bridge Component&r may be installed, allowing the HPCA to connect to &3Network Switches&r.",
     "moni.quest.37BE175EEC2ABD59.description7": "The energy consumption of the HPCA is determined by the sum of its parts. 'Max Energy' refers to the power draw while the HPCA is computing, while 'Upkeep Energy' refers to the power draw when the HPCA is idling.",
     "moni.quest.37BE175EEC2ABD59.title": "&2High Performance Computing Array",
+    "moni.quest.37DC6C37EA24BF4D.description1": "&6Sculk Agar&r is a specialized growth medium. It's necessary for advanced applications of Sculk, including &6Sculk Energy Cores&r and &6self-healing biomaterials&r.",
+    "moni.quest.37DC6C37EA24BF4D.description2": "Production requires several odd materials you may not have automatic production for yet, so you'd benefit from starting this sooner rather than later.",
     "moni.quest.37FD045CC0AEB11B.title": "Element ???: Naquadah",
     "moni.quest.383FADC5E8BC4E91.description1": "You can turn &6Plant Balls&r and other various &6sugary crops&r into &9Biomass&r with a &3Brewery&r. Biomass is the first step towards making Plastic in the form of &9Polyethylene&r.",
     "moni.quest.383FADC5E8BC4E91.description2": "The Brewery is a &overy&r slow machine, but it requires almost no power. Building &2many Breweries&r is necessary to brew enough Biomass for plastics. &2An alternative and more resource efficient way of making biomass is with a Pyrolyse Oven, Water, and Bio Chaff.",

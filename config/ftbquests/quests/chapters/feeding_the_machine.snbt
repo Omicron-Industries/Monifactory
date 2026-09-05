@@ -375,6 +375,7 @@
 			dependencies: [
 				"1CC092A2F2CD4589"
 				"7D4B29BA4D8CB153"
+				"37DC6C37EA24BF4D"
 			]
 			description: [
 				"{moni.quest.7C89BC235C988689.description1}"
@@ -2426,6 +2427,22 @@
 			title: "{moni.quest.5911900438648430.title}"
 			x: -3.5d
 			y: 13.25d
+		}
+		{
+			dependencies: ["04EABD3D2C72D2C5"]
+			description: [
+				"{moni.quest.37DC6C37EA24BF4D.description1}"
+				""
+				"{moni.quest.37DC6C37EA24BF4D.description2}"
+			]
+			id: "37DC6C37EA24BF4D"
+			tasks: [{
+				id: "1F9C0C590E3E5076"
+				item: "gtceu:sculk_agar_dust"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 2.25d
 		}
 	]
 	title: "{moni.chapter.15E8BBD0CD310663.title}"
