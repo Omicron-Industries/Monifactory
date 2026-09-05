@@ -60,12 +60,6 @@
 			x: 6.25d
 			y: 6.75d
 		}
-		{
-			id: "4373D49C9462A56A"
-			linked_quest: "2C89DAD26E08E382"
-			x: -1.75d
-			y: 10.5d
-		}
 	]
 	quests: [
 		{
@@ -2064,6 +2058,7 @@
 			hide_until_deps_visible: true
 			icon: "laserio:laser_node"
 			id: "4F239316765C7CA1"
+			optional: true
 			rewards: [
 				{
 					id: "733BCE50584B7FC8"
@@ -2101,7 +2096,6 @@
 					type: "item"
 				}
 			]
-			optional: true
 			shape: "hexagon"
 			tasks: [
 				{
@@ -2776,29 +2770,6 @@
 		{
 			dependencies: ["1BC6DDC2D50F9C46"]
 			description: [
-				"{moni.quest.114B300F56E48351.description1}"
-				""
-				"{moni.quest.114B300F56E48351.description2}"
-				""
-				"{moni.quest.114B300F56E48351.description3}"
-			]
-			id: "114B300F56E48351"
-			shape: "hexagon"
-			tasks: [{
-				id: "17D47466DED091B3"
-				item: {
-					Count: 1
-					id: "shrink:shrinking_device"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 2.25d
-			y: 14.25d
-		}
-		{
-			dependencies: ["1BC6DDC2D50F9C46"]
-			description: [
 				"{moni.quest.02B78A0C4F3C4ECA.description1}"
 				""
 				"{moni.quest.02B78A0C4F3C4ECA.description2}"
@@ -2922,6 +2893,25 @@
 			}]
 			x: -2.0d
 			y: 16.0d
+		}
+		{
+			dependencies: ["1BC6DDC2D50F9C46"]
+			description: [
+				"{moni.quest.14C50EFF4EB257E3.description1}"
+				""
+				"{moni.quest.14C50EFF4EB257E3.description2}"
+				""
+				"{moni.quest.14C50EFF4EB257E3.description3}"
+			]
+			icon: "gtceu:hot_mercury_barium_calcium_cuprate_ingot"
+			id: "14C50EFF4EB257E3"
+			tasks: [{
+				id: "01FA8F1646AC977B"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.14C50EFF4EB257E3.title}"
+			x: 2.5d
+			y: 14.25d
 		}
 	]
 	title: "{moni.chapter.2763DAD954E0EED8.title}"

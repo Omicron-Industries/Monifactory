@@ -1498,11 +1498,7 @@
 				"235C1E5B2C58B5AF"
 				"7D29C79DE1CCA2A2"
 			]
-			description: [
-				"{moni.quest.7FA6B36DCE648C66.description1}"
-				""
-				"{moni.quest.7FA6B36DCE648C66.description2}"
-			]
+			description: ["{moni.quest.7FA6B36DCE648C66.description1}"]
 			icon: "gtceu:hadal_sculk_bucket"
 			id: "7FA6B36DCE648C66"
 			shape: "hexagon"

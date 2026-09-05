@@ -35,6 +35,12 @@
 			x: 4.0d
 			y: 15.5d
 		}
+		{
+			id: "4373D49C9462A56A"
+			linked_quest: "2C89DAD26E08E382"
+			x: 1.5d
+			y: 7.25d
+		}
 	]
 	quests: [
 		{
@@ -1175,8 +1181,8 @@
 				}
 			]
 			title: "{moni.quest.0A8179C319A6868E.title.expert}"
-			x: 1.5d
-			y: 7.25d
+			x: 2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -1228,8 +1234,8 @@
 				}
 			]
 			title: "{moni.quest.1A80D0AE0B2F7A9D.title.expert}"
-			x: 1.5d
-			y: 8.5d
+			x: 2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
@@ -1531,11 +1537,11 @@
 		{
 			dependencies: ["34CA940B412284F2"]
 			description: [
-				"{moni.quest.5F90D0FC382C0A30.description1.expert}"
+				"{moni.quest.5F90D0FC382C0A30.description1}"
 				""
-				"{moni.quest.5F90D0FC382C0A30.description2.expert}"
+				"{moni.quest.5F90D0FC382C0A30.description2}"
 				""
-				"{moni.quest.5F90D0FC382C0A30.description3.expert}"
+				"{moni.quest.5F90D0FC382C0A30.description3}"
 			]
 			icon: "steamadditions:steam_separator"
 			id: "5F90D0FC382C0A30"
@@ -1574,7 +1580,7 @@
 				}
 			]
 			title: "{moni.quest.5F90D0FC382C0A30.title.expert}"
-			x: -1.5d
+			x: 1.5d
 			y: 8.5d
 		}
 		{

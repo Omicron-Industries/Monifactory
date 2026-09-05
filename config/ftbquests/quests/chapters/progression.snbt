@@ -503,7 +503,8 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
+			dependencies: ["2E8BFA2E719B1C47"]
+			dependency_requirement: "all_started"
 			description: ["{moni.quest.3270496124969A51.description1}"]
 			disable_toast: true
 			id: "3270496124969A51"
@@ -567,6 +568,7 @@
 				"3F6EDC2481D5877F"
 				"2C89DAD26E08E382"
 			]
+			dependency_requirement: "all_started"
 			description: ["{moni.quest.1F976B197DEFF654.description1}"]
 			icon: {
 				Count: 1
@@ -3525,7 +3527,11 @@
 			y: 12.5d
 		}
 		{
-			dependencies: ["3270496124969A51"]
+			dependencies: [
+				"3270496124969A51"
+				"1229234A71CE0A99"
+			]
+			dependency_requirement: "all_started"
 			description: ["{moni.quest.2C89DAD26E08E382.description1}"]
 			id: "2C89DAD26E08E382"
 			tasks: [{

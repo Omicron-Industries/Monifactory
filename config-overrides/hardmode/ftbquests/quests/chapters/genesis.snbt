@@ -43,6 +43,12 @@
 			x: 0.75d
 			y: 15.5d
 		}
+		{
+			id: "4373D49C9462A56A"
+			linked_quest: "2C89DAD26E08E382"
+			x: 1.5d
+			y: 7.25d
+		}
 	]
 	quests: [
 		{
@@ -1549,11 +1555,11 @@
 		{
 			dependencies: ["34CA940B412284F2"]
 			description: [
-				"{moni.quest.5F90D0FC382C0A30.description1.hardmode}"
+				"{moni.quest.5F90D0FC382C0A30.description1}"
 				""
-				"{moni.quest.5F90D0FC382C0A30.description2.hardmode}"
+				"{moni.quest.5F90D0FC382C0A30.description2}"
 				""
-				"{moni.quest.5F90D0FC382C0A30.description3.hardmode}"
+				"{moni.quest.5F90D0FC382C0A30.description3}"
 			]
 			icon: "steamadditions:steam_separator"
 			id: "5F90D0FC382C0A30"

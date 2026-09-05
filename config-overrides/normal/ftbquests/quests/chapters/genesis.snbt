@@ -43,6 +43,12 @@
 			x: 0.75d
 			y: 15.5d
 		}
+		{
+			id: "4373D49C9462A56A"
+			linked_quest: "2C89DAD26E08E382"
+			x: 0.75d
+			y: 8.25d
+		}
 	]
 	quests: [
 		{
@@ -1398,7 +1404,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.08948A23B3A17923.title}"
-			x: 0d
+			x: 0.0d
 			y: 12.5d
 		}
 		{

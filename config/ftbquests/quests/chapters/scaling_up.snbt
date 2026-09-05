@@ -3892,8 +3892,25 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.64035276DDDD7325.title}"
-			x: 9.0d
-			y: 1.0d
+			x: 7.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["3FF918B4CF33E8F7"]
+			description: [
+				"{moni.quest.5A1F4D5E41787B93.description1}"
+				""
+				"{moni.quest.5A1F4D5E41787B93.description2}"
+			]
+			id: "5A1F4D5E41787B93"
+			tasks: [{
+				count: 4L
+				id: "75DE1815B678DC46"
+				item: "thermal:earth_grenade"
+				type: "item"
+			}]
+			x: -7.25d
+			y: 7.75d
 		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"

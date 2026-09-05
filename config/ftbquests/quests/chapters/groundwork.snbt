@@ -2686,6 +2686,29 @@
 			x: -1.25d
 			y: -12.5d
 		}
+		{
+			dependencies: ["3E42B4AAA6D2A05B"]
+			description: [
+				"{moni.quest.114B300F56E48351.description1}"
+				""
+				"{moni.quest.114B300F56E48351.description2}"
+				""
+				"{moni.quest.114B300F56E48351.description3}"
+			]
+			id: "114B300F56E48351"
+			shape: "hexagon"
+			tasks: [{
+				id: "17D47466DED091B3"
+				item: {
+					Count: 1
+					id: "shrink:shrinking_device"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
 	]
 	title: "{moni.chapter.0E9D23BEF4A86E57.title}"
 }
