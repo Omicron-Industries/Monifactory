@@ -64,8 +64,8 @@
     "chiseled_bookshelf": true
   },
   "gtmutils": {
-    "enlarged_me_stocking_bus_info": true,
-    "pterb_info": true
+    "web_info": true,
+    "enlarged_me_stocking_bus_info": true
   },
   "endertanks": {
     "hud.basic": true,

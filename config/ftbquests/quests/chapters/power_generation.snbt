@@ -823,6 +823,8 @@
 				"{moni.quest.63B27CA5BB60B740.description1}"
 				""
 				"[\"\",{\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0E20199737DFE4AC\"}},{\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1F2E76FA4B2C2E84\"}},{\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description5\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"04BDE09518C184E4\"}}]"
+				""
+				"{moni.quest.63B27CA5BB60B740.description2}"
 			]
 			id: "63B27CA5BB60B740"
 			tasks: [{

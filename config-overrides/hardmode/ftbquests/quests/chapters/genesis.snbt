@@ -20,7 +20,7 @@
 			id: "6DC914192E886D47"
 			linked_quest: "77670BF761084AA2"
 			shape: "hexagon"
-			x: -1.75d
+			x: -2.0d
 			y: 12.0d
 		}
 		{
@@ -34,8 +34,8 @@
 			id: "4A1F5C2E65873DDB"
 			linked_quest: "2280472741683581"
 			shape: "hexagon"
-			x: 4.5d
-			y: 15.5d
+			x: 4.0d
+			y: 14.75d
 		}
 		{
 			id: "1D806F3BD32F739C"
@@ -694,6 +694,7 @@
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
 					GT.Tool: {
+						DefaultEnchantments: [ ]
 						HarvestLevel: 2
 						MaxDamage: 383
 						ToolSpeed: 6.0f
@@ -1061,6 +1062,7 @@
 				""
 				"{moni.quest.17312BF0197B87A8.description3.hardmode}"
 			]
+			icon: "gtceu:primitive_blast_furnace"
 			id: "17312BF0197B87A8"
 			tasks: [
 				{
@@ -1076,7 +1078,7 @@
 				}
 			]
 			title: "{moni.quest.17312BF0197B87A8.title.hardmode}"
-			x: 1.75d
+			x: 2.0d
 			y: 10.25d
 		}
 		{
@@ -1193,7 +1195,7 @@
 				}
 			]
 			title: "{moni.quest.0A8179C319A6868E.title.hardmode}"
-			x: 1.75d
+			x: 2.0d
 			y: 8.5d
 		}
 		{
@@ -1246,7 +1248,7 @@
 				}
 			]
 			title: "{moni.quest.1A80D0AE0B2F7A9D.title.hardmode}"
-			x: -1.75d
+			x: -2.0d
 			y: 10.25d
 		}
 		{
@@ -1271,7 +1273,7 @@
 				item: "telepastries:nether_cake"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: 10.25d
 		}
 		{
@@ -1298,7 +1300,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.6FB3E3D9CA0F4B30.title}"
-			x: 3.5d
+			x: 4.0d
 			y: 12.0d
 		}
 		{
@@ -1373,9 +1375,13 @@
 				"{moni.quest.12B95158E4C792DB.description2}"
 				""
 				"{moni.quest.12B95158E4C792DB.description3}"
+				"{@pagebreak}"
 				"{moni.quest.12B95158E4C792DB.description4}"
-				""
 				"{moni.quest.12B95158E4C792DB.description5}"
+				"{moni.quest.12B95158E4C792DB.description6}"
+				"{moni.quest.12B95158E4C792DB.description7}"
+				""
+				"{moni.quest.12B95158E4C792DB.description8}"
 			]
 			id: "12B95158E4C792DB"
 			rewards: [{
@@ -1391,7 +1397,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.12B95158E4C792DB.title}"
-			x: 1.75d
+			x: 2.0d
 			y: 13.75d
 		}
 		{
@@ -1525,7 +1531,7 @@
 				}
 			]
 			title: "{moni.quest.754C416FB3F5DBDA.title.hardmode}"
-			x: 1.75d
+			x: 2.0d
 			y: 12.0d
 		}
 		{
@@ -1543,7 +1549,7 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: 13.75d
 		}
 		{
@@ -1592,7 +1598,7 @@
 				}
 			]
 			title: "{moni.quest.5F90D0FC382C0A30.title.hardmode}"
-			x: -1.75d
+			x: -2.0d
 			y: 8.5d
 		}
 		{
@@ -1667,7 +1673,7 @@
 				type: "item"
 			}]
 			title: "{moni.quest.08948A23B3A17923.title}"
-			x: -1.75d
+			x: -2.0d
 			y: 13.75d
 		}
 		{
@@ -1729,9 +1735,14 @@
 			dependencies: [
 				"297B523B6C503957"
 				"34876F54406B6A04"
+				"077AA27F26B7831F"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.2FA9404468E4BBD9.description1}"]
+			description: [
+				"{moni.quest.2FA9404468E4BBD9.description1}"
+				""
+				"{moni.quest.2FA9404468E4BBD9.description2}"
+			]
 			id: "2FA9404468E4BBD9"
 			rewards: [{
 				id: "325B36632BC87A4F"
@@ -1763,11 +1774,11 @@
 				type: "item"
 			}]
 			title: "{moni.quest.2FA9404468E4BBD9.title}"
-			x: 2.0d
+			x: 3.0d
 			y: 15.5d
 		}
 		{
-			dependencies: ["2FA9404468E4BBD9"]
+			dependencies: ["12B95158E4C792DB"]
 			description: [
 				"{moni.quest.077AA27F26B7831F.description1}"
 				""
@@ -1809,8 +1820,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.077AA27F26B7831F.title}"
-			x: 3.25d
-			y: 15.5d
+			x: 2.0d
+			y: 14.75d
 		}
 		{
 			dependencies: [
@@ -1929,15 +1940,10 @@
 				"{moni.quest.5A94534682807314.description1}"
 				""
 				"{moni.quest.5A94534682807314.description2}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.5A94534682807314.description3}"
+				""
 				"{moni.quest.5A94534682807314.description4}"
-				"{moni.quest.5A94534682807314.description5}"
-				"{moni.quest.5A94534682807314.description6}"
-				""
-				"{moni.quest.5A94534682807314.description7}"
-				""
-				"{moni.quest.5A94534682807314.description8}"
 			]
 			icon: "gtceu:hpic_wafer"
 			id: "5A94534682807314"
@@ -1955,7 +1961,7 @@
 			description: [
 				"{moni.quest.2D31856F6EF1ED69.description1}"
 				""
-				"{moni.quest.2D31856F6EF1ED69.description2.hardmode}"
+				"{moni.quest.2D31856F6EF1ED69.description2}"
 				""
 				"{moni.quest.2D31856F6EF1ED69.description3}"
 				"{@pagebreak}"
@@ -2148,7 +2154,7 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.50591843C8501055.title}"
-			x: -9.75d
+			x: -10.5d
 			y: 8.5d
 		}
 		{
@@ -2288,6 +2294,41 @@
 			}]
 			x: -10.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			description: [
+				"{moni.quest.29EE9A6425869E06.description1}"
+				""
+				"{moni.quest.29EE9A6425869E06.description2}"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "29EE9A6425869E06"
+			tasks: [{
+				id: "6A56EBBA037B127B"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.29EE9A6425869E06.title}"
+			x: -9.0d
+			y: 8.5d
 		}
 	]
 	title: "{moni.chapter.0654B76C306712BE.hardmode.title}"

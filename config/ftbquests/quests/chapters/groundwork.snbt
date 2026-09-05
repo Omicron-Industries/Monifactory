@@ -195,6 +195,10 @@
 				"{moni.quest.0B62AD25CDD86A6B.description2}"
 				""
 				"{moni.quest.0B62AD25CDD86A6B.description3}"
+				"{@pagebreak}"
+				"{moni.quest.0B62AD25CDD86A6B.description4}"
+				""
+				"{moni.quest.0B62AD25CDD86A6B.description5}"
 			]
 			hide_until_deps_visible: true
 			icon: "gtceu:mv_4a_energy_converter"

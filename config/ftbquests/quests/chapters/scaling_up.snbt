@@ -2410,10 +2410,12 @@
 				"{moni.quest.4EC59BC9BCCB3C5D.description2}"
 				""
 				"{moni.quest.4EC59BC9BCCB3C5D.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.4EC59BC9BCCB3C5D.description4}"
 				""
 				"{moni.quest.4EC59BC9BCCB3C5D.description5}"
+				""
+				"{moni.quest.4EC59BC9BCCB3C5D.description6}"
 			]
 			icon: "gtceu:large_assembler"
 			id: "4EC59BC9BCCB3C5D"
@@ -3581,8 +3583,10 @@
 				"{moni.quest.7BC6E67521545949.description2}"
 				""
 				"{moni.quest.7BC6E67521545949.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.7BC6E67521545949.description4}"
+				""
+				"{moni.quest.7BC6E67521545949.description5}"
 			]
 			icon: "gtceu:ev_energy_input_hatch_4a"
 			id: "7BC6E67521545949"
@@ -3742,19 +3746,20 @@
 				"{moni.quest.6CFAAF68D4B10062.description2}"
 				""
 				"{moni.quest.6CFAAF68D4B10062.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.6CFAAF68D4B10062.description4}"
 				""
 				"{moni.quest.6CFAAF68D4B10062.description5}"
 			]
 			icon: "gtceu:empty_tier_i_battery"
 			id: "6CFAAF68D4B10062"
+			size: 2.0d
 			tasks: [{
 				id: "5AF8E611CFEF3599"
 				type: "checkmark"
 			}]
 			title: "{moni.quest.6CFAAF68D4B10062.title}"
-			x: -0.75d
+			x: -1.0d
 			y: -11.0d
 		}
 		{
@@ -3892,8 +3897,8 @@
 				type: "checkmark"
 			}]
 			title: "{moni.quest.64035276DDDD7325.title}"
-			x: 9.0d
-			y: 1.0d
+			x: 7.0d
+			y: 1.25d
 		}
 	]
 	title: "{moni.chapter.7489B5042AFE2290.title}"
