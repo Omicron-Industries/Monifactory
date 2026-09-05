@@ -125,17 +125,18 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(3823)
         .circuit(2)
 
-    event.recipes.gtceu.macerator("matrix_macerating")
-        .itemInputs("4x kubejs:adhered_matrix_mesh")
-        .itemOutputs("monilabs:crystal_matrix_dust")
-        .duration(0.6 * 20)
-        .EUt(GTValues.VA[GTValues.LV])
+    event.recipes.gtceu.forge_hammer("matrix_smashing")
+        .itemInputs("kubejs:adhered_matrix_mesh")
+        .itemOutputs("monilabs:small_crystal_matrix_dust")
+        .duration(0.3 * GTValues.SECONDS)
+        .EUt(0.25 * GTValues.V[GTValues.ULV])
 
-    event.recipes.gtceu.forge_hammer("matrix_mesh_into_foil")
+    event.recipes.gtceu.bender("matrix_mesh_into_foil")
         .itemInputs("kubejs:adhered_matrix_mesh")
         .itemOutputs("monilabs:crystal_matrix_foil")
-        .duration(0.6 * 20)
-        .EUt(GTValues.VA[GTValues.MV])
+        .duration(0.15 * GTValues.SECONDS)
+        .EUt(0.75 * GTValues.V[GTValues.LV])
+        .circuit(1)
 
     // Old Electrode stuff which is kinda cool I think
     event.recipes.gtceu.forming_press("graphite_electrode")
