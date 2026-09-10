@@ -12,22 +12,35 @@ ServerEvents.recipes(event => {
         .duration(0.8 * 20)
 
     // Change plasma fusion recipes to input/output multiples of 144mB for metals instead of 16mB
-    event.findRecipes({ id: /gtceu:fusion_reactor\/\w+_and_\w+_to_\w+_plasma/}).forEach(recipe => {
-        let fluidIngredients = recipe.json.getAsJsonObject("inputs").getAsJsonArray("fluid")
-        fluidIngredients.forEach(fluidIngredient => {
-            let content = fluidIngredient.getAsJsonObject("content")
+    event.findRecipes({ type: "gtceu:fusion_reactor"}).forEach(recipe => {
+        let isPlasmaRecipe = false;
+
+        let fluidOutputs = recipe.json.getAsJsonObject("outputs").getAsJsonArray("fluid")
+        // See if this recipe is actually a plasma recipe (Recipe ID is misleading, sometimes includes keyword "plasma" when recipe does not involve plasma)
+        fluidOutputs.forEach(fluidOutput => {
+            let content = fluidOutput.getAsJsonObject("content")
+            let value = content.getAsJsonArray("value")
+            value.forEach(fluidValue => {
+                let fluidType = fluidValue.getAsJsonPrimitive("fluid").asString
+                if(fluidType.includes("plasma")) isPlasmaRecipe = true
+            })
+        })
+
+        // Modify fluid I/O if it's indeed a plasma recipe
+        fluidOutputs.forEach(fluidOutput => {
+            let content = fluidOutput.getAsJsonObject("content")
             let amount = content.getAsJsonPrimitive("amount").asInt
-            if(amount == 16) {
+            if(amount == 16 && isPlasmaRecipe) {
                 content.remove("amount")
                 content["addProperty(java.lang.String,java.lang.Number)"]("amount", 144)
             }
         })
 
-        let fluidOutputs = recipe.json.getAsJsonObject("outputs").getAsJsonArray("fluid")
-        fluidOutputs.forEach(fluidOutput => {
-            let content = fluidOutput.getAsJsonObject("content")
+        let fluidIngredients = recipe.json.getAsJsonObject("inputs").getAsJsonArray("fluid")
+        fluidIngredients.forEach(fluidIngredient => {
+            let content = fluidIngredient.getAsJsonObject("content")
             let amount = content.getAsJsonPrimitive("amount").asInt
-            if(amount == 16) {
+            if(amount == 16 && isPlasmaRecipe) {
                 content.remove("amount")
                 content["addProperty(java.lang.String,java.lang.Number)"]("amount", 144)
             }
