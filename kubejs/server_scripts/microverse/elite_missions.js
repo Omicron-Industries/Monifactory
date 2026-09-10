@@ -30,9 +30,9 @@ ServerEvents.recipes(event => {
                 "64x kubejs:deep_dark_data",
                 "10x minecraft:sculk_catalyst"
             )
-            .damageRate((doHostileMicroverse ? -40 : 2))
+            .damageRate(-40)
             .itemOutputs("kubejs:lair_of_the_warden_data")
-            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse(2) // Hostile
     })
 
     microverse_mission(event, 7, 3, 240, undefined, 100).forEach(builder => {
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
                 "kubejs:blasting_kit",
                 "8x kubejs:deep_dark_data"
             )
-            .damageRate((doHostileMicroverse ? -25 : 3))
+            .damageRate(-25)
             .itemOutputs(
                 "12x minecraft:sculk_catalyst",
                 "64x minecraft:sculk",
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
                 "8x gtceu:platinum_block",
                 "4x gtceu:ruthenium_block"
             )
-            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse(2) // Hostile
     })
 
     microverse_mission(event, 7, 3, undefined, undefined, 100).forEach(builder => {
@@ -64,13 +64,13 @@ ServerEvents.recipes(event => {
                 "12x kubejs:deep_dark_data",
                 "16x kubejs:warden_horn"
             )
-            .damageRate((doHostileMicroverse ? -25 : 3))
+            .damageRate(-25)
             .itemOutputs(
                 "16x kubejs:warden_heart",
                 "40x minecraft:sculk_catalyst",
                 "64x kubejs:warden_horn",
             )
-            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse(2) // Hostile
     })
 
     // T8MM missions
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
                 "4x minecraft:sculk_catalyst",
                 "kubejs:lair_of_the_warden_data"
             )
-            .damageRate((doHostileMicroverse ? -10 : 12))
+            .damageRate(-10)
             .itemOutputs(
                 "4x kubejs:hadal_shard",
                 "64x minecraft:sculk_catalyst",
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
                 "64x kubejs:warden_horn",
                 "64x kubejs:warden_horn"
             )
-            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse(2) // Hostile
     })
 
     microverse_mission(event, 8, 3, undefined, undefined, 100).forEach(builder => {
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
                 "64x gtceu:dilithium_gem",
                 "16x kubejs:dragon_lair_data"
             )
-            .damageRate((doHostileMicroverse ? -25 : 6))
+            .damageRate(-25)
             .itemOutputs(
                 "64x minecraft:dragon_egg",
                 "32x minecraft:dragon_egg",
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
                 "32x kubejs:ender_dragon_scale",
                 "64x minecraft:dragon_breath"
             )
-            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse(2) // Hostile
     })
 
     microverse_mission(event, 8, 3, undefined, undefined, 100).forEach(builder => {
@@ -117,14 +117,14 @@ ServerEvents.recipes(event => {
                 "64x gtceu:dilithium_gem",
                 "32x kubejs:wither_realm_data"
             )
-            .damageRate((doHostileMicroverse ? -20 : 6))
+            .damageRate(-20)
             .itemOutputs(
                 "32x gtceu:quantum_star",
                 "16x gtceu:quantum_eye",
                 "4x gtceu:gravi_star",
                 "4x gtceu:neutronium_ingot"
             )
-            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse(2) // Hostile
     })
 
     // T9MM missions

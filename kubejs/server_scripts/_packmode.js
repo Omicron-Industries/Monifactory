@@ -25,7 +25,6 @@ const doStoneline = !!global.doStoneline;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
 const doQuantumCoolant = !!global.doQuantumCoolant;
-const doHostileMicroverse = !!global.doHostileMicroverse;
 
 PlayerEvents.loggedIn(event => {
     const gameStages = [
