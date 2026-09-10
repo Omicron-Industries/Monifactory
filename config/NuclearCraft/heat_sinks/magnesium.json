@@ -1,5 +1,0 @@
-[{
-  "type": "magnesium",
-  "heat": 110,
-  "placement_rule": ["#nuclearcraft:fission_reactor_casing", "#nuclearcraft:moderators"]
-}]

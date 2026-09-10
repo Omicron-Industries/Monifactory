@@ -1,5 +1,0 @@
-[{
-  "type": "slime",
-  "heat": 145,
-  "placement_rule": ["water_heat_sink", "lead_heat_sink"]
-}]

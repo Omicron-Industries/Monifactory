@@ -13,8 +13,6 @@ JEIEvents.hideItems(event => {
     // Hide items matching the unification patterns.
     // For definitions, see KubeJS/startup_scripts/unificationPatterns.js
     event.hide(global.unificationPattern)
-    event.hide(global.nuclearcraftFuelPattern)
-    event.hide(global.nuclearcraftIsotopePattern)
 })
 
 JEIEvents.hideFluids(event => {

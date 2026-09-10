@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/lead_shield_casing.json"
+    }
+  }
+}

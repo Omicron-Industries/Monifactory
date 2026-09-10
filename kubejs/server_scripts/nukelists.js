@@ -10,8 +10,6 @@ ServerEvents.tags("item", event => {
     // Remove tags from items matching the unification patterns.
     // For definitions, see KubeJS/startup_scripts/unificationPatterns.js
     event.removeAllTagsFrom(global.unificationPattern)
-    event.removeAllTagsFrom(global.nuclearcraftFuelPattern)
-    event.removeAllTagsFrom(global.nuclearcraftIsotopePattern)
 })
 ServerEvents.tags("fluid", event => {
     event.removeAllTagsFrom(global.fluidNukeList)
@@ -20,10 +18,6 @@ ServerEvents.tags("fluid", event => {
 ServerEvents.recipes(event => {
 
     let ignoreTypes = [
-        { type: "nuclearcraft:fission_reactor_controller" },
-        { type: "nuclearcraft:fission_boiling" },
-        { type: "nuclearcraft:isotope_separator" },
-        { type: "nuclearcraft:fuel_reprocessor" },
         { type: "minecraft:crafting" },
         { type: "minecraft:smelting" }
     ];
@@ -45,6 +39,4 @@ ServerEvents.recipes(event => {
     // Remove recipes that use items matching the unification patterns.
     // For definitions, see KubeJS/startup_scripts/unificationPatterns.js
     event.remove([{ output: global.unificationPattern }, { input: global.unificationPattern }])
-    event.remove([{ output: global.nuclearcraftFuelPattern }, { input: global.nuclearcraftFuelPattern }])
-    event.remove([{ output: global.nuclearcraftIsotopePattern }, { input: global.nuclearcraftIsotopePattern }])
 })

@@ -127,3 +127,87 @@ deprecated_thermal_wire_materials.forEach(material => {
     deprecateBlock(`gtceu:${material}_octal_wire`, `4x gtceu:${material}_ingot`)
     deprecateBlock(`gtceu:${material}_hex_wire`, `8x gtceu:${material}_ingot`)
 })
+
+// Nuclearcraft: Neoteric Reactor parts
+deprecateBlock("nuclearcraft:fission_reactor_controller", "gtceu:fission_reactor", "Fission Reactor Controller")
+deprecateBlock("nuclearcraft:fission_reactor_casing", "phoenix_fission:lead_lined_casing", "Fission Reactor Casing")
+deprecateBlock("nuclearcraft:fission_reactor_glass", "phoenix_fission:lead_lined_glass", "Fission Reactor Glass")
+deprecateBlock("nuclearcraft:fission_reactor_port", "phoenix_fission:lead_lined_casing", "Fission Reactor Port")
+deprecateBlock("nuclearcraft:empty_heat_sink", "phoenix_fission:empty_reactor_component", "Fission Reactor Empty Heat Sink")
+deprecateBlock("nuclearcraft:fission_reactor_solid_fuel_cell", "phoenix_fission:empty_reactor_component", "Fission Reactor Solid Fuel Cell")
+const heat_sink_types = [
+    "Water",
+    "Copper",
+    "Cryotheum",
+    "Enderium",
+    "Redstone",
+    "Liquid_helium",
+    "Boron",
+    "Lapis",
+    "Emerald",
+    "Quartz",
+    "Tin",
+    "Aluminum",
+    "Magnesium",
+    "Manganese",
+    "Glowstone",
+]
+heat_sink_types.forEach(heat_sink_type => {
+    deprecateBlock(`nuclearcraft:${heat_sink_type.toLowerCase()}_heat_sink`, "phoenix_fission:empty_reactor_component", `Fission Reactor ${heat_sink_type} Heat Sink`)
+})
+
+// Nuclearcraft: Neoteric materials
+deprecateItem("nuclearcraft:ferroboron_dust", "gtceu:ferroboron_dust", "Ferroboron Dust")
+deprecateItem("nuclearcraft:ferroboron_ingot", "gtceu:ferroboron_ingot", "Ferroboron Ingot")
+deprecateItem("nuclearcraft:tough_alloy_ingot", "gtceu:tough_alloy_ingot", "Tough Alloy Ingot")
+
+// Nuclearcraft: Neoteric plates
+deprecateItem("nuclearcraft:plate_basic", "phoenix_fission:light_radiation_shielding", "Basic Nuclear Plate")
+deprecateItem("nuclearcraft:plate_advanced", "phoenix_fission:light_radiation_shielding", "Advanced Nuclear Plate")
+deprecateItem("nuclearcraft:plate_du", "phoenix_fission:heavy_radiation_shielding", "DU Nuclear Plate")
+deprecateItem("nuclearcraft:plate_elite", "phoenix_fission:heavy_radiation_shielding", "Elite Nuclear Plate")
+deprecateItem("nuclearcraft:light", "phoenix_fission:light_radiation_shielding", "Light Shielding")
+deprecateItem("nuclearcraft:medium", "phoenix_fission:light_radiation_shielding", "Medium Shielding")
+deprecateItem("nuclearcraft:heavy", "phoenix_fission:heavy_radiation_shielding", "Heavy Shielding")
+
+// Nuclearcraft: Neoteric Reactor fuels
+deprecateItem("nuclearcraft:fuel_thorium_tbu", "phoenix_fission:tbu_fuel", "Fuel Thorium TBU")
+deprecateItem("nuclearcraft:fuel_uranium_leu_235", "phoenix_fission:leu_235_fuel", "Fuel Uranium LEU-235")
+deprecateItem("nuclearcraft:fuel_uranium_heu_235", "phoenix_fission:heu_235_fuel", "Fuel Uranium HEU-235")
+deprecateItem("nuclearcraft:fuel_uranium_leu_233", "phoenix_fission:leu_233_fuel", "Fuel Uranium LEU-233")
+deprecateItem("nuclearcraft:fuel_uranium_heu_233", "phoenix_fission:heu_233_fuel", "Fuel Uranium HEU-233")
+deprecateItem("nuclearcraft:fuel_plutonium_lep_239", "phoenix_fission:lep_239_fuel", "Fuel Plutonium LEP-239")
+deprecateItem("nuclearcraft:fuel_plutonium_hep_239", "phoenix_fission:hep_239_fuel", "Fuel Plutonium HEP-239")
+deprecateItem("nuclearcraft:fuel_plutonium_lep_241", "phoenix_fission:lep_241_fuel", "Fuel Plutonium LEP-241")
+deprecateItem("nuclearcraft:fuel_plutonium_hep_241", "phoenix_fission:hep_241_fuel", "Fuel Plutonium HEP-241")
+
+deprecateItem("nuclearcraft:depleted_fuel_thorium_tbu", "phoenix_fission:depleted_tbu_fuel", "Depleted Fuel Thorium TBU")
+deprecateItem("nuclearcraft:depleted_fuel_uranium_leu_235", "phoenix_fission:depleted_leu_235_fuel", "Depleted Fuel Uranium LEU-235")
+deprecateItem("nuclearcraft:depleted_fuel_uranium_heu_235", "phoenix_fission:depleted_heu_235_fuel", "Depleted Fuel Uranium HEU-235")
+deprecateItem("nuclearcraft:depleted_fuel_uranium_leu_233", "phoenix_fission:depleted_leu_233_fuel", "Depleted Fuel Uranium LEU-233")
+deprecateItem("nuclearcraft:depleted_fuel_uranium_heu_233", "phoenix_fission:depleted_heu_233_fuel", "Depleted Fuel Uranium HEU-233")
+deprecateItem("nuclearcraft:depleted_fuel_plutonium_lep_239", "phoenix_fission:depleted_lep_239_fuel", "Depleted Fuel Plutonium LEP-239")
+deprecateItem("nuclearcraft:depleted_fuel_plutonium_hep_239", "phoenix_fission:depleted_hep_239_fuel", "Depleted Fuel Plutonium HEP-239")
+deprecateItem("nuclearcraft:depleted_fuel_plutonium_lep_241", "phoenix_fission:depleted_lep_241_fuel", "Depleted Fuel Plutonium LEP-241")
+deprecateItem("nuclearcraft:depleted_fuel_plutonium_hep_241", "phoenix_fission:depleted_hep_241_fuel", "Depleted Fuel Plutonium HEP-241")
+
+// Nuclearcraft: Neoteric isotopes
+deprecateItem("nuclearcraft:californium_250", "gtceu:californium_dust", "Californium Mote")
+deprecateItem("nuclearcraft:californium_251", "gtceu:californium_dust", "Californium Mote")
+deprecateItem("nuclearcraft:californium_252", "gtceu:californium_dust", "Californium Mote")
+deprecateItem("nuclearcraft:americium_241", "gtceu:americium_dust", "Americium Mote")
+deprecateItem("nuclearcraft:americium_242", "gtceu:americium_dust", "Americium Mote")
+deprecateItem("nuclearcraft:americium_243", "gtceu:americium_dust", "Americium Mote")
+deprecateItem("nuclearcraft:plutonium_238", "gtceu:plutonium_240_dust", "Plutonium Mote")
+deprecateItem("nuclearcraft:plutonium_242", "gtceu:plutonium_241_dust", "Plutonium Mote")
+deprecateItem("nuclearcraft:neptunium_236", "gtceu:neptunium_dust", "Neptunium Mote")
+deprecateItem("nuclearcraft:neptunium_237", "gtceu:neptunium_dust", "Neptunium Mote")
+deprecateItem("nuclearcraft:curium_243", "gtceu:curium_dust", "Curium Mote")
+deprecateItem("nuclearcraft:curium_245", "gtceu:curium_dust", "Curium Mote")
+deprecateItem("nuclearcraft:uranium_233", "gtceu:uranium_233_dust", "Uranium Mote")
+deprecateItem("nuclearcraft:uranium_234", "gtceu:uranium_233_dust", "Uranium Mote")
+
+// Nuclearcraft Neoteric s'more stuff
+deprecateItem("nuclearcraft:graham_cracker", "kubejs:graham_cracker", "Graham Cracker")
+deprecateItem("nuclearcraft:milk_chocolate", "kubejs:milk_chocolate", "Milk Chocolate")
+deprecateItem("nuclearcraft:marshmallow", "kubejs:marshmallow", "Marshmallow")

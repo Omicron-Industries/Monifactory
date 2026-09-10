@@ -1,5 +1,0 @@
-[{
-  "type": "villiaumite",
-  "heat": 180,
-  "placement_rule": ["redstone_heat_sink", "end_stone_heat_sink"]
-}]
