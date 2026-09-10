@@ -58,20 +58,10 @@ ServerEvents.recipes(event => {
             "OBO",
             "SSS"
         ], {
-            N: "hostilenetworks:nether_prediction",
+            N: "gtceu:dark_steel_dust",
             O: "minecraft:obsidian",
             B: "enderio:cake_base",
-            S: "minecraft:soul_sand"
-        })
-        event.shaped("telepastries:end_cake", [
-            "NNN",
-            "OBO",
-            "SSS"
-        ], {
-            N: "hostilenetworks:end_prediction",
-            O: "minecraft:ender_eye",
-            B: "enderio:cake_base",
-            S: "gtceu:black_steel_plate"
+            S: "minecraft:netherrack"
         })
     } else {
         event.shaped("telepastries:nether_cake", [
@@ -84,15 +74,16 @@ ServerEvents.recipes(event => {
             B: "enderio:cake_base",
             S: "minecraft:gold_block"
         })
-        event.shaped("telepastries:end_cake", [
-            "NNN",
-            "OBO",
-            "SSS"
-        ], {
-            N: "gtceu:uraninite_dust",
-            O: "minecraft:ender_eye",
-            B: "enderio:cake_base",
-            S: "gtceu:black_steel_plate"
-        })
     }
+
+    event.shaped("telepastries:end_cake", [
+        "NNN",
+        "OBO",
+        "SSS"
+    ], {
+        N: "gtceu:uraninite_dust",
+        O: "minecraft:ender_eye",
+        B: "enderio:cake_base",
+        S: "gtceu:black_steel_plate"
+    })
 })

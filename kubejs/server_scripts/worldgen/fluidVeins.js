@@ -10,11 +10,11 @@ const infernalVenusBarrensResourceKey = ResourceKey.create(Registries.BIOME, "ad
 
 GTCEuServerEvents.fluidVeins(event => {
 
-    // Void dim oil
+    // Void dim oil and natural gas
     event.add("kubejs:void/raw_oil", vein => {
         vein.dimensions("javd:void")
         vein.fluid(() => Fluid.of("gtceu:oil_medium").fluid)
-        vein.weight(100)
+        vein.weight(40)
         vein.minimumYield(200)
         vein.maximumYield(250)
         vein.depletionAmount(1)
@@ -31,6 +31,17 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.depletionAmount(1)
         vein.depletionChance(50)
         vein.depletedYield(20)
+    })
+
+    event.add("kubejs:void/natural_gas", vein => {
+        vein.dimensions("javd:void")
+        vein.fluid(() => Fluid.of("gtceu:natural_gas").fluid)
+        vein.weight(25)
+        vein.minimumYield(75)
+        vein.maximumYield(125)
+        vein.depletionAmount(1)
+        vein.depletionChance(50)
+        vein.depletedYield(15)
     })
 
 
@@ -85,11 +96,11 @@ GTCEuServerEvents.fluidVeins(event => {
         vein.dimensions("ad_astra:mars")
         vein.fluid(() => Fluid.of("gtceu:fluorine").fluid)
         vein.weight(35)
-        vein.minimumYield(100)
-        vein.maximumYield(250)
-        vein.depletionAmount(7)
-        vein.depletionChance(50)
-        vein.depletedYield(5)
+        vein.minimumYield(50)
+        vein.maximumYield(100)
+        vein.depletionAmount(1)
+        vein.depletionChance(100)
+        vein.depletedYield(0)
     })
 
     // Venus fluid veins

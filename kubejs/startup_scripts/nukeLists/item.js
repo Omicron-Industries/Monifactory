@@ -93,11 +93,6 @@ global.itemNukeList = [
     "enderio:glider_wing",
     "enderio:nutritious_stick",
 
-    // Ender Storage
-    // TODO: Need to add greggy recipes for these
-    "endertanks:ender_bucket",
-    "enderchests:ender_bag",
-
     // ExtendedAE
     "expatternprovider:silicon_block",
     "expatternprovider:circuit_cutter",
@@ -130,7 +125,6 @@ global.itemNukeList = [
     "gtceu:hot_silicon_ingot",
     "gtceu:milk",
     "gtceu:steel_machine_casing",
-    "gtceu:uv_world_accelerator",
     "gtceu:mv_solar_panel",
     "gtceu:hv_solar_panel",
     "gtceu:ev_solar_panel",
@@ -138,12 +132,30 @@ global.itemNukeList = [
     "gtceu:luv_solar_panel",
     "gtceu:zpm_solar_panel",
     "gtceu:uv_solar_panel",
+    "gtceu:configurable_maintenance_hatch",
+    /^gtceu:(ev|iv|luv|zpm|uv|uhv|uev|max)_\w+a_energy_converter/,
+    /^gtceu:\w+_world_accelerator/,
     /^gtceu:uiv/,
     /^gtceu:uxv/,
     /^gtceu:opv/,
     /^gtmutils.uiv/,
     /^gtmutils:uxv/,
     /^gtmutils:opv/,
+
+    // Turbine rotor rebalance
+    "gtceu:magnalium_turbine_blade",
+    "gtceu:wrought_iron_turbine_blade",
+    "gtceu:manganese_turbine_blade",
+    "gtceu:molybdenum_turbine_blade",
+    "gtceu:iron_turbine_blade",
+    "gtceu:neodymium_turbine_blade",
+    "gtceu:brass_turbine_blade",
+    "gtceu:cobalt_brass_turbine_blade",
+    "gtceu:rose_gold_turbine_blade",
+    "gtceu:sterling_silver_turbine_blade",
+    "gtceu:tungsten_turbine_blade",
+    "gtceu:iridium_turbine_blade",
+    "gtceu:chromium_turbine_blade",
 
     // Hammerlib
     /^hammerlib:/,
@@ -287,6 +299,7 @@ global.itemNukeList = [
     "thermal:sawdust",
     "thermal:sulfur",
     "thermal:tar",
+    "thermal:tar_block",
     "thermal:refined_fuel_bucket",
     /^thermal:.*_cast$/,
 
@@ -296,7 +309,6 @@ global.itemNukeList = [
     "thermal:machine_pulverizer",
     "thermal:machine_smelter",
     "thermal:machine_centrifuge",
-    "thermal:machine_crucible",
     "thermal:machine_chiller",
     "thermal:machine_refinery",
     "thermal:machine_pyrolyzer",
@@ -471,6 +483,8 @@ global.itemNukeList = [
     "nuclearcraft:fuel_mixed_mix_241",
     "nuclearcraft:lithium_6",
     "nuclearcraft:lithium_7",
+    "nuclearcraft:berkelium_247",
+    "nuclearcraft:berkelium_248",
     "nuclearcraft:boron_10",
     "nuclearcraft:boron_11",
     "nuclearcraft:thorium_230",
@@ -490,6 +504,11 @@ global.itemNukeList = [
     "nuclearcraft:magnesium_24",
     "nuclearcraft:iridium_192",
     "nuclearcraft:cobalt_60",
+
+    // Pipez
+    "pipez:gas_pipe",
+    "pipez:universal_pipe",
+    "pipez:infinity_upgrade"
 ];
 
 // Create Compat
@@ -507,6 +526,71 @@ if (Platform.isLoaded("create")) {
         "create:mechanical_press",
         "create:mechanical_roller",
         "create:encased_fan"
+    );
+}
+
+// Advanced AE Compat
+// Removes all those boring solutions, useless crafting components, and whatever
+if (Platform.isLoaded("advanced_ae")) {
+    global.itemNukeList.push(
+        "advanced_ae:adv_pattern_encoder",
+        "advanced_ae:adv_pattern_provider_capacity_upgrade",
+        "advanced_ae:adv_pattern_provider_part",
+        "advanced_ae:adv_pattern_provider_upgrade",
+        "advanced_ae:adv_pattern_provider",
+        "advanced_ae:advanced_io_bus_part",
+        "advanced_ae:import_export_bus_part",
+        "advanced_ae:printed_quantum_processor",
+        "advanced_ae:quantum_alloy_block",
+        "advanced_ae:quantum_alloy_plate",
+        "advanced_ae:quantum_alloy_slab",
+        "advanced_ae:quantum_alloy_stairs",
+        "advanced_ae:quantum_alloy_wall",
+        "advanced_ae:quantum_alloy",
+        "advanced_ae:quantum_infused_dust",
+        "advanced_ae:quantum_processor_press",
+        "advanced_ae:quantum_processor",
+        "advanced_ae:quantum_storage_128",
+        "advanced_ae:quantum_storage_component",
+        "advanced_ae:reaction_chamber",
+        "advanced_ae:shattered_singularity",
+        "advanced_ae:small_adv_pattern_provider_part",
+        "advanced_ae:small_adv_pattern_provider",
+        "advanced_ae:stock_export_bus_part",
+    );
+}
+
+// Integrated Dynamics/Tunnels Compat
+if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
+    global.itemNukeList.push(
+        "integrateddynamics:energy_battery",
+        "integrateddynamics:energy_battery_creative",
+        "integrateddynamics:coal_generator",
+        "integrateddynamics:drying_basin",
+        "integrateddynamics:squeezer",
+        "integrateddynamics:mechanical_drying_basin",
+        "integrateddynamics:mechanical_squeezer",
+        "integrateddynamics:logic_director",
+        "integrateddynamics:proto_chorus",
+        "integrateddynamics:part_entity_writer",
+        "integrateddynamics:part_machine_writer",
+        "integrateddynamics:part_inventory_writer",
+        "integrateddynamics:part_connector_mono_directional",
+        "integrateddynamics:part_connector_omni_directional",
+        "integrateddynamics:part_audio_reader",
+        "integrateddynamics:part_entity_reader",
+        "integrateddynamics:part_extradimensional_reader",
+        "integrateddynamics:part_machine_reader",
+        "integrateddynamics:part_world_reader",
+        "integrateddynamics:part_audio_writer",
+        "integrateddynamics:part_effect_writer",
+        "integratedtunnels:part_interface_energy",
+        "integratedtunnels:part_interface_filter_energy",
+        "integratedtunnels:part_importer_energy",
+        "integratedtunnels:part_exporter_energy",
+        "integratedtunnels:part_importer_world_energy",
+        "integratedtunnels:part_exporter_world_energy",
+        "integratedtunnels:part_player_simulator"
     );
 }
 

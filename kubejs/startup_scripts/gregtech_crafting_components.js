@@ -100,9 +100,9 @@ GTCEuStartupEvents.craftingComponents(event => {
     })
 
     event.setMaterialEntries("hull_plate", {
-        UHV: "plate:polybenzimidazole",
+        UHV: "plate:polyethyl_cyanoacrylate",
         UEV: "plate:polyethyl_cyanoacrylate",
-        MAX: "plate:polyethyl_cyanoacrylate"
+        MAX: "plate:polyether_ether_ketone"
     })
 
     event.setMaterialEntries("rotor", {

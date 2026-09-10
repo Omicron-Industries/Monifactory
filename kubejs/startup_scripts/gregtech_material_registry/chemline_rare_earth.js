@@ -72,7 +72,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("oxalic_acid_dihydrate")
         .dust()
         .color(0xfafaf7)
-        .components("6x hydrogen", "6x oxygen", "2x carbon")
+        .components("2x oxalic_acid", "2x water")
         .formula("(COOH)2(H2O)2")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
@@ -80,6 +80,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0xf7f7f5)
         .components("2x hydrogen", "2x carbon", "4x oxygen")
+        .formula("(COOH)2")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("terbium_salt")

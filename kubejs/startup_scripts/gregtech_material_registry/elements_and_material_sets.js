@@ -23,10 +23,6 @@ GTCEuStartupEvents.registry("gtceu:element", event => {
         .protons(-1)
         .neutrons(441)
         .symbol("ᛋ*")
-    event.create("sculk_superconductor")
-        .protons(-2)
-        .neutrons(442)
-        .symbol("ᛊ")
 
     // Prismatic Crucible
 

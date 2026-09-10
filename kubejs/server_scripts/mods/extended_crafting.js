@@ -263,16 +263,16 @@ ServerEvents.recipes(event => {
 
     // Infinity Ingots
     event.recipes.extendedcrafting.combination(
-        "2x gtceu:infinity_ingot",
-        "kubejs:active_prismatic_core", ["2x gtceu:activated_netherite_ingot", "2x gtceu:neutronium_ingot", "4x monilabs:transcendental_matrix_ingot"],
+        "6x gtceu:infinity_ingot",
+        "kubejs:active_prismatic_core", ["2x gtceu:activated_netherite_ingot", "2x gtceu:neutronium_ingot", "2x monilabs:transcendental_matrix_ingot"],
         320000000, 8000000
     )
 
     // Technically not an ExCrafting recipe but it's also infinity ingots
     event.recipes.gtceu.assembler("infinity_better")
-        .itemInputs("kubejs:active_prismatic_core", "4x gtceu:activated_netherite_ingot", "4x gtceu:neutronium_ingot", "8x monilabs:transcendental_matrix_ingot")
-        .inputFluids("gtceu:monium 8")
-        .itemOutputs("8x gtceu:infinity_ingot")
+        .itemInputs("kubejs:active_prismatic_core", "4x gtceu:activated_netherite_ingot", "4x gtceu:neutronium_ingot", "4x monilabs:transcendental_matrix_ingot")
+        .inputFluids("gtceu:monium 16")
+        .itemOutputs("24x gtceu:infinity_ingot")
         .EUt(GTValues.VA[GTValues.MAX])
         .duration(20)
 
@@ -310,12 +310,12 @@ ServerEvents.recipes(event => {
         .itemOutputs("40x gtceu:gypsum_dust")
         .outputFluids("gtceu:hydrochloric_acid 1000", "gtceu:phosphoric_acid 3000")
         .duration(320)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.mixer("luminessence")
         .itemInputs("minecraft:redstone", "minecraft:glowstone_dust", "2x gtceu:aluminium_dust")
         .inputFluids("gtceu:phosphoric_acid 2000")
         .itemOutputs("6x extendedcrafting:luminessence")
         .duration(20)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
 })

@@ -1,0 +1,18 @@
+{
+  "removed": [
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:magnalium\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:wrought_iron\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:manganese\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:molybdenum\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:iron\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:neodymium\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:brass\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:cobalt_brass\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:rose_gold\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:sterling_silver\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:tungsten\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:iridium\"}}",
+    "item:gtceu:turbine_rotor{GT.PartStats:{Material:\"gtceu:chromium\"}}"
+  ],
+  "disable": true
+}

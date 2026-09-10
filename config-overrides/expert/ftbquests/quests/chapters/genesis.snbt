@@ -20,20 +20,26 @@
 			id: "6DC914192E886D47"
 			linked_quest: "77670BF761084AA2"
 			shape: "hexagon"
-			x: 1.5d
-			y: 13.75d
+			x: -1.5d
+			y: 13.25d
 		}
 		{
 			id: "070539F2FEF35EF9"
 			linked_quest: "712023557B5B1812"
 			x: -4.0d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
 			id: "412B0192D3658F7C"
 			linked_quest: "2280472741683581"
-			x: 4.0d
-			y: 15.5d
+			x: 2.75d
+			y: 14.5d
+		}
+		{
+			id: "4373D49C9462A56A"
+			linked_quest: "2C89DAD26E08E382"
+			x: 1.5d
+			y: 7.25d
 		}
 	]
 	quests: [
@@ -651,6 +657,7 @@
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
 					GT.Tool: {
+						DefaultEnchantments: [ ]
 						HarvestLevel: 2
 						MaxDamage: 383
 						ToolSpeed: 6.0f
@@ -1046,6 +1053,7 @@
 				""
 				"{moni.quest.17312BF0197B87A8.description4.expert}"
 			]
+			icon: "gtceu:primitive_blast_furnace"
 			id: "17312BF0197B87A8"
 			tasks: [
 				{
@@ -1061,8 +1069,8 @@
 				}
 			]
 			title: "{moni.quest.17312BF0197B87A8.title.expert}"
-			x: 1.5d
-			y: 9.75d
+			x: 1.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1175,8 +1183,8 @@
 				}
 			]
 			title: "{moni.quest.0A8179C319A6868E.title.expert}"
-			x: 1.5d
-			y: 7.25d
+			x: 2.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -1228,8 +1236,8 @@
 				}
 			]
 			title: "{moni.quest.1A80D0AE0B2F7A9D.title.expert}"
-			x: 1.5d
-			y: 8.5d
+			x: 2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
@@ -1254,7 +1262,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 9.75d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1281,7 +1289,7 @@
 			}]
 			title: "{moni.quest.6FB3E3D9CA0F4B30.title}"
 			x: 4.0d
-			y: 12.25d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4B338515E84FC51A"]
@@ -1341,7 +1349,7 @@
 				}
 			]
 			title: "{moni.quest.7FA0E6F3B466576C.title.expert}"
-			x: 0.0d
+			x: -1.0d
 			y: 11.0d
 		}
 		{
@@ -1355,9 +1363,13 @@
 				"{moni.quest.12B95158E4C792DB.description2}"
 				""
 				"{moni.quest.12B95158E4C792DB.description3}"
+				"{@pagebreak}"
 				"{moni.quest.12B95158E4C792DB.description4}"
-				""
 				"{moni.quest.12B95158E4C792DB.description5}"
+				"{moni.quest.12B95158E4C792DB.description6}"
+				"{moni.quest.12B95158E4C792DB.description7}"
+				""
+				"{moni.quest.12B95158E4C792DB.description8}"
 			]
 			id: "12B95158E4C792DB"
 			rewards: [{
@@ -1373,8 +1385,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.12B95158E4C792DB.title}"
-			x: 0.0d
-			y: 12.25d
+			x: 1.5d
+			y: 13.25d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1507,8 +1519,8 @@
 				}
 			]
 			title: "{moni.quest.754C416FB3F5DBDA.title.expert}"
-			x: 1.5d
-			y: 11.0d
+			x: 2.0d
+			y: 11.75d
 		}
 		{
 			dependencies: ["754C416FB3F5DBDA"]
@@ -1525,17 +1537,17 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 2.75d
-			y: 11.0d
+			x: 3.0d
+			y: 11.75d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
 			description: [
-				"{moni.quest.5F90D0FC382C0A30.description1.expert}"
+				"{moni.quest.5F90D0FC382C0A30.description1}"
 				""
-				"{moni.quest.5F90D0FC382C0A30.description2.expert}"
+				"{moni.quest.5F90D0FC382C0A30.description2}"
 				""
-				"{moni.quest.5F90D0FC382C0A30.description3.expert}"
+				"{moni.quest.5F90D0FC382C0A30.description3}"
 			]
 			icon: "steamadditions:steam_separator"
 			id: "5F90D0FC382C0A30"
@@ -1574,7 +1586,7 @@
 				}
 			]
 			title: "{moni.quest.5F90D0FC382C0A30.title.expert}"
-			x: -1.5d
+			x: 1.5d
 			y: 8.5d
 		}
 		{
@@ -1601,11 +1613,18 @@
 			}]
 			title: "{moni.quest.297B523B6C503957.title}"
 			x: 0.0d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
-			dependencies: ["297B523B6C503957"]
-			description: ["{moni.quest.2FA9404468E4BBD9.description1}"]
+			dependencies: [
+				"297B523B6C503957"
+				"077AA27F26B7831F"
+			]
+			description: [
+				"{moni.quest.2FA9404468E4BBD9.description1}"
+				""
+				"{moni.quest.2FA9404468E4BBD9.description2}"
+			]
 			id: "2FA9404468E4BBD9"
 			rewards: [{
 				id: "325B36632BC87A4F"
@@ -1638,10 +1657,10 @@
 			}]
 			title: "{moni.quest.2FA9404468E4BBD9.title}"
 			x: 1.5d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
-			dependencies: ["2FA9404468E4BBD9"]
+			dependencies: ["12B95158E4C792DB"]
 			description: [
 				"{moni.quest.077AA27F26B7831F.description1}"
 				""
@@ -1682,8 +1701,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.077AA27F26B7831F.title}"
-			x: 2.75d
-			y: 15.5d
+			x: 1.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
@@ -1738,7 +1757,7 @@
 			}]
 			title: "{moni.quest.06E9B9DDDB245F38.title}"
 			x: -1.5d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
 			dependencies: ["06E9B9DDDB245F38"]
@@ -1785,23 +1804,18 @@
 			]
 			title: "{moni.quest.3A5387B2003177B2.title}"
 			x: -2.75d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
 			description: [
-				"{moni.quest.5A94534682807314.description1.expert}"
+				"{moni.quest.5A94534682807314.description1}"
 				""
 				"{moni.quest.5A94534682807314.description2}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.5A94534682807314.description3}"
+				""
 				"{moni.quest.5A94534682807314.description4}"
-				"{moni.quest.5A94534682807314.description5}"
-				"{moni.quest.5A94534682807314.description6}"
-				""
-				"{moni.quest.5A94534682807314.description7}"
-				""
-				"{moni.quest.5A94534682807314.description8}"
 			]
 			icon: "gtceu:hpic_wafer"
 			id: "5A94534682807314"
@@ -1821,11 +1835,11 @@
 				""
 				"{moni.quest.2D31856F6EF1ED69.description2.expert}"
 				"{@pagebreak}"
-				"{moni.quest.2D31856F6EF1ED69.description3.expert}"
+				"{moni.quest.2D31856F6EF1ED69.description5}"
 				""
-				"{moni.quest.2D31856F6EF1ED69.description4.expert}"
+				"{moni.quest.2D31856F6EF1ED69.description6}"
 				""
-				"{moni.quest.2D31856F6EF1ED69.description5.expert}"
+				"{moni.quest.2D31856F6EF1ED69.description7}"
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
@@ -1875,11 +1889,11 @@
 			description: [
 				"{moni.quest.17E92ED356B6737F.description1}"
 				""
-				"[\"\",{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description1\"},{\"color\":\"blue\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description2\"},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description3\"},{\"color\":\"green\",\"underlined\":true,\"translate\":\"moni.quest.17E92ED356B6737F.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description.hover_text4\"}}},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description5\"},{\"color\":\"yellow\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description6\"}]"
+				"[\"\",{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description1\"},{\"color\":\"blue\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description2\"},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description3\"},{\"color\":\"green\",\"underlined\":true,\"translate\":\"moni.quest.17E92ED356B6737F.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description.hover_text4\"}}},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description5\"}]"
 				""
-				"{moni.quest.17E92ED356B6737F.description3.expert}"
+				"{moni.quest.17E92ED356B6737F.description3}"
 				""
-				"{moni.quest.17E92ED356B6737F.description4}"
+				"{moni.quest.17E92ED356B6737F.description4.expert}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:crushed_redstone_ore"
@@ -1914,7 +1928,7 @@
 			}]
 			title: "{moni.quest.33195ED6D7008E5F.title}"
 			x: -10.5d
-			y: 8.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2009,7 +2023,7 @@
 			}]
 			title: "{moni.quest.50591843C8501055.title}"
 			x: -10.5d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2133,7 +2147,7 @@
 			}]
 			title: "{moni.quest.372BE3F076893D71.title}"
 			x: -9.0d
-			y: 8.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2172,6 +2186,41 @@
 			}]
 			x: -10.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			description: [
+				"{moni.quest.29EE9A6425869E06.description1}"
+				""
+				"{moni.quest.29EE9A6425869E06.description2}"
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "29EE9A6425869E06"
+			tasks: [{
+				id: "6A56EBBA037B127B"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.29EE9A6425869E06.title}"
+			x: -9.0d
+			y: 8.5d
 		}
 	]
 	title: "{moni.chapter.0654B76C306712BE.expert.title}"

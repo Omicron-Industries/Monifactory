@@ -60,12 +60,6 @@
 			x: 6.25d
 			y: 6.75d
 		}
-		{
-			id: "4373D49C9462A56A"
-			linked_quest: "2C89DAD26E08E382"
-			x: -1.75d
-			y: 10.5d
-		}
 	]
 	quests: [
 		{
@@ -844,8 +838,8 @@
 				type: "item"
 			}]
 			title: "{moni.quest.5301E546BAA69844.title}"
-			x: 0.75d
-			y: 5.0d
+			x: 1.0d
+			y: 5.25d
 		}
 		{
 			dependencies: ["29A487F0BC43AAF9"]
@@ -916,6 +910,10 @@
 								Count: 1b
 								id: "gtceu:hv_alloy_smelter"
 							}
+							{
+								Count: 1b
+								id: "steamadditions:steam_foundry"
+							}
 						]
 					}
 				}
@@ -976,7 +974,6 @@
 					type: "item"
 				}
 				{
-					count: 2L
 					id: "76CB286FDDD00D40"
 					item: "systeams:steam_dynamo"
 					type: "item"
@@ -1489,9 +1486,9 @@
 		}
 		{
 			dependencies: [
-				"1BC6DDC2D50F9C46"
 				"7A7907EE1F3FCFBF"
 				"0B5613CC79261800"
+				"1BC6DDC2D50F9C46"
 			]
 			description: [
 				"{moni.quest.3AB0402B19DD5BA8.description1}"
@@ -1678,11 +1675,18 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			tasks: [{
-				id: "45561FC8024BD7F3"
-				item: "laserio:energy_overclocker_card_tier_2"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "45561FC8024BD7F3"
+					item: "laserio:energy_overclocker_card_tier_2"
+					type: "item"
+				}
+				{
+					id: "300A597D5FD2F21E"
+					item: "pipez:improved_upgrade"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.4F4F120AFB3A9250.title}"
 			x: -0.25d
 			y: 17.0d
@@ -1726,8 +1730,6 @@
 				"{moni.quest.5C4E189A3E401566.description1}"
 				""
 				"{moni.quest.5C4E189A3E401566.description2}"
-				""
-				"{moni.quest.5C4E189A3E401566.description3}"
 			]
 			id: "5C4E189A3E401566"
 			rewards: [{
@@ -1851,8 +1853,6 @@
 				"{moni.quest.0523F4AB9A794390.description7}"
 				""
 				"{moni.quest.0523F4AB9A794390.description8}"
-				""
-				"{moni.quest.0523F4AB9A794390.description9}"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:maintenance_hatch"
@@ -2050,21 +2050,76 @@
 				"{moni.quest.4F239316765C7CA1.description1}"
 				""
 				"{moni.quest.4F239316765C7CA1.description2}"
+				""
+				"{moni.quest.4F239316765C7CA1.description3}"
 			]
 			hide_until_deps_visible: true
+			icon: "laserio:laser_node"
 			id: "4F239316765C7CA1"
 			optional: true
-			rewards: [{
-				id: "189732EC89DA656B"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "733BCE50584B7FC8"
+					item: "kubejs:moni_nickel"
+					type: "item"
+				}
+				{
+					id: "576F8362A4A48428"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+				{
+					id: "4687EABAFD3E5842"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 15
+							}
+						}
+						id: "laserio:card_holder"
+					}
+					type: "item"
+				}
+				{
+					id: "788E688147A8B83B"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "laserio:laseriobook"
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
-			tasks: [{
-				id: "6DEB6911246BA1D9"
-				item: "laserio:card_item"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 4L
+					id: "7D0E23630A562F6A"
+					item: "laserio:laser_node"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6DEB6911246BA1D9"
+					item: "laserio:card_item"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "252F1286D3A46E4E"
+					item: "laserio:card_energy"
+					type: "item"
+				}
+				{
+					id: "450A8E8955EDBB51"
+					item: "laserio:energy_overclocker_card_tier_1"
+					type: "item"
+				}
+			]
 			title: "{moni.quest.4F239316765C7CA1.title}"
 			x: 6.5d
 			y: 2.0d
@@ -2713,46 +2768,24 @@
 		{
 			dependencies: ["1BC6DDC2D50F9C46"]
 			description: [
-				"{moni.quest.114B300F56E48351.description1}"
-				""
-				"{moni.quest.114B300F56E48351.description2}"
-				""
-				"{moni.quest.114B300F56E48351.description3}"
-			]
-			id: "114B300F56E48351"
-			shape: "hexagon"
-			tasks: [{
-				id: "17D47466DED091B3"
-				item: {
-					Count: 1
-					id: "shrink:shrinking_device"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 2.25d
-			y: 14.25d
-		}
-		{
-			dependencies: ["1BC6DDC2D50F9C46"]
-			description: [
 				"{moni.quest.02B78A0C4F3C4ECA.description1}"
 				""
 				"{moni.quest.02B78A0C4F3C4ECA.description2}"
 				""
 				"{moni.quest.02B78A0C4F3C4ECA.description3}"
-				""
+				"{@pagebreak}"
 				"{moni.quest.02B78A0C4F3C4ECA.description4}"
 				""
 				"{moni.quest.02B78A0C4F3C4ECA.description5}"
 				""
-				"{moni.quest.02B78A0C4F3C4ECA.description6}"
+				"[\"\",{\"translate\":\"moni.quest.02B78A0C4F3C4ECA.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.02B78A0C4F3C4ECA.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"31AE366B15538079\"}},{\"translate\":\"moni.quest.02B78A0C4F3C4ECA.rich_description3\"}]"
 			]
 			icon: "gtceu:lv_voltage_coil"
 			id: "02B78A0C4F3C4ECA"
 			require_sequential_tasks: false
 			shape: "hexagon"
 			size: 1.25d
+			subtitle: "{moni.quest.02B78A0C4F3C4ECA.subtitle}"
 			tasks: [{
 				id: "480CE98BB705369B"
 				type: "checkmark"
@@ -2760,6 +2793,150 @@
 			title: "{moni.quest.02B78A0C4F3C4ECA.title}"
 			x: 1.0d
 			y: 11.25d
+		}
+		{
+			dependencies: [
+				"3BD20358F137E7C6"
+				"5BE3E37772FAF6CB"
+			]
+			description: [
+				"{moni.quest.7A67E519745A8361.description1}"
+				""
+				"{moni.quest.7A67E519745A8361.description2}"
+				"{moni.quest.7A67E519745A8361.description3}"
+				"{moni.quest.7A67E519745A8361.description4}"
+				"{moni.quest.7A67E519745A8361.description5}"
+				"{moni.quest.7A67E519745A8361.description6}"
+				"{moni.quest.7A67E519745A8361.description7}"
+				""
+				"{moni.quest.7A67E519745A8361.description8}"
+			]
+			hide_until_deps_visible: true
+			id: "7A67E519745A8361"
+			optional: true
+			rewards: [{
+				id: "5E252CA9C37789FE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0E87A07E1757F58F"
+				item: "telepastries:nether_cake"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["46C6F922B4ADCC8C"]
+			description: ["{moni.quest.62C8DB9874421C79.description1}"]
+			id: "62C8DB9874421C79"
+			subtitle: "{moni.quest.62C8DB9874421C79.subtitle}"
+			tasks: [{
+				id: "5F057A7E53C35A16"
+				item: "thermal:machine_crafter"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["025543EDB0A4AC22"]
+			description: ["{moni.quest.7045BE273C44BA35.description1}"]
+			id: "7045BE273C44BA35"
+			rewards: [{
+				id: "54871D72B9A05DF7"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "16A558E310D05EC5"
+				item: "thermal:device_fisher"
+				type: "item"
+			}]
+			x: -5.25d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3AB0402B19DD5BA8"]
+			description: [
+				"{moni.quest.46C6F922B4ADCC8C.description1}"
+				""
+				"{moni.quest.46C6F922B4ADCC8C.description2}"
+			]
+			id: "46C6F922B4ADCC8C"
+			rewards: [{
+				id: "795FED529D7E9BFE"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D7A22C9F492E678"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			title: "{moni.quest.46C6F922B4ADCC8C.title}"
+			x: -1.25d
+			y: 14.75d
+		}
+		{
+			dependencies: ["46C6F922B4ADCC8C"]
+			description: [
+				"{moni.quest.3BED5126D4CC361C.description1}"
+				""
+				"{moni.quest.3BED5126D4CC361C.description2}"
+			]
+			id: "3BED5126D4CC361C"
+			tasks: [{
+				id: "60AB5C19323C3B08"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5C4E189A3E401566"]
+			description: [
+				"{moni.quest.31AE366B15538079.description1}"
+				""
+				"{moni.quest.31AE366B15538079.description2}"
+				""
+				"{moni.quest.31AE366B15538079.description3}"
+				""
+				"{moni.quest.31AE366B15538079.description4}"
+			]
+			icon: "minecraft:clock"
+			id: "31AE366B15538079"
+			subtitle: "{moni.quest.31AE366B15538079.subtitle}"
+			tasks: [{
+				id: "2C6BF4196CE9468F"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.31AE366B15538079.title}"
+			x: -4.0d
+			y: 15.0d
+    }
+    {
+			dependencies: ["1BC6DDC2D50F9C46"]
+			description: [
+				"{moni.quest.14C50EFF4EB257E3.description1}"
+				""
+				"{moni.quest.14C50EFF4EB257E3.description2}"
+				""
+				"{moni.quest.14C50EFF4EB257E3.description3}"
+			]
+			icon: "gtceu:hot_mercury_barium_calcium_cuprate_ingot"
+			id: "14C50EFF4EB257E3"
+			tasks: [{
+				id: "01FA8F1646AC977B"
+				type: "checkmark"
+			}]
+			title: "{moni.quest.14C50EFF4EB257E3.title}"
+			x: 2.5d
+			y: 14.25d
 		}
 	]
 	title: "{moni.chapter.2763DAD954E0EED8.title}"

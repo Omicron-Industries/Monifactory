@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:vibrant_alloy 288")
         .itemOutputs("waystones:warp_stone")
         .duration(320)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
 
     event.replaceInput({ output: "waystones:warp_plate" }, "minecraft:gravel", "waystones:warp_stone")
 })

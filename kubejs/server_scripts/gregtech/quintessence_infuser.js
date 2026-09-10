@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         .itemInputs("6x gtceu:dark_soularium_plate", "1x gtceu:tungsten_frame")
         .itemOutputs("2x kubejs:dark_soularium_casing")
         .duration(50)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
         .addMaterialInfo(true)
 
     function Soulbinding(id, mob, input2, EUt, fluid, output) {

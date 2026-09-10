@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("2x monilabs:cryolobus_casing")
         .duration(50)
         .circuit(6)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
         .addMaterialInfo(true)
 
     function Discharge(id, output, input, refund) {

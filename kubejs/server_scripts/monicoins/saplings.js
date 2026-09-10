@@ -76,5 +76,14 @@ ServerEvents.recipes(event => {
         ], {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
+        if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
+            event.shaped(Item.of("integrateddynamics:menril_sapling", 64), [
+                "  A",
+                "  A",
+                "A  "
+            ], {
+                A: "kubejs:moni_penny"
+            }).noMirror().noShrink()
+        }
     }
 })

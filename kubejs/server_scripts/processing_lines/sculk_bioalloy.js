@@ -19,15 +19,6 @@ ServerEvents.recipes(event => {
         .duration(100)
         .EUt(GTValues.VA[GTValues.IV])
 
-    event.remove({ id: "gtceu:extractor/extract_experience_attuned_dust"})
-    event.recipes.gtceu.chemical_bath("experience_attuned_vapor")
-        .itemInputs("gtceu:experience_attuned_dust")
-        .inputFluids("gtceu:americium_plasma 36")
-        .itemOutputs("gtceu:small_americium_dust")
-        .outputFluids("gtceu:experience_attuned 144")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.EV])
-
     event.recipes.gtceu.mixer("sculk_agar")
         .itemInputs("4x gtceu:potassium_cyanide_dust", "7x gtceu:biotite_dust", "9x gtceu:collagen_dust")
         .inputFluids("enderio:xp_juice 1500", "gtceu:experience_attuned 288")
@@ -38,7 +29,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.discharger("amalgamated_sculk")
         .itemInputs("3x gtceu:sculk_agar_dust", "4x gtceu:echo_shard_dust", Item.of("kubejs:hadal_energy_core", "{Damage:8000000}").weakNBT())
-        .inputFluids("gtceu:hadal_sculk")
+        .inputFluids("gtceu:hadal_sculk 1152")
         .itemOutputs("kubejs:amalgamated_sculk")
         .duration(10)
         .cleanroom(CleanroomType.STERILE_CLEANROOM)
@@ -66,7 +57,7 @@ ServerEvents.recipes(event => {
         .itemInputs("kubejs:amalgamated_sculk")
         .inputFluids("gtceu:bioalloy_base 1008")
         .outputFluids("monilabs:sculk_bioalloy 1440")
-        .xpRange(116000, 124000)
+        .xpRange(64000, 80000)
         .duration(60)
         .EUt(GTValues.VA[GTValues.ZPM])
 })

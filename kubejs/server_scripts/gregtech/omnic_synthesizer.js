@@ -83,7 +83,6 @@ ServerEvents.recipes(event => {
         "kubejs:stabilized_plutonium",
         "kubejs:stabilized_americium",
         "kubejs:stabilized_curium",
-        "kubejs:stabilized_berkelium",
         "kubejs:stabilized_californium",
         "gtceu:darmstadtium_ingot"
     ];

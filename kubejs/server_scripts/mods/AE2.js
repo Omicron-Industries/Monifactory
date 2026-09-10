@@ -596,7 +596,7 @@ ServerEvents.recipes(event => {
         .itemInputs("ae2:fluix_dust")
         .itemOutputs("gtceu:fluix_plate")
         .duration(400)
-        .EUt(0.25 * GTValues.V[GTValues.ULV])
+        .EUt(2)
 
     // Cable Recipes
     event.remove({ id: "ae2:network/cables/covered_fluix" })

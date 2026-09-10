@@ -125,8 +125,8 @@
 			linked_quest: "27A80F018F59EF1E"
 			shape: "hexagon"
 			size: 1.1d
-			x: 14.025d
-			y: 2.75d
+			x: 14.75d
+			y: 4.675d
 		}
 		{
 			id: "171E1089E43EE76B"
@@ -134,6 +134,12 @@
 			size: 1.25d
 			x: -8.25d
 			y: 6.75d
+		}
+		{
+			id: "431DA0890FF11DE1"
+			linked_quest: "63C3077124BC81FD"
+			x: -8.5d
+			y: -5.25d
 		}
 	]
 	quests: [
@@ -826,33 +832,6 @@
 			y: 6.75d
 		}
 		{
-			dependencies: ["6DAB13A7BDECE94E"]
-			description: [
-				"{moni.quest.72FFB2AAB5EA049D.description1}"
-				""
-				"{moni.quest.72FFB2AAB5EA049D.description2}"
-				""
-				"{moni.quest.72FFB2AAB5EA049D.description3}"
-			]
-			hide_dependency_lines: true
-			id: "72FFB2AAB5EA049D"
-			optional: true
-			rewards: [{
-				id: "7CCDAA726A94F22F"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			size: 2.0d
-			tasks: [{
-				id: "0DF055B71C2833F8"
-				item: "gtceu:hv_world_accelerator"
-				type: "item"
-			}]
-			title: "{moni.quest.72FFB2AAB5EA049D.title}"
-			x: 4.0d
-			y: -6.5d
-		}
-		{
 			dependencies: [
 				"4DB622A78605A2EB"
 				"458FF3F9BC8E025B"
@@ -1311,9 +1290,12 @@
 				"{moni.quest.069D243B809E0D5D.description3}"
 				""
 				"{moni.quest.069D243B809E0D5D.description4}"
+				""
+				"{moni.quest.069D243B809E0D5D.description5}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
+			icon: "gtmutils:web_hub"
 			id: "069D243B809E0D5D"
 			optional: true
 			rewards: [{
@@ -1326,7 +1308,12 @@
 			tasks: [
 				{
 					id: "68377567726F542C"
-					item: "gtmutils:pterb_machine"
+					item: "gtmutils:web_hub"
+					type: "item"
+				}
+				{
+					id: "385F41E1232A30C1"
+					item: "gtmutils:web_receiver"
 					type: "item"
 				}
 				{
@@ -1337,14 +1324,14 @@
 					type: "item"
 				}
 				{
-					count: 58L
+					count: 82L
 					id: "0FE1D5A3165173C5"
 					item: "gtceu:high_power_casing"
 					optional_task: true
 					type: "item"
 				}
 				{
-					count: 27L
+					count: 41L
 					id: "1420E116039DDBB5"
 					item: "gtceu:superconducting_coil"
 					optional_task: true
@@ -1354,6 +1341,13 @@
 					count: 24L
 					id: "6959DC32078B79AF"
 					item: "gtceu:europium_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0F86B8E141C2B3A9"
+					item: "gtceu:naquadah_frame"
 					optional_task: true
 					type: "item"
 				}
@@ -1436,19 +1430,129 @@
 				"{moni.quest.069D243B809E0D5D.description1}"
 				""
 				"{moni.quest.069D243B809E0D5D.description2}"
+				""
+				"{moni.quest.069D243B809E0D5D.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
+			icon: "gtmutils:web_hub"
 			id: "10E63A0428E6BA25"
 			optional: true
 			size: 2.0d
 			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
-			tasks: [{
-				id: "6CC31FF5936A485F"
-				item: "gtmutils:pterb_machine"
-				type: "item"
-			}]
-			title: "{moni.quest.10E63A0428E6BA25.title}"
+			tasks: [
+				{
+					id: "12926B03245B5C5B"
+					item: "gtmutils:web_hub"
+					type: "item"
+				}
+				{
+					id: "44186257F4A41DBC"
+					item: "gtmutils:web_receiver"
+					type: "item"
+				}
+				{
+					count: 35L
+					id: "49F7B3A4BAD92078"
+					item: "gtceu:palladium_substation"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 82L
+					id: "3F1F71F05E8870DB"
+					item: "gtceu:high_power_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 41L
+					id: "5CF63C90F1C12F36"
+					item: "gtceu:superconducting_coil"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "534561F5D62386A4"
+					item: "gtceu:europium_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4C02D84C3465B44C"
+					item: "gtceu:naquadah_frame"
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "1822D62B1382D71E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "478170EE889BA5FA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:substation_input_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "39AD81CB89858880"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:substation_output_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "746E4D2B1D1F87F0"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:laser_source_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					disable_toast: true
+					id: "289C2709FEA98B72"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:laser_target_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{moni.quest.069D243B809E0D5D.title}"
 			x: 6.0d
 			y: -6.5d
 		}
@@ -1624,29 +1728,6 @@
 			title: "{moni.quest.1EA5F30C5ACADBA9.title}"
 			x: 10.5d
 			y: 7.25d
-		}
-		{
-			dependencies: ["27A80F018F59EF1E"]
-			description: ["{moni.quest.62C85A1F451C4855.description3}"]
-			id: "3E7250EFBFF03D89"
-			rewards: [{
-				id: "48E6352BC7E3A682"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "3A145740391DF5FD"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_2_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 14.75d
-			y: 4.75d
 		}
 		{
 			dependencies: [
@@ -2018,40 +2099,6 @@
 			]
 			title: "{moni.quest.70FD95AEA44548B0.title}"
 			x: -7.5d
-			y: -5.25d
-		}
-		{
-			dependencies: ["785C6332FC7A07A5"]
-			description: [
-				"{moni.quest.63C3077124BC81FD.description1}"
-				""
-				"{moni.quest.63C3077124BC81FD.description2}"
-				""
-				"{moni.quest.63C3077124BC81FD.description3}"
-				""
-				"{moni.quest.63C3077124BC81FD.description4}"
-			]
-			icon: "gtceu:germanium_dust"
-			id: "63C3077124BC81FD"
-			rewards: [{
-				id: "73F86168083D3341"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "46D85CCD66919277"
-					item: "gtceu:coal_fly_ash_dust"
-					type: "item"
-				}
-				{
-					id: "1B19BD8698E6BFD0"
-					item: "gtceu:germanium_dust"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.63C3077124BC81FD.title}"
-			x: -8.75d
 			y: -5.25d
 		}
 	]
