@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.chromatic_transcendence("prismatic_core_supercritical_void")
         .itemInputs("kubejs:supercritical_prismatic_core")
-        .outputFluids("gtceu:meta_null 4480")
+        .outputFluids("gtceu:meta_null 6720")
         .inputColor(PrismaticColor.ANY)
         .outputStatesRelative(0)
         .duration(20)
