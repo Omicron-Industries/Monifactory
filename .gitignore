@@ -76,14 +76,8 @@ config/defaultworldtype/world-presets.txt
 /config/lostcities/profiles/*
 !/config/lostcities/profiles/monidefault.json
 
-# NCN
-!/config/NuclearCraft
-/config/NuclearCraft/*
-!/config/NuclearCraft/fission_fuel
-!/config/NuclearCraft/heat_sinks
-!/config/NuclearCraft/common.toml
-!/config/NuclearCraft/fission.toml
-!/config/NuclearCraft/materials.toml
+# Phoenix Fission
+!/config/phoenix_fission.yaml
 
 # SolarFlux
 !/config/solarflux

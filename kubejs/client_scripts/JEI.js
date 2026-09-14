@@ -60,32 +60,11 @@ JEIEvents.addItems(event => {
     event.add(Item.of("ironjetpacks:cell", {Id: "ironjetpacks:reinforced"}))
     event.add(Item.of("ironjetpacks:cell", {Id: "ironjetpacks:resonant"}))
 
-    // NuclearCraft
-    event.add(["nuclearcraft:tough_alloy_ingot", "nuclearcraft:hard_carbon_ingot", "nuclearcraft:ferroboron_ingot", "nuclearcraft:rhodochrosite_dust"])
-
     // Thermal
     event.add("thermal:nuke_tnt")
 })
 
 JEIEvents.hideFluids(event => {
-    // hiding NuclearCraft Fluids
-    // get all nc fluids from index
-    let ncFluids = Fluid.getTypes().filter(id => id.includes("nuclearcraft"))
-
-    // list of used fluids to not remove
-    let ncUsedFluid = ["nuclearcraft:hydrated_gelatin", "nuclearcraft:gelatin", "nuclearcraft:sugar", "nuclearcraft:marshmallow", "nuclearcraft:cocoa_butter", "nuclearcraft:pasteurized_milk", "nuclearcraft:chocolate_liquor", "nuclearcraft:unsweetened_chocolate", "nuclearcraft:dark_chocolate", "nuclearcraft:milk_chocolate", "nuclearcraft:technical_water", "nuclearcraft:high_pressure_steam", "nuclearcraft:exhaust_steam"]
-
-    // adds flowing fluid variants to the list so they aren't hidden
-    ncUsedFluid.forEach(fluid => { ncUsedFluid.push(`${fluid}_flowing`) })
-
-    // remove used fluids from the full list
-    ncFluids = ncFluids.filter((el) => !ncUsedFluid.includes(el))
-
-    // loops through the list and hides all the unwanted fluids for nc
-    ncFluids.forEach(element => {
-        event.hide(element)
-    })
-
     // Hide Ad Astra fluids
     Fluid.getTypes().filter(id=>id.includes("ad_astra")).forEach(id => event.hide(id))
 

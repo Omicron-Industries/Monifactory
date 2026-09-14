@@ -1,5 +1,0 @@
-[{
-  "type": "platinum",
-  "heat": 180,
-  "placement_rule": ["fission_reactor_irradiation_chamber","#nuclearcraft:moderators"]
-}]

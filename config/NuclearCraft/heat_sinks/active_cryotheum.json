@@ -1,5 +1,0 @@
-[{
-  "type": "active_cryotheum",
-  "heat": 550,
-  "placement_rule": ["fission_reactor_solid_fuel_cell>2", "#nuclearcraft:moderators"]
-}]

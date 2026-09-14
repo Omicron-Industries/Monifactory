@@ -50,39 +50,3 @@ global.fluidNukeList = [
     "systeams:steamiestest",
 
 ]
-
-StartupEvents.postInit(event => {
-    /**
-     * NuclearCraft is most easily dealt with by removing *everything* but a select few fluids
-     */
-    // Get all of the NuclearCraft fluids
-    let NCFluids = Fluid.getTypes().filter(id => id.includes("nuclearcraft"))
-
-    // NuclearCraft fluids to not nuke
-    let NCFluidsToKeep = [
-        "nuclearcraft:hydrated_gelatin",
-        "nuclearcraft:gelatin",
-        "nuclearcraft:sugar",
-        "nuclearcraft:marshmallow",
-        "nuclearcraft:cocoa_butter",
-        "nuclearcraft:pasteurized_milk",
-        "nuclearcraft:chocolate_liquor",
-        "nuclearcraft:unsweetened_chocolate",
-        "nuclearcraft:dark_chocolate",
-        "nuclearcraft:milk_chocolate",
-        "nuclearcraft:technical_water",
-        "nuclearcraft:high_pressure_steam",
-    ]
-
-    // Add depleted fuels, or else fission reactors won't run
-    NCFluidsToKeep = NCFluidsToKeep.concat(NCFluids.filter(id => id.includes("depleted_fuel")))
-
-    // Add flowing fluid variants to the list of fluids to keep
-    NCFluidsToKeep.forEach(fluid => { NCFluidsToKeep.push(`${fluid}_flowing`) })
-
-    // Remove used fluids from the full list of NC fluids
-    let NCFluidsToRemove = NCFluids.filter((el) => !NCFluidsToKeep.includes(el))
-
-    // Add all the unwanted NuclearCraft fluids to the nukeList
-    global.fluidNukeList = global.fluidNukeList.concat(NCFluidsToRemove)
-})

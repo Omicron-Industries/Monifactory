@@ -1,0 +1,113 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"texture_size": [48, 32],
+	"textures": {
+		"0": "phoenix_fission:block/control_rod_assembly",
+		"particle": "phoenix_fission:block/control_rod_assembly"
+	},
+	"elements": [
+		{
+			"name": "Rod 1",
+			"from": [3, 2, 3],
+			"to": [6, 14, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 1, 3]},
+			"faces": {
+				"north": {"uv": [6.33333, 10, 7.33333, 16], "texture": "#0"},
+				"east": {"uv": [7.33333, 10, 8.33333, 16], "texture": "#0"},
+				"south": {"uv": [8.33333, 10, 9.33333, 16], "texture": "#0"},
+				"west": {"uv": [9.33333, 10, 10.33333, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Rod 2",
+			"from": [10, 2, 3],
+			"to": [13, 14, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 1, 3]},
+			"faces": {
+				"north": {"uv": [6.33333, 10, 7.33333, 16], "texture": "#0"},
+				"east": {"uv": [7.33333, 10, 8.33333, 16], "texture": "#0"},
+				"south": {"uv": [8.33333, 10, 9.33333, 16], "texture": "#0"},
+				"west": {"uv": [9.33333, 10, 10.33333, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Rod 3",
+			"from": [10, 2, 10],
+			"to": [13, 14, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 1, 3]},
+			"faces": {
+				"north": {"uv": [6.33333, 10, 7.33333, 16], "texture": "#0"},
+				"east": {"uv": [7.33333, 10, 8.33333, 16], "texture": "#0"},
+				"south": {"uv": [8.33333, 10, 9.33333, 16], "texture": "#0"},
+				"west": {"uv": [9.33333, 10, 10.33333, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Rod 4",
+			"from": [3, 2, 10],
+			"to": [6, 14, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 1, 3]},
+			"faces": {
+				"north": {"uv": [6.33333, 10, 7.33333, 16], "texture": "#0"},
+				"east": {"uv": [7.33333, 10, 8.33333, 16], "texture": "#0"},
+				"south": {"uv": [8.33333, 10, 9.33333, 16], "texture": "#0"},
+				"west": {"uv": [9.33333, 10, 10.33333, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Plate 1",
+			"from": [0, 0, 0],
+			"to": [16, 2, 16],
+			"faces": {
+				"north": {"uv": [5.33333, 0, 10.66667, 1], "texture": "#0"},
+				"east": {"uv": [5.33333, 1, 10.66667, 2], "texture": "#0"},
+				"south": {"uv": [5.33333, 2, 10.66667, 3], "texture": "#0"},
+				"west": {"uv": [5.33333, 3, 10.66667, 4], "texture": "#0"},
+				"up": {"uv": [0, 0, 5.33333, 8], "texture": "#0"},
+				"down": {"uv": [0, 8, 5.33333, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Plate 2",
+			"from": [1, 5, 1],
+			"to": [15, 6, 15],
+			"faces": {
+				"north": {"uv": [11.33333, 14, 16, 14.5], "texture": "#0"},
+				"east": {"uv": [11.33333, 14.5, 16, 15], "texture": "#0"},
+				"south": {"uv": [11.33333, 15, 16, 15.5], "texture": "#0"},
+				"west": {"uv": [11.33333, 15.5, 16, 16], "texture": "#0"},
+				"up": {"uv": [11.33333, 0, 16, 7], "texture": "#0"},
+				"down": {"uv": [11.33333, 7, 16, 14], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Plate 3",
+			"from": [1, 10, 1],
+			"to": [15, 11, 15],
+			"faces": {
+				"north": {"uv": [11.33333, 14, 16, 14.5], "texture": "#0"},
+				"east": {"uv": [11.33333, 14.5, 16, 15], "texture": "#0"},
+				"south": {"uv": [11.33333, 15, 16, 15.5], "texture": "#0"},
+				"west": {"uv": [11.33333, 15.5, 16, 16], "texture": "#0"},
+				"up": {"uv": [11.33333, 0, 16, 7], "texture": "#0"},
+				"down": {"uv": [11.33333, 7, 16, 14], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Plate 4",
+			"from": [0, 14, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [5.33333, 0, 10.66667, 1], "texture": "#0"},
+				"east": {"uv": [5.33333, 1, 10.66667, 2], "texture": "#0"},
+				"south": {"uv": [5.33333, 2, 10.66667, 3], "texture": "#0"},
+				"west": {"uv": [5.33333, 3, 10.66667, 4], "texture": "#0"},
+				"up": {"uv": [0, 0, 5.33333, 8], "texture": "#0"},
+				"down": {"uv": [0, 8, 5.33333, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {}
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "phoenix_fission:block/casings/lead_lined/casing"
+  }
+}

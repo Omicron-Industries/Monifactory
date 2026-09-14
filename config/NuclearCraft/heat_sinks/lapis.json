@@ -1,5 +1,0 @@
-[{
-  "type": "lapis",
-  "heat": 120,
-  "placement_rule": ["fission_reactor_solid_fuel_cell", "#nuclearcraft:fission_reactor_casing"]
-}]
