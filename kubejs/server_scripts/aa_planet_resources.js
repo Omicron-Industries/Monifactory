@@ -177,8 +177,8 @@ ServerEvents.recipes(event => {
     // Arsenopyrite metallurgy like Cobaltite
     event.recipes.gtceu.electric_blast_furnace("arsenopyrite_metallurgy")
         .itemInputs("gtceu:arsenopyrite_dust")
-        .inputFluids("gtceu:oxygen 2500")
-        .itemOutputs("2x gtceu:small_wrought_iron_dust", "gtceu:arsenic_trioxide_dust")
+        .inputFluids("gtceu:oxygen 3000")
+        .itemOutputs("gtceu:hematite_dust", "gtceu:arsenic_trioxide_dust")
         .outputFluids("gtceu:sulfur_dioxide 1000")
         .duration(100)
         .EUt(GTValues.VA[GTValues.MV])
@@ -231,15 +231,15 @@ ServerEvents.recipes(event => {
         .chancedOutput("3x gtceu:iron_ii_chloride_dust", 5000, 0)
         .chancedOutput("3x gtceu:manganese_ii_chloride_dust", 5000, 0)
         .chancedItemOutputLogic(ChanceLogic.XOR)
-        .duration(210)
+        .duration(10.5 * GTValues.SECONDS)
         .EUt(GTValues.VHA[GTValues.EV])
 
     event.recipes.gtceu.chemical_bath("tungstic_acid_from_stolzite")
         .itemInputs("6x gtceu:stolzite_dust")
         .inputFluids("gtceu:hydrochloric_acid 2000")
         .itemOutputs("7x gtceu:tungstic_acid_dust", "3x gtceu:lead_chloride_dust")
-        .duration(210)
-        .EUt(GTValues.VHA[GTValues.EV])
+        .duration(10.5 / 2 * GTValues.SECONDS)
+        .EUt(GTValues.VHA[GTValues.IV])
 
     // Metallurgy to refine Azurite and Carnotite
     event.recipes.gtceu.electric_blast_furnace("azurite_metallurgy")

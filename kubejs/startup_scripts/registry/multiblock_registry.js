@@ -288,6 +288,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     // Greenhouse
     event.create("greenhouse", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
+        .allowExtendedFacing(false)
         .recipeTypes("greenhouse")
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])

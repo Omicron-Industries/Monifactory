@@ -237,13 +237,13 @@ ServerEvents.recipes(event => {
         builder
             .itemInputs("16x kubejs:stabilized_plutonium")
             .itemInputs("8x kubejs:dragon_lair_data")
-            .damageRate((doHostileMicroverse ? -40 : 4))
+            .damageRate(-40)
             .itemOutputs(
                 "32x minecraft:dragon_egg",
                 "64x kubejs:ender_dragon_scale",
                 "32x minecraft:dragon_breath",
             )
-            .requiredMicroverse((doHostileMicroverse ? 2 : 1)) // Hostile : Normal
+            .requiredMicroverse(2) // Hostile
     })
 
     microverse_mission(event, 6, 2).forEach(builder => {
