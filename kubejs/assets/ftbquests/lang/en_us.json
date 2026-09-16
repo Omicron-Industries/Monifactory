@@ -2263,7 +2263,7 @@
     "moni.quest.5ECF0A787D861C89.title": "&2The Fourth And Final Tier Six Circuits",
     "moni.quest.5EE2338113F22952.title": "&9Antimatter Collider",
     "moni.quest.5EE2338113F22952.description1": "The &3Antimatter Collider&r is a large multiblock that can generate more energy than you will be able to transport.",
-    "moni.quest.5EE2338113F22952.description2": "It does so by gathering energy from the annihilation of &6Antimatter Fuel&r and one of two collidants: &6Neutronium&r or &6Infinity&r.",
+    "moni.quest.5EE2338113F22952.description2": "It does so by gathering energy from the annihilation of &6Antimatter Fuel&r and one of two collidants: &6Neutronium&r or &6Eltz&r.",
     "moni.quest.5EE2338113F22952.description3": "When building the collider, note that each ring of &6Netherite Casing&r must have its own fluid input hatch, and that only single fluid hatches are accepted.",
     "moni.quest.5EE2338113F22952.description4": "&cOnce the collider is turned on, all fluids in both hatches will be constantly consumed.&r Energy will be created for equal amounts of matter and antimatter, with a bonus multiplier for larger batches of collidants.",
     "moni.quest.5EE2338113F22952.description5": "&eExcess of either fluid will be destroyed&r. Energy created that doesn't fit into the dynamo/laser hatch &ewill be lost&r.",
