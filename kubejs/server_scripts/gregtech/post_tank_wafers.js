@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.ZPM])
 
     event.recipes.gtceu.electric_blast_furnace("null_doped_boule")
-        .itemInputs("4x gtceu:meta_null_ingot", "64x gtceu:silicon_block", "16x kubejs:stabilized_berkelium")
+        .itemInputs("4x gtceu:meta_null_ingot", "64x gtceu:silicon_block", "16x kubejs:stabilized_curium")
         .inputFluids("kubejs:molten_pyrotheum 16000")
         .itemOutputs("kubejs:null_boule")
         .duration(18000)
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     event.recipes.gtceu.large_chemical_reactor("multidimensional_cpu_wafer")
-        .itemInputs("16x kubejs:unactivated_multidimensional_cpu_wafer", "64x kubejs:quantum_flux", "kubejs:quasi_stable_neutron_star")
+        .itemInputs("16x kubejs:unactivated_multidimensional_cpu_wafer", "64x monilabs:quantum_flux", "kubejs:quasi_stable_neutron_star")
         .inputFluids(Fluid.of("gtceu:xenon", 1000))
         .itemOutputs("16x kubejs:multidimensional_cpu_wafer")
         .cleanroom(CleanroomType.CLEANROOM)

@@ -17,8 +17,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
     event.create("nitrous_acid")
         .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
-        .color(0xffc129)
+        .color(0x7281A6)
         .components("1x hydrogen", "1x nitrogen", "2x oxygen")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("fluoroboric_acid")
         .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
@@ -30,12 +31,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .gas()
         .color(0xcdfaaf)
         .components("1x boron", "3x fluorine")
-
-    event.create("p-toluidine")
-        .liquid()
-        .color(0x693815)
-        .components("7x carbon", "9x hydrogen", "1x nitrogen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("4-fluorotoluene")
         .liquid()
@@ -61,13 +56,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x518f9e)
         .components("1x fluorine", "7x carbon", "4x hydrogen", "1x oxygen", "1x chlorine")
         .formula("FC6H4COCl")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create("benzenediazonium_chloride")
-        .dust()
-        .color(0x5e4b54)
-        .components("6x carbon", "5x hydrogen", "2x nitrogen", "1x chlorine")
-        .formula("C6H5ClN2")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("benzenediazonium_fluoroborate")
@@ -105,12 +93,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .dust()
         .color(0xa6a6a6)
         .components("1x sodium", "1x fluorine")
-
-    event.create("sulfolene")
-        .liquid()
-        .color(0xfaf7a7)
-        .components("4x carbon", "6x hydrogen", "1x sulfur", "2x oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
     event.create("sulfolane")
         .liquid()

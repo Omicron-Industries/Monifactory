@@ -1113,7 +1113,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "326F637FA66766CF"
-				item: "kubejs:quantum_flux"
+				item: "monilabs:quantum_flux"
 				type: "item"
 			}]
 			x: 5.0d

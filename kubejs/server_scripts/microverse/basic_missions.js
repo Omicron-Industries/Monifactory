@@ -10,7 +10,7 @@
  */
 ServerEvents.recipes(event => {
     event.recipes.gtceu.microverse("normal_microverse_projection")
-        .itemInputs("kubejs:universe_creation_data", "64x kubejs:quantum_flux", "64x kubejs:quantum_flux")
+        .itemInputs("kubejs:universe_creation_data", "64x monilabs:quantum_flux", "64x monilabs:quantum_flux")
         .updateMicroverse(1) // Normal
         .addData("projector_tier", 1)
         .EUt(GTValues.VHA[GTValues.HV])
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
             .itemInputs("gtceu:power_thruster")
             .requiredMicroverse(1) // Normal
             .itemOutputs(
-                "32x gtceu:raw_molybdenite",
+                "16x gtceu:raw_molybdenite",
                 "32x ad_astra:moon_sand",
                 "24x gtceu:raw_dilithium",
                 "32x gtceu:raw_fluorite",
@@ -155,9 +155,9 @@ ServerEvents.recipes(event => {
             .requiredMicroverse(1) // Normal
             .itemOutputs(
                 "64x gtceu:raw_scheelite",
-                "64x gtceu:raw_scheelite",
-                "64x gtceu:raw_tungstate",
-                "64x gtceu:raw_tungstate",
+                "32x gtceu:raw_scheelite",
+                "64x gtceu:raw_wolframite",
+                "32x gtceu:raw_wolframite",
             )
     })
 

@@ -71,7 +71,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("naquadah_refinery")
         .category("multiblock")
         .setEUIO("in")
-        .setMaxIOSize(6, 0, 5, 1)
+        .setMaxIOSize(3, 0, 5, 1)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)
@@ -288,6 +288,7 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
     // Greenhouse
     event.create("greenhouse", "multiblock")
         .rotationState(RotationState.NON_Y_AXIS)
+        .allowExtendedFacing(false)
         .recipeTypes("greenhouse")
         .appearanceBlock(GTBlocks.CASING_STEEL_SOLID)
         .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT, GTRecipeModifiers.BATCH_MODE])

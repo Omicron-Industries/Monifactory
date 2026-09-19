@@ -65,8 +65,8 @@
     "chiseled_bookshelf": true
   },
   "gtmutils": {
-    "enlarged_me_stocking_bus_info": true,
-    "pterb_info": true
+    "web_info": true,
+    "enlarged_me_stocking_bus_info": true
   },
   "endertanks": {
     "hud.basic": true,
@@ -117,6 +117,9 @@
   "telepastries": {
     "bites": true
   },
+  "phoenix_fission": {
+    "fission_machine_info": true
+  },
   "functionalstorage": {
     "armory": true
   },
@@ -165,6 +168,9 @@
     "hud.rgb16": true,
     "hud": true,
     "hud.redstone": true
+  },
+  "pipez": {
+    "pipe": true
   },
   "waystones": {
     "waystone": true

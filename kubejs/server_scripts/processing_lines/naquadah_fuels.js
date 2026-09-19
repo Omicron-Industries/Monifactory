@@ -17,8 +17,8 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:hydrogen 125", "gtceu:quadium 125")
         .outputFluids("gtceu:helium_plasma 125")
         .duration(8)
-        .EUt(GTValues.VHA[GTValues.IV])
-        .fusionStartEU(20000000)
+        .EUt(GTValues.VH[GTValues.IV])
+        .fusionStartEU(160000000)
 
     // Liquid Fuel recipes
 
@@ -95,6 +95,12 @@ ServerEvents.recipes(event => {
         .duration(600)
         .EUt(GTValues.VA[GTValues.ZPM])
 
+    event.recipes.gtceu.naquadah_refinery("crude_naquadah_fuel_withers")
+        .inputFluids("gtceu:medium_naquadah_isotope_fraction 900", "gtceu:heavy_naquadah_isotope_fraction 300", "gtceu:wither_gas 1800")
+        .outputFluids("gtceu:crude_naquadah_fuel 2000")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.ZPM])
+
     event.recipes.gtceu.naquadah_refinery("naquadah_fuel")
         .itemInputs("24x gtceu:enriched_naquadah_dust")
         .inputFluids("gtceu:light_naquadah_isotope_fraction 2000", "gtceu:medium_naquadah_isotope_fraction 4000", "gtceu:heavy_naquadah_isotope_fraction 2000", "gtceu:exotic_particle_solution 300")
@@ -111,7 +117,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.gtceu.naquadah_refinery("naquadah_superfuel")
         .itemInputs("20x kubejs:naquadah_fuel_mixture_dust")
-        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 72", "gtceu:infinity 80")
+        .inputFluids("gtceu:hyperdegenerate_matter 200", "gtceu:naquadah_fuel 11000", "gtceu:quadium 400", "gtceu:californium 72", "monilabs:eltz 72")
         .outputFluids("gtceu:naquadah_superfuel 20000")
         .duration(3000)
         .EUt(GTValues.VA[GTValues.UHV])
@@ -185,7 +191,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.distillation_tower("superheavy_residue_distillation")
         .inputFluids("gtceu:cracked_superheavy_atomic_residue")
         .chancedOutput("kubejs:naquadah_waste", 9000, 0)
-        .outputFluids("gtceu:californium 150", "gtceu:berkelium 200", "gtceu:curium 250", "gtceu:heavy_atomic_residue 400")
+        .outputFluids("gtceu:californium 150", "gtceu:plutonium_241 100", "gtceu:curium 350", "gtceu:heavy_atomic_residue 400")
         .duration(200)
         .EUt(GTValues.VA[GTValues.UHV])
 
@@ -268,7 +274,7 @@ ServerEvents.recipes(event => {
         .chancedOutput("3x kubejs:naquadah_waste", 6600, 0)
         .chancedFluidOutput("gtceu:exotic_particle_solution 100", 3300, 0)
         .duration(1200)
-        .EUt(491520)
+        .EUt(GTValues.VA[GTValues.UV])
 
     event.recipes.gtceu.centrifuge("superfuel_waste_processing")
         .inputFluids("gtceu:naquadah_superfuel_depleted 12000")
@@ -279,7 +285,7 @@ ServerEvents.recipes(event => {
         .chancedFluidOutput("monilabs:eltz 228", 5000, 0)
         .chancedFluidOutput("gtceu:hyperdegenerate_matter 100", 3300, 0)
         .duration(1200)
-        .EUt(1966080)
+        .EUt(GTValues.VA[GTValues.UHV])
     */
 
     // Solid Fuel Recipes

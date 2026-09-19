@@ -3,6 +3,8 @@
  * See deprecation_pipeline.js in this folder to see how the process works.
  */
 
+/* *** TO BE REMOVED FROM THIS FILE IN MONIFACTORY 0.14 *** */
+
 // Exoskeleton Legs
 deprecateItem("kubejs:lv_exoskeleton_legs", "gtexolegs:lv_exoskeleton_legs", "LV Exoskeleton Legs")
 deprecateItem("kubejs:mv_exoskeleton_legs", "gtexolegs:mv_exoskeleton_legs", "MV Exoskeleton Legs")
@@ -71,6 +73,7 @@ deprecateBlock("kubejs:bioalloy_fusion_casing", "monilabs:bioalloy_fusion_casing
 deprecateItem("gtceu:eltz_ingot", "monilabs:eltz_ingot", "Eltz Ingot")
 deprecateItem("gtceu:crystal_matrix_ingot", "monilabs:crystal_matrix_ingot", "Crystal Matrix Ingot")
 deprecateItem("gtceu:sculk_bioalloy_ingot", "monilabs:sculk_bioalloy_ingot", "Sculk Bioalloy Ingot")
+deprecateItem("kubejs:quantum_flux", "monilabs:quantum_flux", "Quantum Flux")
 
 deprecateBlock("gtceu:basic_microverse_projector", "monilabs:basic_microverse_projector", "Basic Microverse Projector")
 deprecateBlock("gtceu:advanced_microverse_projector", "monilabs:advanced_microverse_projector", "Advanced Microverse Projector")
@@ -113,3 +116,15 @@ deprecateItem("kubejs:universe_wafer", "kubejs:null_wafer", "Universe Wafer")
 // Guardian Scale processing
 deprecateItem("kubejs:guardian_scale", "minecraft:prismarine_shard", "Guardian Scale")
 deprecateFluid("gtceu:guardian_scale_slurry", "gtceu:prismarine_slurry", "Guardian Scale Slurry")
+
+/* *** TO BE REMOVED FROM THIS FILE IN MONIFACTORY 0.15 *** */
+
+// Lumium, Signalum, Enderium, Cryolobus wires. Sculk Superconductor as a material was removed entirely.
+const deprecated_thermal_wire_materials = ["lumium", "signalum", "enderium", "cryolobus"]
+deprecated_thermal_wire_materials.forEach(material => {
+    deprecateBlock(`gtceu:${material}_single_wire`, `4x gtceu:${material}_nugget`)
+    deprecateBlock(`gtceu:${material}_double_wire`, `1x gtceu:${material}_ingot`)
+    deprecateBlock(`gtceu:${material}_quadruple_wire`, `2x gtceu:${material}_ingot`)
+    deprecateBlock(`gtceu:${material}_octal_wire`, `4x gtceu:${material}_ingot`)
+    deprecateBlock(`gtceu:${material}_hex_wire`, `8x gtceu:${material}_ingot`)
+})

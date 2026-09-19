@@ -112,11 +112,9 @@ global.doMeowniPlush = packMode == "Hard" || packMode == "Expert";
 global.doMonicoins = packMode == "Normal";
 global.doSnad = packMode == "Normal" || packMode == "Hard";
 global.doSteamAge = packMode == "Hard" || packMode == "Expert";
-global.doEUP2P = packMode == "Normal"
 global.doFluxbore = packMode == "Normal" || packMode == "Hard";
 global.doHarderFluxBore = packMode == "Normal" || packMode == "Hard";
 global.doQuantumCoolant = packMode == "Hard" || packMode == "Expert";
-global.doHostileMicroverse = packMode == "Hard" || packMode == "Expert";
 
 
 // The !! is to cast the types into boolean since they got transformed into Java Objects from being globals
@@ -124,7 +122,6 @@ const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;
 const doCompacting = !!global.doCompacting;
 const doConverters = !!global.doConverters;
-const doEUP2P = !!global.doEUP2P
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
 const doHarderRecipes = !!global.doHarderRecipes;
@@ -139,4 +136,3 @@ const doSteamAge = !!global.doSteamAge;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
 const doQuantumCoolant = !!global.doQuantumCoolant;
-const doHostileMicroverse = !!global.doHostileMicroverse;
