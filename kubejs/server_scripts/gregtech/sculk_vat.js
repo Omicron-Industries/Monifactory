@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
     // Petri Dish cleaning in the Autoclave
     event.recipes.gtceu.autoclave("petri_dish_sterilization")
         .itemInputs("gtceu:petri_dish")
-        .inputFluids("gtceu:steam 960")
+        .inputFluids("#forge:steam 960")
         .itemOutputs("kubejs:petri_dish_sterile")
         .outputFluids("minecraft:water 6")
         .duration(5 * 20)

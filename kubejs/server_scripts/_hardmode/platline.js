@@ -134,13 +134,9 @@ if (doHarderProcessing) {
             .outputFluids("gtceu:hydrochloric_acid 3000", "gtceu:ammonia 2000")
             .duration(140).EUt(GTValues.VA[GTValues.EV])
 
-        let steam = new JSONObject()
-        steam.add("amount", 3840)
-        steam.add("value", { tag: "forge:steam" })
-
         event.recipes.gtceu.autoclave("platinum_raw_dust_to_platinum")
             .itemInputs("3x gtceu:platinum_raw_dust", "gtceu:calcium_dust")
-            .inputFluids(FluidIngredientJS.of(steam))
+            .inputFluids("#forge:steam 3840")
             .itemOutputs("gtceu:platinum_dust", "3x gtceu:calcium_chloride_dust")
             .outputFluids("minecraft:water 24")
             .duration(30).EUt(GTValues.VA[GTValues.LV])
