@@ -123,6 +123,8 @@ global.itemNukeList = [
     "extendedcrafting:frame",
     "extendedcrafting:recipe_maker",
     "extendedcrafting:singularity",
+    "extendedcrafting:redstone_catalyst",
+    "extendedcrafting:the_ultimate_component",
     /^extendedcrafting:crystaltine_(?!c)[\w_]+/,
 
     // GTCEu: Modern
@@ -144,6 +146,21 @@ global.itemNukeList = [
     /^gtmutils.uiv/,
     /^gtmutils:uxv/,
     /^gtmutils:opv/,
+    /^gtceu:(red_garnet|echo_shard|blue_topaz|yellow_garnet|topaz|opal)_plate$/,
+    /^gtceu:(sodalite|amethyst|blue_topaz|echo_shard|emerald|green_sapphire|lapis|lazurite|olivine|opal|red_garnet|ruby|sapphire|topaz|yellow_garnet)_rod$/,
+    "gtceu:activated_netherite_rod",
+    "gtceu:stone_rod",
+    "gtceu:stone_gear",
+    /^gtceu:(|small_|tiny_)cocoa_dust$/,
+    /^gtceu:(|small_|tiny_)perlite_dust$/,
+    /^gtceu:(|small_|tiny_)netherite_dust$/,
+    /^gtceu:(|small_|tiny_)_magnetic_(iron|neodynium|samarium|steel|terbium)_dust$/,
+    /^gtceu:magnetic_(iron|neodynium|samarium|steel|terbium)_(ingot|nugget)$/,
+    "gtceu:magnetic_iron_screw",
+    "gtceu:magnetic_steel_plate",
+    "gtceu:double_magnetic_steel_plate",
+    "gtceu:double_graphene_plate",
+    "gtceu:netherite_nugget",
 
     // Hammerlib
     /^hammerlib:/,
@@ -225,6 +242,8 @@ global.itemNukeList = [
 
     // Project Red
     "projectred_core:silicon",
+    "projectred_core:electrotine_silicon",
+    "projectred_core:electrotine_silicon_comp",
     "projectred_core:sand_coal_comp",
     "projectred_core:red_iron_comp",
     "projectred_core:electrotine_iron_comp",
