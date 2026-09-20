@@ -100,6 +100,17 @@ To spice up your Monifactory experience, you can add any of the following mods t
 8. [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
 
 ### Dedicated Server Installation:
+#### Automatic setup (recommended):
+1. Run the installer (it asks for install directory, version, RAM, pack mode and EULA, then does everything below for you):
+```
+curl -fsSL https://raw.githubusercontent.com/Omicron-Industries/Monifactory/main/install.sh | bash
+```
+Or download ``install.sh`` from the repository root and run ``./install.sh``.
+2. The installer downloads the latest ``server.zip`` and the ``47.4.13`` forge installer, installs the forge server, unpacks the pack, sets the pack mode (Normal/Hard/Expert), configures RAM and EULA, and defaults ``run.sh`` to ``nogui``.
+3. Start the server with ``./run.sh`` from your server directory. Modifying the server.properties file to change the port may be necessary.
+4. To upgrade an existing Monifactory server, see [FAQ.md](FAQ.md).
+
+#### Manual setup:
 1. Download a server.zip file from the releases page.
 2. Download the ``47.4.13`` forge installer from [here](https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html).
 3. Create a folder for the server (``mkdir MonifactoryServer``, name doesn't matter)

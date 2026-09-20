@@ -180,6 +180,9 @@ defaultconfigs/ftbultimine/ftbultimine-server.snbt
 # Mod manifest
 !/manifest.json
 
+# Server installer
+!/install.sh
+
 # Hide code-generated files
 kubejs/client_scripts/Dev_Capes.js
 config/fancymenu/customization/pack_credit_screen_layout.txt
