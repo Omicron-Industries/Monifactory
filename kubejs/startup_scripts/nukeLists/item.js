@@ -157,9 +157,6 @@ global.itemNukeList = [
     "gtceu:iridium_turbine_blade",
     "gtceu:chromium_turbine_blade",
 
-    // Hammerlib
-    /^hammerlib:/,
-
     // HNN
     "hostilenetworks:deep_learner",
     "hostilenetworks:twilight_prediction",
@@ -258,9 +255,6 @@ global.itemNukeList = [
     "projectred_core:multimeter",
     "projectred_transmission:low_load_power_wire",
     "projectred_transmission:low_load_framed_power_wire",
-
-    // Solar Flux
-    /^solarflux:.*/,
 
     // Looking for removed Sophisticated Storage items?
     // Look in configs/sophisticatedcore-common.toml.
