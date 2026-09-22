@@ -65,25 +65,20 @@ Like this list, some features here are WIP.
 * The entirety of post-tank has been remade from the ground up, featuring new mechanics, tiers, etc.
 * Creative tank itself have been removed, with focus being returned to scaling up your existing factory instead of nullifying your entire factory.
 * 2 New Microminers
-* 3 New Circuit Tiers
-    * Matter, Dimensional, Monic
+* 2 New Circuit Tiers
+    * Optical, Extradimensional
 * 6 New Post-Tank Multiblocks
-    * Omnic Forge, for late-game material processing
+    * Prismatic Crucible, an elaborate puzzle involving twelve color states, used for endgame items like Infinity and Monium
     * Dimensional Superassembler, a parallelizable assembly line
     * Loot Superfabricator, made to meet the speeds of the Simulation Supercomputer
-    * Hyperbolic Microverse Projector, a parallelizable projector, able to perform all microverse missions, as well as a couple of its own.
-    * Helical Fusion Reactor, (Hard mode/Expert mode only!) for speedy late-game fusion recipes
-    * Sculk Biocharger, capable of performing both Charging and Discharging (more on those below) recipes in parallel
-    * Subatomic Digital Assembler, see below 
-* The Creative Tank Replicator has been reworked into the Subatomic Digital Assembler, allowing it to construct other items
-    * Creative Storage can replicate quantum tanks, chests, and Soph Storage Max Upgrades
-    * Creative Computation Data can replicate creative computation providers and creative data access hatches.
-    * Creative Energy can replicate GregTech energy emitter, EnderIO creative energy, and AE2 Creative Energy Cell
-    * Some interesting things can happen if you try to replicate the unreplicatable...
+    * Hyperbolic Microverse Projector, a parallelizable projector, able to perform all microverse missions, as well as a couple of its own
+    * Helical Fusion Reactor, a parallelizable speedy fusion reactor
+    * Transdimensional Energy Singularity, when given fuel, gives power to every singleblock machine and energy hatch in your base
+    * Omniscience Research Beacon, when active, gives all research to every data reception hatch in your base
 * More interesting power generation with the Large Naquadah Reactor and Naquadah Refinery 
 * New processing chains and materials 
 * New SMD tier: Complex SMDs
-* New 13x13 Extended Crafting table tier, used for the new microminers
+* New 11x11 Extended Crafting table tier, used for the new microminers
 
 
 # Storage Upgrades
@@ -177,6 +172,7 @@ Like this list, some features here are WIP.
     * RF -> EU converters are disabled
     * Harder recipes
     * GT5u fire/rain explosions
+    * LaserIO is removed
     * Forced use of GregTech logistics
 
 
