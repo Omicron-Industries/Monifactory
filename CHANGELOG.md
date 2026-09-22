@@ -63,11 +63,11 @@ Like this list, some features here are WIP.
 
 # Endgame Overhaul
 * The entirety of post-tank has been remade from the ground up, featuring new mechanics, tiers, etc.
-* Creative tank itself have been removed, with focus being returned to scaling up your existing factory instead of nullifying your entire factory.
+* Creative tank itself has been removed, with focus being returned to scaling up your existing factory instead of nullifying your entire factory.
 * 2 New Microminers
 * 2 New Circuit Tiers
     * Optical, Extradimensional
-* 6 New Post-Tank Multiblocks
+* 6 New Post-Heart of a Universe Multiblocks
     * Prismatic Crucible, an elaborate puzzle involving twelve color states, used for endgame items like Infinity and Monium
     * Dimensional Superassembler, a parallelizable assembly line
     * Loot Superfabricator, made to meet the speeds of the Simulation Supercomputer
