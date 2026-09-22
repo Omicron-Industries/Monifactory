@@ -6,7 +6,7 @@
 
 **Q. How "finished" is Monifactory?**
 
-The main path of progression is fully playable - multiple groups have obtained the Creative Chest in Normal Mode.
+The main path of progression is fully playable - multiple groups have obtained the Creative Chest in all modes: Normal mode, Hard Mode, and Expert Mode.
 
 **Q. Is Monifactory still being updated?**
 
