@@ -15,7 +15,7 @@
             "category": "thermal:gourmand_fuel"
         },
         {
-            "category": "thermal:disenchantement_fuel"
+            "category": "thermal:disenchantment_fuel"
         },
         {
             "category": "thermal:lapidary_fuel"
@@ -147,7 +147,7 @@
             "category": "thermal:pulverizer_catalyst"
         },
         {
-            "category": "thermal:disenchantement_fuel"
+            "category": "thermal:disenchantment_fuel"
         },
         {
             "category": "thermal:crystallizer"
@@ -180,25 +180,37 @@
             "category": "emi_loot:block_drops"
         },
         {
-            "category": "minecraft:alchemy_bench"
+            "category": "chipped:alchemy_bench"
         },
         {
-            "category": "minecraft:botanist_workbench"
+            "category": "chipped:botanist_workbench"
         },
         {
-            "category": "minecraft:glassblower"
+            "category": "chipped:glassblower"
         },
         {
-            "category": "minecraft:carpenters_table"
+            "category": "chipped:carpenters_table"
         },
         {
-            "category": "minecraft:loom_table"
+            "category": "chipped:loom_table"
         },
         {
-            "category": "minecraft:mason_table"
+            "category": "chipped:mason_table"
         },
         {
-            "category": "minecraft:tinkering_table"
+            "category": "chipped:tinkering_table"
+        },
+        {
+            "category": "ad_astra:compressing"
+        },
+        {
+            "category": "ad_astra:cryo_freezing"
+        },
+        {
+            "category": "ad_astra:alloying"
+        },
+        {
+            "category": "ad_astra:refining"
         },
         {
             "category": "create:automatic_shaped" 
