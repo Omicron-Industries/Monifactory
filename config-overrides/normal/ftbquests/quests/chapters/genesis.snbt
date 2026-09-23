@@ -1044,33 +1044,33 @@
 			subtitle: "{moni.quest.1229234A71CE0A99.subtitle}"
 			tasks: [
 				{
-					count: 76L
+					count: 128L
 					id: "581CD7E50AC3F5E3"
 					item: "minecraft:redstone"
 					type: "item"
 				}
 				{
-					count: 36L
+					count: 96L
 					id: "102B3966BE895F45"
-					item: { Count: 36, id: "minecraft:copper_ingot" }
+					item: "minecraft:copper_ingot"
 					type: "item"
 				}
 				{
 					count: 20L
 					id: "3CEB53996CBB7381"
-					item: { Count: 20, id: "gtceu:tin_ingot" }
+					item: "gtceu:tin_ingot"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 96L
 					id: "5A94EE9BCBADE6BF"
-					item: { Count: 16, id: "minecraft:coal" }
+					item: "minecraft:coal"
 					type: "item"
 				}
 				{
-					count: 6L
+					count: 64L
 					id: "77FEEB10E7B091B8"
-					item: { Count: 6, id: "minecraft:gold_ingot" }
+					item: "minecraft:gold_ingot"
 					type: "item"
 				}
 			]
