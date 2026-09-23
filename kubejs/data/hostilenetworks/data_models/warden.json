@@ -16,10 +16,6 @@
     "trivia": "hostilenetworks.trivia.warden",
     "fabricator_drops": [
         {
-            "item": "minecraft:sculk_catalyst",
-            "count": 1
-        },
-        {
             "item": "kubejs:deep_dark_data",
             "count": 1
         },

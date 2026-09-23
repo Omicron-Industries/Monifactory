@@ -1,0 +1,9 @@
+
+[powerfailing]
+	#If true, all GT multiblocks have prevent power failing on by default, as if every one of them
+	#had a Machine Controller Cover with prevent power fail enabled, without having to place
+	#the cover. It can still be turned off per machine with a Machine Controller Cover that
+	#has prevent power fail disabled.
+	#Default false, which keeps vanilla GregTech behaviour.
+	disablePowerFailingByDefault = true
+

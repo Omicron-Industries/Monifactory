@@ -277,6 +277,26 @@ ServerEvents.recipes(event => {
         M: "thermal:dynamo_magmatic"
     })
 
+    // T3.5 Microminer
+    event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t3half", [
+        "  HHHHH  ",
+        " HDGGGDH ",
+        " HGHHHGH ",
+        " DDDWDDD ",
+        "   DDD   ",
+        "   DDD   ",
+        "  DCDCD  ",
+        "  DCTCD  ",
+        "   TTT   ",
+    ], {
+        H: "gtceu:dense_microversium_plate",
+        D: "gtceu:double_microversium_plate",
+        G: "gtceu:hv_field_generator",
+        W: "kubejs:advanced_micro_miner_guidance_system",
+        C: "kubejs:electrum_micro_miner_core",
+        T: "kubejs:vibrant_thruster"
+    })
+
     // T4.5  Microminer
     event.recipes.extendedcrafting.shaped_table("kubejs:microminer_t4half", [
         "  LGL  ",

@@ -71,7 +71,7 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
     event.create("naquadah_refinery")
         .category("multiblock")
         .setEUIO("in")
-        .setMaxIOSize(6, 0, 5, 1)
+        .setMaxIOSize(3, 0, 5, 1)
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.COOLING)

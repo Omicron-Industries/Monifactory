@@ -10,7 +10,6 @@ const doAssemblyLineOrderingWarning = !!global.doAssemblyLineOrderingWarning;
 const doBoilers = !!global.doBoilers;
 const doCompacting = !!global.doCompacting;
 const doConverters = !!global.doConverters;
-const doEUP2P = !!global.doEUP2P
 const doHarderPrintedSilicon = !!global.doHarderPrintedSilicon;
 const doHarderProcessing = !!global.doHarderProcessing;
 const doHarderRecipes = !!global.doHarderRecipes;
@@ -26,7 +25,6 @@ const doStoneline = !!global.doStoneline;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
 const doQuantumCoolant = !!global.doQuantumCoolant;
-const doHostileMicroverse = !!global.doHostileMicroverse;
 
 PlayerEvents.loggedIn(event => {
     const gameStages = [
