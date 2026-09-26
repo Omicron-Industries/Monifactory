@@ -1,0 +1,221 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ore_processing"
+	group: "0D5BFFD0A5E49312"
+	icon: "minecraft:raw_iron"
+	id: "4E4492819CF1AE9A"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["All ores start as a raw version and can be processed from there. There are many routes the ores can take and this chapter will show you the basics."]
+			id: "2A6FC1CAF129FF61"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2C82ECED82086B5F"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			title: "Raw Ores"
+			x: -0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"2A6FC1CAF129FF61"
+				"503BB89B2213C226"
+				"2E99B6DC8B08947B"
+			]
+			description: ["Raw ores and crushed ores can be smelted directly into their respective ingots in any furnace."]
+			hide_dependency_lines: false
+			id: "5E2E145DAA130771"
+			size: 1.0d
+			tasks: [{
+				id: "58AAEA9F3A3AA8F7"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "Direct Smelting"
+			x: -0.5d
+			y: -9.75d
+		}
+		{
+			dependencies: ["2A6FC1CAF129FF61"]
+			description: ["Ores can be multiplied by putting them into a macerator"]
+			id: "503BB89B2213C226"
+			tasks: [{
+				id: "175F11CC068D9CA5"
+				item: "gtceu:crushed_iron_ore"
+				type: "item"
+			}]
+			title: "Ore Duplication"
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["503BB89B2213C226"]
+			description: ["Crushed ores can be placed in a forge hammer to crush them further very quickly."]
+			id: "1EF5C22EE0939A1C"
+			tasks: [{
+				id: "0D226315726FC0B0"
+				item: "gtceu:impure_iron_dust"
+				type: "item"
+			}]
+			title: "Fast Processing"
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["503BB89B2213C226"]
+			description: ["Ores can be further processed in either an ore washer or chemical bath, there are multiple routes that can be taken which will depend on what byproducts you want."]
+			id: "6D247E0F7E1D202E"
+			tasks: [{
+				id: "56E50071F4CE852A"
+				item: "gtceu:purified_iron_ore"
+				type: "item"
+			}]
+			title: "Processing for byproducts"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1EF5C22EE0939A1C"]
+			description: ["Putting impure dusts into an ore washer set to circuit 2 will turn them into pure dusts."]
+			id: "2E99B6DC8B08947B"
+			tasks: [{
+				id: "63241217C2628A0A"
+				item: "gtceu:iron_dust"
+				type: "item"
+			}]
+			title: "Pure Dusts"
+			x: 9.75d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6D247E0F7E1D202E"]
+			description: ["Putting your purified ores through a thermal centrifuge produces a byproduct and refined ore."]
+			id: "1331A65C4655E7A1"
+			tasks: [{
+				id: "02881AE94320D549"
+				item: "gtceu:refined_iron_ore"
+				type: "item"
+			}]
+			title: "Refined Ores"
+			x: 6.25d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6D247E0F7E1D202E"]
+			description: ["Gem ores can be placed in a sifter to produce a variety of gem tiers."]
+			id: "248CF27C698EE3E2"
+			tasks: [{
+				id: "0FC41409567AB758"
+				item: "gtceu:exquisite_emerald_gem"
+				type: "item"
+			}]
+			title: "Gems from ores"
+			x: 3.5d
+			y: -1.25d
+		}
+		{
+			dependencies: [
+				"1331A65C4655E7A1"
+				"248CF27C698EE3E2"
+			]
+			description: ["Macerating the refined ores or washing the purified dusts will produce pure dusts."]
+			id: "590D69B0F723B0F7"
+			tasks: [{
+				id: "3E4D730D28521E94"
+				item: "gtceu:iron_dust"
+				type: "item"
+			}]
+			title: "Pure Dusts v2"
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["590D69B0F723B0F7"]
+			description: ["Gem dusts can be placed in an implosion compressor to become the basic gem."]
+			id: "61ABC054A5DDCD20"
+			tasks: [{
+				id: "3BB11A061C8CE672"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "Gems From Dusts"
+			x: 10.0d
+			y: -1.25d
+		}
+		{
+			dependencies: ["61ABC054A5DDCD20"]
+			description: ["Gems can be placed in a laser engraver with a white lens to become one tier higher. You can repeat the process up to the highest tier of gems."]
+			id: "4FC298332B1B9E2C"
+			tasks: [{
+				id: "5405680E50433AE1"
+				item: "gtceu:exquisite_emerald_gem"
+				type: "item"
+			}]
+			title: "Higher Tier Gems"
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["454669C436CADB46"]
+			id: "473F162ED01B5534"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "200991322104BA2A"
+				item: "gtceu:raw_chalcopyrite"
+				type: "item"
+			}]
+			title: "Platinum Line - Not for Platinum"
+			x: -5.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["454669C436CADB46"]
+			id: "48A5D16F07975154"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "7D7B26E50BAF0FF5"
+				item: "gtceu:raw_naquadah"
+				type: "item"
+			}]
+			title: "Naquadah Line - Not for Naquadah"
+			x: -7.875d
+			y: -6.0d
+		}
+		{
+			description: ["There are many processing lines in the pack that will include looping and recycling ingredients. These are two of the larger ones."]
+			id: "454669C436CADB46"
+			shape: "circle"
+			size: 1.5d
+			tasks: [{
+				id: "2B252DAFF6E0E74B"
+				title: "Complex Ore Processing Lines"
+				type: "checkmark"
+			}]
+			x: -5.25d
+			y: -6.0d
+		}
+		{
+			dependencies: ["454669C436CADB46"]
+			id: "1025A496EDD75182"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "26132B0CBBA0EE95"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			title: "Titanium Line"
+			x: -5.25d
+			y: -8.75d
+		}
+	]
+	title: "Processing Ores"
+}

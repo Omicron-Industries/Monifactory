@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iv"
+	group: "18F0ED1F9A002C08"
+	icon: "kubejs:iv_universal_circuit"
+	id: "6BAB6314073D0D4F"
+	order_index: 11
+	quest_links: [ ]
+	quests: [ ]
+	title: "IV"
+}

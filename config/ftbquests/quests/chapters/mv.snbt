@@ -1,0 +1,37 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mv"
+	group: "18F0ED1F9A002C08"
+	hide_quest_until_deps_complete: true
+	icon: "kubejs:mv_universal_circuit"
+	id: "35A56C29328C5200"
+	order_index: 8
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["3AB0402B19DD5BA8"]
+		description: [
+			"You might notice that these hulls can be made more cheaply in an &3Assembler&r, but you don't have that weird fluid. Don't worry, you'll be able to make that soon."
+			""
+			"&bMV&r-tiered singleblocks, which you will unlock soon, also operate at &bMV&r recipe tier, but they don't automatically &atransform&r &7LV&r amps to &bMV&r power."
+		]
+		id: "5C4E189A3E401566"
+		rewards: [{
+			id: "09F16C5C9CFFEF84"
+			item: "kubejs:moni_quarter"
+			type: "item"
+		}]
+		shape: "hexagon"
+		size: 2.0d
+		subtitle: "Your first MV hull marks the start of your transition into MV."
+		tasks: [{
+			id: "3F0884D8F0926142"
+			item: "gtceu:mv_machine_hull"
+			type: "item"
+		}]
+		title: "&2MV Machine Hulls"
+		x: 0.5d
+		y: -3.5d
+	}]
+	title: "MV"
+}

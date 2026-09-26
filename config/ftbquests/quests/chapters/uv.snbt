@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uv"
+	group: "18F0ED1F9A002C08"
+	icon: "kubejs:uv_universal_circuit"
+	id: "7B6BE0829E0417F1"
+	order_index: 14
+	quest_links: [ ]
+	quests: [ ]
+	title: "UV"
+}

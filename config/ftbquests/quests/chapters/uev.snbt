@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uev"
+	group: "18F0ED1F9A002C08"
+	icon: "kubejs:uev_universal_circuit"
+	id: "210057A1226316A9"
+	order_index: 16
+	quest_links: [ ]
+	quests: [ ]
+	title: "UEV"
+}

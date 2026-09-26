@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hv"
+	group: "18F0ED1F9A002C08"
+	icon: "kubejs:hv_universal_circuit"
+	id: "39B513DAFF8249A7"
+	order_index: 9
+	quest_links: [ ]
+	quests: [ ]
+	title: "HV"
+}

@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "max"
+	group: "18F0ED1F9A002C08"
+	icon: "gtceu:creative_chest"
+	id: "383ACD064D998E58"
+	order_index: 17
+	quest_links: [ ]
+	quests: [ ]
+	title: "MAX"
+}

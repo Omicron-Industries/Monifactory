@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_to_monifactory"
+	group: ""
+	id: "28B957B69E806B0A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "4A27CC2F431C768A"
+		tasks: [{
+			id: "0AB4D1E077695EDE"
+			item: "minecraft:grass_block"
+			type: "item"
+		}]
+		x: 2.75d
+		y: -5.75d
+	}]
+	title: "Welcome To Monifactory"
+}
