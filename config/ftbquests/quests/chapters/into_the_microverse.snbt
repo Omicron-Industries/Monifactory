@@ -58,7 +58,7 @@
 	quests: [
 		{
 			dependencies: ["5F688F22A3DB2ADD"]
-			description: ["{moni.quest.74FEF82CA2FB3D02.description1}"]
+			description: ["&6Black Steel&r will be used to make various items from &bExtended Crafting&r. It will also be the basis of other Steel types later on."]
 			id: "74FEF82CA2FB3D02"
 			rewards: [{
 				id: "10AA1D453B8D92EC"
@@ -72,7 +72,7 @@
 				item: "gtceu:black_steel_dust"
 				type: "item"
 			}]
-			title: "{moni.quest.74FEF82CA2FB3D02.title}"
+			title: "Black Steel"
 			x: -9.0d
 			y: -4.0d
 		}
@@ -82,9 +82,9 @@
 				"74FEF82CA2FB3D02"
 			]
 			description: [
-				"{moni.quest.01F946C4A4BF4FFE.description1}"
+				"Used for Ultimate tier &bExtended Crafting&r."
 				""
-				"{moni.quest.01F946C4A4BF4FFE.description2}"
+				"Don't worry if you can't make these for a while. You'll probably get to them around IV power."
 			]
 			id: "01F946C4A4BF4FFE"
 			rewards: [{
@@ -103,7 +103,7 @@
 		}
 		{
 			dependencies: ["74FEF82CA2FB3D02"]
-			description: ["{moni.quest.718AF2C9476BE1F4.description1}"]
+			description: ["A component used for more advanced items related to &bExtended Crafting&r."]
 			id: "718AF2C9476BE1F4"
 			rewards: [{
 				id: "2321FAD936678D92"
@@ -121,7 +121,7 @@
 		}
 		{
 			dependencies: ["01F946C4A4BF4FFE"]
-			description: ["{moni.quest.52B20235882063BF.description1}"]
+			description: ["Combine several components into a catalyst."]
 			id: "52B20235882063BF"
 			rewards: [{
 				id: "1757FF029B625C79"
@@ -140,9 +140,9 @@
 		{
 			dependencies: ["5B0200011DF8E1B6"]
 			description: [
-				"{moni.quest.1735403C8B0D3FAD.description1}"
+				"&6Phosphorus&r can be obtained by processing &6Tricalcium Phosphate Ore&r or &6Apatite Ore&r into dust and electrolyzing several times. "
 				""
-				"{moni.quest.1735403C8B0D3FAD.description2}"
+				"Both ores are found in &6Apatite&r veins."
 			]
 			id: "1735403C8B0D3FAD"
 			rewards: [{
@@ -156,7 +156,7 @@
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
-			title: "{moni.quest.1735403C8B0D3FAD.title}"
+			title: "Phosphorus"
 			x: -5.0d
 			y: -6.0d
 		}
@@ -166,15 +166,15 @@
 				"1735403C8B0D3FAD"
 			]
 			description: [
-				"{moni.quest.3BB7400C8BB392D9.description1}"
+				"&9Phosphoric Acid&r is a key component of &6Luminessence&r, which will be used extensively for such things as &6Nether Stars&r, &6Lumium Blend&r, and &bExtended Crafting&r components."
 				""
-				"{moni.quest.3BB7400C8BB392D9.description2}"
+				"It can be made using several equally viable recipes:"
 				""
-				"{moni.quest.3BB7400C8BB392D9.description3}"
+				"&6Phosphorus&r, &9Oxygen&r, and &9Water&r can be chemically reacted to produce &9Phosphoric Acid&r (Requires the &3Large Chemical Reactor&r)."
 				""
-				"{moni.quest.3BB7400C8BB392D9.description4}"
+				"Alternatively, you can combine &6Phosphorus Pentoxide&r and Water for a much faster reaction."
 				""
-				"{moni.quest.3BB7400C8BB392D9.description5}"
+				"Otherwise, you can react &6Apatite Dust&r, &9Sulfuric Acid&r, and Water to get Phosphoric Acid, &9Hydrochloric Acid&r, and a whole bunch of &6Gypsum Dust&r."
 			]
 			icon: "gtceu:phosphoric_acid_bucket"
 			id: "3BB7400C8BB392D9"
@@ -197,25 +197,25 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.3BB7400C8BB392D9.title}"
+			title: "Phosphoric Acid"
 			x: -5.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["0E010F5348FC89BF"]
 			description: [
-				"{moni.quest.648B1E09AA648798.description1}"
-				"{moni.quest.648B1E09AA648798.description2}"
-				"{moni.quest.648B1E09AA648798.description3}"
-				"{moni.quest.648B1E09AA648798.description4}"
+				"&2Sulfuric Acid is mainly produced in a 3-step process:&r"
+				"-&6 Sulfur&o&r added to &9Oxygen&r to produce &9Sulfur Dioxide&r. &9SO₂&r also can come from treating certain &6Sulfur-containing Dusts&r with &9Oxygen&r in the EBF, or by processing &eNether Air&r."
+				"- &9Sulfur Dioxide&r added to more &9Oxygen&r, to produce &9Sulfur Trioxide&r."
+				"- &9Sulfur Trioxide&r added to &9Water&r, to produce &eSulfuric Acid&r."
 				"{@pagebreak}"
-				"{moni.quest.648B1E09AA648798.description5}"
+				"The shortcut Sulfur + Water reaction is locked behind the Large Chemical Reactor, unlocked at &6HV&r."
 				""
-				"{moni.quest.648B1E09AA648798.description6}"
+				"You can also get Sulfuric Acid by adding &9Oxygen&r to &9Hydrogen Sulfide&r, which can be obtained via Petroleum, or by combining &9Hydrogen&r and &6Sulfur&r."
 				""
-				"{moni.quest.648B1E09AA648798.description7}"
+				"&rYou'll need huge amounts of this for a whole range of chemical reactions, as it is a very common ingredient."
 				""
-				"{moni.quest.648B1E09AA648798.description8}"
+				"Sulfur can be electrolyzed from many things."
 			]
 			icon: "gtceu:sulfuric_acid_bucket"
 			id: "648B1E09AA648798"
@@ -238,13 +238,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.648B1E09AA648798.title}"
+			title: "&2Sulfuric Acid"
 			x: -5.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["3BB7400C8BB392D9"]
-			description: ["{moni.quest.004344AC70AE88F1.description1}"]
+			description: ["&6Luminessence&r is used in a number of things, but right now, it will be a component in your &aExtended Crafting Tables&r."]
 			id: "004344AC70AE88F1"
 			rewards: [{
 				id: "6102122169F32D7A"
@@ -266,7 +266,7 @@
 				"74FEF82CA2FB3D02"
 				"004344AC70AE88F1"
 			]
-			description: ["{moni.quest.56BAC68878E11DF4.description1}"]
+			description: ["A common component used by &bExtended Crafting&r."]
 			id: "56BAC68878E11DF4"
 			rewards: [{
 				id: "788E98E9C07492B3"
@@ -287,7 +287,7 @@
 				"27692C4A58F1A183"
 				"52B20235882063BF"
 			]
-			description: ["{moni.quest.04475771966A92C3.description1}"]
+			description: ["An advanced ingredient used for the &aUltimate Extended Crafting Table&r and the &aEpic Extended Crafting Table&r."]
 			id: "04475771966A92C3"
 			rewards: [{
 				id: "5DB215925494ED25"
@@ -308,7 +308,7 @@
 				"04475771966A92C3"
 				"77582C534A994D7C"
 			]
-			description: ["{moni.quest.555BEBF7FD6012B7.description1}"]
+			description: ["This is an even larger Extended Crafting Table, capable of handling 9x9 recipes."]
 			id: "555BEBF7FD6012B7"
 			rewards: [{
 				id: "636C9B089C324417"
@@ -322,7 +322,7 @@
 				item: "extendedcrafting:ultimate_table"
 				type: "item"
 			}]
-			title: "{moni.quest.555BEBF7FD6012B7.title}"
+			title: "&9Ultimate Crafting Table"
 			x: -3.0d
 			y: -6.0d
 		}
@@ -332,9 +332,9 @@
 				"2181102841205407"
 			]
 			description: [
-				"{moni.quest.77582C534A994D7C.description1}"
+				"This table allows you to craft 7x7 Extended Crafting Table recipes."
 				""
-				"{moni.quest.77582C534A994D7C.description2}"
+				"&9Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
 			]
 			id: "77582C534A994D7C"
 			rewards: [{
@@ -349,16 +349,16 @@
 				item: "extendedcrafting:elite_table"
 				type: "item"
 			}]
-			title: "{moni.quest.77582C534A994D7C.title}"
+			title: "&9Elite Crafting Table"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["56BAC68878E11DF4"]
 			description: [
-				"{moni.quest.2181102841205407.description1}"
+				"With the Advanced Crafting Table, you can now craft 5x5 recipes."
 				""
-				"{moni.quest.2181102841205407.description2}"
+				"&9You can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
 			]
 			id: "2181102841205407"
 			rewards: [{
@@ -373,13 +373,13 @@
 				item: "extendedcrafting:advanced_table"
 				type: "item"
 			}]
-			title: "{moni.quest.2181102841205407.title}"
+			title: "&9Advanced Crafting Table"
 			x: 0.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["718AF2C9476BE1F4"]
-			description: ["{moni.quest.27692C4A58F1A183.description1}"]
+			description: ["Again, combining a few Components will make a Catalyst."]
 			id: "27692C4A58F1A183"
 			rewards: [{
 				id: "10AC2BDC3EEDEE13"
@@ -398,11 +398,11 @@
 		{
 			dependencies: ["74FEF82CA2FB3D02"]
 			description: [
-				"{moni.quest.56FB624B384FFAF5.description1}"
+				"You may have noticed that The End portals in Strongholds are disabled."
 				""
-				"{moni.quest.56FB624B384FFAF5.description2}"
+				"The only way to access The End is… to &ebake a cake&r. You can refill it with &6Eyes of Ender&r."
 				""
-				"{moni.quest.56FB624B384FFAF5.description3}"
+				"Prepare some gear, eat a slice, and get ready for a fight!"
 			]
 			icon: "minecraft:dragon_head"
 			id: "56FB624B384FFAF5"
@@ -417,7 +417,7 @@
 				id: "5EFEF3EB5567D109"
 				type: "dimension"
 			}]
-			title: "{moni.quest.56FB624B384FFAF5.title}"
+			title: "The End…?"
 			x: -9.0d
 			y: 2.75d
 		}
@@ -427,11 +427,11 @@
 				"3000798ACA51BFDC"
 			]
 			description: [
-				"{moni.quest.399AE4E449872B8A.description1}"
+				"&9Ender Air&r, collected from a &3Gas Collector&r, can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Ender Air&r."
 				""
-				"{moni.quest.399AE4E449872B8A.description2}"
+				"&9Liquid Ender Air&r can be sent into a &2Distillation Tower&r to break it down into its components."
 				""
-				"{moni.quest.399AE4E449872B8A.description3}"
+				"&2Liquid Air and Liquid Nether Air give different useful components too."
 			]
 			icon: "gtceu:liquid_ender_air_bucket"
 			id: "399AE4E449872B8A"
@@ -453,7 +453,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.399AE4E449872B8A.title}"
+			title: "&2Distilling Liquid Ender Air"
 			x: -11.0d
 			y: 2.75d
 		}
@@ -466,15 +466,15 @@
 				"24415A26E5A0FD72"
 			]
 			description: [
-				"{moni.quest.281C7940CD437B69.description1}"
+				"With your Rocket built and fuel loaded, it's time for the prelaunch checklist."
 				""
-				"{moni.quest.281C7940CD437B69.description2}"
+				"- &eMake sure you're wearing your Space Suit&r (all four pieces) and that it has a full tank of Oxygen."
 				""
-				"{moni.quest.281C7940CD437B69.description3}"
+				"- Two &aWaystones&r, with one set up to bring you back home."
 				""
-				"{moni.quest.281C7940CD437B69.description4}"
+				"When you're sure you're prepared, sit in your rocket and press &eSpace&r."
 				""
-				"{moni.quest.281C7940CD437B69.description5}"
+				"Liftoff!"
 			]
 			icon: "ad_astra:moon_globe"
 			id: "281C7940CD437B69"
@@ -489,23 +489,23 @@
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_globe"
 				id: "3458BC33000F9D0A"
-				title: "{moni.task.3458BC33000F9D0A}"
+				title: "Reach the Moon"
 				type: "dimension"
 			}]
-			title: "{moni.quest.281C7940CD437B69.title}"
+			title: "&9Fly Me To The Moon"
 			x: 3.5d
 			y: -6.0d
 		}
 		{
 			dependencies: ["56FB624B384FFAF5"]
 			description: [
-				"{moni.quest.131EAE1541E9C780.description1}"
+				"Now that you've dealt with the dragon, seek the bedrock structure floating mid-air around the edge of the main island."
 				""
-				"{moni.quest.131EAE1541E9C780.description2}"
+				"Carefully throw an &6Ender Pearl&r inside one (where there's a portal-looking texture) to teleport to a distant island."
 				""
-				"{moni.quest.131EAE1541E9C780.description3}"
+				"Once there, gather some &6Chorus Flowers&r. You'll have to smash the flower itself to get it: simply breaking the stem of a plant will not drop the flower."
 				""
-				"{moni.quest.131EAE1541E9C780.description4}"
+				"To get back to the main island, throw an Ender Pearl into another bedrock portal structure."
 			]
 			id: "131EAE1541E9C780"
 			rewards: [{
@@ -520,16 +520,16 @@
 				item: "minecraft:chorus_flower"
 				type: "item"
 			}]
-			title: "{moni.quest.131EAE1541E9C780.title}"
+			title: "Chorus Flowering"
 			x: 7.5d
 			y: 2.75d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
 			description: [
-				"{moni.quest.4669C1DCEE4AA563.description1}"
+				"A &9Tier One Rocket&r will be more than enough to reach the moon, and a launch pad will be needed to set the rocket on."
 				""
-				"{moni.quest.4669C1DCEE4AA563.description2}"
+				"While placed, the rocket can be sneak-right-clicked to open a GUI, where you can insert the fuel and access the rocket's inventory."
 			]
 			icon: {
 				Count: 1
@@ -563,20 +563,20 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.4669C1DCEE4AA563.title}"
+			title: "&9The Rocket"
 			x: 2.5d
 			y: -8.5d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
 			description: [
-				"{moni.quest.2BD54071AD23C73C.description1}"
+				"Making yourself a space suit is the most important step towards your space adventures."
 				""
-				"{moni.quest.2BD54071AD23C73C.description2}"
+				"This suit lets you breathe in space, which is kind of important."
 				""
-				"{moni.quest.2BD54071AD23C73C.description3}"
+				"If you wish, you can hide the spacesuit from your playermodel via the cosmetic armor buttons."
 				""
-				"{moni.quest.2BD54071AD23C73C.description4}"
+				"Once your reach &9IV&r, you unlock the &6QuarkTech Armor set&r, which acts as an &bAd Astra&r Netherite Space Suit along with giving other benefits."
 			]
 			icon: {
 				Count: 1
@@ -617,7 +617,7 @@
 							]
 						}
 					}
-					title: "{moni.task1.2BD54071AD23C73C}"
+					title: "Any Space Helmet"
 					type: "item"
 				}
 				{
@@ -644,7 +644,7 @@
 							]
 						}
 					}
-					title: "{moni.task2.2BD54071AD23C73C}"
+					title: "Any Space Suit"
 					type: "item"
 				}
 				{
@@ -671,7 +671,7 @@
 							]
 						}
 					}
-					title: "{moni.task3.2BD54071AD23C73C}"
+					title: "Any Space Pants"
 					type: "item"
 				}
 				{
@@ -698,11 +698,11 @@
 							]
 						}
 					}
-					title: "{moni.task4.2BD54071AD23C73C}"
+					title: "Any Space Boots"
 					type: "item"
 				}
 			]
-			title: "{moni.quest.2BD54071AD23C73C.title}"
+			title: "&9Space Suit"
 			x: 4.5d
 			y: -8.5d
 		}
@@ -712,7 +712,7 @@
 				"2181102841205407"
 				"01CC71429CFCAE0B"
 			]
-			description: ["{moni.quest.193B7038EAB6EFA3.description1}"]
+			description: ["The &9Nasa Workbench&r is used to create rockets from various parts."]
 			id: "193B7038EAB6EFA3"
 			rewards: [{
 				id: "241FC93655A20BDE"
@@ -720,19 +720,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.193B7038EAB6EFA3.subtitle}"
+			subtitle: "Now it's time to think vertically"
 			tasks: [{
 				id: "6A2347A15D82ED0A"
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
-			title: "{moni.quest.193B7038EAB6EFA3.title}"
+			title: "&9Rocket Assembly"
 			x: 3.5d
 			y: -10.5d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
-			description: ["{moni.quest.247F4985B9ACE568.description1}"]
+			description: ["Even simple rockets demand &6Double Plates&r for their construction. In this case, made out of &6Steel&r."]
 			id: "247F4985B9ACE568"
 			rewards: [{
 				id: "66D891D3D0BD4E6D"
@@ -750,7 +750,7 @@
 		}
 		{
 			dependencies: ["5E2489DE2E840738"]
-			description: ["{moni.quest.24415A26E5A0FD72.description1}"]
+			description: ["Mix &9Oxygen&r and &9Dimethylhydrazine&r together to make &9Rocket Fuel&r."]
 			icon: "gtceu:rocket_fuel_bucket"
 			id: "24415A26E5A0FD72"
 			rewards: [{
@@ -782,7 +782,7 @@
 				"374EB1BB1E2F6B9C"
 				"5878D53EB85F3881"
 			]
-			description: ["{moni.quest.5E2489DE2E840738.description1}"]
+			description: ["This needs an &6HV&r Chemical Reactor. &9Dimethylamine&r and &9Monochloramine&r combine together into &9Dimethylhydrazine&r. &2You can also combine Methanol, Ammonia, and Hypochlorous Acid."]
 			icon: "gtceu:dimethylhydrazine_bucket"
 			id: "5E2489DE2E840738"
 			rewards: [{
@@ -805,16 +805,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.5E2489DE2E840738.title}"
+			title: "Dimethylhydrazine"
 			x: 7.5d
 			y: -8.75d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
 			description: [
-				"{moni.quest.374EB1BB1E2F6B9C.description1}"
+				"&9Hydrogen&r and &9Nitrogen&r combine together to make &9Ammonia&r in an &6HV&r Chemical Reactor."
 				""
-				"{moni.quest.374EB1BB1E2F6B9C.description2}"
+				"An easy way to get Nitrogen is to centrifuge &9Air&r, which will require you to build an &3Air Collector&r. You could also electrolyze &6Saltpeter&r, distill &9Fermented Biomass&r in a &3Distillation Tower&r, or get huge amounts from &2distilling Liquid Air in a Distillation Tower&r."
 			]
 			icon: "gtceu:ammonia_bucket"
 			id: "374EB1BB1E2F6B9C"
@@ -837,18 +837,18 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.374EB1BB1E2F6B9C.title}"
+			title: "&2Ammonia"
 			x: 7.5d
 			y: -10.5d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
 			description: [
-				"{moni.quest.5DA5231489336B1B.description1}"
+				"&9Water&r and &9Chlorine&r can be combined to make &9Hypochlorous Acid&r. If you add &9Mercury&r to catalyze the reaction, the yield is much better."
 				""
-				"{moni.quest.5DA5231489336B1B.description2}"
+				"&ePlease note that Hypochlorous Acid and Hydrochloric Acid are different things.&r"
 				""
-				"{moni.quest.5DA5231489336B1B.description3}"
+				"You're already familiar with Chlorine production from your forays into Plastics, but a great source of Mercury is &2centrifuging &6Redstone&r."
 			]
 			icon: "gtceu:hypochlorous_acid_bucket"
 			id: "5DA5231489336B1B"
@@ -876,7 +876,7 @@
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
-			description: ["{moni.quest.5878D53EB85F3881.description1}"]
+			description: ["&9Oxygen&r, &9Hydrogen&r, and &6Carbon&r combine together in a &3Chemical Reactor&r to make &9Methanol&r."]
 			icon: "gtceu:methanol_bucket"
 			id: "5878D53EB85F3881"
 			rewards: [{
@@ -898,16 +898,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.5878D53EB85F3881.title}"
+			title: "Methanol"
 			x: 8.75d
 			y: -10.5d
 		}
 		{
 			dependencies: ["5C4E189A3E401566"]
 			description: [
-				"{moni.quest.7A09229ACC000B09.description1}"
+				"Here comes the chemistry."
 				""
-				"{moni.quest.7A09229ACC000B09.description2}"
+				"It might seem crazy right now, but you'll want a dedicated &3Chemical Reactor&r for a large fraction of the chemicals you want to process. You probably want to hold off on doing that until you've got a solid base with autocrafting though… it stings a lot less when you can just request crafts of Chemical Reactors from your AE2 system."
 			]
 			disable_toast: true
 			id: "7A09229ACC000B09"
@@ -917,7 +917,7 @@
 				item: "gtceu:mv_chemical_reactor"
 				type: "item"
 			}]
-			title: "{moni.quest.7A09229ACC000B09.title}"
+			title: "MV Chemical Reactor"
 			x: 7.5d
 			y: -12.5d
 		}
@@ -928,19 +928,19 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.7DE2C9292A09FC76.description1}"
+				"The Moon is a barren, lifeless rock… why did you want to come here?"
 				""
-				"{moni.quest.7DE2C9292A09FC76.description2}"
+				"The most immediate benefit is that the Moon is a great source of &9Deuterium&r. This substance will be necessary for producing &9Microversium&r, &9Tritium&r, plasmas from fusion, and crystallizing &6Dilithium&r."
 				""
-				"{moni.quest.7DE2C9292A09FC76.description3}"
+				"To obtain this, the Moon has fluid deposits of &eDeuterium&r and &eHelium-3&r, which you can harvest with a &3Fluid Rig&r. However, you will want to use the second Fluid Rig tier to extract it, as the amount of Deuterium and Helium-3 is too low to be anything appreciable from a first tier Fluid Rig."
 				""
-				"{moni.quest.7DE2C9292A09FC76.description4}"
+				"The second draw is &6Moon Sand&r and &6Moon Stone&r, which make up the surface of the Moon. These can be ground up into &6Moon Dust&r which can serve as another means of obtaining &9Deuterium&r, or else be made into &6Quantum Flux&r."
 				"{@pagebreak}"
-				"{moni.quest.7DE2C9292A09FC76.description5}"
+				"The third reason to visit the moon are the several ores that are rare on the Overworld but exist in abundance on the Moon. In particular, the Moon contains large quantities of &6Titanium&r, (in the form of &6Aluminium Ore&r and &6Ilmenite Ore&r) &6Chromium&r, (in the form of &6Chromite Ore&r) and &6Fluorine&r. (in the form of &6Fluorite Ore&r)"
 				""
-				"{moni.quest.7DE2C9292A09FC76.description6}"
+				"Please note that space exploration isn't mandatory in this pack, so if you don't feel like exploring space with &bAd Astra&r then you can obtain these through other means, for example centrifuging &9Hydrogen&r or &9Ender Air&r for &eDeuterium&r instead."
 				""
-				"{moni.quest.7DE2C9292A09FC76.description7}"
+				"Just keep in mind that it's much less materially rewarding to forgo exploration."
 			]
 			icon: "gtceu:deuterium_bucket"
 			id: "7DE2C9292A09FC76"
@@ -963,7 +963,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7DE2C9292A09FC76.title}"
+			title: "&2Lunar Resources"
 			x: 3.5d
 			y: -4.0d
 		}
@@ -972,7 +972,7 @@
 				"6C1AAFF54A2ADB45"
 				"5BE3E37772FAF6CB"
 			]
-			description: ["{moni.quest.790E3275E88265E3.description1}"]
+			description: ["&6Hellish Matter&r and &6Ender Pearl&r can be crafted into Extraterrestrial Matter."]
 			hide_until_deps_visible: true
 			id: "790E3275E88265E3"
 			optional: true
@@ -988,17 +988,17 @@
 		{
 			dependencies: ["7DE2C9292A09FC76"]
 			description: [
-				"{moni.quest.5B07A88C0BFF6586.description1}"
+				"This is your first &3Microverse Projector&r."
 				""
-				"{moni.quest.5B07A88C0BFF6586.description2}"
+				"These structures are used to project &eMicroverses&r and send &6Microminers&r into them to obtain valuable loot such as &6ores&r, &6gems&r, and otherwise unobtainable items&r like &6Radon Salt&r and &6Naquadah&r. &eMost Microminers are &6fully reusable&r, including your first one.&r"
 				""
-				"{moni.quest.5B07A88C0BFF6586.description3}"
+				"Microverse Projectors are &bGregTech&r multiblocks, which means that they're just as flexible as other machines in terms of the I/O block placement: &epositions of Buses and Hatches can be swapped with any Microverse Projector Casing&r."
 				""
-				"{moni.quest.5B07A88C0BFF6586.description4}"
+				"A single &6HV Energy Input&r supports missions up to 1024 EU/t. To process the rest, you'll need to upgrade the multiblock to at least &eEV power&r, with either &6two HV Energy Inputs&r or &6one EV Energy Input&r. Missions will also overclock, increasing in speed each time the projector's energy tier increases."
 				""
-				"{moni.quest.5B07A88C0BFF6586.description5}"
+				"Hover your mouse over the projector and press &8U&r to see all available missions."
 				""
-				"{moni.quest.5B07A88C0BFF6586.description6}"
+				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
 			icon: "monilabs:basic_microverse_projector"
 			id: "5B07A88C0BFF6586"
@@ -1087,7 +1087,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.5B07A88C0BFF6586.title}"
+			title: "&2Basic Microverse Projector"
 			x: 2.0d
 			y: -2.0d
 		}
@@ -1098,11 +1098,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.4F572CA3678CB287.description1}"
+				"Very fluxy."
 				""
-				"[\"\",{\"translate\":\"moni.quest.4F572CA3678CB287.description2\"},{\"underlined\":true,\"translate\":\"moni.quest.4F572CA3678CB287.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1EA5F30C5ACADBA9\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4F572CA3678CB287.rich_description.hover_text1\"}}}]"
+				"[\"\",{\"text\":\"A reagent used to \"},{\"underlined\":true,\"text\":\"repair Microverses.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1EA5F30C5ACADBA9\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to learn more\"}}}]"
 				""
-				"{moni.quest.4F572CA3678CB287.description3}"
+				"There are several ways to produce &6Quantum Flux&r. All are viable, so figure out which one works best for you."
 			]
 			id: "4F572CA3678CB287"
 			rewards: [{
@@ -1113,7 +1113,7 @@
 			shape: "hexagon"
 			tasks: [{
 				id: "326F637FA66766CF"
-				item: "kubejs:quantum_flux"
+				item: "monilabs:quantum_flux"
 				type: "item"
 			}]
 			x: 5.0d
@@ -1128,11 +1128,11 @@
 				"7ACF867DECE1C37F"
 			]
 			description: [
-				"{moni.quest.638130DC8A2BF1C1.description1}"
+				"This is your first Microminer ever. You'll need &6Phosphorous&r in its &6LV Field Generator&r."
 				""
-				"{moni.quest.638130DC8A2BF1C1.description2}"
+				"This Microminer is &6fully reusable&r, so you can send it on as many missions as you want."
 				""
-				"{moni.quest.638130DC8A2BF1C1.description3}"
+				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
 			]
 			id: "638130DC8A2BF1C1"
 			rewards: [{
@@ -1147,7 +1147,7 @@
 				item: "kubejs:microminer_t1"
 				type: "item"
 			}]
-			title: "{moni.quest.638130DC8A2BF1C1.title}"
+			title: "&2First Foray Into The Microverse"
 			x: 3.5d
 			y: 0.0d
 		}
@@ -1157,7 +1157,7 @@
 				"6A8764DDD3489EE8"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.5EB185AD9BD0D069.description1}"]
+			description: ["Place down a &6Waystone&r, set a memorable name (and enable &6Global&r if you want other players to access it), in order to be able to easily warp to that location, either using a &6Warp Scroll&r, a &6Warp Stone&r or a second Waystone."]
 			icon: "waystones:waystone"
 			id: "5EB185AD9BD0D069"
 			rewards: [{
@@ -1172,20 +1172,20 @@
 				item: "waystones:waystone"
 				type: "item"
 			}]
-			title: "{moni.quest.5EB185AD9BD0D069.title}"
+			title: "&9Thinking with Waystones"
 			x: 7.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["{moni.quest.6A8764DDD3489EE8.description1}"]
+			description: ["Waystones also &anaturally generate&r across the world, so nothing is stopping you from simply roaming around and stealing Waystones for your own needs."]
 			icon: "minecraft:ender_eye"
 			id: "6A8764DDD3489EE8"
 			tasks: [{
 				id: "096445386AE9F109"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.6A8764DDD3489EE8.title}"
+			title: "Exploration can pay off!"
 			x: 8.5d
 			y: -4.5d
 		}
@@ -1195,15 +1195,15 @@
 				"53EC3831D66769CA"
 			]
 			description: [
-				"{moni.quest.0DB8063A7972E1C0.description1}"
+				"With access to &6Diamond Components&r, &3Auto Crafting Tables&r are now an option for automation of any size of crafting table - including 3x3."
 				""
-				"{moni.quest.0DB8063A7972E1C0.description2}"
+				"Every &3Auto Crafting Table&r comes with three recipe slots in the top-right corner. To configure a recipe, the crafting grid must be filled with the recipe you wish to automate, and then saved to the table by &8Shift-Left-Clicking&r one of those recipe slots."
 				""
-				"{moni.quest.0DB8063A7972E1C0.description3}"
+				"Saved recipes must then be selected with a &8Left-Click&r to indicate that that recipe should be crafted. Only one recipe can be selected at a time."
 				"{@pagebreak}"
-				"{moni.quest.0DB8063A7972E1C0.description4}"
+				"Lastly, place an inventory atop the table - The &3Auto Crafting Table&r cannot be inserted to, and &ecan only pull items from that inventory&r. At this point you can put ingredients in the inventory and &aRF&r power in the table to begin automated crafting."
 				""
-				"{moni.quest.0DB8063A7972E1C0.description5}"
+				"In compensation for the cost of confusing logistics, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
 			]
 			icon: "extendedcrafting:basic_auto_table"
 			id: "0DB8063A7972E1C0"
@@ -1237,19 +1237,19 @@
 						]
 					}
 				}
-				title: "{moni.task.583E42747EFEE1D3}"
+				title: "Any Auto Crafting Table"
 				type: "item"
 			}]
-			title: "{moni.quest.0DB8063A7972E1C0.title}"
+			title: "Auto Crafting Tables"
 			x: -1.5d
 			y: -8.0d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
 			description: [
-				"{moni.quest.4672EE66D51C32FF.description1}"
+				"The &3Oxygen Loader&r is used to load &9Oxygen&r into your Space Suit, making it usable for exploring the great beyond. It will need &aRedstone Flux (RF)&r to do so. You may alternatively use a &3Canner&r."
 				""
-				"{moni.quest.4672EE66D51C32FF.description2}"
+				"If you run out of Oxygen, then you will &cSuffocate&r. If you plan to spend several hours on &bThe Moon&r, consider bringing an additional &6Gas Tank&r filled with &9Oxygen&r."
 			]
 			icon: "ad_astra:oxygen_loader"
 			id: "4672EE66D51C32FF"
@@ -1283,22 +1283,22 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.4672EE66D51C32FF.title}"
+			title: "&9Breathing in Space"
 			x: 3.5d
 			y: -8.5d
 		}
 		{
 			dependencies: ["281C7940CD437B69"]
 			description: [
-				"{moni.quest.62C85A1F451C4855.description1}"
+				"Now that you've been to the Moon, consider going to &6Other Planets&r."
 				""
-				"{moni.quest.62C85A1F451C4855.description2}"
+				"Each planet has abundant resources like the &eMoon&r and new, unique ores to boot. To get there, you need a &6Better Rocket&r."
 				"{@pagebreak}"
-				"{moni.quest.62C85A1F451C4855.description3}"
+				"With a &3Tier Two Rocket&r you can make it to &eMars&r. Mars has &6Scheelite&r, &6Arsenopyrite&r, &6Carnotite&r, &6Borax&r, and veins of gaseous &9Fluorine&r."
 				""
-				"{moni.quest.62C85A1F451C4855.description4}"
+				"With a &3Tier Three Rocket&r you can make it to &eMercury&r and &eVenus&r. Before you go, make a &eNetherite Space Suit&r, otherwise the atmosphere will &cburn you to death&r.\n\nMercury has &6Argentite&r for &eIndium&r, &6Plutonium&r, and &6Laurite&r, as well as fluid veins of &9Blazing Pyrotheum&r, &9Sodium Persulfate&r, and... &9Mercury&r.\nVenus has &6Xenotime&r, &6Gallite&r, &9Sulfuric Acid&r fluid veins, and lots of &6Platinum Group ores&r."
 				""
-				"{moni.quest.62C85A1F451C4855.description5}"
+				"With a &3Tier Four Rocket&r you can make it to &eGlacio&r. Glacio has &6Naquadah&r, &6Kaemanite&r, &6Stolzite&r, &6Iridosmine&r, and &6Osmiridium&r, as well as &6Gelid Cryotheum&r fluid veins."
 			]
 			icon: "ad_astra:glacio_globe"
 			id: "62C85A1F451C4855"
@@ -1308,22 +1308,22 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.62C85A1F451C4855.subtitle}"
+			subtitle: "One must imagine Frank Sinatra happy."
 			tasks: [{
 				dimension: "ad_astra:moon"
 				id: "199AA113DCFEBFDD"
 				type: "dimension"
 			}]
-			title: "{moni.quest.62C85A1F451C4855.title}"
+			title: "&9...and Let Me Play Among the Stars"
 			x: 1.75d
 			y: -6.0d
 		}
 		{
 			dependencies: ["0C4E18B05F9E68DE"]
 			description: [
-				"{moni.quest.798284BA30D818DA.description1}"
+				"&6Drilling Kits&r are required to send &9Microminers&r on a variety of missions. These are cheap, so make sure you &9always keep a stock of them&r."
 				""
-				"{moni.quest.798284BA30D818DA.description2}"
+				"Higher tier Microminers will use higher tiers of &6Drilling Kits&r, so get used to making them."
 			]
 			id: "798284BA30D818DA"
 			rewards: [{
@@ -1336,13 +1336,13 @@
 				item: "kubejs:basic_drilling_kit"
 				type: "item"
 			}]
-			title: "{moni.quest.798284BA30D818DA.title}"
+			title: "Drilling Kits"
 			x: 5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6169C04DF463502F"]
-			description: ["{moni.quest.2D0DF78F71760F00.description1}"]
+			description: ["Some Microminer missions use a &6Gemstone Sensor&r to scout out gems instead of ores, as well as other &6rare materials&r."]
 			id: "2D0DF78F71760F00"
 			rewards: [{
 				id: "6F3E0BE43F386D11"
@@ -1355,7 +1355,7 @@
 				item: "kubejs:gem_sensor"
 				type: "item"
 			}]
-			title: "{moni.quest.2D0DF78F71760F00.title}"
+			title: "&9Gemstone Sensors"
 			x: 1.5d
 			y: 0.0d
 		}
@@ -1365,11 +1365,11 @@
 				"4F572CA3678CB287"
 			]
 			description: [
-				"{moni.quest.7ACF867DECE1C37F.description1}"
+				"Now that you have your &3Microverse Projector&r, you will need to project a microverse for the &6microminers&r to use. This is done using &6Universe Creation Data&r and quite a bit of &6Quantum Flux&r."
 				""
-				"{moni.quest.7ACF867DECE1C37F.description2}"
+				"Looking at the Creation Data's uses in &bEMI&r, you'll see that it changes the microverse type to Normal. For quite a while, all microminers will require the Normal microverse type to run."
 				""
-				"{moni.quest.7ACF867DECE1C37F.description3}"
+				"After projecting your microverse, the inside of the projector will change appearance, and you should be ready to send off your first microverse mission."
 			]
 			id: "7ACF867DECE1C37F"
 			tasks: [{
@@ -1377,20 +1377,20 @@
 				item: "kubejs:universe_creation_data"
 				type: "item"
 			}]
-			title: "{moni.quest.7ACF867DECE1C37F.title}"
+			title: "Projecting Microverses"
 			x: 3.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["281C7940CD437B69"]
 			description: [
-				"{moni.quest.4288A253129B1E75.description1}"
+				"If you wish to create an off-Earth base or otherwise conduct operations longer than a mining trip, &3Ad Astra&r offers a few machines that will be helpful or even necessary to your objective."
 				""
-				"{moni.quest.4288A253129B1E75.description2}"
+				"1. The &3Oxygen Distributor&r. When supplied with &aRedstone Flux (RF)&r and &9Oxygen&r, this machine creates a breathable volume of air around it which expands to fit the environment it's contained in up to six thousand (6000) blocks in volume. It also prevents &9Water&r in this area from freezing, and is therefore necessary for the operation of a &3Rock Crusher&r."
 				""
-				"{moni.quest.4288A253129B1E75.description3}"
+				"2. The &3Oxygen Sensor&r. This block emits a redstone signal and displays a green light when it's in an oxygenated environment. Check one before you take your helmet off to ensure you don't suffocate!"
 				""
-				"{moni.quest.4288A253129B1E75.description4}"
+				"3. The &3Gravity Normalizer&r. This machine unlocks in &5EV&r, and when supplied with &aRF&r it allows you to control gravity nearby similar to the Oxygen Distributor. If the low gravity on &bThe Moon&r or in &bOrbit&r bothers you, then give it a whirl!"
 			]
 			icon: "ad_astra:space_painting"
 			id: "4288A253129B1E75"
@@ -1411,10 +1411,10 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.4288A253129B1E75.title}"
+			title: "An Extraterrestrial Abode"
 			x: 3.5d
 			y: -3.0d
 		}
 	]
-	title: "{moni.chapter.68F29871402A6B1B.title}"
+	title: "Into the Microverse"
 }

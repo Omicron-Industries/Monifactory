@@ -18,7 +18,7 @@
 			id: "2A5A7CD2C9EDD767"
 			linked_quest: "7979D07FBDC6D170"
 			shape: "hexagon"
-			x: 0.75d
+			x: 1.0d
 			y: 2.0d
 		}
 		{
@@ -26,14 +26,14 @@
 			linked_quest: "3D7924B550A1BBA0"
 			shape: "hexagon"
 			x: 2.0d
-			y: 2.5d
+			y: 2.25d
 		}
 		{
 			id: "3F1F20A84F3FDE97"
 			linked_quest: "0C9A9F33EEA3AB5E"
 			shape: "hexagon"
 			x: 2.0d
-			y: 4.5d
+			y: 4.25d
 		}
 		{
 			id: "2C514C36E06DC5FA"
@@ -41,7 +41,7 @@
 			shape: "gear"
 			size: 1.5d
 			x: 2.0d
-			y: 6.75d
+			y: 6.5d
 		}
 		{
 			id: "2DE45181A83AEBEB"
@@ -83,8 +83,8 @@
 			id: "09227387EDA8221C"
 			linked_quest: "19084E91F357C8C2"
 			size: 1.25d
-			x: -4.5d
-			y: 4.0d
+			x: -0.25d
+			y: 3.25d
 		}
 		{
 			id: "7CCC9B0F9E2E68D8"
@@ -120,14 +120,21 @@
 			x: 5.5d
 			y: -3.75d
 		}
+		{
+			id: "371D81F7157CD75A"
+			linked_quest: "5911900438648430"
+			shape: "hexagon"
+			x: -6.0d
+			y: -8.75d
+		}
 	]
 	quests: [
 		{
 			dependencies: ["6F9041F256F517A3"]
 			description: [
-				"{moni.quest.2D9A95AC50BCB988.description1}"
+				"&6Stabilized Microminers&r are a major milestone! These remove the need to repair your Microminers."
 				""
-				"{moni.quest.2D9A95AC50BCB988.description2}"
+				"They still consume inputs like normal Microminers, however after completing a mission they will no longer become damaged."
 			]
 			hide_until_deps_visible: true
 			id: "2D9A95AC50BCB988"
@@ -163,27 +170,24 @@
 						]
 					}
 				}
-				title: "{moni.task.7EB3B2DC5E5A895E}"
+				title: "Any Stabilized Microminer"
 				type: "item"
 			}]
-			title: "{moni.quest.2D9A95AC50BCB988.title}"
+			title: "&9Stabilized Microminers"
 			x: 2.0d
 			y: -10.25d
 		}
 		{
-			dependencies: [
-				"45752C40878A1689"
-				"36DF9A3674E1212C"
-			]
+			dependencies: ["45752C40878A1689"]
 			description: [
-				"{moni.quest.4EA1E0D437528747.description1}"
+				"Combining an &6Active Prismatic Core&r with some &6Transcendental Matrix&r and &6Activated Netherite&r will grant you &6Infinity Ingots&r. Infinity is the primary component of &aUEV&6 Hulls&r, but has many other uses throughout the end-game."
 				""
-				"{moni.quest.4EA1E0D437528747.description2}"
+				"Instead of turning your Prismatic Cores into Infinity, you can instead convert them into &6Liquid Null&r. As the embodiment of sheer nothing-ness, it makes for a great cable coating sheet! And thus, it will be required for all &aUEV&r+ cables. Note that the amount of Null you get is far greater the more you process your Cores."
 			]
 			id: "4EA1E0D437528747"
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "{moni.quest.4EA1E0D437528747.subtitle}"
+			subtitle: "I bet we could make hulls out of these."
 			tasks: [
 				{
 					id: "67517FC01121D069"
@@ -196,13 +200,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.4EA1E0D437528747.title}"
+			title: "&9Infinity and Null"
 			x: -3.25d
 			y: -4.5d
 		}
 		{
 			dependencies: ["27EBB5AAF8A40F3D"]
-			description: ["{moni.quest.6F9041F256F517A3.description1}"]
+			description: ["Probably."]
 			id: "6F9041F256F517A3"
 			rewards: [{
 				id: "132689EA756403C3"
@@ -219,7 +223,7 @@
 			}]
 			shape: "hexagon"
 			size: 2.5d
-			subtitle: "{moni.quest.6F9041F256F517A3.subtitle}"
+			subtitle: "No hypothetical aliens were harmed in the harvesting of this item."
 			tasks: [{
 				id: "34944C8F2D44E07E"
 				item: "kubejs:heart_of_a_universe"
@@ -234,9 +238,9 @@
 				"0B51A633811472A2"
 			]
 			description: [
-				"{moni.quest.27EBB5AAF8A40F3D.description1}"
+				"You have become Death, destroyer of Universes."
 				""
-				"{moni.quest.27EBB5AAF8A40F3D.description2}"
+				"This miner is your sole source of &6Hearts Of A Universe&r and &3Shattered Microverses&r."
 			]
 			id: "27EBB5AAF8A40F3D"
 			shape: "hexagon"
@@ -246,7 +250,7 @@
 				item: "kubejs:microminer_t10"
 				type: "item"
 			}]
-			title: "{moni.quest.27EBB5AAF8A40F3D.title}"
+			title: "&9Tier Ten Microminer"
 			x: -1.75d
 			y: -10.25d
 		}
@@ -257,11 +261,11 @@
 				"4F08AF2C1E6B1736"
 			]
 			description: [
-				"{moni.quest.2EBB9A154522348F.description1}"
+				"You win."
 				""
-				"{moni.quest.2EBB9A154522348F.description2}"
+				"Congratulations."
 				""
-				"{moni.quest.2EBB9A154522348F.description3}"
+				"We hope you enjoyed playing &9Monifactory&r."
 			]
 			id: "2EBB9A154522348F"
 			rewards: [{
@@ -278,15 +282,15 @@
 				type: "item"
 			}]
 			size: 4.0d
-			subtitle: "{moni.quest.2EBB9A154522348F.subtitle}"
+			subtitle: "A winner is you"
 			tasks: [{
 				id: "392DAFD3A4019E34"
 				item: "gtceu:creative_chest"
 				type: "item"
 			}]
-			title: "{moni.quest.2EBB9A154522348F.title}"
+			title: "&9&lCreative Chest&r"
 			x: 0.0d
-			y: 9.5d
+			y: 9.25d
 		}
 		{
 			dependencies: [
@@ -295,9 +299,9 @@
 				"51FD757E07E397A1"
 			]
 			description: [
-				"{moni.quest.5A70898C99B828E3.description1}"
+				"The &3Simulation Quantum Computer&r is a direct upgrade to the &3Simulation Supercomputer&r, allowing the use of Parallel hatches to further boost speed and efficiency."
 				""
-				"{moni.quest.5A70898C99B828E3.description2}"
+				"As an end-game structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with one of your first few &6Hearts Of A Universe&r."
 			]
 			hide_until_deps_visible: true
 			icon: "gtceu:simulation_quantumcomputer"
@@ -398,7 +402,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.5A70898C99B828E3.title}"
+			title: "&9Simulation Quantum Computer"
 			x: -2.5d
 			y: -8.75d
 		}
@@ -407,36 +411,37 @@
 				"0ED041E2114F7C84"
 				"36DF9A3674E1212C"
 				"415F2703877FBE21"
+				"0E9B96B17D140B99"
 			]
 			description: [
-				"{moni.quest.1C861E0C62D5B97D.description1}"
+				"Imbue your factory with the Wisdom of the Universe by running the &3ORB&r: While this multiblock is active, all your data access and optical reception hatches will act like they have every research data available to them! &9One could even break causality with this technology...&r"
 				""
-				"{moni.quest.1E36AFB19932C805.description2}"
+				"If you haven't made it already, you will need &9Polyether Ether Ketone&r."
 				""
-				"{moni.quest.1C861E0C62D5B97D.description2}"
+				"(Unique multi mechanic code taken from the Cosmic Frontiers team with Caitlynn's gracious permission.)"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
 			id: "1C861E0C62D5B97D"
 			size: 1.5d
-			subtitle: "{moni.quest.1C861E0C62D5B97D.subtitle}"
+			subtitle: "In the end, no answer is ever as elegant as its question."
 			tasks: [{
 				id: "16B4F36211A3BBB5"
 				item: "monilabs:creative_data_multi"
 				type: "item"
 			}]
-			title: "{moni.quest.1C861E0C62D5B97D.title}"
+			title: "&9Omniscience Research Beacon"
 			x: 0.75d
 			y: -4.5d
 		}
 		{
 			dependencies: ["5A70898C99B828E3"]
 			description: [
-				"{moni.quest.161F61C28DBC5941.description1}"
+				"The &3Loot Quantum Fabricator&r is a direct upgrade to the &3Loot Super Fabricator&r, allowing the use of Parallel hatches to further boost speed and efficiency."
 				""
-				"{moni.quest.161F61C28DBC5941.description2}"
+				"You should probably make this multiblock after already making the &3Simulation Quantum Computer&r."
 				""
-				"{moni.quest.5A70898C99B828E3.description2}"
+				"As an end-game structure, it is rather expensive to make. However, it is an investment that will easily pay for itself as you progress through the endgame. You should strongly consider making one of these with one of your first few &6Hearts Of A Universe&r."
 			]
 			icon: "gtceu:loot_quantumfabricator"
 			id: "161F61C28DBC5941"
@@ -536,16 +541,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.161F61C28DBC5941.title}"
+			title: "&9Loot Quantum Fabricator"
 			x: -4.25d
 			y: -8.75d
 		}
 		{
 			dependencies: ["0ED041E2114F7C84"]
 			description: [
-				"{moni.quest.63CC578C3558E0AF.description1}"
+				"The &3Hyperbolic Microverse Projector&r is the most powerful projector. It can perform all previous Microminer missions, as well as unlocking many new ones."
 				""
-				"{moni.quest.63CC578C3558E0AF.description2}"
+				"It can accept a &6parallel hatch&r, allowing it to run most recipes in parallel. Certain recipes are unable to parallel, and are marked as such in &bEMI&r."
 			]
 			id: "63CC578C3558E0AF"
 			shape: "hexagon"
@@ -555,7 +560,7 @@
 				item: "monilabs:hyperbolic_microverse_projector"
 				type: "item"
 			}]
-			title: "{moni.quest.63CC578C3558E0AF.title}"
+			title: "&9Hyperbolic Microverse Projector"
 			x: 3.75d
 			y: -3.25d
 		}
@@ -563,11 +568,12 @@
 			dependencies: [
 				"4C0BCA64D5B409F2"
 				"786AECA42F53B45A"
+				"0E9B96B17D140B99"
 			]
 			description: [
-				"{moni.quest.73A44214C2B44D53.description1}"
+				"The &3Dimensional Superassembler&r uses dimensional warping to process hundreds of Assembly Line recipes at once. "
 				""
-				"{moni.quest.73A44214C2B44D53.description2}"
+				"Notably, the Dimensional Superassembler bypasses the need to use &6ULV Input Buses&r, so you are free to stuff the entirety of a recipe into a single input bus."
 			]
 			id: "73A44214C2B44D53"
 			size: 1.25d
@@ -576,53 +582,53 @@
 				item: "gtceu:dimensional_superassembler"
 				type: "item"
 			}]
-			title: "{moni.quest.73A44214C2B44D53.title}"
+			title: "&9Dimensional Superassembler"
 			x: -6.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["040B3FCD82533BD9"]
-			description: ["{moni.quest.13578427FD9CC2CE.description1}"]
+			description: ["The &6IPMEPS&r is capable of altering the laws of physics on a microversal scale, thus allowing the production of previously &9impossible materials&r."]
 			hide_dependency_lines: false
 			id: "13578427FD9CC2CE"
 			shape: "hexagon"
-			subtitle: "{moni.quest.13578427FD9CC2CE.subtitle}"
+			subtitle: "The final Microminer!"
 			tasks: [{
 				id: "23064FA88C378D9C"
 				item: "kubejs:microminer_t12"
 				type: "item"
 			}]
-			title: "{moni.quest.13578427FD9CC2CE.title}"
+			title: "&9Tier Twelve Microminer"
 			x: -2.0d
-			y: 3.5d
+			y: 3.75d
 		}
 		{
 			dependencies: ["13578427FD9CC2CE"]
-			description: ["{moni.quest.060A5766B021FC77.description1}"]
+			description: ["Combine &6Infinity&r and &6Null&r under altered laws of physics to create &6Monium&r, the strongest possible material."]
 			id: "060A5766B021FC77"
 			shape: "hexagon"
-			subtitle: "{moni.quest.060A5766B021FC77.subtitle}"
+			subtitle: "The be-all end-all"
 			tasks: [{
 				id: "7BF367338B6E7F99"
 				item: "gtceu:monium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.060A5766B021FC77.title}"
+			title: "&9Monium"
 			x: -2.0d
-			y: 5.25d
+			y: 5.0d
 		}
 		{
 			dependencies: ["113E9543ADB1666B"]
-			description: ["{moni.quest.7C9C91EC9F3930C2.description1}"]
+			description: ["This is the largest Extended Crafting Table, capable of handling 11x11 recipes."]
 			id: "7C9C91EC9F3930C2"
 			shape: "hexagon"
-			subtitle: "{moni.quest.7C9C91EC9F3930C2.subtitle}"
+			subtitle: "Because 9x9 was clearly not enough."
 			tasks: [{
 				id: "4FFE066433ADCDE4"
 				item: "extendedcrafting:epic_table"
 				type: "item"
 			}]
-			title: "{moni.quest.7C9C91EC9F3930C2.title}"
+			title: "&9Epic Crafting Table"
 			x: 1.25d
 			y: -3.25d
 		}
@@ -634,11 +640,11 @@
 				"4E9530E62A4B673B"
 			]
 			description: [
-				"{moni.quest.33F610CF136278AE.description1}"
+				"To be able to fully harness the power of Shattered Microverses, you'll need a brand new tier of Microminer."
 				""
-				"{moni.quest.33F610CF136278AE.description3}"
+				"This Microminer can be used to obtain &6Necrosiderite&r, &6Quasi-Stable Neutron Stars&r, and will be used later for making &6Extradimensional Circuits&r."
 				""
-				"{moni.quest.33F610CF136278AE.description2}"
+				"This Microminer requires an &6Epic Extended Crafting Table&r to fit all the things required for a foray into shattered microverses."
 			]
 			id: "33F610CF136278AE"
 			shape: "hexagon"
@@ -647,20 +653,20 @@
 				item: "kubejs:microminer_t11"
 				type: "item"
 			}]
-			title: "{moni.quest.33F610CF136278AE.title}"
+			title: "&9Tier Eleven Microminer"
 			x: 2.25d
 			y: -2.25d
 		}
 		{
 			dependencies: ["33F610CF136278AE"]
 			description: [
-				"{moni.quest.0FD9B533BB402B17.description1}"
+				"Using a Shattered Microverse and a &6Tier Eleven Microminer&r, &6Alien Scrap&r can be retrieved. Scrap can be sifted into various bits of ruined tech, each of which go through their own miniature processing line to be recycled into &6Necrosiderite&r."
 				""
-				"{moni.quest.0FD9B533BB402B17.description2}"
+				"Scrap processing can also yield a variety of other important elements."
 				""
-				"{moni.quest.0FD9B533BB402B17.description3}"
+				"&6Ruined Hulls&r are more abundant than &6Ruined Machine Parts&r but give less &6Necrosiderite&r overall. They also give high-end materials such as &6Neutronium&r, &6Tritanium&r, and &6Crystal Matrix&r"
 				""
-				"{moni.quest.0FD9B533BB402B17.description4}"
+				"&6Ruined Machine Parts&r provide greater amounts of &6Necrosiderite&r compared to &6Ruined Hulls&r."
 			]
 			id: "0FD9B533BB402B17"
 			shape: "hexagon"
@@ -669,7 +675,7 @@
 				item: "kubejs:alien_scrap"
 				type: "item"
 			}]
-			title: "{moni.quest.0FD9B533BB402B17.title}"
+			title: "&9Scrapping"
 			x: 2.25d
 			y: -1.0d
 		}
@@ -677,29 +683,29 @@
 			dependencies: ["0FD9B533BB402B17"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.0DE1BF1648CAF6D6.description1}"
+				"Thankfully, &6Necrosiderite&r itself does not require any special processing, and can just be smelted."
 				""
-				"{moni.quest.0DE1BF1648CAF6D6.description2}"
+				"Necrosiderite will see use in the next tier of SMDs and various things requiring strong magnetic fields, as well as being the only &2UIV&r wire."
 			]
 			id: "0DE1BF1648CAF6D6"
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "{moni.quest.0DE1BF1648CAF6D6.subtitle}"
+			subtitle: "Tastes like batteries."
 			tasks: [{
 				id: "1BBD650C59C35C52"
 				item: "gtceu:necrosiderite_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.0DE1BF1648CAF6D6.title}"
-			x: 0.5d
+			title: "&9Necrosiderite"
+			x: 1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["0DE1BF1648CAF6D6"]
 			description: [
-				"{moni.quest.1E36AFB19932C805.description1}"
+				"&6Complex SMD Components&r are required for &6Extradimensional circuits&r. They can alternatively be substituted for the equivalent of 4 advanced SMD components."
 				""
-				"{moni.quest.1E36AFB19932C805.description2}"
+				"These use &6Polyethyl Cyanoacrylate&r and &6Necrosiderite&r to create a type of circuit component that can exist in superposition at a macroscopic scale."
 			]
 			id: "1E36AFB19932C805"
 			shape: "hexagon"
@@ -730,14 +736,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.1E36AFB19932C805.title}"
-			x: 0.5d
+			title: "&9Complex SMD Components"
+			x: 1.0d
 			y: 0.25d
 		}
 		{
-			dependencies: ["0E9B96B17D140B99"]
-			description: ["{moni.quest.5A07988F5AD20A06.description1}"]
-			hide_dependency_lines: true
+			dependencies: ["5911900438648430"]
+			description: ["The precursor to &6Optical Processing Units&r."]
 			id: "5A07988F5AD20A06"
 			shape: "hexagon"
 			tasks: [{
@@ -745,7 +750,7 @@
 				item: "kubejs:carbon_mesh_reinforced_printed_circuit_board"
 				type: "item"
 			}]
-			title: "{moni.quest.5A07988F5AD20A06.title}"
+			title: "&9Optical Circuit Board"
 			x: -6.0d
 			y: -7.25d
 		}
@@ -755,29 +760,29 @@
 				"601A47A727AC3BD2"
 			]
 			description: [
-				"{moni.quest.2D5677EA9F47AA83.description1}"
+				"An &6Unactivated Multidimentional CPU Wafer&r needs to be activated and cut before it is usable in circuit recipes."
 				""
-				"{moni.quest.2D5677EA9F47AA83.description2}"
+				"You'll need a few when making &6Extradimensional Processor Supercomputers&r and &6Mainframes&r."
 			]
 			hide_dependency_lines: true
 			id: "2D5677EA9F47AA83"
 			shape: "hexagon"
-			subtitle: "{moni.quest.2D5677EA9F47AA83.subtitle}"
+			subtitle: "Technically, all CPU Chips are multidimensional."
 			tasks: [{
 				id: "38EA1251719C7C8E"
 				item: "kubejs:multidimensional_cpu_chip"
 				type: "item"
 			}]
 			x: 3.5d
-			y: 4.5d
+			y: 4.25d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
-			description: ["{moni.quest.39A09DA3903C5564.description1}"]
+			description: ["These Boules have a hefty cost up front, but a single one will last you quite a while, in addition to allowing for the creation of new Chips."]
 			icon: "kubejs:null_boule"
 			id: "39A09DA3903C5564"
 			shape: "hexagon"
-			subtitle: "{moni.quest.39A09DA3903C5564.subtitle}"
+			subtitle: "The final Boule"
 			tasks: [
 				{
 					id: "6C2FE18AC14A6945"
@@ -790,13 +795,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.39A09DA3903C5564.title}"
+			title: "&9Null Boules"
 			x: -3.25d
 			y: -2.5d
 		}
 		{
 			dependencies: ["4EA1E0D437528747"]
-			description: ["{moni.quest.434142F777A2CCBE.description1}"]
+			description: ["The last circuit board. These are made by wrapping &6Carbon Mesh Reinforced Circuit Boards&r with &6Null&r and some other goodies."]
 			hide_dependency_lines: true
 			id: "434142F777A2CCBE"
 			shape: "hexagon"
@@ -805,15 +810,15 @@
 				item: "kubejs:null_infused_circuit_board"
 				type: "item"
 			}]
-			x: 0.75d
-			y: 3.5d
+			x: 1.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["33F610CF136278AE"]
-			description: ["{moni.quest.601A47A727AC3BD2.description1}"]
+			description: ["The final Nether Star tier. These will be used in &6Multidimensional CPU Wafers&r as well as &aUEV&r and &l&cMAX&r&r &6Emitters&r, &6Sensors&r, and &6Field Generators&r."]
 			id: "601A47A727AC3BD2"
 			shape: "hexagon"
-			subtitle: "{moni.quest.601A47A727AC3BD2.subtitle}"
+			subtitle: "The Heaven-Sent Abomination"
 			tasks: [{
 				id: "47B63F1FDEB9A456"
 				item: "kubejs:quasi_stable_neutron_star"
@@ -827,21 +832,22 @@
 				"4C0BCA64D5B409F2"
 				"7EE334D3AA1E68ED"
 				"601A47A727AC3BD2"
+				"0E9B96B17D140B99"
 			]
 			description: [
-				"{moni.quest.040B3FCD82533BD9.description1}"
+				"Bending the laws of physics is no small feat. Thankfully, you've come up with a solution that is compact enough to fit on a Microminer."
 				""
-				"{moni.quest.040B3FCD82533BD9.description2}"
+				"As you can probably guess, these are expensive."
 			]
 			id: "040B3FCD82533BD9"
 			shape: "hexagon"
-			subtitle: "{moni.quest.040B3FCD82533BD9.subtitle}"
+			subtitle: "Handle with care: could destroy the universe."
 			tasks: [{
 				id: "6D3DB0D6E5C60BCF"
 				item: "kubejs:field_stabilized_prismatic_pulsar_compound"
 				type: "item"
 			}]
-			title: "{moni.quest.040B3FCD82533BD9.title}"
+			title: "&9Field Stabilized Prismatic Pulsar Compound"
 			x: -2.0d
 			y: 2.0d
 		}
@@ -850,7 +856,7 @@
 				"39A09DA3903C5564"
 				"0DE1BF1648CAF6D6"
 			]
-			description: ["{moni.quest.7AF06CB391779388.description1}"]
+			description: ["These RAM chips will find use in various remaining circuit recipes."]
 			id: "7AF06CB391779388"
 			shape: "hexagon"
 			tasks: [{
@@ -862,13 +868,16 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["07057CDE4E021BA7"]
+			dependencies: [
+				"07057CDE4E021BA7"
+				"0E9B96B17D140B99"
+			]
 			description: [
-				"{moni.quest.4E4F03C44623A85D.description1}"
+				"The &3Helical Fusion Reactor&r is a large multiblock structure capable of fusing elements in parallel&r. &9Unlike previous reactors, this one doesn't benefit from running the same recipe continuously.&r"
 				""
-				"{moni.quest.4E4F03C44623A85D.description2}"
+				"For every Hatch it has, its buffer increases by 160M EU, up to a maximum of 2560M."
 				""
-				"{moni.quest.4E4F03C44623A85D.description3}"
+				"With the Helical you can now make &6Hyperdegenerate Matter&r, which is used in &6Hyperdegenerate Darconite&r and &6Naquadah Superfuel&r."
 			]
 			id: "4E4F03C44623A85D"
 			size: 1.25d
@@ -877,33 +886,13 @@
 				item: "gtceu:helical_fusion_reactor"
 				type: "item"
 			}]
-			title: "{moni.quest.4E4F03C44623A85D.title}"
-			x: -0.75d
+			title: "&9Helical Fusion Reactor"
+			x: -0.25d
 			y: 0.25d
 		}
 		{
-			dependencies: ["254D6D1470BC197E"]
-			description: [
-				"{moni.quest.5911900438648430.description1}"
-				""
-				"{moni.quest.5911900438648430.description2}"
-			]
-			hide_dependency_lines: true
-			id: "5911900438648430"
-			shape: "hexagon"
-			subtitle: "{moni.quest.5911900438648430.subtitle}"
-			tasks: [{
-				id: "6A6C0D5FFB29C9E1"
-				item: "gtceu:polyethyl_cyanoacrylate_plate"
-				type: "item"
-			}]
-			title: "{moni.quest.5911900438648430.title}"
-			x: -6.0d
-			y: -1.75d
-		}
-		{
 			dependencies: ["61301FBD825F8280"]
-			description: ["{moni.quest.4E9530E62A4B673B.description1}"]
+			description: ["Refines materials into potent &6Liquid Naquadah Fuels&r.\n\n&2While you will need &6Crude Naquadah Fuel&2 in small amounts to send &6Tier Eleven Microminer&2 missions, Naquadah fuels are entirely optional beyond that.&r"]
 			id: "4E9530E62A4B673B"
 			shape: "hexagon"
 			tasks: [{
@@ -911,80 +900,85 @@
 				item: "gtceu:naquadah_refinery"
 				type: "item"
 			}]
-			title: "{moni.quest.4E9530E62A4B673B.title}"
+			title: "&9Naquadah Fuel Refining"
 			x: 4.75d
 			y: -2.25d
 		}
 		{
 			dependencies: ["15607184B546F5EE"]
 			description: [
-				"{moni.quest.786AECA42F53B45A.description1}"
+				"&9Eltz&r is made by processing &6Impure Eltic&r gems or dust in an Electric Blast Furnace, which in turn are created from &6Eltic Sludge Dust&r via an in-world crystallization process."
 				""
-				"{moni.quest.786AECA42F53B45A.description2}"
+				"Unfortunately, &6Eltic Sludge Dust&r is made through a long process which consumes large quantities of aluminosilicate dusts and &6Hydrofluoric Acid&r to make enough &6Dirty Hexafluorosilicic Solution&r."
 				""
-				"{moni.quest.786AECA42F53B45A.description3}"
+				"Hopefully, you've stockpiled a ton of these dusts since they don't have much use otherwise. &eIf not, you can get more by centrifuging some types of rock dusts or mining the corresponding ores.&r"
 			]
 			id: "786AECA42F53B45A"
 			shape: "hexagon"
-			subtitle: "{moni.quest.786AECA42F53B45A.subtitle}"
+			subtitle: "EZ, right?"
 			tasks: [{
 				id: "3197EF56CDB20130"
 				item: "monilabs:eltz_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.786AECA42F53B45A.title}"
-			x: -5.25d
-			y: 2.75d
+			title: "&9Eltz"
+			x: -4.5d
+			y: 3.25d
 		}
 		{
 			dependencies: ["6EA130B04FDE6868"]
 			description: [
-				"{moni.quest.0ED041E2114F7C84.description1}"
+				"This material sees use in UEV Tier components."
 				""
-				"{moni.quest.0ED041E2114F7C84.description2}"
+				"This material is made up of a &6Amalgamated Sculk&r and &6Bioalloy Base&r in the Sculk Vat.\nNow might be a good time to try to refine your SVat automation setups if you're so inclined."
 			]
 			id: "0ED041E2114F7C84"
 			shape: "hexagon"
-			subtitle: "{moni.quest.0ED041E2114F7C84.subtitle}"
+			subtitle: "Slightly… gooey?"
 			tasks: [{
 				id: "21D7458960FAB5AE"
 				item: "monilabs:sculk_bioalloy_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.0ED041E2114F7C84.title}"
+			title: "&9Sculk Bioalloy"
 			x: 3.75d
 			y: -4.5d
 		}
 		{
 			dependencies: ["00011E5DD7EEE8DB"]
 			description: [
-				"{moni.quest.07E757AAA1C7435D.description1}"
+				"&6Actinium&r is a radioactive material, and can be obtained by bombarding &6Uranic Solution&r or &6Radon Salt&r with neutrons from a &6Neutron Emitter&r, having a chance of creating Actinium."
 				""
-				"{moni.quest.07E757AAA1C7435D.description2}"
+				"Keep in mind, though, that over time, the emitter will &edegrade&r, so keeping spares is important."
 				""
-				"{moni.quest.07E757AAA1C7435D.description3}"
+				"Actinium is the base material for the &4UHV&r components, so prepare to make a lot of it."
 			]
 			icon: "gtceu:actinium_ingot"
 			id: "07E757AAA1C7435D"
 			shape: "hexagon"
-			subtitle: "{moni.quest.07E757AAA1C7435D.subtitle}"
+			subtitle: "Radioactive!"
 			tasks: [{
 				id: "450DAA4FF933F49A"
 				item: "gtceu:actinium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.07E757AAA1C7435D.title}"
+			title: "&9Actinium"
 			x: 6.25d
 			y: -7.0d
 		}
 		{
-			dependencies: ["6A6983C64374366C"]
+			dependencies: [
+				"6A6983C64374366C"
+				"6F9041F256F517A3"
+			]
 			description: [
-				"{moni.quest.3E45F67F09B6156B.description1}"
+				"The &3Prismatic Crucible&r is a highly unique multiblock. A Crucible is always in one state of color at a time: Red, Orange, Yellow, Lime, Green, Teal, Cyan, Azure, Blue, Indigo, Magenta, or Pink. When the Crucible is first formed, it defaults to the Red state."
 				""
-				"{moni.quest.3E45F67F09B6156B.description2}"
+				"Most Crucible recipes have a required initial color that the Crucible must be in for the recipe to run, and a Resulting Color that the Crucible will turn into once the recipe finishes. This information can be found in &bEMI&r. Some recipes 'increment' the Crucible's color, meaning the color moves that many spaces clockwise on the color wheel (see &6Prismatic Cores&r)."
 				""
-				"{moni.quest.3E45F67F09B6156B.description3}"
+				"Additionally, there are two recipe modes the Crucible can be in: &6Chromatic Processing&r and &6Chromatic Transcendence&r. Just like how the Multi Smelter can be in either Furnace or Alloy Smelter mode, the Crucible can only be in one mode at a time. The Crucible works the exact same in both modes; the only difference is what recipes are available."
+				""
+				"The Crucible uses Additive Color, so the colors are:\nPrimary: &4Red&r, &2Green&r, &1Blue&r\nSecondary: &eYellow&r, &3Cyan&r, &dMagenta&r\nTertiary: &6Orange&r, &aLime&r, &bTeal&r, &9Azure&r, &5Indigo&r, &cPink&r"
 			]
 			icon: "monilabs:prismatic_crucible"
 			id: "3E45F67F09B6156B"
@@ -994,19 +988,19 @@
 				type: "item"
 			}]
 			size: 1.5d
-			subtitle: "{moni.quest.3E45F67F09B6156B.subtitle}"
+			subtitle: "Taste the rainbow!"
 			tasks: [{
 				id: "279C89B6CCA0C22E"
 				item: "monilabs:prismatic_crucible"
 				type: "item"
 			}]
-			title: "{moni.quest.3E45F67F09B6156B.title}"
+			title: "The Prismatic Crucible"
 			x: 3.25d
 			y: -7.0d
 		}
 		{
 			dependencies: ["738A141D31AD7CE3"]
-			description: ["{moni.quest.483652BAEF59E125.description1}"]
+			description: ["&6Hadal Warp Engines&r are components needed for the &6Tier Ten to Twelve Microminers&r"]
 			id: "483652BAEF59E125"
 			rewards: [{
 				id: "6D6D92F23F1DCEA5"
@@ -1019,16 +1013,16 @@
 				item: "kubejs:hadal_warp_engine"
 				type: "item"
 			}]
-			title: "{moni.quest.483652BAEF59E125.title}"
+			title: "&9Hadal Warp Engine"
 			x: -3.25d
 			y: -10.25d
 		}
 		{
 			dependencies: ["6F9041F256F517A3"]
 			description: [
-				"{moni.quest.38B1588655AA9BDF.description1}"
+				"When a &6Heart of the Universe&r is extracted from a Microverse, it becomes highly unstable, transforming into a &3Shattered Microverse&r &ewith the same Integrity&r."
 				""
-				"{moni.quest.38B1588655AA9BDF.description2}"
+				"Shattered microverses cannot be repaired in any way. To run more missions, you must re-shatter a Normal microverse. When a Shattered microverse reaches 0%% Integrity, it becomes a &3Corrupted Microverse&r."
 			]
 			icon: "kubejs:shattered_universe_data"
 			id: "38B1588655AA9BDF"
@@ -1037,18 +1031,18 @@
 				id: "5BF1790B9C6DF7BF"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.38B1588655AA9BDF.title}"
+			title: "Shattered Microverses"
 			x: 2.25d
 			y: -8.75d
 		}
 		{
 			dependencies: ["38B1588655AA9BDF"]
 			description: [
-				"{moni.quest.062B4DDD703338D1.description1}"
+				"When a &3Shattered Microverse&r runs out of integrity, it becomes a &3Corrupted Microverse&r."
 				""
-				"{moni.quest.062B4DDD703338D1.description2}"
+				"Corrupted Microverses decay passively, even when a recipe is running."
 				""
-				"{moni.quest.062B4DDD703338D1.description3}"
+				"Corrupted microverses can be repaired with &6Quantum Flux&r, however be careful to not overfeed it. Flux can now be consumed even when less than 1%% of Integrity is missing, and when it does so the recipe progress regresses."
 			]
 			icon: "kubejs:corrupted_universe_data"
 			id: "062B4DDD703338D1"
@@ -1057,7 +1051,7 @@
 				id: "0AA5D1762F2398B4"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.062B4DDD703338D1.title}"
+			title: "Corrupted Microverses"
 			x: 4.25d
 			y: -8.75d
 		}
@@ -1066,13 +1060,12 @@
 				"22E50A6923EBF5CB"
 				"01E542E1C9DAF5B4"
 				"07E757AAA1C7435D"
-				"0E9B96B17D140B99"
 				"113E9543ADB1666B"
 			]
 			description: [
-				"{moni.quest.6A6983C64374366C.description1}"
+				"You'll need &6Wetware Mainframes&r, &6Manyullyn&r, &6Neutronium&r, &6PEEK&r, &6Actinium&r, &6Darconite&r, and &6Terbium&r to make this Assembler."
 				""
-				"{moni.quest.6A6983C64374366C.description2}"
+				"With this you can make &4UHV &6Energy Hatches&r, allowing you to make &6Omnic Matrix Coils&r and unlocking the most efficient recipe for &6Wetware Processors&r."
 			]
 			id: "6A6983C64374366C"
 			shape: "hexagon"
@@ -1081,16 +1074,16 @@
 				item: "gtceu:uhv_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.6A6983C64374366C.title}"
+			title: "UHV Assembler"
 			x: 4.75d
 			y: -7.0d
 		}
 		{
 			dependencies: ["07057CDE4E021BA7"]
 			description: [
-				"{moni.quest.4C0BCA64D5B409F2.description1}"
+				"The final assembler. You will need &6Optical Mainframes&r, &6Sculk Bioalloy&r, &6Necrosiderite&r, &6Darconite&r, &6Infinity&r, and &6Null&r to make this."
 				""
-				"{moni.quest.4C0BCA64D5B409F2.description2}"
+				"With this you can make &aUEV &6Energy Hatches&r, unlocking the &3Dimensonal Superassembler&r and &3Transdimensional Energy Singularity&r, two incredibly powerful multiblock machines that will transform how you structure your factory."
 			]
 			id: "4C0BCA64D5B409F2"
 			shape: "hexagon"
@@ -1099,13 +1092,13 @@
 				item: "gtceu:uev_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.4C0BCA64D5B409F2.title}"
+			title: "UEV Assembler"
 			x: -4.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["79EFCD8E01384C0C"]
-			description: ["{moni.quest.36DF9A3674E1212C.description1}"]
+			description: ["This material transcends the concepts of normal materials, being made out of different aspects of consciousness. It will primarily be used in processing &6Prismatic Cores&r and making &aUEV &6Emitters&r and &6Sensors&r."]
 			id: "36DF9A3674E1212C"
 			shape: "hexagon"
 			tasks: [{
@@ -1113,21 +1106,21 @@
 				item: "monilabs:transcendental_matrix_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.36DF9A3674E1212C.title}"
-			x: -1.25d
-			y: -4.5d
+			title: "Transcendental Matrix"
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5A31EEF439212D6E"]
 			description: [
-				"{moni.quest.0E9B96B17D140B99.description1}"
+				"Also known as PEEK, this plastic will be used for &9Creative-tier&r machines and makes for an incredibly fast item pipe."
 				""
-				"{moni.quest.0E9B96B17D140B99.description2}"
+				"&6Activated Fluorotoluene Mixture Cells&r are obtained by running &6Fluorotoluene Mixture Cells&r through a &3laser engraver&r with a &6black lens&r. Fill cells with fluids using a &3canner&r."
 			]
 			icon: "gtceu:polyether_ether_ketone_bucket"
 			id: "0E9B96B17D140B99"
 			shape: "hexagon"
-			subtitle: "{moni.quest.0E9B96B17D140B99.subtitle}"
+			subtitle: "Plastic at its peek."
 			tasks: [
 				{
 					id: "6B5B6CBB315FBB39"
@@ -1141,13 +1134,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.0E9B96B17D140B99.title}"
-			x: 5.5d
-			y: -8.25d
+			title: "Polyether Ether Ketone"
+			x: -0.75d
+			y: -4.5d
 		}
 		{
 			dependencies: ["4E4F03C44623A85D"]
-			description: ["{moni.quest.7EE334D3AA1E68ED.description1}"]
+			description: ["&6Hyperdegenerate Darconite&r is the one and only &aUEV&r superconductor. It's made by coating &6Darconite&r wires, fine wires, or foils in &6Hyperdegenerate Matter&r."]
 			icon: "gtceu:hyperdegenerate_darconite_foil"
 			id: "7EE334D3AA1E68ED"
 			shape: "hexagon"
@@ -1163,56 +1156,26 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7EE334D3AA1E68ED.title}"
-			x: -0.75d
+			title: "Hyperdegenerate Darconite"
+			x: -0.25d
 			y: 2.0d
-		}
-		{
-			dependencies: [
-				"6F9041F256F517A3"
-				"6EA130B04FDE6868"
-			]
-			description: ["{moni.quest.187083EB66D95726.description1}"]
-			icon: "kubejs:optical_chip"
-			id: "187083EB66D95726"
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "4C5EBB424CBA9CEA"
-					item: "kubejs:sapphire_seed_crystal"
-					type: "item"
-				}
-				{
-					id: "3040257AAD9F5759"
-					item: "kubejs:sapphire_wafer"
-					type: "item"
-				}
-				{
-					id: "3EA8C0CBBEFFB9C4"
-					item: "kubejs:optical_chip"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.187083EB66D95726.title}"
-			x: 0.0d
-			y: -5.75d
 		}
 		{
 			dependencies: ["3E45F67F09B6156B"]
 			description: [
-				"{moni.quest.415F2703877FBE21.description1}"
+				"Pure Radiation Inhibiting Spectral Medium Glass, also known as &6P.R.I.S.M Glass&r, is the final tier of Glass available. It catches high energy radiation passing through and slows it down to visible light, seen as streaks of color. It will be used in a few multiblock structures and various &aUEV&r singleblocks."
 				""
-				"{moni.quest.415F2703877FBE21.description2}"
+				"This will be the first automation challenge you'll face with the &3Prismatic Crucible&r. While it is possible to make all your P.R.I.S.M by using a single Crucible and countless &6Chromatic Stabilizers&r, consider exploring alternate, cheaper sequences processing the Glass midproducts out of order, or using multiple Crucibles alongside each other."
 			]
 			id: "415F2703877FBE21"
 			shape: "hexagon"
-			subtitle: "{moni.quest.415F2703877FBE21.subtitle}"
+			subtitle: "So Sparkly!"
 			tasks: [{
 				id: "2DCCBC8B49276284"
 				item: "monilabs:prism_glass"
 				type: "item"
 			}]
-			title: "{moni.quest.415F2703877FBE21.title}"
+			title: "P.R.I.S.M Glass"
 			x: 0.75d
 			y: -7.0d
 		}
@@ -1221,7 +1184,7 @@
 				"060A5766B021FC77"
 				"1C861E0C62D5B97D"
 			]
-			description: ["{moni.quest.59219D37B5CE80E6.description1}"]
+			description: ["Imagine if we could sandwich all of the strongest Microminer platings together between some &6Monium&r and &6Eltz&r, creating something truly impossible and incredible. \n\n&9If only we had the knowledge to be able to assemble something like that...&r"]
 			id: "59219D37B5CE80E6"
 			shape: "hexagon"
 			size: 1.5d
@@ -1230,9 +1193,9 @@
 				item: "kubejs:causality_exempt_monic_heavy_plating"
 				type: "item"
 			}]
-			title: "{moni.quest.59219D37B5CE80E6.title}"
+			title: "Causality Exempt Monic Heavy Plating"
 			x: -2.0d
-			y: 6.75d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1240,9 +1203,9 @@
 				"5601A05D8361551D"
 			]
 			description: [
-				"{moni.quest.4F08AF2C1E6B1736.description1}"
+				"With &6Monium&r and &6Extradimensional Mainframes&r, you can make &cMAX&r &6Energy Hatches&r. A 16A &cMAX&r hatch provides 256x the power compared to a &aUEV&r one, if you can supply it."
 				""
-				"{moni.quest.4F08AF2C1E6B1736.description2}"
+				"These hatches, along with the &3Transdimensional Energy Singularity&r and &6Omega Parallel Hatches&r, will allow you to scale your infrastructure to the insane levels needed to beat the pack.\n&2The &6Creative Quantum Chest&2 costs over &ltwo hundred&r &6Extradimensional Processor Mainframes&2 and &lfive thousand&r &6Monium Ingots&2. You &lwill&r&2 need to use &6MAX hatches&2.&r"
 			]
 			id: "4F08AF2C1E6B1736"
 			shape: "hexagon"
@@ -1252,36 +1215,36 @@
 				item: "gtceu:max_energy_input_hatch"
 				type: "item"
 			}]
-			title: "{moni.quest.4F08AF2C1E6B1736.title}"
+			title: "MAX Energy Hatches"
 			x: 0.0d
-			y: 6.75d
+			y: 6.5d
 		}
 		{
 			dependencies: [
 				"415F2703877FBE21"
-				"6F9041F256F517A3"
+				"36DF9A3674E1212C"
 			]
 			description: [
-				"{moni.quest.45752C40878A1689.description1}"
+				"With your &3Prismatic Crucible&r, you are now able to process &6Prismatic Cores&r. Starting as Inert, run the Core through each consecutive primary/secondary color to progress the core. Once you've reached Magenta, the core will become Active, and can be used in the making of &6Infinity&r."
 				""
-				"{moni.quest.45752C40878A1689.description2}"
+				"Be very careful with your cores! Putting any core into the wrong color Crucible will destroy the Core so violently, that only the liquid embodiment of nothingness, &6Null&r, remains."
 				"{@pagebreak}"
-				"{moni.quest.45752C40878A1689.description3}"
+				"To save you a bit of time looking through some of the many Crucible recipes in &bEMI&r, we have created the following diagrams."
 				""
-				"[\"\",{\"translate\":\"moni.quest.45752C40878A1689.description4\"},{\"underlined\":true,\"translate\":\"moni.quest.45752C40878A1689.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"70026930847E8EC0\"}}]"
+				"[\"\",{\"text\":\"All of these images are available in higher resolution in \"},{\"underlined\":true,\"text\":\"Monifactory's Discord Server.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"70026930847E8EC0\"}}]"
 				""
-				"{moni.quest.45752C40878A1689.description5}"
+				"&lThe 12 Prismatic Core recipes - Normal Mode&r (Chromatic Transcendence)"
 				"{image:monifactory:textures/quests/prismac_priscore.png width:200 height:200 align:center}"
 				""
-				"{moni.quest.45752C40878A1689.description6}"
+				"Note that a prismatic core of color Magenta refers to an Active Prismatic Core, and White refers to Supercritical."
 				"{@pagebreak}"
-				"{moni.quest.45752C40878A1689.description7}"
+				"&lChromatic Stabilizers and Capacitors&r (Chromatic Transcendence)"
 				"{image:monifactory:textures/quests/prismac_stabs_caps.png width:200 height:200 align:center}"
 				"{@pagebreak}"
-				"{moni.quest.45752C40878A1689.description8}"
+				"&lThe 12 Prismatic Core recipes - Hard/Expert Mode&r (Chromatic Transcendence)"
 				"{image:monifactory:textures/quests/prismac_priscore_hm.png width:200 height:200 align:center}"
 				""
-				"{moni.quest.45752C40878A1689.description9}"
+				"Note that two arrows leading away from the same point indicates a random chance to go either direction. Good luck!"
 			]
 			id: "45752C40878A1689"
 			shape: "hexagon"
@@ -1297,30 +1260,30 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.45752C40878A1689.title}"
+			title: "Prismatic Cores"
 			x: -3.25d
-			y: -7.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["4C0BCA64D5B409F2"]
+			dependencies: ["415F2703877FBE21"]
 			description: [
-				"{moni.quest.3E1A349F989835F7.description1}"
+				"&6Photonic SoCs (PSoCs)&r can be used to more cheaply make &6Photonic Processors&r.\n\nImagine each PSoC has three on/off levers for the Red, Green, and Blue colors."
 				""
 				"{image:monifactory:textures/quests/psoc_switches.png width:200 height:21 align:center}"
 				""
-				"{moni.quest.3E1A349F989835F7.description2}"
+				"When a PSoC is put into a &3Prismatic Crucible&r, the lever(s) corresponding to the Crucible's colors are toggled. Secondary colors flip both of their primary components' levers. Afterwards, the Crucible changes color to what the PSoC previously was."
 				"{@pagebreak}"
-				"{moni.quest.3E1A349F989835F7.description3}"
+				"For example, a Red PSoC put into a green Crucible would output a Yellow PSoC, because the green color flipped the green 'lever' on."
 				"{image:monifactory:textures/quests/psoc_ex1.png width:110 height:70 align:center}"
 				""
-				"{moni.quest.3E1A349F989835F7.description4}"
+				"A magenta PSoC put into a cyan Crucible would output a Yellow PSoC, because the cyan color toggled both the blue lever Off and the green lever On."
 				"{image:monifactory:textures/quests/psoc_ex2.png width:110 height:70 align:center}"
 				""
-				"{moni.quest.3E1A349F989835F7.description5}"
+				"In either case, the Crucible will be left in the state corresponding to the PSoC's color &3at recipe start&r, or to the next primary color clockwise if the PSoC was inert."
 			]
 			id: "3E1A349F989835F7"
 			shape: "hexagon"
-			subtitle: "{moni.quest.3E1A349F989835F7.subtitle}"
+			subtitle: "There are 10 types of people."
 			tasks: [
 				{
 					id: "2D0E3E2345C7AD71"
@@ -1333,10 +1296,10 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.3E1A349F989835F7.title}"
-			x: -3.75d
-			y: 2.75d
+			title: "Photonic SoCs"
+			x: -4.5d
+			y: -7.0d
 		}
 	]
-	title: "{moni.chapter.457D17593A814D73.title}"
+	title: "Home Stretch"
 }

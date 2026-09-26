@@ -8,13 +8,6 @@
 	order_index: 2
 	quest_links: [
 		{
-			id: "7471AD069CC1E5EC"
-			linked_quest: "5CFBAB5F83E33064"
-			size: 1.25d
-			x: 2.5d
-			y: 12.5d
-		}
-		{
 			id: "20D596271688188F"
 			linked_quest: "0D6C8FFD01BE5C21"
 			shape: "hexagon"
@@ -49,14 +42,6 @@
 			shape: "hexagon"
 			x: 6.0d
 			y: -4.25d
-		}
-		{
-			id: "3127A65D63213C8E"
-			linked_quest: "3B639F4061B00F1A"
-			shape: "gear"
-			size: 1.5d
-			x: 4.25d
-			y: -6.0d
 		}
 		{
 			id: "54DA67D96DDF6F24"
@@ -168,19 +153,17 @@
 			y: 4.25d
 		}
 		{
-			id: "6E2A278B1FB94559"
-			linked_quest: "6197C51E04761371"
-			shape: "hexagon"
-			size: 2.0d
-			x: 4.25d
-			y: -11.0d
-		}
-		{
 			id: "75CC820F97210BF1"
 			linked_quest: "3000798ACA51BFDC"
 			shape: "hexagon"
 			x: 0.75d
 			y: 12.5d
+		}
+		{
+			id: "70B67CDA44B463BE"
+			linked_quest: "3B639F4061B00F1A"
+			x: 4.5d
+			y: -5.5d
 		}
 	]
 	quests: [
@@ -190,11 +173,15 @@
 				"2A11706D3D63925C"
 			]
 			description: [
-				"{moni.quest.0B62AD25CDD86A6B.description1}"
+				"Keep the MV area separate from your LV area. &eHooking up an LV machine to MV current will result in the machine being destroyed, and LV cables will burn up if you put MV current through them&r."
 				""
-				"{moni.quest.0B62AD25CDD86A6B.description2}"
+				"Once you're comfortable and confident with voltages, you can use transformers to switch voltages within a single setup, but don't feel forced to try that until you've got a grasp on the basics."
 				""
-				"{moni.quest.0B62AD25CDD86A6B.description3}"
+				"For your MV cables, you can use &6Copper&r to start with. &6Energetic Alloy cables&r are lossless though, so consider them if you're able to mass produce those ingots."
+				"{@pagebreak}"
+				"By contrast, &aall RF power&r is lossless, and any RF supplier can send energy to any RF receiver without consequence. This means you can use Pipez or LaserIO to route power from wherever you're generating it to an &3Energy Converter&r for each tier of GregTech machine you have."
+				""
+				"That kind of setup is the most foolproof one for a beginner, but be warned: &cEnergy Converters only go up to HV&r. You &lwill&r have to get accustomed to GregTech power transfer in order to deal with larger quantities of power."
 			]
 			hide_until_deps_visible: true
 			icon: "gtceu:mv_4a_energy_converter"
@@ -232,10 +219,10 @@
 						]
 					}
 				}
-				title: "{moni.task.28506753F6FA0755}"
+				title: "Any MV Converter"
 				type: "item"
 			}]
-			title: "{moni.quest.0B62AD25CDD86A6B.title}"
+			title: "MV Energy Converter"
 			x: -7.75d
 			y: -10.75d
 		}
@@ -245,7 +232,7 @@
 				"74935A3553451178"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.5543D84CB5E37E01.description1}"]
+			description: ["&aMV Batteries&r function essentially the same as &aLV Batteries&r, only stronger. They also need to be put into &3MV Machines, MV Battery Buffers&r or &3MV Turbo Chargers&r."]
 			icon: {
 				Count: 1
 				id: "gtceu:mv_lithium_battery"
@@ -264,159 +251,16 @@
 				item: "gtceu:mv_battery_hull"
 				type: "item"
 			}]
-			title: "{moni.quest.5543D84CB5E37E01.title}"
+			title: "MV Power Storage"
 			x: -7.75d
 			y: -9.0d
 		}
 		{
-			dependencies: ["61AD3760E271B431"]
-			description: [
-				"{moni.quest.5F109188BE4D9767.description1}"
-				""
-				"{moni.quest.5F109188BE4D9767.description2}"
-				""
-				"{moni.quest.5F109188BE4D9767.description3}"
-			]
-			icon: "gtceu:lv_centrifuge"
-			id: "5F109188BE4D9767"
-			rewards: [{
-				id: "42D617F339691CDD"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "79E44B9FE48FA14C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_centrifuge"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_centrifuge"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_centrifuge"
-							}
-						]
-					}
-				}
-				title: "{moni.task.79E44B9FE48FA14C}"
-				type: "item"
-			}]
-			title: "{moni.quest.5F109188BE4D9767.title}"
-			x: -5.5d
-			y: -10.75d
-		}
-		{
-			dependencies: ["5F109188BE4D9767"]
-			description: [
-				"{moni.quest.74935A3553451178.description1}"
-				""
-				"{moni.quest.74935A3553451178.description2}"
-			]
-			icon: "gtceu:lv_canner"
-			id: "74935A3553451178"
-			rewards: [{
-				id: "1BE0BCDCAD59B0D7"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "738E125A32EE6F95"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "gtceu:lv_canner"
-								}
-								{
-									Count: 1b
-									id: "gtceu:mv_canner"
-								}
-								{
-									Count: 1b
-									id: "gtceu:hv_canner"
-								}
-							]
-						}
-					}
-					title: "{moni.task.738E125A32EE6F95}"
-					type: "item"
-				}
-				{
-					id: "4D63025FF7ECE794"
-					item: "gtceu:antimony_dust"
-					type: "item"
-				}
-				{
-					id: "508B2CC77AAF69B7"
-					item: "gtceu:battery_alloy_ingot"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.74935A3553451178.title}"
-			x: -5.5d
-			y: -9.0d
-		}
-		{
-			dependencies: ["5B0200011DF8E1B6"]
-			description: [
-				"{moni.quest.61AD3760E271B431.description1}"
-				""
-				"{moni.quest.61AD3760E271B431.description2}"
-				""
-				"{moni.quest.61AD3760E271B431.description3}"
-				""
-				"{@pagebreak}"
-				"{moni.quest.61AD3760E271B431.description4}"
-				""
-				"{moni.quest.61AD3760E271B431.description5}"
-				""
-				"{moni.quest.61AD3760E271B431.description6}"
-				""
-				"{moni.quest.61AD3760E271B431.description7}"
-				""
-				"{moni.quest.61AD3760E271B431.description8}"
-				""
-				"{@pagebreak}"
-				"{moni.quest.61AD3760E271B431.description9}"
-				""
-				"{moni.quest.61AD3760E271B431.description10}"
-				""
-				"{moni.quest.61AD3760E271B431.description11}"
-				""
-				"{moni.quest.61AD3760E271B431.description12}"
-				""
-				"{moni.quest.61AD3760E271B431.description13}"
-			]
-			icon: "gtceu:tiny_gallium_arsenide_dust"
-			id: "61AD3760E271B431"
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "5E6A27EC5AF00A4B"
-				type: "checkmark"
-			}]
-			title: "{moni.quest.61AD3760E271B431.title}"
-			x: -1.25d
-			y: -10.75d
-		}
-		{
 			dependencies: ["604CCBE824D03A74"]
 			description: [
-				"{moni.quest.376EE785F4204FFE.description1}"
+				"&2The Sifter gets you Flawless and Exquisite Gems from Crushed Purified Gem Ores. Overall it results in a higher yield."
 				""
-				"{moni.quest.376EE785F4204FFE.description2}"
+				"&2You will need small quantities of Flawless Emeralds for MV Emitter and Sensor components."
 			]
 			icon: "gtceu:lv_sifter"
 			id: "376EE785F4204FFE"
@@ -448,52 +292,19 @@
 						]
 					}
 				}
-				title: "{moni.task.6B2421DDCE5F8C75}"
+				title: "LV, MV, or HV Sifter"
 				type: "item"
 			}]
-			title: "{moni.quest.376EE785F4204FFE.title}"
+			title: "&2Sifter"
 			x: -7.75d
 			y: -6.0d
 		}
 		{
-			dependencies: ["61AD3760E271B431"]
-			description: [
-				"{moni.quest.53347AAAE4495F95.description1}"
-				""
-				"{moni.quest.53347AAAE4495F95.description2}"
-				""
-				"{moni.quest.53347AAAE4495F95.description3}"
-				""
-				"{moni.quest.53347AAAE4495F95.description4}"
-				""
-				"{moni.quest.53347AAAE4495F95.description5}"
-				""
-				"{moni.quest.53347AAAE4495F95.description6}"
-				""
-				"{moni.quest.53347AAAE4495F95.description7}"
-			]
-			id: "53347AAAE4495F95"
-			rewards: [{
-				id: "7E9DED83C17EA29F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "2125B9BDF4FD7904"
-				item: "gtceu:gallium_arsenide_dust"
-				type: "item"
-			}]
-			title: "{moni.quest.53347AAAE4495F95.title}"
-			x: -1.25d
-			y: -9.0d
-		}
-		{
 			dependencies: ["776199B37A19A592"]
 			description: [
-				"{moni.quest.5F688F22A3DB2ADD.description1}"
+				"The &3Atomic Reconstructor&r is capable of reconstructing standard materials into special variants."
 				""
-				"{moni.quest.5F688F22A3DB2ADD.description2}"
+				"Most important recipes are at &bMV&r, so you'll need one at that tier or higher."
 			]
 			icon: "gtceu:mv_atomic_reconstructor"
 			id: "5F688F22A3DB2ADD"
@@ -521,23 +332,23 @@
 						]
 					}
 				}
-				title: "{moni.task.3F39E9B829DAE2F2}"
+				title: "MV or HV Atomic Reconstructor"
 				type: "item"
 			}]
-			title: "{moni.quest.5F688F22A3DB2ADD.title}"
+			title: "Atomic Reconstructor"
 			x: 2.75d
 			y: -11.0d
 		}
 		{
 			dependencies: ["5F688F22A3DB2ADD"]
 			description: [
-				"{moni.quest.4D6AC14CAEEFC793.description1}"
+				"Vanilla enchanting mechanics are just so tedious. Don't you wish you could just make a specific enchant instead of grinding levels and rolling the dice?"
 				""
-				"{moni.quest.4D6AC14CAEEFC793.description2}"
+				"&eOh wait- you can!&r"
 				""
-				"{moni.quest.4D6AC14CAEEFC793.description3}"
+				"The &3Dark Steel Enchanter&r is a device that uses &6Book and Quill&r, experience levels, lapis, and enchant-specific items to create an &6Enchanted Book&r with an enchantment of your choosing. Then you can just use an Anvil to enchant your item like usual."
 				""
-				"{moni.quest.4D6AC14CAEEFC793.description4}"
+				"You can also make the &9Mending&r enchant which allows you to infinitely repair the item when damaged using &9Liquid XP&r in an &bEnder IO &aFluid Tank&r or &aPressurized Fluid Tank&r. Keep in mind that &9Mending&r does not work on &3Gregtech Tools&r."
 			]
 			id: "4D6AC14CAEEFC793"
 			rewards: [{
@@ -556,9 +367,9 @@
 		{
 			dependencies: ["53347AAAE4495F95"]
 			description: [
-				"{moni.quest.5567F5E5926664F4.description1}"
+				"A hefty amount of &6Silicon Dust&r and a pinch of &2Gallium Arsenide &rcooked in an &3EBF&r will net you a &6Silicon Boule&r, the starting point for &6Circuit Wafers&r."
 				""
-				"{moni.quest.5567F5E5926664F4.description2}"
+				"Make sure your power system is up to the task. These take &27.5 minutes and 1,080,000 EU&r to process."
 			]
 			id: "5567F5E5926664F4"
 			rewards: [{
@@ -572,7 +383,7 @@
 				item: "gtceu:silicon_boule"
 				type: "item"
 			}]
-			title: "{moni.quest.5567F5E5926664F4.title}"
+			title: "&2Silicon Boules"
 			x: -3.25d
 			y: -9.0d
 		}
@@ -582,10 +393,10 @@
 				"1F7FD354C79771A1"
 			]
 			description: [
-				"{moni.quest.5BC89A6032EC5EF5.description1}"
-				"{moni.quest.5BC89A6032EC5EF5.description2}"
+				"&6Wafers&r are thin pieces of silicon cut from a &6Silicon Boule&r."
+				"Their primary purpose is engraving &6Circuit Wafers&r."
 				""
-				"{moni.quest.5BC89A6032EC5EF5.description3}"
+				"You'll be needing huge amounts of these Wafers for circuits. Silicon Boules currently take a very long time to craft, so consider parallelizing the recipe in multiple &3EBF&rs and making a stockpile of them."
 			]
 			id: "5BC89A6032EC5EF5"
 			rewards: [{
@@ -599,22 +410,22 @@
 				item: "gtceu:silicon_wafer"
 				type: "item"
 			}]
-			title: "{moni.quest.5BC89A6032EC5EF5.title}"
+			title: "Silicon Wafers"
 			x: -3.25d
 			y: -7.5d
 		}
 		{
 			dependencies: ["2977E1AF13E42DCB"]
 			description: [
-				"{moni.quest.1F7FD354C79771A1.description1}"
+				"Cuts things up."
 				""
-				"{moni.quest.1F7FD354C79771A1.description2}"
+				"The &3Cutting Machine&r is able to cut wafers, rods, wood, and various other things for you, making it a versatile crafting tool. Cutting blocks into 9 plates may be faster than using a &2Bender &rto make them one at a time."
 				""
-				"{moni.quest.1F7FD354C79771A1.description3}"
+				"The &bMV&r version is required for cutting &6Silicon Boules&r for easier &6Diodes&r once you get &9Polyethylene (PE)&r, and for cutting &6Wafers&r into usable components. "
 				""
-				"{moni.quest.1F7FD354C79771A1.description4}"
+				"The blade will require you to make &2Vanadium Steel&r."
 				""
-				"{moni.quest.1F7FD354C79771A1.description5}"
+				"Cutting Machines work with plain &9Water&r for all recipes. You can also use &9Distilled Water&r which speeds up the processing somewhat, or &9Lubricant&r that speeds it up greatly (and uses very little per operation). These might be a little tricky to make right now, but are very worthwhile upgrades in the future."
 			]
 			id: "1F7FD354C79771A1"
 			rewards: [{
@@ -628,7 +439,7 @@
 				item: "gtceu:mv_cutter"
 				type: "item"
 			}]
-			title: "{moni.quest.1F7FD354C79771A1.title}"
+			title: "&2MV Cutter"
 			x: -1.25d
 			y: -7.5d
 		}
@@ -639,11 +450,11 @@
 				"61FA0AACDF4AC11D"
 			]
 			description: [
-				"{moni.quest.7AA5FD63FA3BA43C.description1}"
+				"&6Circuit Wafers&r are batches of integrated circuits engraved onto a wafer of electronics-grade silicon."
 				""
-				"{moni.quest.7AA5FD63FA3BA43C.description2}"
+				"You need to run these through the &3Cutting Machine&r to dice the wafers into individual integrated circuits (called dies)."
 				""
-				"{moni.quest.7AA5FD63FA3BA43C.description3}"
+				"These are important components and will be used for making more advanced Circuits."
 			]
 			icon: "gtceu:ilc_wafer"
 			id: "7AA5FD63FA3BA43C"
@@ -666,16 +477,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7AA5FD63FA3BA43C.title}"
+			title: "Circuit Wafers"
 			x: -3.25d
 			y: -6.0d
 		}
 		{
 			dependencies: ["3781AD70E71CA0D7"]
 			description: [
-				"{moni.quest.61FA0AACDF4AC11D.description1}"
+				"A &3Precision Laser Engraver&r is used to engrave circuits onto &6Wafers&r."
 				""
-				"{moni.quest.61FA0AACDF4AC11D.description2}"
+				"The type of circuit will depend on the kind of wafer used and which &aLens&r is in the machine."
 			]
 			id: "61FA0AACDF4AC11D"
 			rewards: [{
@@ -689,16 +500,16 @@
 				item: "gtceu:mv_laser_engraver"
 				type: "item"
 			}]
-			title: "{moni.quest.61FA0AACDF4AC11D.title}"
+			title: "MV Precision Laser Engraver"
 			x: -4.75d
 			y: -6.0d
 		}
 		{
 			dependencies: ["376EE785F4204FFE"]
 			description: [
-				"{moni.quest.3781AD70E71CA0D7.description1}"
+				"&2An expensive advanced component used in the construction of the MV Precision Laser Engraver and MV Circuit Assembler."
 				""
-				"{moni.quest.3781AD70E71CA0D7.description2}"
+				"Process some Emerald Ore in the Sifter to get the Flawless Emerald required to craft this."
 			]
 			id: "3781AD70E71CA0D7"
 			rewards: [{
@@ -712,16 +523,16 @@
 				item: "gtceu:mv_emitter"
 				type: "item"
 			}]
-			title: "{moni.quest.3781AD70E71CA0D7.title}"
+			title: "&2MV Emitter"
 			x: -6.25d
 			y: -6.0d
 		}
 		{
 			dependencies: ["2A84013C14085C7B"]
 			description: [
-				"{moni.quest.21B917932F5B25BA.description1}"
+				"You'll need a variety of &alenses&r for use in &3Precision Laser Engravers&r, all of which are made in the &2Lathe&r."
 				""
-				"{moni.quest.21B917932F5B25BA.description2}"
+				"Initially you'll need a &a&3&2Ruby Lens&r. Soon you will need &2Diamond, Emerald, and Sapphire Lenses. &2You can choose to use an MV Lathe to get a lens from a plate, or sift for an Exquisite Gem and use an LV Lathe."
 			]
 			icon: "gtceu:ruby_lens"
 			id: "21B917932F5B25BA"
@@ -736,7 +547,7 @@
 				item: "gtceu:ruby_lens"
 				type: "item"
 			}]
-			title: "{moni.quest.21B917932F5B25BA.title}"
+			title: "&2Lenses"
 			x: -2.0d
 			y: -6.0d
 		}
@@ -748,9 +559,9 @@
 				"785300684B1846B2"
 			]
 			description: [
-				"{moni.quest.3115EAF1F70A613E.description1}"
+				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chromium&r."
 				""
-				"{moni.quest.3115EAF1F70A613E.description2}"
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r."
 			]
 			id: "3115EAF1F70A613E"
 			rewards: [{
@@ -764,7 +575,7 @@
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.3115EAF1F70A613E.title}"
+			title: "Kanthal Ingots"
 			x: -5.5d
 			y: -4.25d
 		}
@@ -774,9 +585,9 @@
 				"776199B37A19A592"
 			]
 			description: [
-				"{moni.quest.2977E1AF13E42DCB.description1}"
+				"&2A bit of Vanadium Steel is used for progression. It's also a very strong tool material."
 				""
-				"{moni.quest.2977E1AF13E42DCB.description2}"
+				"&6Vanadium&r is obtained from &6Vanadium Magnetite Ore&r."
 			]
 			id: "2977E1AF13E42DCB"
 			rewards: [{
@@ -790,7 +601,7 @@
 				item: "gtceu:vanadium_steel_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.2977E1AF13E42DCB.title}"
+			title: "&2Vanadium Steel"
 			x: 0.75d
 			y: -7.5d
 		}
@@ -801,9 +612,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.061904A6FEED5B66.description1}"
+				"&6Chromium&r is used in the production of many alloys. &6Stainless Steel&r, &6Vanadium Steel&r, and &6Kanthal&r are the ones you will encounter soon. "
 				""
-				"{moni.quest.061904A6FEED5B66.description2}"
+				"There are several ways to get this stuff:\n1. Electrolyze &6Ruby Dust&r.\n2. Process &6Ruby Ore&r for a small chance to get Chromium.\n3. Mix and centrifuge &9Gem Slurries&r. These can also provide &6Manganese&r.\n4. Mine &6Chromite&r in The End.\nYou will need a lot of this soon, so be sure to accumulate a lot of it."
 			]
 			id: "061904A6FEED5B66"
 			rewards: [{
@@ -818,7 +629,7 @@
 				item: "gtceu:chromium_dust"
 				type: "item"
 			}]
-			title: "{moni.quest.061904A6FEED5B66.title}"
+			title: "Chromium"
 			x: 0.75d
 			y: -4.25d
 		}
@@ -828,9 +639,9 @@
 				"5C4E189A3E401566"
 			]
 			description: [
-				"{moni.quest.517A89E954C7EA74.description1}"
+				"An &3MV Electrolyzer&r allows you to process recipes that require up to &bMV&r power, and can optionally overclock recipes requiring up to &8LV&r power."
 				""
-				"{moni.quest.517A89E954C7EA74.description2}"
+				"This means you can split more kinds of things for useful products."
 			]
 			icon: "gtceu:mv_electrolyzer"
 			id: "517A89E954C7EA74"
@@ -855,9 +666,9 @@
 				"3B639F4061B00F1A"
 			]
 			description: [
-				"{moni.quest.776199B37A19A592.description1}"
+				"&2In GTm, higher-tier blends of dusts require higher-tier Mixers to mix. The MV Mixer is required for making Vanadium Steel and Stainless Steel."
 				""
-				"{moni.quest.776199B37A19A592.description2}"
+				"There will not be more mixer quests after this one. Remember this when making higher-tier dust blends."
 			]
 			id: "776199B37A19A592"
 			rewards: [{
@@ -871,66 +682,9 @@
 				item: "gtceu:mv_mixer"
 				type: "item"
 			}]
-			title: "{moni.quest.776199B37A19A592.title}"
+			title: "&2MV Mixer"
 			x: 2.75d
 			y: -6.0d
-		}
-		{
-			dependencies: [
-				"53347AAAE4495F95"
-				"6197C51E04761371"
-			]
-			description: [
-				"{moni.quest.591A1B8B279DFCC9.description1}"
-				""
-				"{moni.quest.591A1B8B279DFCC9.description2}"
-			]
-			id: "591A1B8B279DFCC9"
-			rewards: [{
-				id: "1FB54E4EC1F36941"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "768DB070EA8F5B25"
-				item: "gtceu:diode"
-				type: "item"
-			}]
-			title: "{moni.quest.591A1B8B279DFCC9.title}"
-			x: 4.25d
-			y: -9.0d
-		}
-		{
-			dependencies: ["6197C51E04761371"]
-			description: [
-				"{moni.quest.1CB14AC299A8EDD9.description1}"
-				""
-				"{moni.quest.1CB14AC299A8EDD9.description2}"
-				"{@pagebreak}"
-				"{moni.quest.1CB14AC299A8EDD9.description3}"
-				""
-				"{moni.quest.1CB14AC299A8EDD9.description4}"
-				""
-				"{moni.quest.1CB14AC299A8EDD9.description5}"
-				""
-				"{moni.quest.1CB14AC299A8EDD9.description6}"
-				""
-				"{moni.quest.1CB14AC299A8EDD9.description7}"
-			]
-			id: "1CB14AC299A8EDD9"
-			rewards: [{
-				id: "00D6F05B08AFE26F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7F80F5642ADD27DA"
-				item: "gtceu:machine_controller_cover"
-				type: "item"
-			}]
-			x: 6.25d
-			y: -11.0d
 		}
 		{
 			dependencies: [
@@ -938,13 +692,13 @@
 				"5C4E189A3E401566"
 			]
 			description: [
-				"{moni.quest.64B52DA2ABD5152D.description1}"
+				"The &3Extruder&r is an alternative way to form shapes from metal. &aExtruder Shapes&r are used for telling an Extruder which shape to make."
 				""
-				"{moni.quest.64B52DA2ABD5152D.description2}"
+				"Extruders are &2not strictly needed for any recipe, but often provide single-step or tool-free alternaives to other methods.&r Extruders use ingots, but are as efficient for making &6Gears&r as melting and solidifying. They are also the most efficient way to make &6Bolts&r, &6Small Gears&r, and &6Rings&r."
 				""
-				"{moni.quest.64B52DA2ABD5152D.description3}"
+				"You can also use Extruders to make things from other machines like plates and wires, but they take more energy than using the dedicated machines for these purposes."
 				""
-				"{moni.quest.64B52DA2ABD5152D.description4}"
+				"&2There is also an LV version, but most of the Extruder's recipes must be run at MV or higher."
 			]
 			icon: "gtceu:mv_extruder"
 			id: "64B52DA2ABD5152D"
@@ -973,10 +727,10 @@
 						]
 					}
 				}
-				title: "{moni.task.11511AE6B55626FB}"
+				title: "MV or HV Extruder"
 				type: "item"
 			}]
-			title: "{moni.quest.64B52DA2ABD5152D.title}"
+			title: "&2Extruder"
 			x: 6.0d
 			y: -7.75d
 		}
@@ -986,9 +740,9 @@
 				"0D6C8FFD01BE5C21"
 			]
 			description: [
-				"{moni.quest.71C7B47DC85AA016.description1}"
+				"&9Phenol&r is produced as a byproduct from burning &6Coal&r or &6Logs&r in a &3Pyrolyse Oven&r."
 				""
-				"{moni.quest.71C7B47DC85AA016.description2}"
+				"These boards will enable crafting the next tier of circuits."
 			]
 			id: "71C7B47DC85AA016"
 			rewards: [{
@@ -1006,11 +760,8 @@
 			y: -4.25d
 		}
 		{
-			dependencies: [
-				"2D31856F6EF1ED69"
-				"604CCBE824D03A74"
-			]
-			description: ["{moni.quest.3E51686E2DBD380F.description1}"]
+			dependencies: ["604CCBE824D03A74"]
+			description: ["The place for your very first chemical reactions, namely making some improved substrates."]
 			id: "3E51686E2DBD380F"
 			rewards: [{
 				id: "05FA79E0880B72BC"
@@ -1023,18 +774,18 @@
 				item: "gtceu:lv_chemical_reactor"
 				type: "item"
 			}]
-			title: "{moni.quest.3E51686E2DBD380F.title}"
+			title: "LV Chemical Reactor"
 			x: 7.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
 			description: [
-				"{moni.quest.4F4D0F44B615AF4C.description1}"
+				"&2Sodium Persulfate and Iron III Chloride&r are used to make cheaper &9Good Circuit Boards&r, as it cuts the Silver amount by a factor of four. They are also &9required&r to make &9Plastic Circuit Boards&r, and circuit boards afterwards."
 				""
-				"{moni.quest.4F4D0F44B615AF4C.description2}"
+				"Making &aSodium Persulfate&r with &6Salt&r will yield &aHydrochloric Acid&r as a coproduct, which you may re-use to make &aIron III Chloride&r. Alternatively, the &aHydrogen&r byproduct when making &aIron III Chloride&r can be recycled back into &aHydrochloric Acid&r in a closed loop, requiring only &aChlorine&r and &aIron&r as inputs. The decision is entirely yours as there is no single best approach as of now. With more automation later in the game, Iron III Chloride will be the cheaper and more straightforward path."
 				""
-				"{moni.quest.4F4D0F44B615AF4C.description3}"
+				"Sodium Persulfate&r can also be used in &9Ore Processing&r in the &3Chemical Bath&r to get various bonus outputs you would not normally obtain. It is completely optional, but pretty rewarding."
 			]
 			icon: "gtceu:sodium_persulfate_bucket"
 			id: "4F4D0F44B615AF4C"
@@ -1044,7 +795,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.4F4D0F44B615AF4C.subtitle}"
+			subtitle: "Iron The Third"
 			tasks: [
 				{
 					id: "7D0DC42B9CBAA736"
@@ -1064,7 +815,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.4F4D0F44B615AF4C.title}"
+			title: "&2Sodium Persulfate and Iron III Chloride"
 			x: 6.0d
 			y: -2.5d
 		}
@@ -1075,13 +826,13 @@
 				"776199B37A19A592"
 			]
 			description: [
-				"{moni.quest.2823D7B4C8F900CA.description1}"
+				"&6Stainless Steel&r will be your primary material for &6HV&r, in the same way that &6Aluminium&r was for MV and &6Steel&r was for LV."
 				""
-				"{moni.quest.2823D7B4C8F900CA.description2}"
+				"&6Manganese&r comes from electrolyzing &6Tantalite&r, &6Pyrolusite&r, or &6Spessartine Dusts&r. You already have &6Chrome&r."
 				""
-				"{moni.quest.2823D7B4C8F900CA.description3}"
+				"Mix up a bunch of the dust in a MV &3Mixer&r and begin processing it through the &3Electric Blast Furnace&r. This may be a good time to reevaluate your power generation and storage infrastructure."
 				""
-				"{moni.quest.2823D7B4C8F900CA.description4}"
+				"You will need HV power to smelt this, which you can achieve with 2 &bMV &6Energy Hatches&r."
 			]
 			icon: "gtceu:stainless_steel_ingot"
 			id: "2823D7B4C8F900CA"
@@ -1097,13 +848,13 @@
 				item: "gtceu:stainless_steel_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.2823D7B4C8F900CA.title}"
+			title: "Stainless Steel"
 			x: 0.75d
 			y: -2.0d
 		}
 		{
 			dependencies: ["1A30472430354F1E"]
-			description: ["{moni.quest.3E42B4AAA6D2A05B.description1}"]
+			description: ["An advanced component used for the Circuit Assembler."]
 			id: "3E42B4AAA6D2A05B"
 			rewards: [{
 				id: "6F3EA1CA9FD0EE59"
@@ -1122,13 +873,13 @@
 		{
 			dependencies: ["2C6BEB5BBE5A91DC"]
 			description: [
-				"{moni.quest.785300684B1846B2.description1}"
+				"The &bMV&3 Assembler&r allows you to craft &6Medium Voltage Coils&r, and your &3Laser Engraver&r can make &6Ultra Low Power ICs&r with a &6Sapphire Lens&r."
 				""
-				"{moni.quest.785300684B1846B2.description2}"
+				"Combine them with some MV parts and you can finally craft an &6MV Energy Hatch&r."
 				""
-				"{moni.quest.785300684B1846B2.description3}"
+				"Higher tiers of energy hatch will require similar resources."
 				""
-				"{moni.quest.785300684B1846B2.description4}"
+				"Note: For extracting energy from GT multiblock generators, you will need &6Dynamo Hatches&r instead. Those are crafted similarly to Energy Hatches, but with &6Springs&r in place of 1x Cables."
 			]
 			id: "785300684B1846B2"
 			rewards: [{
@@ -1143,13 +894,13 @@
 				item: "gtceu:mv_energy_input_hatch"
 				type: "item"
 			}]
-			title: "{moni.quest.785300684B1846B2.title}"
+			title: "&2MV Energy Hatches"
 			x: -5.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["5C4E189A3E401566"]
-			description: ["{moni.quest.2C6BEB5BBE5A91DC.description1}"]
+			description: ["&2With the MV Assembler, you can assemble a few necessary parts for the next Circuit tier."]
 			hide_dependency_lines: true
 			id: "2C6BEB5BBE5A91DC"
 			rewards: [{
@@ -1164,7 +915,7 @@
 				item: "gtceu:mv_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.2C6BEB5BBE5A91DC.title}"
+			title: "&2MV Assembler"
 			x: -6.75d
 			y: -0.5d
 		}
@@ -1174,13 +925,13 @@
 				"2C6BEB5BBE5A91DC"
 			]
 			description: [
-				"{moni.quest.5C78349343BA40D7.description1}"
+				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
 				""
-				"{moni.quest.5C78349343BA40D7.description2}"
+				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Liquid Copper&r."
 				""
-				"{moni.quest.5C78349343BA40D7.description3}"
+				"&2In GTm, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &9temperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%%&r energy."
 				""
-				"{moni.quest.5C78349343BA40D7.description4}"
+				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
 			]
 			id: "5C78349343BA40D7"
 			rewards: [{
@@ -1201,9 +952,9 @@
 		{
 			dependencies: ["5C78349343BA40D7"]
 			description: [
-				"{moni.quest.0002BA59214CE34A.description1}"
+				"&6Silicon&r in its solid form is required to produce &6Transistors&r, which are required for &6HV Circuits&r. Notice that the recipe for a &6Silicon Ingot&r calls for &d2,273 K&r. This is why we built &6Kanthal Coils&r earlier - &6Cupronickel Coils&r can't reach that temperature."
 				""
-				"{moni.quest.0002BA59214CE34A.description2}"
+				"Directly heating &6Silicon Dust&r you get from Electrolyzing various materials is an option, but a slow and energy-hungry one. An alternative method is to obtain &6Silicon Dioxide Dust&r by repurposing &6Glass&r you're producing, and heating it with &6Carbon Dust&r. This produces &6Silicon Ingots &dover 5x&r faster, with a side of &eCarbon Monoxide&r for use in various chemical processes."
 			]
 			id: "0002BA59214CE34A"
 			rewards: [{
@@ -1226,9 +977,9 @@
 				"417D97D9E3562F45"
 			]
 			description: [
-				"{moni.quest.13035465E07E34CF.description1}"
+				"&6Transistors&r are semiconductors that can amplify or switch electrical signals and power. They're probably one of the most important inventions of the 20th century."
 				""
-				"{moni.quest.13035465E07E34CF.description2}"
+				"You're going to use them as a component for better circuits. This one is a bit pricey, requiring &2PE, Silicon Plates and Fine Tin Wire."
 			]
 			icon: "gtceu:transistor"
 			id: "13035465E07E34CF"
@@ -1247,25 +998,25 @@
 						value: "gtceu:transistors"
 					}
 				}
-				title: "{moni.task.6B68D20D0B8C8886}"
+				title: "Any #gtceu:transistors"
 				type: "item"
 			}]
-			title: "{moni.quest.13035465E07E34CF.title}"
+			title: "&2Transistors"
 			x: -8.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6169C04DF463502F"]
 			description: [
-				"{moni.quest.2C3C6D2038B01948.description1}"
+				"The &3Multi Smelter&r is an absolute smelting unit, and is most likely the best furnace &9and alloy smelter&r added by a mod."
 				""
-				"{moni.quest.2C3C6D2038B01948.description2}"
+				"It's a 3x3x3 multiblock machine capable of &esmelting huge amounts of items per second&r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second."
 				""
-				"{moni.quest.2C3C6D2038B01948.description3}"
+				"Shift and hover over different coil blocks: they tell you the number of items a Multi Smelter can smelt per operation: &e32 items per level&r. The most basic Multi Smelter essentially does 32 items in the same time as a furnace does one. With a set of &9RTM Alloy&r coil blocks, that jumps to 128 items per operation."
 				"{@pagebreak}"
-				"{moni.quest.2C3C6D2038B01948.description4}"
+				"This quest doesn't ask for coils, hatches or buses: feel free to choose whatever combination you want. You'll need &a8 coil blocks&r, &a1 input bus&r, &a1 output bus&r, and &21 maintenance hatch&r, &21 muffler hatch&r, and at least &a1 energy hatch&r, all of any tier."
 				""
-				"{moni.quest.2C3C6D2038B01948.description5}"
+				"&2The Multi Smelter can have its mode swapped between Electric Furnace and Alloy Smelter recipes by pressing the robot arm button in its GUI.&r For that reason, you'll probably want at least two of them eventually. Some other multiblocks use this mechanic as well."
 			]
 			icon: "gtceu:multi_smelter"
 			id: "2C3C6D2038B01948"
@@ -1369,13 +1120,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.2C3C6D2038B01948.title}"
+			title: "&9Multi Smelter"
 			x: -5.25d
 			y: 3.5d
 		}
 		{
 			dependencies: ["500E619D568C07C2"]
-			description: ["{moni.quest.6C8DE5DC18CDADF0.description1}"]
+			description: ["&6Annealed Copper&r is made &2in an Arc Furnace&r by treating &6Copper&r with &9Oxygen&r. It has less power loss than regular Copper when used as a cable, and is also required for more advanced electronic components."]
 			id: "6C8DE5DC18CDADF0"
 			rewards: [{
 				id: "613E0382FE4BD7E8"
@@ -1389,16 +1140,16 @@
 				item: "gtceu:annealed_copper_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.6C8DE5DC18CDADF0.title}"
+			title: "Annealed Copper"
 			x: -5.25d
 			y: 0.5d
 		}
 		{
 			dependencies: ["2823D7B4C8F900CA"]
 			description: [
-				"{moni.quest.15E34DEC491FAB81.description1}"
+				"With &6HV Machine Hulls&r made, you've made your first step towards &eHigh Voltage (HV)&r power machinery!"
 				""
-				"{moni.quest.15E34DEC491FAB81.description2}"
+				"While you can make these in a crafting table with &6Polyethylene Sheets&r, liquid &9Polyethylene&r can be used to craft these directly in an &3Assembler&r."
 			]
 			id: "15E34DEC491FAB81"
 			rewards: [{
@@ -1413,7 +1164,7 @@
 				item: "gtceu:hv_machine_hull"
 				type: "item"
 			}]
-			title: "{moni.quest.15E34DEC491FAB81.title}"
+			title: "HV Machine Hulls"
 			x: 0.75d
 			y: 2.0d
 		}
@@ -1423,19 +1174,19 @@
 				"15E34DEC491FAB81"
 			]
 			description: [
-				"{moni.quest.7641AE777370BE1A.description1}"
+				"With tier three circuits in hand, it's time to make a &3Distillation Tower&r, which gates petrochemistry and more advanced plastics like &6Epoxy&r."
 				""
-				"{moni.quest.7641AE777370BE1A.description2}"
+				"&3Distillation towers&r require &5EV&r circuits in Hard or Expert mode."
 				""
-				"{moni.quest.7641AE777370BE1A.description3}"
+				"The Distillation Tower is a highly flexible multiblock structure, able to be anywhere from &62 blocks high to 13 high&r (12 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. &cIf the number of fluid outputs from the recipe exceeds the number of available hatches or those hatches are too small to hold the output, the recipe will not run&r. "
 				"{@pagebreak}"
-				"{moni.quest.7641AE777370BE1A.description4}"
+				"What you need the Distillation Tower for initially is to break down &9Oil&r and &9Fermented Biomass&r into useful resources.&9 Oil&r distillation, with its four outputs, will require a &efive-block-high Distillation Tower&r (the quest materials are for such a tower; if you want to build it bigger, you will need &ean additional 7 casings and 1 fluid output per floor&r)."
 				""
-				"{moni.quest.7641AE777370BE1A.description5}"
+				"Any recipe with more than four output fluids (like &9Fermented Biomass&r) will need a larger tower. Make sure to increase the height of your tower to accommodate all of the outputs you want to keep. Also check the voltage requirements of the recipes, as many Distillation Tower recipes need higher voltages than MV. &eYou can swap out your Energy Input for a higher tier one when that time comes&r. Also, any recipe that has an item output will need an &6Output Bus&r, anywhere on the bottom layer."
 				"{@pagebreak}"
-				"{moni.quest.7641AE777370BE1A.description6}"
+				"The tower we'll be building at first is 3x3x5 (LxWxH), with a hollow center. The &6Fluid Input Hatch&r and &6Maintenance Hatch&r &2can go anywhere on the bottom layer&r. The &6controller&r goes in the middle of an outer edge of the bottom layer. The &6Energy Input Hatch&r can go wherever you can fit it on the bottom layer. The rest of the 3x3 must be filled with &6Clean Stainless Steel Casings&r.&2 Each level above that is a ring of 7 Clean Stainless Steel Casings, one &6Fluid Output&r and nothing in the center, except for the topmost layer which needs an eighth casing to fill in the center, capping off the top. "
 				""
-				"{moni.quest.7641AE777370BE1A.description7}"
+				"For distilling fluids which only have one useful output, like &9Biomass&r, it is recommended to use single-block Distilleries, due to their energy efficiency and generally lower costs."
 			]
 			icon: "gtceu:distillation_tower"
 			id: "7641AE777370BE1A"
@@ -1526,18 +1277,18 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7641AE777370BE1A.title}"
+			title: "&2Distillation Tower"
 			x: -1.25d
 			y: 0.5d
 		}
 		{
 			dependencies: ["7641AE777370BE1A"]
 			description: [
-				"{moni.quest.451FD5817C0415D7.description1}"
+				"The &3Pyrolyse Oven&r can make more interesting products than just &9Phenol&r."
 				""
-				"{moni.quest.451FD5817C0415D7.description2}"
+				"&9Charcoal Byproducts&r breaks down into various wood products, such as &9Wood Tar&r, &9Wood Gas&r, and &9Wood Vinegar&r, each of which can be further broken down into various useful chemical compounds, such as &9Toluene&r, &9Methanol&r, etc."
 				""
-				"{moni.quest.451FD5817C0415D7.description3}"
+				"However, to take full advantage of decomposing these wood products, a &3Distillation Tower&r is required, so that all possible outputs can be obtained. You will need more &eDistillation Tower Slices&r than requested in the&r Distillation Tower quest, so be prepared to spend some more &6Stainless Steel&r."
 			]
 			icon: "gtceu:phenol_bucket"
 			id: "451FD5817C0415D7"
@@ -1579,18 +1330,18 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.451FD5817C0415D7.title}"
+			title: "Pyrolyse Products"
 			x: -0.75d
 			y: 2.0d
 		}
 		{
 			dependencies: ["153BDCAE4D1CC407"]
 			description: [
-				"{moni.quest.417D97D9E3562F45.description1}"
+				"&9Polyethylene (PE)&r is the most common category of plastic, made from polymers of &9Ethylene&r. Adding &9Oxygen&r in a &3Chemical Reactor&r recreates (with some artistic license) early accidental synthesis of Polyethylene."
 				""
-				"{moni.quest.417D97D9E3562F45.description2}"
+				"When you have large amounts of &6Rutile&r and &6Bauxite&r (probably after you visit the Moon) you can consider using &9Titanium Tetrachloride&r as a catalyst to improve your Polyethylene yields. For now it's not a great idea, as in addition to its Overworld rarity, you need it for &6Titanium&r."
 				""
-				"{moni.quest.417D97D9E3562F45.description3}"
+				"Form &6Polyethylene Sheets&r using a &3Fluid Solidifier&r and a &aPlate Mold&r for use in crafting electronics components. You'll need both the liquid and the sheets. For &9Polyethylene (PE)&r pipes, you can either pulverise your sheets into dust and use those in the extruder, or solidify &9Polyethylene (PE)&r into &6Polyethylene Bars&r separately."
 			]
 			icon: "gtceu:polyethylene_plate"
 			id: "417D97D9E3562F45"
@@ -1610,16 +1361,16 @@
 						value: "polyethylene"
 					}
 				}
-				title: "{moni.task.7E297FE5F2C0019A}"
+				title: "Any Polyethylene Item"
 				type: "item"
 			}]
-			title: "{moni.quest.417D97D9E3562F45.title}"
+			title: "Polyethylene"
 			x: -3.25d
 			y: 7.0d
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
-			description: ["{moni.quest.7D0351942F4DB8E0.description1}"]
+			description: ["&6Capacitors&r are devices that store electrical energy, which is useful for circuits. Not to be confused with &bEnder IO&r's capacitors&r, which store redstone flux."]
 			id: "7D0351942F4DB8E0"
 			rewards: [{
 				id: "258264528D30B707"
@@ -1636,19 +1387,19 @@
 						value: "gtceu:capacitors"
 					}
 				}
-				title: "{moni.task.7766ABA36439522B}"
+				title: "Any #gtceu:capacitors"
 				type: "item"
 			}]
-			title: "{moni.quest.7D0351942F4DB8E0.title}"
+			title: "Capacitors"
 			x: -5.75d
 			y: 8.5d
 		}
 		{
 			dependencies: ["15E34DEC491FAB81"]
 			description: [
-				"{moni.quest.1EBF9D9EADB7C451.description1}"
+				"&2You can make HV Batteries like LV and MV ones, but there is a better option."
 				""
-				"{moni.quest.1EBF9D9EADB7C451.description2}"
+				"&2Energium Crystals can store 6,400,000 EU, at the cost of some crafting complexity. They need an HV Autoclave."
 			]
 			id: "1EBF9D9EADB7C451"
 			rewards: [{
@@ -1662,7 +1413,7 @@
 				item: "gtceu:energy_crystal"
 				type: "item"
 			}]
-			title: "{moni.quest.1EBF9D9EADB7C451.title}"
+			title: "&2HV Power Storage"
 			x: 2.5d
 			y: 2.0d
 		}
@@ -1671,7 +1422,7 @@
 				"15E34DEC491FAB81"
 				"6169C04DF463502F"
 			]
-			description: ["{moni.quest.0C4E18B05F9E68DE.description1}"]
+			description: ["&2The next tier of Assembler. This one can make quite a few nice things - check the surrounding quests."]
 			id: "0C4E18B05F9E68DE"
 			rewards: [{
 				id: "1BB8C0E48C4BAE2E"
@@ -1685,7 +1436,7 @@
 				item: "gtceu:hv_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.0C4E18B05F9E68DE.title}"
+			title: "HV Assembler"
 			x: -1.25d
 			y: 3.5d
 		}
@@ -1696,9 +1447,9 @@
 				"0C4E18B05F9E68DE"
 			]
 			description: [
-				"{moni.quest.5BC6DB754207D4A8.description1}"
+				"&2With Silver, LPICs, NaK, and an HV Assembler, you can finally make HV Energy and Dynamo hatches."
 				""
-				"{moni.quest.5BC6DB754207D4A8.description2}"
+				"You should get the gist of making these now, so there will not be further quests on Energy and Dynamo hatches."
 			]
 			id: "5BC6DB754207D4A8"
 			rewards: [{
@@ -1713,16 +1464,16 @@
 				item: "gtceu:hv_energy_input_hatch"
 				type: "item"
 			}]
-			title: "{moni.quest.5BC6DB754207D4A8.title}"
+			title: "&2HV Energy Hatch"
 			x: 2.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
 			description: [
-				"{moni.quest.616555E46F314F04.description1}"
+				"&2Sodium Potassium is a mix of… take a guess."
 				""
-				"{moni.quest.616555E46F314F04.description2}"
+				"&2It's used in the construction of HV and above Energy and Dynamo hatches."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:sodium_potassium_bucket"
@@ -1745,28 +1496,28 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.616555E46F314F04.title}"
+			title: "&2Sodium Potassium"
 			x: 3.75d
 			y: 10.0d
 		}
 		{
 			dependencies: ["0C4E18B05F9E68DE"]
 			description: [
-				"{moni.quest.7256E0064F967C93.description1}"
+				"&6Surface Mounted Devices&r, or &6SMD&rs for short, are &2more efficient ways to produce the Circuit components you've been making.&r"
 				""
-				"{moni.quest.7256E0064F967C93.description2}"
+				"All SMD components must be produced in at least a &2HV Assembler&r, and they all will require liquid &9Polyethylene&r."
 				""
-				"{moni.quest.7256E0064F967C93.description3}"
+				"Start off with the &6SMD Transistor&r. These are simply a &6Gallium &2Foil&r and &6Fine Annealed Copper Wire&r."
 				""
-				"{moni.quest.7256E0064F967C93.description4}"
+				"Next up are &6SMD Resistors&r, which are also simple: &6Carbon Dust&r and &6Fine Electrum Wire&r."
 				""
-				"{moni.quest.7256E0064F967C93.description5}"
+				"Next up are &6SMD Diodes&r, which are fairly simple. &2Gallium Arsenide Dust&r and &6Fine Platinum Wire&r net you half a stack.&r"
 				""
-				"{moni.quest.7256E0064F967C93.description6}"
+				"Then are &6SMD Capacitors&r. You'll need sheets of &6Polyvinyl Chloride&r to make these, or they can also be made more slowly with &6Silicone Rubber&r. &2Using Tantalum Foil in place of Aluminium doubles your yield."
 				""
-				"{moni.quest.7256E0064F967C93.description7}"
+				"Finally, &6SMD Inductors&r. Made with &6Nickel Zinc Ferrite&r and &6Fine Cupronickel Wire.&r"
 				""
-				"{moni.quest.7256E0064F967C93.description8}"
+				"Invest in a robust system of automation for SMD components and all of their ingredients, since you'll need them in large quantities for several tiers to come. They will also work in place of the non-SMD versions you've been using in all but the simplest of recipes."
 			]
 			hide_dependency_lines: false
 			id: "7256E0064F967C93"
@@ -1804,7 +1555,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7256E0064F967C93.title}"
+			title: "&2SMD Components"
 			x: -1.75d
 			y: 2.0d
 		}
@@ -1814,15 +1565,15 @@
 				"10722CBC4DAD28F4"
 			]
 			description: [
-				"{moni.quest.338ED53463203472.description1}"
+				"&9Vinyl Chloride&r is an industrial chemical made from chlorinating &9Ethylene&r (adding &9Chlorine&r at high temperature) in a &3Chemical Reactor&r. &9Ethane&r can be used as an alternative reagent."
 				""
-				"{moni.quest.338ED53463203472.description2}"
+				"It is used to create the plastic &9Polyvinyl Chloride&r, most well known as PVC. While it deviates from reality, in GregTech you chemically react Vinyl Chloride and &9Oxygen&r to polymerize it into PVC. "
 				""
-				"{moni.quest.338ED53463203472.description3}"
+				"Later, you can use &9Titanium Tetrachloride&r to catalyze this reaction as well for greater yield."
 				""
-				"{moni.quest.338ED53463203472.description4}"
+				"You'll only need to solidify this into sheet form. If you want PVC pipes too, you can pulverise the sheet into dust and use that in the extruder, or you can solidify it into bars separately."
 				""
-				"{moni.quest.338ED53463203472.description5}"
+				"&6PVC Sheets&r are superior to &6Polyethylene Sheets&r for making plastic substrates, producing twice as many &6Plastic Boards&r per craft."
 			]
 			id: "338ED53463203472"
 			rewards: [{
@@ -1836,7 +1587,7 @@
 				item: "gtceu:polyvinyl_chloride_plate"
 				type: "item"
 			}]
-			title: "{moni.quest.338ED53463203472.title}"
+			title: "Polyvinyl Chloride"
 			x: 2.5d
 			y: 8.25d
 		}
@@ -1849,13 +1600,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.153BDCAE4D1CC407.description1}"
+				"&9Ethylene&r is a hydrocarbon obtained from &9Oil Processing&r, or by dehydrating &9Ethanol&r with &9Sulfuric Acid&r in a &3Chemical Reactor&r. Choose a method that works for you:"
 				""
-				"{moni.quest.153BDCAE4D1CC407.description2}"
+				"- The &9Ethanol&r route allows you to use your existing &6Sugarcane&r farm to produce &9Ethylene&r. However, the recipes require &bMedium Voltage&r machines to run."
 				""
-				"{moni.quest.153BDCAE4D1CC407.description3}"
+				"- The &9Oil Processing&r route requires &2only LV machines&r, but you will have to source &9Oil&r, or its variants, from somewhere. &2Severely Steam-Cracked Light Fuel&r is most efficient with &9Oil and Heavy Oil&r. &2Severely Steam-Cracked Naphtha&r is more efficient when you are using &9Raw Oil and Light Oil&r."
 				""
-				"{moni.quest.153BDCAE4D1CC407.description4}"
+				"It is an extremely important chemical in the production of plastics, as you'll need &9Ethylene&r in your production of &9Polyethylene (PE)&r, &9Polyvinyl Chloride (PVC)&r, and can be used in the production of &9Styrene-Butadiene Rubber (SBR)&r, the best form of rubber."
 			]
 			icon: "gtceu:ethylene_bucket"
 			id: "153BDCAE4D1CC407"
@@ -1879,16 +1630,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.153BDCAE4D1CC407.title}"
+			title: "&2Ethylene"
 			x: 2.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
-				"{moni.quest.0E010F5348FC89BF.description1}"
+				"&6Sulfur&r will be used in a variety of upcoming chemical reactions."
 				""
-				"{moni.quest.0E010F5348FC89BF.description2}"
+				"It can be electrolyzed easily from &6Sphalerite&r (which also provides &6Gallium&r), &6Cinnabar&r, and &6Pyrite&r. Alternately, Sulfur can be acquired through &bHNN&r in Normal Mode."
 			]
 			id: "0E010F5348FC89BF"
 			rewards: [{
@@ -1902,16 +1653,16 @@
 				item: "gtceu:sulfur_dust"
 				type: "item"
 			}]
-			title: "{moni.quest.0E010F5348FC89BF.title}"
+			title: "Sulfur"
 			x: 3.75d
 			y: 3.0d
 		}
 		{
 			dependencies: ["5357A16B5BF62C96"]
 			description: [
-				"{moni.quest.383FADC5E8BC4E91.description1}"
+				"You can turn &6Plant Balls&r and other various &6sugary crops&r into &9Biomass&r with a &3Brewery&r. Biomass is the first step towards making Plastic in the form of &9Polyethylene&r."
 				""
-				"{moni.quest.383FADC5E8BC4E91.description2}"
+				"The Brewery is a &overy&r slow machine, but it requires almost no power. Building &2many Breweries&r is necessary to brew enough Biomass for plastics. &2An alternative and more resource efficient way of making biomass is with a Pyrolyse Oven, Water, and Bio Chaff."
 			]
 			icon: "gtceu:mv_brewery"
 			id: "383FADC5E8BC4E91"
@@ -1943,19 +1694,19 @@
 						]
 					}
 				}
-				title: "{moni.task.45EF5902181733A9}"
+				title: "LV, MV, or HV Brewery"
 				type: "item"
 			}]
-			title: "{moni.quest.383FADC5E8BC4E91.title}"
+			title: "Brewery"
 			x: 6.25d
 			y: 7.0d
 		}
 		{
 			dependencies: ["5C4E189A3E401566"]
 			description: [
-				"{moni.quest.5357A16B5BF62C96.description1}"
+				"Here comes the chemistry."
 				""
-				"{moni.quest.5357A16B5BF62C96.description2}"
+				"It might seem crazy right now, but you'll want a dedicated &3Chemical Reactor&r for a large fraction of the chemicals you want to process. You probably want to hold off on doing that until you've got a solid base with autocrafting though… it stings a lot less when you can just request crafts of Chemical Reactors from your AE2 system. Additionally, &3Large Chemical Reactors&r are easier to upgrade in the future."
 			]
 			id: "5357A16B5BF62C96"
 			rewards: [{
@@ -1969,7 +1720,7 @@
 				item: "gtceu:mv_chemical_reactor"
 				type: "item"
 			}]
-			title: "{moni.quest.5357A16B5BF62C96.title}"
+			title: "MV Chemical Reactor"
 			x: 4.5d
 			y: 7.0d
 		}
@@ -1979,15 +1730,15 @@
 				"5BE3E37772FAF6CB"
 			]
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"}},{\"translate\":\"moni.quest.0C10EC03A01E7334.rich_description3\"}]"
+				"[\"\",{\"text\":\"This is an important part of a Processing Line. Visit the \"},{\"color\":\"yellow\",\"underlined\":true,\"text\":\"Renewable Production\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"}},{\"text\":\" tab to have more info, useful tips, and a visual representation of how to passively automate this.\"}]"
 				""
-				"{moni.quest.0C10EC03A01E7334.description2}"
+				"&6Uraninite Ore&r is the first source of &6Pulsating Dust&r but is not a very good one in the long term. Instead you should make &6Resonant Clathrates&r, which are an infinitely-renewable and effective source of Pulsating Dust."
 				""
-				"{moni.quest.0C10EC03A01E7334.description3}"
+				"Resonant Clathrates are made by melting &6Ender Pearls&r with a &3Fluid Extractor&r into &9Resonant Ender&r, then mixing that with &6Nether Quartz&r in an MV or better &3Chemical Reactor&r. Smelting this clathrate gives Pulsating Dust."
 				""
-				"{moni.quest.0C10EC03A01E7334.description4}"
+				"With Resonant Clathrates now accessible, everything you need for crafting &6Pulsating Prediction Matrix&r can be automated in a net-positive loop.&r Doing so is the first step in automation of &bHostile Neural Networks&r, which is &ea primary source of important materials for the rest of the pack&r."
 				""
-				"{moni.quest.0C10EC03A01E7334.description5}"
+				"The exact implementation is up to you. Make use of the various LV and MV machines you have, and look through &bEMI&r and the Renewable Production Tab for the ways to get infinite sources of each ingredient (like &aEnderman Models&r for pearls)."
 			]
 			disable_toast: true
 			hide_until_deps_visible: true
@@ -2005,17 +1756,17 @@
 		{
 			dependencies: ["5357A16B5BF62C96"]
 			description: [
-				"{moni.quest.1D0DF2330B113B7A.description1}"
+				"Your &3Chemical Reactors&r will be making a lot of different fluids. You'll need to manage the logistics of routing and storing all the different fluids you're automating."
 				""
-				"{moni.quest.1D0DF2330B113B7A.description2}"
+				"Wherever possible, having one Chemical Reactor output directly into another machine that needs its output chemical saves you from having to figure out additional storage and routing. &aFluid Filters&r and &aPump covers&r are very useful for moving fluids around a compact processing pipeline."
 				""
-				"{moni.quest.1D0DF2330B113B7A.description3}"
+				"But what about the final output fluids that you need elsewhere?"
 				"{@pagebreak}"
-				"{moni.quest.1D0DF2330B113B7A.description4}"
+				"One option is to use the output tanks of the Chemical Reactors as a small storage buffer, letting it back up and stop crafting automatically. A &aStorage Bus&r on the machine will expose the fluid to your ME Network. Whenever you need some of this fluid, your AE2 system will pull the needed fluid out and the machine will resume processing."
 				""
-				"{moni.quest.1D0DF2330B113B7A.description5}"
+				"There's some catches with this approach though. First is that a &aStorage Bus&r is bidirectional by default. You will want to set the Storage Bus to &eExtract Only&r so AE doesn't try to store random fluids and items in the Chemical Reactor, and you may want to &ereduce the priority&r of the Storage Bus as well: this will signal to AE that you want it to remove fluids from that location first. Also, if multiple fluids are produced, &ethe machine will not resume processing if it doesn't have room for all fluid outputs&r."
 				""
-				"{moni.quest.1D0DF2330B113B7A.description6}"
+				"When you get access to them, it's probably just better to use single-fluid-formatted &aFluid Storage Cells&r and dump outputs into AE via Interfaces. You can fill up the cells, then pull the fluids out wherever else you need them. An alternative to this is storage buses on &3Gregtech Tanks and Drums&r."
 			]
 			icon: "gtceu:mv_electric_pump"
 			id: "1D0DF2330B113B7A"
@@ -2024,7 +1775,7 @@
 				id: "516FB95F4092E0AB"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.1D0DF2330B113B7A.title}"
+			title: "Fluid Logistics"
 			x: 3.75d
 			y: 6.25d
 		}
@@ -2034,13 +1785,13 @@
 				"1510DC51CDC3F609"
 			]
 			description: [
-				"{moni.quest.48E83C38B37DFEE6.description1}"
+				"If you are distilling Ethanol, you now need an MV Distillery."
 				""
-				"{moni.quest.48E83C38B37DFEE6.description2}"
+				"&rThe &3Distillery&r is a single-block machine which only outputs one distillate out of several and &cdiscards&r the rest. You can use this now to get &9Ethanol&r from &9Biomass&r, or to selectively distill &9Oil&r in multiple steps to &9Ethylene&r. Its advantage over the full Tower, apart from cost, is its &9energy efficiency&r. Therefore, it is recommended for fluids with only one useful output, like &9Biomass&r, &9Diluted Sulfuric Acid&r, and &9Diluted Hydrochloric Acid&r."
 				""
-				"{moni.quest.48E83C38B37DFEE6.description3}"
+				"However, the Distillation Tower is recommended for advanced chemistry, as most things have more than one important output: &9Fermented Biomass&r, &9Charcoal Byproducts&r from your &3Pyrolyse Oven&r, and the entire line of petrochemicals from &9Oil&r, to name a few."
 				""
-				"{moni.quest.48E83C38B37DFEE6.description4}"
+				"You're going to need it soon!"
 			]
 			icon: "gtceu:mv_distillery"
 			id: "48E83C38B37DFEE6"
@@ -2072,21 +1823,21 @@
 						]
 					}
 				}
-				title: "{moni.task.036F1F8553EEC984}"
+				title: "LV, MV, or HV Distillery"
 				type: "item"
 			}]
-			title: "{moni.quest.48E83C38B37DFEE6.title}"
+			title: "&2Distillery"
 			x: 2.5d
 			y: 4.25d
 		}
 		{
 			dependencies: ["5B0200011DF8E1B6"]
 			description: [
-				"{moni.quest.10722CBC4DAD28F4.description1}"
+				"You'll need &9Chlorine&r at this point. It is an important ingredient in many chemical processes, and you can currently get it from electrolyzing either &6Salt&r or &6Rock Salt&r."
 				""
-				"{moni.quest.10722CBC4DAD28F4.description2}"
+				"&2Later, you can use Fluid Rigs or break down Ghast Tears to obtain Salt Water, and electrolyze it to Chlorine. "
 				""
-				"{moni.quest.10722CBC4DAD28F4.description3}"
+				"&rUsing Fluid Rigs is the best way to obtain mass amounts of Chlorine."
 			]
 			icon: "gtceu:chlorine_bucket"
 			id: "10722CBC4DAD28F4"
@@ -2109,24 +1860,24 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.10722CBC4DAD28F4.title}"
+			title: "&2Chlorine"
 			x: 3.75d
 			y: 8.25d
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
 			description: [
-				"{moni.quest.447F6F4642A36F9D.description1}"
+				"&oNote: This quest accepts any Super or Quantum Tank."
 				""
-				"{moni.quest.447F6F4642A36F9D.description2}"
+				"&2Super and Quantum Tanks are the high-tier GT Fluid storage solution.&r"
 				""
-				"{moni.quest.447F6F4642A36F9D.description3}"
+				"The first tier holds &64,000 buckets&r, and higher tiers hold more. They can also be used like Drums to put fluids in and out of machines."
 				""
-				"{moni.quest.447F6F4642A36F9D.description4}"
+				"You can conveniently configure &cvoiding&r for them to always void, start voiding at 95%% capacity, or never void."
 				""
-				"{moni.quest.447F6F4642A36F9D.description5}"
+				"The item equivalent are &3Super Chests&r, which are used in certain &6Microminer&r recipes."
 				""
-				"{moni.quest.447F6F4642A36F9D.description6}"
+				"Higher-tier versions of these are called &3Quantum Tanks&r and &3Quantum Chests&r. They all require their respective tier &3Hermetic Casings&r to craft."
 			]
 			id: "447F6F4642A36F9D"
 			rewards: [{
@@ -2180,19 +1931,19 @@
 						]
 					}
 				}
-				title: "{moni.task.472DBFA310FC29D0}"
+				title: "Any Super or Quantum Tank"
 				type: "item"
 			}]
-			title: "{moni.quest.447F6F4642A36F9D.title}"
+			title: "&2Super and Quantum Tanks"
 			x: -4.75d
 			y: 7.0d
 		}
 		{
 			dependencies: ["73C1AB31431B5C11"]
 			description: [
-				"{moni.quest.53205E306EE07F6F.description1}"
+				"Upgrades to carry even MORE &aFE&r power."
 				""
-				"{moni.quest.53205E306EE07F6F.description2}"
+				"You're making these in an &3Assembler&r, right?"
 			]
 			id: "53205E306EE07F6F"
 			rewards: [{
@@ -2200,12 +1951,19 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			tasks: [{
-				id: "2F9C846B8ABD620C"
-				item: "laserio:energy_overclocker_card_tier_3"
-				type: "item"
-			}]
-			title: "{moni.quest.53205E306EE07F6F.title}"
+			tasks: [
+				{
+					id: "2F9C846B8ABD620C"
+					item: "laserio:energy_overclocker_card_tier_3"
+					type: "item"
+				}
+				{
+					id: "71545946FA1828C9"
+					item: "pipez:advanced_upgrade"
+					type: "item"
+				}
+			]
+			title: "Vibrant Alloy Energy Cards"
 			x: 5.75d
 			y: 10.0d
 		}
@@ -2214,7 +1972,7 @@
 				"64F45D98FA48D834"
 				"73C1AB31431B5C11"
 			]
-			description: ["{moni.quest.0607A59215F0F8B3.description1}"]
+			description: ["A pair of &6Double-Layer RF Capacitors&r combined with some &6Vibrant Alloy&r and &6Glowstone&r creates an &6Octadic RF Capacitor&r, which is a tier three &bEnder IO&r capacitor."]
 			id: "0607A59215F0F8B3"
 			rewards: [{
 				id: "19758A42D6370AF6"
@@ -2233,9 +1991,9 @@
 		{
 			dependencies: ["7842EC1C389C4B7E"]
 			description: [
-				"{moni.quest.64F45D98FA48D834.description1}"
+				"Combining &6Basic RF Capacitors&r with some &6Coal Dust&r and &6Energetic Alloy&r produces a &6Double-Layer RF Capacitor&r."
 				""
-				"{moni.quest.64F45D98FA48D834.description2}"
+				"This is a tier two capacitor. Higher tier RF Capacitors will make &bEnder IO&r machines process faster and depending on the machine will expand their capabilities further (like area of effect)."
 			]
 			id: "64F45D98FA48D834"
 			rewards: [{
@@ -2255,13 +2013,13 @@
 		{
 			dependencies: ["1BC6DDC2D50F9C46"]
 			description: [
-				"{moni.quest.508452E1A3E09B56.description1}"
+				"Overclocking aside, as you continue to progress in &5Monifactory&f, materials made in the &3Electric Blast Furnace&f will take longer to complete. &eMore advanced coils allow for the furnace to &eget hot enough to process more advanced materials&f, &2and they also grant energy efficiency bonuses and speed bonuses to overclocking.&r"
 				""
-				"{moni.quest.508452E1A3E09B56.description2}"
+				"Despite this, you'll still need to continually expand your smelting and power generation infrastructure."
 				""
-				"{moni.quest.508452E1A3E09B56.description3}"
+				"You don't have to get all four of these Electric Blast Furnaces completed and running just yet, but be prepared to make many of them over the course of the pack."
 				""
-				"{moni.quest.508452E1A3E09B56.description4}"
+				"&2As a reminder, all blocks and hatches can be shared across EBFs, except Maintenance!"
 			]
 			id: "508452E1A3E09B56"
 			rewards: [{
@@ -2276,16 +2034,16 @@
 				item: "gtceu:electric_blast_furnace"
 				type: "item"
 			}]
-			title: "{moni.quest.508452E1A3E09B56.title}"
+			title: "&2More Blast Furnaces"
 			x: 10.25d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3B639F4061B00F1A"]
 			description: [
-				"{moni.quest.3A71D736AE5C17E2.description1}"
+				"All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."
 				""
-				"{moni.quest.3A71D736AE5C17E2.description2}"
+				"Providing it with &6Fertilizer&r will significantly increase its output."
 			]
 			id: "3A71D736AE5C17E2"
 			rewards: [{
@@ -2298,20 +2056,20 @@
 				item: "gtceu:greenhouse"
 				type: "item"
 			}]
-			title: "{moni.quest.3A71D736AE5C17E2.title}"
+			title: "&9Infiniter Wood"
 			x: 6.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
-			description: ["{moni.quest.1AA0A089DCA17FC8.description1}"]
+			description: ["Placing a &9Wireless Charger&r in an area that you frequent (such as where you do your crafting) will ensure that your RF-based items are always topped off on energy. &4Does not charge EU-based items!&r"]
 			id: "1AA0A089DCA17FC8"
 			rewards: [{
 				id: "67EDE8C53008B226"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.1AA0A089DCA17FC8.subtitle}"
+			subtitle: "Because waiting for items to charge is so last version"
 			tasks: [{
 				id: "6BB55ED56C49A2B0"
 				item: {
@@ -2332,19 +2090,16 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.1AA0A089DCA17FC8.title}"
+			title: "&9Charging Items Wirelessly"
 			x: 2.5d
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"61AD3760E271B431"
-				"64ABEB1EF9F81EA4"
-			]
+			dependencies: ["64ABEB1EF9F81EA4"]
 			description: [
-				"{moni.quest.45FA4FF0B16B3879.description1}"
+				"The &6Steam Separator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses only some Steam."
 				""
-				"{moni.quest.45FA4FF0B16B3879.description2}"
+				"While it can't process &9fluids&r, it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
 			]
 			hide_until_deps_visible: true
 			icon: "steamadditions:steam_separator"
@@ -2384,13 +2139,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.45FA4FF0B16B3879.title}"
+			title: "&9Steam Separator"
 			x: -2.25d
 			y: -9.75d
 		}
 		{
 			dependencies: ["73C1AB31431B5C11"]
-			description: ["{moni.quest.09EED0C4106265BC.description1}"]
+			description: ["&6Redstone Flux Cells&r can store large amounts of power. They can be upgraded with the &6Holding&r enchantment, &6Integral Components&r, and &6RF Coil augments&r to boost their capacity."]
 			id: "09EED0C4106265BC"
 			rewards: [{
 				id: "452D3826F2B6022F"
@@ -2403,26 +2158,26 @@
 				item: "thermal:energy_cell"
 				type: "item"
 			}]
-			title: "{moni.quest.09EED0C4106265BC.title}"
+			title: "RF Storage"
 			x: 6.5d
 			y: 12.25d
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
 			description: [
-				"{moni.quest.5F9C7FB40AD2640B.description1}"
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
-				"{moni.quest.5F9C7FB40AD2640B.description2}"
+				"Also important to note is that it can act wonky with Tile Entities, so it is mainly useful with simple blocks (it doesn't paste machine or hatch configuration, for example)."
 				"{@pagebreak}"
-				"{moni.quest.5F9C7FB40AD2640B.description3}"
+				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will pull items from the inventory, 'connecting' the gadget to the inventory."
 				""
-				"{moni.quest.5F9C7FB40AD2640B.description4}"
+				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r, the gadget will use &6Cobblestone&r from that chest to place blocks."
 				""
-				"{moni.quest.5F9C7FB40AD2640B.description5}"
+				"By default, the config GUI is bound to &8G&r."
 			]
 			icon: "buildinggadgets2:gadget_building"
 			id: "5F9C7FB40AD2640B"
-			subtitle: "{moni.quest.5F9C7FB40AD2640B.subtitle}"
+			subtitle: "This pack has &bBuilding Gadgets&r."
 			tasks: [{
 				id: "512BC0AAD462E586"
 				item: {
@@ -2455,89 +2210,55 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.5F9C7FB40AD2640B.title}"
+			title: "Inspector Gadget"
 			x: 3.5d
 			y: 0.75d
 		}
 		{
 			dependencies: ["3B639F4061B00F1A"]
-			description: ["{moni.quest.6DAA25CA26AE05E9.description1}"]
+			description: ["Now that you have some &6MV circuits&r, you can make a &6Factory Augment&r that lets you &2smelt multiple items at once&r with your furnaces!"]
 			id: "6DAA25CA26AE05E9"
 			optional: true
-			subtitle: "{moni.quest.6DAA25CA26AE05E9.subtitle}"
+			subtitle: "Multi smelter, sort of!"
 			tasks: [{
 				id: "530D4E4EF55BAC5F"
 				item: "ironfurnaces:augment_factory"
 				type: "item"
 			}]
-			title: "{moni.quest.6DAA25CA26AE05E9.title}"
+			title: "Factory Augment"
 			x: 3.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["6169C04DF463502F"]
 			description: [
-				"{moni.quest.7C5CE283172CD952.description1}"
+				"The &6Ender Fluid Link&r is a cover that you can place on the sides of machines."
 				""
-				"{moni.quest.7C5CE283172CD952.description2}"
+				"When interacted with, it opens a GUI that allows you to specify which channel it will interact with, either pushing or pulling fluids from all other links on the same frequency."
 				""
-				"{moni.quest.7C5CE283172CD952.description3}"
+				"Frequencies are distinguished based on an 8 character hexadecimal color code. Optionally, you can give each frequency a description. In the top left of the link's GUI, you can find a button leading to a menu with a list of all available frequencies and their descriptions."
 				""
-				"{moni.quest.7C5CE283172CD952.description4}"
+				"There is a limited number of available frequencies, so try to keep the number of fluid links below 16,777,216."
 			]
 			hide_dependency_lines: true
 			id: "7C5CE283172CD952"
 			size: 1.5d
-			subtitle: "{moni.quest.7C5CE283172CD952.subtitle}"
+			subtitle: "All out of spaghetti?"
 			tasks: [{
 				id: "5F8C10A49B639228"
 				item: "gtceu:ender_fluid_link_cover"
 				type: "item"
 			}]
-			title: "{moni.quest.7C5CE283172CD952.title}"
+			title: "Ender Fluid Link"
 			x: 10.25d
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"5357A16B5BF62C96"
-				"4F4D0F44B615AF4C"
-			]
-			description: [
-				"{moni.quest.7ABC7057BC2E8CE4.description1}"
-				""
-				"{moni.quest.7ABC7057BC2E8CE4.description2}"
-			]
-			icon: "gtceu:oxalic_acid_solution_bucket"
-			id: "7ABC7057BC2E8CE4"
-			rewards: [{
-				id: "63338D828354FAAE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "7D564A2C88DE58B3"
-					item: "gtceu:oxalic_acid_solution_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6E5CE9387C5205B1"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
-			title: "{moni.quest.7ABC7057BC2E8CE4.title}"
-			x: 6.0d
-			y: 5.5d
-		}
-		{
 			dependencies: ["1EBF9D9EADB7C451"]
 			description: [
-				"{moni.quest.11D0058859BD6F88.description1}"
+				"The &6NanoMuscle™ Suit&r is the best armor set you have available right now. It's useful even in Peaceful mode, since it nullifies fall damage."
 				""
-				"{moni.quest.11D0058859BD6F88.description2}"
+				"&eFor anyone not playing in peaceful, when fully charged the &6NanoMuscle™ Suit&e has the same armor points as &6Netherite Armor&e. It also has a higher armor toughness, having 5 per piece instead of 3 per piece."
 			]
 			icon: {
 				Count: 1
@@ -2550,7 +2271,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.11D0058859BD6F88.subtitle}"
+			subtitle: "Electrified Clothing!"
 			tasks: [
 				{
 					id: "2974A24073D05532"
@@ -2577,13 +2298,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.11D0058859BD6F88.title}"
+			title: "NanoMuscle™ Suit"
 			x: 2.5d
 			y: 0.75d
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
-			description: ["{moni.quest.66E1F1B28E4577B2.description1}"]
+			description: ["&6Inductors&r, known as &2Small Coils&r in other versions of GregTech, are another circuit component you will need. For the best results, use &6Nickel Zinc Ferrite&r and &6Annealed Copper&r to make these. But depending on which setups you build first, you may not need to make many of the basic version over the SMD version."]
 			id: "66E1F1B28E4577B2"
 			shape: "hexagon"
 			tasks: [{
@@ -2595,45 +2316,45 @@
 						value: "gtceu:inductors"
 					}
 				}
-				title: "{moni.task.7766ABA36439522B}"
+				title: "Any #gtceu:capacitors"
 				type: "item"
 			}]
-			title: "{moni.quest.66E1F1B28E4577B2.title}"
+			title: "Inductors"
 			x: -2.25d
 			y: 8.5d
 		}
 		{
 			dependencies: ["74935A3553451178"]
 			description: [
-				"{moni.quest.2C7306C74609E995.description1}"
+				"&6Empty Spray Cans&r can be filled with the liquid form of any color dye in a &3Canner&r. Once filled, they can dye any dye-able block (such as &6wool&r or &bAE2 &6cables&r) by simply right clicking. Cans alternatively can also be filled with solvent, causing them to un-dye clicked blocks."
 				""
-				"{moni.quest.2C7306C74609E995.description2}"
+				"Hold shift when dyeing blocks to dye multiple connected blocks at once!"
 				""
-				"{moni.quest.2C7306C74609E995.description3}"
+				"In addition to dye-able blocks, &bGregTech&r &6wires&r, &6cables&r, &6machines&r, &6hatches&r and &6buses&r can be dyed."
 				""
-				"{moni.quest.2C7306C74609E995.description4}"
+				"Importantly, dyed &bGT&r hatches/buses behave differently than when undyed. When dyed, they will share their contents with all other hatches/buses on the multi that are dyed the same color or undyed. Hatches/buses of different colors will not share contents. This can be quite helpful when you need to have separate 'groups' of hatches/buses on a multiblock, such as when dealing with different program circuits."
 			]
 			hide_dependency_lines: true
 			id: "2C7306C74609E995"
 			size: 1.5d
-			subtitle: "{moni.quest.2C7306C74609E995.subtitle}"
+			subtitle: "More than just colors!"
 			tasks: [{
 				id: "6BE07CD22A1130B1"
 				item: "gtceu:empty_spray_can"
 				type: "item"
 			}]
-			title: "{moni.quest.2C7306C74609E995.title}"
+			title: "Spray Painting"
 			x: 10.25d
 			y: 4.0d
 		}
 		{
 			dependencies: ["5C78349343BA40D7"]
 			description: [
-				"{moni.quest.349869EBF2D9FAF1.description1}"
+				"A more advanced type of &6Silicon Boule&r, formed by doping the &6Silicon&r crystal lattice with &6Phosphorus&r."
 				""
-				"{moni.quest.349869EBF2D9FAF1.description2}"
+				"These are made in an &3EBF&r with &2Kanthal&r or better coils, and need &2Nitrogen&r for the process. It needs twice as much Silicon as the basic boules, but also results in twice as many doped Silicon Wafers when sliced."
 				""
-				"{moni.quest.349869EBF2D9FAF1.description3}"
+				"Circuit Wafers can be made far more efficiently with these doped Silicon Wafers, but they are also needed for some more advanced types of Circuit Wafers that can't be engraved onto the basic ones."
 			]
 			id: "349869EBF2D9FAF1"
 			rewards: [{
@@ -2647,25 +2368,25 @@
 				item: "gtceu:phosphorus_boule"
 				type: "item"
 			}]
-			title: "{moni.quest.349869EBF2D9FAF1.title}"
+			title: "&2Phosphorus Doped Silicon Boule"
 			x: -8.0d
 			y: -4.25d
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
 			description: [
-				"{moni.quest.31EE6E41F509A8CF.description1}"
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
-				"{moni.quest.31EE6E41F509A8CF.description2}"
+				"Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks."
 				"{@pagebreak}"
-				"{moni.quest.31EE6E41F509A8CF.description3}"
+				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with the Portable Spatial Cloner in your offhand and the tool will pull items from the inventory, 'connecting' it to the inventory."
 				""
-				"{moni.quest.31EE6E41F509A8CF.description4}"
+				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r with the Portable Spatial Cloner in your offhand, the tool will use &6Cobblestone&r from that chest to place blocks."
 				""
-				"{moni.quest.31EE6E41F509A8CF.description5}"
+				"By default, the context menu GUI is bound to &8Left Alt&r."
 			]
 			id: "31EE6E41F509A8CF"
-			subtitle: "{moni.quest.31EE6E41F509A8CF.subtitle}"
+			subtitle: "This pack has &bSpatial Tools Compatible&r."
 			tasks: [{
 				id: "24B4E26B05F638D6"
 				item: {
@@ -2690,10 +2411,33 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.31EE6E41F509A8CF.title}"
+			title: "Pocket-sized pocket dimensions"
 			x: 5.0d
 			y: 0.75d
 		}
+		{
+			dependencies: ["3E42B4AAA6D2A05B"]
+			description: [
+				"This &3Personal Shrinking Device&r can grow or shrink your size."
+				""
+				"With the device in-hand, open its GUI with &8Right-click&r and use the buttons to specify a factor to scale your size by. &8Shift-Right-click&r to activate."
+				""
+				"Very useful for fitting between cables and pipes!"
+			]
+			id: "114B300F56E48351"
+			shape: "hexagon"
+			tasks: [{
+				id: "17D47466DED091B3"
+				item: {
+					Count: 1
+					id: "shrink:shrinking_device"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
 	]
-	title: "{moni.chapter.0E9D23BEF4A86E57.title}"
+	title: "Groundwork"
 }
