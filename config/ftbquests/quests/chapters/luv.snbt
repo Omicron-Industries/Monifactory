@@ -3,9 +3,10 @@
 	default_quest_shape: ""
 	filename: "luv"
 	group: "18F0ED1F9A002C08"
+	hide_quest_until_deps_complete: true
 	icon: "kubejs:luv_universal_circuit"
 	id: "1073A0551B10CA73"
-	order_index: 12
+	order_index: 10
 	quest_links: [ ]
 	quests: [ ]
 	title: "LuV"

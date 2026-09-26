@@ -3,9 +3,10 @@
 	default_quest_shape: ""
 	filename: "uev"
 	group: "18F0ED1F9A002C08"
+	hide_quest_until_deps_complete: true
 	icon: "kubejs:uev_universal_circuit"
 	id: "210057A1226316A9"
-	order_index: 16
+	order_index: 14
 	quest_links: [ ]
 	quests: [ ]
 	title: "UEV"

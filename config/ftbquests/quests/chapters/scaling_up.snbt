@@ -5,7 +5,7 @@
 	group: "18F0ED1F9A002C08"
 	icon: "gtceu:tungsten_steel_ingot"
 	id: "7489B5042AFE2290"
-	order_index: 4
+	order_index: 2
 	quest_links: [
 		{
 			id: "4864F8F7C33860D9"
