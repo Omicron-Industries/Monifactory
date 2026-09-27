@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.ZPM])
 
     event.recipes.gtceu.naquadah_refinery("crude_naquadah_fuel_withers")
-        .inputFluids("gtceu:medium_naquadah_isotope_fraction 900", "gtceu:heavy_naquadah_isotope_fraction 300", "gtceu:wither_gas 1800")
+        .inputFluids("gtceu:medium_naquadah_isotope_fraction 900", "gtceu:heavy_naquadah_isotope_fraction 300", "gtceu:wither_gas 1200")
         .outputFluids("gtceu:crude_naquadah_fuel 2000")
         .duration(600)
         .EUt(GTValues.VA[GTValues.ZPM])

@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
         [250, 1200, "gtceu:high_octane_gasoline"],
         [150, 900, "gtceu:jean_gasoline"],
         [500, 2000, "gtceu:nitrobenzene"],
-        [250, 1600, "gtceu:wither_gas"]
+        [150, 900, "gtceu:wither_gas"]
     ]
 
     for (const [mB, duration, id] of cryolobusFuels) {
