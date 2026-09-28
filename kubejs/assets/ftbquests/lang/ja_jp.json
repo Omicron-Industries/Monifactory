@@ -330,7 +330,7 @@
     "moni.quest.0F779BEEED8E67BB.description5": "&a電力生産: &r 4096(ベース) * 2.80(ローター倍率) * 2(ローターホルダー)=22938 EU/t (91752 RF/t)",
     "moni.quest.0F779BEEED8E67BB.description6": "&a効率:&r 1.40(ローター倍率) * 1.10(ローターホルダー) = 154.0%%",
     "moni.quest.0F779BEEED8E67BB.description7": "&a耐久値:&r 205,600 s (57.1 h)",
-    "moni.quest.0F779BEEED8E67BB.description8": "&6大型ガスタービン&rには、&3Fluid Rigs&rから得られる&9LPG&rや&9メタン&t、あるいは&6木&rから得られる&9ニトロベンゼン&rが使えます。",
+    "moni.quest.0F779BEEED8E67BB.description8": "&6大型ガスタービン&rには、&3Fluid Rigs&rから得られる&9LPG&rや&9メタン、あるいは&6木&rから得られる&9ニトロベンゼン&rが使えます。",
     "moni.quest.0F779BEEED8E67BB.description9": "&6大型蒸気タービン&rの一番いい燃料が何かは、誰も教えてくれない。",
     "moni.quest.0F779BEEED8E67BB.title": "&2大型タービン",
     "moni.quest.0FA4CAD4F68BC0F8.description1": "拡張型パターンプロバイダは、パターンの容量が9から36に拡張されています。直接作ることもできますし、&6パターンプロバイダアップグレード&rを用いて通常のパターンプロバイダからアップグレードすることもできます。",
