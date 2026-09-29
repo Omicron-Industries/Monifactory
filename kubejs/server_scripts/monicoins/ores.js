@@ -510,7 +510,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:raw_copper", 32), [
+        event.shaped(Item.of("minecraft:raw_copper", 32), [
             "  A",
             "   ",
             "A  "
@@ -586,7 +586,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:raw_iron", 32), [
+        event.shaped(Item.of("minecraft:raw_iron", 32), [
             "   ",
             " AA",
             "   "
@@ -611,7 +611,7 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
         // moniQUARTER RECIPES
-        event.shaped(Item.of("gtceu:raw_gold", 32), [
+        event.shaped(Item.of("minecraft:raw_gold", 32), [
             "A A",
             "   ",
             "   "
