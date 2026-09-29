@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:pitchblende_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_pitchblende", 32), [
             "A  ",
             "AAA",
             "  A"
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:saltpeter_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_saltpeter", 32), [
             " A ",
             "AAA",
             "  A"
@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:graphite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_graphite", 32), [
             "  A",
             "AAA",
             "  A"
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:powellite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_powellite", 32), [
             " A ",
             "AAA",
             "A  "
@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:oilsands_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_oilsands", 32), [
             "A  ",
             "AAA",
             " A "
@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:tricalcium_phosphate_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_tricalcium_phosphate", 32), [
             "   ",
             "AAA",
             " AA"
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:apatite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_apatite", 32), [
             "A  ",
             "  A",
             "AAA"
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:beryllium_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_beryllium", 32), [
             "AA ",
             "   ",
             "AAA"
@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:salt_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_salt", 32), [
             " A ",
             "  A",
             "AAA"
@@ -85,7 +85,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:rock_salt_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_rock_salt", 32), [
             "   ",
             " AA",
             "AAA"
@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:lazurite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_lazurite", 32), [
             "AA ",
             "  A",
             "AA "
@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:vanadium_magnetite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_vanadium_magnetite", 32), [
             "AA ",
             " AA",
             "A  "
@@ -109,7 +109,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:calcite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_calcite", 32), [
             "AA ",
             "AAA",
             "   "
@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:sodalite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_sodalite", 32), [
             "AAA",
             "   ",
             " AA"
@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:lapis_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_lapis", 32), [
             "AAA",
             "   ",
             "AA "
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:coal_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_coal", 32), [
             "AAA",
             " AA",
             "   "
@@ -141,7 +141,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:cinnabar_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_cinnabar", 32), [
             "AAA",
             "A  ",
             "  A"
@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:redstone_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_redstone", 32), [
             "AAA",
             "A  ",
             " A "
@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:talc_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_talc", 32), [
             "AAA",
             "A  ",
             "A  "
@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:pyrope_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_pyrope", 32), [
             "AAA",
             "A A",
             "   "
@@ -173,7 +173,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_penny"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:soapstone_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_soapstone", 32), [
             "AAA",
             "AA ",
             "   "
@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:green_sapphire_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_green_sapphire", 32), [
             "AAA",
             "A A",
             " A "
@@ -198,7 +198,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:sapphire_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_sapphire", 32), [
             "AAA",
             "AA ",
             "  A"
@@ -206,7 +206,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:cobaltite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_cobaltite", 32), [
             "AAA",
             "AA ",
             " A "
@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:neodymium_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_neodymium", 32), [
             "AAA",
             "AA ",
             "A  "
@@ -222,7 +222,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:realgar_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_realgar", 32), [
             "AAA",
             "AA ",
             "A A"
@@ -230,7 +230,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:electrotine_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_electrotine", 32), [
             "AAA",
             "AA ",
             "AAA"
@@ -238,7 +238,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:tantalite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_tantalite", 32), [
             " A ",
             "AAA",
             "   "
@@ -246,7 +246,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:sphalerite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_sphalerite", 32), [
             "AA ",
             "   ",
             " A "
@@ -254,7 +254,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:uraninite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_uraninite", 32), [
             "AA ",
             "   ",
             "  A"
@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:silver_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_silver", 32), [
             "AA ",
             "  A",
             "   "
@@ -270,7 +270,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:spessartine_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_spessartine", 32), [
             "AA ",
             "   ",
             "A  "
@@ -278,7 +278,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:lead_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_lead", 32), [
             "AA ",
             " A ",
             "   "
@@ -286,7 +286,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:molybdenite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_molybdenite", 32), [
             "AAA",
             "A  ",
             "A  "
@@ -294,7 +294,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:bastnasite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_bastnasite", 32), [
             "AAA",
             "A A",
             "   "
@@ -302,7 +302,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:monazite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_monazite", 32), [
             "AAA",
             "AA ",
             "   "
@@ -310,7 +310,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:tetrahedrite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_tetrahedrite", 32), [
             "AAA",
             "  A",
             "   "
@@ -318,7 +318,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:topaz_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_topaz", 32), [
             "   ",
             "AAA",
             "   "
@@ -326,7 +326,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:ruby_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_ruby", 32), [
             "AAA",
             " A ",
             "   "
@@ -334,7 +334,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:stibnite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_stibnite", 32), [
             "AAA",
             "A  ",
             "   "
@@ -342,7 +342,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:thorium_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_thorium", 32), [
             "AA ",
             "A  ",
             "   "
@@ -350,7 +350,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:malachite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_malachite", 32), [
             "AAA",
             "   ",
             "   "
@@ -358,7 +358,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:pyrite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_pyrite", 32), [
             "AAA",
             "AAA",
             "   "
@@ -366,7 +366,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:galena_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_galena", 32), [
             "   ",
             "   ",
             "AA "
@@ -374,7 +374,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:almandine_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_almandine", 32), [
             "A A",
             "   ",
             "   "
@@ -382,7 +382,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:garnierite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_garnierite", 32), [
             "A  ",
             "A  ",
             "   "
@@ -390,7 +390,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:nickel_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_nickel", 32), [
             "A  ",
             " A ",
             "   "
@@ -398,7 +398,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:barite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_barite", 32), [
             "A  ",
             "  A",
             "   "
@@ -406,7 +406,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:lepidolite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_lepidolite", 32), [
             " A ",
             "   ",
             " A "
@@ -414,7 +414,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:bentonite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_bentonite", 32), [
             "A  ",
             "   ",
             " A "
@@ -422,7 +422,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:aluminium_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_aluminium", 32), [
             "A  ",
             "   ",
             "  A"
@@ -430,7 +430,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:bauxite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_bauxite", 32), [
             " AA",
             "   ",
             "   "
@@ -438,7 +438,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:grossular_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_grossular", 32), [
             " A ",
             "A  ",
             "   "
@@ -446,7 +446,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:pyrolusite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_pyrolusite", 32), [
             " A ",
             " A ",
             "   "
@@ -454,7 +454,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:magnesite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_magnesite", 32), [
             " A ",
             "  A",
             "   "
@@ -462,7 +462,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:olivine_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_olivine", 32), [
             " A ",
             "   ",
             "A  "
@@ -470,7 +470,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:tin_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_tin", 32), [
             "   ",
             " A ",
             " A "
@@ -478,7 +478,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:cassiterite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_cassiterite", 32), [
             " A ",
             "   ",
             "  A"
@@ -486,7 +486,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:lithium_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_lithium", 32), [
             "  A",
             "A  ",
             "   "
@@ -494,7 +494,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:spodumene_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_spodumene", 32), [
             "  A",
             " A ",
             "   "
@@ -502,7 +502,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:chalcopyrite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_chalcopyrite", 32), [
             "  A",
             "  A",
             "   "
@@ -510,7 +510,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:copper_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_copper", 32), [
             "  A",
             "   ",
             "A  "
@@ -518,7 +518,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:sulfur_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_sulfur", 32), [
             "  A",
             "   ",
             " A "
@@ -526,7 +526,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:quartzite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_quartzite", 32), [
             "  A",
             "   ",
             "  A"
@@ -534,7 +534,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:nether_quartz_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_nether_quartz", 32), [
             "   ",
             "AA ",
             "   "
@@ -542,7 +542,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:certus_quartz_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_certus_quartz", 32), [
             "   ",
             "A A",
             "   "
@@ -550,7 +550,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:pentlandite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_pentlandite", 32), [
             "   ",
             "A  ",
             "A  "
@@ -558,7 +558,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:glauconite_sand_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_glauconite_sand", 32), [
             "   ",
             "A  ",
             " A "
@@ -568,17 +568,17 @@ ServerEvents.recipes(event => {
 
         /* event.shaped(
 
-          Item.of('gtceu:brown_limonite_ore', 32),
+          Item.of("gtceu:raw_brown_limonite", 32),
           [
-            'A  ',
-            ' A ',
-            '   '
+            "A  ",
+            " A ",
+            "   "
           ],
           {
-            A: 'kubejs:moni_nickel'
+            A: "kubejs:moni_nickel"
           }).noMirror().noShrink()*/
 
-        event.shaped(Item.of("gtceu:yellow_limonite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_yellow_limonite", 32), [
             "   ",
             "A  ",
             "  A"
@@ -586,7 +586,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:iron_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_iron", 32), [
             "   ",
             " AA",
             "   "
@@ -594,7 +594,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:magnetite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_magnetite", 32), [
             "   ",
             " A ",
             "A  "
@@ -602,7 +602,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_nickel"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:gypsum_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_gypsum", 32), [
             "   ",
             "  A",
             "A  "
@@ -611,7 +611,7 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
         // moniQUARTER RECIPES
-        event.shaped(Item.of("gtceu:gold_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_gold", 32), [
             "A A",
             "   ",
             "   "
@@ -619,7 +619,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_quarter"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:emerald_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_emerald", 32), [
             " A ",
             "   ",
             " A "
@@ -627,7 +627,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_quarter"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:palladium_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_palladium", 32), [
             "A  ",
             "   ",
             " A "
@@ -635,7 +635,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_quarter"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:molybdenum_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_molybdenum", 32), [
             " AA",
             "AA ",
             "A  "
@@ -644,7 +644,7 @@ ServerEvents.recipes(event => {
         }).noMirror().noShrink()
 
 
-        event.shaped(Item.of("gtceu:ilmenite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_ilmenite", 32), [
             "A  ",
             " A ",
             "   "
@@ -652,7 +652,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_quarter"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:platinum_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_platinum", 32), [
             " A ",
             " A ",
             "   "
@@ -660,7 +660,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_quarter"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:cooperite_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_cooperite", 32), [
             "A  ",
             "AA ",
             "   "
@@ -668,7 +668,7 @@ ServerEvents.recipes(event => {
             A: "kubejs:moni_quarter"
         }).noMirror().noShrink()
 
-        event.shaped(Item.of("gtceu:diamond_ore", 32), [
+        event.shaped(Item.of("gtceu:raw_diamond", 32), [
             "   ",
             "  A",
             "A  "
