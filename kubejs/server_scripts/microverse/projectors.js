@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("monilabs:microverse_casing")
         .duration(50)
         .circuit(6)
-        .EUt(16)
+        .EUt(GTValues.VHA[GTValues.LV])
         .addMaterialInfo(true)
 
     // Single-recipe microverse projectors

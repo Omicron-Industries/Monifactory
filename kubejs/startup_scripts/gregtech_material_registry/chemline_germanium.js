@@ -36,31 +36,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("(H2C2O4)H2O")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 
-    event.create("oxalic_acid_silicon_solution")
-        .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
-        .color(0x6a6b9b)
-        .components("2x hydrogen", "2x carbon", "silicon", "4x oxygen", "hydrogen", "2x oxygen")
-        .formula("(H2C2O4)(Si)H2O")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-    event.create("oxalic_acid_nickel_solution")
-        .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
-        .color(0x6e909c)
-        .components("2x hydrogen", "2x carbon", "2x nickel", "4x oxygen", "hydrogen", "2x oxygen")
-        .formula("(H2C2O4)(Ni2)H2O")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
     event.create("polymineral_leachate")
-        .fluid()
+        .liquid(new GTFluidBuilder().attribute($FluidAttributes.ACID))
         .color(0x6b5a67)
 
     event.create("iron_mineral_solution")
         .fluid()
         .color(0x6b5a67)
-
-    event.create("aluminosilicate_leachate")
-        .liquid()
-        .color(0x776E82)
-        .components("4x lithium", "vanadium", "aluminium", "germanium")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
 })

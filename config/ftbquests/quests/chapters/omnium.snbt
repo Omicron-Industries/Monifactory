@@ -918,19 +918,10 @@
 			y: 17.0d
 		}
 		{
+			description: ["{moni.quest.motenothing.description1}"]
+			disable_toast: true
 			id: "41C61F32DBEF85B7"
-			rewards: [{
-				id: "36F86E20F1F099A7"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				count: 64L
-				id: "29C2220487AC6007"
-				item: "kubejs:stabilized_berkelium"
-				type: "item"
-			}]
-			title: "{moni.quest.41C61F32DBEF85B7.title}"
+			title: "{moni.quest.motenothing.title}"
 			x: 2.0d
 			y: 17.0d
 		}

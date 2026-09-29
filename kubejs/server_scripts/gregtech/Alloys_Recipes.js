@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         for (let itemA of inputA) {
             for (let itemB of inputB) {
                 // the a here is so that it gets sorted on top, jei sorts by recipe id
-                event.recipes.gtceu.alloy_smelter(`gtceu:${Item.of(itemA).idLocation.path}_and_${Item.of(itemB).idLocation.path}_into_${Item.of(result).idLocation.path}`)
+                event.recipes.gtceu.alloy_smelter(`gtceu:${Item.of(itemA).idLocation.path}_and_${Item.of(itemB).idLocation.path}_into_${Item.of(result.concat("_ingot")).idLocation.path}`)
                     .itemInputs(itemA, itemB)
                     .itemOutputs(Item.of(result.concat("_ingot")))
                     .duration(duration * 20)
@@ -84,18 +84,16 @@ ServerEvents.recipes(event => {
         ["3x #forge:dusts/steel", "3x #forge:ingots/steel"],
         "nuclearcraft:hard_carbon", 15, GTValues.VA[GTValues.HV], true);
 
+    alloySmeltingVariant(
+        ["4x #forge:dusts/gold", "4x #forge:ingots/gold"],
+        ["4x #forge:dusts/netherite_scrap", "4x #forge:ingots/netherite_scrap"],
+        "minecraft:netherite", 5, GTValues.VA[GTValues.LV], false);
+
     event.recipes.gtceu.alloy_smelter("kubejs:fission_reactor_glass")
         .itemInputs("nuclearcraft:fission_reactor_casing", "#forge:glass/colorless")
         .itemOutputs("nuclearcraft:fission_reactor_glass")
         .duration(50)
         .EUt(GTValues.VHA[GTValues.LV])
-
-    event.remove({ output: "minecraft:netherite_ingot" })
-    event.recipes.gtceu.alloy_smelter("kubejs:netherite_ingot")
-        .itemInputs("4x #forge:ingots/gold", "4x minecraft:netherite_scrap") // was flipped
-        .itemOutputs("1x minecraft:netherite_ingot")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
 })
 
 // Change base GT alloy recipes
@@ -153,13 +151,26 @@ ServerEvents.recipes(event => {
             .blastFurnaceTemp(1200)
     })
 
-    // Replace default GTCEu glowstone separation recipe to match mixing recipe
-    event.replaceOutput({ id: "gtceu:centrifuge/glowstone_separation" }, "minecraft:redstone", "gtceu:tricalcium_phosphate_dust")
+    // Replace default GTCEu glowstone separation recipe to match composition
     event.recipes.gtceu.mixer("kubejs:glowstone_dust")
-        .itemInputs("gtceu:tricalcium_phosphate_dust", "#forge:dusts/gold")
-        .itemOutputs("2x minecraft:glowstone_dust")
+        .itemInputs("gtceu:tricalcium_phosphate_dust", "#forge:dusts/gold", "#forge:dusts/barite")
+        .itemOutputs("3x minecraft:glowstone_dust")
         .duration(80)
         .EUt(GTValues.VHA[GTValues.LV])
+    event.recipes.gtceu.centrifuge("glowstone_separation")
+        .itemInputs("5x minecraft:glowstone_dust")
+        .itemOutputs("gtceu:tricalcium_phosphate_dust", "gtceu:gold_dust", "gtceu:barite_dust")
+        .duration(976)  // Copied from the default Glowstone Separation recipe
+        .EUt(80)        // Copied from the default Glowstone Separation recipe
+
+    // Synthesis recipe for Barite since it's used for synthetic Glowstone
+    event.recipes.gtceu.chemical_reactor("barite_from_barium")
+        .itemInputs("gtceu:barium_dust")
+        .inputFluids("gtceu:sulfuric_acid 1000")
+        .itemOutputs("6x gtceu:barite_dust")
+        .outputFluids("gtceu:hydrogen 2000")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     // Remove old rhodium plated palladium recipe
     event.remove({ id: "gtceu:mixer/rhodium_plated_palladium" })

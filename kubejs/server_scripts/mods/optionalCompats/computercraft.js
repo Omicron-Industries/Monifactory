@@ -180,7 +180,7 @@ if (Platform.isLoaded("computercraft")) {
             .inputFluids("gtceu:polyethylene 144")
             .itemOutputs("6x computercraft:cable")
             .duration(100)
-            .EUt(7)
+            .EUt(GTValues.VA[GTValues.ULV])
 
 
         // Disk Drive

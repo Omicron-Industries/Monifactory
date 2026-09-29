@@ -74,10 +74,10 @@ ServerEvents.recipes(event => {
     decompdepleted("neptunium_hen_236", "nuclearcraft:plutonium_238", "3x nuclearcraft:plutonium_242", "16x gtceu:plutonium_nugget", "2x nuclearcraft:americium_242", GTValues.IV)
 
     // Plutonium fuels yield Curium. (Especially Cu-245, which comes from Pu-242) Pu-239 fuels yield a bit of Np-237, while Pu-241 fuels yield Am-243. LE fuels, with their high Pu-242 content, also yield Am-243.
-    decompdepleted("plutonium_lep_239", "2x nuclearcraft:plutonium_242", "nuclearcraft:neptunium_237", "4x nuclearcraft:curium_245", "1x nuclearcraft:berkelium_247", GTValues.LuV)
-    decompdepleted("plutonium_hep_239", "nuclearcraft:americium_241", "2x nuclearcraft:neptunium_237", "3x nuclearcraft:curium_245", "2x nuclearcraft:berkelium_247", GTValues.LuV)
-    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:americium_243", "4x nuclearcraft:curium_245", "2x nuclearcraft:berkelium_248", GTValues.LuV)
-    decompdepleted("plutonium_hep_241", "2x nuclearcraft:americium_243", "3x nuclearcraft:curium_243", "1x nuclearcraft:berkelium_247", "2x nuclearcraft:berkelium_248", GTValues.LuV)
+    decompdepleted("plutonium_lep_239", "2x nuclearcraft:plutonium_242", "nuclearcraft:neptunium_237", "4x nuclearcraft:curium_245", "8x gtceu:plutonium_nugget", GTValues.LuV)
+    decompdepleted("plutonium_hep_239", "nuclearcraft:americium_241", "2x nuclearcraft:neptunium_237", "3x nuclearcraft:curium_245", "2x nuclearcraft:plutonium_239", GTValues.LuV)
+    decompdepleted("plutonium_lep_241", "nuclearcraft:plutonium_242", "nuclearcraft:americium_243", "4x nuclearcraft:curium_245", "2x nuclearcraft:plutonium_239", GTValues.LuV)
+    decompdepleted("plutonium_hep_241", "2x nuclearcraft:americium_243", "3x nuclearcraft:curium_243", "1x nuclearcraft:americium_242", "2x nuclearcraft:plutonium_241", GTValues.LuV)
 
     // Americium yields Curium. (Cu-243 from Americium-241, and Cu-245 from  Americium-243) LEA, with its high Am-243 content, also yields Pu-239.
     decompdepleted("americium_lea_242", "8x gtceu:plutonium_nugget", "5x nuclearcraft:curium_245", "nuclearcraft:californium_251", "nuclearcraft:californium_252", GTValues.LuV)
@@ -262,8 +262,6 @@ ServerEvents.recipes(event => {
             "nuclearcraft:neptunium_237",
             "nuclearcraft:curium_245",
             "nuclearcraft:curium_243",
-            "nuclearcraft:berkelium_247",
-            "nuclearcraft:berkelium_248",
             "nuclearcraft:uranium_233",
             "nuclearcraft:americium_241",
             "nuclearcraft:americium_242",
@@ -295,7 +293,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:distilled_water 20")
         .circuit(5)
         .outputFluids("nuclearcraft:technical_water 20")
-        .duration(20).EUt(120)
+        .duration(20).EUt(GTValues.VA[GTValues.MV])
 
     function rtg(name, input) {
         event.remove({ output: `nuclearcraft:${name}_rtg` })
@@ -303,7 +301,7 @@ ServerEvents.recipes(event => {
             .itemInputs("4x gtceu:graphite_plate", "4x nuclearcraft:plate_advanced", `4x ${input}`)
             .itemOutputs(`nuclearcraft:${name}_rtg`)
             .duration(200)
-            .EUt(1920)
+            .EUt(GTValues.VA[GTValues.EV])
             .addMaterialInfo(true)
     }
 
@@ -319,7 +317,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(`nuclearcraft:coil_${name}`)
             .circuit(1)
             .duration(200)
-            .EUt(480)
+            .EUt(GTValues.VA[GTValues.HV])
     }
 
     coils("copper")

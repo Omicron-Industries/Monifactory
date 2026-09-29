@@ -25,11 +25,11 @@ if (Platform.isLoaded("tempad")) {
         }).id("tempad:tempad")
 
         event.recipes.gtceu.assembler("tempad:he_who_remains_tempad")
-            .itemInputs("tempad:tempad", "gtceu:lapotron_crystal", "4x #gtceu:circuits/ev", "16x kubejs:quantum_flux", "8x gtceu:tungsten_carbide_plate", "2x gtceu:signalum_plate")
+            .itemInputs("tempad:tempad", "gtceu:lapotron_crystal", "4x #gtceu:circuits/ev", "16x monilabs:quantum_flux", "8x gtceu:tungsten_carbide_plate", "2x gtceu:signalum_plate")
             .inputFluids(Fluid.of("gtceu:mana", 1000))
             .itemOutputs("tempad:he_who_remains_tempad")
             .duration(100)
-            .EUt(512)
+            .EUt(GTValues.VA[GTValues.HV])
     })
     console.log("Tempad compat scripts successfully loaded!")
 } else { console.log("Tempad was not found, skipping its compat scripts.") }
