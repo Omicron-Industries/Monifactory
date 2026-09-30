@@ -47,45 +47,45 @@
 	quests: [
 		{
 			description: [
-				"{moni.quest.2A511DB40C66CF35.description1}"
+				"This pack is in &eBeta&r. Issues are to be expected at this stage of development."
 				""
-				"[\"\",{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/monifactory\"}},{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description3\"}]"
+				"[\"\",{\"color\":\"blue\",\"text\":\"If you find something broken/missing/etc, make an issue on the \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"Monifactory repository\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/monifactory\"}},{\"color\":\"blue\",\"text\":\", or submit a Pull Request to fix it yourself.\"}]"
 				""
-				"{moni.quest.2A511DB40C66CF35.description3}"
+				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that the issue can not be replicated with the mod on its own, and if it can, report it to the mod's repository instead."
 			]
 			icon: "thermal:nuke_tnt"
 			id: "2A511DB40C66CF35"
 			size: 1.5d
-			subtitle: "{moni.quest.2A511DB40C66CF35.subtitle}"
+			subtitle: "Bleeding Edge!"
 			tasks: [{
 				id: "1A2BD249B1DBDA09"
-				title: "{moni.task.1A2BD249B1DBDA09}"
+				title: "Acknowledged"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.2A511DB40C66CF35.title}"
+			title: "&9This pack is in beta!"
 			x: 0.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2A511DB40C66CF35"]
 			description: [
-				"{moni.quest.66FCC26399376B55.description1}"
+				"This pack is intended to be played on &bPeaceful&r."
 				""
-				"{moni.quest.66FCC26399376B55.description2}"
+				"You start off in &2The Overworld&r, a resource-rich wilderness dotted by clusters of urban buildings like the one you spawned in."
 				""
-				"{moni.quest.66FCC26399376B55.description3}"
+				"If you wish to have a blank palette for building your base, place the &6Void World Cake&r down on the ground and eat a slice to be sent to the &7Void World&r. "
 				""
-				"{moni.quest.66FCC26399376B55.description4}"
+				"Simply place down and eat any dimensional cake for access to that dimension."
 				""
-				"{moni.quest.66FCC26399376B55.description5}"
+				"If you're playing with friends, don't forget to invite them to an &eFTB Teams party&r. "
 				"{@pagebreak}"
-				"{moni.quest.66FCC26399376B55.description6}"
+				"Beginner tips on &2Gregtech&r and &2Monifactory&r features will be higlighted in &2dark green&r."
 				""
-				"{moni.quest.66FCC26399376B55.description7}"
+				"More advanced tips about &9Monifactory&r and other mod quirks will be higlighted in &9Blue&r."
 				""
-				"{moni.quest.66FCC26399376B55.description8}"
+				"Notes about things in &5Beta&r will be higlighted in &5Dark Purple&r."
 				""
-				"[\"\",{\"translate\":\"moni.quest.66FCC26399376B55.rich_description1\"},{\"underlined\":true,\"translate\":\"moni.quest.66FCC26399376B55.rich_description2\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.66FCC26399376B55.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.66FCC26399376B55.rich_description3\"}]"
+				"[\"\",{\"text\":\"Text with \"},{\"underlined\":true,\"text\":\"underlines\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"But not this!\"}}},{\"text\":\" are (mostly) clickable.\"}]"
 			]
 			icon: "minecraft:crafting_table"
 			id: "66FCC26399376B55"
@@ -115,7 +115,7 @@
 					auto: "invisible"
 					icon: "enderio:cake_base"
 					id: "392C56C1DA9D7978"
-					title: "{moni.reward.392C56C1DA9D7978}"
+					title: "&6Infinite Cakes!"
 					type: "custom"
 				}
 				{
@@ -128,13 +128,13 @@
 			]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "{moni.quest.66FCC26399376B55.subtitle.hardmode}"
+			subtitle: "Welcome to Monifactory Hard Mode"
 			tasks: [{
 				id: "1FF132DED1748D11"
-				title: "{moni.task.1FF132DED1748D11}"
+				title: "Genesis #3"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.66FCC26399376B55.title}"
+			title: "&9Genesis"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -142,11 +142,11 @@
 			can_repeat: true
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.542F0090D8975D3C.description1}"
+				"In &9Monifactory&r, all dimensional transit is done through the power of &6TelePastries&r. No Portals here!"
 				""
-				"{moni.quest.542F0090D8975D3C.description2}"
+				"This quest is repeatable and gives you a free cake to the &2Overworld&r or &7Void World&r every hour. You can also refill your cakes with the items indicated in their tooltips."
 				""
-				"{moni.quest.542F0090D8975D3C.description3}"
+				"&cDon't forget to have a way to get back!&r If you do forget, click on the Emergency Items heart on the right side of the quest book screen."
 			]
 			disable_toast: true
 			icon: "telepastries:overworld_cake"
@@ -158,12 +158,12 @@
 				table_id: 7942624913962637807L
 				type: "choice"
 			}]
-			subtitle: "{moni.quest.542F0090D8975D3C.subtitle}"
+			subtitle: "Cakes are quantum objects!"
 			tags: ["moni_cakequest"]
 			tasks: [
 				{
 					id: "423B4FAF11B1C0FA"
-					title: "{moni.task.423B4FAF11B1C0FA}"
+					title: "Cake Based Dimensional Transit"
 					type: "checkmark"
 				}
 				{
@@ -174,27 +174,27 @@
 						"moni_timer"
 						"moni_timer_60"
 					]
-					title: "{moni.task.138B92A597D63C12}"
+					title: "Timer"
 					type: "custom"
 				}
 			]
-			title: "{moni.quest.542F0090D8975D3C.title}"
+			title: "Cake Based Dimensional Transit"
 			x: -2.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.4A696D4BA5442928.description1}"
+				"&bFunctional Storage&f provides a huge amount of storage for a single item type. Use them for things you have a lot of, such as stone, dirt and ores."
 				""
-				"{moni.quest.4A696D4BA5442928.description2}"
+				"&9Framing Template items can be used to easily decorate your drawers.&r"
 				""
-				"{moni.quest.4A696D4BA5442928.description3}"
+				"Furthermore, you can do special stuff with your drawers, with &9Tools&r and &9Upgrades! Search &e@Functionalstorage&r in &bEMI&r to see them!"
 			]
 			disable_toast: true
 			id: "4A696D4BA5442928"
 			optional: true
-			subtitle: "{moni.quest.4A696D4BA5442928.subtitle}"
+			subtitle: "&oThis quest completes with any drawer."
 			tasks: [{
 				id: "02543E826A43185A"
 				item: {
@@ -204,44 +204,44 @@
 						value: "functionalstorage:drawer"
 					}
 				}
-				title: "{moni.task.02543E826A43185A}"
+				title: "Any Drawer"
 				type: "item"
 			}]
-			title: "{moni.quest.4A696D4BA5442928.title}"
+			title: "&9Drawers"
 			x: -2.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.3B200AD6EFF90DFA.description1}"
+				"&b&lEMI&r is the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack. Note that &b&lEMI&r is based on &b&lJEI&r, and people tend to use the names interchangeably."
 				""
-				"{moni.quest.3B200AD6EFF90DFA.description2}"
+				"To see it in action, pull up a quest that requires an item of some sort and just click the item!"
 				""
-				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description1\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description2\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description3\"}]"
+				"[\"\",{\"text\":\"If you want to know how to craft an item, just hover your mouse over it and press \"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"text\":\"R\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"\\\"Show Recipe\\\" in keybind option\"}}},{\"text\":\". EMI will list all available recipes.\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description4\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description5\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text5\"}}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description6\"}]"
+				"[\"\",{\"text\":\"If you instead want to know what recipes use an item, hover over it and press \"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"text\":\"U\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"\\\"Show Uses\\\" in keybind option\"}}},{\"text\":\".\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description7\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description8\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text8\"}}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description9\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description10\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description.hover_text10\"}}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description11\"}]"
+				"[\"\",{\"text\":\"Hover over an item and press \"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"text\":\"A\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"\\\"Add/Remove Bookmark\\\" in keybind option\"}}},{\"text\":\" to bookmark it. To remove a bookmarked item from the list, press \"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"text\":\"A\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"\\\"Add/Remove Bookmark\\\" in keybind option\"}}},{\"text\":\" on the bookmark.\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description12\"},{\"underlined\":true,\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description13\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"58566C7BF4C22D86\"}},{\"translate\":\"moni.quest.3B200AD6EFF90DFA.rich_description14\"}]"
+				"[\"\",{\"text\":\"One of the remarkable features of EMI is that it's also capable of helping you with recipes, covered more in \"},{\"underlined\":true,\"text\":\"this\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"58566C7BF4C22D86\"}},{\"text\":\" quest.\"}]"
 			]
 			disable_toast: true
 			icon: "ftbquests:book"
 			id: "3B200AD6EFF90DFA"
 			size: 1.0d
-			subtitle: "{moni.quest.3B200AD6EFF90DFA.subtitle}"
+			subtitle: "&eUSE EMI!!!&r"
 			tasks: [{
 				id: "7449A54608D60DF8"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.3B200AD6EFF90DFA.title}"
+			title: "&9&lUse EMI! Use EMI! USE. EMI."
 			x: 1.75d
 			y: -0.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["{moni.quest.07DC7FC23332B847.description1}"]
+			description: ["Can be used to autobuild multiblocks.\n\nNote that if you don't have hatches/buses in your inventory, the Terminal will leave enough air blocks for the minimum required hatches."]
 			disable_toast: true
 			icon: "gtceu:terminal"
 			id: "07DC7FC23332B847"
@@ -250,31 +250,31 @@
 				item: "gtceu:terminal"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.07DC7FC23332B847.subtitle}"
+			subtitle: "Faster Multiblock Building"
 			tasks: [{
 				id: "380954E57B7C36EC"
-				title: "{moni.task.380954E57B7C36EC.hardmode}"
+				title: "Terminal"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.07DC7FC23332B847.title}"
+			title: "&9Terminal"
 			x: 1.75d
 			y: 0.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.2E8BFA2E719B1C47.description1}"
-				"{moni.quest.2E8BFA2E719B1C47.description2}"
-				"{moni.quest.2E8BFA2E719B1C47.description3.hardmode}"
+				"&c&rOres in &9Monifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area! &9You can also click on an ore vein to mark it on your map!"
+				"&r"
+				"While the Scanner requires energy to work, you are unlikely to deplete its battery. That said, the quest book will later guide you towards making &2an HV Battery&r to charge &aHV tools &rin your inventory."
 				"{@pagebreak}"
-				"{moni.quest.2E8BFA2E719B1C47.description4}"
+				"In order to proceed, you'll need to locate a source of &6Iron&f. You have a few options. &6Magnetite&f veins are higher up and contain large amounts of iron, as well as some &6Vanadium&f and &6Gold&f. Another good source of iron is &6Goethite&f veins, which contain several types of iron. Finally, &6Pyrite&f can be found paired with &6Copper&f in several types of veins."
 				""
-				"{moni.quest.2E8BFA2E719B1C47.description5.hardmode}"
+				"&6Wrought Iron&f is obtained simply by &esmelting Iron Nuggets a second time&f. It has more durability than Iron, so it is better for making tools, but &cdo not convert your entire Iron supply over to Wrought Iron&f. The two materials are not interchangeable and you'll need Iron or Wrought Iron as demanded by various recipes."
 			]
 			icon: "gtceu:wrought_iron_ingot"
 			id: "2E8BFA2E719B1C47"
 			shape: "hexagon"
-			subtitle: "{moni.quest.2E8BFA2E719B1C47.subtitle.hardmode}"
+			subtitle: "Steam Beginnings"
 			tasks: [
 				{
 					count: 12L
@@ -289,16 +289,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.2E8BFA2E719B1C47.title}"
+			title: "Iron Supply"
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"{moni.quest.61E5D7EEE745C6FB.description1}"
+				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at your base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
-				"{moni.quest.61E5D7EEE745C6FB.description2}"
+				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 3 barrels worth of items at its lowest tier, costing only a bit of steel and invar to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
@@ -307,7 +307,7 @@
 				item: "sophisticatedstorage:hopper_upgrade"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.61E5D7EEE745C6FB.subtitle}"
+			subtitle: "Bags of holding"
 			tasks: [
 				{
 					id: "46CA42CF7D0730E6"
@@ -400,7 +400,7 @@
 							]
 						}
 					}
-					title: "{moni.task.46CA42CF7D0730E6.hardmode}"
+					title: "Any Sophisticated Storage Bronze Barrel"
 					type: "item"
 				}
 				{
@@ -412,22 +412,22 @@
 							value: "moni_quest:backpack"
 						}
 					}
-					title: "{moni.task.3A3F4984E9A1A81E}"
+					title: "Any Sophisticated Backpack"
 					type: "item"
 				}
 			]
-			title: "{moni.quest.61E5D7EEE745C6FB.title}"
+			title: "&9Sophisticated Storage Shenanigans"
 			x: -5.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"25FEB9E61EEC1A96\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description3\"}]"
+				"[\"\",{\"text\":\"Take a peek at the \"},{\"color\":\"yellow\",\"underlined\":true,\"text\":\"Elements and Alloys quest book tab\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"25FEB9E61EEC1A96\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}},{\"text\":\". This might seem a bit premature to suggest, but it has a reason.\"}]"
 				""
-				"{moni.quest.0C173EF148EFEF8E.description2}"
+				"These are quests for a full stack of many of the materials in the game. Those are the materials you'll be able to use to synthesize &6Omnium&r, an important endgame resource. It's the pack's way of letting you know about materials you should be prepared to mass produce as you approach the end."
 				""
-				"{moni.quest.0C173EF148EFEF8E.description3.hardmode}"
+				"Of course, it's not necessary or even advisable to try to finish up all of these quests the moment they become available. Some will be incredibly easy (like &6Iron&f and &6Copper&f), others will be brutally grindy at early tech levels."
 			]
 			icon: "gtceu:omnium_ingot"
 			id: "0C173EF148EFEF8E"
@@ -435,18 +435,18 @@
 				id: "647D560D77DBCEA5"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.0C173EF148EFEF8E.title}"
+			title: "Elements and Alloys"
 			x: -2.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"{moni.quest.64AAF0CD958D836A.description1.hardmode}"
+				"&2GT Fluid Pipes&r are quite powerful. Their advantage is high &9throughput&r and the ability to use &9GT covers&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details. Fluid pipes do require a pump to be able to pull fluids from tanks or machines that lack an auto-output function, but &2ULV pumps (as well as other covers) are very cheap to craft&r."
 				""
-				"{moni.quest.64AAF0CD958D836A.description2}"
+				"There are also &6Quadruple and Nonuple Pipes&r for transporting multiple fluid types through the same block."
 				""
-				"{moni.quest.64AAF0CD958D836A.description3}"
+				"You also have access to &bPipez&r, which are cheaper and easier to use"
 			]
 			id: "64AAF0CD958D836A"
 			rewards: [{
@@ -465,58 +465,58 @@
 						value: "^gtceu:[\\w_]+_fluid_pipe$"
 					}
 				}
-				title: "{moni.task.150F57D9BEE7CCEE}"
+				title: "Any GT Fluid Pipe"
 				type: "item"
 			}]
-			title: "{moni.quest.64AAF0CD958D836A.title}"
+			title: "&9GT Fluid Pipes"
 			x: -4.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"{moni.quest.58566C7BF4C22D86.description1}"
+				"&bGregtech&r adds a decent bit of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
 				""
-				"[\"\",{\"translate\":\"moni.quest.58566C7BF4C22D86.rich_description1\"},{\"underlined\":true,\"translate\":\"moni.quest.58566C7BF4C22D86.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3B200AD6EFF90DFA\"}},{\"translate\":\"moni.quest.58566C7BF4C22D86.rich_description3\"}]"
+				"[\"\",{\"text\":\"On the topic of crafting, if you are not already familiar with how \"},{\"underlined\":true,\"text\":\"recipe viewers\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3B200AD6EFF90DFA\"}},{\"text\":\" like EMI or JEI work, read that quest first.\"}]"
 				""
-				"{moni.quest.58566C7BF4C22D86.description3}"
+				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
 				""
-				"{moni.quest.58566C7BF4C22D86.description4}"
+				"Let's start with &9[+]&r, as it's the simplest: right-click a crafting table, look up the recipe you need and press the &9[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
 				""
-				"{moni.quest.58566C7BF4C22D86.description5}"
+				"&c[❤]&r and &a[┴]&r are used in tandem to create &arecipe trees&r. Pressing &a[┴]&r will pull up a &arecipe tree&r for that given item. Pressing &c[❤]&r on a recipe will mark it as the &cdefault recipe&r for that item, and will show that recipe (and the items used to craft it) in &arecipe trees&r. You can then add &cdefault recipes&r for the items used to craft that recipe, repeat ad nauseam. Note that you can click on an item in the &arecipe tree&r and its recipes will be pulled up."
 				"{@pagebreak}"
-				"{moni.quest.58566C7BF4C22D86.description6}"
+				"In the &arecipe tree&r GUI, you can change the batch size by scrolling on the number to the right of the final result. Finally, and most importantly, you can press the &6Magnifying Glass&r to switch to &6Crafting Tree Mode&r, this will &edisplay the items that you need for every step to craft the number of items that you specified&r in your sidebar, and will dynamically update as you craft items. You can click on these &6Synthetic Favorites&r with your Craft to Inventory bind (unbound by default) to &eautomatically craft and then push items back into your inventory&r when using a crafting table, or push the exact number of items needed if using a different inventory.&r"
 				""
-				"{moni.quest.58566C7BF4C22D86.description7}"
+				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the &a[┴]&r button found in the bottom left of your inventory screen and it will pull up the &arecipe tree&r GUI as well."
 			]
 			disable_toast: true
 			icon: "quark:crafter"
 			id: "58566C7BF4C22D86"
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "{moni.quest.58566C7BF4C22D86.subtitle}"
+			subtitle: "Better than any crafting calculator."
 			tasks: [{
 				id: "3768A707E0489471"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.58566C7BF4C22D86.title}"
+			title: "&9Recipe Trees and Crafting Trees"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"{moni.quest.1B86EF5A24286787.description1}"
+				"The &eTool Belt&r is an item which can store your tools and exchange them easily! Right now, it has 2 slots, but later, once you unlock &6Steel&r, you can upgrade it all the way to 9 slots with &6Belt Pouches&r, an &3Anvil&r, and some &aXP&r!"
 				""
-				"{moni.quest.1B86EF5A24286787.description2}"
+				"Make the Tool Belt, and you can use the keybind (default is &6R&r), while the belt is in your inventory or Curio Slots &cand you are holding something, or the belt is not empty&r, to open its GUI. "
 				""
-				"{moni.quest.1B86EF5A24286787.description3}"
+				"Alternatively, you can right click while holding the belt to open its inventory."
 				"{@pagebreak}"
-				"{moni.quest.1B86EF5A24286787.description4}"
+				"The Tool Belt is equippable as a &bCurio&r. Open your inventory and look for the Curios button, then click it to reveal the additional bauble slots menu, and put it in the Belt Slot. Or, if you can't tell which bauble slot looks like a belt, just click in every bauble slot until it goes in."
 				""
-				"{moni.quest.1B86EF5A24286787.description5.hardmode}"
+				"The Tool Belt can store anything with a stack size of 1, like swords, pickaxes, &bGregTech&r tools, and the &6Terminal&r. It has also been modified a bit, so it &cdoesn't allow any Thermal Satchel&r."
 				""
-				"{moni.quest.1B86EF5A24286787.description6}"
+				"Now, you can insert and extract from the belt! You can also use the Keybinds '&eCycle Tool Left&r' and '&eCycle Tool Right&r' whilst you are in the GUI."
 			]
 			id: "1B86EF5A24286787"
 			rewards: [{
@@ -524,22 +524,22 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.1B86EF5A24286787.subtitle}"
+			subtitle: "&2A highly requested mod to help you manage your tools!&r"
 			tasks: [{
 				id: "2BFE87C449C8D8F3"
 				item: "toolbelt:belt"
 				type: "item"
 			}]
-			title: "{moni.quest.1B86EF5A24286787.title}"
+			title: "&2Tool Belt"
 			x: 2.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
-				"{moni.quest.5D97206C8135872B.description1.hardmode}"
+				"&2For making Charcoal for smelting, and Creosote, which can be used as furnace fuel, boiler fuel, and for Treated Planks."
 				""
-				"{moni.quest.5D97206C8135872B.description2.hardmode}"
+				"Use up to 5 Coke Oven Hatches for automation."
 			]
 			id: "5D97206C8135872B"
 			tasks: [{
@@ -552,7 +552,7 @@
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
-			description: ["{moni.quest.7865CDE5CFE005DC.description1}"]
+			description: ["&3Iron Furnaces&f can smelt an item in &a160 ticks&f, which is somewhat faster than a vanilla &6Furnace&f, which takes &a200 ticks&f. The fuel efficiency remains the same for all furnaces."]
 			id: "7865CDE5CFE005DC"
 			rewards: [{
 				id: "55F7CA98F66953A1"
@@ -564,13 +564,13 @@
 				item: "ironfurnaces:iron_furnace"
 				type: "item"
 			}]
-			title: "{moni.quest.7865CDE5CFE005DC.title}"
+			title: "Furnace v2.0"
 			x: 5.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["7865CDE5CFE005DC"]
-			description: ["{moni.quest.0591171F13A45283.description1}"]
+			description: ["&3Copper Furnaces&f are another step up in speed, taking &a100 ticks&f to smelt an item."]
 			id: "0591171F13A45283"
 			rewards: [{
 				id: "20FC1982A662B6C6"
@@ -582,13 +582,13 @@
 				item: "ironfurnaces:copper_furnace"
 				type: "item"
 			}]
-			title: "{moni.quest.0591171F13A45283.title}"
+			title: "Furnace v3.0"
 			x: 5.5d
 			y: 3.75d
 		}
 		{
 			dependencies: ["0591171F13A45283"]
-			description: ["{moni.quest.3F77EDE69BB649DA.description1}"]
+			description: ["&3Silver Furnaces&f are another step up in speed, taking a mere &a70 ticks&f to smelt an item."]
 			id: "3F77EDE69BB649DA"
 			rewards: [{
 				id: "77EC0D08F5C99E37"
@@ -600,13 +600,13 @@
 				item: "ironfurnaces:silver_furnace"
 				type: "item"
 			}]
-			title: "{moni.quest.3F77EDE69BB649DA.title}"
+			title: "Furnace v4.0"
 			x: 5.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["3F77EDE69BB649DA"]
-			description: ["{moni.quest.6B121BEFD852BC2D.description1}"]
+			description: ["&3Gold Furnaces&f are yet another step up in speed, taking only &a40 ticks&f to smelt an item."]
 			id: "6B121BEFD852BC2D"
 			rewards: [{
 				id: "045094D4927E2AB5"
@@ -618,13 +618,13 @@
 				item: "ironfurnaces:gold_furnace"
 				type: "item"
 			}]
-			title: "{moni.quest.6B121BEFD852BC2D.title}"
+			title: "Furnace v5.0"
 			x: 5.5d
 			y: 6.25d
 		}
 		{
 			dependencies: ["6B121BEFD852BC2D"]
-			description: ["{moni.quest.1AE46C1970378083.description1}"]
+			description: ["&3Diamond Furnaces&f are even faster, taking only &a25 ticks&f to smelt an item."]
 			id: "1AE46C1970378083"
 			rewards: [{
 				id: "4F7C761D3657868A"
@@ -636,13 +636,13 @@
 				item: "ironfurnaces:diamond_furnace"
 				type: "item"
 			}]
-			title: "{moni.quest.1AE46C1970378083.title}"
+			title: "Furnace v6.0"
 			x: 5.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["1AE46C1970378083"]
-			description: ["{moni.quest.3969150B59EA38A2.description1}"]
+			description: ["&3Obsidian Furnaces&f are slightly faster than &3Diamond Furnaces&f, taking only &a20 ticks&r to smelt an item, and are also blastproof."]
 			id: "3969150B59EA38A2"
 			rewards: [{
 				id: "7BADB8C39CADB5FF"
@@ -654,13 +654,13 @@
 				item: "ironfurnaces:obsidian_furnace"
 				type: "item"
 			}]
-			title: "{moni.quest.3969150B59EA38A2.title}"
+			title: "Furnace v7.0"
 			x: 5.5d
 			y: 8.75d
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
-			description: ["{moni.quest.69E77BD01CFF65EB.description1}"]
+			description: ["It smelts items at a blazing quick &a5 ticks&r each, but is incredibly expensive and only included here for completeness. You should just make a &3Multi Smelter&r instead."]
 			hide_until_deps_complete: true
 			id: "69E77BD01CFF65EB"
 			rewards: [{
@@ -673,18 +673,18 @@
 				item: "ironfurnaces:netherite_furnace"
 				type: "item"
 			}]
-			title: "{moni.quest.69E77BD01CFF65EB.title}"
+			title: "Furnace v8.0"
 			x: 5.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["58566C7BF4C22D86"]
 			description: [
-				"{moni.quest.4FE53F31E68F4C1C.description1}"
+				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
 				""
-				"{moni.quest.4FE53F31E68F4C1C.description2}"
+				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you… six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
-				"{moni.quest.4FE53F31E68F4C1C.description3}"
+				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
 			]
 			icon: {
 				Count: 1
@@ -796,16 +796,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.4FE53F31E68F4C1C.title}"
+			title: "Some Starter Tools"
 			x: 0.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"{moni.quest.07D45A3F8A74A61C.description1}"
+				"&aMining Hammers&r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 area of blocks (unless you're crouching) and mine quickly."
 				""
-				"{moni.quest.07D45A3F8A74A61C.description2}"
+				"&2Gregtech has Mining Hammers natively! You can craft them with any GT tool material. &r"
 			]
 			icon: {
 				Count: 1
@@ -821,7 +821,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.07D45A3F8A74A61C.subtitle}"
+			subtitle: "Diggy Diggy Hole"
 			tasks: [{
 				consume_items: false
 				id: "589A0779F965D77A"
@@ -833,16 +833,16 @@
 					}
 				}
 				match_nbt: false
-				title: "{moni.task.589A0779F965D77A}"
+				title: "Any Mining Hammers"
 				type: "item"
 			}]
-			title: "{moni.quest.07D45A3F8A74A61C.title}"
+			title: "Mining Hammers"
 			x: 1.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
-			description: ["{moni.quest.527F56DFAD5E20EC.description1}"]
+			description: ["&6Gregtech Axes&9 are able to veinmine an entire tree at once!"]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_axe"
@@ -871,23 +871,23 @@
 						value: "^gtceu:.*_axe$"
 					}
 				}
-				title: "{moni.task.254A555916313F70}"
+				title: "Any Lumber Axe"
 				type: "item"
 			}]
-			title: "{moni.quest.527F56DFAD5E20EC.title}"
+			title: "&9Tree chopping"
 			x: 1.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"{moni.quest.04A0863937695AC4.description1.hardmode}"
+				"The &aCrescent Hammer&r is for use on machines from &bThermal Expansion&f, but can be used for basic wrench interactions with blocks from almost every mod. &9It can also now adjust Gregtech pipes,"
 				""
-				"{moni.quest.04A0863937695AC4.description2.hardmode}"
+				"The &aYeta Wrench&r is used with machines from &bEnderIO&f, and has several special display modes (&6sneak-mouse wheel&f to switch between them)."
 				""
-				"{moni.quest.04A0863937695AC4.description3}"
+				"The &aGregTech Wrench&r is used to rotate GregTech machines and redefine their output sides. &2It also has some of the capabilities of the other Wrenches.&r"
 				""
-				"{moni.quest.04A0863937695AC4.description4}"
+				"You can see which mod a machine is from with the &9blue text&f at the bottom of its tooltip."
 			]
 			icon: "enderio:yeta_wrench"
 			id: "04A0863937695AC4"
@@ -896,7 +896,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.04A0863937695AC4.subtitle}"
+			subtitle: "Confused about all the Wrenches yet?"
 			tasks: [
 				{
 					id: "70251EAC64217000"
@@ -925,16 +925,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.04A0863937695AC4.title}"
+			title: "&9Wrenches Galore"
 			x: -1.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"{moni.quest.5430ED88A8D10502.description1}"
+				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
 				""
-				"{moni.quest.5430ED88A8D10502.description2.hardmode}"
+				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the mortar and the plunger."
 				""
 			]
 			id: "5430ED88A8D10502"
@@ -943,28 +943,28 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.5430ED88A8D10502.subtitle}"
+			subtitle: "&3Anvils&f can be used to repair almost all &bGregTech tools&f!"
 			tasks: [{
 				id: "38E44244B336F941"
 				item: "minecraft:anvil"
 				type: "item"
 			}]
-			title: "{moni.quest.5430ED88A8D10502.title}"
+			title: "Proper Tool Care"
 			x: -1.5d
 			y: 6.0d
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"{moni.quest.1229234A71CE0A99.description1}"
+				"&6Redstone&f: Exclusively found in massive veins paired with &6Cinnabar&f and &6Ruby&f, in the Deepslate layer."
 				""
-				"{moni.quest.1229234A71CE0A99.description2.hardmode}"
+				"&6Copper&f: Two primary sources. &6Azurite&f veins are higher up, while &6Chalcopyrite&f veins are lower, paired with some small amounts of &6Iron&f. You'll also find &6Malachite&f inside of Iron veins; this is another type of copper ore."
 				""
-				"{moni.quest.1229234A71CE0A99.description3}"
+				"&6Tin&f: Found essentially at ground level. &6Cassiterite&f is another type of tin ore, and they're always found together. If you cannot find a vein of tin, there are small amounts of tin inside veins of &6Aluminium&f and &6Rock Salt&f, which might be enough to hold you over until you find a proper tin vein."
 				""
-				"{moni.quest.1229234A71CE0A99.description4}"
+				"&6Coal&f: Found in relatively shallow depths."
 				""
-				"{moni.quest.1229234A71CE0A99.description5}"
+				"&6Gold&f: Found inside of &6Magnetite&f veins, relatively close to the surface."
 			]
 			icon: "minecraft:redstone"
 			id: "1229234A71CE0A99"
@@ -975,7 +975,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.1229234A71CE0A99.subtitle}"
+			subtitle: "Before you continue, you'll need access to some more materials."
 			tasks: [
 				{
 					count: 76L
@@ -1008,23 +1008,23 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.1229234A71CE0A99.title}"
+			title: "More Materials"
 			x: 0.0d
 			y: 7.25d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
-				"{moni.quest.57D1B1D74391A05F.description1}"
+				"For now, the best material to make these pipes out of is probably &6Tin&r."
 				""
-				"{moni.quest.57D1B1D74391A05F.description2}"
+				"Their advantage over &bPipez&r is their far higher &6throughput&r. An unupgraded Item Pipe transports &916 items per second&r, and up to &9256 per second&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9dozens of stacks per second&r."
 				""
-				"{moni.quest.57D1B1D74391A05F.description3}"
+				"They don't auto-extract by themselves, so you have to use &3Conveyor Covers&r etc. with them."
 				"{@pagebreak}"
-				"{moni.quest.57D1B1D74391A05F.description4}"
+				"The priority mechanics are as follows:"
 				""
-				"{moni.quest.57D1B1D74391A05F.description5}"
-				"{moni.quest.57D1B1D74391A05F.description6}"
+				"A Destination will have a Routing Value calculated, which is the sum of all Routing Values of the individual Pipes to that Destination. Whichever Destination has the lowest Routing Value will be the one selected for Insertion."
+				"Restrictive Pipes typically have the lowest Priority for insertion due to their higher Routing Value."
 			]
 			id: "57D1B1D74391A05F"
 			rewards: [{
@@ -1034,7 +1034,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.57D1B1D74391A05F.subtitle}"
+			subtitle: "&2GT Item Pipes will transport items instantly through them and accept GT covers."
 			tasks: [{
 				icon: "gtceu:tin_normal_item_pipe"
 				id: "72798E2CFE3F6FB5"
@@ -1045,21 +1045,21 @@
 						value: "^gtceu:[\\w_]+_item_pipe$"
 					}
 				}
-				title: "{moni.task.72798E2CFE3F6FB5}"
+				title: "Any GT Item Pipe"
 				type: "item"
 			}]
-			title: "{moni.quest.57D1B1D74391A05F.title}"
+			title: "&2GT Item Pipes"
 			x: -1.5d
 			y: 7.25d
 		}
 		{
 			dependencies: ["4B338515E84FC51A"]
 			description: [
-				"{moni.quest.17312BF0197B87A8.description1.hardmode}"
+				"A mixture of &6Clay and Brick&r produces &6Fireclay&r, used in building the &3Primitive Blast Furnace&r. &c"
 				""
-				"{moni.quest.17312BF0197B87A8.description2.hardmode}"
+				"This allows you to make &6Steel&r from &6Wrought Iron&r (or with &6Iron&r, but its slower). Now you can make &7LV &6Machine Hulls&r!"
 				""
-				"{moni.quest.17312BF0197B87A8.description3.hardmode}"
+				"Also allows you to make the &6Belt Pouch&r, to upgrade your &eTool Belt&r."
 			]
 			id: "17312BF0197B87A8"
 			tasks: [
@@ -1075,8 +1075,8 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.17312BF0197B87A8.title.hardmode}"
-			x: 1.75d
+			title: "&2Primitive Steelworks"
+			x: 2.0d
 			y: 10.25d
 		}
 		{
@@ -1085,9 +1085,9 @@
 				"5D97206C8135872B"
 			]
 			description: [
-				"{moni.quest.0FF18D13CD42F48A.description1.hardmode}"
+				"Feeding &3Steam producers&r with water by hand is a pretty silly idea."
 				""
-				"{moni.quest.0FF18D13CD42F48A.description2.hardmode}"
+				"A &2Primitive Water Pump&r will take care of that for you."
 			]
 			id: "0FF18D13CD42F48A"
 			tasks: [{
@@ -1095,13 +1095,13 @@
 				item: "gtceu:primitive_pump"
 				type: "item"
 			}]
-			title: "{moni.quest.0FF18D13CD42F48A.title}"
+			title: "&9Infinite Water"
 			x: 4.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
-			description: ["{moni.quest.7C3B69B3DC09FE96.description1}"]
+			description: ["The &aHang Glider&f is a great way to cross long distances, if you're so inclined."]
 			hide_dependency_lines: true
 			id: "7C3B69B3DC09FE96"
 			rewards: [{
@@ -1120,7 +1120,7 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.7C3B69B3DC09FE96.title}"
+			title: "Glider"
 			x: -9.0d
 			y: 2.5d
 		}
@@ -1131,13 +1131,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.0A8179C319A6868E.description1.hardmode}"
+				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
 				""
-				"{moni.quest.0A8179C319A6868E.description2.hardmode}"
+				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r, but be wary of ore types that can't be smelted after being crushed."
 				""
-				"{moni.quest.0A8179C319A6868E.description3.hardmode}"
+				"&4Does not generate byproducts!&r You need an HV-tier macerator or higher to get some."
 				""
-				"{moni.quest.0A8179C319A6868E.description4.hardmode}"
+				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "gtceu:steam_grinder"
 			id: "0A8179C319A6868E"
@@ -1192,16 +1192,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.0A8179C319A6868E.title.hardmode}"
-			x: 1.75d
+			title: "&9Steam Grinder"
+			x: 2.0d
 			y: 8.5d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
 			description: [
-				"{moni.quest.1A80D0AE0B2F7A9D.description1.hardmode}"
+				"The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."
 				""
-				"{moni.quest.1A80D0AE0B2F7A9D.description2.hardmode}"
+				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "steamadditions:steam_foundry"
 			id: "1A80D0AE0B2F7A9D"
@@ -1245,19 +1245,19 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.1A80D0AE0B2F7A9D.title.hardmode}"
-			x: -1.75d
+			title: "&9Steam Foundry"
+			x: -2.0d
 			y: 10.25d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
 			description: [
-				"{moni.quest.126772F682B282E4.description1.hardmode}"
-				"{moni.quest.126772F682B282E4.description2.hardmode}"
-				"{moni.quest.126772F682B282E4.description3.hardmode}"
-				"{moni.quest.126772F682B282E4.description4.hardmode}"
-				"{moni.quest.126772F682B282E4.description5.hardmode}"
-				"{moni.quest.126772F682B282E4.description6.hardmode}"
+				"The &eNether&r contains quite a few useful resources:"
+				"- Some initial pieces of &6Sulfur&r"
+				"- &6Glowstone&r and &6Soul Sand&r"
+				"- &6Fluorine&r, &6Certus Quartz&r, &6Molybdenum&r, &6Antimony&r, and &6Gold&r-bearing ores"
+				"- &2Nether Air&r, which can be distilled for useful gases"
+				"- &eLava&r and &eNatural Gas&r from &2Fluid Rigs&r"
 			]
 			id: "126772F682B282E4"
 			rewards: [{
@@ -1280,9 +1280,9 @@
 				"754C416FB3F5DBDA"
 			]
 			description: [
-				"{moni.quest.6FB3E3D9CA0F4B30.description1}"
+				"Going out in search of a &6Rubber Tree&f is a viable option for sure. However, if this isn't appealing, you can also &eshear leaves&f and make &6Plantballs&f out of them. Plantballs smelt into &6Slime&f, and Slime smelts into &6Sticky Resin&f."
 				""
-				"{moni.quest.6FB3E3D9CA0F4B30.description2}"
+				"You'll want to transition to Rubber Trees at some point, though, since the &eratio of leaves to rubber is quite poor&f."
 			]
 			id: "6FB3E3D9CA0F4B30"
 			rewards: [{
@@ -1297,20 +1297,20 @@
 				item: { Count: 3, id: "gtceu:rubber_plate" }
 				type: "item"
 			}]
-			title: "{moni.quest.6FB3E3D9CA0F4B30.title}"
-			x: 3.5d
+			title: "Rubber Sheets"
+			x: 4.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["4B338515E84FC51A"]
 			description: [
-				"{moni.quest.7FA0E6F3B466576C.description1.hardmode}"
+				"Use your newly acquired &3Alloy Smelter&r to make some new alloys!"
 				""
-				"{moni.quest.7FA0E6F3B466576C.description2.hardmode}"
+				"&eCopper&r alloyed with &eRedstone&r makes &6Red Alloy Ingots&r."
 				""
-				"{moni.quest.7FA0E6F3B466576C.description3.hardmode}"
+				"&eIron&r alloyed with &eRedstone&r makes &6Conductive Iron Ingots&r."
 				""
-				"{moni.quest.7FA0E6F3B466576C.description4.hardmode}"
+				"&3Hammer&r them into &6Plates&r, then &3cut&r them into &6Wires&r."
 			]
 			icon: "gtceu:red_alloy_ingot"
 			id: "7FA0E6F3B466576C"
@@ -1358,7 +1358,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7FA0E6F3B466576C.title.hardmode}"
+			title: "From Ingots to Wires"
 			x: 0.0d
 			y: 12.0d
 		}
@@ -1368,14 +1368,18 @@
 				"7FA0E6F3B466576C"
 			]
 			description: [
-				"{moni.quest.12B95158E4C792DB.description1}"
+				"The most basic cables, such as these &6Red Alloy Cables&f, can be wrapped in their &6Rubber&f insulation by hand."
 				""
-				"{moni.quest.12B95158E4C792DB.description2}"
+				"More advanced types of cables will require an &3Assembler&f and liquid &9Rubber&f, but you can do it the simple way for now."
 				""
-				"{moni.quest.12B95158E4C792DB.description3}"
-				"{moni.quest.12B95158E4C792DB.description4}"
+				"&2GT cables support RF conversion natively! &eYou can plug an &9RF&e machine into an &9EU&e cable directly and it will convert the energy.&r You cannot, however, plug an &9RF&r power source directly into an &9EU&r cable."
+				"{@pagebreak}"
+				"All cables have 3 main properties:"
+				"- &aMax Voltage&r: The maximum tier of voltage that can pass through the cable safely. Voltage tiers below the maximum can also be conducted!"
+				"- &eMax Amperage&r: The maximum number of amps of power that can pass through this cable safely. Different materials may have different ratings even with the same cable thickness."
+				"- &cLoss&r: The amount of energy lost from each amp for each block of cable traveled."
 				""
-				"{moni.quest.12B95158E4C792DB.description5}"
+				"Consider using &aSuperconductors&r or positioning machines close to your power source."
 			]
 			id: "12B95158E4C792DB"
 			rewards: [{
@@ -1390,16 +1394,16 @@
 				item: { Count: 12, id: "gtceu:red_alloy_single_cable" }
 				type: "item"
 			}]
-			title: "{moni.quest.12B95158E4C792DB.title}"
-			x: 1.75d
+			title: "&2Cables"
+			x: 2.0d
 			y: 13.75d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
 			description: [
-				"{moni.quest.34CA940B412284F2.description1}"
+				"Your initial method of &9Steam&r production, to fuel your first machines. They automatically output Steam on all faces except the bottom. Water converts to steam at a 1:150 ratio."
 				""
-				"{moni.quest.34CA940B412284F2.description2}"
+				"Once you get Steel, consider investing in HP Solar Boilers."
 			]
 			id: "34CA940B412284F2"
 			tasks: [{
@@ -1420,29 +1424,29 @@
 						]
 					}
 				}
-				title: "{moni.task.34E57B9F8FF4E1AE.hardmode}"
+				title: "Steam Boiler"
 				type: "item"
 			}]
-			title: "{moni.quest.34CA940B412284F2.title}"
+			title: "Steam Production"
 			x: 0.0d
 			y: 8.5d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
 			description: [
-				"{moni.quest.4B338515E84FC51A.description1.hardmode}"
+				"Steam Machines can run recipes listed as up to &d32 EU/t&r. They need to have their vent side unobstructed. Use a Wrench to change the venting side."
 				""
-				"{moni.quest.4B338515E84FC51A.description2.hardmode}"
+				"- &3Forge Hammer&r: Allows you to make &62 plates&r from &63 ingots&r."
 				""
-				"{moni.quest.4B338515E84FC51A.description3.hardmode}"
+				"- &3Macerator&r: Allows you to grind &6Clay&r, and other ingots, into their respective &eDusts&r."
 				""
-				"{moni.quest.4B338515E84FC51A.description4.hardmode}"
+				"- &3Compressor&r: Allows you to make &6Compressed Fireclay&r, and other materials."
 				""
-				"{moni.quest.4B338515E84FC51A.description5.hardmode}"
+				"- &3Alloy Smelter&r: Allows you to make &6Bronze&r more efficiently, as well as other useful alloys like &6Invar&r. Also allows you to cast &6Glass&r, and make components like &eGears&r more easily, and make &6Rubber Sheets&r, with Molds."
 				""
-				"{moni.quest.4B338515E84FC51A.description6.hardmode}"
+				"You can upgrade them to HP version with Steel, which doubles their speed."
 				""
-				"{moni.quest.4B338515E84FC51A.description7.hardmode}"
+				"If the machine sounds start to get on your nerves, you can mute GT machines with a GT Hammer."
 			]
 			id: "4B338515E84FC51A"
 			rewards: [{
@@ -1480,18 +1484,18 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.4B338515E84FC51A.title.hardmode}"
+			title: "Steam Machines"
 			x: 0.0d
 			y: 10.25d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
 			description: [
-				"{moni.quest.754C416FB3F5DBDA.description1.hardmode}"
+				"&aMolds&r are used in a &3Fluid Solidifier&r or &3Alloy Smelter&r to form materials into specific shapes. These are not consumed or damaged during crafting, so you can leave them in a machine to dedicate it to that shape."
 				""
-				"{moni.quest.754C416FB3F5DBDA.description2.hardmode}"
+				"Once in LV, the Fluid Solidifier tends to be the more efficient option: for example, you can use &e8 ingots&r to make one &6Gear&r in an Alloy Smelter, but with an Extractor and Solidifier you can accomplish the same result with &e4 ingots&r."
 				""
-				"{moni.quest.754C416FB3F5DBDA.description3.hardmode}"
+				"Be careful not to accidentally make &aExtruder Shapes&r. Those are for a machine you will get access to later. The three molds in this quest are ones you will find useful right away."
 			]
 			icon: "gtceu:gear_casting_mold"
 			id: "754C416FB3F5DBDA"
@@ -1524,18 +1528,18 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.754C416FB3F5DBDA.title.hardmode}"
-			x: 1.75d
+			title: "Molds"
+			x: 2.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["754C416FB3F5DBDA"]
 			description: [
-				"{moni.quest.4B43ABA024E9A0B9.description1.hardmode}"
+				"&eGlass&r is extremely useful, and will be used for many things in the future. Currently, you need it for the &cSteam Extractor&r, and can use it for &6Solar Boilers&r."
 				""
-				"{moni.quest.4B43ABA024E9A0B9.description2.hardmode}"
+				"Currently, your only available method to make Glass is through &eGlass Dust&r. Combine &eQuartz Sand&r with a &eTiny Pile of Flint Dust&r in a &3Crafting Table&r. Then, alloy it with the &eBlock Mold&r you have crafted, and voila!"
 				""
-				"{moni.quest.4B43ABA024E9A0B9.description3.hardmode}"
+				"Later, to save you from this suffering, you can make an &6Arc Furnace&r, which makes two Glass, from one Sand."
 			]
 			id: "4B43ABA024E9A0B9"
 			tasks: [{
@@ -1549,11 +1553,11 @@
 		{
 			dependencies: ["34CA940B412284F2"]
 			description: [
-				"{moni.quest.5F90D0FC382C0A30.description1.hardmode}"
+				"The &6Steam Separator&r functions as 5.3 &7LV &3Centrifuges&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam."
 				""
-				"{moni.quest.5F90D0FC382C0A30.description2.hardmode}"
+				"While it can't process any recipe involving &9fluids&r, (including the recipe that separates Raw Rubber Pulp from Sticky Resin) it's perfect for ore processing, letting you get the most out of your dusts and letting you not have to deal with washing your ores in a &3Cauldron&r."
 				""
-				"{moni.quest.5F90D0FC382C0A30.description3.hardmode}"
+				"You may wish to wait until you have a Bender at LV to reduce the cost."
 			]
 			icon: "steamadditions:steam_separator"
 			id: "5F90D0FC382C0A30"
@@ -1591,17 +1595,17 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.5F90D0FC382C0A30.title.hardmode}"
-			x: -1.75d
+			title: "&9Steam Separator"
+			x: -2.0d
 			y: 8.5d
 		}
 		{
 			dependencies: ["64AAF0CD958D836A"]
 			description: [
 				""
-				"{moni.quest.39D4174834F3879D.description1}"
+				"The &6Steam Dynamo&r will be your source of &9power&r for the early game. It requires &6Water&r and burnable fuel like &6Coal&r or &6Sugar Cane&r to produce power."
 				""
-				"{moni.quest.39D4174834F3879D.description2.hardmode}"
+				"Keep in mind that &eDynamos only output power when burning through fuel, and only the block/cable attached directly to the coil will get provided with power&f."
 			]
 			id: "39D4174834F3879D"
 			rewards: [{
@@ -1610,19 +1614,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.39D4174834F3879D.subtitle}"
+			subtitle: "Your first major crafting project!"
 			tasks: [{
 				id: "78D31068BB10B20B"
 				item: "steamdynamo:steam_dynamo"
 				type: "item"
 			}]
-			title: "{moni.quest.39D4174834F3879D.title}"
+			title: "Steam Dynamo"
 			x: -4.0d
 			y: 13.75d
 		}
 		{
 			dependencies: ["39D4174834F3879D"]
-			description: ["{moni.quest.098CF1FD284B09E7.description1}"]
+			description: ["More fuel energy means you need to use less fuel."]
 			id: "098CF1FD284B09E7"
 			rewards: [{
 				id: "5ECF74D124102662"
@@ -1635,7 +1639,7 @@
 				item: { Count: 2, id: "thermal:dynamo_fuel_augment" }
 				type: "item"
 			}]
-			title: "{moni.quest.098CF1FD284B09E7.title}"
+			title: "&9More Efficient"
 			x: -5.0d
 			y: 13.75d
 		}
@@ -1645,11 +1649,13 @@
 				"39D4174834F3879D"
 			]
 			description: [
-				"{moni.quest.08948A23B3A17923.description1}"
+				"&bPipez&r is your first available option for transporting &aForge Energy&r, (&aFE&r) and is also the simplest option."
 				""
-				"{moni.quest.08948A23B3A17923.description2}"
+				"To use them, connect your sources and destinations with Energy Pipes and Shift-Right-Click the connection of a Pipe to a block with a &6Pipe Wrench&r to begin extracting from that block."
 				""
-				"{moni.quest.08948A23B3A17923.description3}"
+				"Pipez can also transport &6Items&r and &9Fluids&r with the corresponding type of pipe."
+				""
+				"Extraction speed is increased and Redstone control, filtering, and routing options are unlocked with &6Pipe Upgrades&r."
 			]
 			icon: "laserio:energy_overclocker_card_tier_1"
 			id: "08948A23B3A17923"
@@ -1691,28 +1697,14 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{moni.quest.08948A23B3A17923.subtitle.hardmode}"
-			tasks: [
-				{
-					count: 2L
-					id: "7D0E23630A562F6A"
-					item: "laserio:laser_node"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "252F1286D3A46E4E"
-					item: { Count: 2, id: "laserio:card_energy" }
-					type: "item"
-				}
-				{
-					id: "450A8E8955EDBB51"
-					item: "laserio:energy_overclocker_card_tier_1"
-					type: "item"
-				}
-			]
-			title: "{moni.quest.08948A23B3A17923.title}"
-			x: -1.75d
+			tasks: [{
+				count: 6L
+				id: "39A6A20C833ABC94"
+				item: "pipez:energy_pipe"
+				type: "item"
+			}]
+			title: "&9Pipez"
+			x: -2.0d
 			y: 13.75d
 		}
 		{
@@ -1721,13 +1713,13 @@
 				"08948A23B3A17923"
 			]
 			description: [
-				"{moni.quest.297B523B6C503957.description1}"
+				"&rThe &3Steam Dynamos&r&r&r you have made are generating &aRF power&r, but &bGregTech&r machines require &aEU power&r. With your first &6circuit&r in hand, you are ready to build a &eLow Voltage (LV) &3&2Energy Converter&r."
 				""
-				"{moni.quest.297B523B6C503957.description2}"
+				"The &2Energy Converter&r is a special device that &econverts &2between &aRF power&r and &aEU power&r. They come in &2four sizes: 1A, 4A, 8A, and 16A."
 				""
-				"{moni.quest.297B523B6C503957.description3}"
+				"&aRF&r converts into &aEU&r at a &e4 to 1 ratio&r. &a100 RF&r becomes &a25 EU&r, and vice-versa. &2Use a &6Soft Mallet&2 to change the conversion direction."
 				""
-				"{moni.quest.297B523B6C503957.description4}"
+				"&eNote that you need an RF buffer to output into when you convert EU->RF!&r"
 			]
 			icon: "gtceu:lv_4a_energy_converter"
 			id: "297B523B6C503957"
@@ -1736,7 +1728,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.297B523B6C503957.subtitle.hardmode}"
+			subtitle: "Green=Input, Red=Output"
 			tasks: [{
 				id: "3217FC6AD2AFA67A"
 				item: {
@@ -1763,10 +1755,10 @@
 						]
 					}
 				}
-				title: "{moni.task.3217FC6AD2AFA67A}"
+				title: "Any LV Converter"
 				type: "item"
 			}]
-			title: "{moni.quest.297B523B6C503957.title}"
+			title: "Energy Converters"
 			x: -0.75d
 			y: 15.5d
 		}
@@ -1776,7 +1768,11 @@
 				"34876F54406B6A04"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.2FA9404468E4BBD9.description1}"]
+			description: [
+				"The &6Battery Buffer&r is a machine which can hold &6Batteries&r for energy storage."
+				""
+				"Each Battery adds an additional 2 amps of input draw and 1 amp of output capacity to the Battery Buffer."
+			]
 			id: "2FA9404468E4BBD9"
 			rewards: [{
 				id: "325B36632BC87A4F"
@@ -1807,18 +1803,18 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.2FA9404468E4BBD9.title}"
-			x: 2.0d
+			title: "Battery Buffers"
+			x: 3.0d
 			y: 15.5d
 		}
 		{
 			dependencies: ["2FA9404468E4BBD9"]
 			description: [
-				"{moni.quest.077AA27F26B7831F.description1}"
+				"&6Batteries&r are &bGregTech &rpower storage for &aEU&r energy."
 				""
-				"{moni.quest.077AA27F26B7831F.description2}"
+				"&2Lithium Batteries&r have the highest capacity, but &6Sodium&r and &6Cadmium Batteries&r are also perfectly useful in &7LV&r. Charged batteries of all three types can be found in &bLost Cities&r loot chests, with extra chances on the sixth floor and above."
 				""
-				"{moni.quest.077AA27F26B7831F.description3.hardmode}"
+				"&6Salts Veins&r in the Overworld contain several battery materials. Electrolyze &6Salt Dust&r in an &7LV&r &3Electrolyzer&r for &6Sodium Dust&r, or process &6Lepidolite&r and &6Spodumene Ore&r for &6Lithium&r byproducts. Clay electrolysis requires &bMV&r in Hard Mode."
 			]
 			id: "077AA27F26B7831F"
 			rewards: [{
@@ -1853,9 +1849,9 @@
 				match_nbt: false
 				type: "item"
 			}]
-			title: "{moni.quest.077AA27F26B7831F.title}"
-			x: 3.25d
-			y: 15.5d
+			title: "LV Power Storage"
+			x: 2.0d
+			y: 14.75d
 		}
 		{
 			dependencies: [
@@ -1864,9 +1860,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.06E9B9DDDB245F38.description1}"
+				"The &9Tinker's Workstation&r is able to charge items at a modest rate, but can only charge items that use &aRF&r. &9This is also used for upgrading &bThermal&9 items&r."
 				""
-				"{moni.quest.06E9B9DDDB245F38.description2}"
+				"The Turbo Charger is a little more expensive, but is able to charge items at a &omuch&r faster rate and is able to charge items that use &aRF&r and &aEU&r."
 			]
 			icon: "gtceu:lv_charger_4x"
 			id: "06E9B9DDDB245F38"
@@ -1909,21 +1905,21 @@
 						]
 					}
 				}
-				title: "{moni.task.0560C9C2C5EC9998}"
+				title: "Charger"
 				type: "item"
 			}]
-			title: "{moni.quest.06E9B9DDDB245F38.title}"
+			title: "&9Charging Items"
 			x: -2.0d
 			y: 15.5d
 		}
 		{
 			dependencies: ["06E9B9DDDB245F38"]
 			description: [
-				"{moni.quest.3A5387B2003177B2.description1}"
+				"Basic &aFlux Capacitors&r hold a whopping &9500 kRF&r of energy and are useful for keeping your &aRF-powered&r equipment and tools charged."
 				""
-				"{moni.quest.3A5387B2003177B2.description2}"
+				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
 				""
-				"{moni.quest.3A5387B2003177B2.description3}"
+				"The Flux Capacitor is a &bCurio&r, so open your inventory and look for the Curios button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
 			]
 			icon: {
 				Count: 1
@@ -1956,11 +1952,11 @@
 							value: "forge:dusts/sulfur"
 						}
 					}
-					title: "{moni.task.63EE7A1364F6888B}"
+					title: "Sulfur Dust"
 					type: "item"
 				}
 			]
-			title: "{moni.quest.3A5387B2003177B2.title}"
+			title: "&9Flux Capacitors"
 			x: -3.25d
 			y: 15.5d
 		}
@@ -1971,18 +1967,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.5A94534682807314.description1}"
+				"Unlike &aRF power&r, which is safe to transport with &bPipez&r, &aEU power &erequires caution&r. Without proper attention, it is possible that your expensive wires, cables, or machines could be destroyed."
 				""
-				"{moni.quest.5A94534682807314.description2}"
+				"EU is transported in &aamperes&r (&aamps&r), which can be thought of as packets of energy. The amount of energy stored in the packet is the &avoltage tier&r."
+				"{@pagebreak}"
+				"The flow of power can be thought of as machines pulling power from the source through the cables. If a wire or cable is transporting too many amps or too high a voltage &cit will burn up&r, starting with its coating. Similarly, if a machine receives too high a voltage, &cit will explode&r. &eOn Hard/Expert modes, this explosion will break blocks!&r Be careful!"
 				""
-				"{moni.quest.5A94534682807314.description3}"
-				"{moni.quest.5A94534682807314.description4}"
-				"{moni.quest.5A94534682807314.description5}"
-				"{moni.quest.5A94534682807314.description6}"
-				""
-				"{moni.quest.5A94534682807314.description7}"
-				""
-				"{moni.quest.5A94534682807314.description8}"
+				"Each voltage tier is &a4x the size&r of the previous tier, starting with 32EU/t at &7LV&r, 128EU/t at &bMV&r, 512 at &6HV&r and so on."
 			]
 			icon: "gtceu:hpic_wafer"
 			id: "5A94534682807314"
@@ -1991,26 +1982,26 @@
 				id: "60242EACEEB6B6C8"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.5A94534682807314.title}"
+			title: "A Primer on Power"
 			x: 0.0d
 			y: 17.0d
 		}
 		{
 			dependencies: ["5A94534682807314"]
 			description: [
-				"{moni.quest.2D31856F6EF1ED69.description1}"
+				"Now that you have everything you need to power your machines, it's time to put it all together."
 				""
-				"{moni.quest.2D31856F6EF1ED69.description2.hardmode}"
+				"Your Steam Dynamo needs burnable fuel (like &6Coal&r) and &9water&r. It will output RF power through the Excitation Coil (the red bit at the top). The orientation of the Steam Dynamo can be adjusted with a &aCrescent Hammer&r if needed."
 				""
-				"{moni.quest.2D31856F6EF1ED69.description3}"
+				"&3Pipez&r can be used to transfer that RF power, but the dynamo can also output RF directly into an Energy Converter by pointing the Excitation Coil into the Energy Converter. Alternately, the Converter can be skipped entirely by using &eGT Steam Turbines&r for power."
 				"{@pagebreak}"
-				"{moni.quest.2D31856F6EF1ED69.description4}"
+				"The Energy Converter transforms RF power into EU, outputting the resulting EU through the side with a red dot. The orientation can be adjusted using a &aWrench&r. Attach your &6Conductive Iron Wires&r to the output side of the Energy Converter. Be sure to use wires or cables that can handle the output amperage of the Converter."
 				""
-				"{moni.quest.2D31856F6EF1ED69.description5}"
+				"Now all you need are some &bGregTech&r machines to power up! You can make whatever you want, but its recommended that you get these two first:"
 				""
-				"{moni.quest.2D31856F6EF1ED69.description6}"
+				"The &6Wiremill&r will make crafting wires much, much easier."
 				""
-				"{moni.quest.2D31856F6EF1ED69.description7}"
+				"The &2Bender&r will make Plates from one ingot instead of two."
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
@@ -2025,46 +2016,46 @@
 				id: "44E7A2BF6528EC4E"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.2D31856F6EF1ED69.title}"
+			title: "Putting it all Together"
 			x: 0.0d
 			y: 18.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.6A7A480FAC6103D2.description1}"
+				"Open your inventory and look at the top-left corner of the screen. Click the map-looking icon called &eClaim Manager&r."
 				""
-				"{moni.quest.6A7A480FAC6103D2.description2}"
+				"&6Click a chunk&r to claim it as yours. This will prevent unwanted creeper explosions and other players from interacting with your base."
 				""
-				"{moni.quest.6A7A480FAC6103D2.description3}"
+				"&eIf you're playing on a server with custom settings, ask the server owner what methods are available&f."
 				""
-				"{moni.quest.6A7A480FAC6103D2.description4}"
+				"To invite players to your &bFTB Utils&f party, look for a corresponding button in the same corner. Parties share claimed chunks with each other. You can configure permissions for your party's claimed chunks in the party settings menu."
 			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:tnt"
 			id: "6A7A480FAC6103D2"
 			optional: true
-			subtitle: "{moni.quest.6A7A480FAC6103D2.subtitle}"
+			subtitle: "You might be wondering what chunkloading options there are in the pack."
 			tasks: [{
 				id: "78BC5B51125B35BD"
-				title: "{moni.task.78BC5B51125B35BD}"
+				title: "Claim your chunks!"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.6A7A480FAC6103D2.title}"
+			title: "Claim Your Chunks and Invite Teammates!"
 			x: -10.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.17E92ED356B6737F.description1}"
+				"In most expert packs, you want to try to process as little ore as possible before you get access to ore processing. It's a habit most of us pick up."
 				""
-				"[\"\",{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description1\"},{\"color\":\"blue\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description2\"},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description3\"},{\"color\":\"green\",\"underlined\":true,\"translate\":\"moni.quest.17E92ED356B6737F.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description.hover_text4\"}}},{\"translate\":\"moni.quest.17E92ED356B6737F.rich_description5\"},{\"color\":\"yellow\",\"translate\":\"moni.quest.17E92ED356B6737F.rich_description6\"}]"
+				"[\"\",{\"text\":\"You shouldn't feel any pressure to do that in \"},{\"color\":\"blue\",\"text\":\"Monifactory\"},{\"text\":\", though. Raw ore is highly abundant thanks to massive, dense ore veins and easy to gather thanks to \"},{\"color\":\"green\",\"underlined\":true,\"text\":\"Mining Hammers\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"07D45A3F8A74A61C\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the quest\"}}},{\"text\":\".\"}]"
 				""
-				"{moni.quest.17E92ED356B6737F.description3.hardmode}"
+				"&eFor most ore types, it costs more time and resources to do ore doubling early on than it would to find and mine another ore vein.&r"
 				""
-				"{moni.quest.17E92ED356B6737F.description4}"
+				"The obvious exception would be rare materials; Those are worth doubling, if possible."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:crushed_redstone_ore"
@@ -2073,67 +2064,67 @@
 				id: "36817889D65727FA"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.17E92ED356B6737F.title}"
+			title: "&2Ore Doubling?"
 			x: -9.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.33195ED6D7008E5F.description1}"
+				"If your server admin allows it, you can use JourneyMap to create and teleport to waypoints you set. You can access JourneyMap waypoints by hitting the N key by default. Use this feature to gather resources quickly."
 				""
-				"{moni.quest.33195ED6D7008E5F.description2}"
+				"If JourneyMap teleportation is disabled, you can still use the &e/sethome&r command to register where your house is, and &e/home&r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There is a limit on the number of homes you can set, though."
 				""
-				"{moni.quest.33195ED6D7008E5F.description3}"
+				"Later on you'll discover other means of teleportation."
 			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:blue_bed"
 			id: "33195ED6D7008E5F"
 			optional: true
-			subtitle: "{moni.quest.33195ED6D7008E5F.subtitle}"
+			subtitle: "Make returning home easy!"
 			tasks: [{
 				id: "1FE7AB8BD6D25B47"
-				title: "{moni.task.1FE7AB8BD6D25B47}"
+				title: "Checkmark"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.33195ED6D7008E5F.title}"
+			title: "JourneyMap and Registering Homes"
 			x: -10.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.70026930847E8EC0.description1}"
+				"&n&9Monifactory&r&r shares an official Discord server with the other projects under Omicron Industries, which serves as a useful community resource."
 				""
-				"{moni.quest.70026930847E8EC0.description2}"
+				"On the server, there are flowcharts and guides to help you with many parts of the pack accessible via the server's helpful bot, development announcements and more are available in the &n#announcements&r channel, and the community helps with tech support questions, and investigates possible bug reports."
 				""
-				"{moni.quest.70026930847E8EC0.description3}"
+				"You can also chat with many fellow players there if you like, who are largely willing to help with general questions one might have."
 				"{@pagebreak}"
-				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description3\"}]"
+				"[\"\",{\"text\":\"To join the server, you can use the button on the Main Menu to go to the join URL, or if you're not into Discord you can find other projects from Omicron Industries, on \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"this\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries\"}},{\"text\":\" GitHub page.\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description4\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description6\"}]"
+				"[\"\",{\"text\":\"Issue tracking and development is handled on the respective GitHub project repositories. The repository for this pack is \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"here\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"text\":\".\"}]"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:writable_book"
 			id: "70026930847E8EC0"
 			optional: true
-			subtitle: "{moni.quest.70026930847E8EC0.subtitle}"
+			subtitle: "what's a voltage? can I eat it?"
 			tasks: [{
 				id: "1278CD7DD38F751A"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.70026930847E8EC0.title}"
+			title: "Discord and GitHub"
 			x: -9.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"[\"\",{\"color\":\"dark_green\",\"underlined\":true,\"translate\":\"moni.quest.73C713703AB6387C.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.73C713703AB6387C.rich_description.hover_text1\"}}},{\"color\":\"dark_green\",\"translate\":\"moni.quest.73C713703AB6387C.rich_description2\"}]"
+				"[\"\",{\"color\":\"dark_green\",\"underlined\":true,\"text\":\"This tab\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}},{\"color\":\"dark_green\",\"text\":\" was added to provide some examples on how to renewably produce useful resources through unconventional means. Use it wisely!\"}]"
 				""
-				"{moni.quest.73C713703AB6387C.description2}"
+				"Each quest in the tab will give you a description of the machine and the minimum voltage required to run the recipe."
 			]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -2144,16 +2135,16 @@
 				id: "4BEDF2126C896A50"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.73C713703AB6387C.title}"
+			title: "&2Renewable Production Tab"
 			x: -10.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.400AD2B735FF135D.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.400AD2B735FF135D.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"395B849AC6294153\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.400AD2B735FF135D.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.400AD2B735FF135D.rich_description3\"}]"
+				"[\"\",{\"text\":\"The \"},{\"color\":\"yellow\",\"underlined\":true,\"text\":\"Progression tab\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"395B849AC6294153\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}},{\"text\":\" was added so you can keep track of the important bits of the pack.\"}]"
 				""
-				"{moni.quest.400AD2B735FF135D.description2.hardmode}"
+				"Circuits are the baseline of the entire Monifactory progression, so keep climbing!"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -2164,24 +2155,24 @@
 				id: "3378D5EF8B48960E"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.400AD2B735FF135D.title}"
+			title: "Progression Tab"
 			x: -9.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.50591843C8501055.description1}"
+				"&bGregTech&r adds an &einteractive in-world preview&r for all &bGregTech&r multiblocks! &6Shift-right-click&r a placed controller &ewith an empty hand&r to activate a hologram depicting the default layout of the structure to help you with building. As you place blocks, the structure will be validated and the &efirst incorrect block&r it detects will be highlighted in red."
 				"{@pagebreak}"
-				"{moni.quest.50591843C8501055.description2}"
+				"&6Sneak-right-click&r to cycle from the full view through each layer. When on the final layer of the preview, this will remove the preview."
 				""
-				"{moni.quest.50591843C8501055.description3}"
+				"&6Sneak-left-click&r to go back to the previous layer, or close the preview from the full view."
 				""
-				"{moni.quest.50591843C8501055.description4}"
+				"In the &eJEI previews&r for multiblocks, &6left-click&r and drag the mouse to rotate the preview."
 				""
-				"{moni.quest.50591843C8501055.description5}"
+				"Additionally, you can &6right-click&r and drag the mouse to pan the preview or &6shift-right-click&r and drag to zoom in or out."
 				""
-				"{moni.quest.50591843C8501055.description6}"
+				"Some blocks in the multiblock preview have additional tooltips to provide more information on how the multiblock can form."
 			]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -2192,30 +2183,30 @@
 				id: "0765BFA6BDBFD386"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.50591843C8501055.title}"
-			x: -9.75d
+			title: "Multiblock Machine Previews"
+			x: -10.5d
 			y: 8.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["[\"\",{\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description1\"},{\"color\":\"aqua\",\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description2\"},{\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description3\"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description4\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.0DE9B264A3BA75BB.rich_description.hover_text4\"}}}]"]
+			description: ["[\"\",{\"text\":\"This pack has \"},{\"color\":\"aqua\",\"text\":\"Inventory Tweaks\"},{\"text\":\", allowing for quick, customizable, and easy sorting of any inventory! The default keybind is \"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"text\":\"\\\\\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"\\\"Sort Player Inventory\\\" in keybind option\"}}}]"]
 			disable_toast: true
 			hide_dependency_lines: true
 			icon: "minecraft:chest"
 			id: "0DE9B264A3BA75BB"
 			optional: true
-			subtitle: "{moni.quest.0DE9B264A3BA75BB.subtitle}"
+			subtitle: "Clean your inventory"
 			tasks: [{
 				id: "6EF2221B59F470CB"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.0DE9B264A3BA75BB.title}"
+			title: "Inventory Sorting"
 			x: -10.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["7865CDE5CFE005DC"]
-			description: ["{moni.quest.5D5C24BACC649253.description1}"]
+			description: ["All furnaces from &bIron Furnaces&r can be augmented to be &afaster&r, more &afuel efficient&r, and &asmelt multiple items at once&r!"]
 			id: "5D5C24BACC649253"
 			optional: true
 			rewards: [{
@@ -2223,7 +2214,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.5D5C24BACC649253.subtitle}"
+			subtitle: "Modular furnaces!"
 			tasks: [
 				{
 					id: "154872CDC7976802"
@@ -2236,13 +2227,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.5D5C24BACC649253.title}"
+			title: "Furnace Augments"
 			x: 7.25d
 			y: 2.5d
 		}
 		{
 			dependencies: ["7865CDE5CFE005DC"]
-			description: ["{moni.quest.07508736CEE01C7F.description1.hardmode}"]
+			description: ["You can copy and paste settings from different &eFurnaces&r using a &6Furnaces Setting Linker&r"]
 			id: "07508736CEE01C7F"
 			optional: true
 			rewards: [{
@@ -2250,13 +2241,13 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.07508736CEE01C7F.subtitle}"
+			subtitle: "Copying your furnace's settings"
 			tasks: [{
 				id: "4FF735E089FC1BA8"
 				item: "ironfurnaces:item_copy"
 				type: "item"
 			}]
-			title: "{moni.quest.07508736CEE01C7F.title}"
+			title: "Ctrl + C, Ctrl + V"
 			x: 7.25d
 			y: 3.75d
 		}
@@ -2264,17 +2255,17 @@
 			can_repeat: false
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.372BE3F076893D71.description1}"
-				"{moni.quest.372BE3F076893D71.description2}"
+				"You may wish to &aautomatically sprint&r instead of having to press &eControl + W&r or &eW twice&r."
+				"To achieve this, change the &bSprint&r keybind to &eW&r. (or the same keybind as Walk Forward)"
 				""
-				"{moni.quest.372BE3F076893D71.description3}"
+				"A &aGrappling Hook&r is also very useful in an urban environment, allowing you to climb buildings with ease!"
 				""
-				"{moni.quest.372BE3F076893D71.description4}"
+				"There are lots of ways to upgrade and improve your &aGrappling Hook&r, so play around with it."
 				""
-				"{moni.quest.372BE3F076893D71.description5.hardmode}"
+				"Open your inventory and look for the &3Curios&r button, click it to reveal the additional curio slots and put the hook in the hook shaped slot."
 				""
-				"{moni.quest.372BE3F076893D71.description6.hardmode}"
-				"{moni.quest.372BE3F076893D71.description7.hardmode}"
+				"The default key to fire a hook is &6C&r, however you might want to change it, simply search for &5category:ReHooked&r in the key binds screen and change them to whatever you want."
+				"Just be careful of &4Keybind Conflicts&r"
 			]
 			disable_toast: true
 			hide_dependency_lines: true
@@ -2286,26 +2277,26 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.372BE3F076893D71.subtitle}"
+			subtitle: "&oFaster is better!"
 			tasks: [{
 				id: "2FDEDCA3D120121B"
 				item: "rehooked:wood_hook"
 				type: "item"
 			}]
-			title: "{moni.quest.372BE3F076893D71.title}"
+			title: "Movin' Around"
 			x: -9.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: [
-				"{moni.quest.5CFBE0455A242AEB.description1}"
+				"This questbook is made to help you throughout your entire playthrough. &eIt is &lHIGHLY&r&e advised to read it!&r"
 				""
-				"{moni.quest.5CFBE0455A242AEB.description2}"
+				"Most questbook chapters use dependencies (the lines with arrows) to signify which quests to do in what order. When a quest is gray-ed out and has a locked icon, it means that one or more of its dependency quests are not completed. \n\nThe dependencies of a quest can be seen by clicking on the left arrow to the left of the Tasks. You can also see what quests depend on this quest using the right arrow to the right of the Rewards."
 				""
-				"{moni.quest.5CFBE0455A242AEB.description3}"
+				"If you complete the tasks for a quest before you've completed its dependencies, the quest will display a gray check mark, and will be instantly completed when unlocked. These pre-completed quests won't count as completed for other quests that depend on it while locked."
 				""
-				"{moni.quest.5CFBE0455A242AEB.description4}"
+				"When looking for a quest, try using Control/Command + F to search for a quest based on its name or tasks."
 			]
 			id: "5CFBE0455A242AEB"
 			shape: "hexagon"
@@ -2313,13 +2304,13 @@
 				id: "7BC2DC471C278E85"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.5CFBE0455A242AEB.title}"
+			title: "Quests Are Here to Help"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
-			description: ["{moni.quest.259CC99CE1FB22A9.description1}"]
+			description: ["Right click to select any biome, and the compass will lead you right to it!"]
 			hide_dependency_lines: true
 			id: "259CC99CE1FB22A9"
 			tasks: [{
@@ -2334,6 +2325,41 @@
 			x: -10.5d
 			y: 4.0d
 		}
+		{
+			dependencies: ["4FE53F31E68F4C1C"]
+			description: [
+				"&2GTm has GT6-style pipes and cables on by default. &rYou will need to use &6Wire Cutters&r to connect each side of a cable to machines or other cables. Placing it against the machine or cable automatically connects it as well. The same behaviour follows for GT pipes, whose tool is the &6Wrench&r."
+				""
+				"This can save you from energy or fluids going the wrong way. But if you don't like this, disable the config option for \"GT6 style pipes and cables\" in the GregTech config file."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: {
+						Mode: 2b
+					}
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 255
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "29EE9A6425869E06"
+			tasks: [{
+				id: "6A56EBBA037B127B"
+				type: "checkmark"
+			}]
+			title: "Connecting Pipes and Cables"
+			x: -9.0d
+			y: 8.5d
+		}
 	]
-	title: "{moni.chapter.0654B76C306712BE.hardmode.title}"
+	title: "A Hard Genesis"
 }

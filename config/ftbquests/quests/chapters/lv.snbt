@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:lv_universal_circuit"
 	id: "62CAA10E8897A0FF"
-	order_index: 1
+	order_index: 5
 	quest_links: [
 		{
 			id: "5B0F1DA574E0A141"
