@@ -1261,4 +1261,20 @@ ServerEvents.recipes(event => {
         .duration(400)
         .EUt(GTValues.VA[GTValues.EV])
 
+
+    // Sky Stone
+    event.recipes.gtceu.rock_breaker("kubejs:rock_breaker_sky_stone")
+        .notConsumable("ae2:sky_stone_block")
+        .itemOutputs("ae2:sky_stone_block")
+        .duration(16)
+        .EUt(GTValues.VHA[GTValues.MV])
+        .adjacentFluids("minecraft:lava", "minecraft:water")
+        .posY(256, 320)
+
+    event.recipes.gtceu.rock_cycle_simulator("kubejs:rock_cycle_simulator_sky_stone")
+        .notConsumable("ae2:sky_stone_block")
+        .itemOutputs("ae2:sky_stone_block")
+        .duration(16)
+        .EUt(GTValues.VHA[GTValues.MV])
+        .posY(256, 320)
 })
