@@ -121,6 +121,9 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     GTMaterials.Iron2Chloride.setProperty($PropertyKey.DUST, new $DustProperty());
     GTMaterials.Iron2Chloride.setMaterialARGB(0xC5E1A5)
 
+    // Change Chromite ore to smelt directly into chromium
+    GTMaterials.Chromite.getProperty($PropertyKey.ORE).setDirectSmeltResult(GTMaterials.Chromium)
+
     // HM-exclusive modifications
     if (doHarderProcessing) {
         GTMaterials.RhodiumSulfate.setProperty($PropertyKey.DUST, new $DustProperty());
