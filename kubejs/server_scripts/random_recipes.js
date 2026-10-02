@@ -699,21 +699,6 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .EUt(GTValues.VA[GTValues.HV])
 
-    // Germanium can be used in diodes
-    event.recipes.gtceu.mixer("silicon_germanium_mixing")
-        .itemInputs("4x gtceu:silicon_dust", "1x gtceu:germanium_dust")
-        .itemOutputs("5x gtceu:silicon_germanium_dust")
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(10 * 20)
-
-    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:tiny_silicon_germanium_dust")
-    event.recipes.gtceu.assembler("germanium_smd_diode")
-        .itemInputs("1x gtceu:small_silicon_germanium_dust", "4x gtceu:fine_platinum_wire")
-        .inputFluids("gtceu:polyethylene 144")
-        .itemOutputs("64x gtceu:smd_diode")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.HV])
-
     // Germanium fusion
     event.recipes.gtceu.fusion_reactor("argon_and_silicon_to_germanium")
         .inputFluids("gtceu:argon 125", "gtceu:silicon 16")

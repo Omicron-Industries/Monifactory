@@ -45,9 +45,4 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("dull")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components(GTMaterials.get("living_solder_base").multiply(7), GTMaterials.Meat.multiply(3))
-
-    event.create("silicon_germanium")
-        .dust()
-        .color(0x6B7873)
-        .components(GTMaterials.Silicon.multiply(4), GTMaterials.Germanium.multiply(1))
 })
