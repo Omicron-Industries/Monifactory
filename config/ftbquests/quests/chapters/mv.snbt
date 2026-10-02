@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:mv_universal_circuit"
 	id: "35A56C29328C5200"
-	order_index: 6
+	order_index: 2
 	quest_links: [
 		{
 			id: "20D596271688188F"
@@ -16,67 +16,9 @@
 			y: 2.75d
 		}
 		{
-			id: "6DB017E9911300A9"
-			linked_quest: "2F04FA8D3E15E375"
-			shape: "hexagon"
-			x: 4.25d
-			y: 1.25d
-		}
-		{
-			id: "4065DEBE89F8D723"
-			linked_quest: "3650EF39B5AB4A7D"
-			shape: "hexagon"
-			x: 8.25d
-			y: 4.5d
-		}
-		{
-			id: "54DA67D96DDF6F24"
-			linked_quest: "73F8EA8E7DCC94E9"
-			shape: "hexagon"
-			size: 2.0d
-			x: 6.5d
-			y: 5.75d
-		}
-		{
-			id: "5E540F00EDE093D8"
-			linked_quest: "27FAD6A8FCFAB543"
-			shape: "hexagon"
-			x: -1.0d
-			y: 5.75d
-		}
-		{
-			id: "033ECFDA3CD105A5"
-			linked_quest: "2AC61192BCD459F2"
-			shape: "hexagon"
-			x: -1.0d
-			y: 8.25d
-		}
-		{
-			id: "70B67CDA44B463BE"
-			linked_quest: "3B639F4061B00F1A"
-			x: 6.75d
-			y: 3.25d
-		}
-		{
-			id: "72565F33DD274CB5"
-			linked_quest: "6169C04DF463502F"
-			shape: "gear"
-			size: 2.0d
-			x: -1.0d
-			y: 10.75d
-		}
-		{
 			id: "316BD105F19E454C"
 			linked_quest: "648B1E09AA648798"
 			x: 12.75d
-			y: -2.75d
-		}
-		{
-			id: "7FC84014DAAD0025"
-			linked_quest: "6D434F3B0E720A5A"
-			shape: "hexagon"
-			size: 1.25d
-			x: 10.5d
 			y: -2.75d
 		}
 	]
@@ -573,10 +515,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"3B639F4061B00F1A"
-				"5C4E189A3E401566"
-			]
+			dependencies: ["5C4E189A3E401566"]
 			description: [
 				"An &3MV Electrolyzer&r allows you to process recipes that require up to &bMV&r power, and can optionally overclock recipes requiring up to &8LV&r power."
 				""
@@ -600,10 +539,7 @@
 			y: 4.5d
 		}
 		{
-			dependencies: [
-				"5C4E189A3E401566"
-				"3B639F4061B00F1A"
-			]
+			dependencies: ["5C4E189A3E401566"]
 			description: [
 				"&2In GTm, higher-tier blends of dusts require higher-tier Mixers to mix. The MV Mixer is required for making Vanadium Steel and Stainless Steel."
 				""
@@ -626,10 +562,7 @@
 			y: 2.75d
 		}
 		{
-			dependencies: [
-				"3B639F4061B00F1A"
-				"5C4E189A3E401566"
-			]
+			dependencies: ["5C4E189A3E401566"]
 			description: [
 				"The &3Extruder&r is an alternative way to form shapes from metal. &aExtruder Shapes&r are used for telling an Extruder which shape to make."
 				""
@@ -792,7 +725,6 @@
 			y: 6.75d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
 			description: ["An advanced component used for the Circuit Assembler."]
 			id: "3E42B4AAA6D2A05B"
 			rewards: [{
@@ -889,7 +821,6 @@
 			y: 6.75d
 		}
 		{
-			dependencies: ["3B639F4061B00F1A"]
 			description: [
 				"All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."
 				""
@@ -994,7 +925,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["3B639F4061B00F1A"]
 			description: ["Now that you have some &6MV circuits&r, you can make a &6Factory Augment&r that lets you &2smelt multiple items at once&r with your furnaces!"]
 			id: "6DAA25CA26AE05E9"
 			optional: true
@@ -1210,7 +1140,6 @@
 		{
 			dependencies: [
 				"48E83C38B37DFEE6"
-				"6D434F3B0E720A5A"
 				"648B1E09AA648798"
 				"5357A16B5BF62C96"
 			]
@@ -1373,10 +1302,7 @@
 			y: -0.75d
 		}
 		{
-			dependencies: [
-				"5C4E189A3E401566"
-				"1510DC51CDC3F609"
-			]
+			dependencies: ["5C4E189A3E401566"]
 			description: [
 				"If you are distilling Ethanol, you now need an MV Distillery."
 				""

@@ -6,14 +6,8 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:lv_universal_circuit"
 	id: "62CAA10E8897A0FF"
-	order_index: 5
+	order_index: 1
 	quest_links: [
-		{
-			id: "5B0F1DA574E0A141"
-			linked_quest: "6ABF927014F8B79D"
-			x: 0.5d
-			y: 4.5d
-		}
 		{
 			id: "6EFDF0495132F8EC"
 			linked_quest: "715BC5C7DAC53B7B"
@@ -914,7 +908,6 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
 			description: [
 				"&9GregTech Power&r can be tricky to handle. Luckily, there are several tools you can use to tackle some of the problems."
 				""
@@ -1343,7 +1336,6 @@
 			y: 12.75d
 		}
 		{
-			dependencies: ["5B6811964444497F"]
 			description: ["&9Exoskeletons&r increase your movement speed, letting you get around your factory even quicker."]
 			icon: "gtexolegs:lv_exoskeleton_legs"
 			id: "6BA0B1B3AB853F9A"
@@ -1759,7 +1751,6 @@
 			y: -2.25d
 		}
 		{
-			dependencies: ["5B6811964444497F"]
 			description: [
 				"&6Machine Hulls&r, along with circuits, are used in nearly every &bGregTech&r machine."
 				""
@@ -2022,7 +2013,6 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
 			description: [
 				"A &6Programmed Circuit&r is an item used to configure machines. In essence, they tell a machine what to make if there's multiple things it could make from a certain input."
 				""
@@ -2677,7 +2667,6 @@
 			y: -12.75d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
 			description: [
 				"&6Machine Hulls&r, along with circuits, are used in nearly every &bGregTech&r machine."
 				""
@@ -2821,7 +2810,6 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["61CC4AD6FAE15248"]
 			description: [
 				"&3Centrifuges&r have a chance of creating additional materials when processing ore dusts. Sometimes it's the main dust, but often it's a different useful material that is otherwise unobtainable."
 				""
@@ -2921,7 +2909,6 @@
 			y: 15.25d
 		}
 		{
-			dependencies: ["5B6811964444497F"]
 			description: [
 				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
 				""

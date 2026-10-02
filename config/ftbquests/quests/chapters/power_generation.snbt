@@ -24,7 +24,7 @@
 			y: -4.25d
 		}
 	]
-	order_index: 4
+	order_index: 2
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -155,10 +155,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"6974AA409CC355E6"
-				"785C6332FC7A07A5"
-			]
+			dependencies: ["6974AA409CC355E6"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The Large Combustion Engine is much like an &5EV&r upgrade to an &6HV&r combustion Generator, but with a few differences."
@@ -261,10 +258,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"677D081CD7612FB0"
-				"605062720747B482"
-			]
+			dependencies: ["677D081CD7612FB0"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The Extreme Combustion Engine is a direct upgrade to the Large Combustion Engine."
@@ -363,10 +357,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"7E276DF48E9085A4"
-				"785C6332FC7A07A5"
-			]
+			dependencies: ["7E276DF48E9085A4"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The &6Large Gas Turbine&r is a big upgrade to &6Advanced Gas Turbine Generator II&rs, providing &e8x&r as much power for &e8x&r the fuel consumption."
@@ -603,7 +594,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["2D10F2E538486624"]
 			dependency_requirement: "one_completed"
 			description: [
 				"&3Large Plasma Turbines&r are a potent late game method of generating &aEU&r. However, they require some investment."
@@ -709,7 +699,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
 			description: [
 				"&6Gas Turbine Generators&r are another good &eEU&r generation choice when starting out, and scale better into the midgame than &9Steam&r-based power."
 				""
@@ -725,7 +714,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
 			description: [
 				"It's a little difficult to produce energy using combustion in &7LV&r, but if you have easy access to a nearby &9Oil&r spout it may be beneficial to you; &6Combustion Generators&r can use both &9Raw Oil&r and &9Light Oil&r for power."
 				""
@@ -866,7 +854,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["61301FBD825F8280"]
 			description: [
 				"The &3Naquadah Reactor&r is a structure used to generate considerable amounts of EU power from decaying &6Naquadah Fuel Rods&r. You will need a little bit of &6Omnium&r to make them."
 				""
@@ -958,11 +945,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"786AECA42F53B45A"
-				"4C0BCA64D5B409F2"
-				"0E9B96B17D140B99"
-			]
 			description: [
 				"When fueled, the &3Transdimensional Energy Singularity&r grants unlimited energy to all EU-based machines and energy hatches, removing their need to push or pull power."
 				""
@@ -1075,12 +1057,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"15607184B546F5EE"
-				"22E50A6923EBF5CB"
-				"4E9530E62A4B673B"
-				"425D1C34A82B054D"
-			]
+			dependencies: ["425D1C34A82B054D"]
 			description: [
 				"The &3Large Naquadah Reactor&r is an upgraded reactor that can generate immense amounts of EU energy from burning liquid &6Naquadah Fuels&r. These fuels are more complicated than the fuel rods, but will generate massive amounts of power in return."
 				""
@@ -1194,10 +1171,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"062B4DDD703338D1"
-				"113E9543ADB1666B"
-			]
 			description: [
 				"The &3Antimatter Collider&r is a large multiblock that can generate more energy than you will be able to transport."
 				""

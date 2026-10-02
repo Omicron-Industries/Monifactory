@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:hv_universal_circuit"
 	id: "39B513DAFF8249A7"
-	order_index: 7
+	order_index: 3
 	quest_links: [
 		{
 			id: "25268A98C673BBDE"
@@ -24,78 +24,6 @@
 			y: 6.5d
 		}
 		{
-			id: "1D8205BE97493DA8"
-			linked_quest: "1F101D4F758ACECB"
-			shape: "hexagon"
-			size: 2.0d
-			x: -6.75d
-			y: 4.0d
-		}
-		{
-			id: "095B07996EF4FCCF"
-			linked_quest: "7D3FAEA5E0071BDC"
-			shape: "hexagon"
-			x: -3.75d
-			y: 4.0d
-		}
-		{
-			id: "78B3988C652487F4"
-			linked_quest: "2FD1AE24CD8BEBEB"
-			shape: "hexagon"
-			x: -6.75d
-			y: 6.5d
-		}
-		{
-			id: "5C0A6679A759B924"
-			linked_quest: "7308924C9A481443"
-			shape: "hexagon"
-			size: 1.5d
-			x: -3.75d
-			y: 6.5d
-		}
-		{
-			id: "4E53C85BF1D03BB8"
-			linked_quest: "5759E8587624BEF1"
-			shape: "hexagon"
-			x: -1.75d
-			y: 6.5d
-		}
-		{
-			id: "6844D95401E27B3A"
-			linked_quest: "244F2CC5484A7B21"
-			shape: "hexagon"
-			size: 2.0d
-			x: 1.25d
-			y: 4.0d
-		}
-		{
-			id: "2AC2C9110FDD0D04"
-			linked_quest: "7E09D4E00BFA4970"
-			shape: "hexagon"
-			size: 2.0d
-			x: 1.25d
-			y: 6.5d
-		}
-		{
-			id: "1CC86021C7B35D80"
-			linked_quest: "7B1D349ADD9D1140"
-			x: 9.25d
-			y: 4.0d
-		}
-		{
-			id: "7E3F8641F38F97A4"
-			linked_quest: "15A43AB700CADF2D"
-			x: 9.25d
-			y: 5.5d
-		}
-		{
-			id: "75CC820F97210BF1"
-			linked_quest: "3000798ACA51BFDC"
-			shape: "hexagon"
-			x: 1.25d
-			y: 8.0d
-		}
-		{
 			id: "3494A1A9317B9F3B"
 			linked_quest: "5F688F22A3DB2ADD"
 			x: 14.25d
@@ -107,45 +35,9 @@
 			x: 27.25d
 			y: 3.25d
 		}
-		{
-			id: "44C91F8846785E1E"
-			linked_quest: "01CC71429CFCAE0B"
-			x: 28.0d
-			y: -5.25d
-		}
-		{
-			id: "0A3DC598AC6F99B1"
-			linked_quest: "6A76B3DCA599B9B5"
-			shape: "hexagon"
-			x: 27.5d
-			y: 9.0d
-		}
-		{
-			id: "7E04938A5111C9A1"
-			linked_quest: "1EA5F30C5ACADBA9"
-			shape: "hexagon"
-			size: 1.5d
-			x: 28.75d
-			y: 9.0d
-		}
-		{
-			id: "794ACF30270A3920"
-			linked_quest: "38B1588655AA9BDF"
-			shape: "hexagon"
-			x: 30.0d
-			y: 9.0d
-		}
-		{
-			id: "6A385521566ECD0E"
-			linked_quest: "062B4DDD703338D1"
-			shape: "hexagon"
-			x: 31.25d
-			y: 9.0d
-		}
 	]
 	quests: [
 		{
-			dependencies: ["6169C04DF463502F"]
 			description: [
 				"The &3Multi Smelter&r is an absolute smelting unit, and is most likely the best furnace &9and alloy smelter&r added by a mod."
 				""
@@ -288,10 +180,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"6169C04DF463502F"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["15E34DEC491FAB81"]
 			description: [
 				"With tier three circuits in hand, it's time to make a &3Distillation Tower&r, which gates petrochemistry and more advanced plastics like &6Epoxy&r."
 				""
@@ -537,10 +426,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"15E34DEC491FAB81"
-				"6169C04DF463502F"
-			]
+			dependencies: ["15E34DEC491FAB81"]
 			description: ["&2The next tier of Assembler. This one can make quite a few nice things - check the surrounding quests."]
 			id: "0C4E18B05F9E68DE"
 			rewards: [{
@@ -562,7 +448,6 @@
 		{
 			dependencies: [
 				"616555E46F314F04"
-				"244F2CC5484A7B21"
 				"0C4E18B05F9E68DE"
 			]
 			description: [
@@ -769,7 +654,6 @@
 			y: 7.75d
 		}
 		{
-			dependencies: ["6169C04DF463502F"]
 			description: [
 				"The &6Ender Fluid Link&r is a cover that you can place on the sides of machines."
 				""
@@ -1252,10 +1136,7 @@
 			y: 10.0d
 		}
 		{
-			dependencies: [
-				"56FB624B384FFAF5"
-				"3000798ACA51BFDC"
-			]
+			dependencies: ["56FB624B384FFAF5"]
 			description: [
 				"&9Ender Air&r, collected from a &3Gas Collector&r, can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Ender Air&r."
 				""
@@ -1540,7 +1421,6 @@
 			dependencies: [
 				"247F4985B9ACE568"
 				"2181102841205407"
-				"01CC71429CFCAE0B"
 			]
 			description: ["The &9Nasa Workbench&r is used to create rockets from various parts."]
 			id: "193B7038EAB6EFA3"
@@ -2020,10 +1900,7 @@
 			y: 2.75d
 		}
 		{
-			dependencies: [
-				"77582C534A994D7C"
-				"53EC3831D66769CA"
-			]
+			dependencies: ["77582C534A994D7C"]
 			description: [
 				"With access to &6Diamond Components&r, &3Auto Crafting Tables&r are now an option for automation of any size of crafting table - including 3x3."
 				""
@@ -2171,7 +2048,6 @@
 			y: 7.25d
 		}
 		{
-			dependencies: ["6169C04DF463502F"]
 			description: ["Some Microminer missions use a &6Gemstone Sensor&r to scout out gems instead of ores, as well as other &6rare materials&r."]
 			id: "2D0DF78F71760F00"
 			rewards: [{

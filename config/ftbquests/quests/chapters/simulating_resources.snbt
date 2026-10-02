@@ -5,41 +5,8 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
-	order_index: 2
-	quest_links: [
-		{
-			id: "6EE0A9137212A27C"
-			linked_quest: "51FD757E07E397A1"
-			shape: "hexagon"
-			size: 1.5d
-			x: -0.5d
-			y: -3.0d
-		}
-		{
-			id: "710EE32CD2237464"
-			linked_quest: "7A716485BBDA8629"
-			shape: "hexagon"
-			size: 1.5d
-			x: 1.5d
-			y: -3.0d
-		}
-		{
-			id: "7C96B978ECCC01E4"
-			linked_quest: "5A70898C99B828E3"
-			shape: "hexagon"
-			size: 1.75d
-			x: -0.5d
-			y: -5.0d
-		}
-		{
-			id: "58C105ED6ECB1E6D"
-			linked_quest: "161F61C28DBC5941"
-			shape: "hexagon"
-			size: 1.75d
-			x: 1.5d
-			y: -5.0d
-		}
-	]
+	order_index: 1
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [

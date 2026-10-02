@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:uhv_universal_circuit"
 	id: "02369231DC748367"
-	order_index: 13
+	order_index: 9
 	quest_links: [ ]
 	quests: [ ]
 	title: "UHV"

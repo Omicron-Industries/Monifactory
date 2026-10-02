@@ -441,10 +441,7 @@
 			y: 2.25d
 		}
 		{
-			dependencies: [
-				"417D97D9E3562F45"
-				"6169C04DF463502F"
-			]
+			dependencies: ["417D97D9E3562F45"]
 			description: [
 				"Encode them in a &aPattern Encoding Terminal&r."
 				""
@@ -473,10 +470,7 @@
 			y: 4.25d
 		}
 		{
-			dependencies: [
-				"6F32A8739D8E792A"
-				"0874A0191325CFDB"
-			]
+			dependencies: ["6F32A8739D8E792A"]
 			description: [
 				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5Monifactory&r is to offer an alternate way to automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
 				""
@@ -702,7 +696,6 @@
 			dependencies: [
 				"60BC08DE447E5007"
 				"1175ED9EF0AB82F6"
-				"00203B07F8A930DA"
 			]
 			description: [
 				"Firstly, you will need a &3Matter Condenser&r. Stick a &664k ME Storage Component&r in, change the mode to 'Singularity', and stuff lots of items (or fluids) in, &9done easily with an infinity cell&r."
@@ -764,10 +757,7 @@
 			y: -0.75d
 		}
 		{
-			dependencies: [
-				"41B4EA53D6D7AE37"
-				"11154356854B64DA"
-			]
+			dependencies: ["41B4EA53D6D7AE37"]
 			description: [
 				"Accessing &bApplied Energistics 2&r wirelessly saves a huge amount of time, and is highly recommended to set up."
 				""
@@ -919,10 +909,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"74469710D910C19D"
-				"53EC3831D66769CA"
-			]
+			dependencies: ["74469710D910C19D"]
 			description: [
 				"Now that you have &6HSS-G&r, you can begin automating &bExtended Crafting&r recipes in an easier way than before. "
 				""
@@ -1040,10 +1027,7 @@
 			y: 4.25d
 		}
 		{
-			dependencies: [
-				"15AE607E2EDD0369"
-				"6169C04DF463502F"
-			]
+			dependencies: ["15AE607E2EDD0369"]
 			description: ["Placing these in one of your &6ME Drives&r will provide your ME network with an &ainfinite&r amount of water or cobblestone. Use &6Interfaces&r or &6Export Buses&r to provide said substances to wherever you need it."]
 			id: "26C9F1514FD08C81"
 			rewards: [{
@@ -1513,10 +1497,7 @@
 			y: -2.25d
 		}
 		{
-			dependencies: [
-				"295E3D32083676E6"
-				"6169C04DF463502F"
-			]
+			dependencies: ["295E3D32083676E6"]
 			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Accumulation Processor."]
 			id: "4FAFF184242F5EB8"
 			rewards: [{
@@ -1624,10 +1605,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"2A6E9E7C80754936"
-				"4FF4697A8AF10731"
-			]
+			dependencies: ["4FF4697A8AF10731"]
 			description: [
 				"&6ME Pattern Buffers&r are unlocked after you obtain &6Europium&r. These blocks work quite similarly to &6Pattern Providers&r, with some notable differences. They are used in a multiblocks' structure as a bus/hatch. The items/fluids provided from patterns in the buffer are stored in an infinitely large internal storage. Each pattern has its own buffer, so no two patterns can mix ingredients. Additionally, catalyst items/fluids can be shared across all patterns in the buffer.\n&9Note that Pattern Buffers don't support blocking mode. While this isn't usually an issue, you might want to use regular &6Pattern Providers&9 if you need some form of blocking mode.&r"
 				""
@@ -1645,10 +1623,7 @@
 			y: -2.75d
 		}
 		{
-			dependencies: [
-				"7C0A37EEA3C63B16"
-				"605062720747B482"
-			]
+			dependencies: ["7C0A37EEA3C63B16"]
 			description: [
 				"These blocks function similarly to &6ME Input Buses&r/&6Hatches&r. Rather than specifying an amount to keep, the bus/hatch will make all items/fluid of that type in the network accessible to the multiblock. This does not actually pull the items from the network, so they are still available for use everywhere else in on the network."
 				""
@@ -1690,11 +1665,7 @@
 			y: -2.75d
 		}
 		{
-			dependencies: [
-				"521977C7165229F1"
-				"6E27B9938B280291"
-				"6DAB13A7BDECE94E"
-			]
+			dependencies: ["6E27B9938B280291"]
 			description: [
 				"&6ME Requesters&r allow you to select items that will be automatically requested when their stock drops below a specified level. They also allow you to set how large a batch will be requested."
 				""

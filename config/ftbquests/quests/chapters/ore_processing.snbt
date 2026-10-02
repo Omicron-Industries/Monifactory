@@ -5,7 +5,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "minecraft:raw_iron"
 	id: "4E4492819CF1AE9A"
-	order_index: 6
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
