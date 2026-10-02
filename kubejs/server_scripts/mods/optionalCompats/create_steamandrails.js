@@ -123,7 +123,7 @@ if (Platform.isLoaded("railways")) {
                 )
                 .itemOutputs(`${outputCount * 2}x ${outputItem}`)
                 .duration(5)
-                .EUt(16); // Low Voltage
+                .EUt(GTValues.VHA[GTValues.LV]); // Low Voltage
         };
 
         /**
@@ -150,7 +150,7 @@ if (Platform.isLoaded("railways")) {
                 )
                 .itemOutputs(`${outputCount * 2}x ${outputItem}`)
                 .duration(5)
-                .EUt(16); // Low Voltage
+                .EUt(GTValues.VHA[GTValues.LV]); // Low Voltage
         };
 
         /**
@@ -174,7 +174,7 @@ if (Platform.isLoaded("railways")) {
                 .itemOutputs(`${outputCount}x ${outputItem}`)
                 .chancedOutput(`${sleeperOutputItem}`, 5000, 0)
                 .duration(5)
-                .EUt(16); // Low Voltage
+                .EUt(GTValues.VHA[GTValues.LV]); // Low Voltage
         };
 
         /**

@@ -33,11 +33,11 @@ ServerEvents.recipes(event => {
             .addMaterialInfo(true)
             .stationResearch(b => b
                 .researchStack("gtceu:simulation_supercomputer")
-                .EUt(1966080)
+                .EUt(GTValues.VA[GTValues.UHV])
                 .CWUt(108, 512000)
             )
             .duration(1200)
-            .EUt(1966080)
+            .EUt(GTValues.VA[GTValues.UHV])
         // //// Computer Recipes //////
 
         supercomp("thermal/thermal_elemental", "overworld", 256)

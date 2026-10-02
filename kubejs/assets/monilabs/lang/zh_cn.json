@@ -97,7 +97,7 @@
     "monilabs.prismatic.color_name.orange": "§6橙色§r",
     "monilabs.prismatic.color_name.pink": "§c粉色§r",
     "monilabs.prismatic.color_name.red": "§4红色§r",
-    "monilabs.prismatic.color_name.teal": "§t蓝绿色§r",
+    "monilabs.prismatic.color_name.teal": "§3蓝绿色§r",
     "monilabs.prismatic.color_name.yellow": "§e黄色§r",
     "monilabs.prismatic.current_color": "当前颜色: %s",
     "monilabs.recipe.accepted_colors": "接受的初始颜色： ",

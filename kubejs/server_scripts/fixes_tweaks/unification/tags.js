@@ -89,6 +89,16 @@ ServerEvents.tags("item", event => {
     event.add("mae2:p2p_attunements/pattern_p2p_tunnel", "expatternprovider:ex_pattern_provider");
     event.add("mae2:p2p_attunements/pattern_p2p_tunnel", "expatternprovider:ex_pattern_provider_part");
 
+    // ULV and MAX components
+    const covers = ["electric_pump", "conveyor_module", "fluid_regulator", "robot_arm", "electric_motor", "electric_piston"]
+    covers.forEach(type => {
+        event.add(`gtceu:${type}s`, `monilabs:max_${type}`)
+        event.add(`gtceu:${type}s`, `ulvcovm:ulv_${type}`)
+    })
+    event.add("gtceu:emitters", "monilabs:max_emitter")
+    event.add("gtceu:sensors", "monilabs:max_sensor")
+    event.add("gtceu:field_generators", "monilabs:field_generator")
+
     unifyChisel(event);
 })
 

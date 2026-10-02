@@ -47,12 +47,12 @@ if (Platform.isLoaded("create")) {
             .itemInputs("#forge:nuggets/iron", "minecraft:andesite")
             .itemOutputs("create:andesite_alloy")
             .duration(100)
-            .EUt(7)
+            .EUt(GTValues.VA[GTValues.ULV])
         event.recipes.gtceu.mixer("kubejs:andesite_alloy_from_zinc")
             .itemInputs("#forge:nuggets/zinc", "minecraft:andesite")
             .itemOutputs("create:andesite_alloy")
             .duration(100)
-            .EUt(7)
+            .EUt(GTValues.VA[GTValues.ULV])
 
         // Pressing and compacting recipes
         event.recipes.gtceu.forge_hammer("kubejs:dirt_path")
@@ -66,7 +66,7 @@ if (Platform.isLoaded("create")) {
             .notConsumable("gtceu:ingot_casting_mold")
             .itemOutputs("create:bar_of_chocolate")
             .duration(20)
-            .EUt(7)
+            .EUt(GTValues.VA[GTValues.ULV])
 
         let honeyFluid = new JSONObject()
         honeyFluid.add("amount", 1000)
@@ -76,13 +76,13 @@ if (Platform.isLoaded("create")) {
             .notConsumable("gtceu:block_casting_mold")
             .itemOutputs("minecraft:honey_block")
             .duration(5)
-            .EUt(7)
+            .EUt(GTValues.VA[GTValues.ULV])
 
         event.recipes.gtceu.mixer("kubejs:blaze_cake_base")
             .itemInputs("minecraft:egg", "minecraft:sugar", "gtceu:netherrack_dust")
             .itemOutputs("create:blaze_cake_base")
             .duration(200)
-            .EUt(7)
+            .EUt(GTValues.VA[GTValues.ULV])
 
         let milkFluid = new JSONObject()
         milkFluid.add("amount", 250)
@@ -93,14 +93,14 @@ if (Platform.isLoaded("create")) {
             .inputFluids(FluidIngredientJS.of(milkFluid))
             .outputFluids(Fluid.of("create:chocolate", 250))
             .duration(200)
-            .EUt(7)
+            .EUt(GTValues.VA[GTValues.ULV])
 
         event.recipes.gtceu.mixer("kubejs:tea")
             .itemInputs("#minecraft:leaves")
             .inputFluids(Fluid.of("minecraft:water", 250), FluidIngredientJS.of(milkFluid))
             .outputFluids(Fluid.of("create:tea", 500))
             .duration(200)
-            .EUt(7)
+            .EUt(GTValues.VA[GTValues.ULV])
 
         event.recipes.gtceu.extractor("kubejs:extract_bar_of_chocolate")
             .itemInputs("create:bar_of_chocolate")
@@ -119,7 +119,7 @@ if (Platform.isLoaded("create")) {
             .itemInputs("#forge:plates/gold", "5x create:cogwheel", "5x create:large_cogwheel", "5x minecraft:iron_nugget")
             .itemOutputs("create:precision_mechanism")
             .duration(300)
-            .EUt(30)
+            .EUt(GTValues.VA[GTValues.LV])
             .circuit(5)
         // That was actually awesome
 
@@ -128,30 +128,30 @@ if (Platform.isLoaded("create")) {
             .itemInputs("create:precision_mechanism", "create:brass_hand", "6x minecraft:stick", "#forge:ingots/brass")
             .itemOutputs("create:extendo_grip")
             .duration(600)
-            .EUt(120)
+            .EUt(GTValues.VA[GTValues.MV])
         event.recipes.gtceu.assembler("kubejs:potato_cannon")
             .itemInputs("create:precision_mechanism", "create:andesite_alloy", "3x create:fluid_pipe", "2x #forge:ingots/copper")
             .itemOutputs("create:potato_cannon")
             .duration(600)
-            .EUt(120)
+            .EUt(GTValues.VA[GTValues.MV])
         event.recipes.gtceu.assembler("kubejs:wand_of_symmetry")
             .itemInputs("create:precision_mechanism", "minecraft:obsidian", "3x minecraft:glass", "#forge:ingots/brass", "minecraft:ender_pearl")
             .itemOutputs("create:wand_of_symmetry")
             .duration(600)
-            .EUt(120)
+            .EUt(GTValues.VA[GTValues.MV])
 
         event.recipes.gtceu.autoclave("kubejs:rose_quartz")
             .itemInputs("minecraft:quartz")
             .itemOutputs("create:rose_quartz")
             .inputFluids("gtceu:redstone 1152")
             .duration(200)
-            .EUt(16)
+            .EUt(GTValues.VHA[GTValues.LV])
             .circuit(6)
         event.recipes.gtceu.sifter("kubejs:polished_rose_quartz")
             .itemInputs("create:rose_quartz")
             .itemOutputs("create:polished_rose_quartz")
             .duration(200)
-            .EUt(16)
+            .EUt(GTValues.VHA[GTValues.LV])
 
         // deploying recipes
         let assembleCasing = function (input, casingName, logInput, casingModId) {
@@ -162,7 +162,7 @@ if (Platform.isLoaded("create")) {
                 .itemInputs(input, logInput)
                 .itemOutputs(`${casingModId}:${casingName}`)
                 .duration(100)
-                .EUt(16)
+                .EUt(GTValues.VHA[GTValues.LV])
         }
         assembleCasing("create:andesite_alloy", "andesite_casing")
         assembleCasing("#forge:ingots/brass", "brass_casing")
@@ -187,7 +187,7 @@ if (Platform.isLoaded("create")) {
                 .itemInputs("3x #create:sleepers", "2x minecraft:iron_nugget")
                 .itemOutputs("2x create:track")
                 .duration(5)
-                .EUt(16)
+                .EUt(GTValues.VHA[GTValues.LV])
         } else { console.log("Steam and Rails is present, letting its compat script handle the track recipes.") }
 
         // stone variant rock crusher recipes
@@ -224,14 +224,14 @@ if (Platform.isLoaded("create")) {
                 .itemInputs(`${owStone[i][0]}:${owStone[i][1]}`)
                 .itemOutputs(`${owStone[i + 1][0]}:${owStone[i + 1][1]}`)
                 .duration(20)
-                .EUt(32)
+                .EUt(GTValues.VA[GTValues.LV])
         }
         for (let i = 0; i < neStone.length - 1; ++i) {
             event.recipes.gtceu.atomic_reconstruction(`kubejs:stone_reconstruction/${neStone[i][1]}`)
                 .itemInputs(`${neStone[i][0]}:${neStone[i][1]}`)
                 .itemOutputs(`${neStone[i + 1][0]}:${neStone[i + 1][1]}`)
                 .duration(20)
-                .EUt(32)
+                .EUt(GTValues.VA[GTValues.LV])
         }
         // remove unused recipe types
         event.remove({ type: "create:pressing" })
@@ -282,7 +282,7 @@ if (Platform.isLoaded("create")) {
             .inputFluids("minecraft:water 100")
             .itemOutputs("create:pulp")
             .duration(100)
-            .EUt(16)
+            .EUt(GTValues.VHA[GTValues.LV])
             .circuit(1)
 
         event.recipes.gtceu.compressor("kubejs:pulp_plant")

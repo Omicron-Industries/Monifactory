@@ -13,7 +13,7 @@ if (Platform.isLoaded("fluxnetworks")) {
             .inputFluids("gtceu:redstone 144")
             .itemOutputs("fluxnetworks:flux_dust")
             .duration(40)
-            .EUt(16)
+            .EUt(GTValues.VHA[GTValues.LV])
 
         // Flux Block
         event.shaped("fluxnetworks:flux_block", [
@@ -30,7 +30,7 @@ if (Platform.isLoaded("fluxnetworks")) {
         event.remove({ id: "fluxnetworks:fluxcore" })
         event.recipes.gtceu.assembler("fluxnetworks:fluxcore")
             .itemOutputs("2x fluxnetworks:flux_core")
-            .itemInputs("1x minecraft:ender_eye", "4x enderio:reinforced_obsidian_block", "4x fluxnetworks:flux_dust", "1x gtceu:luv_sensor", "1x gtceu:luv_emitter", "4x laserio:energy_overclocker_card_tier_8")
+            .itemInputs("1x minecraft:ender_eye", "4x enderio:reinforced_obsidian_block", "4x fluxnetworks:flux_dust", "1x gtceu:luv_sensor", "1x gtceu:luv_emitter", "4x gtceu:cryolobus_frame")
             .EUt(GTValues.VA[GTValues.LuV])
             .duration(200)
 

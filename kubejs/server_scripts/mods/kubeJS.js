@@ -3,12 +3,6 @@
  */
 ServerEvents.recipes(event => {
     // Stablized
-    event.recipes.gtceu.fusion_reactor("berkelium_fusion_curium")
-        .inputFluids("gtceu:curium 16", "gtceu:hydrogen 125")
-        .outputFluids("gtceu:berkelium 16")
-        .duration(50)
-        .EUt(GTValues.VHA[GTValues.LuV])
-        .fusionStartEU(360000000)
     event.recipes.gtceu.fusion_reactor("californium_fusion_curium")
         .inputFluids("gtceu:curium 16", "gtceu:helium 125")
         .outputFluids("gtceu:californium 16")
@@ -16,7 +10,6 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VHA[GTValues.ZPM])
         .fusionStartEU(360000000)
 
-    solidify("stabilized_berkelium", Fluid.of("gtceu:berkelium", 144), "8x kubejs:stabilized_berkelium");
     solidify("stabilized_neptunium", Fluid.of("gtceu:neptunium", 144), "2x kubejs:stabilized_neptunium");
     solidify("stabilized_plutonium", Fluid.of("gtceu:plutonium", 144), "2x kubejs:stabilized_plutonium");
     solidify("stabilized_plutonium_241", Fluid.of("gtceu:plutonium_241", 144), "4x kubejs:stabilized_plutonium");
@@ -48,7 +41,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(output)
             .notConsumable("gtceu:ball_casting_mold")
             .duration(500)
-            .EUt(16)
+            .EUt(GTValues.VHA[GTValues.LV])
     }
 
     // Thermal Fluids

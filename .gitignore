@@ -60,9 +60,6 @@ config/defaultworldtype/world-presets.txt
 /config/functionalstorage/*
 !/config/functionalstorage-common.toml
 
-# Hammer Lib
-!/config/hammerlib
-
 # Iron Jetpacks
 !/config/ironjetpacks
 
@@ -84,9 +81,6 @@ config/defaultworldtype/world-presets.txt
 !/config/NuclearCraft/common.toml
 !/config/NuclearCraft/fission.toml
 !/config/NuclearCraft/materials.toml
-
-# SolarFlux
-!/config/solarflux
 
 # WaterMedia
 !/config/watermedia

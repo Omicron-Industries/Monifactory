@@ -1,0 +1,46 @@
+name: Gametest Server
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - 'config/**'
+      - 'config-overrides/**'
+      - 'defaultconfigs/**'
+      - 'kubejs/**'
+      - 'manifest.json'
+      - 'build/**'
+      - '.github/workflows/pr-check-gametests.yml'
+
+jobs:
+  gametest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        pack-mode: [normal, hard, expert]
+    name: ${{ matrix.pack-mode }} mode
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 23
+          cache: 'npm'
+          cache-dependency-path: build/package-lock.json
+      - uses: actions/cache@v6
+        with:
+          path: |
+            dist/mod_cache
+          key: ${{ runner.os }}-mods-${{ hashFiles('manifest.json') }}
+          restore-keys: |
+            ${{ runner.os }}-mods-
+      - uses: actions/setup-java@v6
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Run game test server
+        run: |
+          cd build
+          npm ci
+          node index.ts switch-pack-mode --pack-mode=${{ matrix.pack-mode }}
+          node index.ts run-gametest-server
+        shell: bash

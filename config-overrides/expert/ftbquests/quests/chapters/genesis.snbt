@@ -20,20 +20,26 @@
 			id: "6DC914192E886D47"
 			linked_quest: "77670BF761084AA2"
 			shape: "hexagon"
-			x: 1.5d
-			y: 13.75d
+			x: -1.5d
+			y: 13.25d
 		}
 		{
 			id: "070539F2FEF35EF9"
 			linked_quest: "712023557B5B1812"
 			x: -4.0d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
 			id: "412B0192D3658F7C"
 			linked_quest: "2280472741683581"
-			x: 4.0d
-			y: 15.5d
+			x: 2.75d
+			y: 14.5d
+		}
+		{
+			id: "4373D49C9462A56A"
+			linked_quest: "2C89DAD26E08E382"
+			x: 1.5d
+			y: 7.25d
 		}
 	]
 	quests: [
@@ -651,6 +657,7 @@
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
 					GT.Tool: {
+						DefaultEnchantments: [ ]
 						HarvestLevel: 2
 						MaxDamage: 383
 						ToolSpeed: 6.0f
@@ -1046,6 +1053,7 @@
 				""
 				"Also allows you to make the &6Belt Pouch&r, to upgrade your &eTool Belt&r."
 			]
+			icon: "gtceu:primitive_blast_furnace"
 			id: "17312BF0197B87A8"
 			tasks: [
 				{
@@ -1254,7 +1262,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 9.75d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -1281,7 +1289,7 @@
 			}]
 			title: "Rubber Sheets"
 			x: 4.0d
-			y: 12.25d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4B338515E84FC51A"]
@@ -1529,8 +1537,8 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 2.75d
-			y: 11.0d
+			x: 3.0d
+			y: 11.75d
 		}
 		{
 			dependencies: ["34CA940B412284F2"]
@@ -1605,7 +1613,7 @@
 			}]
 			title: "Energy Converters"
 			x: 0.0d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
 			dependencies: [
@@ -1649,10 +1657,10 @@
 			}]
 			title: "Battery Buffers"
 			x: 1.5d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
-			dependencies: ["2FA9404468E4BBD9"]
+			dependencies: ["12B95158E4C792DB"]
 			description: [
 				"&6Batteries&r are &bGregTech &rpower storage for &aEU&r energy."
 				""
@@ -1749,7 +1757,7 @@
 			}]
 			title: "&9Charging Items"
 			x: -1.5d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
 			dependencies: ["06E9B9DDDB245F38"]
@@ -1796,7 +1804,7 @@
 			]
 			title: "&9Flux Capacitors"
 			x: -2.75d
-			y: 15.5d
+			y: 15.75d
 		}
 		{
 			dependencies: ["297B523B6C503957"]
@@ -1920,7 +1928,7 @@
 			}]
 			title: "JourneyMap and Registering Homes"
 			x: -10.5d
-			y: 8.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2015,7 +2023,7 @@
 			}]
 			title: "Multiblock Machine Previews"
 			x: -10.5d
-			y: 10.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -2139,7 +2147,7 @@
 			}]
 			title: "Movin' Around"
 			x: -9.0d
-			y: 8.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]

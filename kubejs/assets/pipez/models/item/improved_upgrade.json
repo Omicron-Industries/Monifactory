@@ -1,0 +1,7 @@
+{
+    "parent":"item/generated",
+    "textures": {
+      "layer0":"pipez:item/improved_upgrade",
+      "layer1":"pipez:item/improved_upgrade_overlay"
+    }
+}

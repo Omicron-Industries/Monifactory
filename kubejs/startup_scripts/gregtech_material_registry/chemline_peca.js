@@ -40,19 +40,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .formula("C3H3NO2")
         .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
-    event.create("ethyl_cyanoacetate")
-        .liquid()
-        .color(0x488176)
-        .components("1x nitrogen", "5x carbon", "7x hydrogen", "2x oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .formula("C5H7NO2")
-
-    event.create("uncracked_ethyl_cyanoacrylate")
-        .liquid()
-        .color(0x616863)
-        .components("1x nitrogen", "6x carbon", "7x hydrogen", "2x oxygen")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
     event.create("ethyl_cyanoacrylate")
         .liquid()
         .color(0x516863)

@@ -20,7 +20,7 @@
 			id: "6DC914192E886D47"
 			linked_quest: "77670BF761084AA2"
 			shape: "hexagon"
-			x: -1.75d
+			x: -2.0d
 			y: 12.0d
 		}
 		{
@@ -34,14 +34,20 @@
 			id: "4A1F5C2E65873DDB"
 			linked_quest: "2280472741683581"
 			shape: "hexagon"
-			x: 4.5d
-			y: 15.5d
+			x: 4.0d
+			y: 14.75d
 		}
 		{
 			id: "1D806F3BD32F739C"
 			linked_quest: "34876F54406B6A04"
 			x: 0.75d
 			y: 15.5d
+		}
+		{
+			id: "4373D49C9462A56A"
+			linked_quest: "2C89DAD26E08E382"
+			x: 1.5d
+			y: 7.25d
 		}
 	]
 	quests: [
@@ -694,6 +700,7 @@
 					DisallowContainerItem: 0b
 					GT.Behaviours: { }
 					GT.Tool: {
+						DefaultEnchantments: [ ]
 						HarvestLevel: 2
 						MaxDamage: 383
 						ToolSpeed: 6.0f
@@ -1061,6 +1068,7 @@
 				""
 				"Also allows you to make the &6Belt Pouch&r, to upgrade your &eTool Belt&r."
 			]
+			icon: "gtceu:primitive_blast_furnace"
 			id: "17312BF0197B87A8"
 			tasks: [
 				{
@@ -1271,7 +1279,7 @@
 				item: "telepastries:nether_cake"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: 10.25d
 		}
 		{
@@ -1547,7 +1555,7 @@
 				item: "minecraft:glass"
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.0d
 			y: 13.75d
 		}
 		{
@@ -1657,45 +1665,12 @@
 				""
 				"Extraction speed is increased and Redstone control, filtering, and routing options are unlocked with &6Pipe Upgrades&r."
 			]
-			icon: "laserio:energy_overclocker_card_tier_1"
 			id: "08948A23B3A17923"
-			rewards: [
-				{
-					id: "188CE9F6FC9651C5"
-					item: "kubejs:moni_nickel"
-					type: "item"
-				}
-				{
-					id: "576F8362A4A48428"
-					item: "laserio:laser_wrench"
-					type: "item"
-				}
-				{
-					id: "4687EABAFD3E5842"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 15
-							}
-						}
-						id: "laserio:card_holder"
-					}
-					type: "item"
-				}
-				{
-					id: "788E688147A8B83B"
-					item: {
-						Count: 1
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "laserio:laseriobook"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "188CE9F6FC9651C5"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				count: 6L
@@ -1766,6 +1741,7 @@
 			dependencies: [
 				"297B523B6C503957"
 				"34876F54406B6A04"
+				"077AA27F26B7831F"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1808,7 +1784,7 @@
 			y: 15.5d
 		}
 		{
-			dependencies: ["2FA9404468E4BBD9"]
+			dependencies: ["12B95158E4C792DB"]
 			description: [
 				"&6Batteries&r are &bGregTech &rpower storage for &aEU&r energy."
 				""

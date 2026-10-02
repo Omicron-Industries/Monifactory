@@ -11,6 +11,15 @@ const zManifestFile = z.object({
 export type ManifestFileEntry = z.infer<typeof zManifestFile>
 
 const zManifest = z.object({
+    minecraft: z.object({
+        version: z.string().nonempty(),
+        modLoaders: z.tuple([
+            z.strictObject({
+                id: z.string().startsWith("forge-").transform(s => s.slice("forge-".length)),
+                primary: z.literal(true),
+            })
+        ]).transform(([forge]) => forge),
+    }),
     version: z.string().nonempty(),
     files: zManifestFile.array()
 })

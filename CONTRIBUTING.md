@@ -226,8 +226,6 @@ It's easy to forget, but mod updates can break as many things as they fix - don'
 PERFORM THOROUGH CHECKS BEFORE UPDATING:
 | Mod | Problems that result from updating |
 | ------------- | ------------- |
-| HammerLib | Causes datapack errors when loading into existing worlds |
-| Solar Flux Reborn | Depends on an updated HammerLib |
 
 # KubeJS Systems #
 For assisting in pack development, several systems have been implemented in KubeJS to perform repetitive tasks en masse more easily.
