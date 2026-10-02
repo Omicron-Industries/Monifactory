@@ -450,9 +450,27 @@
 					id: "4AA4FFC8D6999D40"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "itemfilters:and"
 						tag: {
-							value: "moni:rotor_holder"
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "moni:rotor_holder"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											id: "gtceu:hv_rotor_holder"
+										}]
+									}
+								}
+							]
 						}
 					}
 					optional_task: true
