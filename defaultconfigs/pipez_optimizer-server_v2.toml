@@ -1,0 +1,89 @@
+
+[General]
+	#Enable custom extraction frequency for Item Pipes (1-200 ticks).
+	enableItemCustomFrequency = false
+	#Enable custom extraction frequency for Fluid Pipes (1-200 ticks).
+	enableFluidCustomFrequency = false
+	#Enable custom extraction frequency for Energy Pipes (1-200 ticks).
+	enableEnergyCustomFrequency = false
+	#Enable custom extraction frequency for Gas Pipes (1-200 ticks).
+	enableGasCustomFrequency = false
+	#Remember the last selected transfer type tab for each pipe connection and restore it when reopening the pipe GUI. [true / false]
+	#This only stores data in the client config folder, never in the world save.
+	enableRememberLastTab = true
+
+[Optimization]
+	#Show the Smart Sleep toggle in the pipe GUI. [true / false]
+	#When disabled, the toggle disappears from the GUI and smart sleep is always ON for every connection.
+	#Note: if a pipe type's max sleep time is set to 0, that type never sleeps regardless of this setting.
+	enableSmartSleepToggle = false
+	#Max sleep ticks for Item Pipes when empty/full. 0 = disable sleep for this pipe type.
+	#Range: 0 ~ 1200
+	itemMaxSleep = 40
+	#Max sleep ticks for Fluid Pipes when empty/full. 0 = disable sleep for this pipe type.
+	#Range: 0 ~ 1200
+	fluidMaxSleep = 40
+	#Max sleep ticks for Energy Pipes when empty/full. 0 = disable sleep. Keep low to prevent power loss.
+	#Range: 0 ~ 1200
+	energyMaxSleep = 5
+	#Max sleep ticks for Gas Pipes when empty/full. 0 = disable sleep for this pipe type.
+	#Range: 0 ~ 1200
+	gasMaxSleep = 40
+
+[Upgrades]
+
+	[Upgrades.Item]
+		#Transfer rate for ATM Upgrade
+		#Range: > 1
+		itemRateAtm = 4096
+		#Transfer rate for Vibranium Upgrade
+		#Range: > 1
+		itemRateVibranium = 65536
+		#Transfer rate for Unobtainium Upgrade
+		#Range: > 1
+		itemRateUnobtainium = 1048576
+		#Transfer rate for Stellar Upgrade
+		#Range: > 1
+		itemRateStellar = 16777216
+
+	[Upgrades.Fluid]
+		#Transfer rate for ATM Upgrade
+		#Range: > 1
+		fluidRateAtm = 1000000
+		#Transfer rate for Vibranium Upgrade
+		#Range: > 1
+		fluidRateVibranium = 16000000
+		#Transfer rate for Unobtainium Upgrade
+		#Range: > 1
+		fluidRateUnobtainium = 256000000
+		#Transfer rate for Stellar Upgrade
+		#Range: > 1
+		fluidRateStellar = 1000000000
+
+	[Upgrades.Energy]
+		#Transfer rate for ATM Upgrade
+		#Range: > 1
+		energyRateAtm = 10000000
+		#Transfer rate for Vibranium Upgrade
+		#Range: > 1
+		energyRateVibranium = 100000000
+		#Transfer rate for Unobtainium Upgrade
+		#Range: > 1
+		energyRateUnobtainium = 500000000
+		#Transfer rate for Stellar Upgrade
+		#Range: > 1
+		energyRateStellar = 1500000000
+
+	[Upgrades.Gas]
+		#Transfer rate for ATM Upgrade
+		#Range: > 1
+		gasRateAtm = 4000000
+		#Transfer rate for Vibranium Upgrade
+		#Range: > 1
+		gasRateVibranium = 64000000
+		#Transfer rate for Unobtainium Upgrade
+		#Range: > 1
+		gasRateUnobtainium = 512000000
+		#Transfer rate for Stellar Upgrade
+		#Range: > 1
+		gasRateStellar = 1500000000
