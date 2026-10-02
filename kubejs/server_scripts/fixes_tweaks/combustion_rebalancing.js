@@ -6,19 +6,22 @@ ServerEvents.recipes(event => {
     // For a reference point, Gasoline is 50 ticks per mB or 1600 EU/mB.
     // Similarly, High Octane Gasoline is 100 ticks per mB or 3200 EU/mB.
 
-    event.recipes.gtceu.combustion_generator("naphtha")
-        .inputFluids("gtceu:naphtha 1")
-        .duration(8)    // 20% less than default GT
-        .EUt(-GTValues.V[GTValues.LV])
+    event.remove({ id: "gtceu:combustion_generator/sulfuric_light_fuel" })
+    event.remove({ id: "gtceu:combustion_generator/light_fuel" })
+    event.remove({ id: "gtceu:combustion_generator/naphtha" })
+    event.remove({ id: "gtceu:gas_turbine/sulfuric_naphtha" })
+    event.remove({ id: "gtceu:gas_turbine/sulfuric_gas" })
+    event.remove({ id: "gtceu:gas_turbine/refinery_gas" })
+    event.remove({ id: "gtceu:gas_turbine/natural_gas" })
+
+    event.recipes.gtceu.mixer("diesel")
+        .inputFluids("gtceu:light_fuel 5000", "gtceu:heavy_fuel 1000")
+        .duration(30)
+        .EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.combustion_generator("biodiesel")
         .inputFluids("gtceu:bio_diesel 1")
         .duration(15)    // 87.5% more than default GT
-        .EUt(-GTValues.V[GTValues.LV])
-
-    event.recipes.gtceu.combustion_generator("diesel")
-        .inputFluids("gtceu:diesel 1")
-        .duration(20)    // 33% more than default GT
         .EUt(-GTValues.V[GTValues.LV])
 
     event.recipes.gtceu.combustion_generator("cetane_diesel")
