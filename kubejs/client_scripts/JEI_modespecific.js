@@ -43,3 +43,10 @@ JEIEvents.hideItems(event => {
         event.hide(/^gtceu:[A-Za-z0-9]+_[A-Za-z0-9]+_energy_converter$/)
     }
 })
+
+JEIEvents.removeCategories(event => {
+    if (!doHNN) {
+        event.remove("hostilenetworks:loot_fabricator")
+        event.remove("hostilenetworks:sim_chamber")
+    }
+})
