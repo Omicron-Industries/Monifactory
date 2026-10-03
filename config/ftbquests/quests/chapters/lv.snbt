@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:lv_universal_circuit"
 	id: "62CAA10E8897A0FF"
-	order_index: 2
+	order_index: 1
 	quest_links: [
 		{
 			id: "6EFDF0495132F8EC"
@@ -1996,7 +1996,7 @@
 			y: -7.5d
 		}
 		{
-			dependencies: ["4A5CC6210FCEC075"]
+			dependencies: ["1A30472430354F1E"]
 			description: [
 				"A &6Programmed Circuit&r is an item used to configure machines. In essence, they tell a machine what to make if there's multiple things it could make from a certain input."
 				""
@@ -2651,7 +2651,7 @@
 			y: -12.75d
 		}
 		{
-			dependencies: ["4A5CC6210FCEC075"]
+			dependencies: ["1A30472430354F1E"]
 			description: [
 				"&6Machine Hulls&r, along with circuits, are used in nearly every &bGregTech&r machine."
 				""
@@ -2919,7 +2919,6 @@
 			y: 20.5d
 		}
 		{
-			dependencies: ["4A5CC6210FCEC075"]
 			description: [
 				"&n&9Monifactory&r&r shares an official Discord server with the other projects under Omicron Industries, which serves as a useful community resource."
 				""
