@@ -21,10 +21,10 @@
 
 ## Credits
 - Original pack by [Exaxxion](https://github.com/Exaxxion).
-- Nomifactory CEu pack by [Tracer4b](https://github.com/tracer4b).  
-- README.md adapted from [GregTech CEu](https://github.com/GregTechCEu/GregTech).  
-- Meowni (mascot) by [Mutso](https://bsky.app/profile/did:plc:pgazjc76vpn6mr7rldk56ugq).  
-- Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).  
+- Nomifactory CEu pack by [Tracer4b](https://github.com/tracer4b).
+- README.md adapted from [GregTech CEu](https://github.com/GregTechCEu/GregTech).
+- Meowni (mascot) by [Mutso](https://bsky.app/profile/did:plc:pgazjc76vpn6mr7rldk56ugq).
+- Certain new quests from [GregTech Community Pack](https://github.com/GregTechCEu/GregTech-Community-Pack).
 - Unique multi code for the Creative Multiblocks from [CosmicCore](https://github.com/Frontiers-PackForge/CosmicCore), with Caitlynn's gracious permission.
 - Coremod (Moni Labs) by [NegaNote](https://github.com/NegaNote), with help from other contributors, especially [Withers](https://github.com/WithersChat) and [Raine](https://github.com/AE2-Enthusiast).
 - Blood texture from [Tinkers' Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)
@@ -53,37 +53,15 @@ Expert Mode is a modifier for Hard Mode, and takes things a step further by:
 ## Installation:
 
 ### Hard/Expert Mode Installation:
-**On versions 0.12.9 and older:**
-1. Download [``./pack-mode-switcher.bat``](https://github.com/Omicron-Industries/Monifactory/blob/main/pack-mode-switcher.bat) if you're on Windows, or [``./pack-mode-switcher.sh``](https://github.com/Omicron-Industries/Monifactory/blob/main/pack-mode-switcher.sh) if you're on Linux/MacOS/GNU
-2. Move the shell script into the ``.minecraft`` folder where Monifactory is installed
-- Windows:
-    - Manual:
-        1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.bat``.
-        2. Follow the prompt to select your mode.
-        3. Redo steps 1 & 2 every time after you've updated the modpack.
-    - Prism Launcher (and various other custom launchers):
-        1. If your Minecraft launcher supports it, select your Minecraft instance -> Edit -> Settings -> Custom Commands, check ``Custom Commands``, paste
-           ```
-           $INST_DIR\minecraft\pack-mode-switcher.bat (N/H/E)
-           ```
-           into Pre-launch command and specify your wanted mode.
-- Linux/Apple/GNU:
-1. Open [``./pack-mode-switcher.sh``](https://github.com/Omicron-Industries/Monifactory/blob/main/pack-mode-switcher.sh) and download the file to your Minecraft / Minecraft instance folder.
-1. Open your Minecraft / Minecraft instance folder and click on ``pack-mode-switcher.sh``.
-2. Follow the prompt to select your mode.
+You can switch pack modes **in the main menu**, just click the text that shows your pack mode, select the pack you want, click yes, and then restart your game!
 
-**As of version 0.13, You can switch pack modes in the main menu, just click the text that shows your pack mode, select the pack you want, click yes, and then restart your game!**\
 If you want to switch the pack mode on a dedicated server, follow these instructions.
-- Universal:
-    - Open Command Prompt and type in this command in your minecraft server's installation folder:
-      ```
-      java -jar ${Server Root}\mods\monilabs-*.jar ${N/H/E}
-      ```
-    - You'll need to replace ${Server Root} with the path of your server, E.G ``C:\MonilabsServer`` or ``/var/opt/moniserver/``.
-    Keep in mind these are most likely **not** be the path of your Monifactory server, open your preferred shell/command interface, for Windows run ``cd`` without any parameters, for Mac/Linux/FreeBSD, run ``pwd``.
-    - ${N/H/E} is the mode of Moni you want to switch to, N is for Normal Mode, H is for Hard Mode, and E is for Expert Mode
-    - Typing in nothing will prompt you to change your pack mode
-
+  - Open Command Prompt and type in this:
+    ```
+    java -jar <SERVER DIR>\mods\monilabs-*.jar <MODE>
+    ```
+  - You'll need to replace `<SERVER DIR>` with the path to your server, i.e. the folder which contains the `mods` folder inside of it. E.g. ``C:\MonilabsServer`` or ``/var/opt/moniserver/``. Keep in mind these are most likely **not** be the path of your Monifactory server, open your preferred shell/command interface, find your folder in explorer, and copy the path from the address bar at the top.
+  - `<MODE>` is the name of the mode you want to switch to, one of: normal, hard, expert.
 
 ### Addon Mods (AKA Optional Compats)
 To spice up your Monifactory experience, you can add any of the following mods to your ``minecraft/mods`` folder for their recipes and config files to be automatically altered for compatibility with Monifactory progression.

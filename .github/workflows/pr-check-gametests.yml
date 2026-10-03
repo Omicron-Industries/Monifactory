@@ -2,7 +2,7 @@ name: Gametest Server
 on:
   pull_request:
     types: [opened, synchronize]
-    paths:
+    paths: &paths
       - 'config/**'
       - 'config-overrides/**'
       - 'defaultconfigs/**'
@@ -10,6 +10,9 @@ on:
       - 'manifest.json'
       - 'build/**'
       - '.github/workflows/pr-check-gametests.yml'
+  push:
+    branches: [main]
+    paths: *paths
 
 jobs:
   gametest:

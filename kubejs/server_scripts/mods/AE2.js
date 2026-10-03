@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
         A: "gtceu:double_titanium_plate",
         B: "gtceu:quantum_star",
         F: "gtceu:fluix_plate",
-        P :"gtceu:mv_field_generator"
+        P: "gtceu:mv_field_generator"
     }).id("kubejs:ae2/matter_condensor")
 
     // Storage Components
@@ -383,7 +383,7 @@ ServerEvents.recipes(event => {
     event.shapeless("ae2:memory_card", ["#gtceu:circuits/hv", "ae2:basic_card"]).id("kubejs:ae2/memory_card")
 
     // Crafting Card
-    event.remove({ id: "ae2:materials/cardcrafting"})
+    event.remove({ id: "ae2:materials/cardcrafting" })
     event.shapeless("ae2:crafting_card", ["minecraft:crafting_table", "ae2:basic_card", "#gtceu:circuits/ev"])
 
     // Level Emitter
@@ -863,9 +863,9 @@ ServerEvents.recipes(event => {
 
     // Processors
     const processor_info = [
-        {type: "engineering", material:"minecraft:diamond"},
-        {type: "logic", material:"minecraft:gold_ingot"},
-        {type: "calculation", material:"ae2:certus_quartz_crystal"},
+        { type: "engineering", material: "minecraft:diamond" },
+        { type: "logic", material: "minecraft:gold_ingot" },
+        { type: "calculation", material: "ae2:certus_quartz_crystal" },
     ]
 
     processor_info.forEach(processorType => {
@@ -996,7 +996,7 @@ ServerEvents.recipes(event => {
     event.shapeless("expatternprovider:ex_pattern_access_part", ["#ae2:illuminated_panel", "ae2:engineering_processor", "#ae2:pattern_provider", "ae2:logic_processor"]).id("expatternprovider:epa_direct")
 
     // ExtendedAE Silicon Block
-    event.remove({id:"expatternprovider:silicon_block"})
+    event.remove({ id: "expatternprovider:silicon_block" })
 
     // Circuit cutter
     event.remove({ id: "expatternprovider:circuit_cutter" })
@@ -1134,7 +1134,7 @@ ServerEvents.recipes(event => {
     event.shapeless("mae2:faulty_card", ["ae2:memory_card", "#ae2:knife"])
 
     // Network Analyser
-    event.remove({ id:"ae2netanalyser:analyser"})
+    event.remove({ id: "ae2netanalyser:analyser" })
     event.shaped(Item.of("ae2netanalyser:network_analyser"), [
         "R R",
         "DSD",
@@ -1145,4 +1145,136 @@ ServerEvents.recipes(event => {
         F: "gtceu:fluix_plate",
         S: "gtceu:mv_sensor"
     }).id("kubejs:ae2netanalyser/network_analyser")
+    // Remove these recipes (minus the GTMUtils one) when the mod is updated to GTM V8
+    // ME Output Bus
+    event.remove({ output: "gtceu:me_output_bus" })
+    event.recipes.gtceu.assembler("kubejs:me_output_bus")
+        .itemInputs("gtceu:hv_output_bus", "ae2:cable_interface", "2x ae2:speed_card")
+        .itemOutputs("gtceu:me_output_bus")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.HV])
+        .addMaterialInfo(true)
+
+    // ME Output Hatch
+    event.remove({ output: "gtceu:me_output_hatch" })
+    event.recipes.gtceu.assembler("kubejs:me_output_hatch")
+        .itemInputs("gtceu:hv_output_hatch", "ae2:cable_interface", "2x ae2:speed_card")
+        .itemOutputs("gtceu:me_output_hatch")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.HV])
+        .addMaterialInfo(true)
+
+    // ME Input Bus
+    event.remove({ output: "gtceu:me_input_bus" })
+    event.recipes.gtceu.assembler("kubejs:me_input_bus")
+        .itemInputs("gtceu:hv_input_bus", "ae2:cable_interface", "2x ae2:speed_card")
+        .itemOutputs("gtceu:me_input_bus")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.HV])
+        .addMaterialInfo(true)
+
+    // ME Input Hatch
+    event.remove({ output: "gtceu:me_input_hatch" })
+    event.recipes.gtceu.assembler("kubejs:me_input_hatch")
+        .itemInputs("gtceu:hv_input_hatch", "ae2:cable_interface", "2x ae2:speed_card")
+        .itemOutputs("gtceu:me_input_hatch")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.HV])
+        .addMaterialInfo(true)
+
+    // ME Stocking Input Bus
+    event.remove({ output: "gtceu:me_stocking_input_bus" })
+    event.recipes.gtceu.assembler("kubejs:me_stocking_input_bus")
+        .itemInputs("gtceu:ev_input_bus", "ae2:cable_interface", "gtceu:ev_conveyor_module", "gtceu:ev_sensor", "4x ae2:speed_card")
+        .itemOutputs("gtceu:me_stocking_input_bus")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
+
+    // ME Stocking Input Hatch
+    event.remove({ output: "gtceu:me_stocking_input_hatch" })
+    event.recipes.gtceu.assembler("kubejs:me_stocking_input_hatch")
+        .itemInputs("gtceu:ev_input_hatch", "ae2:cable_interface", "gtceu:ev_electric_pump", "gtceu:ev_sensor", "4x ae2:speed_card")
+        .itemOutputs("gtceu:me_stocking_input_hatch")
+        .duration(300)
+        .EUt(GTValues.VA[GTValues.EV])
+        .addMaterialInfo(true)
+
+    // ME Pattern Buffer
+    event.remove({ id: "gtceu:scanner/1x_gtceu_luv_dual_input_hatch" })
+    event.remove({ output: "gtceu:me_pattern_buffer" })
+    event.recipes.gtceu.assembler("kubejs:me_pattern_buffer")
+        .itemInputs("gtceu:iv_machine_hull", "2x ae2:pattern_provider", "2x ae2:interface", "gtceu:iv_robot_arm", "gtceu:iv_electric_pump", "4x ae2:speed_card", "2x ae2:capacity_card", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:soldering_alloy 288")
+        .itemOutputs("gtceu:me_pattern_buffer")
+        .circuit(1)
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // ME Pattern Buffer Proxy
+    event.remove({ id: "gtceu:research_station/1x_gtceu_me_pattern_buffer" })
+    event.remove({ output: "gtceu:me_pattern_buffer_proxy" })
+    event.recipes.gtceu.assembly_line("kubejs:me_pattern_buffer_proxy")
+        .itemInputs("gtceu:luv_machine_hull", "2x gtceu:luv_sensor", "#gtceu:circuits/luv", "ae2:quantum_link", "2x ae2:quantum_ring", "32x gtceu:fine_europium_wire", "32x gtceu:fine_europium_wire")
+        .inputFluids("gtceu:soldering_alloy 576", "gtceu:lubricant 500")
+        .itemOutputs("gtceu:me_pattern_buffer_proxy")
+        .scannerResearch("gtceu:me_pattern_buffer")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    // Expanded ME Pattern Buffer
+
+    event.remove({ id: "gtceu:research_station/1x_gtceu_zpm_dual_input_hatch" })
+    event.remove({ output: "gtmutils:expanded_me_pattern_buffer" })
+    event.recipes.gtceu.assembler("kubejs:expanded_me_pattern_buffer")
+        .itemInputs("gtceu:iv_machine_hull", "4x ae2:pattern_provider", "4x ae2:interface", "2x gtceu:iv_robot_arm", "2x gtceu:iv_electric_pump", "8x ae2:speed_card", "4x ae2:capacity_card", "2x #gtceu:circuits/iv")
+        .inputFluids("gtceu:soldering_alloy 1152")
+        .itemOutputs("gtmutils:expanded_me_pattern_buffer")
+        .circuit(2)
+        .duration(4000)
+        .EUt(GTValues.VA[GTValues.IV])
+
+    // Expanded ME Pattern Buffer Proxy
+    event.remove({ id: "gtceu:research_station/1x_gtceu_me_pattern_buffer_proxy" })
+    event.remove({ output: "gtmutils:expanded_me_pattern_buffer_proxy" })
+    event.recipes.gtceu.assembly_line("kubejs:expanded_me_pattern_buffer_proxy")
+        .itemInputs("gtceu:luv_machine_hull", "4x gtceu:luv_sensor", "2x #gtceu:circuits/luv", "2x ae2:quantum_link", "4x ae2:quantum_ring", "48x gtceu:fine_europium_wire", "48x gtceu:fine_europium_wire", "48x gtceu:fine_europium_wire", "48x gtceu:fine_europium_wire")
+        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:lubricant 2000")
+        .itemOutputs("gtmutils:expanded_me_pattern_buffer_proxy")
+        .scannerResearch("gtceu:me_pattern_buffer_proxy")
+        .duration(600)
+        .EUt(GTValues.VA[GTValues.LuV])
+
+    // ME Tag Stocking Input Bus
+    event.remove({ output: "gtmutils:me_tag_stocking_input_bus" })
+    event.recipes.gtceu.assembler("kubejs:me_tag_stocking_input_bus")
+        .itemInputs("gtceu:me_stocking_input_bus", "2x #gtceu:circuits/ev", "4x ae2:engineering_processor", "gtceu:item_tag_filter")
+        .itemOutputs("gtmutils:me_tag_stocking_input_bus")
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.EV])
+
+    // ME Tag Stocking Input Hatch
+    event.remove({ output: "gtmutils:me_tag_stocking_input_hatch" })
+    event.recipes.gtceu.assembler("kubejs:me_tag_stocking_input_hatch")
+        .itemInputs("gtceu:me_stocking_input_hatch", "2x #gtceu:circuits/ev", "4x ae2:engineering_processor", "gtceu:fluid_tag_filter")
+        .itemOutputs("gtmutils:me_tag_stocking_input_hatch")
+        .duration(400)
+        .EUt(GTValues.VA[GTValues.EV])
+
+
+    // Sky Stone
+    event.recipes.gtceu.rock_breaker("kubejs:rock_breaker_sky_stone")
+        .notConsumable("ae2:sky_stone_block")
+        .itemOutputs("ae2:sky_stone_block")
+        .duration(16)
+        .EUt(GTValues.VHA[GTValues.MV])
+        .adjacentFluids("minecraft:lava", "minecraft:water")
+        .posY(256, 320)
+
+    event.recipes.gtceu.rock_cycle_simulator("kubejs:rock_cycle_simulator_sky_stone")
+        .notConsumable("ae2:sky_stone_block")
+        .itemOutputs("ae2:sky_stone_block")
+        .duration(16)
+        .EUt(GTValues.VHA[GTValues.MV])
+        .posY(256, 320)
 })
