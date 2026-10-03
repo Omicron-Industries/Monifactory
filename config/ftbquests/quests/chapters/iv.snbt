@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:iv_universal_circuit"
 	id: "6BAB6314073D0D4F"
-	order_index: 5
+	order_index: 9
 	quest_links: [ ]
 	quests: [ ]
 	title: "IV"

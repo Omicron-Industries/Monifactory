@@ -24,7 +24,7 @@
 			y: -4.25d
 		}
 	]
-	order_index: 2
+	order_index: 1
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
@@ -136,7 +136,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["6CBB224DA02B2809"]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"&6Steam Turbine Generators&r are the easiest way to start generating &eEU&r with &bGregTech&r, removing the need for a &6Converter&r."
 				""
@@ -854,6 +854,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["61301FBD825F8280"]
 			description: [
 				"The &3Naquadah Reactor&r is a structure used to generate considerable amounts of EU power from decaying &6Naquadah Fuel Rods&r. You will need a little bit of &6Omnium&r to make them."
 				""
@@ -1057,7 +1058,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["425D1C34A82B054D"]
+			dependencies: [
+				"425D1C34A82B054D"
+				"4E9530E62A4B673B"
+			]
 			description: [
 				"The &3Large Naquadah Reactor&r is an upgraded reactor that can generate immense amounts of EU energy from burning liquid &6Naquadah Fuels&r. These fuels are more complicated than the fuel rods, but will generate massive amounts of power in return."
 				""

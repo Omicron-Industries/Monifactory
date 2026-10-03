@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:uv_universal_circuit"
 	id: "7B6BE0829E0417F1"
-	order_index: 8
+	order_index: 12
 	quest_links: [ ]
 	quests: [ ]
 	title: "UV"

@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:mv_universal_circuit"
 	id: "35A56C29328C5200"
-	order_index: 2
+	order_index: 4
 	quest_links: [
 		{
 			id: "20D596271688188F"
@@ -1530,6 +1530,31 @@
 			title: "Annealed Copper"
 			x: 2.25d
 			y: 10.5d
+		}
+		{
+			description: [
+				"&n&9Monifactory&r&r shares an official Discord server with the other projects under Omicron Industries, which serves as a useful community resource."
+				""
+				"On the server, there are flowcharts and guides to help you with many parts of the pack accessible via the server's helpful bot, development announcements and more are available in the &n#announcements&r channel, and the community helps with tech support questions, and investigates possible bug reports."
+				""
+				"You can also chat with many fellow players there if you like, who are largely willing to help with general questions one might have."
+				"{@pagebreak}"
+				"[\"\",{\"text\":\"To join the server, you can use the button on the Main Menu to go to the join URL, or if you're not into Discord you can find other projects from Omicron Industries, on \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"this\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries\"}},{\"text\":\" GitHub page.\"}]"
+				""
+				"[\"\",{\"text\":\"Issue tracking and development is handled on the respective GitHub project repositories. The repository for this pack is \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"here\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"text\":\".\"}]"
+			]
+			disable_toast: true
+			icon: "minecraft:writable_book"
+			id: "09606628B678BB62"
+			optional: true
+			subtitle: "what's a voltage? can I eat it?"
+			tasks: [{
+				id: "5F586EB63FC79812"
+				type: "checkmark"
+			}]
+			title: "Discord and GitHub"
+			x: -1.5d
+			y: -7.25d
 		}
 	]
 	title: "MV"

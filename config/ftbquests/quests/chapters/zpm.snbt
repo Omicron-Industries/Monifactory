@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:zpm_universal_circuit"
 	id: "3F596048B38D5D83"
-	order_index: 7
+	order_index: 11
 	quest_links: [ ]
 	quests: [ ]
 	title: "ZPM"

@@ -3923,6 +3923,45 @@
 			x: -7.25d
 			y: 7.75d
 		}
+		{
+			dependencies: ["1349044BF8C04A12"]
+			description: [
+				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
+				""
+				"Fire on bedrock will convert into Grains after a short time. Make sure the grains don't burn in surrounding fires."
+				""
+				"You can automate grains of infinity using an &bMV&r &3Rock Breaker&r at a low Y coordinate with &6Lava&r and &6Fluid of the Void&r adjacent to the machine. You could alternatively use a &3Rock Cycle Simulator&r to bypass the fluid adjacency requirements."
+			]
+			icon: "enderio:grains_of_infinity"
+			id: "1CA6D620309F2B9E"
+			rewards: [{
+				id: "67D69429C7C3148B"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1E07B0FCC2B8D3EF"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E822A9514AED405"
+					item: "enderio:grains_of_infinity"
+					type: "item"
+				}
+			]
+			title: "Grains Of Infinity"
+			x: 12.0d
+			y: 2.25d
+		}
 	]
 	title: "Scaling Up"
 }

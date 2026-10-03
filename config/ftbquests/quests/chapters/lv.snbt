@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:lv_universal_circuit"
 	id: "62CAA10E8897A0FF"
-	order_index: 1
+	order_index: 2
 	quest_links: [
 		{
 			id: "6EFDF0495132F8EC"
@@ -908,6 +908,7 @@
 			y: 11.5d
 		}
 		{
+			dependencies: ["2EF8EE4CC34F8D09"]
 			description: [
 				"&9GregTech Power&r can be tricky to handle. Luckily, there are several tools you can use to tackle some of the problems."
 				""
@@ -1336,6 +1337,7 @@
 			y: 12.75d
 		}
 		{
+			dependencies: ["2EF8EE4CC34F8D09"]
 			description: ["&9Exoskeletons&r increase your movement speed, letting you get around your factory even quicker."]
 			icon: "gtexolegs:lv_exoskeleton_legs"
 			id: "6BA0B1B3AB853F9A"
@@ -1751,25 +1753,6 @@
 			y: -2.25d
 		}
 		{
-			description: [
-				"&6Machine Hulls&r, along with circuits, are used in nearly every &bGregTech&r machine."
-				""
-				"With over 20 uses for each tier of machine hull, you'll want to make a lot of these."
-			]
-			id: "6CBB224DA02B2809"
-			shape: "hexagon"
-			size: 1.5d
-			subtitle: "The First of Many"
-			tasks: [{
-				id: "16A4B034128BD310"
-				item: "gtceu:lv_machine_hull"
-				type: "item"
-			}]
-			title: "&2LV Machine Hulls"
-			x: 1.75d
-			y: -6.375d
-		}
-		{
 			dependencies: ["760DEF8FFAD6E20A"]
 			dependency_requirement: "one_completed"
 			description: [
@@ -2013,6 +1996,7 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["4A5CC6210FCEC075"]
 			description: [
 				"A &6Programmed Circuit&r is an item used to configure machines. In essence, they tell a machine what to make if there's multiple things it could make from a certain input."
 				""
@@ -2667,6 +2651,7 @@
 			y: -12.75d
 		}
 		{
+			dependencies: ["4A5CC6210FCEC075"]
 			description: [
 				"&6Machine Hulls&r, along with circuits, are used in nearly every &bGregTech&r machine."
 				""
@@ -2810,6 +2795,7 @@
 			y: 10.5d
 		}
 		{
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"&3Centrifuges&r have a chance of creating additional materials when processing ore dusts. Sometimes it's the main dust, but often it's a different useful material that is otherwise unobtainable."
 				""
@@ -2909,44 +2895,6 @@
 			y: 15.25d
 		}
 		{
-			description: [
-				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
-				""
-				"Fire on bedrock will convert into Grains after a short time. Make sure the grains don't burn in surrounding fires."
-				""
-				"You can automate grains of infinity using an &bMV&r &3Rock Breaker&r at a low Y coordinate with &6Lava&r and &6Fluid of the Void&r adjacent to the machine. You could alternatively use a &3Rock Cycle Simulator&r to bypass the fluid adjacency requirements."
-			]
-			icon: "enderio:grains_of_infinity"
-			id: "1CA6D620309F2B9E"
-			rewards: [{
-				id: "67D69429C7C3148B"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "1E07B0FCC2B8D3EF"
-					item: {
-						Count: 1
-						id: "minecraft:flint_and_steel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6E822A9514AED405"
-					item: "enderio:grains_of_infinity"
-					type: "item"
-				}
-			]
-			title: "Grains Of Infinity"
-			x: 8.0d
-			y: 9.25d
-		}
-		{
 			dependencies: ["591A1B8B279DFCC9"]
 			description: [
 				"Your first &6Tier Two Circuits&r will require three &6Tier One Circuits&r plus two &6Diodes&r."
@@ -2969,6 +2917,32 @@
 			title: "&2The First Tier Two Circuits"
 			x: -0.5d
 			y: 20.5d
+		}
+		{
+			dependencies: ["4A5CC6210FCEC075"]
+			description: [
+				"&n&9Monifactory&r&r shares an official Discord server with the other projects under Omicron Industries, which serves as a useful community resource."
+				""
+				"On the server, there are flowcharts and guides to help you with many parts of the pack accessible via the server's helpful bot, development announcements and more are available in the &n#announcements&r channel, and the community helps with tech support questions, and investigates possible bug reports."
+				""
+				"You can also chat with many fellow players there if you like, who are largely willing to help with general questions one might have."
+				"{@pagebreak}"
+				"[\"\",{\"text\":\"To join the server, you can use the button on the Main Menu to go to the join URL, or if you're not into Discord you can find other projects from Omicron Industries, on \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"this\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries\"}},{\"text\":\" GitHub page.\"}]"
+				""
+				"[\"\",{\"text\":\"Issue tracking and development is handled on the respective GitHub project repositories. The repository for this pack is \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"here\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"text\":\".\"}]"
+			]
+			disable_toast: true
+			icon: "minecraft:writable_book"
+			id: "7A655F187A603B31"
+			optional: true
+			subtitle: "what's a voltage? can I eat it?"
+			tasks: [{
+				id: "37430A5318795D98"
+				type: "checkmark"
+			}]
+			title: "Discord and GitHub"
+			x: -2.0d
+			y: -13.25d
 		}
 	]
 	title: "LV"

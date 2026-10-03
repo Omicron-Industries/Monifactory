@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:hv_universal_circuit"
 	id: "39B513DAFF8249A7"
-	order_index: 3
+	order_index: 6
 	quest_links: [
 		{
 			id: "25268A98C673BBDE"
@@ -2120,6 +2120,31 @@
 			title: "An Extraterrestrial Abode"
 			x: 28.75d
 			y: 4.25d
+		}
+		{
+			description: [
+				"&n&9Monifactory&r&r shares an official Discord server with the other projects under Omicron Industries, which serves as a useful community resource."
+				""
+				"On the server, there are flowcharts and guides to help you with many parts of the pack accessible via the server's helpful bot, development announcements and more are available in the &n#announcements&r channel, and the community helps with tech support questions, and investigates possible bug reports."
+				""
+				"You can also chat with many fellow players there if you like, who are largely willing to help with general questions one might have."
+				"{@pagebreak}"
+				"[\"\",{\"text\":\"To join the server, you can use the button on the Main Menu to go to the join URL, or if you're not into Discord you can find other projects from Omicron Industries, on \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"this\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries\"}},{\"text\":\" GitHub page.\"}]"
+				""
+				"[\"\",{\"text\":\"Issue tracking and development is handled on the respective GitHub project repositories. The repository for this pack is \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"here\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"text\":\".\"}]"
+			]
+			disable_toast: true
+			icon: "minecraft:writable_book"
+			id: "2AD75872421BC65C"
+			optional: true
+			subtitle: "what's a voltage? can I eat it?"
+			tasks: [{
+				id: "22B39652E820515A"
+				type: "checkmark"
+			}]
+			title: "Discord and GitHub"
+			x: 3.5d
+			y: -6.5d
 		}
 	]
 	title: "HV"

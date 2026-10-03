@@ -5,7 +5,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "gtceu:machine_controller_cover"
 	id: "2CC78B1B195CC550"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -102,7 +102,7 @@
 			description: [
 				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
 				""
-				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you… six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &aFile&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
+				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you… six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &3File&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
 				""
 				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
 			]

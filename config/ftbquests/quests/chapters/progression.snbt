@@ -6,7 +6,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "minecraft:writable_book"
 	id: "395B849AC6294153"
-	order_index: 5
+	order_index: 3
 	quest_links: [
 		{
 			id: "7D217833035647CD"

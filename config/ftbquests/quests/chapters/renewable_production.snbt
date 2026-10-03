@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "renewable_production"
-	group: "0D5BFFD0A5E49312"
+	group: "7A7ECB813BC25B77"
 	icon: "gtceu:lv_chemical_reactor"
 	id: "055C0B43FE14258F"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
