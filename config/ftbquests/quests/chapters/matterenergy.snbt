@@ -28,11 +28,11 @@
 		{
 			dependencies: ["4174A6C6403DD245"]
 			description: [
-				"{moni.quest.7E59E0E33962D787.description1}"
+				"Normally, this block acts as a source of &echannels&r, but that mechanic is disabled by default in &5Monifactory&r."
 				""
-				"{moni.quest.7E59E0E33962D787.description2}"
+				"You don't have to make this to operate a network when channels are disabled, but if you do, &eyour network will consume less power&r than if it did not have a Controller. Plus, they look kind of cool."
 				""
-				"{moni.quest.7E59E0E33962D787.description3}"
+				"Food for thought."
 			]
 			id: "7E59E0E33962D787"
 			rewards: [{
@@ -41,19 +41,19 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "{moni.quest.7E59E0E33962D787.subtitle}"
+			subtitle: "The &aME Controller&r acts as the 'brain' and a bit of power storage for an &eME Network&r."
 			tasks: [{
 				id: "34FE8D1065808917"
 				item: "ae2:controller"
 				type: "item"
 			}]
-			title: "{moni.quest.7E59E0E33962D787.title}"
+			title: "ME Controller"
 			x: 2.0d
 			y: -2.25d
 		}
 		{
 			dependencies: ["7E59E0E33962D787"]
-			description: ["{moni.quest.41B4EA53D6D7AE37.description1}"]
+			description: ["Please note that all six variants of &6ME Terminals&r are &emicroparts&r, which means they need to be attached to an &6ME Cable&r to function."]
 			id: "41B4EA53D6D7AE37"
 			rewards: [{
 				id: "6BCE103B9FF87A10"
@@ -61,13 +61,13 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.41B4EA53D6D7AE37.subtitle}"
+			subtitle: "Access all of your items on a single screen. Soon, anyway."
 			tasks: [{
 				id: "25CB53FBDBE5C347"
 				item: "ae2:terminal"
 				type: "item"
 			}]
-			title: "{moni.quest.41B4EA53D6D7AE37.title}"
+			title: "Terminal"
 			x: 2.0d
 			y: 1.25d
 		}
@@ -76,7 +76,7 @@
 				"295E3D32083676E6"
 				"285052914EF655B9"
 			]
-			description: ["{moni.quest.057D8689F19564AA.description1}"]
+			description: ["&3Extended Inscribers&r are able to perform up to 4 inscribing jobs at the same time, allowing easier automation."]
 			id: "057D8689F19564AA"
 			rewards: [{
 				id: "56704F2D2C2EC831"
@@ -84,13 +84,13 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.057D8689F19564AA.subtitle}"
+			subtitle: "Not advanced, but extended"
 			tasks: [{
 				id: "58217F13FB40032C"
 				item: "expatternprovider:ex_inscriber"
 				type: "item"
 			}]
-			title: "{moni.quest.057D8689F19564AA.title}"
+			title: "&9Extended Inscribing"
 			x: -1.25d
 			y: -3.25d
 		}
@@ -100,9 +100,9 @@
 				"5C4E189A3E401566"
 			]
 			description: [
-				"{moni.quest.295E3D32083676E6.description1}"
+				"&3Inscribers&r are machines used to make &6inscribed circuits&r for &bApplied Energistics&r."
 				""
-				"{moni.quest.295E3D32083676E6.description2}"
+				"&9Inscribers can be set to automatically export items, can hold up to a stack of items within, as well as a variety of other features to aid in automation."
 			]
 			id: "295E3D32083676E6"
 			rewards: [{
@@ -112,22 +112,22 @@
 			}]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "{moni.quest.295E3D32083676E6.subtitle}"
+			subtitle: "Angry light forcing rocks to think"
 			tasks: [{
 				id: "3C32EC54A06596C3"
 				item: "ae2:inscriber"
 				type: "item"
 			}]
-			title: "{moni.quest.295E3D32083676E6.title}"
+			title: "&9Inscribing"
 			x: 0.0d
 			y: -4.25d
 		}
 		{
 			dependencies: ["4174A6C6403DD245"]
 			description: [
-				"{moni.quest.1D3A5DCCE1B40D29.description1}"
+				"These are the basic cables used by &3Applied Energistics&r to transport network connectivity. Since channels are disabled in all modes but Expert Mode, these cables will most likely be your main method of transporting network connectivity, rather than the dense cables.\n&eThe mechanics of AE2 Channels are outside the scope of the quest book, and this is the only time it will be mentioned."
 				""
-				"{moni.quest.1D3A5DCCE1B40D29.description2}"
+				"These cables do not share blockspace with cables for other mods, so they can be somewhat unwieldy to build with, but they do accept &3Applied Energistics &6Facades&r, so they can be hidden very easily. Keep in mind that a large number of facades leads to FPS lag."
 			]
 			id: "1D3A5DCCE1B40D29"
 			rewards: [{
@@ -136,22 +136,22 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.1D3A5DCCE1B40D29.subtitle}"
+			subtitle: "AE Networking"
 			tasks: [{
 				id: "13B1ADE4FC0B56A6"
 				item: "ae2:fluix_glass_cable"
 				type: "item"
 			}]
-			title: "{moni.quest.1D3A5DCCE1B40D29.title}"
+			title: "ME Cables"
 			x: 3.25d
 			y: -4.75d
 		}
 		{
 			dependencies: ["41B4EA53D6D7AE37"]
 			description: [
-				"{moni.quest.073533F489D121FF.description1}"
+				"This is a rudimentary digital item storage device. By placing a &6Storage Cell&r inside it, you can access the contents as though you were looking through a chest. You can carry the disk to another location and place it down in a different ME Chest if you want, and the items will come with it."
 				""
-				"{moni.quest.073533F489D121FF.description2}"
+				"&cDon't put Storage Cells inside other portable mod inventories like a Satchel, (or vice-versa) as you risk corrupting the contents of the Satchel and the Storage Cell.&r There's technical reasons why this happens (NBT overflow), and it's not unique to these items, but that's not really worth going into."
 			]
 			id: "073533F489D121FF"
 			rewards: [{
@@ -160,7 +160,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.073533F489D121FF.subtitle}"
+			subtitle: "The &aME Chest&r is somewhat impractical to use on its own, but it's a necessary ingredient for the much more useful &6ME Drive&r."
 			tasks: [{
 				id: "1DD4F411495C54D8"
 				item: "ae2:chest"
@@ -172,9 +172,9 @@
 		{
 			dependencies: ["670C69611ECFF5C8"]
 			description: [
-				"{moni.quest.7FC4297F2BC90F55.description1}"
+				"If you like exploring, you can find them in meteors with a &aMeteor Compass&r."
 				""
-				"{moni.quest.7FC4297F2BC90F55.description2}"
+				"If you don't want to do that, or are having trouble finding a meteor, feel free to etch them yourself with a &3Laser Engraver&r."
 			]
 			id: "7FC4297F2BC90F55"
 			rewards: [{
@@ -183,7 +183,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.7FC4297F2BC90F55.subtitle}"
+			subtitle: "&aPresses&r are needed for &3Inscribers&r."
 			tasks: [
 				{
 					id: "15825F0D2F98105E"
@@ -206,18 +206,18 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7FC4297F2BC90F55.title}"
+			title: "Inscription Plates"
 			x: 0.0d
 			y: -6.25d
 		}
 		{
 			dependencies: ["6D03BB4A6A4BBA27"]
 			description: [
-				"{moni.quest.670C69611ECFF5C8.description1}"
+				"This compass will lead you to the nearest meteor impact. Use your favorite mining tools to smash through the &6Skystone&r shell and get to the juicy center where a &6Mysterious Cube&r with the plates are found."
 				""
-				"{moni.quest.670C69611ECFF5C8.description2}"
+				"Please note that while they're often in a big crater, the meteors might be buried underground; when the compass is spinning wildly, you're right on top of one."
 				""
-				"{moni.quest.670C69611ECFF5C8.description3}"
+				"&2If exploration isn't your thing, you can make the presses out of &6Vanadium Steel&2 in a &3MV Laser Engraver&2."
 			]
 			icon: "ae2:meteorite_compass"
 			id: "670C69611ECFF5C8"
@@ -227,7 +227,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.670C69611ECFF5C8.subtitle}"
+			subtitle: "&bApplied Energistics&r uses &aPresses&r found in cubes at the heart of meteors as templates for &3Inscribers&r to make &6inscribed circuits&r."
 			tasks: [
 				{
 					id: "0B6706026E84DC3C"
@@ -238,11 +238,11 @@
 				{
 					id: "40398224818E775D"
 					optional_task: true
-					title: "{moni.quest.670C69611ECFF5C8.task}"
+					title: "I prefer Laser Engravers"
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.670C69611ECFF5C8.title}"
+			title: "Meteorite Hunter"
 			x: 0.0d
 			y: -7.75d
 		}
@@ -252,9 +252,9 @@
 				"3781AD70E71CA0D7"
 			]
 			description: [
-				"{moni.quest.52837FD72580F141.description1}"
+				"With ten slots for Storage Cells, you can store a huge number of items inside this single block, and search through them all with a &6Terminal&r. You just gotta make all those Storage Cells."
 				""
-				"{moni.quest.52837FD72580F141.description2}"
+				"If you somehow run out of room, you can make another ME Drive for even more slots! So many cells, so many items!"
 			]
 			id: "52837FD72580F141"
 			rewards: [{
@@ -264,13 +264,13 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{moni.quest.52837FD72580F141.subtitle}"
+			subtitle: "*Slaps &6ME Drive&r* this bad boy can fit so many &6Storage Cells&r in it!"
 			tasks: [{
 				id: "4A88B561BC4FC5F7"
 				item: "ae2:drive"
 				type: "item"
 			}]
-			title: "{moni.quest.52837FD72580F141.title}"
+			title: "Digital Storage For Days"
 			x: 0.0d
 			y: -0.75d
 		}
@@ -280,17 +280,17 @@
 				"7E59E0E33962D787"
 			]
 			description: [
-				"{moni.quest.410EA68D6EF15CEC.description1}"
+				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, RF/EU or fluids from one location to another using your ME system, without the need to use any cell storage space. &cTransporting EU has a tax on the input energy based on the size and number of amps transported.&r"
 				""
-				"{moni.quest.410EA68D6EF15CEC.description2}"
+				"Each P2P tunnel system may have only &cone input&r but &eany number of outputs&r. There is no limit on how many P2P tunnels, or P2P tunnel systems, you can have on one network."
 				""
-				"{moni.quest.410EA68D6EF15CEC.description3}"
+				"By default, a P2P tunnel is an &6ME tunnel&r, which transmits Applied Energistics channels and power. Since channels are disabled, you will most likely not be using the default tunnel that much. You can change the mode of your P2P tunnels by right clicking the tunnel with the respective item seen in &bEMI&r."
 				"{@pagebreak}"
-				"{moni.quest.410EA68D6EF15CEC.description4}"
+				"To configure your P2P tunnels, take a &6Memory Card&r. While holding the memory card, &ashift-right click&r the unconfigured tunnel, to set the frequency of the input, and save the frequency to the memory card. Once the first tunnel has been set up this way and the memory card is configured with the frequency, any subsequent tunnel you &aright-click&r with the memory card will be set as the output of the most recent frequency used."
 				""
-				"{moni.quest.410EA68D6EF15CEC.description5}"
+				"You can also use memory cards to copy the configuration of ME blocks and tile-entities, such as &6Interfaces&r and &6Storage Buses&r. &aShift-right click&r a ME block to copy its configuration, and &aright-click&r to paste that configuration. Note that this doesn't copy upgrades applied to the block."
 				""
-				"{moni.quest.410EA68D6EF15CEC.description6}"
+				"You can also &ashift-right click&r to empty the frequency, or the ME block configuration, set in the card."
 			]
 			id: "410EA68D6EF15CEC"
 			rewards: [{
@@ -299,7 +299,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.410EA68D6EF15CEC.subtitle}"
+			subtitle: "Network Recursion"
 			tasks: [{
 				id: "10CF79220AE28192"
 				item: {
@@ -309,16 +309,16 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.410EA68D6EF15CEC.title}"
+			title: "P2P Tunnels and Memory Cards"
 			x: 4.0d
 			y: -0.25d
 		}
 		{
 			dependencies: ["1040D941027962B1"]
 			description: [
-				"{moni.quest.2E079747A46D48CF.description1}"
+				"This handy terminal allows you to see the pattern slots of all &aME Pattern Providers&r in your network in one place."
 				""
-				"{moni.quest.2E079747A46D48CF.description2}"
+				"This means you don't have to run to your ME Pattern Providers each time you make a new pattern for them."
 			]
 			id: "2E079747A46D48CF"
 			rewards: [{
@@ -332,16 +332,16 @@
 				item: "ae2:pattern_access_terminal"
 				type: "item"
 			}]
-			title: "{moni.quest.2E079747A46D48CF.title}"
+			title: "Pattern Access Terminal"
 			x: 5.0d
 			y: 3.25d
 		}
 		{
 			dependencies: ["6F32A8739D8E792A"]
 			description: [
-				"{moni.quest.4A96659253CCFACF.description1}"
+				"Well, you need patterns too I guess."
 				""
-				"{moni.quest.4A96659253CCFACF.description2}"
+				"The details of autocrafting will be explained in a later quest."
 			]
 			id: "4A96659253CCFACF"
 			rewards: [{
@@ -351,19 +351,19 @@
 			}]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "{moni.quest.4A96659253CCFACF.subtitle}"
+			subtitle: "Autocrafting at last."
 			tasks: [{
 				id: "4C488203562AD601"
 				item: "ae2:crafting_unit"
 				type: "item"
 			}]
-			title: "{moni.quest.4A96659253CCFACF.title}"
+			title: "Crafting Units"
 			x: -0.5d
 			y: 4.25d
 		}
 		{
 			dependencies: ["1040D941027962B1"]
-			description: ["{moni.quest.0FA4CAD4F68BC0F8.description1}"]
+			description: ["This version of the Pattern Provider boosts the pattern capacity from 9 to 36. It can be made directly, or it can be upgraded to using a &6Pattern Provider Upgrade&r."]
 			icon: "expatternprovider:ex_pattern_provider"
 			id: "0FA4CAD4F68BC0F8"
 			rewards: [{
@@ -372,7 +372,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.0FA4CAD4F68BC0F8.subtitle}"
+			subtitle: "A very useful upgrade to the Pattern Provider."
 			tasks: [{
 				id: "1FE9B2CBA70D22B9"
 				item: {
@@ -395,25 +395,25 @@
 						]
 					}
 				}
-				title: "{moni.task.1FE9B2CBA70D22B9}"
+				title: "Any Extended Pattern Provider"
 				type: "item"
 			}]
-			title: "{moni.quest.0FA4CAD4F68BC0F8.title}"
+			title: "&9Extended Pattern Provider"
 			x: 5.25d
 			y: 2.25d
 		}
 		{
 			dependencies: ["6F32A8739D8E792A"]
 			description: [
-				"{moni.quest.1040D941027962B1.description1}"
+				"&aME Pattern Providers&r, like &aME Interfaces&r, are extremely important for automation. You'll be making a lot of these, if you're playing the pack right."
 				""
-				"{moni.quest.1040D941027962B1.description2}"
+				"These can be filled with encoded &aPatterns&r to perform on-demand autocrafting. Any item pushed into an &aME Pattern Provider&r is digitized and placed in your ME Network storage."
 				""
-				"{moni.quest.1040D941027962B1.description3}"
+				"When adjacent to one or more &aMolecular Assemblers&r, &3Crafting Table&r and &3Stonecutter&r patterns can be crafted. It will use as many adjacent &aMolecular Assemblers&r as possible, restricted by availability and number of &aCo-processors&r in your crafting CPU multiblock."
 				"{@pagebreak}"
-				"{moni.quest.1040D941027962B1.description4}"
+				"When adjacent to any other block, you can use &aprocessing patterns&r with a machine to insert items into the machine. Processing patterns require that the finished item is inserted back into the ME Network through &aInterfaces&r or &aPattern Providers&r."
 				""
-				"{moni.quest.1040D941027962B1.description5}"
+				"&aME Pattern Providers&r can be wrenched to ensure they only communicate with a particular adjacent block, or can be crafted into a micropart form to fit multiple in the same block space (each micropart only interacting with the adjacent block face)."
 			]
 			icon: "ae2:pattern_provider"
 			id: "1040D941027962B1"
@@ -423,7 +423,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.1040D941027962B1.subtitle}"
+			subtitle: "&lNot&r an Interface"
 			tasks: [{
 				id: "24069DF90AE106FD"
 				item: {
@@ -433,26 +433,23 @@
 						value: "ae2:pattern_provider"
 					}
 				}
-				title: "{moni.task.24069DF90AE106FD}"
+				title: "Any Pattern Provider"
 				type: "item"
 			}]
-			title: "{moni.quest.1040D941027962B1.title}"
+			title: "&9Pattern Provider"
 			x: 4.0d
 			y: 2.25d
 		}
 		{
-			dependencies: [
-				"417D97D9E3562F45"
-				"6169C04DF463502F"
-			]
+			dependencies: ["417D97D9E3562F45"]
 			description: [
-				"{moni.quest.6F32A8739D8E792A.description1}"
+				"Encode them in a &aPattern Encoding Terminal&r."
 				""
-				"{moni.quest.6F32A8739D8E792A.description2}"
+				"Note that recipes encoded with Substitutions on will use existing equivalent items, but &ewill only automatically craft the exact item specified in the recipe.&r"
 				""
-				"{moni.quest.6F32A8739D8E792A.description3}"
+				"&2Don't encode recipes that use hand tools.&r Otherwise, you risk jamming your system due to durability or NBT mismatches."
 				""
-				"{moni.quest.6F32A8739D8E792A.description4}"
+				"Use recipes that use machines instead!"
 			]
 			id: "6F32A8739D8E792A"
 			rewards: [{
@@ -462,35 +459,32 @@
 			}]
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "{moni.quest.6F32A8739D8E792A.subtitle}"
+			subtitle: "&aPatterns&r are used to encode a single crafting table or processing recipe for on-demand automation with &bApplied Energistics&r."
 			tasks: [{
 				id: "384964EBBD93B59C"
 				item: "ae2:blank_pattern"
 				type: "item"
 			}]
-			title: "{moni.quest.6F32A8739D8E792A.title}"
+			title: "Autocrafting Patterns"
 			x: 2.0d
 			y: 4.25d
 		}
 		{
-			dependencies: [
-				"6F32A8739D8E792A"
-				"0874A0191325CFDB"
-			]
+			dependencies: ["6F32A8739D8E792A"]
 			description: [
-				"{moni.quest.74469710D910C19D.description1}"
+				"&bPackagedAuto&r is an addon for &bApplied Energistics 2&r. Its main purpose in &5Monifactory&r is to offer an alternate way to automate &bExtended Crafting&r recipes, but you may come up with other fun uses for it as well."
 				""
-				"{moni.quest.74469710D910C19D.description2}"
+				"In older Minecraft versions, &eApplied Energistics 2&r &3Processing Patterns&r could only hold up to 9 item stacks, capped at 64 each. This restriction has long been lifted and makes PackagedAuto mostly obsolete, but it can still be useful in niche cases.\n\nEach &6Package Recipe Holder&r can store up to &e20 different recipes&r. Holders must be encoded in the &3Package Recipe Encoder&r."
 				""
-				"{moni.quest.74469710D910C19D.description3}"
+				"In the vast majority of situations you'll need two identically-encoded Holders, as the following machines work together."
 				"{@pagebreak}"
-				"{moni.quest.74469710D910C19D.description4}"
+				"The &3Packager&r is a machine that compresses ingredients for a specific recipe into a set of &6Recipe Packages&r. Each package in a set can hold up to 9 stacks of ingredient items. A simple recipe might consist of one package, but a complex recipe can have up to 9 packages in its set (for 81 total item stacks)."
 				""
-				"{moni.quest.74469710D910C19D.description5}"
+				"The &3Unpackager&r is a machine that extracts ingredient items from complete sets of Recipe Packages made in a Packager, ejecting the items into an adjacent inventory. It will only extract the items if &eall packages in a set are present&r."
 				"{@pagebreak}"
-				"{moni.quest.74469710D910C19D.description6}"
+				"When both a Packager and Unpackager are connected to an ME Network and have the same recipe, the resulting item will appear as craftable in your &aTerminal&r."
 				""
-				"{moni.quest.74469710D910C19D.description7}"
+				"&3Packager Extensions&r will act like a clone of an adjacent Packager - including access to patterns in its Package Recipe Holder - allowing you to craft recipe packages faster. Simply place the Packager Extensions around the Packager. Up to 26 extensions in a 3x3x3 cube around the Packager are supported.\n\n&9Note that PackagedAuto is quite performance intensive. If your game or server is struggling to keep up, you might benefit from finding alternatives to PackagedAuto.&r"
 			]
 			icon: "packagedauto:package"
 			id: "74469710D910C19D"
@@ -523,20 +517,20 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.74469710D910C19D.title}"
+			title: "PackagedAuto"
 			x: 0.25d
 			y: 2.5d
 		}
 		{
 			dependencies: ["4174A6C6403DD245"]
 			description: [
-				"{moni.quest.5A83E1115F965393.description1}"
+				"If you've tried to insert or remove a lot of items quickly, you might notice your ME network &eflickers offline&r briefly. This is because digitizing and re-materializing items requires energy!"
 				""
-				"{moni.quest.5A83E1115F965393.description2}"
+				"Your network doesn't naturally store very much energy and the &6Energy Acceptor&r only intermittently refills the network's power. To keep things stable, you will need to add some energy storage in your network using &6Energy Cells&r."
 				""
-				"{moni.quest.5A83E1115F965393.description3}"
+				"Just place one anywhere in your network and it will fill up with AE energy received from the Energy Acceptor. Now, you should have enough energy in your network to prevent these power losses. Feel free to add more energy cells, or upgrade to &6Dense Energy Cells&r if you continue to experience problems."
 				""
-				"{moni.quest.5A83E1115F965393.description4}"
+				"If you've opted to enable channels in your AE2 configs or are playing Expert Mode, you will innately have some energy storage from the &3ME Controller&r, but we assume you know what you're doing at that point. &eThe mechanics of AE2 Channels are outside the scope of the quest book, and this is the only time it will be mentioned."
 			]
 			icon: {
 				Count: 1
@@ -545,7 +539,7 @@
 			}
 			id: "5A83E1115F965393"
 			shape: "hexagon"
-			subtitle: "{moni.quest.5A83E1115F965393.subtitle}"
+			subtitle: "Oops… a blackout!"
 			tasks: [{
 				id: "714C125E0ED99334"
 				item: {
@@ -570,21 +564,21 @@
 						]
 					}
 				}
-				title: "{moni.task.714C125E0ED99334}"
+				title: "Any Energy Cell"
 				type: "item"
 			}]
-			title: "{moni.quest.5A83E1115F965393.title}"
+			title: "Energy Cell"
 			x: 3.25d
 			y: -3.75d
 		}
 		{
 			dependencies: ["073533F489D121FF"]
 			description: [
-				"{moni.quest.680C4363C268B223.description1}"
+				"All unformatted Storage Cells are limited to at most 63 distinct item types, with the first item of each new type taking up a chunk of the total bytes of cell storage, and subsequent items of existing types taking a small number of bytes thereafter."
 				""
-				"{moni.quest.680C4363C268B223.description2}"
+				"A &61k ME Storage Cell&r is the first and smallest cell for storing items. If you are going to be storing many different kinds of items in your network, you will need to make an &6ME Drive&r and fill it with multiple Storage Cells."
 				""
-				"{moni.quest.680C4363C268B223.description3}"
+				"The &64k ME Storage Cell&r is the next size up. With four times the bytes it holds substantially more items per type, but it requires a more advanced technology: AE &6Processors&r made in an &3Inscriber&r."
 			]
 			icon: {
 				Count: 1
@@ -599,7 +593,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{moni.quest.680C4363C268B223.subtitle}"
+			subtitle: "&bApplied Energistics&r uses &6Storage Cells&r as its primary means of digital item and fluid storage."
 			tasks: [{
 				id: "631B9DD6D42ECBE4"
 				item: {
@@ -635,29 +629,29 @@
 						]
 					}
 				}
-				title: "{moni.task.631B9DD6D42ECBE4}"
+				title: "Any Storage Cell"
 				type: "item"
 			}]
-			title: "{moni.quest.680C4363C268B223.title}"
+			title: "Digital Storage At Last"
 			x: -1.75d
 			y: -0.75d
 		}
 		{
 			dependencies: ["285052914EF655B9"]
-			description: ["{moni.quest.72AFBEFCEAE86EC1.description1}"]
+			description: ["Unformatted disks always have a hard limit of 63 distinct types of items, but each step up has roughly four times the total storage space of the prior disk."]
 			id: "72AFBEFCEAE86EC1"
 			rewards: [{
 				id: "7906B965172DE5A6"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.72AFBEFCEAE86EC1.subtitle}"
+			subtitle: "A component used primarily for making bigger &6Storage Cells&r."
 			tasks: [{
 				id: "6A0C5DAC7C23F6C1"
 				item: "ae2:cell_component_4k"
 				type: "item"
 			}]
-			title: "{moni.quest.72AFBEFCEAE86EC1.title}"
+			title: "4k Item Storage"
 			x: -1.75d
 			y: -2.25d
 		}
@@ -669,32 +663,32 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.15AE607E2EDD0369.subtitle}"
+			subtitle: "The third component for AE &6Storage Cells&r."
 			tasks: [{
 				id: "25D1BDBF3A962C46"
 				item: "ae2:cell_component_16k"
 				type: "item"
 			}]
-			title: "{moni.quest.15AE607E2EDD0369.title}"
+			title: "16k Item Storage"
 			x: -3.0d
 			y: -2.25d
 		}
 		{
 			dependencies: ["15AE607E2EDD0369"]
-			description: ["{moni.quest.60BC08DE447E5007.description1}"]
+			description: ["Used for storing really big amounts of things, like in a &664k ME Storage Cell&r."]
 			id: "60BC08DE447E5007"
 			rewards: [{
 				id: "7417C31CB32C97BC"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.60BC08DE447E5007.subtitle}"
+			subtitle: "The penultimate item storage component in &bApplied Energistics&r."
 			tasks: [{
 				id: "6A51C195328840CF"
 				item: "ae2:cell_component_64k"
 				type: "item"
 			}]
-			title: "{moni.quest.60BC08DE447E5007.title}"
+			title: "64k Item Storage"
 			x: -4.25d
 			y: -2.25d
 		}
@@ -702,20 +696,19 @@
 			dependencies: [
 				"60BC08DE447E5007"
 				"1175ED9EF0AB82F6"
-				"00203B07F8A930DA"
 			]
 			description: [
-				"{moni.quest.553F85782265C350.description1}"
+				"Firstly, you will need a &3Matter Condenser&r. Stick a &664k ME Storage Component&r in, change the mode to 'Singularity', and stuff lots of items (or fluids) in, &9done easily with an infinity cell&r."
 				""
-				"{moni.quest.553F85782265C350.description2}"
+				"If you don't have that, you can provide it with the output of regular &6Water&r or &6Cobblestone&r generation methods."
 				"{@pagebreak}"
-				"{moni.quest.553F85782265C350.description3}"
+				"After you have made the &eSingularity&r you will need from the &3Matter Condenser&r, you need to set up a &aQuantum Ring Multiblock&r. Build a 3 by 3 vertical ring with your &6Quantum Rings&r, leaving a hole in the middle. Finally, stick your &6Quantum Link Chamber&r in the hole, and connect it to your ME system. If you built it correctly, the textures of the rings should combine, leaving you with a &aMultiblock&r."
 				""
-				"{moni.quest.553F85782265C350.description4}"
+				"Next, create a pair of &eQuantum Entangled Singularities&r by throwing Ender Dust and a Singularity into the vicinity of an explosion."
 				""
-				"{moni.quest.553F85782265C350.description5}"
+				"&9Now that you have Quantum Entangled Singularities, put one into the&r &6Quantum Link Chamber&r&9 of the &r&aQuantum Ring&r&9, and the other in the dedicated slot of the &6Wireless Terminal&9!&r"
 				""
-				"{moni.quest.553F85782265C350.description6}"
+				"You should be good to go! You can now access AE2 anywhere, including in different dimensions!"
 			]
 			icon: "ae2wtlib:quantum_bridge_card"
 			id: "553F85782265C350"
@@ -726,7 +719,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.553F85782265C350.subtitle}"
+			subtitle: "Accessing AE2 from anywhere is a bit more expensive and complex, but it's well worth the effort."
 			tasks: [
 				{
 					count: 3L
@@ -759,33 +752,30 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.553F85782265C350.title}"
+			title: "&9AE2 Everywhere!"
 			x: -4.25d
 			y: -0.75d
 		}
 		{
-			dependencies: [
-				"41B4EA53D6D7AE37"
-				"11154356854B64DA"
-			]
+			dependencies: ["41B4EA53D6D7AE37"]
 			description: [
-				"{moni.quest.1175ED9EF0AB82F6.description1}"
+				"Accessing &bApplied Energistics 2&r wirelessly saves a huge amount of time, and is highly recommended to set up."
 				""
-				"{moni.quest.1175ED9EF0AB82F6.description2}"
+				"First, you will need a &6Wireless Access Point&r. Connect it to your network. Like the &6Terminal&r, the Wireless Access Point is a &emicropart&r, so you must place it on a &6ME Cable&r."
 				""
-				"{moni.quest.1175ED9EF0AB82F6.description3}"
+				"Next, you need a &6Wireless Terminal&r, or any of its variants. You can have as many Wireless Terminals connected to the system as you want."
 				""
-				"{moni.quest.1175ED9EF0AB82F6.description4}"
+				"Finally, put your &6Wireless Terminal&r into the &6Wireless Access Point&r. This will connect it to the system. "
 				"{@pagebreak}"
-				"{moni.quest.1175ED9EF0AB82F6.description5}"
+				"You can equip these as a Curio, and &3use a hotkey to open them&r. Search '&3Applied Energistics&r' as a &ecategory&r to see and edit these hotkeys."
 				""
-				"{moni.quest.1175ED9EF0AB82F6.description6}"
+				"The default range is only 16 blocks. However, you can put &6Wireless Boosters&r into the &6Wireless Access Point&r to increase the range. A better (but more expensive) solution that allows access from anywhere will be explained in the following quest, 'AE2 Everywhere!'."
 				""
-				"{moni.quest.1175ED9EF0AB82F6.description7}"
+				"&9Building Gadgets can be bound to the ME system by putting it in an online ME Wireless Access Point.&r"
 			]
 			id: "1175ED9EF0AB82F6"
 			shape: "hexagon"
-			subtitle: "{moni.quest.1175ED9EF0AB82F6.subtitle}"
+			subtitle: "AE2 from anywhere… almost."
 			tasks: [{
 				id: "564AFB42CC6805FF"
 				item: {
@@ -821,20 +811,20 @@
 						]
 					}
 				}
-				title: "{moni.task.564AFB42CC6805FF}"
+				title: "Any Wireless Terminal"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "{moni.quest.1175ED9EF0AB82F6.title}"
+			title: "Wireless Terminal"
 			x: -4.25d
 			y: 1.25d
 		}
 		{
 			dependencies: ["60BC08DE447E5007"]
 			description: [
-				"{moni.quest.241FADD2C751BE74.description1}"
+				"The ultimate item storage component in base &bApplied Energistics&r."
 				""
-				"{moni.quest.241FADD2C751BE74.description2}"
+				"These have a massive capacity, hundreds of times that of a &61k ME Storage Component&r."
 			]
 			id: "241FADD2C751BE74"
 			rewards: [{
@@ -842,13 +832,13 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.241FADD2C751BE74.subtitle}"
+			subtitle: "&9New to Monifactory!&r"
 			tasks: [{
 				id: "11828E352A22BA71"
 				item: "ae2:cell_component_256k"
 				type: "item"
 			}]
-			title: "{moni.quest.241FADD2C751BE74.title}"
+			title: "&9256k Item Storage"
 			x: -5.5d
 			y: -2.25d
 		}
@@ -858,25 +848,25 @@
 				"4A96659253CCFACF"
 			]
 			description: [
-				"{moni.quest.0EF85170074E70B3.description1}"
+				"This quest teaches you the basics about &bApplied Energistics 2&r autocrafting. If you are new to this mod, it is highly recommended that you watch a video or &3&lread the built-in guide&r&r. Just remember that channels are disabled by default in this pack."
 				""
-				"{moni.quest.0EF85170074E70B3.description2}"
+				"By now, you should have &6ME Pattern Providers, &6Molecular Assemblers, Crafting Units, Patterns&r and a &6Pattern Encoding Terminal&r. "
 				"{@pagebreak}"
-				"{moni.quest.0EF85170074E70B3.description3}"
+				"First, for all crafts, you'll need a &eCrafting CPU&r. These are structures that must be in a solid rectangular prism composed of:"
 				""
-				"{moni.quest.0EF85170074E70B3.description4}"
+				"&6* Crafting Storages&r, which determine how big a craft can be. For now, &64k Crafting Storages&r should be enough. You must have at least one per CPU."
 				""
-				"{moni.quest.0EF85170074E70B3.description5}"
+				"&6* Co-Processing Units&r, which allow the system to start multiple crafting steps at once. While these are optional, they greatly speed up crafting once your machines are fast enough to keep up."
 				""
-				"{moni.quest.0EF85170074E70B3.description6}"
+				"&6* Crafting Monitors&r, used to see what is crafting. Not needed, and you can right-click on the CPU to find out what is crafting anyways, so this is pretty much just decoration."
 				""
-				"{moni.quest.0EF85170074E70B3.description7}"
+				"&6* Crafting Units&r, which aren't needed at all, and are just used to fill holes if you have a lack of materials."
 				"{@pagebreak}"
-				"{moni.quest.0EF85170074E70B3.description8}"
+				"Second, you'll need the place for the autocrafting. For Crafting Table recipes, you'll need &6Molecular Assemblers&r. &6Pattern Providers&r are placed next to them. Autocrafting with &bGregTech&r is explained later, in the quest following this one."
 				""
-				"{moni.quest.0EF85170074E70B3.description9}"
+				"Finally, you'll need a &6Pattern&r. In order to make this, put empty &6Patterns&r in the &6Pattern Encoding Terminal&r, and find the recipe in &bEMI&r, while still in the &6Pattern Encoding Terminal&r. Then, click '+' in &bEMI&r, and press the arrow to encode the recipe. This goes in the &6Pattern Provider&r that you set up in the last step. You can use &6Pattern Access Terminals&r to access &6Pattern Providers'&r pattern slots.\n&2You can also manually encode patterns by adding items to individual slots in the Encoding Terminal, though there are not many use cases for this.&r"
 				""
-				"{moni.quest.0EF85170074E70B3.description10}"
+				"Eventually, you'll need a lot of &6Patterns&r, lots of CPUs, and ones with more storage, and lots of &6&6&6Pattern Providers&r&r&r. If you run out of pattern slots in a &6Pattern Provider&r, you can add more &6Pattern Providers&r, or use &6Extended Pattern Providers&r, which have 36 slots each."
 			]
 			icon: "ae2:crafting_monitor"
 			id: "0EF85170074E70B3"
@@ -884,7 +874,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "584BEA5276908468"
-				title: "{moni.task.584BEA5276908468}"
+				title: "Setting up Autocrafting"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -896,9 +886,9 @@
 				"6F32A8739D8E792A"
 			]
 			description: [
-				"{moni.quest.480EE330E12084E8.description1}"
+				"It's a micropart, so you need to place it on an &6ME Cable&r."
 				""
-				"{moni.quest.480EE330E12084E8.description2}"
+				"When encoding Processing Patterns, note the scrollbar on the left - you can encode up to 81 types of items and fluids!"
 			]
 			id: "480EE330E12084E8"
 			rewards: [{
@@ -908,36 +898,33 @@
 			}]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "{moni.quest.480EE330E12084E8.subtitle}"
+			subtitle: "As the name suggests, this terminal lets you encode recipes onto &aBlank Patterns&r."
 			tasks: [{
 				id: "39CFFF1B37F39741"
 				item: "ae2:pattern_encoding_terminal"
 				type: "item"
 			}]
-			title: "{moni.quest.480EE330E12084E8.title}"
+			title: "Pattern Encoding Terminal"
 			x: 2.0d
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"74469710D910C19D"
-				"53EC3831D66769CA"
-			]
+			dependencies: ["74469710D910C19D"]
 			description: [
-				"{moni.quest.70D9B3C6539720DE.description1}"
+				"Now that you have &6HSS-G&r, you can begin automating &bExtended Crafting&r recipes in an easier way than before. "
 				""
-				"{moni.quest.70D9B3C6539720DE.description2}"
+				"To begin, you'll need to craft one of each extended &3Package Crafter&r listed above. Put an &3Unpackager&r on top of each one, and then a &3Packager&r anywhere you want. These are all AE2 devices, so you'll need to connect them to an ME Network."
 				"{@pagebreak}"
-				"{moni.quest.70D9B3C6539720DE.description3}"
+				"Next, right-click the &3Package Recipe Encoder&r, and you should see a button saying \"Processing\": this button cycles through recipe types, including the various Extended Crafting tables. You'll have to choose the appropriate table for the recipe you want to encode."
 				""
-				"{moni.quest.70D9B3C6539720DE.description4}"
+				"&6Holders&r must be encoded in pairs: one for the Packager, and one for the Unpackager. Select the appropriate table for the recipe, look up the recipe you want to encode, and press &6[+]&r in &bEMI&r to fill it in. Put two Holders in the top-left slot and press Save to encode the recipe to both of them. Finally, put each Holder into the respective machines."
 				"{@pagebreak}"
-				"{moni.quest.70D9B3C6539720DE.description5}"
+				"If you've done everything correctly, you should see the item appear as craftable in a Terminal."
 				""
-				"{moni.quest.70D9B3C6539720DE.description6}"
+				"While it the crafting process is &3significantly slower than using &6Auto Crafting Tables&r, &ePackagedAuto is able to easily parallelize&r. You can surround an Unpackager with Crafters and it will use all of them. It's also possible to add more Unpackagers with Crafters to keep up with the Packager, as long as the Holders are all the same."
 				""
-				"{moni.quest.70D9B3C6539720DE.description7}"
-				"[\"\",{\"underlined\":true,\"translate\":\"moni.quest.70D9B3C6539720DE.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0DB8063A7972E1C0\"}}]"
+				"If this is too confusing, try out"
+				"[\"\",{\"underlined\":true,\"text\":\"Auto Crafting Tables\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0DB8063A7972E1C0\"}}]"
 			]
 			icon: "packagedexcrafting:ultimate_crafter"
 			id: "70D9B3C6539720DE"
@@ -980,24 +967,24 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.70D9B3C6539720DE.title}"
+			title: "&9Automating Extended Crafting"
 			x: -1.25d
 			y: 2.5d
 		}
 		{
 			dependencies: ["0EF85170074E70B3"]
 			description: [
-				"{moni.quest.6E27B9938B280291.description1}"
+				"You can easily automate most &bGregTech&r machines with &aME Pattern Providers&r and processing &aPatterns&r early on by using the machines' auto-output feature."
 				""
-				"{moni.quest.6E27B9938B280291.description2}"
+				"Use &9the Machine's GUI&r to relocate the output side of a machine where you want it to be, then press the \"&3Auto Output&r\" and \"&3Allow Input From Output Side&r\" buttons, and put an ME Pattern Provider on that side of the machine."
 				""
-				"{moni.quest.6E27B9938B280291.description3}"
+				"You can also allow input from the output side by shift-right-clicking with a screwdriver on the output side via the machine grid."
 				""
-				"{moni.quest.6E27B9938B280291.description4}"
+				"Right-click the machine and enable item auto-output (&6orange box&r in the bottom-left corner of the GUI)."
 				"{@pagebreak}"
-				"{moni.quest.6E27B9938B280291.description5}"
+				"Now, stuff the &6ME Pattern Provider&r with processing patterns. The next time you order an item, the ME Pattern Provider will push ingredients into the machine, and the machine will push outputs back into the Pattern Provider once they're ready, completing the craft. No need to use nodes or import buses!"
 				""
-				"{moni.quest.6E27B9938B280291.description6}"
+				"Furthermore, you can use &3Blocking Mode&r, which ensures that no items are in the inventory before placing the items in, which is a handy way to prevent conflicts. &2Even better, blocking mode ignores Programmable Circuits and Molds!&r\n&2Please note that non-consumable items should stay in the machine, and not be included in the pattern made. Yes, this means you should make a separate machine for each non-consumable, at least until you get &3Large Machines&2.&r"
 			]
 			icon: "minecraft:book"
 			id: "6E27B9938B280291"
@@ -1005,7 +992,7 @@
 			size: 1.25d
 			tasks: [{
 				id: "363E7C6EC336B44C"
-				title: "{moni.task.363E7C6EC336B44C}"
+				title: "Simple GregTech Automation"
 				type: "checkmark"
 			}]
 			x: 2.0d
@@ -1014,13 +1001,13 @@
 		{
 			dependencies: ["6F32A8739D8E792A"]
 			description: [
-				"{moni.quest.73908E06B75B9C9E.description1}"
+				"Handling &6Patterns&r gets tedious pretty quickly, from not having enough slots to move tens of them at a time, to having to multiply them when upgrading your &3Large Machines&r, which, when equipped with &3Parallel Control Hatches&r, may require you to supply more than one item at a time to utilize them to their fullest."
 				""
-				"{moni.quest.73908E06B75B9C9E.description2}"
+				"You don't want to supply one ingot and get two wires when your &3Large Wire Factory&r can take &e64 ingots&r and make &e128 wires&r at a time, right?"
 				""
-				"{moni.quest.73908E06B75B9C9E.description3}"
+				"That's where the &6Pattern Modifier&r comes into play, which makes it possible to &emove, multiply, divide and clear patterns in bulk&r. "
 				""
-				"{moni.quest.73908E06B75B9C9E.description4}"
+				"&cKeep in mind: The pattern multiplier function only works on &oProcessing Patterns.&r"
 			]
 			id: "73908E06B75B9C9E"
 			rewards: [{
@@ -1029,22 +1016,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.73908E06B75B9C9E.subtitle}"
+			subtitle: "asdopjkfhwerouijghbnersjkghnrd"
 			tasks: [{
 				id: "4C87128CBD93E0A8"
 				item: "expatternprovider:pattern_modifier"
 				type: "item"
 			}]
-			title: "{moni.quest.73908E06B75B9C9E.title}"
+			title: "&9Mastering Patterns"
 			x: 3.75d
 			y: 4.25d
 		}
 		{
-			dependencies: [
-				"15AE607E2EDD0369"
-				"6169C04DF463502F"
-			]
-			description: ["{moni.quest.26C9F1514FD08C81.description1}"]
+			dependencies: ["15AE607E2EDD0369"]
+			description: ["Placing these in one of your &6ME Drives&r will provide your ME network with an &ainfinite&r amount of water or cobblestone. Use &6Interfaces&r or &6Export Buses&r to provide said substances to wherever you need it."]
 			id: "26C9F1514FD08C81"
 			rewards: [{
 				id: "144A810C0576A3E0"
@@ -1052,7 +1036,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.26C9F1514FD08C81.subtitle}"
+			subtitle: "It doesn't get any faster than this."
 			tasks: [
 				{
 					id: "4EFDB9B627864D5D"
@@ -1085,13 +1069,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.26C9F1514FD08C81.title}"
+			title: "&9Infinitest Water and Stone"
 			x: -3.0d
 			y: -0.75d
 		}
 		{
 			dependencies: ["3C3E015DFA8FDECE"]
-			description: ["{moni.quest.631F5DFF43F7A289.description1}"]
+			description: ["The &6Extended Molecular Assembler&r is able to perform &a8 crafts at a time&r, and does each of those crafts &atwice as fast&r, meaning this assembler can do some serious work. It however loses its ability to hold a pattern for passive crafting."]
 			id: "631F5DFF43F7A289"
 			rewards: [{
 				count: 2
@@ -1100,24 +1084,24 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.631F5DFF43F7A289.subtitle}"
+			subtitle: "More Parallel Crafting"
 			tasks: [{
 				id: "0671F628E93E9BA6"
 				item: "expatternprovider:ex_molecular_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.631F5DFF43F7A289.title}"
+			title: "&9Extended Assembling"
 			x: 3.75d
 			y: 7.5d
 		}
 		{
 			dependencies: ["491180694DA10086"]
 			description: [
-				"{moni.quest.62356B88D5366D33.description1}"
+				"&6Certus Quartz&r can be grown from &6Budding Certus Quartz&r blocks!"
 				""
-				"{moni.quest.62356B88D5366D33.description2}"
+				"Check out the &9&lin-game guide&r&r or &eG&r on the item for specifics on how to get this set up."
 				""
-				"{moni.quest.62356B88D5366D33.description3}"
+				"With enough power, you can even create your own &6Flawless Budding Certus Quartz&r, which works without ever decaying!"
 			]
 			icon: "ae2:flawless_budding_quartz"
 			id: "62356B88D5366D33"
@@ -1127,7 +1111,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.62356B88D5366D33.subtitle}"
+			subtitle: "Just like Amethyst"
 			tasks: [
 				{
 					id: "3EBBAF2494BBA8A8"
@@ -1155,7 +1139,7 @@
 							]
 						}
 					}
-					title: "{moni.task.3EBBAF2494BBA8A8}"
+					title: "Any Budding Certus Quartz"
 					type: "item"
 				}
 				{
@@ -1164,13 +1148,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.62356B88D5366D33.title}"
+			title: "&9Crystal Growing"
 			x: 3.25d
 			y: -6.25d
 		}
 		{
 			dependencies: ["7E59E0E33962D787"]
-			description: ["{moni.quest.3A26187DC3FAD6B1.description1}"]
+			description: ["These can be configured to stock up to &99 item stacks (576 items)&r or &936 buckets (9 types, 4 buckets each)&r for passive autocrafting and to push into other inventories&r. Any item pushed into an &aME Interface&r is digitized and placed in your ME Network storage."]
 			icon: "ae2:interface"
 			id: "3A26187DC3FAD6B1"
 			rewards: [{
@@ -1179,7 +1163,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.3A26187DC3FAD6B1.subtitle}"
+			subtitle: "&9I don't hold patterns!"
 			tasks: [{
 				id: "713C7B1C67D4771E"
 				item: {
@@ -1189,16 +1173,16 @@
 						value: "ae2:interface"
 					}
 				}
-				title: "{moni.task.713C7B1C67D4771E}"
+				title: "Any Interface"
 				type: "item"
 			}]
-			title: "{moni.quest.3A26187DC3FAD6B1.title}"
+			title: "Interface"
 			x: 4.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3A26187DC3FAD6B1"]
-			description: ["{moni.quest.5B3AF79FBDF80C51.description1}"]
+			description: ["This version of &aME Interface&r acts like four of them at once, allowing for 36 item stacks, or 144 buckets of fluids.\n&2Note that the Extended Interface has two pages you can switch between using the arrow button.&r"]
 			icon: "expatternprovider:ex_interface"
 			id: "5B3AF79FBDF80C51"
 			rewards: [{
@@ -1207,7 +1191,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.5B3AF79FBDF80C51.subtitle}"
+			subtitle: "Neither do I, check my cousin Extended Pattern Provider instead"
 			tasks: [{
 				id: "53C8B8B483EF6121"
 				item: {
@@ -1230,19 +1214,19 @@
 						]
 					}
 				}
-				title: "{moni.task.53C8B8B483EF6121}"
+				title: "Any Extended Interface"
 				type: "item"
 			}]
-			title: "{moni.quest.5B3AF79FBDF80C51.title}"
+			title: "&9Extended Interface"
 			x: 5.25d
 			y: -1.5d
 		}
 		{
 			dependencies: ["41B4EA53D6D7AE37"]
 			description: [
-				"{moni.quest.4BEC129D530376BF.description1}"
+				"Crafting in a digital grid is heaven after using primitive wooden tables for so long."
 				""
-				"{moni.quest.4BEC129D530376BF.description2}"
+				"It's a micropart, so you need to place it on an &6ME Cable&r."
 			]
 			id: "4BEC129D530376BF"
 			rewards: [{
@@ -1251,22 +1235,22 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.4BEC129D530376BF.subtitle}"
+			subtitle: "Bye-bye Crafting Table"
 			tasks: [{
 				id: "391327778690A86F"
 				item: "ae2:crafting_terminal"
 				type: "item"
 			}]
-			title: "{moni.quest.4BEC129D530376BF.title}"
+			title: "Crafting Terminal"
 			x: 3.0d
 			y: 1.25d
 		}
 		{
 			dependencies: ["3A26187DC3FAD6B1"]
 			description: [
-				"{moni.quest.7C0A37EEA3C63B16.description1}"
+				"Combining an &aI/O Bus&r and an &aME Interface&r into a single block, these can be used in place of &aInput&r and &aOutput Buses&r in GregTech multiblocks to connect them directly to your AE2 network.\n&9As a side note, ME Busses and their Stocking variant don't support ME part priority. While this isn't usually an issue, you might want to use regular &6ME Interfaces&9 if you need to configure priorities.&r"
 				""
-				"{moni.quest.7C0A37EEA3C63B16.description2}"
+				"Note that only the uniquely-textured side will connect to an ME network."
 			]
 			id: "7C0A37EEA3C63B16"
 			rewards: [{
@@ -1297,13 +1281,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7C0A37EEA3C63B16.title}"
+			title: "&2ME Multiblock Buses"
 			x: 5.25d
 			y: -2.75d
 		}
 		{
 			dependencies: ["52837FD72580F141"]
-			description: ["{moni.quest.58F73E3D1069F52C.description1}"]
+			description: ["The &aME Extended Drive&r can store up to 20 Storage Cells."]
 			icon: "expatternprovider:ex_drive"
 			id: "58F73E3D1069F52C"
 			rewards: [{
@@ -1313,7 +1297,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.58F73E3D1069F52C.subtitle}"
+			subtitle: "Dense Storage"
 			tasks: [{
 				id: "2DE418578F762ADE"
 				item: {
@@ -1332,21 +1316,21 @@
 						]
 					}
 				}
-				title: "{moni.task.2DE418578F762ADE}"
+				title: "Any ME Extended Drive"
 				type: "item"
 			}]
-			title: "{moni.quest.58F73E3D1069F52C.title}"
+			title: "&9ME Extended Drive"
 			x: 1.25d
 			y: -0.75d
 		}
 		{
 			dependencies: ["6E27B9938B280291"]
 			description: [
-				"{moni.quest.0D1A64EBBA742196.description1}"
+				"&bApplied Energistics&r does not allow you to use tags when creating &6Processing Patterns&r. This can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
 				""
-				"{moni.quest.0D1A64EBBA742196.description2}"
+				"&eIf you find this to be an issue, use &9Universal Circuits&e for Processing Patterns that would otherwise use GregTech circuits.&r"
 				""
-				"{moni.quest.0D1A64EBBA742196.description3}"
+				"All normal circuits can be converted to their &9Universal Circuit&r equivalent, and thus when a more efficient circuit can be made, only the recipe for the &9Universal Circuit&r needs to be changed."
 			]
 			icon: "kubejs:hv_universal_circuit"
 			id: "0D1A64EBBA742196"
@@ -1409,16 +1393,16 @@
 						]
 					}
 				}
-				title: "{moni.task.2EEC0D825A18FE85}"
+				title: "Any Universal Circuit"
 				type: "item"
 			}]
-			title: "{moni.quest.0D1A64EBBA742196.title}"
+			title: "&9Universal Circuits"
 			x: 2.75d
 			y: 8.75d
 		}
 		{
 			dependencies: ["410EA68D6EF15CEC"]
-			description: ["{moni.quest.1AC8700C190E84BC.description1}"]
+			description: ["Managing P2P tunnels can be a pain in large numbers. Thankfully, the &6Advanced Memory Card&r fixes that by allowing you to manage all of your connections within a single card, as well as bind and unbind things on the fly, among other features."]
 			id: "1AC8700C190E84BC"
 			rewards: [{
 				count: 3
@@ -1427,7 +1411,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.1AC8700C190E84BC.subtitle}"
+			subtitle: "They really do have a GUI for everything now"
 			tasks: [{
 				id: "75CE8F67A574D433"
 				item: {
@@ -1440,7 +1424,7 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.1AC8700C190E84BC.title}"
+			title: "&9Better P2P Management"
 			x: 5.0d
 			y: -0.25d
 		}
@@ -1450,9 +1434,9 @@
 				"410EA68D6EF15CEC"
 			]
 			description: [
-				"{moni.quest.6646E6DBEF368924.description1}"
+				"&3Pattern P2P&r is somewhat like the other &aP2P&r types, but is able to copy a pattern provider's patterns to all of its outputs."
 				""
-				"{moni.quest.6646E6DBEF368924.description2}"
+				"For example, you could have a Pattern P2P Input placed on a pattern provider, then 5 Outputs with the same ID placed on Assemblers. All 5 of those Assemblers would then &6act as if they each had their own pattern provider that all just so happened to have the same exact patterns&r, and will obey blocking rules, parallelize, and such. "
 			]
 			id: "6646E6DBEF368924"
 			rewards: [{
@@ -1483,7 +1467,7 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.6646E6DBEF368924.title}"
+			title: "&9Pattern P2P"
 			x: 4.0d
 			y: 1.0d
 		}
@@ -1493,9 +1477,9 @@
 				"4FAFF184242F5EB8"
 			]
 			description: [
-				"{moni.quest.31A4355401B03644.description1}"
+				"If somehow being able to store over a million items in a single &9256k Item Storage Cell&r isn't enough for you, there are now &9MEGA Cells&r!"
 				""
-				"{moni.quest.31A4355401B03644.description2}"
+				"&eMEGA Cells&r go up to 256M bytes, allowing them to store an insane amount of items. You will need high-end materials to make the housings for these cells."
 			]
 			id: "31A4355401B03644"
 			rewards: [{
@@ -1508,29 +1492,26 @@
 				item: "megacells:cell_component_1m"
 				type: "item"
 			}]
-			title: "{moni.quest.31A4355401B03644.title}"
+			title: "&9MEGA Cells"
 			x: -6.75d
 			y: -2.25d
 		}
 		{
-			dependencies: [
-				"295E3D32083676E6"
-				"6169C04DF463502F"
-			]
-			description: ["{moni.quest.4FAFF184242F5EB8.description1}"]
+			dependencies: ["295E3D32083676E6"]
+			description: ["Run the plates through the respective &3Inscribers&r with &aPresses&r to make the printed plates, then combine the plates and circuit to form the Accumulation Processor."]
 			id: "4FAFF184242F5EB8"
 			rewards: [{
 				id: "444FF1C6F8EEB5AF"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.4FAFF184242F5EB8.subtitle}"
+			subtitle: "&6Accumulation Processors&r are made from a &6Black Steel Plate&r, a &6Silicon Plate&r, and any tier three circuit."
 			tasks: [{
 				id: "4B2E214B3A13DCD5"
 				item: "megacells:accumulation_processor"
 				type: "item"
 			}]
-			title: "{moni.quest.4FAFF184242F5EB8.title}"
+			title: "&9Accumulation Processors"
 			x: -7.5d
 			y: -4.25d
 		}
@@ -1540,9 +1521,9 @@
 				"4A96659253CCFACF"
 			]
 			description: [
-				"{moni.quest.0C08F09EBCDFDAD0.description1}"
+				"For the big autocrafters. "
 				""
-				"{moni.quest.0C08F09EBCDFDAD0.description2}"
+				"These Crafting Units can be crafted with &eMEGA Cell Storage Components&r to make even larger crafting units."
 			]
 			id: "0C08F09EBCDFDAD0"
 			rewards: [{
@@ -1555,13 +1536,13 @@
 				item: "megacells:mega_crafting_unit"
 				type: "item"
 			}]
-			title: "{moni.quest.0C08F09EBCDFDAD0.title}"
+			title: "&9MEGA Crafting"
 			x: -7.5d
 			y: 4.25d
 		}
 		{
 			dependencies: ["1040D941027962B1"]
-			description: ["{moni.quest.5BE41497CBA97FE5.description1}"]
+			description: ["&9ME Packing Tape&r allows you to easily move &6ME Drives&r and &6Pattern Providers&r by packaging them up, which will retain their contents, such as cells and patterns. "]
 			id: "5BE41497CBA97FE5"
 			rewards: [{
 				id: "738B2A17684F1318"
@@ -1569,7 +1550,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.5BE41497CBA97FE5.subtitle}"
+			subtitle: "Packin' up!"
 			tasks: [{
 				id: "110002C8135222FC"
 				item: {
@@ -1581,13 +1562,13 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.5BE41497CBA97FE5.title}"
+			title: "&9ME Packing Tape"
 			x: 5.0d
 			y: 1.25d
 		}
 		{
 			dependencies: ["2E079747A46D48CF"]
-			description: ["{moni.quest.2341171A4123D584.description1}"]
+			description: ["This works like the pattern access terminal, but can also &9search for patterns&r, and &9highlight &6Pattern Providers&9 in world&r."]
 			id: "2341171A4123D584"
 			rewards: [{
 				id: "28AC866654AE9C02"
@@ -1600,18 +1581,18 @@
 				item: "expatternprovider:ex_pattern_access_part"
 				type: "item"
 			}]
-			title: "{moni.quest.2341171A4123D584.title}"
+			title: "&9Extended Pattern Access Terminal"
 			x: 6.25d
 			y: 3.25d
 		}
 		{
 			dependencies: ["6F32A8739D8E792A"]
 			description: [
-				"{moni.quest.3C3E015DFA8FDECE.description1}"
+				"The &6Molecular Assembler&r is the most flexible way to autocraft recipes that would otherwise be done in the &3Crafting Table&r, &3Stonecutter&r, or &3Smithing Table&r."
 				""
-				"{moni.quest.3C3E015DFA8FDECE.description2}"
+				"Place one next to a &6Pattern Provider&r with a compatible &6Pattern&r and it will perform those recipe types when requested, no further configuration required."
 				""
-				"{moni.quest.3C3E015DFA8FDECE.description3}"
+				"It can also craft recipes passively if supplied with a compatible &6Pattern&r and &aAE&r power."
 			]
 			id: "3C3E015DFA8FDECE"
 			shape: "hexagon"
@@ -1624,14 +1605,11 @@
 			y: 6.0d
 		}
 		{
-			dependencies: [
-				"2A6E9E7C80754936"
-				"4FF4697A8AF10731"
-			]
+			dependencies: ["4FF4697A8AF10731"]
 			description: [
-				"{moni.quest.436707C1C1A6A9DC.description1}"
+				"&6ME Pattern Buffers&r are unlocked after you obtain &6Europium&r. These blocks work quite similarly to &6Pattern Providers&r, with some notable differences. They are used in a multiblocks' structure as a bus/hatch. The items/fluids provided from patterns in the buffer are stored in an infinitely large internal storage. Each pattern has its own buffer, so no two patterns can mix ingredients. Additionally, catalyst items/fluids can be shared across all patterns in the buffer.\n&9Note that Pattern Buffers don't support blocking mode. While this isn't usually an issue, you might want to use regular &6Pattern Providers&9 if you need some form of blocking mode.&r"
 				""
-				"{moni.quest.436707C1C1A6A9DC.description2}"
+				"Later, after building and running a &3Research Station&r, you will be able to make &6ME Pattern Buffer Proxies&r. They can be linked to a parent ME Pattern Buffer by Shift + Right-Clicking on the Buffer with a &6Data Stick&r then Right-Clicking on the Proxy with it. This will make it so that the internal inventory of the Buffer is available to the Proxy, for use in another multiblock."
 			]
 			id: "436707C1C1A6A9DC"
 			shape: "hexagon"
@@ -1640,19 +1618,16 @@
 				item: "gtceu:me_pattern_buffer"
 				type: "item"
 			}]
-			title: "{moni.quest.436707C1C1A6A9DC.title}"
+			title: "ME Pattern Buffers and Proxies"
 			x: 7.75d
 			y: -2.75d
 		}
 		{
-			dependencies: [
-				"7C0A37EEA3C63B16"
-				"605062720747B482"
-			]
+			dependencies: ["7C0A37EEA3C63B16"]
 			description: [
-				"{moni.quest.4FF4697A8AF10731.description1}"
+				"These blocks function similarly to &6ME Input Buses&r/&6Hatches&r. Rather than specifying an amount to keep, the bus/hatch will make all items/fluid of that type in the network accessible to the multiblock. This does not actually pull the items from the network, so they are still available for use everywhere else in on the network."
 				""
-				"{moni.quest.4FF4697A8AF10731.description2}"
+				"If the 'automatic pulling' mode is enabled, the first 16 items/fluid on the network will be made available to the multiblock."
 			]
 			id: "4FF4697A8AF10731"
 			shape: "hexagon"
@@ -1668,16 +1643,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.4FF4697A8AF10731.title}"
+			title: "ME Stocking Buses"
 			x: 6.5d
 			y: -2.75d
 		}
 		{
 			dependencies: ["7E59E0E33962D787"]
 			description: [
-				"{moni.quest.6D2CFBF365E052D5.description1}"
+				"&6Level Emitters&r emit a redstone signal if there is above/below a certain amount of a selected item in the network that the Emitter is attached to. Not selecting an item will make the Emitter read the total amount of any item in the network"
 				""
-				"{moni.quest.6D2CFBF365E052D5.description2}"
+				"These are very useful for turning on/off machines using &6Machine Controllers&r."
 			]
 			id: "6D2CFBF365E052D5"
 			shape: "hexagon"
@@ -1690,15 +1665,11 @@
 			y: -2.75d
 		}
 		{
-			dependencies: [
-				"521977C7165229F1"
-				"6E27B9938B280291"
-				"6DAB13A7BDECE94E"
-			]
+			dependencies: ["6E27B9938B280291"]
 			description: [
-				"{moni.quest.24312649E417990B.description1}"
+				"&6ME Requesters&r allow you to select items that will be automatically requested when their stock drops below a specified level. They also allow you to set how large a batch will be requested."
 				""
-				"{moni.quest.24312649E417990B.description2}"
+				"&6ME Requester Terminals&r allows you to see and edit all Requesters on the network."
 			]
 			id: "24312649E417990B"
 			shape: "hexagon"
@@ -1707,13 +1678,13 @@
 				item: "merequester:requester"
 				type: "item"
 			}]
-			title: "{moni.quest.24312649E417990B.title}"
+			title: "ME Requesters"
 			x: 0.75d
 			y: 7.5d
 		}
 		{
 			dependencies: ["6D03BB4A6A4BBA27"]
-			description: ["{moni.quest.491180694DA10086.description1}"]
+			description: ["Fluix can be made via in-world crafting, by dropping &6Redstone&r, &6Nether Quartz&r, and a &6Charged Certus Quartz Crystal&r in the same block of &9Water&r. Alternatively, there is a recipe that uses power in a &3Mixer&r."]
 			id: "491180694DA10086"
 			shape: "hexagon"
 			tasks: [{
@@ -1721,22 +1692,22 @@
 				item: "ae2:fluix_crystal"
 				type: "item"
 			}]
-			title: "{moni.quest.491180694DA10086.title}"
+			title: "Fluix Crystals"
 			x: 2.0d
 			y: -6.25d
 		}
 		{
 			dependencies: ["491180694DA10086"]
 			description: [
-				"{moni.quest.4174A6C6403DD245.description1}"
+				"Fluix is initially made via in-world crafting, by dropping &6Redstone&r, &6Nether Quartz&r, and a &6Charged Certus Quartz Crystal&r in the same block of &9Water&r. You'll see some sparks then the items will merge into a &6Fluix Crystal&r. Be sure to turn off any nearby item magnets/collectors or they might interrupt this crafting process."
 				""
-				"{moni.quest.4174A6C6403DD245.description2}"
+				"The &3Energy Acceptor&r converts RF power into AE power that Applied Energistics uses, in a 2 RF to 1 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected &6ME Cables&r and &6Quartz Fibers&r."
 				""
-				"{moni.quest.4174A6C6403DD245.description3}"
+				"Quartz Fibers are &emicroparts&r you can put between an ME Cable and any ME Network block or another ME Cable. This will allow transmission of AE power but not data, which is useful for having data-isolated ME Networks all sharing the same power source."
 				"{@pagebreak}"
-				"{moni.quest.4174A6C6403DD245.description4}"
+				"Applied Energistics 2 can be complicated for a new player, so it is recommended to either &l&3use the in-game guide&r &e(Press G while hovering over a compatible item)&r or a video as a supplement to this chapter if need be. "
 				""
-				"[\"\",{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.4174A6C6403DD245.rich_description2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.4174A6C6403DD245.rich_description3\"}]"
+				"[\"\",{\"text\":\"You can also look at \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"Pansmith's guide to Applied Energistics 2\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"https://www.youtube.com/watch?v=u0ouTWgdcXk\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to copy to clipboard!\"}}},{\"text\":\". While written for the 1.12 version of AE2, most of the information is the exact same between the versions.\"}]"
 			]
 			icon: "ae2:energy_acceptor"
 			id: "4174A6C6403DD245"
@@ -1764,7 +1735,7 @@
 		}
 		{
 			dependencies: ["295E3D32083676E6"]
-			description: ["{moni.quest.285052914EF655B9.description1}"]
+			description: ["Combining a &6Printed Silicon&r, an &6LV Circuit&r, and one of the three types of &6Printed Circuits&r in an &3Inscriber&r will grant you a Processor. These are used in a wide variety of Applied Energistics blocks and items."]
 			id: "285052914EF655B9"
 			shape: "hexagon"
 			size: 1.5d
@@ -1785,13 +1756,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.285052914EF655B9.title}"
+			title: "Inscribing Processors"
 			x: 0.0d
 			y: -2.25d
 		}
 		{
 			dependencies: ["5B3AF79FBDF80C51"]
-			description: ["{moni.quest.06794F93613F1496.description1}"]
+			description: ["&6Oversize Interfaces&r have the same number of slots as &6Extended Interfaces&r, but each slot can hold up to 1024 items or 64 buckets of fluids."]
 			icon: "expatternprovider:oversize_interface"
 			id: "06794F93613F1496"
 			shape: "hexagon"
@@ -1813,16 +1784,16 @@
 						]
 					}
 				}
-				title: "{moni.task.230CBD50A43483BC}"
+				title: "Any Oversize Interface"
 				type: "item"
 			}]
-			title: "{moni.quest.06794F93613F1496.title}"
+			title: "Oversize Interface"
 			x: 6.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["1D3A5DCCE1B40D29"]
-			description: ["{moni.quest.7D622F83549C2387.description1}"]
+			description: ["Craft any block with 4 &6Cable Anchors&r to get 4 &6Facades&r of that block. Facades can be placed on any type of ME cable. Cables can pass through facades."]
 			icon: {
 				Count: 1
 				id: "ae2:facade"
@@ -1836,20 +1807,20 @@
 				id: "11152693DB3C2B47"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.7D622F83549C2387.title}"
+			title: "Cable Facades"
 			x: 4.5d
 			y: -4.75d
 		}
 		{
 			dependencies: ["6E27B9938B280291"]
 			description: [
-				"{moni.quest.6F1530D71AA11FFE.description1}"
+				"Items don't stack with other items of the same type that have a different name. This fact, combined with the ability to automate the renaming of items, can help greatly with complex automations."
 				""
-				"{moni.quest.6F1530D71AA11FFE.description2}"
+				"One way to do this is with the &6Name Casting Mold&r from &bGT&r in a &3Forming Press&r. Rename the mold in an anvil block to set the desired name."
 				""
-				"{moni.quest.6F1530D71AA11FFE.description3}"
+				"Another way is to use the &6Inscriber Name Press&r from &bAE2&r in an &3Inscriber&r. To set the name, Right-Click with one of the &6Cutting Knives&r on open air to open its menu. Type in the desired name, and insert any ingot that has the &a#ae2:metal_ingots&r tag (like iron). Then, take the press out of the menu."
 				""
-				"{moni.quest.6F1530D71AA11FFE.description4}"
+				"In both methods, put the item to be renamed in the machine, and it will get renamed. Neither the mold nor press are consumed."
 			]
 			id: "6F1530D71AA11FFE"
 			shape: "hexagon"
@@ -1871,16 +1842,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.6F1530D71AA11FFE.title}"
+			title: "Automatic Item Renaming"
 			x: 1.25d
 			y: 8.75d
 		}
 		{
 			dependencies: ["0EF85170074E70B3"]
 			description: [
-				"{moni.quest.51134C49D26C6D4A.description1}"
+				"Crafting&6 Co-Processing Units&r are used as part of a &6Crafting CPU&r to improve the speed of autocrafting. Each co-processing unit allows the CPU to handle more crafting tasks in parallel."
 				""
-				"{moni.quest.51134C49D26C6D4A.description2}"
+				"&n&4&lWarning&r&r&r\nMaking a &6Crafting CPU&r with too many &6Co-Processing Units&r will result in &cbig lag spikes&r when you schedule your crafts. Amount of lag varies across players, &7&obut you probably don't want to use more than 256 paralles on a single CPU.&r&r"
 			]
 			id: "51134C49D26C6D4A"
 			rewards: [{
@@ -1889,7 +1860,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.51134C49D26C6D4A.subtitle}"
+			subtitle: "Co-processing Units"
 			tasks: [{
 				id: "1C29AFE0918CBC8E"
 				item: {
@@ -1926,10 +1897,10 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.51134C49D26C6D4A.title}"
+			title: "Parallel Crafting"
 			x: 0.75d
 			y: 6.0d
 		}
 	]
-	title: "{moni.chapter.118959024F296F70.title}"
+	title: "Matter-Energy"
 }

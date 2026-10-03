@@ -1,0 +1,628 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gregtech_tips"
+	group: "0D5BFFD0A5E49312"
+	icon: "gtceu:machine_controller_cover"
+	id: "2CC78B1B195CC550"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["604CCBE824D03A74"]
+			dependency_requirement: "one_completed"
+			description: [
+				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are separate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine."
+				""
+				"Here's a list of some covers there are in the game, and what they do:"
+				""
+				"- &lConveyor&r: transfers items continuously to or from an adjacent inventory; is capable of round robin."
+				""
+				"- &lPump&r: is much like a &aConveyor&f, but for fluids."
+				""
+				"- &lRobotic Arm&r: is much like a &aConveyor&r, but has two additional modes:"
+				"    * &eKeep Exact&r: moves items to keep a stock of at most the specified number of items"
+				"    * &eSupply Exact&r: transfers precisely the specified number of items per operation."
+				"This cover is very useful for crafting automation."
+				""
+				"- &lFluid Regulator&r: is like a &aRobotic Arm&r, but works with fluids instead of items."
+				""
+				"- &lShutter&r: prevents automation from interacting with a specific side of a machine."
+				""
+				"- &lDetector&r: Available in Item, Fluid, Energy and Activity flavors, with each having an advanced version for more precise monitoring. Emits a Redstone signal depending on the status of whatever it's detecting."
+				""
+				"- &lMachine Controller&r: Allows the enabling/disabling of machines or covers. Can also remove the ability of machines to pause themselves when out of power."
+				""
+				"Covers that move items or fluids can have a &aFilter&r placed inside them. These modify the functionality of covers in ways explained in their own quests."
+			]
+			icon: "gtceu:shutter_module_cover"
+			id: "4E4A306E1D8C6F8D"
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					icon: "gtceu:lv_conveyor_module"
+					id: "1AB591D1C9434428"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:conveyor_modules"
+						}
+					}
+					title: "Any Conveyor Module"
+					type: "item"
+				}
+				{
+					icon: "gtceu:lv_electric_pump"
+					id: "2B55616EBFA955E2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:electric_pumps"
+						}
+					}
+					title: "Any Electric Pump"
+					type: "item"
+				}
+				{
+					icon: "gtceu:lv_robot_arm"
+					id: "705B969C6F9D7B0B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:robot_arms"
+						}
+					}
+					title: "Any Robot Arm"
+					type: "item"
+				}
+				{
+					icon: "gtceu:lv_fluid_regulator"
+					id: "74DFFF03E8ADD747"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "gtceu:fluid_regulators"
+						}
+					}
+					title: "Any Fluid Regulator"
+					type: "item"
+				}
+			]
+			title: "&9Machine Covers"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			description: [
+				"&9With EMI, instead of showing you a separate recipe for every tool-resource combination, tools are instead grouped. You can use any tool from that group - for example, the &6#forge:tools/hammers &9group means that any &aHammer &9can be used there."
+				""
+				"First, make a &aHammer&f (not a &aMining Hammer&f, mind you… six ingots, not plates). Hammers can be used to turn &etwo ingots into one plate&f. &6Plates&f can make a &3File&f, Files can make &6Rods&f, etc. Use EMI to work your way down the list of tools."
+				""
+				"&6Wrought Iron&f is probably your best bet for a tool material right now, but better materials will become available as you progress."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:wrought_iron_wire_cutter"
+				tag: {
+					Damage: 0
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+						HarvestLevel: 2
+						MaxDamage: 383
+						ToolSpeed: 6.0f
+					}
+					HideFlags: 2
+				}
+			}
+			id: "42DB312E05F7A2FE"
+			rewards: [{
+				count: 2
+				id: "7C9E8CE6C8E6B986"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0AE0FECE5532CB4E"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_hammer"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "10BD2E9F4AA49387"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_file"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "599DE1EDF9D92F79"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_saw"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45A6A205EBB82CEE"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_wrench"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3D0C79D4B62B79B0"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_screwdriver"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A96A0A1CACD2155"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_wire_cutter"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "375605C3C819ED6B"
+					item: {
+						Count: 1
+						id: "gtceu:wrought_iron_mortar"
+						tag: {
+							Damage: 0
+							GT.Tool: { }
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Some Starter Tools"
+			x: 3.75d
+			y: -8.625d
+		}
+		{
+			description: ["&9Pressing the second tab in any given machine's GUI will open up a view showing the machine and any blocks it is touching.&r From there, you can click on a side of the machine and easily add, edit and remove &acovers&r, and configure if the machine should &3automatically output&r and which side it should output to. "]
+			icon: "minecraft:hopper"
+			id: "13FC6C019927E1F7"
+			size: 1.5d
+			tasks: [{
+				id: "36B415AC1149D97D"
+				title: "Screwdrive Output Sides!"
+				type: "checkmark"
+			}]
+			title: "&9Machine Auto-Output"
+			x: 0.0d
+			y: -3.75d
+		}
+		{
+			description: [
+				"A &6Programmed Circuit&r is an item used to configure machines. In essence, they tell a machine what to make if there's multiple things it could make from a certain input."
+				""
+				"For example, the &3Wiremill&r produces different thicknesses of &6wires&r depending on the config - &ecircuit 1&r produces &61x wires&r, &ecircuit 4&r produces &64x wires&r, etc. The &eEMI&r recipe will tell you which circuit configuration is required."
+				"{@pagebreak}"
+				"Each machine and item input bus comes with a &2free \"ghost circuit\"&r. Click the circuit slot on the &9bottom right&r of the GUI to access this ghost circuit. Left- and right-click or scroll to adjust the configuration. "
+				""
+				"That said, the Programmed Circuit item (crafted from a single &6LV Circuit&r) still has its uses:"
+				""
+				"- Whilst holding a programmed circuit, shift-right click the machine to set a &bGhost Circuit&r of the same configuration in the machine's circuit slot."
+				""
+				"- When you're sure that the items you put into a machine won't have any conflicts, you can put &emultiple circuit configs&r into a machine, and it will be able to handle recipes which call for any of those configs. This is useful for machines such as the &3Alloy Blast Smelter&r, but you won't encounter that for a while."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:programmed_circuit"
+				tag: {
+					Configuration: 0
+				}
+			}
+			id: "0059D678CA5D4AFF"
+			rewards: [{
+				id: "3E2D68B358BD56E0"
+				item: {
+					Count: 1
+					id: "gtceu:programmed_circuit"
+					tag: {
+						Configuration: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0B3A95B5777CE646"
+				type: "checkmark"
+			}]
+			title: "&9Programmed Circuits"
+			x: 0.0d
+			y: -5.3125d
+		}
+		{
+			description: ["&9Exoskeletons&r increase your movement speed, letting you get around your factory even quicker."]
+			icon: "gtexolegs:lv_exoskeleton_legs"
+			id: "7364244F85B41359"
+			rewards: [{
+				id: "2953C71D860C9755"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Make it quick!"
+			tasks: [{
+				id: "777273D395BADDC8"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtexolegs:lv_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "gtexolegs:mv_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "gtexolegs:hv_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "gtexolegs:ev_exoskeleton_legs"
+							}
+							{
+								Count: 1b
+								id: "gtexolegs:iv_exoskeleton_legs"
+							}
+						]
+					}
+				}
+				title: "Any Exoskeleton"
+				type: "item"
+			}]
+			title: "&9Exoskeletons"
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			description: [
+				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. While &9this can also be done by pressing the pause button within the machine's GUI&r, the Soft Mallet allows you to quickly turn machines on and off without entering their GUI. &2In either case, please note that the machine will only stop after it finishes its current recipe.&r This can be helpful if you are low on power, but is mostly useful when you need to upgrade a multiblock (more on those later)."
+				""
+				"Although you can make it out of &6Wood&r, it is probably better to make it out of &6Rubber&r now that you can."
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:rubber_mallet"
+				tag: {
+					Damage: 0
+					GT.Behaviours: { }
+					GT.Tool: {
+						AttackDamage: 0.0f
+						AttackSpeed: -2.4f
+						DefaultEnchantments: [ ]
+						MaxDamage: 128
+					}
+				}
+			}
+			id: "435BAFB7943768B4"
+			rewards: [{
+				id: "7B1156083912B054"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "Bonk!"
+			tasks: [{
+				id: "795D729028CDF339"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:wood_mallet"
+								tag: {
+									Damage: 0
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:rubber_mallet"
+								tag: {
+									Damage: 0
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polytetrafluoroethylene_mallet"
+								tag: {
+									Damage: 0
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polyethylene_mallet"
+								tag: {
+									Damage: 0
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:polybenzimidazole_mallet"
+								tag: {
+									Damage: 0
+									DisallowContainerItem: 0b
+									GT.Behaviours: { }
+									GT.Tool: {
+										AttackDamage: 0.0f
+										AttackSpeed: -2.4f
+										MaxDamage: 127
+									}
+									HideFlags: 2
+								}
+							}
+						]
+					}
+				}
+				title: "Any Soft Mallet"
+				type: "item"
+			}]
+			title: "&9Soft Mallet"
+			x: 6.0d
+			y: -8.625d
+		}
+		{
+			description: [
+				"To mute a Gregtech machine, right-click it with a &6Hammer&r. (Not the Mining kind!)"
+				""
+				"For other sounds, there is a button in the &etop-left&r of your inventory that looks like a speaker. Clicking it brings you to the &bExtreme Sound Muffler&r menu."
+				""
+				"In this menu you can &eattenuate the volume of sounds that were recently played&r, or set an \"Anchor\" to reduce the volume of sounds in that area - most of the controls in this menu have a tooltip to tell you what they do."
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "gtceu:textures/gui/overlay/tool_sound.png"
+				}
+			}
+			id: "3A261E2A934EFAFF"
+			size: 1.5d
+			subtitle: "My poor ears!"
+			tasks: [{
+				id: "7C979978ACC70F8E"
+				type: "checkmark"
+			}]
+			title: "&9Muting and Muffling"
+			x: 0.0d
+			y: 0.375d
+		}
+		{
+			description: [
+				"A machine's &amaximum recipe tier&r determines what recipes it can run. Under normal circumstances, the maximum recipe tier of a machine is equivalent to the machine tier for singleblock machines, or the tier of the energy hatch for multiblock machines."
+				""
+				"You may have noticed that you will need to run an &bMV&r recipe in your &3EBF&r to obtain &6Aluminium&r. Unfortunately, at this point you only have access to &7LV&r energy hatches."
+				""
+				"To get around this, you will need to raise the maximum recipe tier of your EBF higher than normal using the &eover-tiering&r mechanic."
+				"{@pagebreak}"
+				"Most multiblocks can have up to two &6Energy Hatches&r in their structure. The Energy Hatches you have access to are able to take in &a2 Amps&r of power each, as noted in their descriptions."
+				""
+				"Placing two &7LV&r &6Energy Hatches&r on your EBF lets you power the machine with total of four &7LV&r (32EU/t) amps, worth one &bMV&r (128EU/t) amp. This raises the maximum recipe tier of the EBF to &bMV&r, allowing it to run &bMV&r-tier recipes."
+				""
+				"[\"\",{\"text\":\"Raising the maximum recipe tier this way can result in &e&ooverclocking&r, which is a distinct mechanic not to be confused with over-tiering. You can read more about it \"},{\"underlined\":\"true\",\"text\":\"here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"31AE366B15538079\"}},{\"text\":\".\"}]"
+			]
+			icon: "gtceu:lv_voltage_coil"
+			id: "4AE1FF69AF05E45E"
+			require_sequential_tasks: false
+			shape: "hexagon"
+			size: 1.25d
+			subtitle: "Not to be confused with overclocking"
+			tasks: [{
+				id: "27876582D407D044"
+				type: "checkmark"
+			}]
+			title: "Recipe Tiers and Over-tiering"
+			x: 3.25d
+			y: 3.75d
+		}
+		{
+			description: [
+				"When a machine is operating at a higher recipe tier than what is required for running the current recipe, it will &aoverclock&r (&aOC&r) the recipe. Each overclock on a recipe will halve its duration but quadruple the rate of energy consumption. For example, a 30 EU/t recipe running in an &bMV&r machine will run at double speed but require 120EU/t."
+				""
+				"The only reason not to run recipes at higher speed is the additional power cost. If this is an issue, you might want to build more lower tier machines in place of overclocking."
+				""
+				"Additionally, &8ULV&r recipes will not overclock to &7LV&r. A ≤8 EU/t recipe won't overclock at all in an &7LV&r machine, and will only overclock once in an &bMV&r machine, etc."
+				""
+				"Overclocks can be visualized with the help of &bEMI&r by interacting with the voltage tier indicator in the bottom right of machine recipes."
+			]
+			icon: "minecraft:clock"
+			id: "2FFDB911731FEB2D"
+			subtitle: "Not to be confused with over-tiering"
+			tasks: [{
+				id: "330E15A0D265BCAE"
+				type: "checkmark"
+			}]
+			title: "Overclocking"
+			x: 1.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["1229234A71CE0A99"]
+			description: [
+				"For now, the best material to make these pipes out of is probably &6Tin&r."
+				""
+				"Their advantage over &bPipez&r is their far higher &6throughput&r. An unupgraded Item Pipe transports &916 items per second&r, and up to &9256 per second&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9dozens of stacks per second&r."
+				""
+				"They don't auto-extract by themselves, so you have to use &3Conveyor Covers&r etc. with them."
+				"{@pagebreak}"
+				"The priority mechanics are as follows:"
+				""
+				"A Destination will have a Routing Value calculated, which is the sum of all Routing Values of the individual Pipes to that Destination. Whichever Destination has the lowest Routing Value will be the one selected for Insertion."
+				"Restrictive Pipes typically have the lowest Priority for insertion due to their higher Routing Value."
+			]
+			id: "571FE20AF5D8F124"
+			rewards: [{
+				count: 2
+				id: "67E64D1EE0CCC181"
+				item: "ulvcovm:ulv_conveyor_module"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "&2GT Item Pipes will transport items instantly through them and accept GT covers."
+			tasks: [{
+				icon: "gtceu:tin_normal_item_pipe"
+				id: "6CB15B88AA69AB9A"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^gtceu:[\\w_]+_item_pipe$"
+					}
+				}
+				title: "Any GT Item Pipe"
+				type: "item"
+			}]
+			title: "&2GT Item Pipes"
+			x: 10.5d
+			y: -5.75d
+		}
+		{
+			dependencies: [
+				"1229234A71CE0A99"
+				"0FF18D13CD42F48A"
+			]
+			description: [
+				"&2GT Fluid Pipes&r are quite powerful. Their advantage is high &9throughput&r and the ability to use &9GT covers&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details. Fluid pipes do require a pump to be able to pull fluids from tanks or machines that lack an auto-output function, but &2ULV pumps (as well as other covers) are very cheap, and buyable with Monicoins&r."
+				""
+				"There are also &6Quadruple and Nonuple Pipes&r for transporting multiple fluid types through the same block."
+				""
+				"You also have access to &bPipez&r, which are cheaper and easier to use"
+			]
+			id: "7D59E5905949C396"
+			rewards: [{
+				count: 2
+				id: "6CF0112603C1D612"
+				item: "ulvcovm:ulv_electric_pump"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "gtceu:potin_large_fluid_pipe"
+				id: "075779A039222C28"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^gtceu:[\\w_]+_fluid_pipe$"
+					}
+				}
+				title: "Any GT Fluid Pipe"
+				type: "item"
+			}]
+			title: "&9GT Fluid Pipes"
+			x: 10.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6197C51E04761371"]
+			description: [
+				"The &6Machine Controller&r is a cover that manages the operation of &bGregTech&r machines, similar to a &aSoft Mallet&r. These are crucial for &epassive automation&r, where a machine is dedicated to keeping something in stock for you."
+				""
+				"\"Machines\" here is broader than you might think. It of course works on single-block machines, but can also be used on &eMultiblock Controllers&r like your &3Electronic Blast Furnace&r. But it's even more flexible than that: you can use it on any &bGregTech&r block that accepts transfer covers, as long as the controllable cover is placed on it first! This means it also works for things like &6Chests&r, &6Drums&r, and Multiblock inputs."
+				"{@pagebreak}"
+				"The cover works by detecting a &eredstone signal&r. By default, the entire machine will be disabled if a sufficiently strong signal is detected by the cover."
+				""
+				"When you open the Machine Controller's GUI with a &aScrewdriver&r, you will see several options for configuring its behavior:"
+				""
+				"The strength of the signal required to trigger the Machine Controller is configurable using the top slider."
+				""
+				"Another button allows you to select whether to control the whole machine (where applicable) or a specific cover. This lets you do things like stop moving items into a machine, but also allow the machine to continue working."
+				""
+				"Switching from &eNormal&r to &eInverted&r mode will make the Machine Controller instead disable the machine until it receives the requisite redstone signal. This is often preferable when working with &6Level Emitters&r to prevent machines from starting up if your &eME Network&r is offline."
+			]
+			id: "1CB14AC299A8EDD9"
+			rewards: [{
+				id: "00D6F05B08AFE26F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F80F5642ADD27DA"
+				item: "gtceu:machine_controller_cover"
+				type: "item"
+			}]
+			x: 10.75d
+			y: 1.0d
+		}
+	]
+	title: "Gregtech Tips"
+}

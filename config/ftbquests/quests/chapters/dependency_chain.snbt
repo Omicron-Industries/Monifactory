@@ -12,17 +12,17 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{moni.quest.7DC209D400BCD708.description1}"]
+			description: ["This little setup is used to unlock quests specific to certain modes, such as HNN chain."]
 			disable_toast: true
 			icon: "minecraft:oak_sign"
 			id: "7DC209D400BCD708"
-			subtitle: "{moni.quest.7DC209D400BCD708.subtitle}"
+			subtitle: "uh oh"
 			tasks: [{
 				id: "424451AEEE23C1AF"
-				title: "{moni.task.424451AEEE23C1AF}"
+				title: "nevercomplete"
 				type: "custom"
 			}]
-			title: "{moni.quest.7DC209D400BCD708.title}"
+			title: "&l&cREAD ME!!"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -483,5 +483,5 @@
 			y: -0.5d
 		}
 	]
-	title: "{moni.chapter.1956832191841F25.title}"
+	title: "dependencies"
 }

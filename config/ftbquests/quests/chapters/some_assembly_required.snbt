@@ -150,15 +150,15 @@
 				"386DB3C9E646764D"
 			]
 			description: [
-				"{moni.quest.52F1953ED72A8AA6.description1}"
+				"The &3Advanced Microverse Projector&r is a more powerful projector required for sending &6Tier Four&r through &6Tier Six Microminers&r into microverses."
 				""
-				"{moni.quest.52F1953ED72A8AA6.description2}"
+				"Additionally, for each tier of projector you use above the required tier of a recipe, you will get a free perfect overclock, similar to how &3EBF&rs grant perfect overclocks with temperature."
 				""
-				"{moni.quest.52F1953ED72A8AA6.description3}"
+				"This tier requires &6EV Field Generators&r, and therefore &6Uranium&r. You can get some from processing &6Uraninite&r."
 				""
-				"{moni.quest.52F1953ED72A8AA6.description4}"
+				"Initial missions can operate on &eIV power&r, while &eLuV power&r is required for later missions. As with the prior projector, this structure supports overclocking and the position of buses and hatches can be swapped with any &6Microverse Projector Casing&r."
 				""
-				"{moni.quest.52F1953ED72A8AA6.description5}"
+				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
 			icon: "monilabs:advanced_microverse_projector"
 			id: "52F1953ED72A8AA6"
@@ -248,7 +248,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.52F1953ED72A8AA6.title}"
+			title: "Advanced Microverse Projector"
 			x: 12.0d
 			y: 7.25d
 		}
@@ -259,11 +259,11 @@
 				"27A80F018F59EF1E"
 			]
 			description: [
-				"{moni.quest.15DBB22E3DC0AFB7.description1}"
+				"All of the Tier Four missions require &6Petrotheum Dust&r."
 				""
-				"{moni.quest.15DBB22E3DC0AFB7.description2}"
+				"This tier of Microminer excels at gathering massive batches of basic materials, such as &6Iron&r, &6Gold&r, or &6Redstone&r. Additionally, this microminer will be your first source of &6Neptunium&r."
 				""
-				"{moni.quest.15DBB22E3DC0AFB7.description3}"
+				"It is also a convenient source of &6Sheldonite&r, the best choice for creating &6Platinum Group Sludge&r, via a mission requiring &6Wither Realm Data&r."
 			]
 			id: "15DBB22E3DC0AFB7"
 			rewards: [{
@@ -278,20 +278,20 @@
 				item: "kubejs:microminer_t4"
 				type: "item"
 			}]
-			title: "{moni.quest.15DBB22E3DC0AFB7.title}"
+			title: "&9Tier Four Microminer"
 			x: 13.25d
 			y: 4.75d
 		}
 		{
 			dependencies: ["53C00EA9D9BEE776"]
 			description: [
-				"{moni.quest.6E5343E45E99CBAD.description1}"
+				"&6Indium&r is a rare material requiring specialized bulk ore processing to acquire. It is useful for making &6Indium Gallium Phosphide&r (InGaP)."
 				""
-				"{moni.quest.6E5343E45E99CBAD.description2}"
+				"You will need to purify (with an &3Ore Washer&r or &3Chemical Bath&r) &6Galena&r and &6Sphalerite&r to get &6Purified&r crushed ore. These need to be placed together in a &3Mixer&r along with &9Sulfuric Acid&r, which will result in &9Indium Concentrate&r."
 				""
-				"{moni.quest.6E5343E45E99CBAD.description3}"
+				"This in turn needs to be reacted with &6Aluminium&r in a &3Chemical Reactor&r, to create &2Small Piles of Indium Dust, Aluminium Sulfite and &9Lead-Zinc Solution&r. The latter two can be centrifuged into various useful materials, and the Indium piles can be combined into full dusts."
 				""
-				"{moni.quest.6E5343E45E99CBAD.description4}"
+				"Later on, you can substitute &6Argentite&r for &6Galena&r or &6Sphalerite&r. &2Indium can also be obtained from the Naquadah processing chain in LuV."
 			]
 			id: "6E5343E45E99CBAD"
 			rewards: [{
@@ -305,7 +305,7 @@
 				item: "gtceu:indium_dust"
 				type: "item"
 			}]
-			title: "{moni.quest.6E5343E45E99CBAD.title}"
+			title: "Indium"
 			x: -4.5d
 			y: -4.75d
 		}
@@ -316,15 +316,15 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.1903B26C95DD325A.description1}"
+				"&6QBit CPUs&r are an advanced Circuit Wafer crucial for &6Quantum Circuits&r."
 				""
-				"{moni.quest.1903B26C95DD325A.description2}"
+				"There are two methods of creating them:"
 				""
-				"{moni.quest.1903B26C95DD325A.description3}"
+				"The simpler recipe uses two &6Quantum Eyes&r and two ingots' worth of molten &9Gallium Arsenide&r to enhance a &6NanoCPU Wafer&r. This recipe is slow and requires substantially more &9Radon&r per craft."
 				""
-				"{moni.quest.1903B26C95DD325A.description4}"
+				"The other route instead uses &6Indium Gallium Phosphide&r and a tiny amount of Radon. This skips the slow-crafting Quantum Eyes, using far less Radon in the process, but requires the infrastructure in place for obtaining &6Indium&r."
 				""
-				"{moni.quest.1903B26C95DD325A.description5}"
+				"The second route is overall better, and you will need Indium processing to complete the pack so might as well do it."
 			]
 			id: "1903B26C95DD325A"
 			rewards: [{
@@ -339,7 +339,7 @@
 				item: "gtceu:qbit_cpu_chip"
 				type: "item"
 			}]
-			title: "{moni.quest.1903B26C95DD325A.title}"
+			title: "QBit Processing Unit"
 			x: -4.5d
 			y: -6.0d
 		}
@@ -349,23 +349,23 @@
 				"605062720747B482"
 			]
 			description: [
-				"{moni.quest.6DAB13A7BDECE94E.description1}"
+				"The &3Assembly Line&r is a large multiblock structure that crafts complex materials, similar to an &3Assembler&r. These will be crucial going forward for making a variety of components and machinery."
 				""
-				"{moni.quest.6DAB13A7BDECE94E.description2}"
+				"Make sure your power generation and circuit production are up to the challenge. &2None of the Assembly Line recipes require programmed circuits.&r"
 				""
-				"{moni.quest.6DAB13A7BDECE94E.description3}"
+				"This quest calls for an Assembly Line that's 10 units long, allowing for 9 inputs and one output. This is a large enough Assembly Line to make &6LuV components&r, but you'll need to expand to more inputs for later projects."
 				"{@pagebreak}"
-				"{moni.quest.6DAB13A7BDECE94E.description4}"
+				"The structure of the Assembly Line is a little stricter than other multiblocks:"
 				""
-				"{moni.quest.6DAB13A7BDECE94E.description5}"
+				"- The &aInput Buses&r can only be placed along the bottom, must all be &8ULV&r tier, and must face downwards. The &aOutput Bus&r must be placed at the very end of the row of Input Buses, and can be any tier."
 				""
-				"{moni.quest.6DAB13A7BDECE94E.description6}"
+				"- &aFluid Hatches&r can only replace the &6Steel Casings&r along the bottom."
 				""
-				"{moni.quest.6DAB13A7BDECE94E.description7}"
+				"- &aEnergy Hatches&r can only be placed within the top row of &6Steel Casings&r."
 				""
-				"{moni.quest.6DAB13A7BDECE94E.description8}"
+				"- The &2Data Access Hatch&r must replace a &6Grate Casing&r on the same side as the Assembly Line controller block. Later, you can replace this with an &2Optical Data Reception Hatch&r. Refer to adjacent quests for how the Assembly Line data system works."
 				""
-				"{moni.quest.6DAB13A7BDECE94E.description9}"
+				"If your recipe is not running, ensure you have the corresponding &edata&r for the recipe in a &2Data Access Hatch&r or connected &3Data Bank&r."
 			]
 			icon: "gtceu:assembly_line"
 			id: "6DAB13A7BDECE94E"
@@ -460,30 +460,30 @@
 						}
 					}
 					optional_task: true
-					title: "{moni.task.387214B8A372DF36}"
+					title: "Any IV Energy Hatch"
 					type: "item"
 				}
 			]
-			title: "{moni.quest.6DAB13A7BDECE94E.title}"
+			title: "&2Assembly Line"
 			x: 0.25d
 			y: 0.0d
 		}
 		{
 			dependencies: ["39FD6F1076559156"]
 			description: [
-				"{moni.quest.672D43BD113251EA.description1}"
+				"The &3Assembly Line&r needs to be provided with &edata&r on how to craft items before it can craft them. Data on how to craft each item is stored in a &6Data Stick&r and read by a &aData Access Hatch&r. This data is required to craft &6LuV components&r and the &3Fusion Reactor&r, among other things."
 				"{@pagebreak}"
-				"{moni.quest.672D43BD113251EA.description2}"
+				"To begin, craft a &3Scanner&r and a few &6Data Sticks&r. The initial Scanner recipes run at &6HV&r, but &9IV&r is required relatively soon so might as well make that one."
 				""
-				"{moni.quest.672D43BD113251EA.description3}"
+				"Press &8R&r on the item you want to craft in &bEMI&r and navigate to the &bScanner tab&r. This will tell you which item needs to be scanned to make the data for the new item. For example, &dLuV &6Electric Motors&r will require an &9IV&r &6Electric Motor&r to be scanned."
 				"{@pagebreak}"
-				"{moni.quest.672D43BD113251EA.description4}"
+				"Place a &6Data Stick&r with the item to be scanned in the &3Scanner&r. The item will be &cconsumed&r and its data will be written to the &6Data Stick&r. Each &6Data item&r can only hold a &csingle recipe&r."
 				""
-				"{moni.quest.672D43BD113251EA.description5}"
+				"Finally, place the &6Data Stick&r into the &aData Access Hatch&r of your &3Assembly Line&r. It will now be able to craft that item."
 				""
-				"{moni.quest.672D43BD113251EA.description6}"
+				"Later, you will need more advanced &6Data Orbs&r and &6Data Modules&r to store data, and a &3Data Bank&r to read them."
 				""
-				"{moni.quest.672D43BD113251EA.description7}"
+				"If you need to create duplicate Data items, you can copy the data to a blank data item of the same type using the Scanner."
 			]
 			icon: "gtceu:data_stick"
 			id: "672D43BD113251EA"
@@ -497,7 +497,7 @@
 				id: "7BFFD184B42E366A"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.672D43BD113251EA.title}"
+			title: "&9Assembly Line Data"
 			x: 0.25d
 			y: -1.5d
 		}
@@ -507,7 +507,7 @@
 				"1349044BF8C04A12"
 				"05F7C3F397B329F5"
 			]
-			description: ["{moni.quest.023197AB7CDBDD6E.description1}"]
+			description: ["The first source of &6Naquadah &r(&6Snowchestite&r on HM+) and &2Kaemanite Ore&r (for &6Trinium&r), via a mission with &6Stabilized Plutonium&r. Later on you can mine these ores from &6Glacio&r."]
 			id: "023197AB7CDBDD6E"
 			rewards: [{
 				id: "5C975732784B15CA"
@@ -521,7 +521,7 @@
 				item: "kubejs:microminer_t5"
 				type: "item"
 			}]
-			title: "{moni.quest.023197AB7CDBDD6E.title}"
+			title: "&2Tier Five Microminer"
 			x: 10.75d
 			y: 4.75d
 		}
@@ -532,9 +532,9 @@
 				"1BADB230EB1BEA4D"
 			]
 			description: [
-				"{moni.quest.424413BBCE3FD3BF.description1}"
+				"An otherworldly material exclusive to Microverses, &6Naquadah&r is an important material in the late game."
 				""
-				"{moni.quest.424413BBCE3FD3BF.description2}"
+				"It can be alloyed and enriched to various forms, and is the eventual source of &6Neutronium&r in a &3MK III Fusion Reactor&r."
 			]
 			id: "424413BBCE3FD3BF"
 			rewards: [{
@@ -548,16 +548,16 @@
 				item: "gtceu:naquadah_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.424413BBCE3FD3BF.title}"
+			title: "Naquadah Ingots"
 			x: 7.25d
 			y: 4.75d
 		}
 		{
 			dependencies: ["424413BBCE3FD3BF"]
 			description: [
-				"{moni.quest.0889C9E0DD0FDF06.description1}"
+				"The &6Naquadah-doped Boule&r produces even more wafers per boule. It also is relatively cheap, due to the abundance of Naquadah that is gained from the &eTier 5 Microminer Mission&r."
 				""
-				"{moni.quest.0889C9E0DD0FDF06.description2}"
+				"This boule also allows the production of &6Advanced System-on-Chip&r wafers."
 			]
 			id: "0889C9E0DD0FDF06"
 			rewards: [{
@@ -571,22 +571,22 @@
 				item: "gtceu:naquadah_boule"
 				type: "item"
 			}]
-			title: "{moni.quest.0889C9E0DD0FDF06.title}"
+			title: "Naquadah Boules"
 			x: 7.25d
 			y: 6.0d
 		}
 		{
 			dependencies: ["28CA4E5308EC0BB9"]
 			description: [
-				"{moni.quest.7DB174443D7FAFA0.description1}"
+				"A complex material from &bThermal Expansion&r cooked in an &3Electric Blast Furnace&r, or an &2Alloy Blast Smelter&r."
 				""
-				"{moni.quest.7DB174443D7FAFA0.description2}"
+				"&6Enderium&r needs a lot of heat and is quite slow without overclocking. &2You can use small amounts of Krypton from Liquid Ender Air distillation to significantly decrease the smelting time.&r"
 				""
-				"{moni.quest.7DB174443D7FAFA0.description3}"
+				"&9Enderium also requires Tantalum, which can be renewably created by macerating and processing &6Dragon Scales&9.&r"
 				""
-				"{moni.quest.7DB174443D7FAFA0.description4}"
+				"As with all later blast furnace materials, it might be worth dedicating a furnace to keeping these in stock and having it running constantly to ensure a stable supply (turning it off when you have an acceptably vast stockpile)."
 				""
-				"{moni.quest.7DB174443D7FAFA0.description5}"
+				"In addition to its other uses, Enderium gets you access to &aResonant Integral Components&r for machines. These quests can be found on the &eProgression&r tab."
 			]
 			id: "7DB174443D7FAFA0"
 			rewards: [{
@@ -600,7 +600,7 @@
 				item: "gtceu:enderium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.7DB174443D7FAFA0.title}"
+			title: "&9Enderium"
 			x: 4.25d
 			y: 0.75d
 		}
@@ -609,7 +609,7 @@
 				"424413BBCE3FD3BF"
 				"254D6D1470BC197E"
 			]
-			description: ["{moni.quest.28CA4E5308EC0BB9.description1}"]
+			description: ["&6Naquadah&r is the sixth coil material available, increasing your EBF's operating temperature to 7200K so it can process more advanced materials."]
 			id: "28CA4E5308EC0BB9"
 			rewards: [{
 				id: "76AA0FD4E8D706E5"
@@ -624,7 +624,7 @@
 				item: "gtceu:naquadah_coil_block"
 				type: "item"
 			}]
-			title: "{moni.quest.28CA4E5308EC0BB9.title}"
+			title: "Naquadah Coil Blocks"
 			x: 4.25d
 			y: 2.75d
 		}
@@ -632,13 +632,13 @@
 			dependencies: ["424413BBCE3FD3BF"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.0508D3CCB6C876A3.description1}"
+				"There are 3 materials you will need from processing &6Naquadah&r: &6Enriched Naquadah&r (Nq+), &6Naquadria&r (Nq*), and &6Trinium&r (Ke). "
 				""
-				"{moni.quest.0508D3CCB6C876A3.description2}"
+				"There are 2 different ways to process Naquadah, each resulting in different materials.&r"
 				""
-				"{moni.quest.0508D3CCB6C876A3.description3}"
+				"The first option is to process ores from the &6Tier Five Microminer&r. &6Naquadah Ore&r yields Nq+ (through the &3Magnetic Separator&r) and &6Kaemanite Ore&r yields Ke."
 				""
-				"{moni.quest.0508D3CCB6C876A3.description4}"
+				"The second option is to do the full processing of &6Naquadah Dust&r with &6Fluoroantimonic Acid&r. This is a decently involved process, but not only does it yield both other Nq materials, it also grants byproducts of &6Titanium, Sulfur, Indium, Phosphorus, Barium, and Gallium&r. "
 			]
 			icon: "gtceu:enriched_naquadah_dust"
 			id: "0508D3CCB6C876A3"
@@ -665,7 +665,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.0508D3CCB6C876A3.title}"
+			title: "Naquadah Processing"
 			x: 4.25d
 			y: 6.75d
 		}
@@ -675,11 +675,11 @@
 				"0508D3CCB6C876A3"
 			]
 			description: [
-				"{moni.quest.15FAEE3F625265F4.description1}"
+				"&2A strong heavy element obtained from the Naquadah chain."
 				""
-				"{moni.quest.15FAEE3F625265F4.description2}"
+				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &91 Trinium per 12 Naquadah processed&r."
 				""
-				"{moni.quest.15FAEE3F625265F4.description3}"
+				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, and &6Naquadah Alloy&r, among other things. You will need almost 5.5 stacks for a &3Fusion Reactor MK I&r, so stock up on it!"
 			]
 			id: "15FAEE3F625265F4"
 			rewards: [{
@@ -693,13 +693,13 @@
 				item: "gtceu:trinium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.15FAEE3F625265F4.title}"
+			title: "&2Trinium"
 			x: 0.75d
 			y: 6.75d
 		}
 		{
 			dependencies: ["15FAEE3F625265F4"]
-			description: ["{moni.quest.1B07DB4D58D43B7C.description1}"]
+			description: ["&6Naquadah Alloy&r requires Naquadah, Osmiridium and Trinium. It will be used in making &6ZPM Machine Hulls&r."]
 			id: "1B07DB4D58D43B7C"
 			rewards: [{
 				id: "0A307605C7249051"
@@ -712,7 +712,7 @@
 				item: "gtceu:naquadah_alloy_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.1B07DB4D58D43B7C.title}"
+			title: "&2Naquadah Alloy"
 			x: -0.25d
 			y: 7.75d
 		}
@@ -722,23 +722,23 @@
 				"521977C7165229F1"
 			]
 			description: [
-				"{moni.quest.2D10F2E538486624.description1}"
+				"The &3Fusion Reactor&r is a multiblock that uses enormous amounts of energy to fuse fluids into new elements. This one is less flexible than the previous GregTech multiblocks, as you can only put hatches where the preview shows. &6Sneak-right click&r the controller to enable the in-world preview."
 				""
-				"{moni.quest.2D10F2E538486624.description2}"
+				"The &bEMI&r preview shows &eall valid hatch locations&r, but you don't actually need that many fluid hatches. You can replace any of the hatch positions in the structure with &2Fusion Machine Casings&r as long as you have at least &atwo Fluid Input Hatches&r and &aone Fluid Output Hatch&r. It's possible to use input/output hatches in every valid location, if you prefer."
 				"{@pagebreak}"
-				"{moni.quest.2D10F2E538486624.description3}"
+				"Because of this, the quest only asks for &248 Fusion Machine Casings&r. If you want to use the minimum number of fluid hatches, you'll need to craft an additional &229 Fusion Machine Casings&r. In addition to the &a48 Fusion Machine Casings&r, you will also need &631 Fusion Glass&r or &631 Fusion Machine Casings&r. &bFusion Glass is cheaper, and looks cooler&r, but it's your choice."
 				""
-				"{moni.quest.2D10F2E538486624.description4}"
+				"Each &aEnergy Hatch&r increases the reactor's power buffer. While multi-amp hatches are allowed, they only function to make charging the reactor faster. &aAll 16 Energy Hatches&r are required to be able to process all Mark 1 recipes and give a power buffer of &e160M EU&r. &2However, not all energy hatches need to be connected to power. For example, a recipe that requires LuV power draw would only need one or more hatches connected to power, but a recipe that needs ZPM power draw would need at least two hatches connected to power.&r &cThey still need to be present on the structure!&r"
 				"{@pagebreak}"
-				"{moni.quest.2D10F2E538486624.description5}"
+				"In addition to the recipe power drain, Fusion Reactors have a &eheat&r mechanic related to the recipe's &e\"EU To Start\"&r. This amount of power is drained from the reactor's buffer before starting the recipe to heat up the reactor to the necessary temperature, and is independent of the recipe's EU/t cost. As such, this determines the minimum tier of reactor you need for a recipe."
 				""
-				"{moni.quest.2D10F2E538486624.description6}"
+				"If the reactor stops processing, it will &erapidly lose heat&r, even if you pause it with a soft mallet. On the other hand, if the reactor is already at the required temperature for a recipe, &eno additional power&r is required to heat up the reactor! This is true even if you switch between different recipes. This mechanic incentivizes continuous use of the reactor."
 				""
-				"{moni.quest.2D10F2E538486624.description9}"
+				"On top of this, &9reactors get faster as they continuously run the same recipe.&r All recipes start out with &3double duration&r, but over time the recipes will eventually become &3twice as fast&r as listed in &bEMI&r."
 				"{@pagebreak}"
-				"{moni.quest.2D10F2E538486624.description7}"
+				"If you switch to a recipe that requires more heat, &eonly the difference&r in heat values is consumed as EU to reach the target heat (up to a maximum heat equal to the reactor's current buffer)."
 				""
-				"{moni.quest.2D10F2E538486624.description8}"
+				"Fusion Reactors overclock, but &eonly up to the voltage tier of the reactor&r, instead of based on energy input. For example, an &9IV&r recipe will overclock once in a Mk1 and twice in a Mk2. However, overclocks in Fusion Reactors grant &a2x the speed for 2x the power&r.\n\nA variety of very important materials will be produced from Fusion, so don't be afraid to make quite a few reactors!"
 			]
 			icon: "gtceu:luv_fusion_reactor"
 			id: "2D10F2E538486624"
@@ -749,7 +749,7 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "{moni.quest.2D10F2E538486624.subtitle}"
+			subtitle: "Time to get fusing!"
 			tasks: [
 				{
 					id: "58C69AD21BA53BEB"
@@ -827,7 +827,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.2D10F2E538486624.title}"
+			title: "&2Fusion Reactor MK I"
 			x: -6.25d
 			y: 6.75d
 		}
@@ -837,11 +837,11 @@
 				"458FF3F9BC8E025B"
 			]
 			description: [
-				"{moni.quest.2BBAF93506DD79C1.description1}"
+				"The &3Active Transformer&r is a device which can convert any number and type of &9GT Energy Inputs&r into any number and type of &9GT Energy Outputs&r. That includes &664A Substation Hatches&r, as well as &aLaser Hatches&r - refer to the nearby quests for more details on those."
 				""
-				"{moni.quest.2BBAF93506DD79C1.description2}"
+				"If the Active Transformer is enabled and has power moving through it, &cbreaking &lANY&r&c block of the structure will destroy the controller. &rIn Hard/Expert Mode this will also cause a &cviolent explosion&r."
 				""
-				"{moni.quest.2BBAF93506DD79C1.description3}"
+				"Since &3Energy Converters&r and &9RF Cards&r only go up to &6HV&r and &5EV&r respectively, this is the best option for high-volume power transfer and distribution. It is strongly recommended that you begin to set these up once they become available."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:active_transformer"
@@ -918,16 +918,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.2BBAF93506DD79C1.title}"
+			title: "&2Active Transformer"
 			x: 0.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["0889C9E0DD0FDF06"]
 			description: [
-				"{moni.quest.7ECA688A91A1392A.description1}"
+				"The &6Advanced System-on-Chip&r (or &6ASoC&r) unlocks the most efficient recipe for &6Nano&r and &6Quantum Processors&r."
 				""
-				"{moni.quest.7ECA688A91A1392A.description2}"
+				"The latter of which must be made in a &cZPM &3Circuit Assembler&r."
 			]
 			id: "7ECA688A91A1392A"
 			rewards: [{
@@ -941,18 +941,21 @@
 				item: "gtceu:advanced_soc_wafer"
 				type: "item"
 			}]
-			title: "{moni.quest.7ECA688A91A1392A.title}"
+			title: "Advanced System-on-Chip"
 			x: 7.25d
 			y: 7.25d
 		}
 		{
-			dependencies: ["15DBB22E3DC0AFB7"]
+			dependencies: [
+				"15DBB22E3DC0AFB7"
+				"1CA6D620309F2B9E"
+			]
 			description: [
-				"{moni.quest.19C2D208A2FC9968.description1}"
+				"All missions require &6Aerotheum Dust&r. This Microminer can be used to gather more advanced &6Mob Drops&r than the &9Tier 2.5 Microminer&r"
 				""
-				"{moni.quest.19C2D208A2FC9968.description2}"
+				"This Miner is the only source of &6Wither Realm Data, Deep Dark Data, and Dragon Den Data&r, as well as any boss drops such as &6Dragon Scales&r."
 				""
-				"{moni.quest.19C2D208A2FC9968.description3}"
+				"It is also a very good source of &6Nether Stars&r and &6Dragons Breath&r."
 			]
 			id: "19C2D208A2FC9968"
 			rewards: [{
@@ -966,7 +969,7 @@
 				item: "kubejs:microminer_t4half"
 				type: "item"
 			}]
-			title: "{moni.quest.19C2D208A2FC9968.title}"
+			title: "Tier Four and a Half Microminer"
 			x: 14.5d
 			y: 7.25d
 		}
@@ -976,11 +979,11 @@
 				"2C4500569586EBC7"
 			]
 			description: [
-				"{moni.quest.05F7C3F397B329F5.description1}"
+				"With two &9IV &6Energy Hatches&r, you are now able to run the &dLuV&r recipe required to break down &6Rarest Metal Mixture&r, which you have been getting from your pre-existing Platline."
 				""
-				"{moni.quest.05F7C3F397B329F5.description2}"
+				"From Rarest Metal Mixture, you can extract &6Iridium&r and &6Osmium&r, vital materials for the upcoming tiers."
 				""
-				"{moni.quest.05F7C3F397B329F5.description3}"
+				"You will need a lot of &6Rarest Metal Mixture&r for this, so now would also be a good time to upgrade your &6Platinum Group Sludge&r processing chain with multiblock machines if you haven't yet."
 			]
 			id: "05F7C3F397B329F5"
 			rewards: [{
@@ -1002,13 +1005,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.05F7C3F397B329F5.title}"
+			title: "Rarest Metal Mixture Processing"
 			x: 10.75d
 			y: -2.75d
 		}
 		{
 			dependencies: ["78DCEF2FF2E1AC8C"]
-			description: ["{moni.quest.6BE1CD77618EC6C7.description1}"]
+			description: ["&2Thin Polyphenylene Sulfide Sheets are required to wrap any Cable tier from &dLuV&2 up to &3UV&2.&r"]
 			icon: "gtceu:polyphenylene_sulfide_foil"
 			id: "6BE1CD77618EC6C7"
 			rewards: [{
@@ -1022,13 +1025,13 @@
 				item: "gtceu:polyphenylene_sulfide_foil"
 				type: "item"
 			}]
-			title: "{moni.quest.6BE1CD77618EC6C7.title}"
+			title: "&2Polyphenylene Sulfide"
 			x: -3.25d
 			y: 4.25d
 		}
 		{
 			dependencies: ["54C3B1B782FDF57F"]
-			description: ["{moni.quest.2B336FD89B15F98E.description1}"]
+			description: ["&2Rhodium Plated Lumium-Palladium is a mixture of Rhodium, Lumium and Palladium. It forms the basis of LuV Machine Hulls."]
 			id: "2B336FD89B15F98E"
 			rewards: [{
 				id: "0954DEB837B61435"
@@ -1042,18 +1045,18 @@
 				item: "gtceu:rhodium_plated_palladium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.2B336FD89B15F98E.title}"
+			title: "&2Rhodium Plated Lumium-Palladium"
 			x: -5.0d
 			y: 2.75d
 		}
 		{
 			dependencies: ["2D10F2E538486624"]
 			description: [
-				"{moni.quest.2A6E9E7C80754936.description1}"
+				"With a &3Fusion Reactor&r, you can make Europium!"
 				""
-				"{moni.quest.2A6E9E7C80754936.description2}"
+				"This element is needed for making &9Sculk-related items&r, as well as the &6Fusion Reactor Computer MK II&r, &2Crystal Chip growing&r, and &6Wetware Supercomputers&r."
 				""
-				"{moni.quest.2A6E9E7C80754936.description3}"
+				"You make it by fusing molten &6Neodymium&r and &6Hydrogen&r."
 			]
 			id: "2A6E9E7C80754936"
 			rewards: [{
@@ -1068,7 +1071,7 @@
 				item: "gtceu:europium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.2A6E9E7C80754936.title}"
+			title: "&2Europium Ingot"
 			x: -6.25d
 			y: 8.75d
 		}
@@ -1077,7 +1080,7 @@
 				"2A6E9E7C80754936"
 				"46A56A5E3CC2403F"
 			]
-			description: ["{moni.quest.5199E6FAA4B699CD.description1}"]
+			description: ["A Ludicrous Voltage tier &bGregTech&r battery."]
 			id: "5199E6FAA4B699CD"
 			rewards: [{
 				id: "627320094BB964B3"
@@ -1090,13 +1093,13 @@
 				item: "gtceu:lapotronic_energy_orb_cluster"
 				type: "item"
 			}]
-			title: "{moni.quest.5199E6FAA4B699CD.title}"
+			title: "LuV Power Storage"
 			x: -8.25d
 			y: 8.75d
 		}
 		{
 			dependencies: ["5199E6FAA4B699CD"]
-			description: ["{moni.quest.0D3E0D645F80835D.description}"]
+			description: ["Strapping &62 Gravitational Engine Units&r and some more batteries to your back allows you to fly very very fast, reach new heights, and become closer to a god."]
 			id: "6FA5A5D424F8ADA1"
 			rewards: [{
 				count: 2
@@ -1104,7 +1107,7 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.0D3E0D645F80835D.subtitle}"
+			subtitle: "King of the skies!"
 			tasks: [{
 				id: "4D42D65928F19EAD"
 				item: {
@@ -1114,18 +1117,18 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.0D3E0D645F80835D.title}"
+			title: "Unstoppable"
 			x: -10.0d
 			y: 8.75d
 		}
 		{
 			dependencies: ["2BBAF93506DD79C1"]
 			description: [
-				"{moni.quest.20745EB9A695E365.description1}"
+				"&aLasers&r are &9GregTech&r's native solution to high-volume power transfer. Each power tier starting at &9IV&r has &aLaser Hatches&r capable of transferring &9256A&r, &91,024A&r and &94,096A&r of their voltage's power!"
 				""
-				"{moni.quest.20745EB9A695E365.description2}"
+				"Energy in the Laser Network flows from &aLaser Source Hatches&r through &6Laser Pipes&r to &aLaser Target Hatches&r. All these must be in a straight line - lasers don't bend, after all. Similarly to other power-related blocks, the tier of the &aLaser Target&r must not be lower than the tier of the &aLaser Source&r."
 				""
-				"{moni.quest.20745EB9A695E365.description3}"
+				"It is recommended to use these when moving power between &3Active Transformers&r and your &3Power Substation&r, and as part of your &aPower Spine&r."
 			]
 			hide_dependency_lines: false
 			id: "20745EB9A695E365"
@@ -1140,7 +1143,7 @@
 				item: "gtceu:normal_laser_pipe"
 				type: "item"
 			}]
-			title: "{moni.quest.20745EB9A695E365.title}"
+			title: "&2Laser Network"
 			x: 2.0d
 			y: -6.5d
 		}
@@ -1150,17 +1153,17 @@
 				"05F7C3F397B329F5"
 			]
 			description: [
-				"{moni.quest.458FF3F9BC8E025B.description1}"
+				"Coming into &dLudicrous Voltage&r, many new advanced materials will be required to craft items and components. Most of these materials require &6RTM Alloy Coils&r."
 				""
-				"{moni.quest.458FF3F9BC8E025B.description2}"
+				"&6Ruridit&r is an alloy of Ruthenium and Iridium. It is used in LuV components alongside &6HSS-S&r."
 				""
-				"{moni.quest.458FF3F9BC8E025B.description3}"
+				"&6Niobium-Titanium&r is the main LuV cable material. Later on, large quantities are required for &6Wetware Circuits&r."
 				""
-				"{moni.quest.458FF3F9BC8E025B.description4}"
+				"&6Osmiridium&r (not from the ore) is used to make the &6Ludicrous Voltage Coil&r, for LuV-tier energy I/O. It is later used to make ZPM components."
 				""
-				"{moni.quest.458FF3F9BC8E025B.description5}"
+				"Finally, &6Samarium&r is used for LuV+ motors. It is obtained from &6Rare Earth&r."
 				""
-				"{moni.quest.458FF3F9BC8E025B.description6}"
+				"These materials take a long time at high temperatures to smelt, so find a way to keep a stock of them."
 			]
 			id: "458FF3F9BC8E025B"
 			rewards: [{
@@ -1191,7 +1194,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.458FF3F9BC8E025B.title}"
+			title: "&2Advanced LuV Materials"
 			x: -1.5d
 			y: -2.75d
 		}
@@ -1201,11 +1204,11 @@
 				"28CA4E5308EC0BB9"
 			]
 			description: [
-				"{moni.quest.41FA85A3920EB334.description1}"
+				"&2A heavy Naquadah isotope with more nuclear capability."
 				""
-				"{moni.quest.41FA85A3920EB334.description2}"
+				"&6Enriched Naquadah&r is used in small amounts for &3Trinium Coil blocks&r, in some lategame alloys, and along with &6Naquadria&r in solid &6Naquadah Fuel Rod&r production."
 				""
-				"{moni.quest.41FA85A3920EB334.description3}"
+				"At least it's the easiest to obtain, and you can get it by the full Naquadah processing chain or by passing &6Purified Naquadah Dust&r through an &3Electromagnetic Separator&r."
 			]
 			id: "41FA85A3920EB334"
 			rewards: [{
@@ -1219,18 +1222,18 @@
 				item: "gtceu:enriched_naquadah_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.41FA85A3920EB334.title}"
+			title: "&2Enriched Naquadah"
 			x: 4.25d
 			y: 4.75d
 		}
 		{
 			dependencies: ["7DB174443D7FAFA0"]
 			description: [
-				"{moni.quest.49B872B193268554.description1}"
+				"The first decent source of &6Dragon Eggs&r."
 				""
-				"{moni.quest.49B872B193268554.description2}"
+				"This microminer can also provide: &6Uraninite&r, &6Plutonium&r, &6Ancient Debris&r, and more."
 				""
-				"{moni.quest.49B872B193268554.description6}"
+				"Once you reach the &3Elite Microverse Projector&r, this microminer can also bring back Sculk-related items, such as &6Sculk Blocks&r and &6Veins&r."
 			]
 			id: "49B872B193268554"
 			rewards: [{
@@ -1245,7 +1248,7 @@
 				item: "kubejs:microminer_t6"
 				type: "item"
 			}]
-			title: "{moni.quest.49B872B193268554.title}"
+			title: "&2Tier Six Microminer"
 			x: 4.25d
 			y: -1.5d
 		}
@@ -1256,11 +1259,11 @@
 				"1CEFFF8EE1E4B6EE"
 			]
 			description: [
-				"{moni.quest.2C4500569586EBC7.description1}"
+				"The &6Insane Voltage Coil&r required for this energy hatch will require an &9IV&r &3assembler&r and &6Neptunium&r."
 				""
-				"{moni.quest.2C4500569586EBC7.description2}"
+				"You will also need &6HPIC Chips&r, requiring &6Indium&r and a &3cutter&r at &9IV&r tier."
 				""
-				"{moni.quest.2C4500569586EBC7.description3}"
+				"Using two of these hatches, most multiblocks can be run at &dLuV&r voltage."
 			]
 			id: "2C4500569586EBC7"
 			rewards: [{
@@ -1273,7 +1276,7 @@
 				item: "gtceu:iv_energy_input_hatch"
 				type: "item"
 			}]
-			title: "{moni.quest.2C4500569586EBC7.title}"
+			title: "IV Energy Hatch"
 			x: 10.75d
 			y: -4.75d
 		}
@@ -1283,15 +1286,15 @@
 				"776886E9296912DD"
 			]
 			description: [
-				"{moni.quest.069D243B809E0D5D.description1}"
+				"The &3Wireless Energy Bridge&r, or WEB for short, comes in two flavors: &3Hub&r and &3Receiver&r. Hubs wirelessly send power to Receivers."
 				""
-				"{moni.quest.069D243B809E0D5D.description2}"
+				"Both sides of the WEB can be set to a specific numbered frequency. When on the same frequency, power in the Hub will be distributed across the Receivers."
 				""
-				"{moni.quest.069D243B809E0D5D.description3}"
+				"&cJust like Active Transformers, WEB Hubs will explode if they are unformed while running."
 				""
-				"{moni.quest.069D243B809E0D5D.description4}"
+				"WEB Hubs consumes &6Quantum Coolant&r each second to function. The rate of consumption scales with the maximum amount of power the Hub can accept."
 				""
-				"{moni.quest.069D243B809E0D5D.description5}"
+				"&cWithout Quantum Coolant, the Hub will explode."
 			]
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
@@ -1304,7 +1307,7 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
+			subtitle: "Spooky power from a distance."
 			tasks: [
 				{
 					id: "68377567726F542C"
@@ -1417,7 +1420,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.069D243B809E0D5D.title}"
+			title: "&2Wireless Energy Bridge"
 			x: 6.0d
 			y: -6.5d
 		}
@@ -1427,11 +1430,11 @@
 				"0412D46926C075FF"
 			]
 			description: [
-				"{moni.quest.069D243B809E0D5D.description1}"
+				"The &3Wireless Energy Bridge&r, or WEB for short, comes in two flavors: &3Hub&r and &3Receiver&r. Hubs wirelessly send power to Receivers."
 				""
-				"{moni.quest.069D243B809E0D5D.description2}"
+				"Both sides of the WEB can be set to a specific numbered frequency. When on the same frequency, power in the Hub will be distributed across the Receivers."
 				""
-				"{moni.quest.069D243B809E0D5D.description3}"
+				"&cJust like Active Transformers, WEB Hubs will explode if they are unformed while running."
 			]
 			hide_dependency_lines: true
 			hide_until_deps_visible: true
@@ -1439,7 +1442,7 @@
 			id: "10E63A0428E6BA25"
 			optional: true
 			size: 2.0d
-			subtitle: "{moni.quest.069D243B809E0D5D.subtitle}"
+			subtitle: "Spooky power from a distance."
 			tasks: [
 				{
 					id: "12926B03245B5C5B"
@@ -1552,7 +1555,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.069D243B809E0D5D.title}"
+			title: "&2Wireless Energy Bridge"
 			x: 6.0d
 			y: -6.5d
 		}
@@ -1561,7 +1564,7 @@
 				"6BE1CD77618EC6C7"
 				"2B336FD89B15F98E"
 			]
-			description: ["{moni.quest.76BAC72CC89F390E.description1}"]
+			description: ["With &6&2Rhodium Plated Lumium-Palladium&r,&6 Niobium-Titanium&r, &2and Polyphenylene Sulfide&r, you can now make hulls for Ludicrous Voltage (LuV) &bGregTech&r machines."]
 			id: "76BAC72CC89F390E"
 			rewards: [{
 				id: "566D0537EF1F4803"
@@ -1575,7 +1578,7 @@
 				item: "gtceu:luv_machine_hull"
 				type: "item"
 			}]
-			title: "{moni.quest.76BAC72CC89F390E.title}"
+			title: "&2LuV Machine Hulls"
 			x: -3.25d
 			y: 2.75d
 		}
@@ -1585,7 +1588,7 @@
 				"6DAB13A7BDECE94E"
 				"458FF3F9BC8E025B"
 			]
-			description: ["{moni.quest.254D6D1470BC197E.description1}"]
+			description: ["The &3Elite Assembler II&r grants access to &dLuV&r-tier recipes, such as &6Naquadah Coils&r and &6Ludicrous Voltage Coils&r."]
 			icon: "gtceu:luv_circuit_assembler"
 			id: "254D6D1470BC197E"
 			rewards: [{
@@ -1600,18 +1603,18 @@
 				item: "gtceu:luv_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.254D6D1470BC197E.title}"
+			title: "LuV Assembler"
 			x: -1.5d
 			y: 2.75d
 		}
 		{
 			dependencies: ["424413BBCE3FD3BF"]
 			description: [
-				"{moni.quest.6B80737C5E1359F7.description1}"
+				"The &9Omni-breaker&r is a tool added by &bGTM Utils&r which can instantly break any block."
 				""
-				"{moni.quest.6B80737C5E1359F7.description2}"
+				"When using the &9Omni-breaker&r you can right click to break one block at a time, or hold left click to continuously break blocks."
 				""
-				"{moni.quest.6B80737C5E1359F7.description3}"
+				"The &9Omni-breaker&r &cdoes not&r automatically relocate blocks to the player, so it is advised to use some type of &6magnet&r to avoid losing blocks."
 			]
 			id: "6B80737C5E1359F7"
 			rewards: [{
@@ -1620,13 +1623,13 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.6B80737C5E1359F7.subtitle}"
+			subtitle: "om nom nom nom"
 			tasks: [{
 				id: "725DD71DFCCADBE8"
 				item: "gtmutils:omnibreaker"
 				type: "item"
 			}]
-			title: "{moni.quest.6B80737C5E1359F7.title}"
+			title: "Omni-breaker"
 			x: 8.5d
 			y: 6.0d
 		}
@@ -1636,9 +1639,9 @@
 				"2A6E9E7C80754936"
 			]
 			description: [
-				"{moni.quest.5A31EEF439212D6E.decription1}"
+				"You will need &6Fine Europium Wire&r to make &6ZPM Electric Motors&r, so make sure you have a steady supply."
 				""
-				"{moni.quest.5A31EEF439212D6E.decription2}"
+				"With the &3Elite Assembler III&r, you can now make &6Trinium Coils&r."
 			]
 			id: "5A31EEF439212D6E"
 			rewards: [{
@@ -1652,16 +1655,16 @@
 				item: "gtceu:zpm_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.5A31EEF439212D6E.title}"
+			title: "ZPM Assembler"
 			x: -2.5d
 			y: 8.75d
 		}
 		{
 			dependencies: ["1B07DB4D58D43B7C"]
 			description: [
-				"{moni.quest.217F85D6FE2A467D.description1}"
+				"&6ZPM Machine Hulls&r are made with &2Naquadah Alloy Plates,&r but you'll notice they also need &2Polybenzimidazole&r."
 				""
-				"{moni.quest.217F85D6FE2A467D.description2}"
+				"ZPM stands for Zero Point Module."
 			]
 			id: "217F85D6FE2A467D"
 			rewards: [{
@@ -1675,7 +1678,7 @@
 				item: "gtceu:zpm_machine_hull"
 				type: "item"
 			}]
-			title: "{moni.quest.217F85D6FE2A467D.title}"
+			title: "&2ZPM Machine Hulls"
 			x: -1.5d
 			y: 7.75d
 		}
@@ -1685,7 +1688,7 @@
 				"5A31EEF439212D6E"
 				"15FAEE3F625265F4"
 			]
-			description: ["{moni.quest.7A65459E4DFAAC2D.description1}"]
+			description: ["&6Trinium&r is the seventh coil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."]
 			id: "7A65459E4DFAAC2D"
 			rewards: [{
 				id: "0F124B2E02F2BD4E"
@@ -1700,22 +1703,22 @@
 				item: "gtceu:trinium_coil_block"
 				type: "item"
 			}]
-			title: "{moni.quest.7A65459E4DFAAC2D.title}"
+			title: "&2Trinium Coils"
 			x: 0.75d
 			y: 8.75d
 		}
 		{
 			dependencies: ["52F1953ED72A8AA6"]
 			description: [
-				"{moni.quest.1EA5F30C5ACADBA9.description1}"
+				"Tier 4+ Microminer missions that require the &3Advanced Microverse Projector&r are quite taxing on the projected Microverse. As the recipes run, the Integrity of the microverse depletes. The total depletion a recipe causes can be seen in &bEMI&r."
 				""
-				"{moni.quest.1EA5F30C5ACADBA9.description2}"
+				"To combat this decay, &6Quantum Flux&r can be used to patch up the microverse. By placing the Flux in any input bus, it will be automatically consumed to repair the microverse, regardless of if a recipe is running. Each Flux repairs 1%%, and is only consumed if more than 1%% is missing."
 				""
-				"{moni.quest.1EA5F30C5ACADBA9.description3}"
+				"Note that the above behavior is specific to Normal microverses. &eEach microverse type repairs in different ways&r, so make sure to read their quests!"
 				""
-				"{moni.quest.1EA5F30C5ACADBA9.description4}"
+				"If a Microverse does reach 0 Integrity, it will collapse, and the microminer on the mission will be returned, but nothing else. You will have to project a new microverse to run more recipes."
 				""
-				"{moni.quest.1EA5F30C5ACADBA9.description5}"
+				"The stability of the microverse can be read out in the form of a redstone signal using the &6Microverse Stability Sensor Hatch&r."
 			]
 			icon: "monilabs:quantum_flux"
 			id: "1EA5F30C5ACADBA9"
@@ -1725,7 +1728,7 @@
 				id: "3105E94F99354675"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.1EA5F30C5ACADBA9.title}"
+			title: "Microverse Decay"
 			x: 10.5d
 			y: 7.25d
 		}
@@ -1734,7 +1737,7 @@
 				"0B9D5F865C3F8B31"
 				"1349044BF8C04A12"
 			]
-			description: ["{moni.quest.62C85A1F451C4855.description4}"]
+			description: ["With a &3Tier Three Rocket&r you can make it to &eMercury&r and &eVenus&r. Before you go, make a &eNetherite Space Suit&r, otherwise the atmosphere will &cburn you to death&r.\n\nMercury has &6Argentite&r for &eIndium&r, &6Plutonium&r, and &6Laurite&r, as well as fluid veins of &9Blazing Pyrotheum&r, &9Sodium Persulfate&r, and... &9Mercury&r.\nVenus has &6Xenotime&r, &6Gallite&r, &9Sulfuric Acid&r fluid veins, and lots of &6Platinum Group ores&r."]
 			id: "299CCE5C8C2219C8"
 			rewards: [{
 				id: "4AEACF669F40EC9B"
@@ -1759,7 +1762,7 @@
 				"05F7C3F397B329F5"
 				"3DD8D9EEA7189186"
 			]
-			description: ["{moni.quest.0B9D5F865C3F8B31.description1}"]
+			description: ["Made by adding some &6Iridium&r and &6Osmium&r to your &6HSS-G&r."]
 			id: "0B9D5F865C3F8B31"
 			rewards: [{
 				id: "4C8CAEEEAB645B5E"
@@ -1772,14 +1775,14 @@
 				item: "gtceu:hsss_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.0B9D5F865C3F8B31.title}"
+			title: "High Speed Steel Type S"
 			x: 8.75d
 			y: -0.75d
 		}
 		{
 			dependencies: ["15DBB22E3DC0AFB7"]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.1CEFFF8EE1E4B6EE.description1}"]
+			description: ["&6Neptunium&r can be obtained from a &6Tier Four Microminer&r mission. Much later, you will be able to use Naquadah Chemistry as a better source."]
 			id: "1CEFFF8EE1E4B6EE"
 			shape: "hexagon"
 			tasks: [{
@@ -1787,13 +1790,13 @@
 				item: "gtceu:neptunium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.1CEFFF8EE1E4B6EE.title}"
+			title: "Neptunium"
 			x: 13.25d
 			y: -4.75d
 		}
 		{
 			dependencies: ["3DD8D9EEA7189186"]
-			description: ["{moni.quest.798889BE3819EB4D.description1}"]
+			description: ["Made by adding some Cobalt, Manganese and Silicon to your HSS-G."]
 			id: "798889BE3819EB4D"
 			rewards: [{
 				id: "564DD63763022D42"
@@ -1806,7 +1809,7 @@
 				item: "gtceu:hsse_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.798889BE3819EB4D.title}"
+			title: "High Speed Steel Type E"
 			x: 5.75d
 			y: -0.75d
 		}
@@ -1818,13 +1821,13 @@
 				"5732018AA35D69B6"
 			]
 			description: [
-				"{moni.quest.38791476E970C57D.description1}"
+				"&6Advanced SMD Components&r are required for &6Crystal, Wetware, and Optical Circuits&r. They can also be substituted for the equivalent of 4 normal SMD components in Nano and Quantum circuits."
 				""
-				"{moni.quest.38791476E970C57D.description2}"
+				"All of these components require &9IV&r power and &6liquid PBI&r."
 				""
-				"{moni.quest.38791476E970C57D.description3}"
+				"The last SMD you'll unlock is the Capacitor, requiring &6Iridium&r and &6Osmium&r for &6HSS-S&r."
 				""
-				"{moni.quest.38791476E970C57D.description4}"
+				"As with the normal SMD components, invest in an extremely robust automation system for these, as you won't stop needing them."
 			]
 			id: "38791476E970C57D"
 			rewards: [{
@@ -1861,7 +1864,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.38791476E970C57D.title}"
+			title: "&2Advanced SMD Components"
 			x: 7.25d
 			y: -1.75d
 		}
@@ -1872,11 +1875,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.1BADB230EB1BEA4D.description1}"
+				"&6Stabilized Plutonium&r, needed to obtain &6Naquadah&r, can be made from either &6Plutonium 239&r or &6Plutonium 241&r."
 				""
-				"{moni.quest.1BADB230EB1BEA4D.description2}"
+				"Plutonium 239 can be obtained in dust form from a &6T5 Microminer&r mission, or mined as an ore on the planet Mercury. You will need a &6Tier 3 Rocket&r for the latter."
 				""
-				"{moni.quest.1BADB230EB1BEA4D.description3}"
+				"Plutonium 241 can be obtained from centrifuging Plutonium 239 dust. Later on, you can also obtain it through a &6MKII Fusion Reactor&r."
 			]
 			id: "1BADB230EB1BEA4D"
 			shape: "hexagon"
@@ -1885,16 +1888,16 @@
 				item: "kubejs:stabilized_plutonium"
 				type: "item"
 			}]
-			title: "{moni.quest.1BADB230EB1BEA4D.title}"
+			title: "Plutonium"
 			x: 8.75d
 			y: 3.75d
 		}
 		{
 			dependencies: ["672D43BD113251EA"]
 			description: [
-				"{moni.quest.3A69EE21B3089929.description1}"
+				"&2Optical Fiber Cables&r are used to transfer &eResearch Data&r&r between &3Data Banks&r and &3Assembly Lines&r, or &eComputation Data&r between &3High Performance Computation Arrays&r, &3Network Switches&r, and &3Research Stations&r."
 				""
-				"{moni.quest.3A69EE21B3089929.description2}"
+				"Note that Optical connections are limited to one &aTransmission Hatch&r to one &aReception Hatch&r."
 			]
 			id: "3A69EE21B3089929"
 			rewards: [{
@@ -1907,7 +1910,7 @@
 				item: "gtceu:normal_optical_pipe"
 				type: "item"
 			}]
-			title: "{moni.quest.3A69EE21B3089929.title}"
+			title: "&2Optical Fiber Cables"
 			x: 2.75d
 			y: -1.5d
 		}
@@ -1917,21 +1920,21 @@
 				"28CA4E5308EC0BB9"
 			]
 			description: [
-				"{moni.quest.57C75A5756F62D17.description1}"
+				"The &3Data Bank&r acts as a mass storage for &6Data Sticks&r and &6Data Orbs&r. It is also required for reading &6Data Modules&r."
 				""
-				"{moni.quest.57C75A5756F62D17.description2}"
+				"Connect an &3Optical Data Transmission Hatch&r on the Data Bank to an &3Optical Data Reception Hatch&r (replacing the &3Data Access Hatch&r) on your &3Assembly Line&r using &aOptical Cables&r, and it will be able to read the data of all data items within the Data Bank."
 				""
-				"{moni.quest.57C75A5756F62D17.description3}"
+				"You can connect multiple &3Assembly Lines&r to a single Data Bank, but each one will need its own &3Transmission Hatch&r on the Data Bank."
 				"{@pagebreak}"
-				"{moni.quest.57C75A5756F62D17.description4}"
+				"&3Data Access Hatches&r and &3Optical Hatches&r can replace any of the &aComputer Casings&r in the structure, but it must have a minimum of &e3&r &aComputer Casings&r. Each &3Data Access Hatch&r and &3Optical Hatch&r within the structure will consume &d1,920 EU/t&r regardless of their usage."
 				""
-				"{moni.quest.57C75A5756F62D17.description5}"
+				"You will also need a &aMaintenance&r and &aEnergy Hatch&r, which can replace the &aHigh Power Casings&r in front."
 				""
 				"{@pagebreak}"
 				""
-				"{moni.quest.57C75A5756F62D17.description6}"
+				"Although this is not strictly required until you need to make and read &6Data Modules&r, your single &3Data Access Hatch&r on your &3Assembly Line&r will not have space to hold all the items you need to craft otherwise."
 				""
-				"{moni.quest.57C75A5756F62D17.description7}"
+				"If your Assembly Line setups grow enough, you may need to &echain&r Data Banks. Connect the &3Transmission Hatch&r on the Data Bank with data to the &3Reception Hatch&r of a second Data Bank. The &ereceiving&r Data Bank will be able to read all the data within the transmitting Data Bank, and can send that data to more Assembly Lines or more Data Banks. However, this comes at a greatly increased energy cost for the transmitting Data Bank."
 			]
 			icon: "gtceu:data_bank"
 			id: "57C75A5756F62D17"
@@ -2007,7 +2010,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.57C75A5756F62D17.title}"
+			title: "&2Data Bank"
 			x: 2.75d
 			y: 1.25d
 		}
@@ -2017,9 +2020,9 @@
 				"05F7C3F397B329F5"
 			]
 			description: [
-				"{moni.quest.044EBE36128FBB01.description1}"
+				"For Peaceful lovers, the &6QuarkTech™ Armor Set&r nullifies burning, freezing, drowning and other harmful effects, and can be used as a &6Netherite Space Suit&r."
 				""
-				"{moni.quest.044EBE36128FBB01.description2}"
+				"For people not playing on peaceful, the suit has more armor points than &6Netherite Armor&r when fully charged. The suit will also feed you food from your inventory when you're hungry"
 			]
 			icon: {
 				Count: 1
@@ -2038,7 +2041,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.044EBE36128FBB01.subtitle}"
+			subtitle: "With great power comes great responsibility, and cost."
 			tasks: [
 				{
 					id: "5B9361A16A3E50C9"
@@ -2065,16 +2068,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.044EBE36128FBB01.title}"
+			title: "QuarkTech™ Armor"
 			x: 9.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["63C3077124BC81FD"]
 			description: [
-				"{moni.quest.70FD95AEA44548B0.description1}"
+				"Like &6Soldering Alloy&r that comes before it, &6Advanced Soldering Alloy&r is used in the &3Assembler&r and &3Circuit Assembler&r to produce circuits and other electrical machinery."
 				""
-				"{moni.quest.70FD95AEA44548B0.description2}"
+				"Unlike Soldering Alloy, however, Advanced Soldering Alloy is twice as efficient, so recipes that allow for it will only consume half as much when compared to regular Soldering Alloy, and one quarter as much compared to &6Liquid Tin&r."
 			]
 			icon: "gtceu:advanced_soldering_alloy_bucket"
 			id: "70FD95AEA44548B0"
@@ -2097,10 +2100,10 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.70FD95AEA44548B0.title}"
+			title: "Advanced Soldering Alloy"
 			x: -7.5d
 			y: -5.25d
 		}
 	]
-	title: "{moni.chapter.058B7FE882875343.title}"
+	title: "Some Assembly Required"
 }

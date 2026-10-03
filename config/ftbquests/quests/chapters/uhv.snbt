@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "uhv"
+	group: "18F0ED1F9A002C08"
+	hide_quest_until_deps_complete: true
+	icon: "kubejs:uhv_universal_circuit"
+	id: "02369231DC748367"
+	order_index: 13
+	quest_links: [ ]
+	quests: [ ]
+	title: "UHV"
+}
