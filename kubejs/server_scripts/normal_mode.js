@@ -52,7 +52,8 @@ ServerEvents.recipes(event => {
             G: "gtceu:potin_gear",
             D: "#forge:gems/diamond"
         }).addMaterialInfo()
-        //
+
+        // Makes steam foundry craftable before lv circuits
         event.remove({ output: "steamadditions:steam_foundry" })
         event.recipes.gtceu.shaped("steamadditions:steam_foundry", [
             "BGB",
@@ -64,6 +65,7 @@ ServerEvents.recipes(event => {
             D: "gtceu:hp_steam_alloy_smelter"
         }).addMaterialInfo()
 
+        // Makes LBB craftable before lv circuits
         event.remove({ output: "gtceu:bronze_large_boiler" })
         event.recipes.gtceu.shaped("gtceu:bronze_large_boiler", [
             "BVB",
