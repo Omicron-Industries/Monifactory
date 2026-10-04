@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:mv_universal_circuit"
 	id: "35A56C29328C5200"
-	order_index: 2
+	order_index: 4
 	quest_links: [
 		{
 			id: "20D596271688188F"

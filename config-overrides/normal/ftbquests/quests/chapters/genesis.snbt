@@ -15,26 +15,26 @@
 			shape: "hexagon"
 			size: 1.25d
 			x: 2.5d
-			y: 12.25d
+			y: 14.25d
 		}
 		{
 			id: "6923AB3CB8B99522"
 			linked_quest: "7D59E5905949C396"
-			x: -3.5d
-			y: 8.5d
+			x: -6.75d
+			y: 10.5d
 		}
 		{
 			id: "0AE27B21D6620318"
 			linked_quest: "571FE20AF5D8F124"
 			x: -3.75d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			id: "7DBAA4D913BF72B7"
 			linked_quest: "42DB312E05F7A2FE"
 			shape: "diamond"
-			x: -2.0d
-			y: 6.0d
+			x: -5.25d
+			y: 8.0d
 		}
 	]
 	quests: [
@@ -218,7 +218,7 @@
 				}
 			]
 			title: "Cake Based Dimensional Transit"
-			x: -3.25d
+			x: -2.0d
 			y: -0.5d
 		}
 		{
@@ -247,11 +247,11 @@
 				type: "item"
 			}]
 			title: "&9Drawers"
-			x: -3.25d
+			x: -2.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
+			dependencies: ["09C8FE545131A402"]
 			description: [
 				"&b&lEMI&r is the list of all items that you see every time you open your inventory. It's the better(tm) recipe book that shows you all available items and recipes in the modpack. Note that &b&lEMI&r is based on &b&lJEI&r, and people tend to use the names interchangeably."
 				""
@@ -262,8 +262,6 @@
 				"[\"\",{\"text\":\"If you instead want to know what recipes use an item, hover over it and press \"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"text\":\"U\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"\\\"Show Uses\\\" in keybind option\"}}},{\"text\":\".\"}]"
 				""
 				"[\"\",{\"text\":\"Hover over an item and press \"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"text\":\"A\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"\\\"Add/Remove Bookmark\\\" in keybind option\"}}},{\"text\":\" to bookmark it. To remove a bookmarked item from the list, press \"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"text\":\"A\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"\\\"Add/Remove Bookmark\\\" in keybind option\"}}},{\"text\":\" on the bookmark.\"}]"
-				""
-				"[\"\",{\"text\":\"One of the remarkable features of EMI is that it's also capable of helping you with recipes, covered more in \"},{\"underlined\":true,\"text\":\"this\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"58566C7BF4C22D86\"}},{\"text\":\" quest.\"}]"
 			]
 			disable_toast: true
 			icon: "ftbquests:book"
@@ -275,11 +273,14 @@
 				type: "checkmark"
 			}]
 			title: "&9&lUse EMI! Use EMI! USE. EMI."
-			x: 3.25d
-			y: -0.5d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["09C8FE545131A402"]
+			dependencies: [
+				"58566C7BF4C22D86"
+				"7A7B7CF403014757"
+			]
 			description: [
 				"&c&rOres in &9Monifactory&f exist in large clusters, or '&eveins&f'. These veins are scattered around the world, and are relatively common. &2The upgraded HV Electric Prospector's Scanner you were given will tell you the types of ores you can find within a 7x7 chunk area! &9You can also click on an ore vein to mark it on your map!"
 				"&r"
@@ -289,6 +290,7 @@
 				""
 				"&6Wrought Iron&f is obtained simply by &esmelting Iron a second time&f. It has more durability than Iron, so it is better for making tools, but &cdo not convert your entire Iron supply over to Wrought Iron&f. The two materials are not interchangeable and you'll need Iron or Wrought Iron as demanded by various recipes."
 			]
+			hide_until_deps_complete: true
 			icon: "gtceu:wrought_iron_ingot"
 			id: "2E8BFA2E719B1C47"
 			rewards: [{
@@ -323,7 +325,7 @@
 			]
 			title: "Iron Supply"
 			x: 0.0d
-			y: 4.75d
+			y: 6.75d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -451,14 +453,12 @@
 			]
 			title: "&9Sophisticated Storage Shenanigans"
 			x: -4.5d
-			y: 4.75d
+			y: 6.75d
 		}
 		{
 			dependencies: ["3B200AD6EFF90DFA"]
 			description: [
 				"&bGregtech&r adds a decent bit of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
-				""
-				"[\"\",{\"text\":\"On the topic of crafting, if you are not already familiar with how \"},{\"underlined\":true,\"text\":\"recipe viewers\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3B200AD6EFF90DFA\"}},{\"text\":\" like EMI or JEI work, read that quest first.\"}]"
 				""
 				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
 				""
@@ -481,8 +481,8 @@
 				type: "checkmark"
 			}]
 			title: "&9Recipe Trees and Crafting Trees"
-			x: 3.25d
-			y: 0.5d
+			x: 1.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -514,7 +514,7 @@
 			}]
 			title: "&2Tool Belt"
 			x: -2.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -527,7 +527,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -546,7 +546,7 @@
 			}]
 			title: "Furnace v2.0"
 			x: 5.0d
-			y: 4.75d
+			y: 6.75d
 		}
 		{
 			dependencies: ["7865CDE5CFE005DC"]
@@ -565,7 +565,7 @@
 			}]
 			title: "Furnace v3.0"
 			x: 5.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0591171F13A45283"]
@@ -584,7 +584,7 @@
 			}]
 			title: "Furnace v4.0"
 			x: 5.0d
-			y: 7.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["3F77EDE69BB649DA"]
@@ -603,7 +603,7 @@
 			}]
 			title: "Furnace v5.0"
 			x: 5.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6B121BEFD852BC2D"]
@@ -622,7 +622,7 @@
 			}]
 			title: "Furnace v6.0"
 			x: 5.0d
-			y: 9.75d
+			y: 11.75d
 		}
 		{
 			dependencies: ["1AE46C1970378083"]
@@ -641,7 +641,7 @@
 			}]
 			title: "Furnace v7.0"
 			x: 5.0d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["3969150B59EA38A2"]
@@ -661,7 +661,7 @@
 			}]
 			title: "Furnace v8.0"
 			x: 5.0d
-			y: 12.25d
+			y: 14.25d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -706,7 +706,7 @@
 			}]
 			title: "Mining Hammers"
 			x: 2.0d
-			y: 2.5d
+			y: 1.75d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -746,7 +746,7 @@
 			}]
 			title: "&9Tree chopping"
 			x: -2.0d
-			y: 2.5d
+			y: 1.75d
 		}
 		{
 			dependencies: ["42DB312E05F7A2FE"]
@@ -797,8 +797,8 @@
 				}
 			]
 			title: "&9Wrenches Galore"
-			x: -3.5d
-			y: 6.0d
+			x: -6.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["42DB312E05F7A2FE"]
@@ -823,8 +823,8 @@
 				type: "item"
 			}]
 			title: "Proper Tool Care"
-			x: -2.0d
-			y: 7.25d
+			x: -5.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -884,7 +884,7 @@
 			]
 			title: "More Materials"
 			x: -1.5d
-			y: 9.75d
+			y: 11.75d
 		}
 		{
 			dependencies: [
@@ -913,7 +913,7 @@
 			}]
 			title: "&9Steel"
 			x: 2.5d
-			y: 11.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["42DB312E05F7A2FE"]
@@ -937,8 +937,8 @@
 				type: "item"
 			}]
 			title: "&9Infinite Water"
-			x: -3.5d
-			y: 7.25d
+			x: -6.75d
+			y: 9.25d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -965,7 +965,7 @@
 			}]
 			title: "Rubber Sheets"
 			x: 0.0d
-			y: 9.75d
+			y: 11.75d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1039,7 +1039,7 @@
 			]
 			title: "From Dust to Wires"
 			x: -1.5d
-			y: 12.25d
+			y: 14.25d
 		}
 		{
 			dependencies: [
@@ -1076,7 +1076,7 @@
 			}]
 			title: "&2Cables"
 			x: 0.0d
-			y: 12.25d
+			y: 14.25d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1196,7 +1196,7 @@
 			}]
 			title: "Multiblock Machine Previews"
 			x: 1.0d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			can_repeat: true
@@ -1245,8 +1245,8 @@
 				}
 			]
 			title: "Recharge Your Prospector!"
-			x: -3.25d
-			y: -1.5d
+			x: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1292,7 +1292,7 @@
 			]
 			title: "Snad"
 			x: -3.0d
-			y: 12.25d
+			y: 14.25d
 		}
 		{
 			dependencies: ["7865CDE5CFE005DC"]
@@ -1320,7 +1320,7 @@
 			]
 			title: "Furnace Augments"
 			x: 6.75d
-			y: 4.75d
+			y: 6.75d
 		}
 		{
 			dependencies: ["7865CDE5CFE005DC"]
@@ -1341,7 +1341,7 @@
 			}]
 			title: "Ctrl + C, Ctrl + V"
 			x: 6.75d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1362,7 +1362,7 @@
 			}]
 			title: "Quests Are Here to Help"
 			x: 0.0d
-			y: 2.5d
+			y: 1.75d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1377,8 +1377,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.25d
-			y: -1.5d
+			x: 2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["04A0863937695AC4"]
@@ -1412,8 +1412,8 @@
 				type: "checkmark"
 			}]
 			title: "Connecting Pipes and Cables"
-			x: -5.25d
-			y: 6.0d
+			x: -8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["115D2BEB18929C7C"]
@@ -1444,7 +1444,7 @@
 		{
 			dependencies: ["7457A13C74667E40"]
 			description: [
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
+				"The &6Steam Grinder&r functions as 8 &7LV &3Macerators&r in parallel! It requires an input of 32mb of &9Steam&r through a &eSteam Hatch&r."
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r, but be wary of ore types that can't be smelted after being crushed."
 				""
@@ -1506,11 +1506,11 @@
 			]
 			title: "&9Steam Grinder"
 			x: 3.25d
-			y: 9.75d
+			y: 11.75d
 		}
 		{
 			dependencies: ["7457A13C74667E40"]
-			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
+			description: ["The &6Steam Foundry&r functions as 8 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes. It takes 240mb of &9Steam&r per tick to run."]
 			hide_until_deps_visible: true
 			icon: "steamadditions:steam_foundry"
 			id: "18F01BB67968C209"
@@ -1556,7 +1556,7 @@
 			]
 			title: "&9Steam Foundry"
 			x: 1.75d
-			y: 9.75d
+			y: 11.75d
 		}
 		{
 			dependencies: [
@@ -1620,7 +1620,7 @@
 				}
 			]
 			x: 2.5d
-			y: 8.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -1670,7 +1670,7 @@
 			}]
 			title: "Magnet"
 			x: 2.0d
-			y: 3.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1701,7 +1701,36 @@
 			}]
 			title: "Your First Circuit"
 			x: 0.0d
-			y: 14.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["3B200AD6EFF90DFA"]
+			description: [
+				"&bGregtech&r adds a decent bit of extra crafting to the earlygame. Thankfully, &bEMI&r has some tools to help make your life &9&lMUCH&r easier when doing all this crafting."
+				""
+				"When looking a recipe in EMI, you've likely noticed 3 buttons that appear on each recipe, being &c[❤]&r, &a[┴]&r, and &9[+]&r."
+				""
+				"Let's start with &9[+]&r, as it's the simplest: right-click a crafting table, look up the recipe you need and press the &9[+]&r button: if you have all required items for the recipe, this will put them all into the crafting table for you."
+				""
+				"&c[❤]&r and &a[┴]&r are used in tandem to create &arecipe trees&r. Pressing &a[┴]&r will pull up a &arecipe tree&r for that given item. Pressing &c[❤]&r on a recipe will mark it as the &cdefault recipe&r for that item, and will show that recipe (and the items used to craft it) in &arecipe trees&r. You can then add &cdefault recipes&r for the items used to craft that recipe, repeat ad nauseam. Note that you can click on an item in the &arecipe tree&r and its recipes will be pulled up."
+				"{@pagebreak}"
+				"In the &arecipe tree&r GUI, you can change the batch size by scrolling on the number to the right of the final result. Finally, and most importantly, you can press the &6Magnifying Glass&r to switch to &6Crafting Tree Mode&r, this will &edisplay the items that you need for every step to craft the number of items that you specified&r in your sidebar, and will dynamically update as you craft items. You can click on these &6Synthetic Favorites&r with your Craft to Inventory bind (unbound by default) to &eautomatically craft and then push items back into your inventory&r when using a crafting table, or push the exact number of items needed if using a different inventory.&r"
+				""
+				"Also note that EMI will commit &cdefault recipes&r to memory, meaning that as you save more and more recipes, EMI will remember them all, and will automatically use them when you pull up a &arecipe tree&r for any given item. Also, you can change the &cdefault recipe&r for an item, and EMI will automatically update the &arecipe tree&r as well. You can also click the &a[┴]&r button found in the bottom left of your inventory screen and it will pull up the &arecipe tree&r GUI as well."
+			]
+			disable_toast: true
+			icon: "quark:crafter"
+			id: "7A7B7CF403014757"
+			shape: "square"
+			size: 1.0d
+			subtitle: "Better than any crafting calculator."
+			tasks: [{
+				id: "2C35508BF5626EFD"
+				type: "checkmark"
+			}]
+			title: "&9Recipe Trees and Crafting Trees"
+			x: -1.0d
+			y: 4.5d
 		}
 	]
 	title: "Genesis"

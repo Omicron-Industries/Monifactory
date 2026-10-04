@@ -6,7 +6,7 @@
 	hide_quest_until_deps_complete: true
 	icon: "gtceu:creative_chest"
 	id: "383ACD064D998E58"
-	order_index: 15
+	order_index: 18
 	quest_links: [ ]
 	quests: [ ]
 	title: "MAX"

@@ -1,794 +1,80 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "hv"
+	filename: "into_the_microverse"
 	group: "18F0ED1F9A002C08"
-	hide_quest_until_deps_complete: true
-	icon: "kubejs:hv_universal_circuit"
-	id: "39B513DAFF8249A7"
-	order_index: 6
+	icon: "kubejs:microminer_t1"
+	id: "68F29871402A6B1B"
+	order_index: 5
 	quest_links: [
 		{
-			id: "25268A98C673BBDE"
-			linked_quest: "6F32A8739D8E792A"
-			shape: "hexagon"
-			size: 2.0d
-			x: -2.75d
-			y: 0.0d
-		}
-		{
-			id: "4A06A6BAEA6B6E24"
-			linked_quest: "73C1AB31431B5C11"
-			shape: "hexagon"
-			x: 7.0d
-			y: 6.5d
-		}
-		{
-			id: "3494A1A9317B9F3B"
+			id: "6BC0B624457AB137"
 			linked_quest: "5F688F22A3DB2ADD"
-			x: 14.25d
-			y: 3.25d
+			x: -11.0d
+			y: -4.0d
 		}
 		{
-			id: "04AA239F2D5B0B3A"
+			id: "1DD08FD4D959B5DB"
 			linked_quest: "5F109188BE4D9767"
-			x: 27.25d
-			y: 3.25d
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			id: "44C91F8846785E1E"
+			linked_quest: "01CC71429CFCAE0B"
+			x: 2.75d
+			y: -12.5d
+		}
+		{
+			id: "0A3DC598AC6F99B1"
+			linked_quest: "6A76B3DCA599B9B5"
+			shape: "hexagon"
+			x: 2.25d
+			y: 1.75d
+		}
+		{
+			id: "7E04938A5111C9A1"
+			linked_quest: "1EA5F30C5ACADBA9"
+			shape: "hexagon"
+			size: 1.5d
+			x: 3.5d
+			y: 1.75d
+		}
+		{
+			id: "794ACF30270A3920"
+			linked_quest: "38B1588655AA9BDF"
+			shape: "hexagon"
+			x: 4.75d
+			y: 1.75d
+		}
+		{
+			id: "6A385521566ECD0E"
+			linked_quest: "062B4DDD703338D1"
+			shape: "hexagon"
+			x: 6.0d
+			y: 1.75d
 		}
 	]
 	quests: [
 		{
-			description: [
-				"The &3Multi Smelter&r is an absolute smelting unit, and is most likely the best furnace &9and alloy smelter&r added by a mod."
-				""
-				"It's a 3x3x3 multiblock machine capable of &esmelting huge amounts of items per second&r. By upgrading its coils and power tier, it can become capable of smelting up to literal thousands of items per second."
-				""
-				"Shift and hover over different coil blocks: they tell you the number of items a Multi Smelter can smelt per operation: &e32 items per level&r. The most basic Multi Smelter essentially does 32 items in the same time as a furnace does one. With a set of &9RTM Alloy&r coil blocks, that jumps to 128 items per operation."
-				"{@pagebreak}"
-				"This quest doesn't ask for coils, hatches or buses: feel free to choose whatever combination you want. You'll need &a8 coil blocks&r, &a1 input bus&r, &a1 output bus&r, and &21 maintenance hatch&r, &21 muffler hatch&r, and at least &a1 energy hatch&r, all of any tier."
-				""
-				"&2The Multi Smelter can have its mode swapped between Electric Furnace and Alloy Smelter recipes by pressing the robot arm button in its GUI.&r For that reason, you'll probably want at least two of them eventually. Some other multiblocks use this mechanic as well."
-			]
-			icon: "gtceu:multi_smelter"
-			id: "2C3C6D2038B01948"
-			rewards: [{
-				count: 2
-				id: "570A42DE5182460E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "4E0E2A8C97046848"
-					item: "gtceu:multi_smelter"
-					type: "item"
-				}
-				{
-					count: 12L
-					id: "0F6DA40F845EB704"
-					item: "gtceu:heatproof_machine_casing"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 8L
-					id: "6A89FBAD7498086D"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:heating_coil"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "62F12BA3B6FA408B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:maintenance_hatch"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "2C58DEED8CC0A1A1"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:muffler_hatch"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "1694E5B8C2F84FCB"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:input_bus"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "40A6244AC2D781F8"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:output_bus"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "5069AB6458137945"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:energy_hatch"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "&9Multi Smelter"
-			x: -4.75d
-			y: -1.0d
-		}
-		{
-			dependencies: ["2823D7B4C8F900CA"]
-			description: [
-				"With &6HV Machine Hulls&r made, you've made your first step towards &eHigh Voltage (HV)&r power machinery!"
-				""
-				"While you can make these in a crafting table with &6Polyethylene Sheets&r, liquid &9Polyethylene&r can be used to craft these directly in an &3Assembler&r."
-			]
-			id: "15E34DEC491FAB81"
-			rewards: [{
-				id: "2994608F544B8B67"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "6E6B85ED9264F8CE"
-				item: "gtceu:hv_machine_hull"
-				type: "item"
-			}]
-			title: "HV Machine Hulls"
-			x: 1.25d
-			y: -2.5d
-		}
-		{
-			dependencies: ["15E34DEC491FAB81"]
-			description: [
-				"With tier three circuits in hand, it's time to make a &3Distillation Tower&r, which gates petrochemistry and more advanced plastics like &6Epoxy&r."
-				""
-				"&3Distillation towers&r require &5EV&r circuits in Hard or Expert mode."
-				""
-				"The Distillation Tower is a highly flexible multiblock structure, able to be anywhere from &62 blocks high to 13 high&r (12 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. &cIf the number of fluid outputs from the recipe exceeds the number of available hatches or those hatches are too small to hold the output, the recipe will not run&r. "
-				"{@pagebreak}"
-				"What you need the Distillation Tower for initially is to break down &9Oil&r and &9Fermented Biomass&r into useful resources.&9 Oil&r distillation, with its four outputs, will require a &efive-block-high Distillation Tower&r (the quest materials are for such a tower; if you want to build it bigger, you will need &ean additional 7 casings and 1 fluid output per floor&r)."
-				""
-				"Any recipe with more than four output fluids (like &9Fermented Biomass&r) will need a larger tower. Make sure to increase the height of your tower to accommodate all of the outputs you want to keep. Also check the voltage requirements of the recipes, as many Distillation Tower recipes need higher voltages than MV. &eYou can swap out your Energy Input for a higher tier one when that time comes&r. Also, any recipe that has an item output will need an &6Output Bus&r, anywhere on the bottom layer."
-				"{@pagebreak}"
-				"The tower we'll be building at first is 3x3x5 (LxWxH), with a hollow center. The &6Fluid Input Hatch&r and &6Maintenance Hatch&r &2can go anywhere on the bottom layer&r. The &6controller&r goes in the middle of an outer edge of the bottom layer. The &6Energy Input Hatch&r can go wherever you can fit it on the bottom layer. The rest of the 3x3 must be filled with &6Clean Stainless Steel Casings&r.&2 Each level above that is a ring of 7 Clean Stainless Steel Casings, one &6Fluid Output&r and nothing in the center, except for the topmost layer which needs an eighth casing to fill in the center, capping off the top. "
-				""
-				"For distilling fluids which only have one useful output, like &9Biomass&r, it is recommended to use single-block Distilleries, due to their energy efficiency and generally lower costs."
-			]
-			icon: "gtceu:distillation_tower"
-			id: "7641AE777370BE1A"
-			rewards: [{
-				id: "4F9D2AFE960FCF5D"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [
-				{
-					id: "04B09521675B866B"
-					item: "gtceu:distillation_tower"
-					type: "item"
-				}
-				{
-					count: 33L
-					id: "1FB27D5C167BD42B"
-					item: "gtceu:clean_machine_casing"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "444A645B6B1BC86C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:maintenance_hatch"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "7506B76C757A2CB2"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:input_hatch"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 4L
-					disable_toast: true
-					id: "5864B152107FCE6C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:output_hatch"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "601F027D7E5D187D"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:energy_hatch"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "6DDA8E557481D63E"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:output_bus"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "&2Distillation Tower"
-			x: -0.75d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7641AE777370BE1A"]
-			description: [
-				"The &3Pyrolyse Oven&r can make more interesting products than just &9Phenol&r."
-				""
-				"&9Charcoal Byproducts&r breaks down into various wood products, such as &9Wood Tar&r, &9Wood Gas&r, and &9Wood Vinegar&r, each of which can be further broken down into various useful chemical compounds, such as &9Toluene&r, &9Methanol&r, etc."
-				""
-				"However, to take full advantage of decomposing these wood products, a &3Distillation Tower&r is required, so that all possible outputs can be obtained. You will need more &eDistillation Tower Slices&r than requested in the&r Distillation Tower quest, so be prepared to spend some more &6Stainless Steel&r."
-			]
-			icon: "gtceu:phenol_bucket"
-			id: "451FD5817C0415D7"
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "3899A3D5954DC65D"
-					item: "gtceu:phenol_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "50D2923A31B5F1B4"
-					item: "gtceu:charcoal_byproducts_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "1FE15147FC41A587"
-					item: "gtceu:wood_tar_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "5F786AAFEF3E1E3C"
-					item: "gtceu:wood_gas_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "15F040D3335ABC5F"
-					item: "gtceu:wood_vinegar_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0984AE73716D4A9B"
-					optional_task: true
-					type: "checkmark"
-				}
-			]
-			title: "Pyrolyse Products"
-			x: -0.25d
-			y: -2.5d
-		}
-		{
-			dependencies: ["153BDCAE4D1CC407"]
-			description: [
-				"&9Polyethylene (PE)&r is the most common category of plastic, made from polymers of &9Ethylene&r. Adding &9Oxygen&r in a &3Chemical Reactor&r recreates (with some artistic license) early accidental synthesis of Polyethylene."
-				""
-				"When you have large amounts of &6Rutile&r and &6Bauxite&r (probably after you visit the Moon) you can consider using &9Titanium Tetrachloride&r as a catalyst to improve your Polyethylene yields. For now it's not a great idea, as in addition to its Overworld rarity, you need it for &6Titanium&r."
-				""
-				"Form &6Polyethylene Sheets&r using a &3Fluid Solidifier&r and a &aPlate Mold&r for use in crafting electronics components. You'll need both the liquid and the sheets. For &9Polyethylene (PE)&r pipes, you can either pulverise your sheets into dust and use those in the extruder, or solidify &9Polyethylene (PE)&r into &6Polyethylene Bars&r separately."
-			]
-			icon: "gtceu:polyethylene_plate"
-			id: "417D97D9E3562F45"
-			rewards: [{
-				id: "3F36144D3B8FF660"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "7E297FE5F2C0019A"
-				item: {
-					Count: 1
-					id: "itemfilters:id_regex"
-					tag: {
-						value: "polyethylene"
-					}
-				}
-				title: "Any Polyethylene Item"
-				type: "item"
-			}]
-			title: "Polyethylene"
-			x: -2.75d
-			y: 2.5d
-		}
-		{
-			dependencies: ["417D97D9E3562F45"]
-			description: ["&6Capacitors&r are devices that store electrical energy, which is useful for circuits. Not to be confused with &bEnder IO&r's capacitors&r, which store redstone flux."]
-			id: "7D0351942F4DB8E0"
-			rewards: [{
-				id: "258264528D30B707"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "7766ABA36439522B"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "gtceu:capacitors"
-					}
-				}
-				title: "Any #gtceu:capacitors"
-				type: "item"
-			}]
-			title: "Capacitors"
-			x: -5.25d
-			y: 4.0d
-		}
-		{
-			dependencies: ["15E34DEC491FAB81"]
-			description: [
-				"&2You can make HV Batteries like LV and MV ones, but there is a better option."
-				""
-				"&2Energium Crystals can store 6,400,000 EU, at the cost of some crafting complexity. They need an HV Autoclave."
-			]
-			id: "1EBF9D9EADB7C451"
-			rewards: [{
-				id: "1CEAE69B1694CF46"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "23C8E19877C450E6"
-				item: "gtceu:energy_crystal"
-				type: "item"
-			}]
-			title: "&2HV Power Storage"
-			x: 3.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["15E34DEC491FAB81"]
-			description: ["&2The next tier of Assembler. This one can make quite a few nice things - check the surrounding quests."]
-			id: "0C4E18B05F9E68DE"
-			rewards: [{
-				id: "1BB8C0E48C4BAE2E"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "6A35A6FEE154B3F9"
-				item: "gtceu:hv_assembler"
-				type: "item"
-			}]
-			title: "HV Assembler"
-			x: 3.75d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"616555E46F314F04"
-				"0C4E18B05F9E68DE"
-			]
-			description: [
-				"&2With Silver, LPICs, NaK, and an HV Assembler, you can finally make HV Energy and Dynamo hatches."
-				""
-				"You should get the gist of making these now, so there will not be further quests on Energy and Dynamo hatches."
-			]
-			id: "5BC6DB754207D4A8"
-			rewards: [{
-				id: "682F89895E02DB2A"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				id: "7819AF44A918EC8E"
-				item: "gtceu:hv_energy_input_hatch"
-				type: "item"
-			}]
-			title: "&2HV Energy Hatch"
-			x: 3.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["3E51686E2DBD380F"]
-			description: [
-				"&2Sodium Potassium is a mix of… take a guess."
-				""
-				"&2It's used in the construction of HV and above Energy and Dynamo hatches."
-			]
-			hide_dependency_lines: true
-			icon: "gtceu:sodium_potassium_bucket"
-			id: "616555E46F314F04"
-			rewards: [{
-				id: "3815CE147C3B07C5"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "778C1437764DF9E9"
-					item: "gtceu:sodium_potassium_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "6C13CB1FDE79CC66"
-					type: "checkmark"
-				}
-			]
-			title: "&2Sodium Potassium"
-			x: 4.25d
-			y: 5.5d
-		}
-		{
-			dependencies: ["0C4E18B05F9E68DE"]
-			description: [
-				"&6Surface Mounted Devices&r, or &6SMD&rs for short, are &2more efficient ways to produce the Circuit components you've been making.&r"
-				""
-				"All SMD components must be produced in at least a &2HV Assembler&r, and they all will require liquid &9Polyethylene&r."
-				""
-				"Start off with the &6SMD Transistor&r. These are simply a &6Gallium &2Foil&r and &6Fine Annealed Copper Wire&r."
-				""
-				"Next up are &6SMD Resistors&r, which are also simple: &6Carbon Dust&r and &6Fine Electrum Wire&r."
-				""
-				"Next up are &6SMD Diodes&r, which are fairly simple. &2Gallium Arsenide Dust&r and &6Fine Platinum Wire&r net you half a stack.&r"
-				""
-				"Then are &6SMD Capacitors&r. You'll need sheets of &6Polyvinyl Chloride&r to make these, or they can also be made more slowly with &6Silicone Rubber&r. &2Using Tantalum Foil in place of Aluminium doubles your yield."
-				""
-				"Finally, &6SMD Inductors&r. Made with &6Nickel Zinc Ferrite&r and &6Fine Cupronickel Wire.&r"
-				""
-				"Invest in a robust system of automation for SMD components and all of their ingredients, since you'll need them in large quantities for several tiers to come. They will also work in place of the non-SMD versions you've been using in all but the simplest of recipes."
-			]
-			hide_dependency_lines: false
-			id: "7256E0064F967C93"
-			rewards: [{
-				count: 3
-				id: "568615DC956F2D3C"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "23590179340FDEBD"
-					item: "gtceu:smd_transistor"
-					type: "item"
-				}
-				{
-					id: "333761903A684A5D"
-					item: "gtceu:smd_resistor"
-					type: "item"
-				}
-				{
-					id: "4EB4872E8B7A6F65"
-					item: "gtceu:smd_diode"
-					type: "item"
-				}
-				{
-					id: "32E433DEEE5CD4EE"
-					item: "gtceu:smd_capacitor"
-					type: "item"
-				}
-				{
-					id: "56B5983BCF6EF318"
-					item: "gtceu:smd_inductor"
-					type: "item"
-				}
-			]
-			title: "&2SMD Components"
-			x: 5.25d
-			y: -1.75d
-		}
-		{
-			dependencies: [
-				"64F45D98FA48D834"
-				"73C1AB31431B5C11"
-			]
-			description: ["A pair of &6Double-Layer RF Capacitors&r combined with some &6Vibrant Alloy&r and &6Glowstone&r creates an &6Octadic RF Capacitor&r, which is a tier three &bEnder IO&r capacitor."]
-			id: "0607A59215F0F8B3"
-			rewards: [{
-				id: "19758A42D6370AF6"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "5471C4A062CF95A9"
-				item: "enderio:octadic_capacitor"
-				type: "item"
-			}]
-			x: 7.75d
-			y: 5.5d
-		}
-		{
-			dependencies: ["7842EC1C389C4B7E"]
-			description: [
-				"Combining &6Basic RF Capacitors&r with some &6Coal Dust&r and &6Energetic Alloy&r produces a &6Double-Layer RF Capacitor&r."
-				""
-				"This is a tier two capacitor. Higher tier RF Capacitors will make &bEnder IO&r machines process faster and depending on the machine will expand their capabilities further (like area of effect)."
-			]
-			id: "64F45D98FA48D834"
-			rewards: [{
-				id: "5B21BA317A200AEB"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "5C5170A07C454E7A"
-				item: "enderio:double_layer_capacitor"
-				type: "item"
-			}]
-			x: 7.75d
-			y: 4.0d
-		}
-		{
-			dependencies: ["1BC6DDC2D50F9C46"]
-			description: [
-				"Overclocking aside, as you continue to progress in &5Monifactory&f, materials made in the &3Electric Blast Furnace&f will take longer to complete. &eMore advanced coils allow for the furnace to &eget hot enough to process more advanced materials&f, &2and they also grant energy efficiency bonuses and speed bonuses to overclocking.&r"
-				""
-				"Despite this, you'll still need to continually expand your smelting and power generation infrastructure."
-				""
-				"You don't have to get all four of these Electric Blast Furnaces completed and running just yet, but be prepared to make many of them over the course of the pack."
-				""
-				"&2As a reminder, all blocks and hatches can be shared across EBFs, except Maintenance!"
-			]
-			id: "508452E1A3E09B56"
-			rewards: [{
-				id: "4B8C70D4E2DB2E1B"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			size: 1.5d
-			tasks: [{
-				count: 4L
-				id: "2665B99B9AC8965C"
-				item: "gtceu:electric_blast_furnace"
-				type: "item"
-			}]
-			title: "&2More Blast Furnaces"
-			x: 10.75d
-			y: -4.5d
-		}
-		{
-			dependencies: ["73C1AB31431B5C11"]
-			description: ["&6Redstone Flux Cells&r can store large amounts of power. They can be upgraded with the &6Holding&r enchantment, &6Integral Components&r, and &6RF Coil augments&r to boost their capacity."]
-			id: "09EED0C4106265BC"
-			rewards: [{
-				id: "452D3826F2B6022F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [{
-				id: "4272F1401BFD6E31"
-				item: "thermal:energy_cell"
-				type: "item"
-			}]
-			title: "RF Storage"
-			x: 7.0d
-			y: 7.75d
-		}
-		{
-			description: [
-				"The &6Ender Fluid Link&r is a cover that you can place on the sides of machines."
-				""
-				"When interacted with, it opens a GUI that allows you to specify which channel it will interact with, either pushing or pulling fluids from all other links on the same frequency."
-				""
-				"Frequencies are distinguished based on an 8 character hexadecimal color code. Optionally, you can give each frequency a description. In the top left of the link's GUI, you can find a button leading to a menu with a list of all available frequencies and their descriptions."
-				""
-				"There is a limited number of available frequencies, so try to keep the number of fluid links below 16,777,216."
-			]
-			hide_dependency_lines: true
-			id: "7C5CE283172CD952"
-			size: 1.5d
-			subtitle: "All out of spaghetti?"
-			tasks: [{
-				id: "5F8C10A49B639228"
-				item: "gtceu:ender_fluid_link_cover"
-				type: "item"
-			}]
-			title: "Ender Fluid Link"
-			x: 10.75d
-			y: -2.5d
-		}
-		{
-			dependencies: ["1EBF9D9EADB7C451"]
-			description: [
-				"The &6NanoMuscle™ Suit&r is the best armor set you have available right now. It's useful even in Peaceful mode, since it nullifies fall damage."
-				""
-				"&eFor anyone not playing in peaceful, when fully charged the &6NanoMuscle™ Suit&e has the same armor points as &6Netherite Armor&e. It also has a higher armor toughness, having 5 per piece instead of 3 per piece."
-			]
-			icon: {
-				Count: 1
-				id: "gtceu:nanomuscle_helmet"
-				tag: { }
-			}
-			id: "17B9395C7D995286"
-			rewards: [{
-				id: "688724D812C46E78"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			subtitle: "Electrified Clothing!"
-			tasks: [
-				{
-					id: "2974A24073D05532"
-					item: {
-						Count: 1
-						id: "gtceu:nanomuscle_helmet"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "399D6F2F537899F2"
-					item: "gtceu:nanomuscle_chestplate"
-					type: "item"
-				}
-				{
-					id: "2A00C78684CD78C6"
-					item: "gtceu:nanomuscle_leggings"
-					type: "item"
-				}
-				{
-					id: "4FB2BEB8132C74BC"
-					item: "gtceu:nanomuscle_boots"
-					type: "item"
-				}
-			]
-			title: "NanoMuscle™ Suit"
-			x: 3.0d
-			y: -3.75d
-		}
-		{
-			dependencies: ["417D97D9E3562F45"]
-			description: ["&6Inductors&r, known as &2Small Coils&r in other versions of GregTech, are another circuit component you will need. For the best results, use &6Nickel Zinc Ferrite&r and &6Annealed Copper&r to make these. But depending on which setups you build first, you may not need to make many of the basic version over the SMD version."]
-			id: "66E1F1B28E4577B2"
-			shape: "hexagon"
-			tasks: [{
-				id: "794BDECD8EBE2F25"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "gtceu:inductors"
-					}
-				}
-				title: "Any #gtceu:capacitors"
-				type: "item"
-			}]
-			title: "Inductors"
-			x: -1.75d
-			y: 4.0d
-		}
-		{
-			dependencies: ["74935A3553451178"]
-			description: [
-				"&6Empty Spray Cans&r can be filled with the liquid form of any color dye in a &3Canner&r. Once filled, they can dye any dye-able block (such as &6wool&r or &bAE2 &6cables&r) by simply right clicking. Cans alternatively can also be filled with solvent, causing them to un-dye clicked blocks."
-				""
-				"Hold shift when dyeing blocks to dye multiple connected blocks at once!"
-				""
-				"In addition to dye-able blocks, &bGregTech&r &6wires&r, &6cables&r, &6machines&r, &6hatches&r and &6buses&r can be dyed."
-				""
-				"Importantly, dyed &bGT&r hatches/buses behave differently than when undyed. When dyed, they will share their contents with all other hatches/buses on the multi that are dyed the same color or undyed. Hatches/buses of different colors will not share contents. This can be quite helpful when you need to have separate 'groups' of hatches/buses on a multiblock, such as when dealing with different program circuits."
-			]
-			hide_dependency_lines: true
-			id: "2C7306C74609E995"
-			size: 1.5d
-			subtitle: "More than just colors!"
-			tasks: [{
-				id: "6BE07CD22A1130B1"
-				item: "gtceu:empty_spray_can"
-				type: "item"
-			}]
-			title: "Spray Painting"
-			x: 10.75d
-			y: -0.5d
-		}
-		{
 			dependencies: ["5F688F22A3DB2ADD"]
 			description: ["&6Black Steel&r will be used to make various items from &bExtended Crafting&r. It will also be the basis of other Steel types later on."]
-			id: "74FEF82CA2FB3D02"
+			id: "1354A17A800169AE"
 			rewards: [{
-				id: "10AA1D453B8D92EC"
+				id: "181CA17C25013620"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "5367AA1BB831957B"
+				id: "1AAB2DE85C07F367"
 				item: "gtceu:black_steel_dust"
 				type: "item"
 			}]
 			title: "Black Steel"
-			x: 16.25d
-			y: 3.25d
+			x: -9.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -800,56 +86,56 @@
 				""
 				"Don't worry if you can't make these for a while. You'll probably get to them around IV power."
 			]
-			id: "01F946C4A4BF4FFE"
+			id: "5A76FC13B7630774"
 			rewards: [{
-				id: "559D9870D4954668"
+				id: "57BF7265809DC85C"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "226E761CB9303F6E"
+				id: "2159563536821786"
 				item: "extendedcrafting:ultimate_component"
 				type: "item"
 			}]
-			x: 18.25d
-			y: 3.25d
+			x: -7.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["74FEF82CA2FB3D02"]
 			description: ["A component used for more advanced items related to &bExtended Crafting&r."]
-			id: "718AF2C9476BE1F4"
+			id: "139EAD4FF281F216"
 			rewards: [{
-				id: "2321FAD936678D92"
+				id: "0162618662B31232"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "3A436624C655C34F"
+				id: "44D12D31A584EBE1"
 				item: "extendedcrafting:elite_component"
 				type: "item"
 			}]
-			x: 18.25d
-			y: 5.25d
+			x: -7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["01F946C4A4BF4FFE"]
 			description: ["Combine several components into a catalyst."]
-			id: "52B20235882063BF"
+			id: "0022A1E2CC9791E9"
 			rewards: [{
-				id: "1757FF029B625C79"
+				id: "054EEB2BC8D8E4B1"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "29A5815A5E4B818F"
+				id: "4B29536CD1864B06"
 				item: "extendedcrafting:ultimate_catalyst"
 				type: "item"
 			}]
-			x: 20.25d
-			y: 3.25d
+			x: -5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5B0200011DF8E1B6"]
@@ -858,21 +144,21 @@
 				""
 				"Both ores are found in &6Apatite&r veins."
 			]
-			id: "1735403C8B0D3FAD"
+			id: "7D7E0330CA400E76"
 			rewards: [{
-				id: "1B7D375C31F4A0A7"
+				id: "185197E79C28CA1B"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "7F1C7E7DA9B351B1"
+				id: "4BF344CBFBDF16E9"
 				item: "gtceu:phosphorus_dust"
 				type: "item"
 			}]
 			title: "Phosphorus"
-			x: 20.25d
-			y: 1.25d
+			x: -5.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -891,29 +177,29 @@
 				"Otherwise, you can react &6Apatite Dust&r, &9Sulfuric Acid&r, and Water to get Phosphoric Acid, &9Hydrochloric Acid&r, and a whole bunch of &6Gypsum Dust&r."
 			]
 			icon: "gtceu:phosphoric_acid_bucket"
-			id: "3BB7400C8BB392D9"
+			id: "7516FA712CC09587"
 			rewards: [{
-				id: "35DF5CEAEF8B9184"
+				id: "2983D5FDB8097EB1"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "67E12CCD296D12FD"
+					id: "555236697DC9C97B"
 					item: "gtceu:phosphoric_acid_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "71BDB3CC528075E6"
+					id: "0F1EF06364DB63E5"
 					optional_task: true
 					type: "checkmark"
 				}
 			]
 			title: "Phosphoric Acid"
-			x: 20.25d
-			y: -0.25d
+			x: -5.0d
+			y: -7.5d
 		}
 		{
 			dependencies: ["0E010F5348FC89BF"]
@@ -932,48 +218,48 @@
 				"Sulfur can be electrolyzed from many things."
 			]
 			icon: "gtceu:sulfuric_acid_bucket"
-			id: "648B1E09AA648798"
+			id: "0AD4B60D0F23DDB9"
 			rewards: [{
-				id: "1FB9EE0FCA383E6C"
+				id: "0022E4C295643779"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "67FBB38B63BC93BB"
+					id: "52452C57BA31314D"
 					item: "gtceu:sulfuric_acid_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "2D5EDB5484D8E82C"
+					id: "5614FEA5849EE175"
 					optional_task: true
 					type: "checkmark"
 				}
 			]
 			title: "&2Sulfuric Acid"
-			x: 20.25d
-			y: -1.75d
+			x: -5.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["3BB7400C8BB392D9"]
 			description: ["&6Luminessence&r is used in a number of things, but right now, it will be a component in your &aExtended Crafting Tables&r."]
-			id: "004344AC70AE88F1"
+			id: "191B2D1E219C2A9D"
 			rewards: [{
-				id: "6102122169F32D7A"
+				id: "736F1A6A51C728B9"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "3A0729A4ABF16AE5"
+				id: "394A9699FBEF1D5C"
 				item: "extendedcrafting:luminessence"
 				type: "item"
 			}]
-			x: 18.25d
-			y: -0.25d
+			x: -7.0d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -981,20 +267,20 @@
 				"004344AC70AE88F1"
 			]
 			description: ["A common component used by &bExtended Crafting&r."]
-			id: "56BAC68878E11DF4"
+			id: "54922EFBD6575EC2"
 			rewards: [{
-				id: "788E98E9C07492B3"
+				id: "43E03E40DC856904"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "1CAB8B6538E485BC"
+				id: "69FBD1EB183CAB43"
 				item: "extendedcrafting:advanced_component"
 				type: "item"
 			}]
-			x: 16.25d
-			y: -3.25d
+			x: -9.0d
+			y: -10.5d
 		}
 		{
 			dependencies: [
@@ -1002,20 +288,20 @@
 				"52B20235882063BF"
 			]
 			description: ["An advanced ingredient used for the &aUltimate Extended Crafting Table&r and the &aEpic Extended Crafting Table&r."]
-			id: "04475771966A92C3"
+			id: "696EAAA95A9EAADA"
 			rewards: [{
-				id: "5DB215925494ED25"
+				id: "57C733695C4A4BF8"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "38733A0F278A11E1"
+				id: "7708F5A3A4964B04"
 				item: "extendedcrafting:the_ultimate_catalyst"
 				type: "item"
 			}]
-			x: 22.25d
-			y: 3.25d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1023,22 +309,22 @@
 				"77582C534A994D7C"
 			]
 			description: ["This is an even larger Extended Crafting Table, capable of handling 9x9 recipes."]
-			id: "555BEBF7FD6012B7"
+			id: "3B007FCBA7FFB1E5"
 			rewards: [{
-				id: "636C9B089C324417"
+				id: "1D9B626A9FE51F59"
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				id: "07E8313832CB4834"
+				id: "117DA2B7F5F7E108"
 				item: "extendedcrafting:ultimate_table"
 				type: "item"
 			}]
 			title: "&9Ultimate Crafting Table"
-			x: 22.25d
-			y: 1.25d
+			x: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1050,22 +336,22 @@
 				""
 				"&9Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
 			]
-			id: "77582C534A994D7C"
+			id: "009B66B834A7A1C6"
 			rewards: [{
-				id: "283EED18AE8CAD38"
+				id: "73491D02A7BC36E4"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				id: "5986464B608F3B46"
+				id: "7F1EE2BA7BE8F4B3"
 				item: "extendedcrafting:elite_table"
 				type: "item"
 			}]
 			title: "&9Elite Crafting Table"
-			x: 25.25d
-			y: 1.25d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["56BAC68878E11DF4"]
@@ -1074,40 +360,40 @@
 				""
 				"&9You can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
 			]
-			id: "2181102841205407"
+			id: "3D9C95CD80FFC401"
 			rewards: [{
-				id: "2D0CA383333B6AC1"
+				id: "6A9839098B02AE99"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
-				id: "68AA09C07197DF3B"
+				id: "1EC620A48C82C5F0"
 				item: "extendedcrafting:advanced_table"
 				type: "item"
 			}]
 			title: "&9Advanced Crafting Table"
-			x: 25.25d
-			y: -3.25d
+			x: 0.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["718AF2C9476BE1F4"]
 			description: ["Again, combining a few Components will make a Catalyst."]
-			id: "27692C4A58F1A183"
+			id: "72191245CC1BA661"
 			rewards: [{
-				id: "10AC2BDC3EEDEE13"
+				id: "0AC07F27C4932179"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "4D8B17F14288E756"
+				id: "67F37F904ED13ED7"
 				item: "extendedcrafting:elite_catalyst"
 				type: "item"
 			}]
-			x: 25.25d
-			y: 5.25d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["74FEF82CA2FB3D02"]
@@ -1119,24 +405,27 @@
 				"Prepare some gear, eat a slice, and get ready for a fight!"
 			]
 			icon: "minecraft:dragon_head"
-			id: "56FB624B384FFAF5"
+			id: "67A1D2203FEB521C"
 			rewards: [{
-				id: "671C0205B990A2F1"
+				id: "757D1550161393E9"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
 				dimension: "minecraft:the_end"
-				id: "5EFEF3EB5567D109"
+				id: "34298773C113ACAA"
 				type: "dimension"
 			}]
 			title: "The End…?"
-			x: 16.25d
-			y: 10.0d
+			x: -9.0d
+			y: 2.75d
 		}
 		{
-			dependencies: ["56FB624B384FFAF5"]
+			dependencies: [
+				"56FB624B384FFAF5"
+				"3000798ACA51BFDC"
+			]
 			description: [
 				"&9Ender Air&r, collected from a &3Gas Collector&r, can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Ender Air&r."
 				""
@@ -1145,28 +434,28 @@
 				"&2Liquid Air and Liquid Nether Air give different useful components too."
 			]
 			icon: "gtceu:liquid_ender_air_bucket"
-			id: "399AE4E449872B8A"
+			id: "01B57D1B090AD764"
 			rewards: [{
-				id: "68E1D95E0AC47C7B"
+				id: "5F54F0F085CA95DE"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			tasks: [
 				{
-					id: "7DD19A7DC7557C5D"
+					id: "78E897B3D95B038D"
 					item: "gtceu:liquid_ender_air_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "30601DA91D002984"
+					id: "180AB7FD058F0CCB"
 					optional_task: true
 					type: "checkmark"
 				}
 			]
 			title: "&2Distilling Liquid Ender Air"
-			x: 1.5d
-			y: 9.75d
+			x: -11.0d
+			y: 2.75d
 		}
 		{
 			dependencies: [
@@ -1188,9 +477,9 @@
 				"Liftoff!"
 			]
 			icon: "ad_astra:moon_globe"
-			id: "281C7940CD437B69"
+			id: "2513C753368DF9AE"
 			rewards: [{
-				id: "46FEAACBB5D75703"
+				id: "7681F66B3D59111D"
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
@@ -1199,13 +488,13 @@
 			tasks: [{
 				dimension: "ad_astra:moon"
 				icon: "ad_astra:moon_globe"
-				id: "3458BC33000F9D0A"
+				id: "3EA21103B2A9E43F"
 				title: "Reach the Moon"
 				type: "dimension"
 			}]
 			title: "&9Fly Me To The Moon"
-			x: 28.75d
-			y: 1.25d
+			x: 3.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["56FB624B384FFAF5"]
@@ -1218,22 +507,22 @@
 				""
 				"To get back to the main island, throw an Ender Pearl into another bedrock portal structure."
 			]
-			id: "131EAE1541E9C780"
+			id: "0440B2DAB6D4C17C"
 			rewards: [{
-				id: "60BBAE32BB4AD8C3"
+				id: "4A61D7428BA8F9DA"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
 				count: 6L
-				id: "32406EDBF9A81C73"
+				id: "78E292FC55C137D2"
 				item: "minecraft:chorus_flower"
 				type: "item"
 			}]
 			title: "Chorus Flowering"
-			x: 32.75d
-			y: 10.0d
+			x: 7.5d
+			y: 2.75d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
@@ -1254,29 +543,29 @@
 					}
 				}
 			}
-			id: "4669C1DCEE4AA563"
+			id: "48797F251D6AB602"
 			rewards: [{
-				id: "558D57ABDD9D65EC"
+				id: "78D5E6C5422B784A"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "424E9CDF84333ED6"
+					id: "48D233AD862498B2"
 					item: "ad_astra:tier_1_rocket"
 					match_nbt: false
 					type: "item"
 				}
 				{
-					id: "54E7FCF98F491577"
+					id: "21C20C852CEDE7F6"
 					item: "ad_astra:launch_pad"
 					type: "item"
 				}
 			]
 			title: "&9The Rocket"
-			x: 27.75d
-			y: -1.25d
+			x: 2.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
@@ -1296,16 +585,16 @@
 					Damage: 0
 				}
 			}
-			id: "2BD54071AD23C73C"
+			id: "3233DF7F7ED8CA4F"
 			rewards: [{
-				id: "34CD9BF01139C350"
+				id: "681EDD469AE78FB7"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "38C1C6B13615C023"
+					id: "56593B13B7A899D2"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -1332,7 +621,7 @@
 					type: "item"
 				}
 				{
-					id: "3A62F5CB5B5A5502"
+					id: "4F479B837814A4D7"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -1359,7 +648,7 @@
 					type: "item"
 				}
 				{
-					id: "7C26518F22174230"
+					id: "7BDEB17005711953"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -1386,7 +675,7 @@
 					type: "item"
 				}
 				{
-					id: "65ADF4142C0B925F"
+					id: "43C66CE40D818C0C"
 					item: {
 						Count: 1
 						id: "itemfilters:or"
@@ -1414,77 +703,78 @@
 				}
 			]
 			title: "&9Space Suit"
-			x: 29.75d
-			y: -1.25d
+			x: 4.5d
+			y: -8.5d
 		}
 		{
 			dependencies: [
 				"247F4985B9ACE568"
 				"2181102841205407"
+				"01CC71429CFCAE0B"
 			]
 			description: ["The &9Nasa Workbench&r is used to create rockets from various parts."]
-			id: "193B7038EAB6EFA3"
+			id: "40767D7BE0D185E9"
 			rewards: [{
-				id: "241FC93655A20BDE"
+				id: "3D22138C90885458"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			subtitle: "Now it's time to think vertically"
 			tasks: [{
-				id: "6A2347A15D82ED0A"
+				id: "23B742DC47D0667A"
 				item: "ad_astra:nasa_workbench"
 				type: "item"
 			}]
 			title: "&9Rocket Assembly"
-			x: 28.75d
-			y: -3.25d
+			x: 3.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["17312BF0197B87A8"]
 			description: ["Even simple rockets demand &6Double Plates&r for their construction. In this case, made out of &6Steel&r."]
-			id: "247F4985B9ACE568"
+			id: "2DA4D43D6B8B79EE"
 			rewards: [{
-				id: "66D891D3D0BD4E6D"
+				id: "3E3820290231C63E"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "798A23BC2D1E704F"
+				id: "5AC1EA453932F207"
 				item: "gtceu:double_steel_plate"
 				type: "item"
 			}]
-			x: 29.5d
-			y: -5.25d
+			x: 4.25d
+			y: -12.5d
 		}
 		{
 			dependencies: ["5E2489DE2E840738"]
 			description: ["Mix &9Oxygen&r and &9Dimethylhydrazine&r together to make &9Rocket Fuel&r."]
 			icon: "gtceu:rocket_fuel_bucket"
-			id: "24415A26E5A0FD72"
+			id: "0B0B1E3D8DA010E6"
 			rewards: [{
 				count: 2
-				id: "38B02071529926AE"
+				id: "1139B6867462C304"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "645B1719FA830B75"
+					id: "6103AF95BCCC07D1"
 					item: "gtceu:rocket_fuel_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "544FF8F9BB179C30"
+					id: "3C595B7A827E1BB0"
 					optional_task: true
 					type: "checkmark"
 				}
 			]
-			x: 32.75d
-			y: -0.25d
+			x: 7.5d
+			y: -7.5d
 		}
 		{
 			dependencies: [
@@ -1494,30 +784,30 @@
 			]
 			description: ["This needs an &6HV&r Chemical Reactor. &9Dimethylamine&r and &9Monochloramine&r combine together into &9Dimethylhydrazine&r. &2You can also combine Methanol, Ammonia, and Hypochlorous Acid."]
 			icon: "gtceu:dimethylhydrazine_bucket"
-			id: "5E2489DE2E840738"
+			id: "2FA954B0C1086391"
 			rewards: [{
 				count: 3
-				id: "1C076188D1C62B2C"
+				id: "3D3AFABD8117EDE4"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "3D4A44BB8FD800F9"
+					id: "43BA20E9641B8A3A"
 					item: "gtceu:dimethylhydrazine_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "5B5C8165A62A16AE"
+					id: "0BBA0037277EB0A8"
 					optional_task: true
 					type: "checkmark"
 				}
 			]
 			title: "Dimethylhydrazine"
-			x: 32.75d
-			y: -1.5d
+			x: 7.5d
+			y: -8.75d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
@@ -1527,29 +817,29 @@
 				"An easy way to get Nitrogen is to centrifuge &9Air&r, which will require you to build an &3Air Collector&r. You could also electrolyze &6Saltpeter&r, distill &9Fermented Biomass&r in a &3Distillation Tower&r, or get huge amounts from &2distilling Liquid Air in a Distillation Tower&r."
 			]
 			icon: "gtceu:ammonia_bucket"
-			id: "374EB1BB1E2F6B9C"
+			id: "0A4ED503016E58B3"
 			rewards: [{
-				id: "64CE305C66916861"
+				id: "3AFDF7EA46D6C5EC"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "770D687340CEC979"
+					id: "689FB315E70B1F5F"
 					item: "gtceu:ammonia_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "47BC51C82CC64BCA"
+					id: "0123392B8DC1D834"
 					optional_task: true
 					type: "checkmark"
 				}
 			]
 			title: "&2Ammonia"
-			x: 32.75d
-			y: -3.25d
+			x: 7.5d
+			y: -10.5d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
@@ -1561,56 +851,56 @@
 				"You're already familiar with Chlorine production from your forays into Plastics, but a great source of Mercury is &2centrifuging &6Redstone&r."
 			]
 			icon: "gtceu:hypochlorous_acid_bucket"
-			id: "5DA5231489336B1B"
+			id: "47FF264A60E37493"
 			rewards: [{
-				id: "74161C0370473D5A"
+				id: "12F491B07AB235E6"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "5E85DD8FC98BBCC9"
+					id: "560DD8358D037DAF"
 					item: "gtceu:hypochlorous_acid_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "73BB5AEA7D105B60"
+					id: "2E79198689B2EDE2"
 					optional_task: true
 					type: "checkmark"
 				}
 			]
-			x: 31.5d
-			y: -3.25d
+			x: 6.25d
+			y: -10.5d
 		}
 		{
 			dependencies: ["7A09229ACC000B09"]
 			description: ["&9Oxygen&r, &9Hydrogen&r, and &6Carbon&r combine together in a &3Chemical Reactor&r to make &9Methanol&r."]
 			icon: "gtceu:methanol_bucket"
-			id: "5878D53EB85F3881"
+			id: "7D196B55B3AD4DE1"
 			rewards: [{
-				id: "5AD6DCD80667ABA1"
+				id: "1AD17842CDB0CA3B"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "346BA20113588F1F"
+					id: "31A10500B86E4A7F"
 					item: "gtceu:methanol_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "1B40EF1174810FF5"
+					id: "703DF03EBAC78ADF"
 					optional_task: true
 					type: "checkmark"
 				}
 			]
 			title: "Methanol"
-			x: 34.0d
-			y: -3.25d
+			x: 8.75d
+			y: -10.5d
 		}
 		{
 			dependencies: ["5C4E189A3E401566"]
@@ -1620,16 +910,16 @@
 				"It might seem crazy right now, but you'll want a dedicated &3Chemical Reactor&r for a large fraction of the chemicals you want to process. You probably want to hold off on doing that until you've got a solid base with autocrafting though… it stings a lot less when you can just request crafts of Chemical Reactors from your AE2 system."
 			]
 			disable_toast: true
-			id: "7A09229ACC000B09"
+			id: "22E49CF2CD905C38"
 			shape: "hexagon"
 			tasks: [{
-				id: "36DC2D981E7898DD"
+				id: "6B6D527D38C09B33"
 				item: "gtceu:mv_chemical_reactor"
 				type: "item"
 			}]
 			title: "MV Chemical Reactor"
-			x: 32.75d
-			y: -5.25d
+			x: 7.5d
+			y: -12.5d
 		}
 		{
 			dependencies: [
@@ -1653,29 +943,29 @@
 				"Just keep in mind that it's much less materially rewarding to forgo exploration."
 			]
 			icon: "gtceu:deuterium_bucket"
-			id: "7DE2C9292A09FC76"
+			id: "5873D7A021FC531E"
 			rewards: [{
-				id: "7D1DF49C64A72FE6"
+				id: "2ACC78ADACEFBCEF"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "585B4986E1D33DF9"
+					id: "3AF02CF82C4D7BB8"
 					item: "gtceu:deuterium_bucket"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "38A5BF7FD03E9DE3"
+					id: "3FA60A8611D43B9C"
 					item: "kubejs:moon_dust"
 					type: "item"
 				}
 			]
 			title: "&2Lunar Resources"
-			x: 28.75d
-			y: 3.25d
+			x: 3.5d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -1684,16 +974,16 @@
 			]
 			description: ["&6Hellish Matter&r and &6Ender Pearl&r can be crafted into Extraterrestrial Matter."]
 			hide_until_deps_visible: true
-			id: "790E3275E88265E3"
+			id: "32FCB4358345F628"
 			optional: true
 			shape: "hexagon"
 			tasks: [{
-				id: "479BA190EDA1D5F0"
+				id: "1556A3D85617311C"
 				item: "hostilenetworks:end_prediction"
 				type: "item"
 			}]
-			x: 30.25d
-			y: 3.25d
+			x: 5.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7DE2C9292A09FC76"]
@@ -1711,42 +1001,42 @@
 				"&6Sneak-right click&r the controller to enable the in-world preview."
 			]
 			icon: "monilabs:basic_microverse_projector"
-			id: "5B07A88C0BFF6586"
+			id: "46AD2E898238D798"
 			rewards: [{
-				id: "699824225F37A71A"
+				id: "611F79825083380F"
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "1E96DAB3E49D7362"
+					id: "698A58A3ED79B463"
 					item: "monilabs:basic_microverse_projector"
 					type: "item"
 				}
 				{
 					count: 17L
-					id: "17E44DB94862D5B7"
+					id: "6AEE1130BA98B606"
 					item: "monilabs:microverse_casing"
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 3L
-					id: "2F0E8511C560E506"
+					id: "7AE8025EBB2B7CF7"
 					item: "gtceu:tempered_glass"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "61C9E687614DDE69"
+					id: "4FC182F53E88A849"
 					item: "gtceu:assembly_line_grating"
 					optional_task: true
 					type: "item"
 				}
 				{
 					disable_toast: true
-					id: "59B3DAF64E6E321D"
+					id: "6B046F3A91C6074C"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -1759,7 +1049,7 @@
 				}
 				{
 					disable_toast: true
-					id: "0481E2A193C0B956"
+					id: "427794E4DA4D2917"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -1772,7 +1062,7 @@
 				}
 				{
 					disable_toast: true
-					id: "53D427A60B944BB3"
+					id: "02AFACC1750DF002"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -1785,7 +1075,7 @@
 				}
 				{
 					disable_toast: true
-					id: "252519281545DAD2"
+					id: "42667DD3D8BBE3F4"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
@@ -1798,8 +1088,8 @@
 				}
 			]
 			title: "&2Basic Microverse Projector"
-			x: 27.25d
-			y: 5.25d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1814,20 +1104,20 @@
 				""
 				"There are several ways to produce &6Quantum Flux&r. All are viable, so figure out which one works best for you."
 			]
-			id: "4F572CA3678CB287"
+			id: "4632A225597AA883"
 			rewards: [{
-				id: "7C3644C76B5E1C49"
+				id: "733450A08EE3C9AB"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "326F637FA66766CF"
+				id: "16BF728AB149A6B8"
 				item: "monilabs:quantum_flux"
 				type: "item"
 			}]
-			x: 30.25d
-			y: 5.25d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1844,22 +1134,22 @@
 				""
 				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
 			]
-			id: "638130DC8A2BF1C1"
+			id: "2EE3632AA6A47F3A"
 			rewards: [{
-				id: "5FF12439A660943F"
+				id: "209351B44772456E"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [{
-				id: "4362115B3E464772"
+				id: "59B325410FBC87E5"
 				item: "kubejs:microminer_t1"
 				type: "item"
 			}]
 			title: "&2First Foray Into The Microverse"
-			x: 28.75d
-			y: 7.25d
+			x: 3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1869,38 +1159,41 @@
 			dependency_requirement: "one_completed"
 			description: ["Place down a &6Waystone&r, set a memorable name (and enable &6Global&r if you want other players to access it), in order to be able to easily warp to that location, either using a &6Warp Scroll&r, a &6Warp Stone&r or a second Waystone."]
 			icon: "waystones:waystone"
-			id: "5EB185AD9BD0D069"
+			id: "3C864034D9A5672D"
 			rewards: [{
-				id: "57F0241771210D36"
+				id: "05A0C4551C0EF743"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
 				count: 2L
-				id: "60BBF5D0DFEB3B9A"
+				id: "777618C9E52B22C9"
 				item: "waystones:waystone"
 				type: "item"
 			}]
 			title: "&9Thinking with Waystones"
-			x: 32.75d
-			y: 2.75d
+			x: 7.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
 			description: ["Waystones also &anaturally generate&r across the world, so nothing is stopping you from simply roaming around and stealing Waystones for your own needs."]
 			icon: "minecraft:ender_eye"
-			id: "6A8764DDD3489EE8"
+			id: "728F90FFFB73BA5C"
 			tasks: [{
-				id: "096445386AE9F109"
+				id: "020403B9C92C76D0"
 				type: "checkmark"
 			}]
 			title: "Exploration can pay off!"
-			x: 33.75d
-			y: 2.75d
+			x: 8.5d
+			y: -4.5d
 		}
 		{
-			dependencies: ["77582C534A994D7C"]
+			dependencies: [
+				"77582C534A994D7C"
+				"53EC3831D66769CA"
+			]
 			description: [
 				"With access to &6Diamond Components&r, &3Auto Crafting Tables&r are now an option for automation of any size of crafting table - including 3x3."
 				""
@@ -1913,9 +1206,9 @@
 				"In compensation for the cost of confusing logistics, these tables have throughput capabilities comparable to fully-accelerated &3Molecular Assemblers&r."
 			]
 			icon: "extendedcrafting:basic_auto_table"
-			id: "0DB8063A7972E1C0"
+			id: "4D4BFBBC6F210667"
 			tasks: [{
-				id: "583E42747EFEE1D3"
+				id: "654F9B7E0580F848"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -1948,8 +1241,8 @@
 				type: "item"
 			}]
 			title: "Auto Crafting Tables"
-			x: 23.75d
-			y: -0.75d
+			x: -1.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["193B7038EAB6EFA3"]
@@ -1959,21 +1252,21 @@
 				"If you run out of Oxygen, then you will &cSuffocate&r. If you plan to spend several hours on &bThe Moon&r, consider bringing an additional &6Gas Tank&r filled with &9Oxygen&r."
 			]
 			icon: "ad_astra:oxygen_loader"
-			id: "4672EE66D51C32FF"
+			id: "3CB77C152326D2CB"
 			rewards: [{
-				id: "1275BF28D76C3304"
+				id: "02C4342F3B52911E"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "3B048AD7B91B4F7C"
+					id: "6D111DBBDD11712B"
 					item: "ad_astra:oxygen_loader"
 					type: "item"
 				}
 				{
-					id: "0CD10AB892FC2DEF"
+					id: "11CB7E31140D2437"
 					item: {
 						Count: 1
 						id: "ad_astra:gas_tank"
@@ -1991,8 +1284,8 @@
 				}
 			]
 			title: "&9Breathing in Space"
-			x: 28.75d
-			y: -1.25d
+			x: 3.5d
+			y: -8.5d
 		}
 		{
 			dependencies: ["281C7940CD437B69"]
@@ -2008,22 +1301,22 @@
 				"With a &3Tier Four Rocket&r you can make it to &eGlacio&r. Glacio has &6Naquadah&r, &6Kaemanite&r, &6Stolzite&r, &6Iridosmine&r, and &6Osmiridium&r, as well as &6Gelid Cryotheum&r fluid veins."
 			]
 			icon: "ad_astra:glacio_globe"
-			id: "62C85A1F451C4855"
+			id: "528C127324E446F5"
 			invisible: true
 			rewards: [{
-				id: "148F206D2B3F2EAF"
+				id: "60107D89C85C458B"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			subtitle: "One must imagine Frank Sinatra happy."
 			tasks: [{
 				dimension: "ad_astra:moon"
-				id: "199AA113DCFEBFDD"
+				id: "29464FCA47BE11BF"
 				type: "dimension"
 			}]
 			title: "&9...and Let Me Play Among the Stars"
-			x: 27.0d
-			y: 1.25d
+			x: 1.75d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0C4E18B05F9E68DE"]
@@ -2032,38 +1325,39 @@
 				""
 				"Higher tier Microminers will use higher tiers of &6Drilling Kits&r, so get used to making them."
 			]
-			id: "798284BA30D818DA"
+			id: "6983208EA9783BB9"
 			rewards: [{
-				id: "559707AB8A8FF58B"
+				id: "614483345B26911C"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
 			tasks: [{
-				id: "12E132ED1EBB8224"
+				id: "064072EF589A58D7"
 				item: "kubejs:basic_drilling_kit"
 				type: "item"
 			}]
 			title: "Drilling Kits"
-			x: 17.75d
-			y: 7.25d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
+			dependencies: ["6169C04DF463502F"]
 			description: ["Some Microminer missions use a &6Gemstone Sensor&r to scout out gems instead of ores, as well as other &6rare materials&r."]
-			id: "2D0DF78F71760F00"
+			id: "150A0DEC26AF30CE"
 			rewards: [{
-				id: "6F3E0BE43F386D11"
+				id: "4EBCBD26CFB43E2E"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "square"
 			tasks: [{
-				id: "1923177CCC7CB6F7"
+				id: "58D8575D1BAD684E"
 				item: "kubejs:gem_sensor"
 				type: "item"
 			}]
 			title: "&9Gemstone Sensors"
-			x: 31.0d
-			y: 7.25d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -2077,15 +1371,15 @@
 				""
 				"After projecting your microverse, the inside of the projector will change appearance, and you should be ready to send off your first microverse mission."
 			]
-			id: "7ACF867DECE1C37F"
+			id: "10A225EE04844115"
 			tasks: [{
-				id: "42587449855B384F"
+				id: "66483ABD38B6C390"
 				item: "kubejs:universe_creation_data"
 				type: "item"
 			}]
 			title: "Projecting Microverses"
-			x: 28.75d
-			y: 5.25d
+			x: 3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["281C7940CD437B69"]
@@ -2099,53 +1393,28 @@
 				"3. The &3Gravity Normalizer&r. This machine unlocks in &5EV&r, and when supplied with &aRF&r it allows you to control gravity nearby similar to the Oxygen Distributor. If the low gravity on &bThe Moon&r or in &bOrbit&r bothers you, then give it a whirl!"
 			]
 			icon: "ad_astra:space_painting"
-			id: "4288A253129B1E75"
+			id: "6D83FFDA99A0A092"
 			tasks: [
 				{
-					id: "590467B0584D0075"
+					id: "0EF5886E8E39BB2A"
 					item: "ad_astra:oxygen_distributor"
 					type: "item"
 				}
 				{
-					id: "01DCC71F3DEA223F"
+					id: "5298AF236D64245B"
 					item: "ad_astra:oxygen_sensor"
 					type: "item"
 				}
 				{
-					id: "5AFCEFEA48FF7835"
+					id: "236B233C508FDD56"
 					item: "ad_astra:gravity_normalizer"
 					type: "item"
 				}
 			]
 			title: "An Extraterrestrial Abode"
-			x: 28.75d
-			y: 4.25d
-		}
-		{
-			description: [
-				"&n&9Monifactory&r&r shares an official Discord server with the other projects under Omicron Industries, which serves as a useful community resource."
-				""
-				"On the server, there are flowcharts and guides to help you with many parts of the pack accessible via the server's helpful bot, development announcements and more are available in the &n#announcements&r channel, and the community helps with tech support questions, and investigates possible bug reports."
-				""
-				"You can also chat with many fellow players there if you like, who are largely willing to help with general questions one might have."
-				"{@pagebreak}"
-				"[\"\",{\"text\":\"To join the server, you can use the button on the Main Menu to go to the join URL, or if you're not into Discord you can find other projects from Omicron Industries, on \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"this\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries\"}},{\"text\":\" GitHub page.\"}]"
-				""
-				"[\"\",{\"text\":\"Issue tracking and development is handled on the respective GitHub project repositories. The repository for this pack is \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"here\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"text\":\".\"}]"
-			]
-			disable_toast: true
-			icon: "minecraft:writable_book"
-			id: "2AD75872421BC65C"
-			optional: true
-			subtitle: "what's a voltage? can I eat it?"
-			tasks: [{
-				id: "22B39652E820515A"
-				type: "checkmark"
-			}]
-			title: "Discord and GitHub"
 			x: 3.5d
-			y: -6.5d
+			y: -3.0d
 		}
 	]
-	title: "HV"
+	title: "Into the Microverse"
 }
