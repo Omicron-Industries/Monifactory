@@ -1563,12 +1563,62 @@
 				"2E8BFA2E719B1C47"
 				"50591843C8501055"
 			]
+			description: [
+				""
+				"{image:monifactory:textures/quests/lbb.png width:100 height:100 align:center}"
+			]
+			icon: "gtceu:bronze_large_boiler"
 			id: "7457A13C74667E40"
-			tasks: [{
-				id: "468B341AAEBA9017"
-				item: "gtceu:bronze_large_boiler"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "468B341AAEBA9017"
+					item: "gtceu:bronze_large_boiler"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0C6E73E665B41388"
+					item: { Count: 2, id: "gtceu:bronze_pipe_casing" }
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "64C8EE1636227288"
+					item: { Count: 23, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "69A847061AAFA1CE"
+					item: { Count: 5, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "3BFBBFCEAA93197B"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "5E1B7E16576DB71E"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "6FC58719E806DB93"
+					item: "gtceu:ulv_input_bus"
+					type: "item"
+				}
+				{
+					id: "30DA245B666C82DF"
+					item: "gtceu:ulv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "11F73FCC3237382B"
+					item: "gtceu:ulv_output_hatch"
+					type: "item"
+				}
+			]
 			x: 2.5d
 			y: 8.5d
 		}
