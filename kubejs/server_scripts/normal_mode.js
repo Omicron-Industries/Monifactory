@@ -8,8 +8,6 @@ ServerEvents.recipes(event => {
         event.smelting("gtceu:steel_ingot", "gtceu:steel_dust")
         event.remove({ type: "gtceu:primitive_blast_furnace", output: "gtceu:steel_ingot" })
         event.remove({ type: "gtceu:electric_blast_furnace", output: "gtceu:steel_ingot" })
-        event.remove({ id: /fireclay/ })
-        event.remove({ output: ["gtceu:firebrick", "gtceu:firebricks", "gtceu:primitive_blast_furnace"] })
 
         carbonSources.forEach(carbonSource => {
             event.recipes.gtceu.alloy_smelter(`steel_${carbonSource.replace(/\W/g, "")}`) // The replace line removes non alphanumeric chars, regex is magic
@@ -54,7 +52,7 @@ ServerEvents.recipes(event => {
             G: "gtceu:potin_gear",
             D: "#forge:gems/diamond"
         }).addMaterialInfo()
-
+        //
         event.remove({ output: "steamadditions:steam_foundry" })
         event.recipes.gtceu.shaped("steamadditions:steam_foundry", [
             "BGB",
@@ -63,7 +61,19 @@ ServerEvents.recipes(event => {
         ], {
             B: "gtceu:steam_machine_casing",
             G: "gtceu:bronze_gear",
-            D: "gtceu:lv_alloy_smelter"
+            D: "gtceu:hp_steam_alloy_smelter"
+        }).addMaterialInfo()
+
+        event.remove({ output: "gtceu:bronze_large_boiler" })
+        event.recipes.gtceu.shaped("gtceu:bronze_large_boiler", [
+            "BVB",
+            "AFA",
+            "BVB"
+        ], {
+            F: "gtceu:bronze_firebox_casing",
+            B: "gtceu:steam_machine_casing",
+            V: "gtceu:vacuum_tube",
+            A: "gtceu:hp_steam_alloy_smelter"
         }).addMaterialInfo()
 
         // Handmade rubber - no match for the power of the factory
@@ -127,11 +137,6 @@ ServerEvents.recipes(event => {
         ], {
             P: "#forge:glass_panes"
         }).id("kubejs:glass_tube")
-
-        // GT Steam Age
-        gtMachines.forEach(machine => {
-            event.remove({ output: [`gtceu:lp_steam_${machine}`, `gtceu:hp_steam_${machine}`] })
-        })
 
         event.remove({ output: "gtceu:lv_item_magnet" })
         event.shaped(Item.of("gtceu:lv_item_magnet", "{Charge:120000L}"), [
