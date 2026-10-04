@@ -303,40 +303,6 @@ ServerEvents.recipes(event => {
         W: "gtceu:monium_quadruple_wire"
     })
 
-    //
-    // Recycling below here
-    //
-
-    // RHF
-    event.remove({ input: "gtceu:mega_blast_furnace" })
-    event.recipes.gtceu.arc_furnace("rhf_recycling")
-        .itemInputs("gtceu:mega_blast_furnace")
-        .inputFluids("gtceu:oxygen 20786")
-        .itemOutputs("20x gtceu:naquadah_alloy_ingot", "4x gtceu:invar_ingot", "2x gtceu:uranium_rhodium_dinaquadide_ingot", "gtceu:tin_ingot")
-        .duration(20786)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.macerator("rhf_crushing")
-        .itemInputs("gtceu:mega_blast_furnace")
-        .itemOutputs("24x gtceu:stone_dust", "20x gtceu:naquadah_alloy_dust", "4x gtceu:invar_dust", "2x gtceu:rubber_dust")
-        .duration(20786)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    // BBC
-    event.remove({ input: "gtceu:mega_vacuum_freezer" })
-    event.recipes.gtceu.arc_furnace("bbc_recycling")
-        .itemInputs("gtceu:mega_vacuum_freezer")
-        .inputFluids("gtceu:oxygen 26976")
-        .itemOutputs("18x gtceu:naquadah_alloy_ingot", "12x gtceu:stainless_steel_ingot", "12x gtceu:electrum_ingot", "gtceu:steel_block")
-        .duration(26976)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.macerator("bbc_crushing")
-        .itemInputs("gtceu:mega_vacuum_freezer")
-        .itemOutputs("18x gtceu:naquadah_alloy_dust", "50x gtceu:small_rubber_dust", "49x gtceu:small_steel_dust", "12x gtceu:stainless_steel_dust")
-        .duration(25408)
-        .EUt(302)
-
     // Strings Recipe
     event.shaped("6x minecraft:string", [
         " A ",
@@ -506,6 +472,7 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(GTValues.VA[GTValues.LuV])
         .stationResearch(b => b.researchStack("gtceu:electric_blast_furnace").CWUt(16, 64000).EUt(GTValues.VA[GTValues.LuV]))
+        .addMaterialInfo(true)
 
     event.remove({ id: "gtceu:shaped/mega_vacuum_freezer" })
     event.recipes.gtceu.assembly_line("kubejs:mega_vacuum_freezer")
@@ -515,6 +482,7 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(GTValues.VA[GTValues.LuV])
         .stationResearch(b => b.researchStack("gtceu:vacuum_freezer").CWUt(16, 64000).EUt(GTValues.VA[GTValues.LuV]))
+        .addMaterialInfo(true)
 
     event.recipes.minecraft.smelting("kubejs:pulsating_dust", ["gtceu:uraninite_dust"])
     event.recipes.minecraft.smelting("kubejs:pulsating_dust", ["kubejs:resonant_clathrate"])
