@@ -537,6 +537,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:zpm_field_generator")
         .duration(600)
         .EUt(24000)
+        .addMaterialInfo(true)
         .stationResearch(b => b.researchStack("gtceu:luv_field_generator").CWUt(4, 16000).EUt(GTValues.VA[GTValues.LuV]))
 
     // Quantum Ring Assembler Recipes
@@ -576,6 +577,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:implosion_collider")
         .duration(900)
         .EUt(32000)
+        .addMaterialInfo(true)
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("gtceu:implosion_compressor").EUt(6000).duration(1800))
 
     // Froglights
