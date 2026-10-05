@@ -1201,7 +1201,7 @@ ServerEvents.recipes(event => {
         .addMaterialInfo(true)
 
     // ME Pattern Buffer
-    event.remove({ id: "gtceu:scanner/1x_gtceu_luv_dual_input_hatch" })
+    event.remove({ id: "gtceu:scanner/1_x_gtceu_luv_dual_input_hatch" })
     event.remove({ output: "gtceu:me_pattern_buffer" })
     event.recipes.gtceu.assembler("kubejs:me_pattern_buffer")
         .itemInputs("gtceu:iv_machine_hull", "2x ae2:pattern_provider", "2x ae2:interface", "gtceu:iv_robot_arm", "gtceu:iv_electric_pump", "4x ae2:speed_card", "2x ae2:capacity_card", "#gtceu:circuits/iv")
