@@ -36,3 +36,5 @@ node index.ts run-dedicated-server
 ```
 
 Runs the dedicated server by assembling the modpack entirely from scratch from your git checkout!
+
+Mods are downloaded from CurseForge, you can set the `CF_API_KEY` environment variable with your [Console API key](https://console.curseforge.com/#/api-keys).
