@@ -783,7 +783,7 @@ ServerEvents.recipes(event => {
 
     for (const [input, output] of xpjuice_small) {
         event.recipes.gtceu.mixer(`kubejs:xpjuice_${output}`)
-            .inputFluids(Fluid.of("gtceu:mana", 250))
+            .inputFluids(Fluid.of("monilabs:mana", 250))
             .itemInputs(input)
             .outputFluids(Fluid.of("enderio:xp_juice", output))
             .EUt(GTValues.VA[GTValues.HV])
@@ -798,7 +798,7 @@ ServerEvents.recipes(event => {
 
     for (const [input, output] of xpjuice_large) {
         event.recipes.gtceu.large_chemical_reactor(`kubejs:xpjuice_${output}`)
-            .inputFluids(Fluid.of("gtceu:mana", 500))
+            .inputFluids(Fluid.of("monilabs:mana", 500))
             .itemInputs(input)
             .outputFluids(Fluid.of("enderio:xp_juice", output))
             .EUt(GTValues.VA[GTValues.EV])

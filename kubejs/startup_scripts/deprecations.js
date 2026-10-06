@@ -20,7 +20,7 @@ deprecateItem("travellersbootsreloaded:travellers_boots_tier4", "gtexolegs:ev_ex
 deprecateItem("travellersbootsreloaded:travellers_boots_tier5", "gtexolegs:iv_exoskeleton_legs", "Traveller's Boots Tier 5")
 
 // Primal Mana
-deprecateFluid("kubejs:molten_primal_mana", "gtceu:mana", "Primal Mana")
+deprecateFluid("gtceu:mana", "monilabs:mana", "Primal Mana")
 
 // Dilithium
 deprecateItem("kubejs:dilithium_crystal", "gtceu:dilithium_gem", "Dilithium")
