@@ -22,7 +22,7 @@ function fetchCurseForge(path: string, init?: RequestInit): Promise<Response> {
         ...init,
         headers: {
             Accept: "application/json",
-            "x-api-key": token,
+            ...(token && { "x-api-key": token }),
             ...init?.headers,
         }
     })
@@ -50,7 +50,7 @@ const zCFModData = z.object({
         downloadUrl: z.url().or(z.null()),
     }).transform(data => ({
         ...data,
-        downloadUrl: data.downloadUrl ?? `https://edge.forgecdn.net/files/${data.id / 1000n}/${data.id % 1000n}/${data.fileName}`
+        downloadUrl: data.downloadUrl ?? `https://edge.forgecdn.net/files/${data.id / 1000n}/${data.id % 1000n}/${encodeURIComponent(data.fileName)}`
     })),
 })
 type CFModData = z.infer<typeof zCFModData>
