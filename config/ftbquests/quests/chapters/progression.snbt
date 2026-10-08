@@ -1105,7 +1105,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: ["17312BF0197B87A8"]
+			dependencies: ["0D37D05A6B66055F"]
 			dependency_requirement: "one_completed"
 			description: [
 				"A \"&esubstrate&f\" is the \"board\" part of a circuit board — the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."

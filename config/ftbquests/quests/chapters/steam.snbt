@@ -12,7 +12,7 @@
 			hover: ["Come give us feedback and chat!"]
 			image: "monifactory:textures/quests/discord-symbol-white.png"
 			rotation: 0.0d
-			width: 1.0d
+			width: 1.32d
 			x: -3.0d
 			y: -9.75d
 		}
@@ -34,27 +34,15 @@
 			linked_quest: "77670BF761084AA2"
 			shape: "hexagon"
 			size: 1.25d
-			x: 1.5d
-			y: 8.5d
-		}
-		{
-			id: "6923AB3CB8B99522"
-			linked_quest: "7D59E5905949C396"
-			x: -7.75d
-			y: 4.75d
-		}
-		{
-			id: "0AE27B21D6620318"
-			linked_quest: "571FE20AF5D8F124"
-			x: -4.75d
-			y: 7.25d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			id: "7DBAA4D913BF72B7"
 			linked_quest: "42DB312E05F7A2FE"
 			shape: "diamond"
-			x: -6.25d
-			y: 2.25d
+			x: -4.75d
+			y: 1.0d
 		}
 	]
 	quests: [
@@ -472,8 +460,8 @@
 				}
 			]
 			title: "&9Sophisticated Storage Shenanigans"
-			x: -5.5d
-			y: 1.0d
+			x: 3.25d
+			y: 2.25d
 		}
 		{
 			dependencies: ["3B200AD6EFF90DFA"]
@@ -537,7 +525,6 @@
 			y: -0.25d
 		}
 		{
-			dependencies: ["2E8BFA2E719B1C47"]
 			description: ["No hoops to jump through here. Smelt &6Wood Logs&f to get &6Charcoal&f. It will serve you well as a fuel source until you locate a vein of &6Coal&f."]
 			id: "5D97206C8135872B"
 			shape: "diamond"
@@ -546,8 +533,8 @@
 				item: "minecraft:charcoal"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.25d
+			x: 8.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -565,7 +552,7 @@
 				type: "item"
 			}]
 			title: "Furnace v2.0"
-			x: 4.0d
+			x: 5.75d
 			y: 1.0d
 		}
 		{
@@ -584,7 +571,7 @@
 				type: "item"
 			}]
 			title: "Furnace v3.0"
-			x: 4.0d
+			x: 5.75d
 			y: 2.25d
 		}
 		{
@@ -603,7 +590,7 @@
 				type: "item"
 			}]
 			title: "Furnace v4.0"
-			x: 4.0d
+			x: 5.75d
 			y: 3.5d
 		}
 		{
@@ -622,7 +609,7 @@
 				type: "item"
 			}]
 			title: "Furnace v5.0"
-			x: 4.0d
+			x: 5.75d
 			y: 4.75d
 		}
 		{
@@ -641,7 +628,7 @@
 				type: "item"
 			}]
 			title: "Furnace v6.0"
-			x: 4.0d
+			x: 5.75d
 			y: 6.0d
 		}
 		{
@@ -660,7 +647,7 @@
 				type: "item"
 			}]
 			title: "Furnace v7.0"
-			x: 4.0d
+			x: 5.75d
 			y: 7.25d
 		}
 		{
@@ -680,7 +667,7 @@
 				type: "item"
 			}]
 			title: "Furnace v8.0"
-			x: 4.0d
+			x: 5.75d
 			y: 8.5d
 		}
 		{
@@ -817,8 +804,8 @@
 				}
 			]
 			title: "&9Wrenches Galore"
-			x: -7.75d
-			y: 2.25d
+			x: -6.25d
+			y: 1.0d
 		}
 		{
 			dependencies: ["42DB312E05F7A2FE"]
@@ -844,7 +831,7 @@
 			}]
 			title: "Proper Tool Care"
 			x: -6.25d
-			y: 3.5d
+			y: -0.25d
 		}
 		{
 			dependencies: ["2E8BFA2E719B1C47"]
@@ -903,8 +890,8 @@
 				}
 			]
 			title: "More Materials"
-			x: -2.5d
-			y: 6.0d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -931,8 +918,8 @@
 				item: "gtceu:steel_ingot"
 				type: "item"
 			}]
-			title: "&9Steel"
-			x: 1.5d
+			title: "&9Better Steel"
+			x: 2.25d
 			y: 7.25d
 		}
 		{
@@ -957,11 +944,11 @@
 				type: "item"
 			}]
 			title: "&9Infinite Water"
-			x: -7.75d
-			y: 3.5d
+			x: -4.75d
+			y: 2.25d
 		}
 		{
-			dependencies: ["2E8BFA2E719B1C47"]
+			dependencies: ["0D37D05A6B66055F"]
 			description: [
 				"Going out in search of a &6Rubber Tree&f is a viable option for sure. However, if this isn't appealing, you can also &eshear leaves&f and make &6Plantballs&f out of them. Plantballs smelt into &6Slime&f, and Slime smelts into &6Sticky Resin&f."
 				""
@@ -984,8 +971,8 @@
 				type: "item"
 			}]
 			title: "Rubber Sheets"
-			x: -1.0d
-			y: 6.0d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1058,8 +1045,8 @@
 				}
 			]
 			title: "From Dust to Wires"
-			x: -2.5d
-			y: 8.5d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -1095,8 +1082,8 @@
 				type: "item"
 			}]
 			title: "&2Cables"
-			x: -1.0d
-			y: 8.5d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["66FCC26399376B55"]
@@ -1206,7 +1193,7 @@
 				"Some blocks in the multiblock preview have additional tooltips to provide more information on how the multiblock can form."
 			]
 			disable_toast: true
-			hide_dependency_lines: false
+			hide_dependency_lines: true
 			icon: "gtceu:electric_blast_furnace"
 			id: "50591843C8501055"
 			optional: true
@@ -1215,8 +1202,8 @@
 				type: "checkmark"
 			}]
 			title: "Multiblock Machine Previews"
-			x: 0.0d
-			y: 4.75d
+			x: 3.25d
+			y: 3.5d
 		}
 		{
 			can_repeat: true
@@ -1311,8 +1298,8 @@
 				}
 			]
 			title: "Snad"
-			x: -4.0d
-			y: 8.5d
+			x: -4.75d
+			y: 6.0d
 		}
 		{
 			dependencies: ["7865CDE5CFE005DC"]
@@ -1339,7 +1326,7 @@
 				}
 			]
 			title: "Furnace Augments"
-			x: 5.75d
+			x: 7.5d
 			y: 1.0d
 		}
 		{
@@ -1360,7 +1347,7 @@
 				type: "item"
 			}]
 			title: "Ctrl + C, Ctrl + V"
-			x: 5.75d
+			x: 7.5d
 			y: 2.25d
 		}
 		{
@@ -1432,8 +1419,8 @@
 				type: "checkmark"
 			}]
 			title: "Connecting Pipes and Cables"
-			x: -9.5d
-			y: 2.25d
+			x: -8.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["115D2BEB18929C7C"]
@@ -1525,7 +1512,7 @@
 				}
 			]
 			title: "&9Steam Grinder"
-			x: 2.25d
+			x: 3.0d
 			y: 6.0d
 		}
 		{
@@ -1575,13 +1562,13 @@
 				}
 			]
 			title: "&9Steam Foundry"
-			x: 0.75d
+			x: 1.5d
 			y: 6.0d
 		}
 		{
 			dependencies: [
-				"2E8BFA2E719B1C47"
 				"50591843C8501055"
+				"545E4D09C7F70864"
 			]
 			description: [
 				""
@@ -1639,7 +1626,7 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
+			x: 2.25d
 			y: 4.75d
 		}
 		{
@@ -1696,6 +1683,7 @@
 			dependencies: [
 				"77670BF761084AA2"
 				"12B95158E4C792DB"
+				"17312BF0197B87A8"
 			]
 			dependency_requirement: "one_completed"
 			description: [
@@ -1714,14 +1702,14 @@
 			size: 2.5d
 			subtitle: "With all of the components made, it's time to craft an &2Electronic Circuit&r."
 			tasks: [{
-				count: 32L
+				count: 16L
 				id: "4A98F0E91E57B0EE"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
 			title: "Your First Circuit"
 			x: -1.0d
-			y: 10.75d
+			y: 8.75d
 		}
 		{
 			dependencies: ["3B200AD6EFF90DFA"]
@@ -1751,6 +1739,106 @@
 			title: "&9Recipe Trees and Crafting Trees"
 			x: -2.0d
 			y: -1.25d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			id: "545E4D09C7F70864"
+			tasks: [{
+				count: 64L
+				id: "1D4C10100E775457"
+				item: { Count: 64, id: "gtceu:steel_dust" }
+				type: "item"
+			}]
+			x: 1.25d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2E8BFA2E719B1C47"]
+			id: "0D37D05A6B66055F"
+			tasks: [{
+				count: 32L
+				id: "6A6E5B6200412328"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1229234A71CE0A99"]
+			description: [
+				"For now, the best material to make these pipes out of is probably &6Tin&r."
+				""
+				"Their advantage over &bPipez&r is their far higher &6throughput&r. An unupgraded Item Pipe transports &916 items per second&r, and up to &9256 per second&r when upgraded. In comparison, small low-tier Item Pipes can transfer &964 items per second&r, and those made from later materials can transfer &9dozens of stacks per second&r."
+				""
+				"They don't auto-extract by themselves, so you have to use &3Conveyor Covers&r etc. with them."
+				"{@pagebreak}"
+				"The priority mechanics are as follows:"
+				""
+				"A Destination will have a Routing Value calculated, which is the sum of all Routing Values of the individual Pipes to that Destination. Whichever Destination has the lowest Routing Value will be the one selected for Insertion."
+				"Restrictive Pipes typically have the lowest Priority for insertion due to their higher Routing Value."
+			]
+			id: "571FE20AF5D8F124"
+			rewards: [{
+				count: 2
+				id: "67E64D1EE0CCC181"
+				item: "ulvcovm:ulv_conveyor_module"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "&2GT Item Pipes will transport items instantly through them and accept GT covers."
+			tasks: [{
+				icon: "gtceu:tin_normal_item_pipe"
+				id: "6CB15B88AA69AB9A"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^gtceu:[\\w_]+_item_pipe$"
+					}
+				}
+				title: "Any GT Item Pipe"
+				type: "item"
+			}]
+			title: "&2GT Item Pipes"
+			x: -4.75d
+			y: 4.75d
+		}
+		{
+			dependencies: [
+				"1229234A71CE0A99"
+				"0FF18D13CD42F48A"
+			]
+			description: [
+				"&2GT Fluid Pipes&r are quite powerful. Their advantage is high &9throughput&r and the ability to use &9GT covers&r, but they have limitations on the kinds of fluids (&eacids, gases&r, etc) they can transport safely. Check each pipe material's tooltip for details. Fluid pipes do require a pump to be able to pull fluids from tanks or machines that lack an auto-output function, but &2ULV pumps (as well as other covers) are very cheap, and buyable with Monicoins&r."
+				""
+				"There are also &6Quadruple and Nonuple Pipes&r for transporting multiple fluid types through the same block."
+				""
+				"You also have access to &bPipez&r, which are cheaper and easier to use"
+			]
+			id: "7D59E5905949C396"
+			rewards: [{
+				count: 2
+				id: "6CF0112603C1D612"
+				item: "ulvcovm:ulv_electric_pump"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "gtceu:potin_large_fluid_pipe"
+				id: "075779A039222C28"
+				item: {
+					Count: 1
+					id: "itemfilters:id_regex"
+					tag: {
+						value: "^gtceu:[\\w_]+_fluid_pipe$"
+					}
+				}
+				title: "Any GT Fluid Pipe"
+				type: "item"
+			}]
+			title: "&9GT Fluid Pipes"
+			x: -4.75d
+			y: 3.5d
 		}
 	]
 	title: "Steam"

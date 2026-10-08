@@ -6,6 +6,28 @@
 	hide_quest_until_deps_complete: true
 	icon: "kubejs:lv_universal_circuit"
 	id: "62CAA10E8897A0FF"
+	images: [
+		{
+			click: "https://github.com/Omicron-Industries/Monifactory"
+			height: 1.0d
+			hover: ["Report issues here!"]
+			image: "monifactory:textures/quests/github_invertocat_white.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.75d
+			y: -17.0d
+		}
+		{
+			click: "https://discord.gg/4jch9Rs2Cq"
+			height: 1.0d
+			hover: ["Come give us feedback and chat!"]
+			image: "monifactory:textures/quests/discord-symbol-white.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.75d
+			y: -16.75d
+		}
+	]
 	order_index: 1
 	quest_links: [
 		{
@@ -27,16 +49,8 @@
 		{
 			id: "1C5CEAA15B04F2FA"
 			linked_quest: "34876F54406B6A04"
-			x: 1.75d
-			y: -4.5d
-		}
-		{
-			id: "6E2A278B1FB94559"
-			linked_quest: "6197C51E04761371"
-			shape: "hexagon"
-			size: 2.0d
-			x: -1.0d
-			y: 11.5d
+			x: -4.75d
+			y: -5.0d
 		}
 	]
 	quests: [
@@ -87,8 +101,8 @@
 				type: "item"
 			}]
 			title: "&2LV Assembler"
-			x: 4.25d
-			y: 7.5d
+			x: 0.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -268,8 +282,8 @@
 				}
 			]
 			title: "Cupronickel and Invar"
-			x: 1.75d
-			y: 9.25d
+			x: 7.5d
+			y: 8.25d
 		}
 		{
 			dependencies: ["604CCBE824D03A74"]
@@ -615,13 +629,12 @@
 				type: "item"
 			}]
 			title: "&2Cupronickel Coils"
-			x: 4.25d
-			y: 10.0d
+			x: 7.75d
+			y: 10.5d
 		}
 		{
 			dependencies: [
 				"7A7907EE1F3FCFBF"
-				"0B5613CC79261800"
 				"1BC6DDC2D50F9C46"
 			]
 			description: [
@@ -648,8 +661,8 @@
 				type: "item"
 			}]
 			title: "&2Aluminium Ingots"
-			x: 1.0d
-			y: 12.75d
+			x: 4.5d
+			y: 13.25d
 		}
 		{
 			dependencies: [
@@ -741,8 +754,8 @@
 				}
 			]
 			title: "&2Blast Furnace Fun"
-			x: 2.75d
-			y: 12.75d
+			x: 6.25d
+			y: 13.25d
 		}
 		{
 			dependencies: [
@@ -768,8 +781,8 @@
 				item: "gtceu:energetic_alloy_ingot"
 				type: "item"
 			}]
-			x: 2.75d
-			y: 15.75d
+			x: 6.25d
+			y: 16.25d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]
@@ -790,8 +803,8 @@
 				item: "gtceu:vibrant_alloy_ingot"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 16.75d
+			x: 7.5d
+			y: 17.25d
 		}
 		{
 			dependencies: ["604CCBE824D03A74"]
@@ -838,8 +851,8 @@
 				type: "item"
 			}]
 			title: "LV Mixer"
-			x: 1.75d
-			y: 14.5d
+			x: 5.25d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1DBBE96165C7987D"]
@@ -872,8 +885,8 @@
 				}
 			]
 			title: "Soldering Alloy"
-			x: 0.75d
-			y: 15.75d
+			x: 4.25d
+			y: 16.25d
 		}
 		{
 			dependencies: ["604CCBE824D03A74"]
@@ -904,8 +917,8 @@
 				type: "checkmark"
 			}]
 			title: "&2Maintenance and Muffler Mechanics"
-			x: 4.25d
-			y: 11.5d
+			x: 7.75d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2EF8EE4CC34F8D09"]
@@ -1057,8 +1070,8 @@
 				}
 			]
 			title: "&2Pyrolyse Oven"
-			x: 5.75d
-			y: 12.75d
+			x: 9.25d
+			y: 13.25d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1111,8 +1124,8 @@
 				type: "item"
 			}]
 			title: "&9Upgrades, people, upgrades."
-			x: -0.75d
-			y: 13.75d
+			x: 2.75d
+			y: 14.25d
 		}
 		{
 			dependencies: ["1229234A71CE0A99"]
@@ -1333,8 +1346,8 @@
 				type: "checkmark"
 			}]
 			title: "&9Terminal"
-			x: 4.25d
-			y: 12.75d
+			x: 7.75d
+			y: 13.25d
 		}
 		{
 			dependencies: ["2EF8EE4CC34F8D09"]
@@ -1402,24 +1415,6 @@
 			title: "Aluminium Dust (NM)"
 			x: -0.5d
 			y: 8.0d
-		}
-		{
-			dependencies: [
-				"5B0200011DF8E1B6"
-				"68897FC5F720BB4F"
-			]
-			description: ["&2With LV power, you can only get Aluminium Dust from electrolyzing Sapphire Dust or Green Sapphire Dust. Once you make an MV Electrolyzer, you can get it from a plethora of other raw resources, such as Clay.&r"]
-			hide_until_deps_visible: true
-			id: "0B5613CC79261800"
-			optional: true
-			tasks: [{
-				id: "7D2FC09A6C8B722C"
-				item: "gtceu:aluminium_dust"
-				type: "item"
-			}]
-			title: "Aluminium Dust (HM/EM)"
-			x: 0.5d
-			y: 7.75d
 		}
 		{
 			dependencies: [
@@ -1502,8 +1497,8 @@
 				type: "checkmark"
 			}]
 			title: "&2Lossless Cables"
-			x: 2.75d
-			y: 17.5d
+			x: 6.25d
+			y: 18.0d
 		}
 		{
 			dependencies: ["1BC6DDC2D50F9C46"]
@@ -1531,8 +1526,8 @@
 				type: "checkmark"
 			}]
 			title: "Recipe Tiers and Over-tiering"
-			x: 2.75d
-			y: 11.0d
+			x: 6.25d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1606,8 +1601,8 @@
 				type: "checkmark"
 			}]
 			title: "Sulfuric Ore Pyrometallurgy"
-			x: 4.25d
-			y: 14.0d
+			x: 7.75d
+			y: 14.5d
 		}
 		{
 			dependencies: ["2EF8EE4CC34F8D09"]
@@ -1652,8 +1647,8 @@
 				type: "item"
 			}]
 			title: "LV Power Storage"
-			x: -0.75d
-			y: -0.75d
+			x: -7.25d
+			y: -1.25d
 		}
 		{
 			dependencies: ["760DEF8FFAD6E20A"]
@@ -1694,8 +1689,8 @@
 				type: "item"
 			}]
 			title: "Battery Buffers"
-			x: -0.75d
-			y: 0.75d
+			x: -7.25d
+			y: 0.25d
 		}
 		{
 			dependencies: ["760DEF8FFAD6E20A"]
@@ -1749,8 +1744,8 @@
 				type: "item"
 			}]
 			title: "GregTech Electric Tools"
-			x: -0.75d
-			y: -2.25d
+			x: -7.25d
+			y: -2.75d
 		}
 		{
 			dependencies: ["760DEF8FFAD6E20A"]
@@ -1805,8 +1800,8 @@
 				type: "item"
 			}]
 			title: "&9Charging Items"
-			x: -2.25d
-			y: -0.75d
+			x: -8.75d
+			y: -1.25d
 		}
 		{
 			dependencies: ["2EF8EE4CC34F8D09"]
@@ -1830,8 +1825,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 4.25d
-			y: -0.75d
+			x: -2.25d
+			y: -1.25d
 		}
 		{
 			dependencies: ["34876F54406B6A04"]
@@ -1852,8 +1847,8 @@
 				type: "checkmark"
 			}]
 			title: "A Primer on Power"
-			x: 1.75d
-			y: -3.0d
+			x: -4.75d
+			y: -3.5d
 		}
 		{
 			dependencies: ["46475B351ED6853F"]
@@ -1880,8 +1875,8 @@
 				type: "checkmark"
 			}]
 			title: "Putting it all Together"
-			x: 1.75d
-			y: -0.75d
+			x: -4.75d
+			y: -1.25d
 		}
 		{
 			dependencies: [
@@ -2693,8 +2688,8 @@
 				type: "item"
 			}]
 			title: "Diodes"
-			x: -1.25d
-			y: 16.75d
+			x: 0.25d
+			y: 12.25d
 		}
 		{
 			dependencies: ["61AD3760E271B431"]
@@ -2726,8 +2721,8 @@
 				type: "item"
 			}]
 			title: "&2Gallium Arsenide"
-			x: -3.0d
-			y: 17.75d
+			x: -2.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -2836,8 +2831,8 @@
 				type: "item"
 			}]
 			title: "Centrifuge"
-			x: -4.0d
-			y: 13.0d
+			x: -3.25d
+			y: 5.5d
 		}
 		{
 			dependencies: ["5F109188BE4D9767"]
@@ -2891,8 +2886,8 @@
 				}
 			]
 			title: "Canner"
-			x: -4.25d
-			y: 15.25d
+			x: -3.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["591A1B8B279DFCC9"]
@@ -2915,8 +2910,8 @@
 				type: "item"
 			}]
 			title: "&2The First Tier Two Circuits"
-			x: -0.5d
-			y: 20.5d
+			x: 0.625d
+			y: 16.25d
 		}
 		{
 			dependencies: ["4A5CC6210FCEC075"]
