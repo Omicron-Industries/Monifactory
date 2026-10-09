@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "power_generation"
 	group: "0D5BFFD0A5E49312"
-	icon: "thermal:dynamo_numismatic"
+	icon: "monilabs:creative_energy_multi"
 	id: "0102198269F850CD"
 	images: [
 		{
@@ -136,7 +136,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["6CBB224DA02B2809"]
+			dependencies: ["1A30472430354F1E"]
 			description: [
 				"&6Steam Turbine Generators&r are the easiest way to start generating &eEU&r with &bGregTech&r, removing the need for a &6Converter&r."
 				""

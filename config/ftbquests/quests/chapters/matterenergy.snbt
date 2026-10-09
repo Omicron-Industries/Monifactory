@@ -1029,7 +1029,6 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "asdopjkfhwerouijghbnersjkghnrd"
 			tasks: [{
 				id: "4C87128CBD93E0A8"
 				item: "expatternprovider:pattern_modifier"

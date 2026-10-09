@@ -27,12 +27,6 @@
 			y: 16.0d
 		}
 		{
-			id: "12C41B95C25D306A"
-			linked_quest: "126ED4A0AEA05DCD"
-			x: -4.0d
-			y: 9.5d
-		}
-		{
 			id: "252271853F4352D1"
 			linked_quest: "1F976B197DEFF654"
 			x: -0.75d
@@ -64,7 +58,6 @@
 	quests: [
 		{
 			dependencies: [
-				"2D31856F6EF1ED69"
 				"604CCBE824D03A74"
 				"0381DCD3FD3C9ED2"
 			]
@@ -130,10 +123,7 @@
 			y: -3.75d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"Although you could &emagnetize&r &6Iron Ingots&r by hand using &6Redstone&r, doing that consumes considerable amounts of dust and that's not an option for more advanced materials. This machine will let you magnetize &6Steel Rods&r, as well as even more advanced materials later."
 				""
@@ -222,10 +212,7 @@
 			y: -3.75d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"&2Circuit recipes are handled through a separate machine, the Circuit Assembler. They are two entirely separate machines, despite their similar name!&r"
 				""
@@ -275,10 +262,7 @@
 			y: 7.75d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"The &3Lathe&r is an important machine that makes &6Rods&r less expensive to craft. One ingot will yield two rods, doubling your output compared to manually crafting it."
 				""
@@ -325,10 +309,7 @@
 			y: 1.25d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"The &3Bender&r improves the yield of a great deal of items. Most notably, you can use it to get one &6Plate&r from a single ingot, instead of having to spend two ingots for a single plate."
 				""
@@ -381,10 +362,7 @@
 			y: 1.25d
 		}
 		{
-			dependencies: [
-				"1C30B0E57E195FD7"
-				"2E8BFA2E719B1C47"
-			]
+			dependencies: ["1C30B0E57E195FD7"]
 			description: [
 				"Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with &9Monicoins&r."
 				""
@@ -409,10 +387,7 @@
 			y: 11.0d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"&2Careful: This is not a Bender."
 				""
@@ -451,10 +426,7 @@
 			y: -1.25d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"&3Extractors&r are useful for melting things into liquids. For example, you can melt down ingots into molten metals, or &6Rubber Sheets&r into liquid &9Rubber&r."
 				""
@@ -494,10 +466,7 @@
 			y: -2.25d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"&3Macerators&r are useful for grinding things down, replacing the &aMortars&r you've needed until now. This is an important machine you will be using for many things in the future."
 				""
@@ -551,10 +520,7 @@
 			y: -2.25d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"If you don't want to mine Obsidian by hand, consider using a Fluid Solidifier to turn &cLava&r into &6Obsidian Blocks&r for you. The process is slow and energy intensive, though."
 				""
@@ -640,10 +606,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"An &3Autoclave&r is a machine that uses liquids (usually water) to polish stones, carve gems into lenses, infuse gems with special liquids, and crystallize various dusts."
 				""
@@ -873,10 +836,7 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"&3Alloy Smelters&r are used to create alloys by melting and reforming items together."
 				""
@@ -952,42 +912,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"29A487F0BC43AAF9"
-				"7423181A27FC773B"
-			]
-			description: [
-				"Using plain &3Steam Dynamos&f is pretty inefficient."
-				""
-				"It's strongly recommended to upgrade your Dynamos into &3Steam Boilers&f and &3Steam Turbines&f. The ratio is always &a1:2&r if all machines are equally upgraded."
-				""
-				"This greatly increases the overall efficiency and the amount of power produced, from &a40 RF/t&r per basic steam dynamo to &a320 RF/t&r per set of three augmented machines."
-			]
-			hide_until_deps_visible: true
-			icon: "systeams:steam_dynamo"
-			id: "545CCC24D9401794"
-			optional: true
-			tasks: [
-				{
-					id: "12315AEA66B77CB2"
-					item: { Count: 2, id: "systeams:stirling_boiler" }
-					type: "item"
-				}
-				{
-					id: "76CB286FDDD00D40"
-					item: "systeams:steam_dynamo"
-					type: "item"
-				}
-			]
-			title: "Boilers and Turbines"
-			x: -3.5d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"The Arc Furnace allows you to make &6Annealed Copper&r, which will be used in the MV Age. It can also make 2 pieces of Glass from 1 Sand. Later, it can make &2Tempered Glass&r for use in higher-tier recipes."
 				""
@@ -1059,10 +984,7 @@
 			y: -0.25d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: ["The &6Forge Hammer&r, despite being inefficient at making plates, can be used to break Cobblestone into Gravel and Gravel into Sand. It's also used to combine 2 Rods into 1 Long Rod."]
 			icon: "gtceu:lv_forge_hammer"
 			id: "0EDFB0C24B9129AB"
@@ -1156,8 +1078,8 @@
 		}
 		{
 			dependencies: [
-				"545CCC24D9401794"
 				"64ABEB1EF9F81EA4"
+				"29A487F0BC43AAF9"
 			]
 			description: [
 				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
@@ -1221,7 +1143,7 @@
 				}
 			]
 			title: "&9Steam Grinder"
-			x: -4.75d
+			x: -2.5d
 			y: 3.25d
 		}
 		{
@@ -1274,7 +1196,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
 				""
@@ -1363,10 +1284,7 @@
 			y: 7.75d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"&3Electrolyzers&r use electricity to separate items into their more basic components."
 				""
@@ -1660,71 +1578,6 @@
 			y: 17.0d
 		}
 		{
-			dependencies: ["6A914B240E1A7BCB"]
-			description: [
-				"Now that you have &6Energetic Alloy&r, it's time to make some better cards!"
-				""
-				"Each time you upgrade these, you'll also get more of them. Neat!"
-				""
-				"Make sure you're using an &3Assembler&r to craft these things. Making them by hand isn't as efficient as the machine."
-			]
-			id: "4F4F120AFB3A9250"
-			rewards: [{
-				id: "48BA7A02C52B204C"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "45561FC8024BD7F3"
-					item: "laserio:energy_overclocker_card_tier_2"
-					type: "item"
-				}
-				{
-					id: "300A597D5FD2F21E"
-					item: "pipez:improved_upgrade"
-					type: "item"
-				}
-			]
-			title: "Energetic Alloy Energy Cards"
-			x: -0.25d
-			y: 17.0d
-		}
-		{
-			dependencies: ["6A914B240E1A7BCB"]
-			description: [
-				"The &aAuxiliary Reaction Chamber&r is an augment that will work in all types of dynamos. It will consume fuel faster to produce a correspondingly higher RF per tick."
-				""
-				"Each augment increases both base power production and fuel consumption by 100%%, additively (so the second is 200%%, third is 300%%, etc.)."
-				""
-				"Consider the tradeoffs however, as you could just make another dynamo, and you miss out on &aMulti-cycle Injectors&r augments that make fuels burn longer for more total RF generated. The Auxiliary Reaction Chamber will also put additional stress on your fuel production infrastructure."
-				""
-				"If that's an acceptable tradeoff, then Auxiliary Reaction Chambers are a cheap and effective way to boost your power production."
-			]
-			id: "780706A4C4AEB9CE"
-			tasks: [{
-				icon: "thermal:dynamo_output_augment"
-				id: "6A08FDD4D0930907"
-				item: {
-					Count: 1
-					id: "thermal:dynamo_output_augment"
-					tag: {
-						AugmentData: {
-							DynamoEnergy: 0.7f
-							DynamoPower: 3.0f
-							Type: "Dynamo"
-						}
-					}
-				}
-				match_nbt: false
-				type: "item"
-			}]
-			title: "Auxiliary Reaction Chambers"
-			x: 2.25d
-			y: 15.25d
-		}
-		{
 			dependencies: ["3AB0402B19DD5BA8"]
 			description: [
 				"You might notice that these hulls can be made more cheaply in an &3Assembler&r, but you don't have that weird fluid. Don't worry, you'll be able to make that soon."
@@ -1750,10 +1603,7 @@
 			y: 13.0d
 		}
 		{
-			dependencies: [
-				"604CCBE824D03A74"
-				"2D31856F6EF1ED69"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"Mixes dusts together."
 				""
@@ -1890,10 +1740,7 @@
 			y: 2.25d
 		}
 		{
-			dependencies: [
-				"2D31856F6EF1ED69"
-				"604CCBE824D03A74"
-			]
+			dependencies: ["604CCBE824D03A74"]
 			dependency_requirement: "one_completed"
 			description: [
 				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are separate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine."
@@ -1982,7 +1829,7 @@
 			y: -3.75d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
+			dependencies: ["604CCBE824D03A74"]
 			description: ["&9Pressing the second tab in any given machine's GUI will open up a view showing the machine and any blocks it is touching.&r From there, you can click on a side of the machine and easily add, edit and remove &acovers&r, and configure if the machine should &3automatically output&r and which side it should output to. "]
 			icon: "minecraft:hopper"
 			id: "431BB650AC492C84"
@@ -1997,7 +1844,10 @@
 			y: 5.75d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
+			dependencies: [
+				"57D1B1D74391A05F"
+				"64AAF0CD958D836A"
+			]
 			description: [
 				"&aFilters&r are a type of machine cover that controls what items or fluids are allowed to pass through it. They can be used directly on the side of a machine to affect external automation or the machine's &aauto-output functionality&r."
 				""
@@ -2047,11 +1897,9 @@
 				"6E63E7FEC6EA7F63"
 			]
 			description: [
-				"&bLaserIO&r, like &bPipez&r, is an option for &6Item&r, &9Fluid&r, and &aFE&r transport. Unlike Pipez, it it wireless up to &a10 blocks&r and has more configuration."
+				"&bLaserIO&r, like &bPipez&r, is an option for &6Item&r, and &9Fluid&r transport. Unlike Pipez, it it wireless up to &a10 blocks&r and has more configuration."
 				""
 				"&9Item cards&r and &9Fluid cards&r are necessary for moving items and fluids respectively. You can have multiple cards on each side of a &6Laser Node&r. They accept &6Logistics Overclockers&r to increase throughput."
-				""
-				"LaserIO's &6Energy Cards&r, unlike other cards, require &6Energy Overclockers&r to allow them to transport energy. &eNote that only the extracting card requires an overclocker!&r"
 			]
 			hide_until_deps_visible: true
 			icon: "laserio:laser_node"
@@ -2106,17 +1954,6 @@
 					count: 2L
 					id: "6DEB6911246BA1D9"
 					item: "laserio:card_item"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "252F1286D3A46E4E"
-					item: "laserio:card_energy"
-					type: "item"
-				}
-				{
-					id: "450A8E8955EDBB51"
-					item: "laserio:energy_overclocker_card_tier_1"
 					type: "item"
 				}
 			]
@@ -2295,8 +2132,8 @@
 		}
 		{
 			dependencies: [
-				"545CCC24D9401794"
 				"64ABEB1EF9F81EA4"
+				"29A487F0BC43AAF9"
 			]
 			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
 			hide_until_deps_visible: true
@@ -2343,7 +2180,7 @@
 				}
 			]
 			title: "&9Steam Foundry"
-			x: -4.75d
+			x: -2.5d
 			y: 5.0d
 		}
 		{

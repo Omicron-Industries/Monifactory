@@ -9,12 +9,6 @@
 	order_index: 5
 	quest_links: [
 		{
-			id: "7D217833035647CD"
-			linked_quest: "04A0863937695AC4"
-			x: 17.0d
-			y: -8.5d
-		}
-		{
 			id: "4CA98E8FC9082FA2"
 			linked_quest: "5F9C7FB40AD2640B"
 			x: 17.0d
@@ -442,6 +436,7 @@
 			y: 6.5d
 		}
 		{
+			dependencies: ["077AA27F26B7831F"]
 			description: [
 				"&oNote: this quest accepts a Power Unit of any voltage (LV, MV, HV, EV \\& IV).&r"
 				""
@@ -496,7 +491,6 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["2E8BFA2E719B1C47"]
 			dependency_requirement: "all_started"
 			description: ["Carry stuff."]
 			disable_toast: true
@@ -699,6 +693,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["06E9B9DDDB245F38"]
 			description: [
 				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
 				""
@@ -755,6 +750,7 @@
 			dependencies: [
 				"64F45D98FA48D834"
 				"6ABF927014F8B79D"
+				"1AA0A089DCA17FC8"
 			]
 			description: ["Flying faster is nice."]
 			disable_toast: true
@@ -1140,10 +1136,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"12B95158E4C792DB"
-				"77670BF761084AA2"
-			]
+			dependencies: ["77670BF761084AA2"]
 			dependency_requirement: "one_completed"
 			description: [
 				"&9This is where &bEMI&9 really shines! Using it alongside &3Crafting Stations&9, you should be able to easily calculate the amount of raw resources and intermediate components you'll need to &ebatch craft &9electronic circuits quickly."
@@ -3401,11 +3394,7 @@
 			y: 12.5d
 		}
 		{
-			dependencies: [
-				"3270496124969A51"
-				"1229234A71CE0A99"
-				"61E5D7EEE745C6FB"
-			]
+			dependencies: ["3270496124969A51"]
 			dependency_requirement: "all_started"
 			description: ["Carry more stuff."]
 			hide_dependency_lines: false

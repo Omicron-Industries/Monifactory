@@ -178,69 +178,7 @@
 	]
 	quests: [
 		{
-			dependencies: [
-				"5C4E189A3E401566"
-				"2A11706D3D63925C"
-			]
-			description: [
-				"Keep the MV area separate from your LV area. &eHooking up an LV machine to MV current will result in the machine being destroyed, and LV cables will burn up if you put MV current through them&r."
-				""
-				"Once you're comfortable and confident with voltages, you can use transformers to switch voltages within a single setup, but don't feel forced to try that until you've got a grasp on the basics."
-				""
-				"For your MV cables, you can use &6Copper&r to start with. &6Energetic Alloy cables&r are lossless though, so consider them if you're able to mass produce those ingots."
-				"{@pagebreak}"
-				"By contrast, &aall RF power&r is lossless, and any RF supplier can send energy to any RF receiver without consequence. This means you can use Pipez or LaserIO to route power from wherever you're generating it to an &3Energy Converter&r for each tier of GregTech machine you have."
-				""
-				"That kind of setup is the most foolproof one for a beginner, but be warned: &cEnergy Converters only go up to HV&r. You &lwill&r have to get accustomed to GregTech power transfer in order to deal with larger quantities of power."
-			]
-			hide_until_deps_visible: true
-			icon: "gtceu:mv_4a_energy_converter"
-			id: "0B62AD25CDD86A6B"
-			optional: true
-			rewards: [{
-				id: "0328A56626F1B919"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			size: 1.5d
-			tasks: [{
-				id: "28506753F6FA0755"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:mv_1a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_4a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_8a_energy_converter"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_16a_energy_converter"
-							}
-						]
-					}
-				}
-				title: "Any MV Converter"
-				type: "item"
-			}]
-			title: "MV Energy Converter"
-			x: -7.75d
-			y: -10.75d
-		}
-		{
-			dependencies: [
-				"0B62AD25CDD86A6B"
-				"74935A3553451178"
-			]
+			dependencies: ["74935A3553451178"]
 			dependency_requirement: "one_completed"
 			description: ["&aMV Batteries&r function essentially the same as &aLV Batteries&r, only stronger. They also need to be put into &3MV Machines, MV Battery Buffers&r or &3MV Turbo Chargers&r."]
 			icon: {
@@ -262,8 +200,8 @@
 				type: "item"
 			}]
 			title: "MV Power Storage"
-			x: -7.75d
-			y: -9.0d
+			x: -5.5d
+			y: -7.5d
 		}
 		{
 			dependencies: ["61CC4AD6FAE15248"]
@@ -1867,7 +1805,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"&6Sulfur&r will be used in a variety of upcoming chemical reactions."
 				""
@@ -2171,35 +2108,6 @@
 			y: 7.0d
 		}
 		{
-			dependencies: ["73C1AB31431B5C11"]
-			description: [
-				"Upgrades to carry even MORE &aFE&r power."
-				""
-				"You're making these in an &3Assembler&r, right?"
-			]
-			id: "53205E306EE07F6F"
-			rewards: [{
-				id: "7AAE565791B28655"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "2F9C846B8ABD620C"
-					item: "laserio:energy_overclocker_card_tier_3"
-					type: "item"
-				}
-				{
-					id: "71545946FA1828C9"
-					item: "pipez:advanced_upgrade"
-					type: "item"
-				}
-			]
-			title: "Vibrant Alloy Energy Cards"
-			x: 5.75d
-			y: 10.0d
-		}
-		{
 			dependencies: [
 				"64F45D98FA48D834"
 				"73C1AB31431B5C11"
@@ -2295,6 +2203,7 @@
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
 			description: ["Placing a &9Wireless Charger&r in an area that you frequent (such as where you do your crafting) will ensure that your RF-based items are always topped off on energy. &4Does not charge EU-based items!&r"]
+			hide_dependency_lines: true
 			id: "1AA0A089DCA17FC8"
 			rewards: [{
 				id: "67EDE8C53008B226"
@@ -2323,8 +2232,8 @@
 				type: "item"
 			}]
 			title: "&9Charging Items Wirelessly"
-			x: 2.5d
-			y: -1.0d
+			x: 10.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["64ABEB1EF9F81EA4"]
@@ -2374,25 +2283,6 @@
 			title: "&9Steam Separator"
 			x: -2.25d
 			y: -9.75d
-		}
-		{
-			dependencies: ["73C1AB31431B5C11"]
-			description: ["&6Redstone Flux Cells&r can store large amounts of power. They can be upgraded with the &6Holding&r enchantment, &6Integral Components&r, and &6RF Coil augments&r to boost their capacity."]
-			id: "09EED0C4106265BC"
-			rewards: [{
-				id: "452D3826F2B6022F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [{
-				id: "4272F1401BFD6E31"
-				item: "thermal:energy_cell"
-				type: "item"
-			}]
-			title: "RF Storage"
-			x: 6.5d
-			y: 12.25d
 		}
 		{
 			dependencies: ["3E42B4AAA6D2A05B"]
