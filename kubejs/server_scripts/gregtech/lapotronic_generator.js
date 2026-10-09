@@ -1,7 +1,5 @@
 ServerEvents.recipes(event => {
     const GEM_PURITIES = [
-        { prefix: "chipped_", euMultiplier: 0.5 },
-        { prefix: "flawed_", euMultiplier: 0.75 },
         { prefix: "", euMultiplier: 1 },
         { prefix: "flawless_", euMultiplier: 1.5 },
         { prefix: "exquisite_", euMultiplier: 2 },
