@@ -58,32 +58,32 @@ ServerEvents.recipes(event => {
         .duration(3600)
         .EUt(128000)
 
-    function NullEngrave(name, lens, wafer, time) {
-        event.recipes.gtceu.laser_engraver(name)
+    function NullEngrave(name, lens, wafer, time, energy) {
+        event.recipes.gtceu.laser_engraver(`engrave_${name}_null`)
             .itemInputs("kubejs:null_wafer")
             .notConsumable(lens)
             .itemOutputs(wafer)
             .duration(time)
             .cleanroom(CleanroomType.CLEANROOM)
-            .EUt(16000)
+            .EUt(energy)
     }
 
-    NullEngrave("ilc_wafer", "#forge:lenses/red", "32x gtceu:ilc_wafer", 20);
-    NullEngrave("ram_wafer", "#forge:lenses/green", "32x gtceu:ram_wafer", 20);
-    NullEngrave("cpu_wafer", "#forge:lenses/light_blue", "32x gtceu:cpu_wafer", 20);
-    NullEngrave("lpic_wafer", "gtceu:orange_glass_lens", "32x gtceu:lpic_wafer", 20);
-    NullEngrave("mpic_wafer", "gtceu:brown_glass_lens", "32x gtceu:mpic_wafer", 100);
-    NullEngrave("simple_soc_wafer", "gtceu:cyan_glass_lens", "32x gtceu:simple_soc_wafer", 20);
-    NullEngrave("hasoc_wafer", "gtceu:black_glass_lens", "4x gtceu:highly_advanced_soc_wafer", 500);
-    NullEngrave("ulpic_wafer", "#forge:lenses/blue", "32x gtceu:ulpic_wafer", 20);
-    NullEngrave("soc_wafer", "gtceu:yellow_glass_lens", "16x gtceu:soc_wafer", 100);
-    NullEngrave("asoc_wafer", "#forge:lenses/purple", "8x gtceu:advanced_soc_wafer", 200);
-    NullEngrave("nand_wafer", "gtceu:gray_glass_lens", "16x gtceu:nand_memory_wafer", 100);
-    NullEngrave("nor_wafer", "gtceu:pink_glass_lens", "16x gtceu:nor_memory_wafer", 100);
+    NullEngrave("ilc", "#forge:lenses/red", "32x gtceu:ilc_wafer", 20, 16000);
+    NullEngrave("ram", "#forge:lenses/green", "32x gtceu:ram_wafer", 20, 16000);
+    NullEngrave("cpu", "#forge:lenses/light_blue", "32x gtceu:cpu_wafer", 20, 64000);
+    NullEngrave("lpic", "gtceu:orange_glass_lens", "32x gtceu:lpic_wafer", 20, 16000);
+    NullEngrave("pic", "gtceu:brown_glass_lens", "32x gtceu:mpic_wafer", 100, 16000);
+    NullEngrave("ssoc", "gtceu:cyan_glass_lens", "32x gtceu:simple_soc_wafer", 20, 16000);
+    NullEngrave("hasoc", "gtceu:black_glass_lens", "4x gtceu:highly_advanced_soc_wafer", 500, 16000);
+    NullEngrave("ulpic", "#forge:lenses/blue", "32x gtceu:ulpic_wafer", 20, 16000);
+    NullEngrave("soc", "gtceu:yellow_glass_lens", "16x gtceu:soc_wafer", 100, 16000);
+    NullEngrave("asoc", "#forge:lenses/purple", "8x gtceu:advanced_soc_wafer", 200, 16000);
+    NullEngrave("nand", "gtceu:gray_glass_lens", "16x gtceu:nand_memory_wafer", 100, 16000);
+    NullEngrave("nor", "gtceu:pink_glass_lens", "16x gtceu:nor_memory_wafer", 100, 16000);
 
     // Multidimensional CPU
 
-    event.recipes.gtceu.laser_engraver("unactivated_dimensional_cpu_wafer")
+    event.recipes.gtceu.laser_engraver("engrave_unactivated_dimensional_cpu_null")
         .itemInputs("kubejs:null_wafer")
         .notConsumable("gtceu:light_gray_glass_lens")
         .itemOutputs("kubejs:unactivated_multidimensional_cpu_wafer")
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     // Hyperdynamic RAM
-    event.recipes.gtceu.laser_engraver("hyperdynamic_ram_wafer")
+    event.recipes.gtceu.laser_engraver("engrave_hyperdynamic_ram_null")
         .itemInputs("kubejs:null_wafer")
         .notConsumable("gtceu:magenta_glass_lens")
         .itemOutputs("kubejs:hyperdynamic_ram_wafer")

@@ -26,7 +26,7 @@ if (Platform.isLoaded("tempad")) {
 
         event.recipes.gtceu.assembler("tempad:he_who_remains_tempad")
             .itemInputs("tempad:tempad", "gtceu:lapotron_crystal", "4x #gtceu:circuits/ev", "16x monilabs:quantum_flux", "8x gtceu:tungsten_carbide_plate", "2x gtceu:signalum_plate")
-            .inputFluids(Fluid.of("gtceu:mana", 1000))
+            .inputFluids(Fluid.of("monilabs:mana", 1000))
             .itemOutputs("tempad:he_who_remains_tempad")
             .duration(100)
             .EUt(GTValues.VA[GTValues.HV])

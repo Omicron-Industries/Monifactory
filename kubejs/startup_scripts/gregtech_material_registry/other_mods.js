@@ -14,7 +14,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .iconSet("magic")
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
         .fluidPipeProperties(4500, 256, true, true, true, false)
-        .components("4x tin_alloy", "2x sterling_silver", "mana")
+        .components("4x tin_alloy", "2x sterling_silver", "monilabs:mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
 
     event.create("signalum")
@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xff6b0f).secondaryColor(0xc32e00)
         .iconSet("magic")
         .blastTemp(4000, "high", GTValues.VA[GTValues.IV], 1400)
-        .components("4x annealed_copper", "2x red_steel", "2x red_alloy", "mana")
+        .components("4x annealed_copper", "2x red_steel", "2x red_alloy", "monilabs:mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
 
     event.create("enderium")
@@ -30,7 +30,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x1f6b62).secondaryColor(0x16455f)
         .iconSet("magic")
         .blastTemp(6400, "highest", GTValues.VA[GTValues.LuV], 1600)
-        .components("4x lead", "2x platinum", "blue_steel", "osmium", "tantalum", "mana")
+        .components("4x lead", "2x platinum", "blue_steel", "osmium", "tantalum", "monilabs:mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FINE_WIRE)
 })
 
@@ -260,7 +260,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x00d5ff).secondaryColor(0x0067ff)
         .iconSet("magic")
         .blastTemp(2141, null)
-        .components("titanium", "mana")
+        .components("titanium", "monilabs:mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
 
     // Trinaquadalloy is, to my knowledge, from a GregTech addon that has since been removed from the pack.

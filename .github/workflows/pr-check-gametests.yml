@@ -41,6 +41,8 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
       - name: Run game test server
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
         run: |
           cd build
           npm ci

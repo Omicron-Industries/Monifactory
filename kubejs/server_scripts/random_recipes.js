@@ -303,40 +303,6 @@ ServerEvents.recipes(event => {
         W: "gtceu:monium_quadruple_wire"
     })
 
-    //
-    // Recycling below here
-    //
-
-    // RHF
-    event.remove({ input: "gtceu:mega_blast_furnace" })
-    event.recipes.gtceu.arc_furnace("rhf_recycling")
-        .itemInputs("gtceu:mega_blast_furnace")
-        .inputFluids("gtceu:oxygen 20786")
-        .itemOutputs("20x gtceu:naquadah_alloy_ingot", "4x gtceu:invar_ingot", "2x gtceu:uranium_rhodium_dinaquadide_ingot", "gtceu:tin_ingot")
-        .duration(20786)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.macerator("rhf_crushing")
-        .itemInputs("gtceu:mega_blast_furnace")
-        .itemOutputs("24x gtceu:stone_dust", "20x gtceu:naquadah_alloy_dust", "4x gtceu:invar_dust", "2x gtceu:rubber_dust")
-        .duration(20786)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    // BBC
-    event.remove({ input: "gtceu:mega_vacuum_freezer" })
-    event.recipes.gtceu.arc_furnace("bbc_recycling")
-        .itemInputs("gtceu:mega_vacuum_freezer")
-        .inputFluids("gtceu:oxygen 26976")
-        .itemOutputs("18x gtceu:naquadah_alloy_ingot", "12x gtceu:stainless_steel_ingot", "12x gtceu:electrum_ingot", "gtceu:steel_block")
-        .duration(26976)
-        .EUt(GTValues.VA[GTValues.LV])
-
-    event.recipes.gtceu.macerator("bbc_crushing")
-        .itemInputs("gtceu:mega_vacuum_freezer")
-        .itemOutputs("18x gtceu:naquadah_alloy_dust", "50x gtceu:small_rubber_dust", "49x gtceu:small_steel_dust", "12x gtceu:stainless_steel_dust")
-        .duration(25408)
-        .EUt(302)
-
     // Strings Recipe
     event.shaped("6x minecraft:string", [
         " A ",
@@ -506,6 +472,7 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(GTValues.VA[GTValues.LuV])
         .stationResearch(b => b.researchStack("gtceu:electric_blast_furnace").CWUt(16, 64000).EUt(GTValues.VA[GTValues.LuV]))
+        .addMaterialInfo(true)
 
     event.remove({ id: "gtceu:shaped/mega_vacuum_freezer" })
     event.recipes.gtceu.assembly_line("kubejs:mega_vacuum_freezer")
@@ -515,6 +482,7 @@ ServerEvents.recipes(event => {
         .duration(3000)
         .EUt(GTValues.VA[GTValues.LuV])
         .stationResearch(b => b.researchStack("gtceu:vacuum_freezer").CWUt(16, 64000).EUt(GTValues.VA[GTValues.LuV]))
+        .addMaterialInfo(true)
 
     event.recipes.minecraft.smelting("kubejs:pulsating_dust", ["gtceu:uraninite_dust"])
     event.recipes.minecraft.smelting("kubejs:pulsating_dust", ["kubejs:resonant_clathrate"])
@@ -569,6 +537,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:zpm_field_generator")
         .duration(600)
         .EUt(24000)
+        .addMaterialInfo(true)
         .stationResearch(b => b.researchStack("gtceu:luv_field_generator").CWUt(4, 16000).EUt(GTValues.VA[GTValues.LuV]))
 
     // Quantum Ring Assembler Recipes
@@ -608,6 +577,7 @@ ServerEvents.recipes(event => {
         .itemOutputs("gtceu:implosion_collider")
         .duration(900)
         .EUt(32000)
+        .addMaterialInfo(true)
         ["scannerResearch(java.util.function.UnaryOperator)"](b => b.researchStack("gtceu:implosion_compressor").EUt(6000).duration(1800))
 
     // Froglights
@@ -697,21 +667,6 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:carbon_dioxide 2000")
         .duration(1600)
         .blastFurnaceTemp(1700)
-        .EUt(GTValues.VA[GTValues.HV])
-
-    // Germanium can be used in diodes
-    event.recipes.gtceu.mixer("silicon_germanium_mixing")
-        .itemInputs("4x gtceu:silicon_dust", "1x gtceu:germanium_dust")
-        .itemOutputs("5x gtceu:silicon_germanium_dust")
-        .EUt(GTValues.VA[GTValues.LV])
-        .duration(10 * 20)
-
-    event.replaceInput({ output: "gtceu:diode"}, "gtceu:silicon_wafer", "gtceu:tiny_silicon_germanium_dust")
-    event.recipes.gtceu.assembler("germanium_smd_diode")
-        .itemInputs("1x gtceu:small_silicon_germanium_dust", "4x gtceu:fine_platinum_wire")
-        .inputFluids("gtceu:polyethylene 144")
-        .itemOutputs("64x gtceu:smd_diode")
-        .duration(100)
         .EUt(GTValues.VA[GTValues.HV])
 
     // Germanium fusion
@@ -828,7 +783,7 @@ ServerEvents.recipes(event => {
 
     for (const [input, output] of xpjuice_small) {
         event.recipes.gtceu.mixer(`kubejs:xpjuice_${output}`)
-            .inputFluids(Fluid.of("gtceu:mana", 250))
+            .inputFluids(Fluid.of("monilabs:mana", 250))
             .itemInputs(input)
             .outputFluids(Fluid.of("enderio:xp_juice", output))
             .EUt(GTValues.VA[GTValues.HV])
@@ -843,7 +798,7 @@ ServerEvents.recipes(event => {
 
     for (const [input, output] of xpjuice_large) {
         event.recipes.gtceu.large_chemical_reactor(`kubejs:xpjuice_${output}`)
-            .inputFluids(Fluid.of("gtceu:mana", 500))
+            .inputFluids(Fluid.of("monilabs:mana", 500))
             .itemInputs(input)
             .outputFluids(Fluid.of("enderio:xp_juice", output))
             .EUt(GTValues.VA[GTValues.EV])

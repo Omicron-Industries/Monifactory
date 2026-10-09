@@ -43,38 +43,96 @@ function replaceGTRecipeAmount(event, recipeType, idRegex, tagOrItem, toAlter, m
 }
 
 ServerEvents.recipes(event => {
+    // Change Electronic Circuits to give 1 in the Circuit Assembler
+    // Also strictly requires Vacuum Tubes instead of any ULV Circuit
+    event.recipes.gtceu.circuit_assembler("electronic_circuit_lv")
+        .itemInputs("gtceu:resin_printed_circuit_board", "2x #gtceu:resistors", "2x gtceu:red_alloy_single_wire", "2x gtceu:vacuum_tube")
+        .inputFluids("gtceu:tin 144")
+        .itemOutputs("gtceu:basic_electronic_circuit")
+        .duration(10 * 20)
+        .EUt(GTValues.VH[GTValues.LV])
+    event.recipes.gtceu.circuit_assembler("electronic_circuit_lv_soldering_alloy")
+        .itemInputs("gtceu:resin_printed_circuit_board", "2x #gtceu:resistors", "2x gtceu:red_alloy_single_wire", "2x gtceu:vacuum_tube")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("gtceu:basic_electronic_circuit")
+        .duration(10 * 20)
+        .EUt(GTValues.VH[GTValues.LV])
 
-    // Make Integrated Circuits cheaper :3c
+    // Change NAND Chips to be on the same Circuit Assembler tier as the rest of the Integrated theme
+    event.forEachRecipe({ output: "gtceu:nand_chip" }, recipe => {
+        recipe.set("tickInputs", null)
+        recipe.EUt(GTValues.VHA[GTValues.LV])
+    })
+
     // Integrated LV - Removes Diodes, increases ILC Chips required from 1 > 2
-    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_lv" })
+    // Takes 4 Resistors instead of 2. Fine Copper Wire swapped with Fine Red Alloy Wire, and Tin Bolts swapped with Steel Bolts.
     event.recipes.gtceu.circuit_assembler("integrated_circuit_lv")
-        .itemInputs("gtceu:resin_printed_circuit_board", "2x gtceu:ilc_chip", "2x #gtceu:resistors", "2x gtceu:fine_copper_wire", "2x gtceu:tin_bolt")
+        .itemInputs("gtceu:resin_printed_circuit_board", "2x gtceu:ilc_chip", "4x #gtceu:resistors", "2x gtceu:fine_red_alloy_wire", "2x gtceu:steel_bolt")
         .inputFluids("gtceu:tin 144")
         .itemOutputs("2x gtceu:basic_integrated_circuit")
         .duration(10 * 20)
-        .EUt(GTValues.VHA[GTValues.LV])
-    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_lv_soldering_alloy" })
+        .EUt(GTValues.VH[GTValues.LV])
     event.recipes.gtceu.circuit_assembler("integrated_circuit_lv_soldering_alloy")
-        .itemInputs("gtceu:resin_printed_circuit_board", "2x gtceu:ilc_chip", "2x #gtceu:resistors", "2x gtceu:fine_copper_wire", "2x gtceu:tin_bolt")
+        .itemInputs("gtceu:resin_printed_circuit_board", "2x gtceu:ilc_chip", "4x #gtceu:resistors", "2x gtceu:fine_red_alloy_wire", "2x gtceu:steel_bolt")
         .inputFluids("gtceu:soldering_alloy 72")
         .itemOutputs("2x gtceu:basic_integrated_circuit")
         .duration(10 * 20)
-        .EUt(GTValues.VHA[GTValues.LV])
-    // Integrated HV - Swaps ILCs with Diodes
-    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_hv" })
+        .EUt(GTValues.VH[GTValues.LV])
+    // Integrated HV - Swaps 2 ILCs with 2 Diodes
     event.recipes.gtceu.circuit_assembler("integrated_circuit_hv")
         .itemInputs("2x gtceu:good_integrated_circuit", "2x gtceu:ram_chip", "2x #gtceu:diodes", "4x #gtceu:transistors", "8x gtceu:fine_electrum_wire", "8x gtceu:annealed_copper_bolt")
         .inputFluids("gtceu:tin 144")
         .itemOutputs("gtceu:advanced_integrated_circuit")
         .duration(40 * 20)
         .EUt(GTValues.VA[GTValues.LV])
-    event.remove({ id: "gtceu:circuit_assembler/integrated_circuit_hv_soldering_alloy" })
     event.recipes.gtceu.circuit_assembler("integrated_circuit_hv_soldering_alloy")
         .itemInputs("2x gtceu:good_integrated_circuit", "2x gtceu:ram_chip", "2x #gtceu:diodes", "4x #gtceu:transistors", "8x gtceu:fine_electrum_wire", "8x gtceu:annealed_copper_bolt")
         .inputFluids("gtceu:soldering_alloy 72")
         .itemOutputs("gtceu:advanced_integrated_circuit")
         .duration(40 * 20)
         .EUt(GTValues.VA[GTValues.LV])
+
+    // Gate CPUs (and thus the entire Micro theme) to HV
+    // Uptiers the additional Wafer recipes by 1 too
+    event.forEachRecipe({ id: "gtceu:laser_engraver/engrave_cpu_silicon" }, recipe => {
+        recipe.set("tickInputs", null)
+        recipe.EUt(GTValues.VA[GTValues.HV])
+    })
+    event.forEachRecipe({ id: "gtceu:laser_engraver/engrave_cpu_phosphorus" }, recipe => {
+        recipe.set("tickInputs", null)
+        recipe.EUt(GTValues.VA[GTValues.EV])
+    })
+    event.forEachRecipe({ id: "gtceu:laser_engraver/engrave_cpu_naquadah" }, recipe => {
+        recipe.set("tickInputs", null)
+        recipe.EUt(GTValues.VA[GTValues.IV])
+    })
+    event.forEachRecipe({ id: "gtceu:laser_engraver/engrave_cpu_neutronium" }, recipe => {
+        recipe.set("tickInputs", null)
+        recipe.EUt(GTValues.VA[GTValues.LuV])
+    })
+    event.forEachRecipe({ output: "gtceu:cpu_chip" }, recipe => {
+        recipe.set("tickInputs", null)
+        recipe.EUt(GTValues.VA[GTValues.HV])
+    })
+
+    // Make Microchips (Micro LV) not complete ass
+    // Removes Transistors, and halves the duration (so it's actually faster than Integrated and pre-nerf Electronic)
+    event.recipes.gtceu.circuit_assembler("microprocessor_lv")
+        .itemInputs("gtceu:plastic_printed_circuit_board", "gtceu:cpu_chip", "2x #gtceu:resistors", "2x #gtceu:capacitors", "2x gtceu:fine_copper_wire")
+        .inputFluids("gtceu:tin 144")
+        .itemOutputs("3x gtceu:microchip_processor")
+        .duration(5 * 20)
+        .EUt(GTValues.VHA[GTValues.MV])
+    event.recipes.gtceu.circuit_assembler("microprocessor_lv_soldering_alloy")
+        .itemInputs("gtceu:plastic_printed_circuit_board", "gtceu:cpu_chip", "2x #gtceu:resistors", "2x #gtceu:capacitors", "2x gtceu:fine_copper_wire")
+        .inputFluids("gtceu:soldering_alloy 72")
+        .itemOutputs("3x gtceu:microchip_processor")
+        .duration(5 * 20)
+        .EUt(GTValues.VHA[GTValues.MV])
+    // Halve duration of SoC Microchip recipe too
+    event.forEachRecipe({ id: /gtceu:circuit_assembler\/microprocessor_lv_soc.*/ }, recipe => {
+        recipe.duration(1.25 * 20)
+    })
 
     // Replace some computer components with magical metals
     replaceCircassItem(event, /workstation_ev/, "tag", "forge:bolts/blue_alloy", "forge:bolts/vibrant_alloy")
