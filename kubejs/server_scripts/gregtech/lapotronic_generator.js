@@ -15,6 +15,6 @@ function addLapotronicFuel(event, material, eu, duration) {
 }
 
 ServerEvents.recipes(event => {
-    addLapotronicFuel(event, "diamond", GTValues.VA[GTValues.MV], 200)
-    addLapotronicFuel(event, "emerald", GTValues.VA[GTValues.MV], 200)
+    addLapotronicFuel(event, "diamond", GTValues.V[GTValues.MV], 200)
+    addLapotronicFuel(event, "emerald", GTValues.V[GTValues.MV], 200)
 })
