@@ -26,7 +26,7 @@
 		{
 			id: "070539F2FEF35EF9"
 			linked_quest: "712023557B5B1812"
-			x: -4.0d
+			x: -3.0d
 			y: 15.75d
 		}
 		{
@@ -1757,53 +1757,6 @@
 			}]
 			title: "&9Charging Items"
 			x: -1.5d
-			y: 15.75d
-		}
-		{
-			dependencies: ["06E9B9DDDB245F38"]
-			description: [
-				"Basic &aFlux Capacitors&r hold a whopping &9500 kRF&r of energy and are useful for keeping your &aRF-powered&r equipment and tools charged."
-				""
-				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
-				""
-				"The Flux Capacitor is a &bCurio&r, so open your inventory and look for the Curios button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
-			]
-			icon: {
-				Count: 1
-				id: "thermal:flux_capacitor"
-				tag: { }
-			}
-			id: "3A5387B2003177B2"
-			rewards: [{
-				id: "18D835350F2E6BBE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "5EF5A8A2767A69E3"
-					item: {
-						Count: 1
-						id: "thermal:flux_capacitor"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "63EE7A1364F6888B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:dusts/sulfur"
-						}
-					}
-					title: "Sulfur Dust"
-					type: "item"
-				}
-			]
-			title: "&9Flux Capacitors"
-			x: -2.75d
 			y: 15.75d
 		}
 		{
