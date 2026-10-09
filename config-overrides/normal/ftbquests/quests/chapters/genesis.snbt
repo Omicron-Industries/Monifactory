@@ -1334,64 +1334,9 @@
 			y: 9.5d
 		}
 		{
-			dependencies: [
-				"0FF18D13CD42F48A"
-				"7FA0E6F3B466576C"
-			]
+			dependencies: ["7FA0E6F3B466576C"]
 			description: [
-				"The &6Steam Dynamo&r will be your source of &9power&r for the early game. It requires &6Water&r and burnable fuel like &6Coal&r or &6Sugar Cane&r to produce power."
-				""
-				"You'll need a small bit of &6Silver&f for this dynamo. If you haven't found a &6Galena vein&f yet (which is where Silver is), then consider \"buying\" some &6Silver Ore&r using &9Monicoins&r. You won't need a ton of silver and lead just yet, so it won't bankrupt you."
-				""
-				"Keep in mind that &eDynamos only output power when burning through fuel, and only the block/cable attached directly to the coil will get provided with power&f."
-			]
-			id: "39D4174834F3879D"
-			rewards: [{
-				id: "565EAB360615C53E"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "Your first major crafting project!"
-			tasks: [{
-				id: "78D31068BB10B20B"
-				item: "steamdynamo:steam_dynamo"
-				type: "item"
-			}]
-			title: "Steam Dynamo"
-			x: -3.0d
-			y: 12.5d
-		}
-		{
-			dependencies: ["39D4174834F3879D"]
-			description: ["More fuel energy means you need to use less fuel."]
-			id: "098CF1FD284B09E7"
-			rewards: [{
-				id: "5ECF74D124102662"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				count: 2L
-				id: "66B9B329F6ED7939"
-				item: { Count: 2, id: "thermal:dynamo_fuel_augment" }
-				type: "item"
-			}]
-			title: "&9More Efficient"
-			x: -4.0d
-			y: 12.5d
-		}
-		{
-			dependencies: [
-				"7FA0E6F3B466576C"
-				"39D4174834F3879D"
-			]
-			description: [
-				"&bPipez&r is your first available option for transporting &aForge Energy&r, (&aFE&r) and is also the simplest option."
-				""
-				"To use them, connect your sources and destinations with Energy Pipes and Shift-Right-Click the connection of a Pipe to a block with a &6Pipe Wrench&r to begin extracting from that block."
-				""
-				"Pipez can also transport &6Items&r and &9Fluids&r with the corresponding type of pipe."
+				"Pipez can transport &6Items&r and &9Fluids&r with the corresponding type of pipe."
 				""
 				"Extraction speed is increased and Redstone control, filtering, and routing options are unlocked with &6Pipe Upgrades&r."
 			]
@@ -1416,7 +1361,6 @@
 			dependencies: [
 				"1A30472430354F1E"
 				"08948A23B3A17923"
-				"39D4174834F3879D"
 			]
 			description: [
 				"&rThe &3Steam Dynamos&r&r&r you have made are generating &aRF power&r, but &bGregTech&r machines require &aEU power&r. With your first &6circuit&r in hand, you are ready to build a &eLow Voltage (LV) &3&2Energy Converter&r."
@@ -1618,85 +1562,6 @@
 			}]
 			title: "&9Charging Items"
 			x: -2.0d
-			y: 15.5d
-		}
-		{
-			dependencies: ["66FCC26399376B55"]
-			description: [
-				"&6Sulfur Ore&r is the only source of &6Sulfur Dust&r that's currently available to you."
-				""
-				"You may want to spend a few &9Monicoins&r on the ore to jumpstart your power storage."
-				""
-				"Otherwise the ore is only available in &athe Nether&r, and the only way to get there is with a &6Nether Cake&r. Oh no!"
-			]
-			hide_dependency_lines: true
-			icon: "gtceu:sulfur_ore"
-			id: "081101DEE6227D87"
-			tasks: [{
-				id: "0161A7D4C24DC421"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ores/sulfur"
-					}
-				}
-				title: "Any Sulfur Ore"
-				type: "item"
-			}]
-			title: "Sulfur Ore"
-			x: -3.25d
-			y: 14.25d
-		}
-		{
-			dependencies: [
-				"06E9B9DDDB245F38"
-				"081101DEE6227D87"
-			]
-			description: [
-				"Basic &aFlux Capacitors&r hold a whopping &9500 kRF&r of energy and are useful for keeping your &aRF-powered&r equipment and tools charged."
-				""
-				"Put one into your newly crafted &9Charger&r to charge it. You can then put it in your inventory to charge your items with &aRF&r."
-				""
-				"The Flux Capacitor is a &bCurio&r, so open your inventory and look for the Curios button, click it to reveal the additional bauble slots menu and put it into any slot you wish."
-			]
-			icon: {
-				Count: 1
-				id: "thermal:flux_capacitor"
-				tag: { }
-			}
-			id: "3A5387B2003177B2"
-			rewards: [{
-				id: "18D835350F2E6BBE"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "5EF5A8A2767A69E3"
-					item: {
-						Count: 1
-						id: "thermal:flux_capacitor"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "63EE7A1364F6888B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:dusts/sulfur"
-						}
-					}
-					title: "Sulfur Dust"
-					type: "item"
-				}
-			]
-			title: "&9Flux Capacitors"
-			x: -3.25d
 			y: 15.5d
 		}
 		{
