@@ -9,7 +9,7 @@ function addLapotronicFuel(event, material, normalItem, eu, duration) {
     for (const purity of GEM_PURITIES) {
         const tierName = purity.prefix === "" ? "normal" : purity.prefix.slice(0, -1)
         const item = purity.prefix === "" ? normalItem : `gtceu:${purity.prefix}${material}_gem`
-        event.recipes.gtceu.lapotronic(`kubejs:lapotronic_${tierName}_${material}`)
+        event.recipes.gtceu.lapotronic(`kubejs:${material}_${tierName}_lapotronic_fuel`)
             .itemInputs(item)
             .duration(Math.round(duration * purity.durationMultiplier))
             .EUt(-eu)
