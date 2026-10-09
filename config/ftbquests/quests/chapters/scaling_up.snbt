@@ -5,7 +5,7 @@
 	group: "18F0ED1F9A002C08"
 	icon: "gtceu:tungsten_steel_ingot"
 	id: "7489B5042AFE2290"
-	order_index: 4
+	order_index: 7
 	quest_links: [
 		{
 			id: "4864F8F7C33860D9"
@@ -62,13 +62,6 @@
 			y: -5.5d
 		}
 		{
-			id: "3A3FFBE01F09FB26"
-			linked_quest: "55074143B559493F"
-			shape: "hexagon"
-			x: 1.75d
-			y: 5.0d
-		}
-		{
 			id: "7891D352106D66FD"
 			linked_quest: "0A9BC922CF76F48A"
 			shape: "hexagon"
@@ -121,7 +114,7 @@
 	quests: [
 		{
 			dependencies: ["004344AC70AE88F1"]
-			description: ["{moni.quest.588048A00A6250FB.description1}"]
+			description: ["&6Luminessence&r is used in a number of things beyond just Extended Crafting Tables, such as Nether Stars."]
 			disable_toast: true
 			id: "588048A00A6250FB"
 			shape: "hexagon"
@@ -142,9 +135,9 @@
 				"588048A00A6250FB"
 			]
 			description: [
-				"{moni.quest.00203B07F8A930DA.description1}"
+				"Yeah, you get to craft &6Nether Stars&r. Cool, huh?"
 				""
-				"{moni.quest.00203B07F8A930DA.description2}"
+				"Over the course of the pack, Nether Stars are going to be needed in quantities that far exceed a reasonable player's ability to farm Withers. &eCraft them, don't bother trying to farm them."
 			]
 			id: "00203B07F8A930DA"
 			rewards: [{
@@ -153,19 +146,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.00203B07F8A930DA.subtitle}"
+			subtitle: "ASSEMBLE… TOO!"
 			tasks: [{
 				id: "6D869576B5A06D95"
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			title: "{moni.quest.00203B07F8A930DA.title}"
+			title: "Craftable Nether Stars"
 			x: -9.5d
 			y: 3.75d
 		}
 		{
 			dependencies: ["4489F567154BDB09"]
-			description: ["{moni.quest.67C7895F2722D348.description1}"]
+			description: ["&6&6Redstone&r, &6Sulfur&r, and &6Blaze Powder&r creates &6Pyrotheum Dust&r, a mixture imbued with potent elemental flame."]
 			id: "67C7895F2722D348"
 			rewards: [{
 				id: "3F8BBD3932AB851B"
@@ -188,7 +181,7 @@
 				"6DBD1492197AC92D"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.4489F567154BDB09.description1}"]
+			description: ["Bits of a &6Blaze Rod&r. Using a &3Macerator&r doubles your yield."]
 			id: "4489F567154BDB09"
 			rewards: [{
 				id: "1DF5664A05805FA9"
@@ -206,7 +199,7 @@
 		}
 		{
 			dependencies: ["3FF918B4CF33E8F7"]
-			description: ["{moni.quest.5D5B76387841C3FA.description1}"]
+			description: ["&6&6Redstone&r, &6Obsidian Dust&r, and &6Basalz Powder&r creates &6Petrotheum Dust&r, a mixture imbued with potent elemental earth."]
 			id: "5D5B76387841C3FA"
 			rewards: [{
 				id: "3C2437836E336ECA"
@@ -229,7 +222,7 @@
 				"6DBD1492197AC92D"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.3FF918B4CF33E8F7.description1}"]
+			description: ["Bits of a &6Basalz Shard&r. Using a &3Macerator&r doubles your yield."]
 			id: "3FF918B4CF33E8F7"
 			rewards: [{
 				id: "29B960A8AF0D34C8"
@@ -253,9 +246,9 @@
 				"6D70F91101D8CBB4"
 			]
 			description: [
-				"{moni.quest.227F448DFCC3E8C3.description1}"
+				"ASSEMBLE!"
 				""
-				"{moni.quest.227F448DFCC3E8C3.description2}"
+				"&6Mana Dust&r is an important material. It is needed for a variety of materials related to &bThermal Expansion&r."
 			]
 			id: "227F448DFCC3E8C3"
 			rewards: [{
@@ -274,7 +267,7 @@
 		}
 		{
 			dependencies: ["6F11E32BA70CA38C"]
-			description: ["{moni.quest.0B6ACDE565DB7862.description1}"]
+			description: ["&6&6Redstone&r, &6Saltpeter&r, and &6Blitz Powder&r creates &6Aerotheum Dust&r, a mixture imbued with potent elemental air."]
 			id: "0B6ACDE565DB7862"
 			rewards: [{
 				id: "1A4F7D7DCCD5355D"
@@ -297,7 +290,7 @@
 				"6DBD1492197AC92D"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.6F11E32BA70CA38C.description1}"]
+			description: ["Bits of a &6Blitz Mote&r. Using a &3Macerator&r doubles your yield."]
 			id: "6F11E32BA70CA38C"
 			rewards: [{
 				id: "739F3AC195D9D236"
@@ -311,13 +304,13 @@
 				item: "thermal:blitz_powder"
 				type: "item"
 			}]
-			title: "{moni.quest.6F11E32BA70CA38C.title}"
+			title: "Blitz Powder"
 			x: -5.0d
 			y: 5.25d
 		}
 		{
 			dependencies: ["0E419DD2C6D58F49"]
-			description: ["{moni.quest.6D70F91101D8CBB4.description1}"]
+			description: ["&6&6Redstone&r, a &6Snowball&r, and &6Blizz Powder&r creates &6Cryotheum Dust&r, a mixture imbued with potent elemental frost."]
 			id: "6D70F91101D8CBB4"
 			rewards: [{
 				id: "2DD9462FC699AF14"
@@ -340,7 +333,7 @@
 				"6DBD1492197AC92D"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.0E419DD2C6D58F49.description1}"]
+			description: ["Bits of a &6Blizz Cube&r. Using a &3Macerator&r doubles your yield."]
 			id: "0E419DD2C6D58F49"
 			rewards: [{
 				id: "2A2BD2E24C11417C"
@@ -361,7 +354,7 @@
 				"0006FEA1843FEA0A"
 				"5BE3E37772FAF6CB"
 			]
-			description: ["{moni.quest.47A81FADD828772D.description1}"]
+			description: ["&6Pyrotheum Dust&r can be crafted from &6Blaze Powder&r, which you already have means of crafting. Use it to craft a &aThermal Elemental Model&r. The rest of the dusts can then be crafted from pristine matter."]
 			hide_until_deps_visible: true
 			icon: "hostilenetworks:blank_data_model"
 			id: "47A81FADD828772D"
@@ -372,18 +365,18 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.47A81FADD828772D.subtitle}"
+			subtitle: "An alterative route"
 			tasks: [{
 				id: "28D34F773FBF78A8"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.47A81FADD828772D.title}"
+			title: "&9Neural Networking"
 			x: -9.5d
 			y: 5.25d
 		}
 		{
 			dependencies: ["476F71CC0B0AC2A4"]
-			description: ["{moni.quest.58FCAC329B09FEB0.description1}"]
+			description: ["&9Elemental Reduction Fluid&r is the main method of early &6Thermal Elemental Dust&r production in Hardmode, but can also see some use in Normal Mode."]
 			icon: "gtceu:elemental_reduction_fluid_bucket"
 			id: "58FCAC329B09FEB0"
 			rewards: [{
@@ -405,16 +398,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.58FCAC329B09FEB0.title}"
+			title: "Elemental Reduction Fluid"
 			x: -5.75d
 			y: 6.25d
 		}
 		{
 			dependencies: ["517A89E954C7EA74"]
 			description: [
-				"{moni.quest.476F71CC0B0AC2A4.description1}"
+				"&2Hydrofluoric Acid is a dangerous acid made by mixing Hydrogen and Fluorine. It is used in the production of Polytetrafluoroethylene, and in Uranium and Naquadah processing."
 				""
-				"{moni.quest.476F71CC0B0AC2A4.description2}"
+				"&9Fluorine&r is best obtained from processing &6Fluorite&r from its Microminer missions, or processing renewable &6Deepslate&r."
 			]
 			icon: "gtceu:hydrofluoric_acid_bucket"
 			id: "476F71CC0B0AC2A4"
@@ -438,7 +431,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.476F71CC0B0AC2A4.title}"
+			title: "&2Hydrofluoric Acid"
 			x: -8.75d
 			y: 6.25d
 		}
@@ -448,9 +441,9 @@
 				"227F448DFCC3E8C3"
 			]
 			description: [
-				"{moni.quest.3E12862AD553EB8A.description1}"
+				"Mixing &6Titanium&r with &6Mana Dust&r creates &6Mythril Dust&r. This can be smelted into ingots in an &3Electric Blast Furnace&r equipped with &6Kanthal Coils&r or better."
 				""
-				"{moni.quest.3E12862AD553EB8A.description2}"
+				"Mythril is the basis of &bThermal Expansion&r device casings, and is used for many advanced &aAugments&r."
 			]
 			id: "3E12862AD553EB8A"
 			rewards: [{
@@ -470,9 +463,9 @@
 		{
 			dependencies: ["441E5CDAD5007906"]
 			description: [
-				"{moni.quest.5BE9EDB88D656840.description1}"
+				"&6Rutile&r, &6Carbon&r, and &9Chlorine&r may be chemically reacted to form &9Titanium Tetrachloride&r."
 				""
-				"{moni.quest.5BE9EDB88D656840.description2}"
+				"This fluid is a precursor for metallic &6Titanium&r, as well as a titanium halide useful for catalyzing various polymer reactions (like plastics) for greater yields."
 			]
 			icon: "gtceu:titanium_tetrachloride_bucket"
 			id: "5BE9EDB88D656840"
@@ -495,22 +488,22 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.5BE9EDB88D656840.title}"
+			title: "Titanium Tetrachloride"
 			x: -7.5d
 			y: -2.25d
 		}
 		{
 			dependencies: ["5BE9EDB88D656840"]
 			description: [
-				"{moni.quest.15372CBC9F2EA9BC.description1}"
+				"Combining &9Titanium Tetrachloride&r with &6Magnesium&r in an &3Electric Blast Furnace&r (approximating the Kroll process) will net you your first &6Titanium&r. "
 				""
-				"{moni.quest.15372CBC9F2EA9BC.description2}"
+				"This process is a loop, and therefore will not cost you any resources (apart from &6Rutile&r) if you process it correctly."
 				""
-				"{moni.quest.15372CBC9F2EA9BC.description3}"
+				"Unfortunately, it is super hot. You'll need to cool it in a &3Vacuum Freezer&r for it to be usable."
 				""
-				"{moni.quest.15372CBC9F2EA9BC.description4}"
+				"If you haven't set one up yet or want to improve your setup, routing through AE is an alternative way to using Pipez, LaserIO, or GT pipes. Simply set a Tag Storage Bus on the input bus of the freezer, set it to 'forge:hot_ingots', and set it to a high priority. This will accept any new Hot Ingots entering your system, and eliminates the need for a network."
 				""
-				"{moni.quest.15372CBC9F2EA9BC.description5}"
+				"It also removes the need for a separate pattern dedicated to cooling the hot ingots."
 			]
 			icon: "gtceu:hot_titanium_ingot"
 			id: "15372CBC9F2EA9BC"
@@ -524,7 +517,7 @@
 				id: "41C8D4CA16D237DC"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.15372CBC9F2EA9BC.title}"
+			title: "Hot Titanium"
 			x: -7.5d
 			y: -1.0d
 		}
@@ -534,9 +527,9 @@
 				"3000798ACA51BFDC"
 			]
 			description: [
-				"{moni.quest.0874A0191325CFDB.description1}"
+				"A perfect material for making chopsticks."
 				""
-				"{moni.quest.0874A0191325CFDB.description2}"
+				"Also the tier material for Extreme Voltage (EV)."
 			]
 			id: "0874A0191325CFDB"
 			rewards: [{
@@ -551,16 +544,16 @@
 				item: "gtceu:titanium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.0874A0191325CFDB.title}"
+			title: "Titanium"
 			x: -5.75d
 			y: -0.25d
 		}
 		{
 			dependencies: ["78DCEF2FF2E1AC8C"]
 			description: [
-				"{moni.quest.441E5CDAD5007906.description1}"
+				"&6Rutile&r is a &6Titanium&r precursor found in &6Ilmenite Ore&r and &6Bauxite Ore&r, which spawn uncommonly in the End."
 				""
-				"{moni.quest.441E5CDAD5007906.description2}"
+				"&6&rLarger quantities of Ilmenite and Bauxite may be found on the Moon and other planets, or sourced from &3Microminers&r."
 			]
 			id: "441E5CDAD5007906"
 			rewards: [{
@@ -574,13 +567,13 @@
 				item: "gtceu:rutile_dust"
 				type: "item"
 			}]
-			title: "{moni.quest.441E5CDAD5007906.title}"
+			title: "Early Rutile"
 			x: -7.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["15E34DEC491FAB81"]
-			description: ["{moni.quest.78DCEF2FF2E1AC8C.description1}"]
+			description: ["You'll need an &3HV Chemical Reactor&r for processing &6Titanium&r."]
 			id: "78DCEF2FF2E1AC8C"
 			rewards: [{
 				id: "7DC26BD00EC30EF0"
@@ -593,16 +586,16 @@
 				item: "gtceu:hv_chemical_reactor"
 				type: "item"
 			}]
-			title: "{moni.quest.78DCEF2FF2E1AC8C.title}"
+			title: "HV Chemical Reactor"
 			x: -7.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["476F71CC0B0AC2A4"]
 			description: [
-				"{moni.quest.0143E903317263D4.description1}"
+				"&2Polytetrafluoroethylene (PTFE, or Teflon) is a polymer made from Carbon and Fluorine."
 				""
-				"{moni.quest.0143E903317263D4.description2}"
+				"&2This polymer is most importantly used to make Large Chemical Reactors. It's also required for IV and LuV Machine Hulls, and can be substituted in some cases for higher yields."
 			]
 			icon: "gtceu:polytetrafluoroethylene_bucket"
 			id: "0143E903317263D4"
@@ -625,7 +618,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.0143E903317263D4.title}"
+			title: "&2Polytetrafluoroethylene"
 			x: -5.75d
 			y: 7.5d
 		}
@@ -635,15 +628,15 @@
 				"5B07A88C0BFF6586"
 			]
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.53C00EA9D9BEE776.description1\"},{\"underlined\":true,\"translate\":\"moni.quest.53C00EA9D9BEE776.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"68F29871402A6B1B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description.hover_text2\"}}}]"
+				"[\"\",{\"text\":\"The Second Microminer! If this is your first microminer, please read the quests about how microminers and microverses work in the \"},{\"underlined\":true,\"text\":\"Into the Microverse chapter.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"68F29871402A6B1B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}}]"
 				""
-				"{moni.quest.53C00EA9D9BEE776.description2}"
+				"&2You'll need Phosphorous in its LV Field Generators&r."
 				""
-				"{moni.quest.53C00EA9D9BEE776.description3}"
+				"This Miner is a good source of &6Tungsten and Noble Gases&r, among other things."
 				""
-				"{moni.quest.53C00EA9D9BEE776.description4}"
+				"&9Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
 				""
-				"{moni.quest.638130DC8A2BF1C1.description3}"
+				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
 			]
 			id: "53C00EA9D9BEE776"
 			rewards: [{
@@ -658,7 +651,7 @@
 				item: "kubejs:microminer_t2"
 				type: "item"
 			}]
-			title: "{moni.quest.53C00EA9D9BEE776.title}"
+			title: "&9Tier Two Microminer"
 			x: -5.75d
 			y: -3.0d
 		}
@@ -669,11 +662,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.49D33146A1F417E8.description1}"
+				"&6Radon&r will be needed in large quantities."
 				""
-				"{moni.quest.49D33146A1F417E8.description2}"
+				"You can obtain it either from &6Tier Two Microminer&r missions in the form of &6Radon Salt&r, or from distilling &6Liquid Ender Air&r by using two &5EV &6Energy Hatches&r on a &3Distillation Tower&r to run &9IV&r recipes."
 				""
-				"{moni.quest.49D33146A1F417E8.description3}"
+				"Later, it will be possible to make Radon using a &bGregTech &3Fusion Reactor&r."
 			]
 			icon: "gtceu:radon_bucket"
 			id: "49D33146A1F417E8"
@@ -696,13 +689,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.49D33146A1F417E8.title}"
+			title: "&2Radon"
 			x: -5.75d
 			y: -5.5d
 		}
 		{
 			dependencies: ["49D33146A1F417E8"]
-			description: ["{moni.quest.11154356854B64DA.description1}"]
+			description: ["You'll need an HV or better &3Chemical Bath&r to make these. The recipe is quite slow, so invest in the highest tier Chemical Baths you can and consider parallelizing the recipe."]
 			id: "11154356854B64DA"
 			rewards: [{
 				id: "3BB23BE4C21AB7BD"
@@ -710,7 +703,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.11154356854B64DA.subtitle}"
+			subtitle: "When &6Ender Eyes&r just aren't creepy enough."
 			tasks: [{
 				id: "0F943E48FD2BF651"
 				item: "gtceu:quantum_eye"
@@ -725,11 +718,11 @@
 				"5C78349343BA40D7"
 			]
 			description: [
-				"{moni.quest.1DB3CCC10C0EB1A8.description1}"
+				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
 				""
-				"{moni.quest.1DB3CCC10C0EB1A8.description2}"
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Nichrome Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Vacuum Freezer&r."
 				""
-				"{moni.quest.1DB3CCC10C0EB1A8.description3}"
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &6Input Bus&r of your &3Vacuum Freezer&r via pipes or a &6Tag Filter&r set to 'forge:hot_ingots' with a high priority."
 			]
 			id: "1DB3CCC10C0EB1A8"
 			rewards: [{
@@ -743,22 +736,22 @@
 				item: "gtceu:nichrome_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.1DB3CCC10C0EB1A8.title}"
+			title: "Nichrome Ingots"
 			x: -10.75d
 			y: 8.75d
 		}
 		{
 			dependencies: ["1DB3CCC10C0EB1A8"]
 			description: [
-				"{moni.quest.28263004814F0F64.description1}"
+				"&6Nichrome&r is the third coil material available, increasing your EBF's operating temperature to 3600K so it can process more advanced materials."
 				""
-				"{moni.quest.28263004814F0F64.description2}"
+				"Note that an &6HV&r &3Assembler&r is required to make them. &cEach tier of coil requires their tier of Assembler&r - we won't remind you again."
 				""
-				"{moni.quest.28263004814F0F64.description3}"
+				"&93600K&r is now also hot enough to grant a single &9100%% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
 				""
-				"{moni.quest.28263004814F0F64.description4}"
+				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at HV. Once you upgrade your EBF to EV power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to &6Nichrome&r once you can afford it. "
 				""
-				"{moni.quest.28263004814F0F64.description5}"
+				"Later coils will give similar bonuses. Additionally, the EBF's temperature will increase by &9100K&r for each voltage tier above MV, which could make a difference for future materials."
 			]
 			id: "28263004814F0F64"
 			rewards: [{
@@ -774,22 +767,22 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			title: "{moni.quest.28263004814F0F64.title}"
+			title: "&2Nichrome Coil Blocks"
 			x: -9.25d
 			y: 8.75d
 		}
 		{
 			dependencies: ["7E09D4E00BFA4970"]
 			description: [
-				"{moni.quest.3000798ACA51BFDC.description1}"
+				"&3Vacuum Freezers&r are primarily used to cool down hot ingots."
 				""
-				"{moni.quest.3000798ACA51BFDC.description2}"
+				"They're also capable of freezing air into a liquid, and making superconductors."
 				""
-				"{moni.quest.3000798ACA51BFDC.description3}"
+				"At minimum you will need an energy input hatch, an input bus, an output bus, a maintenance hatch, and 21 &6Frost Proof Machine Casings&r for forming the multiblock for processing Hot Ingots."
 				""
-				"{moni.quest.3000798ACA51BFDC.description4}"
+				"If you want to deal with fluids as well, subtract two casings and use a fluid input and fluid output in their place."
 				""
-				"{moni.quest.3000798ACA51BFDC.description5}"
+				"Besides the controller placement, as usual the hatches/buses can go anywhere. Use the building guide in &bEMI&r which can be pulled up from the controller block."
 			]
 			icon: "gtceu:vacuum_freezer"
 			id: "3000798ACA51BFDC"
@@ -872,11 +865,11 @@
 		{
 			dependencies: ["77CEA89E47BB3B7A"]
 			description: [
-				"{moni.quest.4C475D22CC95EB93.description1}"
+				"You'll be needing large quantities of the various Noble Gases so you should get this automated and running continuously. "
 				""
-				"{moni.quest.4C475D22CC95EB93.description2}"
+				"&2After liquefaction, Overworld Air grants Helium and Argon; Nether Air grants Helium-3 and Neon; Ender Air grants Helium, Krypton, Xenon, and Radon."
 				""
-				"{moni.quest.4C475D22CC95EB93.description3}"
+				"Certain Noble Gases (as well as Nitrogen) can also boost the speed of EBF processes."
 			]
 			icon: "gtceu:argon_bucket"
 			id: "4C475D22CC95EB93"
@@ -918,7 +911,7 @@
 						}
 					}
 					optional_task: true
-					title: "{moni.task.32ABC9C584E278E7}"
+					title: "Any Noble Gas Bucket"
 					type: "item"
 				}
 				{
@@ -927,7 +920,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.4C475D22CC95EB93.title}"
+			title: "&2Noble Gases"
 			x: -13.0d
 			y: 1.75d
 		}
@@ -937,11 +930,11 @@
 				"3000798ACA51BFDC"
 			]
 			description: [
-				"{moni.quest.77CEA89E47BB3B7A.description1}"
+				"&9Air&r can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Air&r."
 				""
-				"{moni.quest.77CEA89E47BB3B7A.description2}"
+				"&9Liquid Air&r can be sent into a &2Distillation Tower&r to break it down into its components."
 				""
-				"{moni.quest.77CEA89E47BB3B7A.description3}"
+				"&2Liquid Nether Air and Liquid Ender Air give different useful components too."
 			]
 			icon: "gtceu:liquid_air_bucket"
 			id: "77CEA89E47BB3B7A"
@@ -965,20 +958,20 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.77CEA89E47BB3B7A.title}"
+			title: "&2Distilling Liquid Air"
 			x: -13.0d
 			y: -0.25d
 		}
 		{
 			dependencies: ["15E34DEC491FAB81"]
 			description: [
-				"{moni.quest.2DCD08F30EC049D1.description1}"
+				"Note: this quest accepts LV/MV/HV/EV &3Gas Collectors&r."
 				""
-				"{moni.quest.2DCD08F30EC049D1.description2}"
+				"A &3Gas Collector&r will suck up air at a decent rate, provided the top side is unobstructed. The collected Air is automatically ejected into an adjacent tank via the output face."
 				""
-				"{moni.quest.2DCD08F30EC049D1.description3}"
+				"&2Gas Collectors in the Nether and End will collect Nether Air and Ender Air respectively, which yield different products. Make sure you set the correct circuit configuration for the dimension you are in.&r"
 				""
-				"{moni.quest.2DCD08F30EC049D1.description4}"
+				"IV+ air collectors are not part of this quest, but for reference they exist and are called &3Atmosphere Collectors&r."
 			]
 			id: "2DCD08F30EC049D1"
 			rewards: [{
@@ -1013,10 +1006,10 @@
 						]
 					}
 				}
-				title: "{moni.task.7FC04E0CB9796A66}"
+				title: "Any Gas Collector"
 				type: "item"
 			}]
-			title: "{moni.quest.2DCD08F30EC049D1.title}"
+			title: "&2Basic Air Collection"
 			x: -13.0d
 			y: -2.75d
 		}
@@ -1027,11 +1020,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.6203088E30E34B45.description1}"
+				"&9Nitrogen&r comprises 78%% of the atmosphere. Because of this, after the first few processes of &9Liquid Air&r, you'll probably have more Nitrogen than you know what to do with."
 				""
-				"{moni.quest.6203088E30E34B45.description2}"
+				"If you got here centrifuging air, then it's gonna take you longer to get to that point."
 				""
-				"{moni.quest.6203088E30E34B45.description3}"
+				"Even so, don't void it unless you have secured a very large stockpile. Storage is cheap and Nitrogen is used in sizeable quantities for several notable things, one of which you'll be needing very soon."
 			]
 			icon: "gtceu:nitrogen_bucket"
 			id: "6203088E30E34B45"
@@ -1054,16 +1047,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.6203088E30E34B45.title}"
+			title: "&2Nitrogen"
 			x: -14.5d
 			y: -0.25d
 		}
 		{
 			dependencies: ["2DCD08F30EC049D1"]
 			description: [
-				"{moni.quest.27CE1D6B9683755F.description1}"
+				"Note: this quest accepts LV/MV/HV Centrifuge."
 				""
-				"{moni.quest.27CE1D6B9683755F.description2}"
+				"Centrifuging air is a reliable way to get &9Nitrogen&r before you have access to &3Cryogenic Distillation&r."
 			]
 			icon: "gtceu:lv_centrifuge"
 			id: "27CE1D6B9683755F"
@@ -1095,19 +1088,19 @@
 						]
 					}
 				}
-				title: "{moni.task.2415BC74E202A3D1}"
+				title: "A Centrifuge"
 				type: "item"
 			}]
-			title: "{moni.quest.27CE1D6B9683755F.title}"
+			title: "Air Centrifuging"
 			x: -14.5d
 			y: -2.25d
 		}
 		{
 			dependencies: ["3E51686E2DBD380F"]
 			description: [
-				"{moni.quest.595F205B551A53C9.description1}"
+				"&9Nitrogen Dioxide&r, &9Oxygen&r, and &9Water&r will create &9Nitric Acid&r, the next step in your chemical journey."
 				""
-				"{moni.quest.595F205B551A53C9.description2}"
+				"&9Nitrogen Dioxide&r can be made with a simple combination of &9Nitric Oxide&r and &9Oxygen&r, or skipped entirely with the &3Large Chemical Reactor.&r"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:nitric_acid_bucket"
@@ -1119,7 +1112,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.595F205B551A53C9.subtitle}"
+			subtitle: "Don't let the EPA catch you making this stuff."
 			tasks: [
 				{
 					id: "73779F75B9CA3B06"
@@ -1133,16 +1126,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.595F205B551A53C9.title}"
+			title: "Nitric Acid"
 			x: 9.75d
 			y: -1.75d
 		}
 		{
 			dependencies: ["5357A16B5BF62C96"]
 			description: [
-				"{moni.quest.5FF33EF493DB7E01.description1}"
+				"There are several paths to &9Acetic Acid&r. The simplest is combining &9Oxygen&r, &9Hydrogen&r, and &6Carbon&r, but one of the several other methods may appeal to you more, especially if you have a &3Distillation Tower&r."
 				""
-				"{moni.quest.5FF33EF493DB7E01.description2}"
+				"Look through &bEMI&r for the various options."
 			]
 			icon: "gtceu:acetic_acid_bucket"
 			id: "5FF33EF493DB7E01"
@@ -1165,16 +1158,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.5FF33EF493DB7E01.title}"
+			title: "Acetic Acid"
 			x: 13.25d
 			y: -3.25d
 		}
 		{
 			dependencies: ["5FF33EF493DB7E01"]
 			description: [
-				"{moni.quest.51F895647CB242F1.description1}"
+				"&9Acetic Acid&r and &9Sulfuric Acid&r make &9Ethenone&r."
 				""
-				"{moni.quest.51F895647CB242F1.description2}"
+				"Or you can heat &9Acetone&r, or a few other approaches. Check out &bEMI&r for the various options."
 			]
 			icon: "gtceu:ethenone_bucket"
 			id: "51F895647CB242F1"
@@ -1197,7 +1190,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.51F895647CB242F1.title}"
+			title: "Ethenone"
 			x: 13.25d
 			y: -1.75d
 		}
@@ -1207,11 +1200,11 @@
 				"595F205B551A53C9"
 			]
 			description: [
-				"{moni.quest.16EACCF9B4FA89B3.description1}"
+				"This is the additive that will bring our diesel fuel to the next level."
 				""
-				"{moni.quest.16EACCF9B4FA89B3.description2}"
+				"Mix &9Nitric Acid&r and &9Ethenone&r in a &3Chemical Reactor&r to make &9Tetranitromethane&r."
 				""
-				"{moni.quest.16EACCF9B4FA89B3.description3}"
+				"In a newly added route, you can also mix &9Nitric Acid&r and &9Methyl Acetate&r in a &3Chemical Reactor&r."
 			]
 			icon: "gtceu:tetranitromethane_bucket"
 			id: "16EACCF9B4FA89B3"
@@ -1234,28 +1227,28 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.16EACCF9B4FA89B3.title}"
+			title: "Tetranitromethane"
 			x: 11.5d
 			y: -1.75d
 		}
 		{
 			dependencies: ["48E83C38B37DFEE6"]
 			description: [
-				"{moni.quest.6D434F3B0E720A5A.description1}"
+				"Petrochemistry is the category of organic chemistry pertaining to petroleum, otherwise known as &9Oil&r."
 				""
-				"{moni.quest.6D434F3B0E720A5A.description2}"
+				"&bGregTech&r's petrochemistry may seem daunting at first, given the sheer number of chemicals and processing options, but it's actually easier to get into than you think."
 				"{@pagebreak}"
-				"{moni.quest.6D434F3B0E720A5A.description3}"
+				"Oil is the starting point, and can be found in several variants which you can pump from finite natural wells in the Overworld, as well as coming renewably from &6Oilsands Ore&r and &6Soul Sand&r, and directly in liquid form from a &3Fluid Rig&r."
 				""
-				"{moni.quest.6D434F3B0E720A5A.description4}"
+				"&2The Fluid Rig can also harvest Raw Oil, Heavy Oil, and Light Oil depending on your fluid vein. All 4 oils give different ratios when distilled, so the best oil for you depends on your circumstance.&r "
 				"{@pagebreak}"
-				"{moni.quest.6D434F3B0E720A5A.description5}"
+				"Start off by distilling the Oil. This will result in &9Sulfuric Heavy Fuel&r, &9Sulfuric Light Fuel&r, &9Sulfuric Naphtha&r, and/or &9Sulfuric Gas&r."
 				""
-				"{moni.quest.6D434F3B0E720A5A.description6}"
+				"These will all need to be hydrodesulfurized using &9Hydrogen&r in a &3Chemical Reactor&r, which produces the non-Sulfuric versions."
 				"{@pagebreak}"
-				"{moni.quest.6D434F3B0E720A5A.description7}"
+				"All of these products are useful, so figure out how you want to store the variety and large quantities of fluids."
 				""
-				"{moni.quest.6D434F3B0E720A5A.description8}"
+				"The upcoming quests will guide you through the basics of petrochemistry. Once you've mastered that, feel free to explore further."
 			]
 			icon: "gtceu:oil_bucket"
 			id: "6D434F3B0E720A5A"
@@ -1292,7 +1285,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.6D434F3B0E720A5A.title}"
+			title: "Navigating Petrochem"
 			x: 11.5d
 			y: -8.75d
 		}
@@ -1302,13 +1295,13 @@
 				"1F2E76FA4B2C2E84"
 			]
 			description: [
-				"{moni.quest.74EDAE84246C7228.description1}"
+				"&9Diesel&r is a mixture of &9Light Fuel&r and &9Heavy Fuel&r."
 				""
-				"{moni.quest.74EDAE84246C7228.description2}"
+				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6Cryolobus&r. &2Alternatively, &6Gasoline&2 can be used for that purpose, and later be upgraded into &6High Octane Gasoline&2 and &6JEAN Gasoline&r."
 				""
-				"{moni.quest.74EDAE84246C7228.description3}"
+				"The performance of Combustion Generators is also improved, but you probably want to refine Diesel anyway."
 				""
-				"{moni.quest.74EDAE84246C7228.description4}"
+				"&2While it is more power efficient to use singleblock Distilleries over a Distillation Tower for Oil, it is still recommended to use Distillation Towers, to get the other useful byproducts too. For Diesel, the correct ratio is 3 Distilleries for Light Oil and 2 Distilleries for Heavy Oil."
 			]
 			icon: "gtceu:diesel_bucket"
 			id: "74EDAE84246C7228"
@@ -1331,15 +1324,15 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.74EDAE84246C7228.title}"
+			title: "Diesel"
 			x: 11.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6D434F3B0E720A5A"]
 			description: [
-				"{moni.quest.0E20199737DFE4AC.description1}"
-				"{moni.quest.0E20199737DFE4AC.description2}"
+				"&2Light Fuel's distillates are now more useful, and it is the only source of Octane for High-Octane Gasoline."
+				"But if you choose to produce Diesel, a large proportion of the Light Fuel you produce still has to go into Diesel production."
 			]
 			icon: "gtceu:light_fuel_bucket"
 			id: "0E20199737DFE4AC"
@@ -1362,13 +1355,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.0E20199737DFE4AC.title}"
+			title: "&2Light Fuel"
 			x: 9.75d
 			y: -6.75d
 		}
 		{
 			dependencies: ["6D434F3B0E720A5A"]
-			description: ["{moni.quest.1F2E76FA4B2C2E84.description1}"]
+			description: ["&9Heavy Fuel&r is mixed with &9Light Fuel&r to create &9Diesel&r."]
 			icon: "gtceu:heavy_fuel_bucket"
 			id: "1F2E76FA4B2C2E84"
 			rewards: [{
@@ -1390,16 +1383,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.1F2E76FA4B2C2E84.title}"
+			title: "Heavy Fuel"
 			x: 11.5d
 			y: -6.75d
 		}
 		{
 			dependencies: ["6D434F3B0E720A5A"]
 			description: [
-				"{moni.quest.6FE459376BF7ABBA.description1}"
+				"&9Hydrogen Sulfide&r is a byproduct of hydrodesulfurization. &2It also comes from distilling Liquid Nether Air.&r"
 				""
-				"{moni.quest.6FE459376BF7ABBA.description2}"
+				"A simple chemical reaction with &6Oxygen&r reprocesses it into the useful &9Sulfuric Acid&r, or it can be electrolyzed for recovering the &9Hydrogen&r."
 			]
 			icon: "gtceu:hydrogen_sulfide_bucket"
 			id: "6FE459376BF7ABBA"
@@ -1422,16 +1415,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.6FE459376BF7ABBA.title}"
+			title: "&2Hydrogen Sulfide"
 			x: 13.25d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6D434F3B0E720A5A"]
 			description: [
-				"{moni.quest.2396EF225839C65D.description1}"
+				"Like other petroleum products, &9Sulfuric Gas&r &2or Natural Gas&r is hydrodesulfurized into &9Refinery Gas&r using &9Hydrogen&r in a &3Chemical Reactor&r."
 				""
-				"{moni.quest.2396EF225839C65D.description2}"
+				"Refinery Gas can be cracked and further distilled for its constituents, but it is also useful as fuel for &3Gas Turbines&r. While it can be burned directly, centrifuging Refinery Gas produces &9LPG&r (Liquefied Petroleum Gas), which is an ideal fuel for Gas Turbines, and &9Methane&r which is a potential (suboptimal) turbine fuel but is also useful for various chemical reactions."
 			]
 			icon: "gtceu:refinery_gas_bucket"
 			id: "2396EF225839C65D"
@@ -1454,16 +1447,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.2396EF225839C65D.title}"
+			title: "&2Refinery Gas"
 			x: 13.25d
 			y: -6.75d
 		}
 		{
 			dependencies: ["6D434F3B0E720A5A"]
 			description: [
-				"{moni.quest.04BDE09518C184E4.description1}"
+				"&9Naphtha&r is best utilized for Steam-Cracking and distilling for its constituents, or for the production of &6Gasoline&r."
 				""
-				"{moni.quest.04BDE09518C184E4.description2}"
+				"Notably, it contains &9Light Fuel&r and &9Heavy Fuel&r for making more &9Diesel&r, as well as many other useful chemicals for a variety of purposes."
 			]
 			icon: "gtceu:naphtha_bucket"
 			id: "04BDE09518C184E4"
@@ -1486,27 +1479,27 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.04BDE09518C184E4.title}"
+			title: "Naphtha"
 			x: 9.75d
 			y: -8.75d
 		}
 		{
 			dependencies: ["0143E903317263D4"]
 			description: [
-				"{moni.quest.21B16C005E9E3B0E.description1}"
+				"&2The Large Chemical Reactor (LCR) is a multiblock Chemical Reactor with more input/output slots.&r"
 				""
-				"{moni.quest.21B16C005E9E3B0E.description2}"
-				"{moni.quest.21B16C005E9E3B0E.description3}"
-				"{moni.quest.21B16C005E9E3B0E.description4}"
-				"{moni.quest.21B16C005E9E3B0E.description5}"
-				"{moni.quest.21B16C005E9E3B0E.description6}"
-				"{moni.quest.21B16C005E9E3B0E.description7}"
+				"The &3LCR&r can also perform some exclusive reactions which allow you to combine multiple normal &3Chemical Reactor&r steps into a &6single step&r, such as:"
+				"- &aTetrafluoroethylene&r"
+				"- &aNitrogen Dioxide&r"
+				"- &aSulfuric Acid&r"
+				"- &aEpichlorohydrin&r, needed for…"
+				"- &aEpoxy&r"
 				""
-				"{moni.quest.21B16C005E9E3B0E.description8}"
+				"The &3LCR&r also is required to perform some recipes, such as &aRaw Gasoline&r production, and &aPolybenzimidazole&r."
 				""
-				"{moni.quest.21B16C005E9E3B0E.description9}"
+				"Any other recipe which could be done in a normal &9Chemical Reactor&r, as well as certain &9Mixer&r recipes, can also be done in an &3LCR&r."
 				""
-				"{moni.quest.21B16C005E9E3B0E.description10}"
+				"All &9Overclocks&r in the &3LCR&r are &6100%% efficient&r; each overclock will &5quadruple the speed&r, as opposed to doubling it. This type of overclock is called a Perfect Overclock."
 			]
 			icon: "gtceu:large_chemical_reactor"
 			id: "21B16C005E9E3B0E"
@@ -1627,23 +1620,23 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.21B16C005E9E3B0E.title}"
+			title: "&2Large Chemical Reactor"
 			x: -2.75d
 			y: 7.5d
 		}
 		{
 			dependencies: ["21B16C005E9E3B0E"]
 			description: [
-				"{moni.quest.4C76017864258EA9.description1}"
+				"&2Gasoline is a powerful combustion fuel, generating 1600 EU per mB of fluid. It can also be substituted for Cetane-Boosted Diesel in Cryolobus production."
 				""
-				"{moni.quest.4C76017864258EA9.description2}"
-				"{moni.quest.4C76017864258EA9.description3}"
-				"{moni.quest.4C76017864258EA9.description4}"
-				"{moni.quest.4C76017864258EA9.description5}"
-				"{moni.quest.4C76017864258EA9.description6}"
-				"{moni.quest.4C76017864258EA9.description7}"
+				"Gasoline is made of:"
+				"- 16 parts Naphtha"
+				"- 2 parts Refinery Gas"
+				"- 2 parts Toluene"
+				"- 1 part Methanol"
+				"- 1 part Acetone"
 				""
-				"{moni.quest.4C76017864258EA9.description8}"
+				"To get the most out of this, run it in an Extreme Combustion Engine with Liquid Oxygen."
 			]
 			icon: "gtceu:gasoline_bucket"
 			id: "4C76017864258EA9"
@@ -1666,23 +1659,23 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.4C76017864258EA9.title}"
+			title: "&2Gasoline"
 			x: -1.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["4C76017864258EA9"]
 			description: [
-				"{moni.quest.2CC50101A39EA2C0.description1}"
+				"&6High-Octane Gasoline&r &2is an even more powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in Cryolobus production, using 75%% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it.&r"
 				""
-				"{moni.quest.2CC50101A39EA2C0.description2}"
-				"{moni.quest.2CC50101A39EA2C0.description3}"
-				"{moni.quest.2CC50101A39EA2C0.description4}"
-				"{moni.quest.2CC50101A39EA2C0.description5}"
-				"{moni.quest.2CC50101A39EA2C0.description6}"
-				"{moni.quest.2CC50101A39EA2C0.description7}"
+				"To refine Gasoline to High-Octane Gasoline, you will need:"
+				"- 20 parts Gasoline"
+				"- 2 parts Octane"
+				"- 2 parts Nitrous Oxide"
+				"- 1 part Toluene"
+				"- 1 part Ethyl Tertbutyl Ether"
 				""
-				"{moni.quest.2CC50101A39EA2C0.description8}"
+				"To get the most out of this, run it in an Extreme Combustion Engine with Liquid Oxygen."
 			]
 			icon: "gtceu:high_octane_gasoline_bucket"
 			id: "2CC50101A39EA2C0"
@@ -1705,7 +1698,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.2CC50101A39EA2C0.title}"
+			title: "&2High-Octane Gasoline"
 			x: 0.25d
 			y: 7.5d
 		}
@@ -1715,13 +1708,13 @@
 				"78EB8574A67B10D4"
 			]
 			description: [
-				"{moni.quest.502AB887CB316377.description1}"
+				"The reaction that produces &9Bio Diesel&r is also the only source of &9Glycerol&r, which is an easy way to make &9Epichlorohydrin&r, an important ingredient of &9Epoxy&r."
 				""
-				"{moni.quest.502AB887CB316377.description2}"
+				"&9Glycerol&r is also used in the production of &9Glyceryl Trinitrate&r, an important step in making &6Dynamite&r, which can be used later in the &3Implosion Compressor&r."
 				""
-				"{moni.quest.502AB887CB316377.description3}"
+				"Even if you're otherwise going all in on petrochemistry for Epoxy, you'll probably end up with some Bio Diesel as a result of making Glycerol, unless you're using &6TNT&r."
 				""
-				"{moni.quest.502AB887CB316377.description4}"
+				"Bio Diesel can be used for power, but it is probably better to convert it to &2Cetane-Boosted Diesel&r."
 			]
 			icon: "gtceu:glycerol_bucket"
 			id: "502AB887CB316377"
@@ -1745,18 +1738,18 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.502AB887CB316377.title}"
+			title: "Bio Diesel and Glycerol"
 			x: 9.75d
 			y: -3.25d
 		}
 		{
 			dependencies: ["517A89E954C7EA74"]
 			description: [
-				"{moni.quest.2FFEE746B0ECA2D8.description1}"
+				"&6Sodium Hydroxide&r is a strong base, and an ingredient in &6Bio Diesel&r, among other reactions."
 				""
-				"{moni.quest.2FFEE746B0ECA2D8.description2}"
+				"The primary source is splitting &6Salt Water&r in an &3Electrolyzer&r - this is also a good source of &6Chlorine&r. You can get Salt Water from mixing &6Salt&r and &6Water&r (duh), dissolving &6Ghast Tears&r, or drilling it from Salt Water fluid veins, which only spawn over oceans."
 				""
-				"{moni.quest.2FFEE746B0ECA2D8.description3}"
+				"Alternatively, you can combine &6Sodium&r and &6Water&r in a chemical reactor."
 			]
 			id: "2FFEE746B0ECA2D8"
 			rewards: [{
@@ -1776,13 +1769,13 @@
 		{
 			dependencies: ["038D06BCA022C1BF"]
 			description: [
-				"{moni.quest.78EB8574A67B10D4.description1}"
+				"You will need either &9Seed Oil&r or &9Fish Oil&r in the process of making &9Bio Diesel&r, created by extracting seeds or fish."
 				""
-				"{moni.quest.78EB8574A67B10D4.description2}"
+				"The easiest ways to get seeds are with a &9Greenhouse&r."
 				""
-				"{moni.quest.78EB8574A67B10D4.description3}"
+				"The easiest way to get fish is through using a &aGregtech Fisher&r. If you are playing Normal Mode, a &aGuardian Model&r from &bHNN&r is also an option."
 				""
-				"{moni.quest.78EB8574A67B10D4.description4}"
+				"Both are viable, so it's ultimately up to you."
 			]
 			icon: "gtceu:fish_oil_bucket"
 			id: "78EB8574A67B10D4"
@@ -1806,7 +1799,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.78EB8574A67B10D4.title}"
+			title: "&9Bio Diesel Feedstock"
 			x: 10.25d
 			y: -5.0d
 		}
@@ -1817,9 +1810,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.7174484A926682F3.description1}"
+				"A colorless liquid with a pungent, garlic-like odor. It's needed in the production of &9Epoxy&r."
 				""
-				"{moni.quest.7174484A926682F3.description2}"
+				"&2You can skip a step making this with the Large Chemical Reactor."
 			]
 			icon: "gtceu:epichlorohydrin_bucket"
 			id: "7174484A926682F3"
@@ -1843,16 +1836,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.7174484A926682F3.title}"
+			title: "&2Epichlorohydrin"
 			x: 8.0d
 			y: -3.25d
 		}
 		{
 			dependencies: ["7174484A926682F3"]
 			description: [
-				"{moni.quest.58A9F4F2BEDB1B96.description1}"
+				"&rBPA can be produced using petrochemistry distillation products, or via distilling &9Charcoal Byproducts&r from your &3Pyrolyse Oven&r into useful components. Alternatively, you can get &9Phenol&r from &6Coal&r pyrolysis. &9Fermented Biomass&r is also useful to distill as it provides many useful products."
 				""
-				"{moni.quest.58A9F4F2BEDB1B96.description2}"
+				"&2Using the Large Chemical Reactor, you can skip two steps in the Epoxy production line."
 			]
 			icon: "gtceu:epoxy_bucket"
 			id: "58A9F4F2BEDB1B96"
@@ -1870,18 +1863,18 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.58A9F4F2BEDB1B96.title}"
+			title: "&2Epoxy Production"
 			x: 6.25d
 			y: -3.25d
 		}
 		{
 			dependencies: ["04BDE09518C184E4"]
 			description: [
-				"{moni.quest.2EFC9DDA09527638.description1}"
+				"&2You only need this step if you are using normal Chemical Reactors. If you are using LCRs, the Allyl Chloride step is skipped."
 				""
-				"{moni.quest.2EFC9DDA09527638.description2}"
+				"&9Allyl Chloride&r provides an alternative means of producing &9Epichlorohydrin&r for &9Epoxy&r."
 				""
-				"{moni.quest.2EFC9DDA09527638.description3}"
+				"Reacting &9Chlorine&r and &9Propene&r will produce Allyl Chloride. Propene is distilled in a &3Distillation Tower&r from any one of various cracked petroleum products like &9Steam-Cracked Naphtha&r."
 			]
 			icon: "gtceu:allyl_chloride_bucket"
 			id: "2EFC9DDA09527638"
@@ -1900,16 +1893,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.2EFC9DDA09527638.title}"
+			title: "Allyl Chloride"
 			x: 8.0d
 			y: -6.75d
 		}
 		{
 			dependencies: ["58A9F4F2BEDB1B96"]
 			description: [
-				"{moni.quest.26ECEC06CCAB3E56.description1}"
+				"Finally, &6Epoxy Resin Sheets&r."
 				""
-				"{moni.quest.26ECEC06CCAB3E56.description2}"
+				"These can be made into circuit boards as a substrate for advanced circuits."
 			]
 			id: "26ECEC06CCAB3E56"
 			rewards: [{
@@ -1924,7 +1917,7 @@
 				item: "gtceu:epoxy_plate"
 				type: "item"
 			}]
-			title: "{moni.quest.26ECEC06CCAB3E56.title}"
+			title: "Epoxy"
 			x: 4.5d
 			y: -3.25d
 		}
@@ -1934,13 +1927,13 @@
 				"53C00EA9D9BEE776"
 			]
 			description: [
-				"{moni.quest.3B3F46345D39CAE2.description1}"
+				"&6Tungsten&r is a material that requires an &5EV &3Electrolyzer and &3Chemical Bath&r, as well as a &3Basic Microverse Projector&r."
 				""
-				"{moni.quest.3B3F46345D39CAE2.description2}"
+				"For now, Tungsten can only be refined from &6Scheelite Dust&r or &6Wolframite Dust&r. They come in ore form from a Tier Two Micro Miner (T2MM) mission. The other two Tungsten ore types, &6Tungstate&r and &6Stolzite&r, require an &9IV&r Chemical Bath."
 				""
-				"{moni.quest.3B3F46345D39CAE2.description3}"
+				"The dusts need to be &2bathed in Hydrochloric Acid to make Tungstic Acid, which is processed further to make Tungsten Dust."
 				""
-				"{moni.quest.3B3F46345D39CAE2.description4}"
+				"Your first tungsten should go towards making &6RTM Coils&r."
 			]
 			icon: "gtceu:tungsten_dust"
 			id: "3B3F46345D39CAE2"
@@ -1968,16 +1961,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.3B3F46345D39CAE2.title}"
+			title: "&2Tungsten"
 			x: 4.0d
 			y: 8.75d
 		}
 		{
 			dependencies: ["6DC635766CD40FFF"]
 			description: [
-				"{moni.quest.14F1FF4656693711.description1}"
+				"An alloy of equal parts &6Tungsten&r and &6Carbon Dust&r."
 				""
-				"{moni.quest.14F1FF4656693711.description2}"
+				"&6Tungsten Carbide&r is a very dense, sturdy, and heat-resistant material useful for a variety of applications. Tools made of Tungsten Carbide have very high mining speed."
 			]
 			id: "14F1FF4656693711"
 			rewards: [{
@@ -1991,13 +1984,13 @@
 				item: "gtceu:tungsten_carbide_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.14F1FF4656693711.title}"
+			title: "Tungsten Carbide"
 			x: 5.75d
 			y: 5.0d
 		}
 		{
 			dependencies: ["14F1FF4656693711"]
-			description: ["{moni.quest.49C8716030809478.description1}"]
+			description: ["The &3Crafting Core&r is used to make microminer plating and some end-game items."]
 			icon: "extendedcrafting:crafting_core"
 			id: "49C8716030809478"
 			rewards: [{
@@ -2020,18 +2013,18 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.49C8716030809478.title}"
+			title: "&9Combination Crafting"
 			x: 6.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["14F1FF4656693711"]
 			description: [
-				"{moni.quest.664107ED03A944CD.description1}"
+				"The Third Microminer. &2You'll need Boron in its MV Field Generators.&r"
 				""
-				"{moni.quest.664107ED03A944CD.description2}"
+				"Look in &bEMI to see what resources this miner can produce."
 				""
-				"{moni.quest.664107ED03A944CD.description3}"
+				"At this point in the game, Microminers can get you most basic resources, continue to check &bEMI&r to see what they can give you."
 			]
 			id: "664107ED03A944CD"
 			rewards: [{
@@ -2046,16 +2039,16 @@
 				item: "kubejs:microminer_t3"
 				type: "item"
 			}]
-			title: "{moni.quest.664107ED03A944CD.title}"
+			title: "&2Tier Three Microminer"
 			x: 5.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["358D9A7B1BCFA30A"]
 			description: [
-				"{moni.quest.1207189AD233A746.description1}"
+				"&6Nano CPUs&r are advanced &6Circuit Wafers&r made from infusing a &6CPU Wafer&r with &6Carbon Fibers&r and &6Liquid Glowstone&r in a &3Chemical Reactor&r."
 				""
-				"{moni.quest.1207189AD233A746.description2}"
+				"Then, cut the resulting wafer into dies using a &3Cutting Machine&r."
 			]
 			id: "1207189AD233A746"
 			rewards: [{
@@ -2075,9 +2068,9 @@
 		{
 			dependencies: ["417D97D9E3562F45"]
 			description: [
-				"{moni.quest.358D9A7B1BCFA30A.description1}"
+				"&6Carbon Fibers&r are useful for a variety of things."
 				""
-				"{moni.quest.358D9A7B1BCFA30A.description2}"
+				"&2They are made with Carbon Dust and polymers. Higher tier polymers grant higher yields. It's also not a chanced output anymore."
 			]
 			id: "358D9A7B1BCFA30A"
 			rewards: [{
@@ -2091,7 +2084,7 @@
 				item: "gtceu:carbon_fibers"
 				type: "item"
 			}]
-			title: "{moni.quest.358D9A7B1BCFA30A.title}"
+			title: "&2Carbon Fibers"
 			x: 4.5d
 			y: -5.5d
 		}
@@ -2101,9 +2094,9 @@
 				"349869EBF2D9FAF1"
 			]
 			description: [
-				"{moni.quest.360B577684B1AB1B.description1}"
+				"&2A System-on-Chip can be engraved with HV power and Phosphorus Boules. This can be used in the best recipe for tier one circuits in the EV Circuit Assembler."
 				""
-				"{moni.quest.360B577684B1AB1B.description2}"
+				"The best recipe for tier two circuits requires an IV Circuit Assembler."
 			]
 			icon: "gtceu:soc_wafer"
 			id: "360B577684B1AB1B"
@@ -2132,20 +2125,20 @@
 				}
 				type: "item"
 			}]
-			title: "{item.gtceu.soc_wafer}"
+			title: "SoC Wafer"
 			x: 0.0d
 			y: -4.25d
 		}
 		{
 			dependencies: ["0874A0191325CFDB"]
 			description: [
-				"{moni.quest.785C6332FC7A07A5.description1}"
+				"With &6Titanium&r smelting automated, you can now build Machine Hulls for Extreme Voltage machines."
 				""
-				"{moni.quest.785C6332FC7A07A5.description2}"
+				"EV motors require a better material than &6Steel&r for its magnetism."
 				""
-				"{moni.quest.785C6332FC7A07A5.description3}"
+				"&6Neodymium&r is required, which is mainly achieved from &6Rare Earth&r. The main sources of this are &6Redstone&r, and everything inside of &6Bastnasite&r veins."
 				""
-				"{moni.quest.785C6332FC7A07A5.description4}"
+				"&2Starting at EV, 4A and 16A Energy and Dynamo hatches are available at each tier."
 			]
 			id: "785C6332FC7A07A5"
 			rewards: [{
@@ -2160,16 +2153,16 @@
 				item: "gtceu:ev_machine_hull"
 				type: "item"
 			}]
-			title: "{moni.quest.785C6332FC7A07A5.title}"
+			title: "&2EV Machine Hulls"
 			x: -1.25d
 			y: -0.25d
 		}
 		{
 			dependencies: ["785C6332FC7A07A5"]
 			description: [
-				"{moni.quest.2DDD4B4EC8065980.description1}"
+				"An Extreme Voltage tier &bGregTech&r battery."
 				""
-				"{moni.quest.2DDD4B4EC8065980.description2}"
+				"&2Higher tier GT Batteries have been buffed to be quite strong - this one holds 25 MEU, or 100 MRF. You may want to consider using them over RF storage."
 			]
 			id: "2DDD4B4EC8065980"
 			rewards: [{
@@ -2183,24 +2176,24 @@
 				item: "gtceu:lapotron_crystal"
 				type: "item"
 			}]
-			title: "{moni.quest.2DDD4B4EC8065980.title}"
+			title: "&2EV Power Storage"
 			x: -2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["785C6332FC7A07A5"]
 			description: [
-				"{moni.quest.5FB696EF1D2412F5.description1}"
+				"&9Deepslate Processing is one way to source &9Fluorine&r and &6Thorium&r."
 				""
-				"{moni.quest.5FB696EF1D2412F5.description2}"
+				"&6Fluorine&r is needed in &6Polytetrafluoroethylene (PTFE)&r, and many future chemical processes."
 				""
-				"{moni.quest.5FB696EF1D2412F5.description3}"
+				"&3Rock Breakers&r are first used to achieve renewable &6Deepslate&r. This recipe runs at &5EV&r or higher."
 				""
-				"{moni.quest.5FB696EF1D2412F5.description4}"
+				"After this, &3Macerators&r should pulverise the Deepslate into &6Deepslate Dust&r, with a chance of producing &6Thorium&r."
 				""
-				"{moni.quest.5FB696EF1D2412F5.description5}"
+				"A &3Centrifuge&r then turns Deepslate Dust into &6Biotite Dust&r and &6Silicon Dioxide Dust&r. The latter can be electrolysed, yielding &6Silicon&r and &6Oxygen&r."
 				""
-				"{moni.quest.5FB696EF1D2412F5.description6}"
+				"Biotite Dust is then finally put into an &3Electrolyser&r. This yields &6Potassium, Magnesium, Aluminium&r and &6Silicon Dust&r, as well as some &6Fluorine&r."
 			]
 			id: "5FB696EF1D2412F5"
 			rewards: [{
@@ -2213,7 +2206,7 @@
 				item: "minecraft:deepslate"
 				type: "item"
 			}]
-			title: "{moni.quest.5FB696EF1D2412F5.title}"
+			title: "&9Deepslate Processing"
 			x: -3.0d
 			y: -1.0d
 		}
@@ -2223,9 +2216,9 @@
 				"7F1EE712BD9CC811"
 			]
 			description: [
-				"{moni.quest.0FA959478905FFF3.description1}"
+				"The &3Alloy Blast Smelter&r directly smelts dust combinations into molten Alloys, skipping the Mixer step, and applying a 3/4 discount to your EBF time. Some molten alloys may need to be cooled in a Vacuum Freezer before being usable, though they take much less time than freezing Hot Ingots."
 				""
-				"{moni.quest.0FA959478905FFF3.description2}"
+				"This is the only way to create some of the advanced alloys used in multiblock machines. You can also use it for most normal alloys if you want, such as &6Invar&r, &6Conductive Iron&r, and &6Dark Steel&r."
 			]
 			icon: "gtceu:alloy_blast_smelter"
 			id: "0FA959478905FFF3"
@@ -2348,20 +2341,20 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.0FA959478905FFF3.title}"
+			title: "&2Alloy Blast Smelter"
 			x: 5.75d
 			y: -0.25d
 		}
 		{
 			dependencies: ["785C6332FC7A07A5"]
 			description: [
-				"{moni.quest.7F1EE712BD9CC811.description1}"
+				"&2Used in building the Alloy Blast Smelter. "
 				""
-				"{moni.quest.7F1EE712BD9CC811.description2}"
+				"&r&6Tantalum&r is best sourced in bulk from &6Dragon Scale&r processing, but can be obtained early on from &6Tantalite Ore&r, or in small quantities from centrifuging &eLava&r."
 				""
-				"{moni.quest.7F1EE712BD9CC811.description3}"
+				"&6Molybdenum&r is obtained from &6Molybdenum, Molybdenite, Powellite, and Wulfenite ores&r. They spawn together in the &eNether&r rarely, or some of them come from &3Tier One&r and &3Five Microminers&r."
 				""
-				"{moni.quest.7F1EE712BD9CC811.description4}"
+				"&2Remember, you need an appropriately tiered Mixer (HV for HSLA Steel, and EV for the others)."
 			]
 			id: "7F1EE712BD9CC811"
 			rewards: [{
@@ -2387,16 +2380,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7F1EE712BD9CC811.title}"
+			title: "&2Advanced Alloys"
 			x: 1.0d
 			y: -0.25d
 		}
 		{
 			dependencies: ["6DC635766CD40FFF"]
 			description: [
-				"{moni.quest.634E056463ED1532.description1}"
+				"&6Tungstensteel&r is an alloy of &6Tungsten&r and &6Steel&r."
 				""
-				"{moni.quest.634E056463ED1532.description2}"
+				"This alloy is cooked in an &3Electric Blast Furnace&r or &3Alloy Blast Smelter&r and cooled in a &3Vacuum Freezer&r."
 			]
 			id: "634E056463ED1532"
 			rewards: [{
@@ -2411,7 +2404,7 @@
 				item: "gtceu:tungsten_steel_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.634E056463ED1532.title}"
+			title: "Tungstensteel"
 			x: 9.0d
 			y: 1.75d
 		}
@@ -2421,17 +2414,17 @@
 				"605062720747B482"
 			]
 			description: [
-				"{moni.quest.4EC59BC9BCCB3C5D.description1}"
+				"&2With advanced alloys from the Alloy Blast Smelter and IV Machines, you can make large versions of most GT machines."
 				""
-				"{moni.quest.4EC59BC9BCCB3C5D.description2}"
+				"&rThese are formed like multiblocks. You can add a &3Parallel Control Hatch&r in order to allow them to process &9more recipes&r at the same time. The highest tier of Parallel Control Hatch can facilitate processing &94096 recipes&r at once!"
 				""
-				"{moni.quest.4EC59BC9BCCB3C5D.description3}"
+				"Each recipe run in parallel still consumes the same amount of power, so running 4 recipes at once consumes 4x as much power. &eThis is twice as efficient as overclocking&r, which only doubles throughput for the same increase in power cost."
 				"{@pagebreak}"
-				"{moni.quest.4EC59BC9BCCB3C5D.description4}"
+				"&9Crafting Co-Processers increase the rate that your ME network will \"push\" batches of items out, perfect for machines like these.&r"
 				""
-				"{moni.quest.4EC59BC9BCCB3C5D.description5}"
+				"Look up the usages of Parallel Hatches in EMI to see details of all the multiblock machines."
 				""
-				"{moni.quest.4EC59BC9BCCB3C5D.description6}"
+				"Most of the advanced alloys used to make the casings of these multiblocks are made in the &3Alloy Blast Smelter&r. If you can't seem to find the recipes for them, look for the &eMolten Fluid&r form."
 			]
 			icon: "gtceu:large_assembler"
 			id: "4EC59BC9BCCB3C5D"
@@ -2476,10 +2469,10 @@
 						]
 					}
 				}
-				title: "{moni.task.4404A112A80D0522}"
+				title: "Any Control Hatch"
 				type: "item"
 			}]
-			title: "{moni.quest.4EC59BC9BCCB3C5D.title}"
+			title: "&9Multiblock Madness"
 			x: 8.5d
 			y: -0.25d
 		}
@@ -2488,7 +2481,7 @@
 				"634E056463ED1532"
 				"08B36E2C37C417E5"
 			]
-			description: ["{moni.quest.605062720747B482.description1}"]
+			description: ["With &6Tungstensteel&r achieved, you can now make hulls for Insane Voltage (IV) &bGregTech&r machines."]
 			id: "605062720747B482"
 			rewards: [{
 				id: "569C43CD39E5CBF1"
@@ -2501,20 +2494,20 @@
 				item: "gtceu:iv_machine_hull"
 				type: "item"
 			}]
-			title: "{moni.quest.605062720747B482.title}"
+			title: "&2IV Machine Hulls"
 			x: 11.0d
 			y: -0.25d
 		}
 		{
 			dependencies: ["6FB3E3D9CA0F4B30"]
 			description: [
-				"{moni.quest.08B36E2C37C417E5.description1}"
+				"&9Rubber&r has been sufficient for making cables so far, but you will soon discover that this basic type of rubber won't withstand more than &2Extreme Voltage&r. Higher quality rubber is necessary to properly insulate your wires."
 				""
-				"{moni.quest.08B36E2C37C417E5.description2}"
+				"There are two better types of rubber, and you will eventually need to make both of them. &eThese can also be used for insulating lower voltage wires more efficiently, requiring less fluid&r!"
 				""
-				"{moni.quest.08B36E2C37C417E5.description3}"
+				"Both &9Styrene-Butadiene Rubber (SBR)&r and &9Silicone Rubber (SiR)&r can wrap any Cable tier up to &3UV&r. However, SBR requires petrochemistry infrastructure you may not have yet, and is not mandatory until you are making late-game components. On the other hand, SiR can conveniently be made from chemicals you are already familiar with. By setting this up now, you won't have to change your wire coating material later!"
 				""
-				"{moni.quest.08B36E2C37C417E5.description4}"
+				"To make Silicone Rubber, you will need to create &6Polydimethylsiloxane Dust&r in one of several ways, then mix it with &6Sulfur&r in a &3Chemical Reactor&r. You can then coat wires with it in an &3Assembler&r."
 			]
 			icon: "gtceu:silicone_rubber_bucket"
 			id: "08B36E2C37C417E5"
@@ -2532,13 +2525,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.08B36E2C37C417E5.title}"
+			title: "&2New Cable Coverings"
 			x: 13.25d
 			y: -0.25d
 		}
 		{
 			dependencies: ["605062720747B482"]
-			description: ["{moni.quest.46A56A5E3CC2403F.description1}"]
+			description: ["An Insane Voltage tier &bGregTech&r battery. &2Equivalent to 400 Reinforced Redstone Flux Cells!"]
 			id: "46A56A5E3CC2403F"
 			rewards: [{
 				id: "265B4D5F6DAD55AC"
@@ -2551,7 +2544,7 @@
 				item: "gtceu:lapotronic_energy_orb"
 				type: "item"
 			}]
-			title: "{moni.quest.46A56A5E3CC2403F.title}"
+			title: "&2IV Power Storage"
 			x: 11.75d
 			y: 1.25d
 		}
@@ -2560,7 +2553,7 @@
 				"6DC635766CD40FFF"
 				"227F448DFCC3E8C3"
 			]
-			description: ["{moni.quest.54C3B1B782FDF57F.description1}"]
+			description: ["&6Lumium&r is part of the alloy needed for &dLuV &6Machine Hulls&r. You will also need some Lumium to make &6Nanoprocessor Supercomputers&r."]
 			id: "54C3B1B782FDF57F"
 			rewards: [{
 				id: "01BCF33781F5C38C"
@@ -2568,22 +2561,22 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.54C3B1B782FDF57F.subtitle}"
+			subtitle: "Glowing!"
 			tasks: [{
 				id: "22A45119D9E989B7"
 				item: "gtceu:lumium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.54C3B1B782FDF57F.title}"
+			title: "Lumium"
 			x: 2.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["6DC635766CD40FFF"]
 			description: [
-				"{moni.quest.53EC3831D66769CA.description1}"
+				"&6HSS-G&r is an alloy of &6Tungstensteel&r, &6Chrome&r, &6Molybdenum&r, and &6Vanadium&r."
 				""
-				"{moni.quest.53EC3831D66769CA.description2}"
+				"This alloy is cooked in an &3Electric Blast Furnace&r or &3Alloy Blast Smelter&r and cooled in a &3Vacuum Freezer&r."
 			]
 			id: "53EC3831D66769CA"
 			rewards: [{
@@ -2597,7 +2590,7 @@
 				item: "gtceu:hssg_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.53EC3831D66769CA.title}"
+			title: "High Speed Steel Type G"
 			x: 9.0d
 			y: 3.75d
 		}
@@ -2607,9 +2600,9 @@
 				"227F448DFCC3E8C3"
 			]
 			description: [
-				"{moni.quest.27A80F018F59EF1E.description1}"
+				"This one is decently slow to cook, so make sure to have it going constantly or stocked up."
 				""
-				"{moni.quest.27A80F018F59EF1E.description2}"
+				"&6Signalum&r is noteworthy as the long-awaited next tier upgrade for your &bThermal Expansion&r machines and dynamos following \"Reinforced\" back in MV."
 			]
 			id: "27A80F018F59EF1E"
 			rewards: [{
@@ -2618,24 +2611,24 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.27A80F018F59EF1E.subtitle}"
+			subtitle: "Not glowing."
 			tasks: [{
 				id: "0C387205AD0B5BAB"
 				item: "gtceu:signalum_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.27A80F018F59EF1E.title}"
+			title: "Signalum"
 			x: 2.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["634E056463ED1532"]
 			description: [
-				"{moni.quest.174C8EDDEF916209.description1}"
+				"The &3Slice'N'Splice&r is a machine from &bEnder IO&r."
 				""
-				"{moni.quest.174C8EDDEF916209.description2}"
+				"It is used for making monster-head-related items that are components for various things."
 				""
-				"{moni.quest.174C8EDDEF916209.description3}"
+				"It needs to be supplied with an Axe and Shears, which are slowly damaged over time as items are crafted."
 			]
 			id: "174C8EDDEF916209"
 			rewards: [{
@@ -2655,11 +2648,11 @@
 		{
 			dependencies: ["634E056463ED1532"]
 			description: [
-				"{moni.quest.1349044BF8C04A12.description1}"
+				"The &3Soul Binder&r is an &bEnder IO&r machine which uses &aSoul Vials&r and Experience to enhance specific items."
 				""
-				"{moni.quest.1349044BF8C04A12.description2}"
+				"It may be prudent to store &9Liquid XP&r in an adjacent &3Obelisk&r, which the Soul Binder can draw from directly, or you can insert it using other standard means of fluid routing."
 				""
-				"{moni.quest.1349044BF8C04A12.description3}"
+				"This machine will primarily be used in making &6Prescient Crystals&r."
 			]
 			id: "1349044BF8C04A12"
 			rewards: [{
@@ -2678,7 +2671,7 @@
 		}
 		{
 			dependencies: ["1349044BF8C04A12"]
-			description: ["{moni.quest.1E498F509DB1D460.description1}"]
+			description: ["Give me a little juice, FRIDAY!"]
 			id: "1E498F509DB1D460"
 			rewards: [{
 				count: 2
@@ -2698,16 +2691,16 @@
 				match_nbt: true
 				type: "item"
 			}]
-			title: "{moni.quest.1E498F509DB1D460.title}"
+			title: "Infinity War"
 			x: 10.25d
 			y: 3.75d
 		}
 		{
 			dependencies: ["508452E1A3E09B56"]
 			description: [
-				"{moni.quest.6FB0357E12499B5F.description1}"
+				"&2The Large Ore Drilling Plants mine ores from under them in a large radius. They require Drilling Fluid to operate."
 				""
-				"{moni.quest.6FB0357E12499B5F.description2}"
+				"They automatically macerate the ores, yielding 3 times more crushed ore than a normal Macerator, plus the normal amount of byproduct."
 			]
 			icon: "gtceu:ev_large_miner"
 			id: "6FB0357E12499B5F"
@@ -2777,20 +2770,20 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.6FB0357E12499B5F.title}"
+			title: "&2Large Miner"
 			x: 5.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["508452E1A3E09B56"]
 			description: [
-				"{moni.quest.4CC612FF64877C60.description1}"
+				"As you continue to progress, crafting times for more advanced &3Electric Blast Furnace&r recipes will continue to increase. More advanced coils increase the operating temperature so you can smelt more advanced materials, &2and they also grant energy efficiency bonuses and speed bonuses to overclocking.&r"
 				""
-				"{moni.quest.4CC612FF64877C60.description2}"
+				"Despite this, you'll still need to get your infrastructure for smelting, as well as power generation, up to par."
 				""
-				"{moni.quest.4CC612FF64877C60.description3}"
+				"You don't need to get all eight of these completed and running just yet, but plan to at some point in the future. Instead of upgrading existing EBFs, have them passively automating a stock of materials and build new EBFs with higher specifications for new materials."
 				""
-				"{moni.quest.4CC612FF64877C60.description4}"
+				"Please note that beyond this point not all multiblock quests will have a bill of materials attached. You will need to use &3EMI/JEI&r to determine the structure and hatch requirements."
 			]
 			id: "4CC612FF64877C60"
 			rewards: [{
@@ -2805,29 +2798,29 @@
 				item: "gtceu:electric_blast_furnace"
 				type: "item"
 			}]
-			title: "{moni.quest.4CC612FF64877C60.title}"
+			title: "&2Blast Furnaces Galore"
 			x: 7.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["5BC6DB754207D4A8"]
 			description: [
-				"{moni.quest.0F779BEEED8E67BB.description1}"
+				"&2Large Turbines are decently powerful in GTm. They are quite complex to run, but can generate lots of power when done well and scale very well.&r"
 				""
-				"[\"\",{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description1\"},{\"color\":\"gold\",\"underlined\":true,\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"15A5B4C632836306\"}},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description3\"},{\"color\":\"gold\",\"underlined\":true,\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D72B3FF808CE13C\"}},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description5\"},{\"color\":\"dark_aqua\",\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description6\"},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description7\"},{\"color\":\"gold\",\"underlined\":true,\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description8\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1405D08C6A87B3BB\"}},{\"translate\":\"moni.quest.0F779BEEED8E67BB.rich_description9\"}]"
+				"[\"\",{\"text\":\"Right now, you can make the \"},{\"color\":\"gold\",\"underlined\":true,\"text\":\"Large Steam Turbine\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"15A5B4C632836306\"}},{\"text\":\" and \"},{\"color\":\"gold\",\"underlined\":true,\"text\":\"Large Gas Turbine\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D72B3FF808CE13C\"}},{\"text\":\". Once you get a \"},{\"color\":\"dark_aqua\",\"text\":\"Fusion Reactor\"},{\"text\":\" going, you can make the \"},{\"color\":\"gold\",\"underlined\":true,\"text\":\"Large Plasma Turbine\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1405D08C6A87B3BB\"}},{\"text\":\".\"}]"
 				""
-				"{moni.quest.0F779BEEED8E67BB.description2}"
+				"Each Large Turbine will need a &3Rotor Holder&r of the same or higher tier than the Large Turbine itself, and a &3Dynamo Hatch&r capable of handling the energy output. Each &3Rotor Holder&r tier above the Large Turbine &9doubles&r the energy production and adds 10%% to fuel efficiency."
 				""
-				"{moni.quest.0F779BEEED8E67BB.description3}"
+				"You will need a &aRotor&r to go into each &3Rotor Holder&r&r. The Rotor will grant multiplicative Power and Efficiency bonuses depending on its material. Each Rotor also has a Durability, which is the number of seconds it will last."
 				""
-				"{moni.quest.0F779BEEED8E67BB.description4}"
+				"&aExample: &r&6Large Gas Turbine&r, with &3HSS-E Rotor&r and &3IV Rotor Holder&r:"
 				""
-				"{moni.quest.0F779BEEED8E67BB.description5}"
-				"{moni.quest.0F779BEEED8E67BB.description6}"
-				"{moni.quest.0F779BEEED8E67BB.description7}"
-				"{moni.quest.0F779BEEED8E67BB.description8}"
+				"&aProduction:&r 4096 * 2.80 * 2=22938 EU/t (91752 RF/t)"
+				"&aEfficiency:&r 1.40 * 1.10=154.0%%"
+				"&aDurability:&r 205,600 s (57.1 h)"
+				"You can run the &6Large Gas Turbine&r off &9LPG&r and &9Methane&r from &3Fluid Rigs&r, or &9Nitrobenzene&r from &6Wood&r."
 				""
-				"{moni.quest.0F779BEEED8E67BB.description9}"
+				"The best &6Large Steam Turbine&r fuel is a closely-guarded government secret."
 			]
 			icon: {
 				Count: 1
@@ -2844,27 +2837,27 @@
 				id: "5A291BDB06F2E56E"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.0F779BEEED8E67BB.title}"
+			title: "&2Large Turbines"
 			x: 9.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["2977E1AF13E42DCB"]
 			description: [
-				"{moni.quest.2F04FA8D3E15E375.description1}"
+				"&2Fluid Rigs will harvest fluids from underground fluid veins. Note that the fluid veins are simply simulated and don't exist in the world. &r"
 				""
-				"{moni.quest.2F04FA8D3E15E375.description2}"
+				"Shift-right-click while holding the &3Prospector's Scanner&r to set it to fluid mode, then right click it in order to see the type and amount of fluid underground and to check the depletion state of the vein. The first number represents the base amount of fluid extracted per second. You can also check the &eFluid Vein Information EMI&r page for information on where they spawn."
 				""
-				"{moni.quest.2F04FA8D3E15E375.description3}"
-				"{moni.quest.2F04FA8D3E15E375.description4}"
+				"In the &eOverworld&r, it can harvest: &9Oil, Light Oil, Heavy Oil, Raw Oil, Natural Gas&r"
+				"&6Salt Water&r is available as well, but only in Ocean biomes."
 				""
-				"{moni.quest.2F04FA8D3E15E375.description5}"
+				"In the &eNether&r: &eLava, Natural Gas&r"
 				""
-				"{moni.quest.2F04FA8D3E15E375.description6}"
+				"On the &eMoon&r: &9Deuterium, Helium-3&r"
 				""
-				"{moni.quest.2F04FA8D3E15E375.description7}"
+				"In the &eVoid&r: &9Oil, Raw Oil&r"
 				""
-				"{moni.quest.2F04FA8D3E15E375.description8}"
+				"As Fluid Rigs work, they will deplete the vein under them, reducing their yields. When a vein is depleted, it still yields a small amount of its fluid. The first tier of Fluid Rig takes &9100,000 operations&r to deplete a vein. Higher tier Fluid Rigs harvest fluids far faster and deplete veins slower."
 			]
 			icon: "gtceu:mv_fluid_drilling_rig"
 			id: "2F04FA8D3E15E375"
@@ -2921,7 +2914,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.2F04FA8D3E15E375.title}"
+			title: "&2Fluid Rig"
 			x: 3.0d
 			y: -11.0d
 		}
@@ -2933,9 +2926,9 @@
 			]
 			dependency_requirement: "all_started"
 			description: [
-				"{moni.quest.0D0A0C18ED958511.description1}"
+				"Mixing &9Diesel&r (or less efficiently, &9Bio Diesel&r) with &9Tetranitromethane&r in an &3HV Mixer&r &2or Large Chemical Reactor&r produces &2Cetane-Boosted Diesel&r, an extremely potent fuel."
 				""
-				"{moni.quest.0D0A0C18ED958511.description2}"
+				"If you have a very robust petrochemical infrastructure and can afford to burn it, this fuel along with proper oxygenation &2is a potent fuel in the Large Combustion Engine and Extreme Combustion Engine, producing &2720 EU/mB of fuel."
 			]
 			icon: "gtceu:cetane_boosted_diesel_bucket"
 			id: "0D0A0C18ED958511"
@@ -2946,7 +2939,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.0D0A0C18ED958511.subtitle}"
+			subtitle: "You will need either Diesel or Biodiesel"
 			tasks: [
 				{
 					id: "75538AD487A995CD"
@@ -2960,16 +2953,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.0D0A0C18ED958511.title}"
+			title: "&2CETANE-BOOSTED DIESEL!!"
 			x: 11.5d
 			y: -3.25d
 		}
 		{
 			dependencies: ["11154356854B64DA"]
 			description: [
-				"{moni.quest.059A9B12C8478025.description1}"
+				"While not required for progression, the space station serves as a cool place to build a base! The resources shown above are what are required to create a space station, &9which can be done from the planet section menu&r."
 				""
-				"[\"\",{\"translate\":\"moni.quest.059A9B12C8478025.rich_description1\"},{\"underlined\":true,\"translate\":\"moni.quest.059A9B12C8478025.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4672EE66D51C32FF\"}},{\"translate\":\"moni.quest.059A9B12C8478025.rich_description3\"}]"
+				"[\"\",{\"text\":\"You can refer to \"},{\"underlined\":true,\"text\":\"this quest\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4672EE66D51C32FF\"}},{\"text\":\" for a refresher on various things that would be helpful in any space base.\"}]"
 			]
 			icon: "ad_astra:oxygen_distributor"
 			id: "059A9B12C8478025"
@@ -3011,16 +3004,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.059A9B12C8478025.title}"
+			title: "&9Space Stationing"
 			x: -3.75d
 			y: -6.5d
 		}
 		{
 			dependencies: ["6D434F3B0E720A5A"]
 			description: [
-				"{moni.quest.60B16BB064E2FF4C.description1}"
+				"&2The Cracker gives you higher yields from cracking organic substances."
 				""
-				"{moni.quest.60B16BB064E2FF4C.description2}"
+				"&2In GTm, many organic substances offer the option of being Severely or Lightly cracked, as well as Hydro or Steam cracked, with each one granting different ratios of distillates."
 			]
 			icon: "gtceu:cracker"
 			id: "60B16BB064E2FF4C"
@@ -3109,23 +3102,23 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.60B16BB064E2FF4C.title}"
+			title: "&2Cracker"
 			x: 13.25d
 			y: -8.75d
 		}
 		{
 			dependencies: ["2CC50101A39EA2C0"]
 			description: [
-				"{moni.quest.053DDDCD2505E20B.description1}"
+				"&9JEAN Gasoline is the most powerful combustion fuel, using some anomalous ingredients to generate a staggering 20,480 EU per mB of fuel. The trade-off is the extremely complex processing lines you must set up for it."
 				""
-				"{moni.quest.053DDDCD2505E20B.description2}"
-				"{moni.quest.053DDDCD2505E20B.description3}"
-				"{moni.quest.053DDDCD2505E20B.description4}"
-				"{moni.quest.053DDDCD2505E20B.description5}"
-				"{moni.quest.053DDDCD2505E20B.description6}"
-				"{moni.quest.053DDDCD2505E20B.description7}"
+				"To refine High-Octane Gasoline to JEAN Gasoline, you will need:"
+				"- 16 parts High Octane Gasoline"
+				"- 10 parts Rocket Fuel"
+				"- 4 parts Chlorine Trifluoride"
+				"- 2 parts Tetraethyllead"
+				"- 1 part dragon's breath"
 				""
-				"{moni.quest.053DDDCD2505E20B.description8}"
+				"To get the most out of this, run it in an Extreme Combustion Engine with Liquid Oxygen."
 			]
 			icon: "gtceu:jean_gasoline_bucket"
 			id: "053DDDCD2505E20B"
@@ -3143,27 +3136,27 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.053DDDCD2505E20B.title}"
+			title: "&9JEAN Gasoline"
 			x: 1.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["3B639F4061B00F1A"]
 			description: [
-				"{moni.quest.6DBD1492197AC92D.description1}"
+				"Each Tier 2.5 Mission requires several buckets of &6lava&r and &6a block&r corresponding to the type of mob drops it returns."
 				""
-				"{moni.quest.6DBD1492197AC92D.description2}"
+				"This &9Microminer&r offers a way to easily get some basic &6Mob Drops&r."
 				""
-				"{moni.quest.6DBD1492197AC92D.description3}"
+				"While this Microminer can return several different types of mob drops, it is the only miner that can retrieve &6 Blaze Rods, Blizz Cubes, Blitz Motes, and Basalz Shards&r."
 			]
 			id: "6DBD1492197AC92D"
-			subtitle: "{moni.quest.47A81FADD828772D.subtitle}"
+			subtitle: "An alterative route"
 			tasks: [{
 				id: "41777324B5E2118C"
 				item: "kubejs:microminer_t2half"
 				type: "item"
 			}]
-			title: "{moni.quest.6DBD1492197AC92D.title}"
+			title: "&9Tier 2.5 Microminer"
 			x: -2.0d
 			y: 5.25d
 		}
@@ -3174,7 +3167,7 @@
 				"715BC5C7DAC53B7B"
 				"11154356854B64DA"
 			]
-			description: ["{moni.quest.51FD757E07E397A1.description1}"]
+			description: ["The &3Simulation Supercomputer&r functions identically to the &3Simulation Chamber&r, but can be overclocked with energy hatches to run faster with more energy. This multiblock can be useful if your resource generation has started lagging behind since unlocking &bHNN&r."]
 			hide_until_deps_visible: true
 			icon: "gtceu:simulation_supercomputer"
 			id: "51FD757E07E397A1"
@@ -3259,7 +3252,7 @@
 				"51FD757E07E397A1"
 				"5BE3E37772FAF6CB"
 			]
-			description: ["{moni.quest.7A716485BBDA8629.description1}"]
+			description: ["Overclockable &3Loot Fabricator&r."]
 			hide_until_deps_visible: true
 			icon: "gtceu:loot_superfabricator"
 			id: "7A716485BBDA8629"
@@ -3341,14 +3334,14 @@
 		}
 		{
 			dependencies: ["39FD6F1076559156"]
-			description: ["{moni.quest.7BBDF8E5DD082310.description}"]
+			description: ["The &6Advanced NanoMuscle™ Suit Chestplate&r gives the &6NanoMuscle™ Suit Chestplate&r a jetpack."]
 			id: "7BBDF8E5DD082310"
 			rewards: [{
 				id: "72276FF88E82A9C7"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.7BBDF8E5DD082310.subtitle}"
+			subtitle: "Not FAA approved by the way."
 			tasks: [{
 				id: "01132CD07EE392CC"
 				item: {
@@ -3358,7 +3351,7 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.7BBDF8E5DD082310.title}"
+			title: "Taking Flight"
 			x: 0.5d
 			y: -7.25d
 		}
@@ -3366,11 +3359,11 @@
 			dependencies: ["595F205B551A53C9"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.044553423097C3C7.description1}"
+				"Often called the Platline, refining &6Platinum Group Sludge&r (PGS) into the platinum group metals requires quite a long processing line. Right now, you only have access to the first part of the line: the extraction of &6Ruthenium&r and &6Rhodium&r."
 				""
-				"{moni.quest.044553423097C3C7.description2}"
+				"Treating certain ores with &6Nitric Acid&r yields &6PGS&r - &6Sheldonite&r has the highest yields, but others might be easier to gather. Then, using an &6HV&r+ &3Centrifuge&r and &6Aqua Regia&r, break that down into the PGS salts, and reduce those salts to the metals."
 				""
-				"{moni.quest.044553423097C3C7.description3}"
+				"You will need Ruthenium and Rhodium in &6RTM Coils&r, the &3Alloy Blast Smelter&r, and various &9IV&r components."
 			]
 			id: "044553423097C3C7"
 			rewards: [{
@@ -3381,7 +3374,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{moni.quest.044553423097C3C7.subtitle}"
+			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
 			tasks: [
 				{
 					id: "1CA9B9FE385B774C"
@@ -3394,22 +3387,22 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.044553423097C3C7.title}"
+			title: "&2Platinum Group Processing"
 			x: 4.0d
 			y: -1.75d
 		}
 		{
 			dependencies: ["49C8716030809478"]
 			description: [
-				"{moni.quest.13B12457AA9BF90D.description1}"
+				"A PackagedAuto version of the &3Crafting Core&r."
 				""
-				"{moni.quest.13B12457AA9BF90D.description2}"
+				"This upgrade to the &3Crafting Core&r allows you to craft Combination recipes directly through &bPackagedAuto&r."
 				""
-				"{moni.quest.13B12457AA9BF90D.description3}"
+				"The &aMarked Pedestals&r can be placed freely within three blocks' distance of the Crafting block, as long as they are on the same Y-level."
 				""
-				"{moni.quest.13B12457AA9BF90D.description4}"
+				"As usual with PackagedAuto crafters, you need to encode the recipe in the correct mode and place a copy in two places: a &3Packager&r somewhere on your network, and an &3Unpackager&r adjacent to the &3Combination Package Crafter&r."
 				""
-				"{moni.quest.13B12457AA9BF90D.description5}"
+				"These recipes require large amounts of RF and it &ewill not use power from your &aME Network&r, so you must also connect the package crafter directly to a source of RF."
 			]
 			icon: "packagedexcrafting:combination_crafter"
 			id: "13B12457AA9BF90D"
@@ -3438,11 +3431,11 @@
 		{
 			dependencies: ["6DBD1492197AC92D"]
 			description: [
-				"{moni.quest.6A76B3DCA599B9B5.description1}"
+				"Micro miners that perform combat require a special microverse, a &3Hostile Microverse&r. To create one, declare war on a Normal microverse with a bomb strapped to a &6T2.5MM&r."
 				""
-				"{moni.quest.6A76B3DCA599B9B5.description2}"
+				"A Hostile Microverse behaves very different from a Normal microverse. Hostile microverses cannot be repaired with &6Quantum Flux&r, and decay naturally even when no recipe is running. However, as your micro miner thins the hordes, stability is restored to the microverse."
 				""
-				"{moni.quest.6A76B3DCA599B9B5.description3}"
+				"You will need to run missions periodically to prevent the collapse of the Hostile microverse, making it quite the challenge to automate. Consider using a &6Microverse Stability Sensor Hatch&r to help."
 			]
 			hide_until_deps_visible: true
 			icon: "minecraft:tnt"
@@ -3454,16 +3447,16 @@
 				id: "2034B77FED29D890"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.6A76B3DCA599B9B5.title}"
+			title: "Hostile Microverses"
 			x: -0.5d
 			y: 5.25d
 		}
 		{
 			dependencies: ["605062720747B482"]
 			description: [
-				"{moni.quest.5732018AA35D69B6.description1}"
+				"The &3Elite Assembler&r is required for &6Advanced SMD components&r and &6HSS-G Coils&r."
 				""
-				"{moni.quest.5732018AA35D69B6.description2}"
+				"Consider upgrading to a &6Large Assembling Factory&r, which is easier to upgrade and can accept Parallel Control Hatches."
 			]
 			id: "5732018AA35D69B6"
 			rewards: [{
@@ -3477,16 +3470,16 @@
 				item: "gtceu:iv_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.5732018AA35D69B6.title}"
+			title: "&2IV Assembler"
 			x: 11.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["605062720747B482"]
 			description: [
-				"{moni.quest.51A463024F35DC2E.description1}"
+				"This is the next tier of polymer. It is used in crafting &6Advanced SMD components&r and &cZPM&r &6Machine Hulls&r, among other things."
 				""
-				"{moni.quest.51A463024F35DC2E.description2}"
+				"This polymer can require up to &914 steps&r to create from scratch, but multiple steps are able to be skipped through distillation of various liquids. &6Check what steps you can easily skip!&r"
 			]
 			icon: "gtceu:polybenzimidazole_bucket"
 			id: "51A463024F35DC2E"
@@ -3509,7 +3502,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.51A463024F35DC2E.title}"
+			title: "&2Polybenzimidazole (PBI)"
 			x: 12.5d
 			y: 0.5d
 		}
@@ -3519,7 +3512,7 @@
 				"53EC3831D66769CA"
 				"5732018AA35D69B6"
 			]
-			description: ["{moni.quest.3DD8D9EEA7189186.description1}"]
+			description: ["&6HSS-G&r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials, such as &6Naquadah&r."]
 			id: "3DD8D9EEA7189186"
 			rewards: [{
 				id: "0A5B1F97951B104A"
@@ -3534,18 +3527,18 @@
 				item: "gtceu:hssg_coil_block"
 				type: "item"
 			}]
-			title: "{moni.quest.3DD8D9EEA7189186.title}"
+			title: "HSS-G Coil Blocks"
 			x: 9.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["476F71CC0B0AC2A4"]
 			description: [
-				"{moni.quest.386DB3C9E646764D.description1}"
+				"By combining &6Uraninite Dust&r with &6Hydrofluoric Acid&r and &6Fluorine&r or &6Hexafluorosilicic Acid&r and &3electrolyzing&r the products, &6Uranium 238&r and &6Uranium 235&r can be extracted."
 				""
-				"{moni.quest.386DB3C9E646764D.description2}"
+				"Uranium 238 can also be obtained from &3macerating&r &6Red Granite&r, renewably sourced from a &3rock breaker&r. However, this method is drastically slower than processing Uraninite."
 				""
-				"{moni.quest.386DB3C9E646764D.description3}"
+				"Uraninite is a byproduct from a variety of ores, and can be &3centrifuged&r from &6Pitchblende&r. Alternatively, &6Uraninite Ore&r can be mined out of the ground or obtained from microminer missions."
 			]
 			id: "386DB3C9E646764D"
 			shape: "hexagon"
@@ -3561,13 +3554,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.386DB3C9E646764D.title}"
+			title: "Uranium"
 			x: -8.75d
 			y: 7.5d
 		}
 		{
 			dependencies: ["27A80F018F59EF1E"]
-			description: ["{moni.quest.62C85A1F451C4855.description3}"]
+			description: ["With a &3Tier Two Rocket&r you can make it to &eMars&r. Mars has &6Scheelite&r, &6Arsenopyrite&r, &6Carnotite&r, &6Borax&r, and veins of gaseous &9Fluorine&r."]
 			id: "3E7250EFBFF03D89"
 			rewards: [{
 				id: "48E6352BC7E3A682"
@@ -3591,15 +3584,15 @@
 		{
 			dependencies: ["785C6332FC7A07A5"]
 			description: [
-				"{moni.quest.7BC6E67521545949.description1}"
+				"So far, you have been using &6Energy Hatches&r only capable of drawing 2 amps of power. In &5EV&r, you unlock your first hatches capable of drawing 4 and 16 amps, called 4A and 16A Energy Hatches."
 				""
-				"{moni.quest.7BC6E67521545949.description2}"
+				"With these new hatches, there is an important distinction to make:\n\nThe &aMax EU/t&r of a machine is determined by the combined amperage of its hatches. It is used for determining overclocks and thus recipe speed."
 				""
-				"{moni.quest.7BC6E67521545949.description3}"
+				"The &aMax Recipe Tier&r of a machine determines the tier of recipes that are able to be performed, and is derived from the number of the highest tier hatches present. At 1 hatch, it is the tier of that hatch, and at 2 it is the next tier up. "
 				"{@pagebreak}"
-				"{moni.quest.7BC6E67521545949.description4}"
+				"Some examples:\n- Using only a 16A &5EV&r hatch will allow for &dLuV&r speeds on recipes &5EV&r and below.\n- Using both a 2A and 16A &5EV&r hatch allows for &dLuV&r speeds on recipes &9IV&r and below.\n- Using two 16A &5EV&r hatches allows for &dLuV&r speeds on recipes &9IV&r and below."
 				""
-				"{moni.quest.7BC6E67521545949.description5}"
+				"If you're not always using superconductors, keep in mind: depending on your hatch configuration and the recipes the machine runs, the room for cable loss may vary. &eThe margin for error is smallest when using two regular hatches or one multi-amp hatch.&r"
 			]
 			icon: "gtceu:ev_energy_input_hatch_4a"
 			id: "7BC6E67521545949"
@@ -3634,23 +3627,23 @@
 						]
 					}
 				}
-				title: "{moni.task.5517C58C7834BFDD}"
+				title: "Any 4A or 16A Energy Hatch"
 				type: "item"
 			}]
-			title: "{moni.quest.7BC6E67521545949.title}"
+			title: "Higher Amperage Hatches"
 			x: 0.25d
 			y: -1.75d
 		}
 		{
 			dependencies: ["39FD6F1076559156"]
 			description: [
-				"{moni.quest.36B1B083B4FA439F.description1}"
+				"The &3Power Substation&r is GregTech's native mass power storage solution."
 				""
-				"{moni.quest.36B1B083B4FA439F.description2}"
+				"The structure can accept up to 18 layers of 3x3 &aLapotronic Capacitor&r blocks. GT batteries can hold &96x&r the EU their item counterparts can hold when crafted into a &aLapotronic Capacitor&r. The structure need not be made of all of the same tier blocks, but it must be full, so fill any empty space with &aEmpty Capacitor Blocks&r."
 				""
-				"{moni.quest.36B1B083B4FA439F.description3}"
+				"Insert power through &6Energy Hatches&r and extract from &6Dynamo Hatches&r, each of any tier. The Power Substation can accept special &664A Substation Hatches&r, as well as &aLaser Hatches&r."
 				""
-				"{moni.quest.36B1B083B4FA439F.description4}"
+				"The Power Substation will &cpassively lose 1%%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:power_substation"
@@ -3747,22 +3740,22 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.36B1B083B4FA439F.title}"
+			title: "&2Power Substation"
 			x: 1.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["36B1B083B4FA439F"]
 			description: [
-				"{moni.quest.6CFAAF68D4B10062.description1}"
+				"At this point in your progression, it is recommended you switch to a &acentralized power layout&r."
 				""
-				"{moni.quest.6CFAAF68D4B10062.description2}"
+				"Going forward, generators will be multiblocks that reduce the need for spam, but take up significantly more space. To save on cable, These multiblock generators should be close to where you store your power."
 				""
-				"{moni.quest.6CFAAF68D4B10062.description3}"
+				"A main &3Power Substation&r (&3PSS&r) is the best option for that power storage as its storage capacity and I/O rates far surpass normal battery buffers. If you consistently add to and upgrade the capacitors and hatches, a single PSS should suffice for the rest of the pack."
 				"{@pagebreak}"
-				"{moni.quest.6CFAAF68D4B10062.description4}"
+				"For distributing power from that storage to your machines, it is a good idea to set up a &aPower Spine&r: a central power line dedicated to carrying the bulk of the power exiting your storage. For now this can be a regular wire or cable, but starting in &9IV&r this should be switched to &6Laser Hatches&r paired with &6Laser Pipes&r."
 				""
-				"{moni.quest.6CFAAF68D4B10062.description5}"
+				"With power roughly near your target area, use superconductors or regular cables to feed it to the machines. At this point there are several good options: &6Platinum&r, &6Vanadium Gallium&r, and &6Uranium Rhodium Dinaquadide&r."
 			]
 			icon: "gtceu:empty_tier_i_battery"
 			id: "6CFAAF68D4B10062"
@@ -3771,7 +3764,7 @@
 				id: "5AF8E611CFEF3599"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.6CFAAF68D4B10062.title}"
+			title: "Centralized Power"
 			x: -1.0d
 			y: -11.0d
 		}
@@ -3782,11 +3775,11 @@
 				"2DCD08F30EC049D1"
 			]
 			description: [
-				"{moni.quest.45DD07F2BB9C6A59.description1}"
+				"&9Nether Air&r, collected from &3Gas Collectors&r, can be sent into the &3Vacuum Freezer&r to turn it into &9Liquid Nether Air&r."
 				""
-				"{moni.quest.45DD07F2BB9C6A59.description2}"
+				"&9Liquid Nether Air&r can be sent into a &2Distillation Tower&r to break it down into its components."
 				""
-				"{moni.quest.45DD07F2BB9C6A59.description3}"
+				"&2Liquid Air and Liquid Ender Air give different useful components too."
 			]
 			hide_until_deps_visible: true
 			icon: "gtceu:liquid_nether_air_bucket"
@@ -3809,7 +3802,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.45DD07F2BB9C6A59.title}"
+			title: "&2Distilling the Nether"
 			x: -11.5d
 			y: -2.25d
 		}
@@ -3819,9 +3812,9 @@
 				"78DCEF2FF2E1AC8C"
 			]
 			description: [
-				"{moni.quest.7ABC7057BC2E8CE4.description1}"
+				"Like &9Sodium Persulfate&r and &9Iron III Chloride&r before it, &9Oxalic Acid&r is used as an etchant for &6Circuit Boards&r."
 				""
-				"{moni.quest.7ABC7057BC2E8CE4.description2}"
+				"Unlike the previous etchants, &9Oxalic Acid&r won't be necessary until &5EV&r, where it is used in certain processing lines like &aCoal Fly Ash Processing&r for Germanium."
 			]
 			icon: "gtceu:oxalic_acid_solution_bucket"
 			id: "7ABC7057BC2E8CE4"
@@ -3843,7 +3836,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.7ABC7057BC2E8CE4.title}"
+			title: "Oxalic Acid"
 			x: -3.0d
 			y: -4.5d
 		}
@@ -3853,13 +3846,13 @@
 				"7ABC7057BC2E8CE4"
 			]
 			description: [
-				"{moni.quest.63C3077124BC81FD.description1}"
+				"When burning &6Coal&r or &6Coke&r in the &3Pyrolyse Oven&r or &3Chemical Reactor&r there is a chance to produce a special type of Ash called &6Coal Fly Ash&r."
 				""
-				"{moni.quest.63C3077124BC81FD.description2}"
+				"You'll regret trashing it, since this type of ash is more mineral-rich than most regular types of ash. It yields &6Nickel&r, &6Zinc&r, &6Gallium&r, &6Lithium&r, &6Vanadium&r and, most importantly, &6Germanium&r."
 				""
-				"{moni.quest.63C3077124BC81FD.description3}"
+				"The full processing line will require &9Oxalic Acid Solution&r, but you've had access to that for a few tiers by now."
 				""
-				"{moni.quest.63C3077124BC81FD.description4}"
+				"A note on Germanium: like &6Indium&r, it's only used in small amounts for alloys. As such, it's not worth gathering extreme quantities as you might with common resources like &6Iron&r, &6Copper&r, &6Tin&r, or &6Redstone&r."
 			]
 			icon: "gtceu:germanium_dust"
 			id: "63C3077124BC81FD"
@@ -3880,28 +3873,28 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.63C3077124BC81FD.title}"
+			title: "Coal Fly Ash Processing"
 			x: -3.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["4EC59BC9BCCB3C5D"]
 			description: [
-				"{moni.quest.64035276DDDD7325.description1}"
+				"Now that you have access to &3GCYm multiblock machines&r, it's a good time to begin work on a more involved ore processing system with the help of multiblock machines' greater throughput."
 				""
-				"{moni.quest.64035276DDDD7325.description2}"
+				"As mentioned in the last quest on this topic, Macerate -> Ore Wash -> Forge Hammer -> Centrifuge is a good starting point. However, you may have noticed this approach not giving you enough of a certain byproduct, or taking too long to process certain types of ore."
 				""
-				"{moni.quest.64035276DDDD7325.description3}"
+				"For those kinds of issues, you can use filters to process certain types of ore in a different way, for example by using the &3Thermal Centrifuge&r or &3Sifter&r on some, but not all, ore types."
 				""
-				"{moni.quest.64035276DDDD7325.description4}"
+				"&cBe warned: tag-based filtering can work against you here! You will need to be discerning in how much processing you do for each type of ore."
 				"{@pagebreak}"
-				"{moni.quest.64035276DDDD7325.description5}"
+				"To be more specific, you will want to strike a &ebalance&r between byproduct yields per ore and processing time."
 				""
-				"{moni.quest.64035276DDDD7325.description6}"
+				"Too much processing will result in clogs and wasted time spent waiting on your ore processing to \"catch up\" to a recent mining trip or microminer mission."
 				""
-				"{moni.quest.64035276DDDD7325.description7}"
+				"Too little processing will result in you sending extra microminer missions or going on additional mining trips just for ores' byproducts."
 				""
-				"{moni.quest.64035276DDDD7325.description8}"
+				"Ultimately, &ethe best route to take for each ore type will depend on your base and playstyle.&r Good luck, and don't forget to revisit and revise your filters regularly as you continue to progress."
 			]
 			icon: "gtceu:small_cadmium_dust"
 			id: "64035276DDDD7325"
@@ -3909,16 +3902,16 @@
 				id: "510F9A7F7E846C25"
 				type: "checkmark"
 			}]
-			title: "{moni.quest.64035276DDDD7325.title}"
+			title: "Advanced Ore Processing"
 			x: 7.0d
 			y: 1.25d
 		}
 		{
 			dependencies: ["3FF918B4CF33E8F7"]
 			description: [
-				"{moni.quest.5A1F4D5E41787B93.description1}"
+				"&aTectonic Grenades&r are a helpful tool to hasten your mining trips. They break blocks in a sphere 11 blocks in diameter, which is an area much larger than any drill you have access to currently."
 				""
-				"{moni.quest.5A1F4D5E41787B93.description2}"
+				"They also operate at range, which can be convenient when paired with a wide-area &aitem magnet&r."
 			]
 			id: "5A1F4D5E41787B93"
 			tasks: [{
@@ -3930,6 +3923,45 @@
 			x: -7.25d
 			y: 7.75d
 		}
+		{
+			dependencies: ["1349044BF8C04A12"]
+			description: [
+				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
+				""
+				"Fire on bedrock will convert into Grains after a short time. Make sure the grains don't burn in surrounding fires."
+				""
+				"You can automate grains of infinity using an &bMV&r &3Rock Breaker&r at a low Y coordinate with &6Lava&r and &6Fluid of the Void&r adjacent to the machine. You could alternatively use a &3Rock Cycle Simulator&r to bypass the fluid adjacency requirements."
+			]
+			icon: "enderio:grains_of_infinity"
+			id: "1CA6D620309F2B9E"
+			rewards: [{
+				id: "67D69429C7C3148B"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1E07B0FCC2B8D3EF"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E822A9514AED405"
+					item: "enderio:grains_of_infinity"
+					type: "item"
+				}
+			]
+			title: "Grains Of Infinity"
+			x: 12.0d
+			y: 2.25d
+		}
 	]
-	title: "{moni.chapter.7489B5042AFE2290.title}"
+	title: "Scaling Up"
 }

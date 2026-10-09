@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "renewable_production"
-	group: "0D5BFFD0A5E49312"
+	group: "7A7ECB813BC25B77"
 	icon: "gtceu:lv_chemical_reactor"
 	id: "055C0B43FE14258F"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -14,18 +14,18 @@
 				"72861B317663600B"
 			]
 			description: [
-				"{moni.quest.261F7D50E23B0789.description1}"
+				"The final step. Combine &6Pulsating Dust&r and &6Clay&r to make &6Pulsating Prediction Matrix&r. "
 				""
-				"{moni.quest.261F7D50E23B0789.description2}"
+				"Take note that a &3&3Chemical Reactor&r making &6Resonant Clathrate&r will supply 1 &3Alloy Smelter&r of the same tier, and that one &bMV &3Alloy Smelter&r making &6Pulsating Prediction Matrix&r supports 10.03 &3Simulation Chambers&r, with each higher tier doubling the amount of &3Simulation Chambers&r it supports."
 				"{@pagebreak}"
-				"{moni.quest.261F7D50E23B0789.description3}"
+				"&eTo prevent flooding your alloy smelter with too much &6Clay&e or &6Pulsating Dust&e. Put 2 item containers(for example, &6Chest&e or a &bSophisticated Storage&6 Barrel&e) next to the alloy smelter, and put robot arms on the alloy smelter facing the chests, set them to import and keep exact, and set the amount to keep to 64 or less."
 				""
 				"{image:ftblibrary:textures/gui/ppm_robot_arm_how_to.png width:100 height:100 align:center}"
 			]
 			id: "261F7D50E23B0789"
 			optional: true
 			size: 2.0d
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.alloy_smelter\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Alloy Smelter\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "6D25E047579465DD"
 				item: "hostilenetworks:prediction_matrix"
@@ -39,11 +39,11 @@
 				"500B77982B9CDF9B"
 				"3BC7B5321B707F78"
 			]
-			description: ["{moni.quest.3E90A188715DA88A.description1}"]
+			description: ["Combine your &6Quartz&r and &6Resonant Ender&r to make &6Resonant Clathrate&r. One &3Electrolyzer&r making &6Quartz&r supports 2.4 &3Chemical Reactors &rof the same tier."]
 			id: "3E90A188715DA88A"
 			optional: true
 			size: 1.5d
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.chemical_reactor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Chemical Reactor\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"MV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "122706C284BF4311"
 				item: "kubejs:resonant_clathrate"
@@ -54,10 +54,10 @@
 		}
 		{
 			dependencies: ["3E90A188715DA88A"]
-			description: ["{moni.quest.2B4F44E19AA7A1B6.description1}"]
+			description: ["Smelt your &6Resonant Clathrate&r into &6Pulsating Dust&r. If you're using a &3Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r. You can fuel them with &6Sugar Cane&r. You might want to keep it as an &3Electric Furnace&r, depending on your circumstances. "]
 			id: "2B4F44E19AA7A1B6"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_furnace\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Furnace\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electric Furnace\"},\".\"]"
 			tasks: [{
 				id: "39B409F800210783"
 				item: "kubejs:pulsating_dust"
@@ -68,11 +68,11 @@
 		}
 		{
 			dependencies: ["50FB5E0B0E0B142F"]
-			description: ["{moni.quest.500B77982B9CDF9B.description1}"]
+			description: ["Melt your &6Ender Pearls&r into &6Resonant Ender&r."]
 			icon: "thermal:ender_bucket"
 			id: "500B77982B9CDF9B"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.extractor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Extractor\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [
 				{
 					id: "231370C8AD261AE8"
@@ -86,13 +86,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.500B77982B9CDF9B.title}"
+			title: "Resonant Ender"
 			x: -8.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["5BE3E37772FAF6CB"]
-			description: ["{moni.quest.50FB5E0B0E0B142F.description1}"]
+			description: ["You can make a net-positive &6Pulsating Prediction Matrix&r setup that uses &6Enderman Data Models&r to produce &6Ender Pearls&r. A Self-Aware &6Enderman Data Model&r can supply enough &6Ender Pearls&r to support the running of 6.2 other models."]
 			id: "50FB5E0B0E0B142F"
 			optional: true
 			tasks: [{
@@ -105,7 +105,7 @@
 		}
 		{
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.cobblestone.description}"]
+			description: ["The best source of &6Cobblestone&r early on is &eThermal &3Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r.\n\nAlso a cheap building block."]
 			disable_toast: true
 			hide_until_deps_visible: true
 			id: "1881488CEB982FCD"
@@ -120,7 +120,7 @@
 						value: "forge:cobblestone"
 					}
 				}
-				title: "{moni.task.6A1B4224E18DC3EC}"
+				title: "Cobblestone"
 				type: "item"
 			}]
 			x: 6.0d
@@ -128,9 +128,9 @@
 		}
 		{
 			dependencies: ["1881488CEB982FCD"]
-			description: ["{moni.quest.6E06505BC7636985.description1}"]
+			description: ["Mainly used for decorational blocks. Still part of &eCobbleworks&r I guess."]
 			id: "6E06505BC7636985"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_furnace\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Furnace\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electric Furnace\"},\".\"]"
 			tasks: [{
 				id: "7429EE615EFC6A1C"
 				item: "minecraft:stone"
@@ -141,9 +141,9 @@
 		}
 		{
 			dependencies: ["1881488CEB982FCD"]
-			description: ["{moni.quest.4A56822201818607.description1}"]
+			description: ["Crush your &6Cobblestone&r into &6Stone Dust&r. You'll actually get a lot of &6Stone Dust&r from &eOre Processing&r, but this could be your backup source. You'll need this for &6Concrete&r. You can also centrifuge this, although the resources gained are not very useful, and are in very small amounts."]
 			id: "4A56822201818607"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "3A88BF095D4C0DB9"
 				item: "gtceu:stone_dust"
@@ -158,10 +158,10 @@
 				"7A3F3FB2774A4632"
 				"4BC0A5F24E5837ED"
 			]
-			description: ["{moni.quest.7F165C2BCCCBA565.description1}"]
+			description: ["Mix &6Stone Dust&r, &6Clay Dust&r and some &9Water&r to make &6Concrete&r. This is probably the easiest way to get &6Concrete&r. You'll need this for &6Plascrete&r, used in &2Cleanrooms&r, and a tiny amount for &6Launch Pads&r.&o"]
 			icon: "gtceu:concrete_bucket"
 			id: "7F165C2BCCCBA565"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.mixer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Mixer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [
 				{
 					id: "142F150D5A05D7FE"
@@ -175,15 +175,15 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.7F165C2BCCCBA565.title}"
+			title: "Concrete"
 			x: 9.0d
 			y: -9.5d
 		}
 		{
 			dependencies: ["1881488CEB982FCD"]
-			description: ["{moni.quest.gravel.description}"]
+			description: ["Break up your &6Cobblestone&r into &6Gravel&r."]
 			id: "2968DF8A3A0EBF89"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Forge Hammer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "4EE8610ED03A7BDD"
 				item: "minecraft:gravel"
@@ -194,9 +194,9 @@
 		}
 		{
 			dependencies: ["2968DF8A3A0EBF89"]
-			description: ["{moni.quest.483B16F4D4291C82.description1}"]
+			description: ["Search your &6Gravel&r for &6Flint&r."]
 			id: "483B16F4D4291C82"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.sifter\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Sifter\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "3A7C55B0274C3CC2"
 				item: "minecraft:flint"
@@ -207,9 +207,9 @@
 		}
 		{
 			dependencies: ["0933FF764C1D2399"]
-			description: ["{moni.quest.7A3F3FB2774A4632.description1}"]
+			description: ["Crush your &6Clay&r to make &6Clay Dust&r.&r Turns into many useful resources."]
 			id: "7A3F3FB2774A4632"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "2F4B284ECF831238"
 				item: "gtceu:clay_dust"
@@ -223,11 +223,11 @@
 				"7A3F3FB2774A4632"
 				"261D2F3B1F2162D0"
 			]
-			description: ["{moni.quest.1D4B663AD87CA3C1.description1}"]
+			description: ["Split your &6Clay Dust&r to make &6Sodium Dust&r, &6Silicon Dust&r, &6Lithium Dust&r, and &6Aluminium Dust&r.&r This is extremely important to passive, as you will need a lot of these resources, and this is the best way to get them."]
 			hide_until_deps_visible: true
 			id: "1D4B663AD87CA3C1"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electrolyzer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "78F2F922F7B7F0EA"
 				item: {
@@ -254,18 +254,18 @@
 						]
 					}
 				}
-				title: "{moni.task.78F2F922F7B7F0EA}"
+				title: "Sodium, Silicon,  Lithium, or Aluminium Dust"
 				type: "item"
 			}]
-			title: "{moni.quest.1D4B663AD87CA3C1.title}"
+			title: "Sodium, Silicon, Lithium and Aluminium"
 			x: 10.5d
 			y: -9.5d
 		}
 		{
-			description: ["{moni.quest.water.description}"]
+			description: ["There are many ways to procure &9Water&r, but the most notable are: &3Water Collectors&r, which are very slow but cheap; &bThermal &3Aqueous Accumulators&r, which are a bit more expensive but way faster; and &bGregTech &3Infinite Water Covers&r, which are much more expensive, but save space because they're covers, and make water 16x faster than &3Accumulators&r.\n\nRight now, you should probably use the &3Aqueous Accumulator&r."]
 			icon: "minecraft:water_bucket"
 			id: "4BC0A5F24E5837ED"
-			subtitle: "{moni.quest.water.subtitle}"
+			subtitle: "&oYes, there's a quest for &9Water&r."
 			tasks: [
 				{
 					id: "455987E6396919A1"
@@ -279,7 +279,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{block.minecraft.water}"
+			title: "Water"
 			x: 9.0d
 			y: -8.0d
 		}
@@ -288,9 +288,9 @@
 				"626330BB4A59E567"
 				"4BC0A5F24E5837ED"
 			]
-			description: ["{moni.quest.0933FF764C1D2399.description1}"]
+			description: ["Combine your &6Dust&r and some &6Water&r to make &6Clay&r.&r Turns into many useful resources."]
 			id: "0933FF764C1D2399"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.chemical_reactor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Chemical Reactor\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "27C80697DA452BF5"
 				item: "minecraft:clay"
@@ -301,7 +301,7 @@
 		}
 		{
 			dependencies: ["0933FF764C1D2399"]
-			description: ["{moni.quest.4107A9B0CA139E6C.description1}"]
+			description: ["Craft your &6Clay&r to make &6Clay Balls&r.&r You can also use &3Compacting Drawers&r."]
 			id: "4107A9B0CA139E6C"
 			tasks: [{
 				id: "1EF9791BD7B77F35"
@@ -313,9 +313,9 @@
 		}
 		{
 			dependencies: ["3380CBA4E4010EEC"]
-			description: ["{moni.quest.626330BB4A59E567.description1}"]
+			description: ["Break up your &6Sand&r into &6Dust&r. Used for nothing, apart from &6Clay&r and &6Netherrack&r."]
 			id: "626330BB4A59E567"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Forge Hammer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "6097D83B01AA2CBF"
 				item: "kubejs:dust"
@@ -326,9 +326,9 @@
 		}
 		{
 			dependencies: ["2968DF8A3A0EBF89"]
-			description: ["{moni.quest.3380CBA4E4010EEC.description1}"]
+			description: ["Break up your &6Gravel&r into &6Sand&r. Pretty much just another step of the &eCobbleworks&r."]
 			id: "3380CBA4E4010EEC"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Forge Hammer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "5ED3196F1A42F6C6"
 				item: "minecraft:sand"
@@ -339,9 +339,9 @@
 		}
 		{
 			description: [
-				"{moni.quest.lava.description}"
+				"&9Lava&r can be obtained in two main ways. The first is using a &3Chemical Reactor&r to turn &6Magma Blocks&r into &9Lava&r. The second is using a &bGregTech &6Fluid Drill&r in the Nether above a &9Lava&r vein."
 				""
-				"{moni.quest.36100ACD3655DAFF.description1}"
+				"In this case you'll need &9Lava&r for &6Netherrack&r, although &9Lava&r can also be centrifuged for useful resources like &6Tantalite&r, &6Gold&r, and &6Sapphire&r."
 			]
 			icon: "minecraft:lava_bucket"
 			id: "36100ACD3655DAFF"
@@ -358,7 +358,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{block.minecraft.lava}"
+			title: "Lava"
 			x: 7.5d
 			y: -3.5d
 		}
@@ -367,9 +367,9 @@
 				"36100ACD3655DAFF"
 				"626330BB4A59E567"
 			]
-			description: ["{moni.quest.33714BC51815A665.description1}"]
+			description: ["Combine your &6Dust&r and &9Lava&r into &6Netherrack&r. Used for your first &6Hellish Matter&r and &6Netherrack Dust&r."]
 			id: "33714BC51815A665"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.chemical_reactor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Chemical Reactor\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "1335F210887B7F3C"
 				item: "minecraft:netherrack"
@@ -380,9 +380,9 @@
 		}
 		{
 			dependencies: ["33714BC51815A665"]
-			description: ["{moni.quest.08D087B38EE0602B.description1}"]
+			description: ["Crush your &6Netherrack&r into &6Netherrack Dust&r. Used for &6Nether Cakes&r, but can also be centrifuged for &6Redstone&r, &6Gold&r, &6Sulfur&r, and &6Coal&r."]
 			id: "08D087B38EE0602B"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "3F8820777A1AB80D"
 				item: "gtceu:netherrack_dust"
@@ -393,9 +393,9 @@
 		}
 		{
 			dependencies: ["36100ACD3655DAFF"]
-			description: ["{moni.quest.6B4A50B6F9F835EF.description1}"]
+			description: ["Cool down your &9Lava&r into &6Obsidian&r. You'll need a lot of this, so it's probably wise to use &3Rock Breakers&r once you hit &6HV&r, as they produce &6Obsidian&r without consuming anything."]
 			id: "6B4A50B6F9F835EF"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.fluid_solidifier\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Fluid Solidifier\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "0B086D94FCE75840"
 				item: "minecraft:obsidian"
@@ -406,9 +406,9 @@
 		}
 		{
 			dependencies: ["6B4A50B6F9F835EF"]
-			description: ["{moni.quest.57D410C5A9EAFAD9.description1}"]
+			description: ["Crush your &6Obsidian&r into &6Obsidian Dust&r. You'll need a lot of this for &6Petrotheum Dust&r."]
 			id: "57D410C5A9EAFAD9"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "418DD246EDA607CD"
 				item: "gtceu:obsidian_dust"
@@ -420,12 +420,12 @@
 		{
 			dependencies: ["21654B6E703A2923"]
 			description: [
-				"{moni.quest.1349FBBCE3041081.description1}"
+				"Break up your &6Sandstone&r into &6Saltpeter&r. This is probably the best way to get &6Saltpeter&r, which you'll need a lot of for &6Aerotheum Dust&r. If you are playing Normal Mode, you can also get &6Saltpeter&r from &bHostile Neural Networks&r."
 				""
-				"{moni.quest.1349FBBCE3041081.description2}"
+				"You can also electrolyze it for &6Potassium&r, although that isn't recommended because of how easily you can get &6Potassium&r from other sources and how much &6Saltpeter&r it costs."
 			]
 			id: "1349FBBCE3041081"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "6BA83E0FE524FA1B"
 				item: "gtceu:saltpeter_dust"
@@ -436,7 +436,7 @@
 		}
 		{
 			dependencies: ["3380CBA4E4010EEC"]
-			description: ["{moni.quest.21654B6E703A2923.description1}"]
+			description: ["Compact your &6Sand&r into &6Sandstone&r. It is recommended to use &3Ender IO Crafters&r or a &6Compressor&r."]
 			id: "21654B6E703A2923"
 			tasks: [{
 				id: "105B371C4873CAEB"
@@ -448,9 +448,9 @@
 		}
 		{
 			dependencies: ["599012DB0B179B3B"]
-			description: ["{moni.quest.201B129579ACF449.description1}"]
+			description: ["Separate your &6Quartz Sand&r into &6Quartzite Dust&r and &6Certus Quartz Dust&r. This is a good renewable source of &6Certus Quartz&r, which you need for &bApplied Energistics 2&r."]
 			id: "201B129579ACF449"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [
 				{
 					id: "173CBB96166964FB"
@@ -463,15 +463,15 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.201B129579ACF449.title}"
+			title: "Quartzite and Certus Quartz Dust"
 			x: 3.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["3380CBA4E4010EEC"]
-			description: ["{moni.quest.599012DB0B179B3B.description1}"]
+			description: ["Crush your &6Sand&r into &6Quartz Sand&r. Can be centrifuged into useful resources."]
 			id: "599012DB0B179B3B"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "6D3FA82DF4858787"
 				item: "gtceu:quartz_sand_dust"
@@ -485,11 +485,11 @@
 				"3380CBA4E4010EEC"
 				"467BD25ED78C7EF8"
 			]
-			description: ["{moni.quest.33351123F08D92BE.description1}"]
+			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r, which you can fuel with &6Sugar Cane&r. However, using an &3Arc Furnace&r doubles your glass output. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
 			hide_until_deps_visible: true
 			id: "33351123F08D92BE"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.arc_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Furnace\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Arc Furnace\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "70D37DC6A4C89B21"
 				item: {
@@ -499,10 +499,10 @@
 						value: "forge:glass"
 					}
 				}
-				title: "{moni.task.70D37DC6A4C89B21}"
+				title: "Glass"
 				type: "item"
 			}]
-			title: "{moni.quest.33351123F08D92BE.title}"
+			title: "Glass"
 			x: 6.0d
 			y: -2.0d
 		}
@@ -512,9 +512,9 @@
 				"747A07B8142E9B49"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.69BFFF8BFB3B3B5C.description1}"]
+			description: ["Crush your &6Glass&r into &6Glass Dust&r. Used for nothing, apart from &6Silicon Dioxide Dust&r."]
 			id: "69BFFF8BFB3B3B5C"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "113028C111EF1CC8"
 				item: "gtceu:glass_dust"
@@ -525,9 +525,9 @@
 		}
 		{
 			dependencies: ["69BFFF8BFB3B3B5C"]
-			description: ["{moni.quest.3B8EFDA817243B9F.description1}"]
+			description: ["Separate your &6Glass Dust&r into &6Silicon Dioxide Dust&r. Can be electrolyzed into useful resources."]
 			id: "3B8EFDA817243B9F"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "1DCE55AB1ECA9566"
 				item: "gtceu:silicon_dioxide_dust"
@@ -538,9 +538,9 @@
 		}
 		{
 			dependencies: ["3B8EFDA817243B9F"]
-			description: ["{moni.quest.sio2_o2.description}"]
+			description: ["Split your &6Silicon Dioxide Dust&r into &6Silicon Dust and Oxygen&r. &6Silicon Dioxide&r electrolysis is the best source of Early Game &6Oxygen&r, although distilling &6Liquid Air&r may be better later, depending on your situation."]
 			id: "6E16CEC90AA82C32"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electrolyzer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "5E475348CEFAFBBF"
 				item: {
@@ -559,10 +559,10 @@
 						]
 					}
 				}
-				title: "{moni.task.sio2_o2}"
+				title: "Silicon Dust or Oxygen Bucket"
 				type: "item"
 			}]
-			title: "{moni.quest.sio2_o2.title}"
+			title: "Silicon and Oxygen"
 			x: 1.5d
 			y: -2.0d
 		}
@@ -571,11 +571,11 @@
 				"33351123F08D92BE"
 				"5BE3E37772FAF6CB"
 			]
-			description: ["{moni.quest.6792DF5F9F320B98.description1}"]
+			description: ["Turn your &6Glass&r into &6Quartz&r. An &3Arc Furnace&r making &6Glass&r supports 2.5 &3Electrolyzers&r of the same tier. You will need a lot of &6Quartz&r, so it's crucial that you passive this."]
 			hide_until_deps_visible: true
 			id: "6792DF5F9F320B98"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electrolyzer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "79199213561E6E2C"
 				item: "minecraft:quartz"
@@ -586,10 +586,10 @@
 		}
 		{
 			dependencies: ["6D61F343826FD239"]
-			description: ["{moni.quest.gravel.description}"]
+			description: ["Break up your &6Cobblestone&r into &6Gravel&r."]
 			id: "5228EFF7200B4C91"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Forge Hammer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "7981A513A9BBFDC3"
 				item: "minecraft:gravel"
@@ -600,10 +600,10 @@
 		}
 		{
 			dependencies: ["5228EFF7200B4C91"]
-			description: ["{moni.quest.456239275544A789.description1}"]
+			description: ["Break up your &6Gravel&r into &6Sand&r."]
 			id: "456239275544A789"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Forge Hammer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "3A229BA671666C89"
 				item: "minecraft:sand"
@@ -614,10 +614,10 @@
 		}
 		{
 			dependencies: ["456239275544A789"]
-			description: ["{moni.quest.749281AED88852C2.description1}"]
+			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r, which you can fuel with &6Sugar Cane&r. However, using an &3Arc Furnace&r doubles your glass output. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
 			id: "749281AED88852C2"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.arc_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Furnace\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Arc Furnace\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "5CB8E13112A61401"
 				item: "minecraft:glass"
@@ -628,10 +628,10 @@
 		}
 		{
 			dependencies: ["749281AED88852C2"]
-			description: ["{moni.quest.3BC7B5321B707F78.description1}"]
+			description: ["Turn your &6Glass&r into &6Quartz&r. An &3Arc Furnace&r making &6Glass&r supports 2.5 &3Electrolyzers&r of the same tier. You will need a lot of &6Quartz&r, so it's crucial that you passive this."]
 			id: "3BC7B5321B707F78"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electrolyzer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "13EDE5C42D7590D4"
 				item: "minecraft:quartz"
@@ -642,10 +642,10 @@
 		}
 		{
 			dependencies: ["456239275544A789"]
-			description: ["{moni.quest.66CA4A42DD474383.description1}"]
+			description: ["Break up your &6Sand&r into &6Dust&r."]
 			id: "66CA4A42DD474383"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.forge_hammer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Forge Hammer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "62CDC0E943DB3904"
 				item: "kubejs:dust"
@@ -659,10 +659,10 @@
 				"66CA4A42DD474383"
 				"447E9501E57DA010"
 			]
-			description: ["{moni.quest.72861B317663600B.description1}"]
+			description: ["Combine your &6Dust&r and some &6Water&r to make &6Clay&r.&r "]
 			id: "72861B317663600B"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.chemical_reactor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Chemical Reactor\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "1C1DC449620563CB"
 				item: "minecraft:clay"
@@ -673,7 +673,7 @@
 		}
 		{
 			dependencies: ["5BE3E37772FAF6CB"]
-			description: ["{moni.quest.cobblestone.description}"]
+			description: ["The best source of &6Cobblestone&r early on is &eThermal &3Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r.\n\nAlso a cheap building block."]
 			id: "6D61F343826FD239"
 			optional: true
 			size: 1.0d
@@ -686,7 +686,7 @@
 						value: "forge:cobblestone"
 					}
 				}
-				title: "{moni.task.44F09B9F2D173993}"
+				title: "Cobblestone"
 				type: "item"
 			}]
 			x: -10.0d
@@ -695,14 +695,14 @@
 		{
 			dependencies: ["5BE3E37772FAF6CB"]
 			description: [
-				"{moni.quest.water.description}"
+				"There are many ways to procure &9Water&r, but the most notable are: &3Water Collectors&r, which are very slow but cheap; &bThermal &3Aqueous Accumulators&r, which are a bit more expensive but way faster; and &bGregTech &3Infinite Water Covers&r, which are much more expensive, but save space because they're covers, and make water 16x faster than &3Accumulators&r.\n\nRight now, you should probably use the &3Aqueous Accumulator&r."
 				""
-				"{moni.quest.447E9501E57DA010.description1}"
+				"In this case, you'll need &9Water&r for &6Clay&r."
 			]
 			icon: "minecraft:water_bucket"
 			id: "447E9501E57DA010"
 			optional: true
-			subtitle: "{moni.quest.water.subtitle}"
+			subtitle: "&oYes, there's a quest for &9Water&r."
 			tasks: [
 				{
 					id: "3D88A8072F2B5285"
@@ -716,7 +716,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{block.minecraft.water}"
+			title: "Water"
 			x: -2.5d
 			y: 2.0d
 		}
@@ -725,11 +725,11 @@
 				"7A3F3FB2774A4632"
 				"68897FC5F720BB4F"
 			]
-			description: ["{moni.quest.2664406B3CD20703.description1}"]
+			description: ["Split your &6Clay Dust&r to make &6Sodium Dust&r, &6Silicon Dust&r, &6Lithium Dust&r, and &6Aluminium Dust&r.&r This is extremely important to passive, as you will need a lot of these resources, and this is the best way to get them."]
 			hide_until_deps_visible: true
 			id: "2664406B3CD20703"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electrolyzer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"MV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "4F2994BE3E9A9D23"
 				item: {
@@ -756,10 +756,10 @@
 						]
 					}
 				}
-				title: "{moni.task.4F2994BE3E9A9D23}"
+				title: "Sodium, Silicon, Lithium, or Aluminium Dust"
 				type: "item"
 			}]
-			title: "{moni.quest.2664406B3CD20703.title}"
+			title: "Sodium, Silicon, Lithium and Aluminium"
 			x: 10.5d
 			y: -9.5d
 		}
@@ -768,11 +768,11 @@
 				"3380CBA4E4010EEC"
 				"07C571669B023A30"
 			]
-			description: ["{moni.quest.33351123F08D92BE.description1}"]
+			description: ["Smelt your &6Sand&r into &6Glass&r. If you're using a &3Electric Furnace&r to smelt it, it's more efficient to use the upgraded &3Furnaces&r, such as &3Iron Furnaces&r, which you can fuel with &6Sugar Cane&r. However, using an &3Arc Furnace&r doubles your glass output. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
 			hide_until_deps_visible: true
 			id: "747A07B8142E9B49"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.arc_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Arc Furnace\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "6D27870CD7F95683"
 				item: {
@@ -782,16 +782,16 @@
 						value: "forge:glass"
 					}
 				}
-				title: "{moni.task.70D37DC6A4C89B21}"
+				title: "Glass"
 				type: "item"
 			}]
-			title: "{moni.quest.33351123F08D92BE.title}"
+			title: "Glass"
 			x: 6.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["014D28F123261D8D"]
-			description: ["{moni.quest.093883A81E6926E2.description1}"]
+			description: ["Harvest the growing &6Amethyst Clusters&6 with an &bApplied Energistics&r &3Annihilation Plane&r enchanted with &bSilk Touch&r on a network that only has storage for &6Amethyst Clusters&r, then turn those into shards with your method of choice.\n\nYou can grow the Amethyst faster with &bApplied Energistics&r &3Growth Accelerators&r, just like Budding Certus Quartz."]
 			id: "093883A81E6926E2"
 			optional: true
 			tasks: [{
@@ -804,10 +804,10 @@
 		}
 		{
 			dependencies: ["093883A81E6926E2"]
-			description: ["{moni.quest.2794D9A3AD594F6A.description1}"]
+			description: ["Break up your &6Amethyst Shards&r into &6Amethyst Dust&r."]
 			id: "2794D9A3AD594F6A"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "26E3FA1008B6CB88"
 				item: "gtceu:amethyst_dust"
@@ -818,10 +818,10 @@
 		}
 		{
 			dependencies: ["2794D9A3AD594F6A"]
-			description: ["{moni.quest.6F10BBD085BF7532.description1)"]
+			description: ["Separate &6Silicon Dioxide Dust&r out from your &6Amethyst Dust&r. With enough Budding Amethyst this can rival the output of your &eCobbleworks&r."]
 			id: "6F10BBD085BF7532"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electrolyzer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "551C6F157CB6FA51"
 				item: "gtceu:silicon_dioxide_dust"
@@ -832,7 +832,7 @@
 		}
 		{
 			dependencies: ["5E3CBC929557418F"]
-			description: ["{moni.quest.014D28F123261D8D.description1}"]
+			description: ["First, you need to find some &6Budding Amethyst&r, which will be located in &eGeodes&r. Mining this block will damage it, so you should set up automation on-site or transport it with a &3Cut Paste Gadget&r or &3Spatial Storage&r."]
 			hide_until_deps_visible: true
 			icon: "minecraft:budding_amethyst"
 			id: "014D28F123261D8D"
@@ -844,16 +844,16 @@
 				to_observe: "minecraft:budding_amethyst"
 				type: "observation"
 			}]
-			title: "{block.minecraft.budding_amethyst}"
+			title: "Budding Amethyst"
 			x: -11.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["2794D9A3AD594F6A"]
-			description: ["{moni.quest.2612A01CCC73DF1A.description1}"]
+			description: ["Separate &6Iron Dust&r out from your &6Amethyst Dust&r. This is a cheap and easy source of &6Iron&r, which we can turn into &6Steel&r without any additional inputs."]
 			id: "2612A01CCC73DF1A"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electrolyzer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "4B9B9E4581922FF1"
 				item: "gtceu:iron_dust"
@@ -864,10 +864,10 @@
 		}
 		{
 			dependencies: ["6F10BBD085BF7532"]
-			description: ["{moni.quest.sio2_o2.description}"]
+			description: ["Split your &6Silicon Dioxide Dust&r into &6Silicon Dust and Oxygen&r. &6Silicon Dioxide&r electrolysis is the best source of Early Game &6Oxygen&r, although distilling &6Liquid Air&r may be better later, depending on your situation."]
 			id: "7B4EB40F016DBD76"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electrolyzer\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electrolyzer\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "58C2B5EB1690BFE9"
 				item: {
@@ -886,10 +886,10 @@
 						]
 					}
 				}
-				title: "{moni.task.sio2_o2}"
+				title: "Silicon Dust or Oxygen Bucket"
 				type: "item"
 			}]
-			title: "{moni.quest.sio2_o2.title}"
+			title: "Silicon and Oxygen"
 			x: -5.0d
 			y: -5.5d
 		}
@@ -898,10 +898,10 @@
 				"7B4EB40F016DBD76"
 				"4EC63681CBC1CAD2"
 			]
-			description: ["{moni.quest.7CFC483280B08A26.description1}"]
+			description: ["Turn your &6Iron Ingots&r into &6Wrought Iron Ingots&r with the &9Oxygen&r from the &6Silicon Dioxide Dust&r. While there are other ways to get &6Wrought Iron&r, this is the fastest option in Early Game."]
 			id: "7CFC483280B08A26"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.arc_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Arc Furnace\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "75938527A9D05C8B"
 				item: "gtceu:wrought_iron_ingot"
@@ -912,10 +912,10 @@
 		}
 		{
 			dependencies: ["2612A01CCC73DF1A"]
-			description: ["{moni.quest.42D25699329E820D.description1}"]
+			description: ["Smelt your &6Iron Dust&r into &6Iron Ingots&r. You should use the upgraded furnaces from &bIron Furnaces&r or &3Electric Furnaces&r for this. Later, once you unlock them, &3Multi Smelters&r will be the best for this."]
 			id: "4EC63681CBC1CAD2"
 			optional: true
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_furnace\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Furnace\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electric Furnace\"},\".\"]"
 			tasks: [{
 				id: "42D25699329E820D"
 				item: "minecraft:iron_ingot"
@@ -929,11 +929,11 @@
 				"7CFC483280B08A26"
 				"7B4EB40F016DBD76"
 			]
-			description: ["{moni.quest.031A5A2B3AA99782.description1}"]
+			description: ["Blast your &6Wrought Iron&r into &6Steel&r. This process yields &6Ashes&r as a byproduct, which can be centrifuged for more byproducts or simply voided.\n\nHow convenient that you can make &6Steel&r just from &6Amethyst&r!"]
 			id: "031A5A2B3AA99782"
 			optional: true
 			size: 2.0d
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_blast_furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electric Blast Furnace\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"MV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "5851026225C2E439"
 				item: "gtceu:steel_ingot"
@@ -944,9 +944,9 @@
 		}
 		{
 			dependencies: ["3380CBA4E4010EEC"]
-			description: ["{moni.quest.1E6CDC008C85D941.description1}"]
+			description: ["Reconstruct your &6Sand&r into &6Soul Sand&r. Aside from the vanilla applications of Bubble Elevators and summoning the &eWither&r, Soul Sand is used to alloy &6Soularium&r and can be centrifuged for resources."]
 			id: "1E6CDC008C85D941"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"Atomic Reconstructor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Atomic Reconstructor\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"MV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "173EB624F12777AD"
 				item: "minecraft:soul_sand"
@@ -957,9 +957,9 @@
 		}
 		{
 			dependencies: ["1E6CDC008C85D941"]
-			description: ["{moni.quest.1AFB2AD1A572E1D3.description1}"]
+			description: ["Centrifuge your &6Soul Sand&r to get &6Saltpeter Dust&r, &6Coal Dust&r, &9Oil&r, and some of that original &6Sand&r. This process is quite power-hungry and slow for a main source of these materials, but it'll supplement your other options nicely."]
 			id: "1AFB2AD1A572E1D3"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"MV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "11CDB77540DAC85D"
 				item: {
@@ -984,20 +984,20 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.1AFB2AD1A572E1D3.title}"
+			title: "Saltpeter, Coal, and Oil"
 			x: 3.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["59CC348BC6199793"]
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description1\"},{\"color\":\"gold\",\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description2\"},{\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description3\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"block.thermal.machine_insolator\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2607F8404B56773B\"}},{\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description4\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"block.gtceu.greenhouse\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3A71D736AE5C17E2\"}},{\"translate\":\"moni.quest.0E8C258BD7E36154.rich_description5\"}]"
+				"[\"\",{\"text\":\"To gather \"},{\"color\":\"gold\",\"text\":\"Wood\"},{\"text\":\" at the scale you'll require, you'll have to start off with the \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"Phytogenic Insolator\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2607F8404B56773B\"}},{\"text\":\" and should upgrade to a \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"Greenhouse\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3A71D736AE5C17E2\"}},{\"text\":\" when you unlock it.\"}]"
 				""
-				"{moni.quest.0E8C258BD7E36154.description2}"
+				"Both options require &9Water&r and energy to operate, and accept &6Fertilizer&r to boost output - the &3Greenhouse&r is just far faster."
 			]
 			id: "0E8C258BD7E36154"
 			size: 2.0d
-			subtitle: "{moni.quest.0E8C258BD7E36154.subtitle}"
+			subtitle: "&oPunching trees won't cut it.&r"
 			tasks: [{
 				id: "10903B2BD99A6BDE"
 				item: {
@@ -1009,12 +1009,12 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.0E8C258BD7E36154.title}"
+			title: "Wood"
 			x: 4.0d
 			y: 3.0d
 		}
 		{
-			description: ["{moni.quest.59CC348BC6199793.description1}"]
+			description: ["&6Saplings&r can be dropped when breaking leaves of the corresponding type of tree.\n\nYou'll want to aim for &6Rubber saplings&r in particular, since they provide &6Sticky Resin&r when harvested."]
 			id: "59CC348BC6199793"
 			tasks: [{
 				id: "7FCB53B3E3E4F56C"
@@ -1027,7 +1027,7 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.59CC348BC6199793.title}"
+			title: "Sapling"
 			x: 3.0d
 			y: 5.0d
 		}
@@ -1036,9 +1036,9 @@
 				"59CC348BC6199793"
 				"0E8C258BD7E36154"
 			]
-			description: ["{moni.quest.2BF1E9CC0D7F7C91.description1}"]
+			description: ["If you chose to cultivate &6Rubber Saplings&r, then you will receive &6Sticky Resin&r as a product. &3Centrifuging&r the &rRubber Logs&r you get will net you some extra, alongside &6Carbon Dust&r and &9Methane&r.\n\nThis substance is wonderfully versatile, especially in Early Game. You should definitely passively produce this."]
 			id: "2BF1E9CC0D7F7C91"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.thermal.machine_insolator\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.gtceu.greenhouse\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Phytogenic Insolator\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Greenhouse\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "2A48AD6742E0AF73"
 				item: "gtceu:sticky_resin"
@@ -1052,9 +1052,9 @@
 				"59CC348BC6199793"
 				"2BF1E9CC0D7F7C91"
 			]
-			description: ["{moni.quest.345470975C5570B7.description1}"]
+			description: ["Most forms of plant matter can be crafted or compacted into &6Plant Balls&r. They are generally more useful when &3macerated&r into &6Bio Chaff&r."]
 			id: "345470975C5570B7"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.compressor\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Compressor\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "03F9D0068CD89D92"
 				item: "gtceu:plant_ball"
@@ -1065,9 +1065,9 @@
 		}
 		{
 			dependencies: ["345470975C5570B7"]
-			description: ["{moni.quest.0C80D39012952549.description1}"]
+			description: ["&6Plant Balls&r can be smelted into &6Slime Balls&r if you can't find a &eSlime Chunk&r."]
 			id: "0C80D39012952549"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"block.minecraft.furnace\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.electric_furnace\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Furnace\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Electric Furnace\"},\".\"]"
 			tasks: [{
 				id: "6BE7D65608B5E334"
 				item: "minecraft:slime_ball"
@@ -1078,9 +1078,9 @@
 		}
 		{
 			dependencies: ["345470975C5570B7"]
-			description: ["{moni.quest.1FEC7E9025F6277A.description1}"]
+			description: ["Crush your &6Plant Balls&r into &6Bio Chaff&r."]
 			id: "1FEC7E9025F6277A"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},\".\"]"
 			tasks: [{
 				id: "2A414D121B56DCC8"
 				item: "gtceu:bio_chaff"
@@ -1091,9 +1091,9 @@
 		}
 		{
 			dependencies: ["2BF1E9CC0D7F7C91"]
-			description: ["{moni.quest.5560E43D1B773B93.description1}"]
+			description: ["Raw Rubber can be &3Centrifuged&r from &6Sticky Resin&r, but if you're not after &9Glue&r or &6Plant Balls&r then the &3Extractor&r is faster."]
 			id: "5560E43D1B773B93"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.extractor\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Extractor\"},\".\"]"
 			tasks: [{
 				id: "0E95715740F8359B"
 				item: "gtceu:raw_rubber_dust"
@@ -1104,10 +1104,10 @@
 		}
 		{
 			dependencies: ["2BF1E9CC0D7F7C91"]
-			description: ["{moni.quest.519389755420A7A8.description1}"]
+			description: ["&9Glue&r can be centrifuged from &6Sticky Resin&r. This is the simplest recipe for the stuff, and the cheapest unless you have a surplus of certain chemicals.\n\n&9Glue&r itself has several applications, most of which are &3Assembler&r counterparts to recipes performed in a &3Crafting Table&r."]
 			icon: "gtceu:glue_bucket"
 			id: "519389755420A7A8"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},\".\"]"
 			tasks: [
 				{
 					id: "48CAAA4DA3F8281C"
@@ -1129,10 +1129,10 @@
 				"2AC7A8036CA65AF3"
 				"1FEC7E9025F6277A"
 			]
-			description: ["{moni.quest.3B1873913255E7C0.description1}"]
+			description: ["Although &9Biomass&r can be obtained directly through most types of plant matter, it is more efficient to turn that plant matter into &6Bio Chaff&r before putting it in the &3Brewery&r.\n\nThe &3Pyrolyse Oven&r can be used to make &9Biomass&r from &6Bio Chaff&r with a little more efficiency, but it's significantly slower."]
 			icon: "gtceu:biomass_bucket"
 			id: "3B1873913255E7C0"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.brewery\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.pyrolyse_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Brewery\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Pyrolyse Oven\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [
 				{
 					id: "64C7D02CF6242D24"
@@ -1150,10 +1150,10 @@
 			y: 4.5d
 		}
 		{
-			description: ["{moni.quest.water.description}"]
+			description: ["There are many ways to procure &9Water&r, but the most notable are: &3Water Collectors&r, which are very slow but cheap; &bThermal &3Aqueous Accumulators&r, which are a bit more expensive but way faster; and &bGregTech &3Infinite Water Covers&r, which are much more expensive, but save space because they're covers, and make water 16x faster than &3Accumulators&r.\n\nRight now, you should probably use the &3Aqueous Accumulator&r."]
 			icon: "minecraft:water_bucket"
 			id: "2AC7A8036CA65AF3"
-			subtitle: "{moni.quest.water.subtitle}"
+			subtitle: "&oYes, there's a quest for &9Water&r."
 			tasks: [
 				{
 					id: "66EE299E0F4A6BF8"
@@ -1167,15 +1167,15 @@
 					type: "checkmark"
 				}
 			]
-			title: "{block.minecraft.water}"
+			title: "Water"
 			x: 8.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["1FEC7E9025F6277A"]
-			description: ["{moni.quest.21CD97B41E37D290.description1}"]
+			description: ["You can crush your &6Bio Chaff&r into &6Dirt&r if you don't feel like tearing up tons of topsoil."]
 			id: "21CD97B41E37D290"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},\".\"]"
 			tasks: [{
 				id: "6B484201FA9B4D9E"
 				item: "minecraft:dirt"
@@ -1186,9 +1186,9 @@
 		}
 		{
 			dependencies: ["0E8C258BD7E36154"]
-			description: ["{moni.quest.0C24E6D1F1D2A3AE.description1}"]
+			description: ["Crush your &6Logs&r into &6Wood Pulp&r."]
 			id: "0C24E6D1F1D2A3AE"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.macerator\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Macerator\"},\".\"]"
 			tasks: [{
 				id: "5BB26CEAFE4B5113"
 				item: "gtceu:wood_dust"
@@ -1205,12 +1205,12 @@
 				"779632FC75C4FE6C"
 			]
 			description: [
-				"{moni.quest.483A64A744DA61C5.description1}"
+				"With enough processing, you can make &6Fertilizer&r from &6Saplings&r, &6Logs&r and &9Water&r. This lets you boost your plant-growing machines, multiplying their output."
 				""
-				"{moni.quest.483A64A744DA61C5.description2}"
+				"However, it can be difficult to produce large quantities of &6Fertilizer&r this way. Consider using alternative methods if you need more than you can produce with this approach."
 			]
 			id: "483A64A744DA61C5"
-			subtitle: "{moni.quest.483A64A744DA61C5.subtitle}"
+			subtitle: "Circle of Life"
 			tasks: [{
 				id: "202862FE2147DA1E"
 				item: "gtceu:fertilizer"
@@ -1221,9 +1221,9 @@
 		}
 		{
 			dependencies: ["21CD97B41E37D290"]
-			description: ["{moni.quest.4A0D7BD20D857B73.description1}"]
+			description: ["You can centrifuge your &6Dirt&r into &6Sand&r, but you may find it easier to supplement this step with your &eCobbleworks&r. Ultimately, it's your call."]
 			id: "4A0D7BD20D857B73"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.centrifuge\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"LV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"LV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "6A68E1D21F7FA886"
 				item: "minecraft:sand"
@@ -1234,10 +1234,10 @@
 		}
 		{
 			dependencies: ["3B1873913255E7C0"]
-			description: ["{moni.quest.60A7102F5BA0DE19.description1}"]
+			description: ["When sourcing &9Ethanol&r from &9Biomass&r, you should use a &3Distillery&r instead of a &3Distillation Tower&r - the extra &9Water&r byproduct is not worth the larger footprint and reduced &6Wood Pulp&r output."]
 			icon: "gtceu:ethanol_bucket"
 			id: "60A7102F5BA0DE19"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.distillery\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Distillery\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"MV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [
 				{
 					id: "794EFF38BC2B0474"
@@ -1256,9 +1256,9 @@
 		}
 		{
 			dependencies: ["0E8C258BD7E36154"]
-			description: ["{moni.quest.428C5BFD6A614FE2.description1}"]
+			description: ["Bake your &6Logs&r into &6Charcoal&r and &9Creosote&r.\n\n&3Coke Ovens&r will suffice at first, but &3Pyrolyse Ovens&r are several times faster and more efficient."]
 			id: "428C5BFD6A614FE2"
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.coke_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step2\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.pyrolyse_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Coke Oven\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Pyrolyse Oven\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"MV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [{
 				id: "24B053EBD3DD3EFB"
 				item: {
@@ -1279,17 +1279,17 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.428C5BFD6A614FE2.title}"
+			title: "Charcoal and Creosote"
 			x: 2.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["0E8C258BD7E36154"]
-			description: ["{moni.quest.57C389A59CA5E00F.description1}"]
+			description: ["With a &3Pyrolyse Oven&r, you can bake &6Logs&r for &9Charcoal Byproducts&r or any of its distillates. Once you hit &6HV&r, these can be further distilled and processed into useful chemicals like &9Toluene&r, &9Phenol&r, &9Benzene&r, &9Methanol&r, &9Acetone&r, &9Acetic Acid&r, and others."]
 			icon: "gtceu:charcoal_byproducts_bucket"
 			id: "57C389A59CA5E00F"
 			size: 1.25d
-			subtitle: "[\"\",{\"italic\":\"true\",\"translate\":\"moni.processing.step1\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"gtceu.pyrolyse_oven\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step3\"},{\"italic\":\"true\",\"bold\":\"true\",\"translate\":\"MV\"},{\"italic\":\"true\",\"translate\":\"moni.processing.step4\"}]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Pyrolyse Oven\"},{\"italic\":\"true\",\"text\":\" at \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"MV\"},{\"italic\":\"true\",\"text\":\" or higher.\"}]"
 			tasks: [
 				{
 					id: "06604A48AED2B19B"
@@ -1311,7 +1311,7 @@
 				"1FEC7E9025F6277A"
 				"0C24E6D1F1D2A3AE"
 			]
-			description: ["{moni.quest.3173BEB39CD72C40.description1}"]
+			description: ["&6Compost Mix&r is a combination of &6Wood Pulp&r and &6Bio Chaff&r that can be used as a way to produce &6Fertilizer&r using organic matter, or &6Compost&r without a &3Composter&r."]
 			id: "779632FC75C4FE6C"
 			tasks: [{
 				id: "3173BEB39CD72C40"
@@ -1322,5 +1322,5 @@
 			y: 1.0d
 		}
 	]
-	title: "{moni.chapter.055C0B43FE14258F.title}"
+	title: "Renewable Production"
 }
