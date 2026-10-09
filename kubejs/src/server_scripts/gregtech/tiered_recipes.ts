@@ -1,6 +1,4 @@
-// priority: -9999
 // This file also gens recipes for kubejs added recipes!
-// @ts-check You might need probejs to look at this file with a straight face :P
 
 /**
  * Automatic generation of tiered recipes
@@ -8,32 +6,26 @@
  */
 
 
-/** @typedef {import("../../dx/typings/GTJSONRecipe.d.mts").GTJSONRecipe} GTJSONRecipe */
-/** @typedef {import("../../dx/typings/GTJSONRecipe.d.mts").MCIdentifier} MCIdentifier */
+import type { GTJSONRecipe, GTJSONRecipeCondition, MCIdentifier } from "../../types/GTJSONRecipe.ts"
 
 const ExtendedOutputItem = Java.loadClass("com.gregtechceu.gtceu.integration.kjs.recipe.components.ExtendedOutputItem")
 
 /**
- * @type {[id: MCIdentifier, ratio: number][]}
  * Ratio tells how much more efficient a solder is
  */
-const solders_and_ratios = [
+const solders_and_ratios: [id: MCIdentifier, ratio: number][] = [
     ["gtceu:tin", 1],                       // Tier 0
     ["gtceu:soldering_alloy", 1],           // Tier 1
     ["gtceu:advanced_soldering_alloy", 2],  // Tier 2
     ["gtceu:living_soldering_alloy", 4],    // Tier 3
 ]
 
-/**
- * @type {[
- *  predicate: (_ : Internal.RecipeJS) => boolean,
- *  removeBaseRecipe: boolean,
- *  minSolderTier: number,
- *  maxSolderTier?: number,
- * ][]}
- *
- */
-const solder_rules = [
+const solder_rules: [
+    predicate: (_ : Internal.RecipeJS) => boolean,
+    removeBaseRecipe: boolean,
+    minSolderTier: number,
+    maxSolderTier?: number,
+][] = [
     // Don't alter any solder solidifying recipes
     [(javaRecipe) => {
         return RegExp(/^gtceu:fluid_solidifier\/solidify_(advanced_|living_)?soldering_alloy_/).test(javaRecipe.getId())
@@ -121,14 +113,11 @@ const solder_rules = [
     }, false, 0, 0],
 ]
 
-/** @param {GTJSONRecipe} recipe */
-function parseRecipe(recipe) {
+function parseRecipe(recipe: GTJSONRecipe) {
     let {duration, recipeConditions} = recipe
 
-    /** @type {number | null} */
-    let circuitNumber = null
-    /** @type {(n: number) => null} */
-    let setCircuitNumber = n => {
+    let circuitNumber: number | null = null
+    let setCircuitNumber = (n: number): null => {
         if (circuitNumber !== null)
             throw new Error("Recipe has multiple circuit numbers???")
         circuitNumber = n
@@ -139,6 +128,8 @@ function parseRecipe(recipe) {
     let [newInputItems, newOutputItems] = [recipe.inputs?.item, recipe.outputs?.item].map(items =>
         items && items.map(i => {
             let c = i.content
+            if (Array.isArray(c) || !("type" in c))
+                throw new Error("Recipe uses complicated item stack, I'd rather explode")
             switch(c.type) {
             case "gtceu:circuit":
                 return setCircuitNumber(c.configuration)
@@ -173,6 +164,8 @@ function parseRecipe(recipe) {
             if (i.chance !== i.maxChance)
                 throw new Error("Chanced fluid recipes are not yet supported")
             let c = i.content
+            if (!("value" in c))
+                throw new Error("Ranged fluid recipes are not yet supported")
             let [val] = c.value
             if (val === undefined)
                 return undefined
@@ -189,29 +182,21 @@ function parseRecipe(recipe) {
         ? recipe.tickInputs.eu[0].content
         : null
 
-    /** @param {number} by */
-    let multiplyRecipe = by => {
+    let multiplyRecipe = (by: number) => {
         for(let matters of [newInputItems, newOutputItems, newInputFluids, newOutputFluids])
             if(matters)
                 for(let matter of matters)
                     matter.amount *= by
         duration *= by
     }
-    /** @param {number} by */
-    let isRecipeDivisible = by =>
+    let isRecipeDivisible = (by: number) =>
         [newInputItems, newOutputItems, newInputFluids, newOutputFluids]
             .filter(matters => matters)
             .every(matters => matters.every(
                 matter => matter.amount % by === 0
             )) && duration % by === 0
 
-    /**
-     * @param {() => void} cb
-     * @param {number} multiplier
-     * @param {number} divisor
-     * @param {number=} maxTotalDivisor
-     */
-    let useMultiplier = (cb, multiplier, divisor, maxTotalDivisor) => {
+    let useMultiplier = (cb: () => void, multiplier: number, divisor: number, maxTotalDivisor?: number) => {
         maxTotalDivisor = maxTotalDivisor ?? multiplier
         let divisorInv = 1 / divisor
         multiplyRecipe(multiplier)
@@ -223,20 +208,12 @@ function parseRecipe(recipe) {
         }
     }
 
-    /**
-     * @param {Internal.RecipesEventJS} registerEvent
-     * @param {string} newRecipeId
-     * @param {string} machineName
-     */
-    let register = (registerEvent, newRecipeId, machineName) => {
-        /** @type {Internal.GTRecipeSchema$GTRecipeJS} */
-        let newRecipe = registerEvent.recipes.gtceu[machineName](newRecipeId).duration(duration)
+    let register = (registerEvent: Internal.RecipesEventJS, newRecipeId: string, machineName: string) => {
+        let newRecipe: Internal.GTRecipeSchema$GTRecipeJS = registerEvent.recipes.gtceu[machineName](newRecipeId).duration(duration)
 
         if(newInputItems) for (let i of newInputItems)
             if(i.tag) {
-                /** @type {InputItem_} */
-                // @ts-expect-error
-                let input = `${i.amount}x #${i.tag}`
+                let input = `${i.amount}x #${i.tag}` as InputItem_
                 newRecipe.itemInputs(input)
             } else if(i.item) {
                 if(i.chance === 0) {
@@ -246,9 +223,7 @@ function parseRecipe(recipe) {
                 }
             }
         if(newOutputItems) for (let i of newOutputItems) {
-            /** @type {Internal.ItemStack} */
-            // @ts-expect-error
-            let itemStack = i.item ?? `#${i.tag}`
+            let itemStack = (i.item ?? `#${i.tag}`) as Internal.ItemStack_
             newRecipe = newRecipe.chancedOutput(ExtendedOutputItem.of(Item.of(itemStack, i.amount)), 10000 * i.chance / i.maxChance, 0)
         }
 
@@ -260,14 +235,14 @@ function parseRecipe(recipe) {
         if(circuitNumber !== null)
             newRecipe = newRecipe.circuit(circuitNumber)
         if(eut !== null)
-            newRecipe = newRecipe.EUt(IOEnergyStack.fromVoltage(eut))
+            newRecipe = newRecipe.EUt(typeof eut === "number"
+                ? IOEnergyStack.fromVoltage(eut)
+                : IOEnergyStack.fromVA(eut.voltage ?? 0, eut.amperage ?? 1))
         if (recipeConditions) {
-            /** @type {import("../../dx/typings/GTJSONRecipe.d.mts").GTJSONRecipeCondition[]} */
-            // @ts-expect-error
             let conditions = recipeConditions.map(cond => "data" in cond
                 ? Object.assign({ type: cond.type }, cond.data)
                 : cond
-            )
+            ) as GTJSONRecipeCondition[]
 
             let cleanroomCondition = conditions.find(cond => cond.type === "cleanroom")
             if(cleanroomCondition) {
@@ -298,22 +273,16 @@ function parseRecipe(recipe) {
     }
 }
 
-/** @type {Set<string>} */
-const checkedRecipeIds = new Set()
+const checkedRecipeIds = new Set<string>()
 
-/**
- * @param {Internal.RecipesEventJS} event
- * @param {Internal.RecipeJS} javaRecipe
- */
-function generateAlternatives(event, javaRecipe) {
+function generateAlternatives(event: Internal.RecipesEventJS, javaRecipe: Internal.RecipeJS) {
     let recipeId = `${javaRecipe.getId()}` // HAS TO be a primitive because it is used in a set
     if (javaRecipe.removed || checkedRecipeIds.has(recipeId))
         return
     checkedRecipeIds.add(recipeId)
 
     javaRecipe.serialize()
-    /** @type {GTJSONRecipe} */
-    let recipe = JSON.parse(javaRecipe.json.toString())
+    let recipe: GTJSONRecipe = JSON.parse(javaRecipe.json.toString())
 
     // Filter out non-GT-machine recipes
     if(!(typeof recipe === "object" && typeof recipe.duration === "number"))
@@ -324,7 +293,7 @@ function generateAlternatives(event, javaRecipe) {
 
     // Soldering alloy tiers
     if(recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
-        i.content.value.some(v => "tag" in v
+        "value" in i.content && i.content.value.some(v => "tag" in v
             ? v.tag === "forge:tin" || RegExp(/soldering_alloy/).test(v.tag)
             : v.fluid === "gtceu:tin" || RegExp(/soldering_alloy/).test(v.fluid)
         )
@@ -359,6 +328,7 @@ function generateAlternatives(event, javaRecipe) {
 
     // Complex SMDs
     if(recipe.inputs?.item && recipe.inputs.item.some(i =>
+        !Array.isArray(i.content) && "type" in i.content &&
         i.content.type === "gtceu:sized" &&
         "item" in i.content.ingredient &&
         i.content.ingredient.item.startsWith("gtceu:advanced_smd_") &&
@@ -373,9 +343,7 @@ function generateAlternatives(event, javaRecipe) {
             // Replace all advanced smd by complex smd
             for(let inp of r.newInputItems) {
                 if (!inp.item) continue
-                /** @type {null | [string, "_smd_capacitor"]} */
-                // @ts-expect-error
-                let match = inp.item.match(/^gtceu:advanced(_smd_.*)$/)
+                let match = inp.item.match(/^gtceu:advanced(_smd_.*)$/) as null | [string, "_smd_capacitor"]
                 if(!match) continue
                 inp.item = `kubejs:complex${match[1]}`
                 inp.amount /= 4
@@ -386,7 +354,7 @@ function generateAlternatives(event, javaRecipe) {
 
     // Oxalic Acid etchant
     if(recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
-        i.content.value.some(v => "tag" in v
+        "value" in i.content && i.content.value.some(v => "tag" in v
             ? v.tag === "forge:iron_iii_chloride"
             : v.fluid === "gtceu:iron_iii_chloride"
         ) && recipeName.match(/circuit_board_iron3$/)
@@ -409,7 +377,7 @@ function generateAlternatives(event, javaRecipe) {
 
     // Hexafluorosilicic circuit boards
     if(recipe.inputs?.fluid && recipe.inputs.fluid.some(i =>
-        i.content.value.some(v => "tag" in v
+        "value" in i.content && i.content.value.some(v => "tag" in v
             ? v.tag === "forge:sulfuric_acid"
             : v.fluid === "gtceu:sulfuric_acid"
         ) && recipeName.match(/board/)

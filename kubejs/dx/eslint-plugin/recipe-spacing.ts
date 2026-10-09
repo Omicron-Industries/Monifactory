@@ -1,4 +1,3 @@
-// @ts-check
 /**
  * An ESLint rule that defines spacing in recipe registrations
  */

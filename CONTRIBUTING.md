@@ -246,6 +246,6 @@ The Deprecation Pipeline acts as a "safety net" for certain cases of this type o
 This process can be performed for items, fluids, and blocks. New deprecation entries should be put [deprecations.js](kubejs\startup_scripts\deprecations.js), and deprecation entries should be removed two minor versions after they are created.
 
 ## Tiered recipe generation ##
-In GregTech, there are many cases of recipes that are highly similar to one another, but with minor differences in the inputs such as the type of plastic or rubber used, or the tier and quantity of circuit component consumed. The [Tiered Recipe Generator](kubejs\server_scripts\gregtech\tiered_recipes.js) offers a way to generate these types of recipes by copying existing recipes, then performing small modifications before registering the new recipe.
+In GregTech, there are many cases of recipes that are highly similar to one another, but with minor differences in the inputs such as the type of plastic or rubber used, or the tier and quantity of circuit component consumed. The [Tiered Recipe Generator](kubejs/src/server_scripts/gregtech/tiered_recipes.ts) offers a way to generate these types of recipes by copying existing recipes, then performing small modifications before registering the new recipe.
 
 This file also makes use of TypeScript to enforce strict typing. It is easily the most complicated KubeJS file, and beginners are recommended to avoid it. 

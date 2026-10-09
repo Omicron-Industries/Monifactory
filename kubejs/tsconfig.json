@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "preserve",
+        "lib": ["ES2023"],
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+
+        "noEmit": true,
+        "incremental": true,
+        "tsBuildInfoFile": ".tsbuild/tooling.tsbuildinfo",
+        "erasableSyntaxOnly": true,
+        "verbatimModuleSyntax": true,
+        "allowImportingTsExtensions": true,
+    },
+    "include": [
+        "dx",
+        "*.ts",
+    ],
+    "references": [
+        { "path": "src/startup_scripts" },
+        { "path": "src/server_scripts" },
+        { "path": "src/client_scripts" },
+    ],
+}
