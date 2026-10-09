@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     }
 
     // Thermal Fluids
-    thermalextractsolidify("primal_mana", "kubejs:primal_mana", Fluid.of("gtceu:mana", 250));
+    thermalextractsolidify("primal_mana", "kubejs:primal_mana", Fluid.of("monilabs:mana", 250));
     thermalextractsolidify("cryotheum", "kubejs:cryotheum_dust", Fluid.of("kubejs:molten_cryotheum", 250));
     thermalextractsolidify("pyrotheum", "kubejs:pyrotheum_dust", Fluid.of("kubejs:molten_pyrotheum", 250));
     thermalextractsolidify("aerotheum", "kubejs:aerotheum_dust", Fluid.of("kubejs:molten_aerotheum", 250));

@@ -569,4 +569,7 @@ ServerEvents.recipes(event => {
         .duration(16)
         .EUt(GTValues.VA[GTValues.MV])
         .posY(-64, -59)
+
+    // Remove Solar Panel Artifact
+    event.remove({ output: "enderio:photovoltaic_composite"})
 })

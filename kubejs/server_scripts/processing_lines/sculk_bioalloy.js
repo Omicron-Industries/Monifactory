@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
         .itemInputs("kubejs:amalgamated_sculk")
         .inputFluids("gtceu:bioalloy_base 1008")
         .outputFluids("monilabs:sculk_bioalloy 1440")
-        .xpRange(64000, 80000)
+        .xpRange(64000, 72000)
         .duration(60)
         .EUt(GTValues.VA[GTValues.ZPM])
 })

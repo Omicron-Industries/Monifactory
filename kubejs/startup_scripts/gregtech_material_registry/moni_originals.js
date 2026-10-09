@@ -5,16 +5,6 @@
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-
-    // Primal Mana is shoved here at the start to make absolute sure nothing that uses it is declared before it
-
-    event.create("mana")
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get("mana"))
-        .iconSet("mana")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-
     // Hyperdegenerate Matter *should* be in the naqfuel file, but it's used in HDD
 
     event.create("hyperdegenerate_matter")
@@ -93,7 +83,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .ingot().fluid()
         .color(0xc05cff).secondaryColor(0xff00e0).iconSet("magic")
         .blastTemp(9200, "highest", GTValues.VA[GTValues.UV], 1200)
-        .components("4x ardite", "4x cobalt", "mana")
+        .components("4x ardite", "4x cobalt", "monilabs:mana")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_SMALL_GEAR)
 
 

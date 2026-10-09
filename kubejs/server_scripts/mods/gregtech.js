@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     // Other Quantum Flux Recipes
     event.recipes.gtceu.mixer("quantum_flux_hm")
         .itemInputs("redstone_arsenal:flux_gem")
-        .inputFluids(Fluid.of("gtceu:mana", 250))
+        .inputFluids(Fluid.of("monilabs:mana", 250))
         .itemOutputs("8x monilabs:quantum_flux")
         .duration(100)
         .EUt(GTValues.VA[GTValues.HV])

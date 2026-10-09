@@ -48,6 +48,7 @@ ServerEvents.recipes(event => {
             .itemOutputs(
                 "48x minecraft:slime_ball",
                 "64x minecraft:prismarine_shard",
+                "32x minecraft:prismarine_shard",
                 "24x minecraft:prismarine_crystals"
             )
             .requiredMicroverse(2) // Hostile

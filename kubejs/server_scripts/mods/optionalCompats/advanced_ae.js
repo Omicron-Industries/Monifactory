@@ -18,7 +18,7 @@ if (Platform.isLoaded("advanced_ae")) {
         // Quantum Infusion
         event.recipes.gtceu.mixer("quantum_infusion")
             .itemInputs("ae2:singularity", "8x monilabs:quantum_flux", "4x #forge:dusts/ender_pearl", "2x gtceu:obsidian_dust")
-            .inputFluids("gtceu:mana 1000")
+            .inputFluids("monilabs:mana 1000")
             .circuit(4)
             .outputFluids("advanced_ae:quantum_infusion_source 2000")
             .duration(10 * 20)

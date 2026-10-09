@@ -84,6 +84,8 @@ global.itemNukeList = [
     "enderio:vibrant_photovoltaic_module",
     "enderio:energetic_photovoltaic_module",
     "enderio:pulsating_photovoltaic_module",
+    "enderio:photovoltaic_plate",
+    "enderio:photovoltaic_composite",
     "enderio:light",
     "enderio:light_inverted",
     "enderio:powered_light",
