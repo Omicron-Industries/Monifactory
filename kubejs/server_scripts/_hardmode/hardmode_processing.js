@@ -351,42 +351,6 @@ ServerEvents.recipes(event => {
             .itemOutputs("2x gtceu:naquadah_dust")
             .outputFluids("gtceu:neocryolite 3950", "gtceu:oxygen 3000")
             .duration(250).EUt(GTValues.VA[GTValues.IV])
-
-        // Tributyl Phosphate
-        event.recipes.gtceu.chemical_reactor("phosphorus_trichloride")
-            .itemInputs("gtceu:phosphorus_dust")
-            .inputFluids("gtceu:chlorine 3000")
-            .outputFluids("gtceu:phosphorus_trichloride 1000")
-            .duration(300).EUt(GTValues.VA[GTValues.HV])
-
-        event.recipes.gtceu.large_chemical_reactor("phosphoryl_chloride")
-            .itemInputs("7x gtceu:phosphorus_pentoxide_dust")
-            .inputFluids("gtceu:phosphorus_trichloride 3000", "gtceu:chlorine 6000")
-            .outputFluids("gtceu:phosphoryl_chloride 5000")
-            .duration(800).EUt(3840)
-
-        event.recipes.gtceu.chemical_reactor("butanol")
-            .inputFluids("gtceu:butyraldehyde 1000", "gtceu:hydrogen 2000")
-            .notConsumable("gtceu:nickel_dust")
-            .outputFluids("gtceu:butanol 1000")
-            .duration(300).EUt(GTValues.VA[GTValues.HV])
-
-        event.recipes.gtceu.large_chemical_reactor("tributyl_phosphate")
-            .inputFluids("gtceu:phosphoryl_chloride 1000", "gtceu:butanol 3000")
-            .outputFluids("gtceu:tributyl_phosphate 1000")
-            .duration(600).EUt(23040)
-
-        // Rare Earth
-        event.recipes.gtceu.electrolyzer("electrolyzing_rare_earth_with_tributyl_phosphate")
-            .itemInputs("gtceu:rare_earth_dust")
-            .inputFluids("gtceu:tributyl_phosphate 150")
-            .chancedOutput("gtceu:neodymium_dust", 1500, 0)
-            .chancedOutput("gtceu:samarium_dust", 1500, 0)
-            .chancedOutput("gtceu:yttrium_dust", 1500, 0)
-            .chancedOutput("gtceu:lanthanum_dust", 1500, 0)
-            .chancedOutput("gtceu:lutetium_dust", 600, 0)
-            .chancedOutput("gtceu:europium_dust", 600, 0)
-            .duration(50).EUt(GTValues.VA[GTValues.UV])
     }
 
     if (doHarderRecipes) {

@@ -313,28 +313,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 // I don't know what this is for
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("butanol")
-        .fluid()
-        .color(0xc7af2e)
-        .components("4x carbon", "10x hydrogen", "1x oxygen")
-        .formula("C4H9OH")
-
-    event.create("phosphorus_trichloride")
-        .fluid()
-        .color(0xe8c474)
-        .components("1x phosphorus", "3x chlorine")
-
-    event.create("phosphoryl_chloride")
-        .fluid()
-        .color(0xe8bb5b)
-        .components("1x phosphorus", "1x oxygen", "3x chlorine")
-
-    event.create("tributyl_phosphate")
-        .fluid()
-        .color(0xe8c474)
-        .components("12x carbon", "27x hydrogen", "4x oxygen", "1x phosphorus")
-        .formula("(C4H9O)3PO")
-
     event.create("tantalum_pentoxide")
         .dust()
         .color(0x72728A).iconSet("rough")
