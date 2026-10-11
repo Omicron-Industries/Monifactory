@@ -504,7 +504,10 @@ global.itemNukeList = [
     // Pipez
     "pipez:gas_pipe",
     "pipez:universal_pipe",
-    "pipez:infinity_upgrade"
+    "pipez:infinity_upgrade",
+
+    // Pipez Optimizer
+    /^pipez_optimizer:[\w_]+/
 ];
 
 // Create Compat
