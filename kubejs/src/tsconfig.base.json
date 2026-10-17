@@ -1,0 +1,17 @@
+{
+    // Common KubeTS config.
+    "compilerOptions": {
+        "composite": true,
+        "target": "esnext",
+        "module": "preserve",
+        "lib": ["ES2025"],
+        "types": [],
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+
+        "emitDeclarationOnly": true,
+        "erasableSyntaxOnly": true,
+        "verbatimModuleSyntax": true,
+        "allowImportingTsExtensions": true,
+    },
+}

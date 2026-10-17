@@ -1,0 +1,10 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "outDir": "../../.tsbuild/server_scripts",
+    },
+    "include": [
+        ".",
+        "../types",
+    ],
+}

@@ -1,4 +1,3 @@
-// @ts-check
 /**
  * An ESLint rule that ensures all files have a C-style header, just like this one.
  */

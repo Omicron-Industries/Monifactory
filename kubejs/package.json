@@ -1,10 +1,35 @@
 {
+  "scripts": {
+    "build": "rollup -c rollup.config.ts"
+  },
+  "type": "module",
   "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/helper-hoist-variables": "^7.24.7",
+    "@babel/plugin-transform-runtime": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-typescript": "^7.29.7",
+    "@babel/runtime": "^7.29.7",
     "@eslint/js": "^9.18.0",
-    "eslint": "^9.24.0"
+    "@rollup/plugin-babel": "^7.1.0",
+    "@rollup/plugin-commonjs": "^29.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-terser": "^1.0.0",
+    "@types/babel__core": "^7.20.5",
+    "babel-plugin-polyfill-corejs3": "^0.14.2",
+    "core-js": "^3.50.0",
+    "core-js-pure": "^3.50.0",
+    "eslint": "^9.24.0",
+    "jiti": "^2.7.0",
+    "rollup": "^4.63.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.71.0"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin-js": "^2.13.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "@typescript-eslint/utils": "^8.21.0"
+  },
+  "engines": {
+    "node": ">=23.6.0"
   }
 }
