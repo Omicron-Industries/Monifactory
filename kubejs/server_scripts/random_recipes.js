@@ -805,15 +805,6 @@ ServerEvents.recipes(event => {
             .duration(100)
     }
 
-    // Skip recipe for conveniently converting Ilmenite directly to Titanium Tetrachloride and Iron III Chloride
-    event.recipes.gtceu.large_chemical_reactor("titanium_tetrachloride_from_ilmenite")
-        .itemInputs("10x gtceu:ilmenite_dust", "5x gtceu:carbon_dust")
-        .inputFluids("gtceu:chlorine 14000")
-        .outputFluids("gtceu:titanium_tetrachloride 2000", "gtceu:iron_iii_chloride 2000", "gtceu:carbon_monoxide 4000", "gtceu:carbon_dioxide 1000")
-        .circuit(24)
-        .duration(120 * 20)
-        .EUt(GTValues.VA[GTValues.EV])
-
     // Aluminothermic process for reducing Chromite (Not so sure about this one)
     event.recipes.gtceu.large_chemical_reactor("chromium_from_chromite")
         .itemInputs("7x gtceu:purified_chromite_ore", "3x gtceu:aluminium_dust")
