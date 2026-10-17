@@ -126,15 +126,15 @@
 		{
 			dependencies: ["79EFCD8E01384C0C"]
 			description: [
-				"{moni.quest.04EABD3D2C72D2C5.description1}"
+				"Organic processes require a different kind of sterilization."
 				""
-				"{moni.quest.04EABD3D2C72D2C5.description2}"
+				"Like with the Cleanroom you'll need to make some filter casings, but this time you're keeping out microbes instead of particles. You'll need &3Fusion MK II&r to get the &6Tritanium&r for them."
 				""
-				"{moni.quest.04EABD3D2C72D2C5.description3}"
+				"Unfortunately, these filters can't be used on a Cleanroom you can enter - you would contaminate it immediately. They're used in the Sculk Vat instead."
 				""
-				"{moni.quest.04EABD3D2C72D2C5.description4}"
+				"To run Sterile Cleanroom recipes inside regular multiblocks, you'll need a &6Sterile Cleaning Maintenance Hatch&r."
 				""
-				"{moni.quest.04EABD3D2C72D2C5.description5}"
+				"&cNote: Sterile Cleaning Hatches do not allow for regular Cleanroom recipes, and putting a multiblock machine with one in a regular Cleanroom will not change that.&r"
 			]
 			id: "04EABD3D2C72D2C5"
 			rewards: [{
@@ -155,18 +155,18 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.04EABD3D2C72D2C5.title}"
+			title: "&2A Different Type of Clean"
 			x: 3.75d
 			y: -0.25d
 		}
 		{
 			dependencies: ["12E06D4D898F3E58"]
 			description: [
-				"{moni.quest.1AC91A3E05215569.description1}"
+				"&6Bacterial Sludge&r will be used in the Wetware processes. It can also replace &6Europium&r when regrowing &6crystal chips&r."
 				""
-				"{moni.quest.1AC91A3E05215569.description2}"
+				"Combining &6Biomass&r with &6Bacteria&r will grant you Bacterial Sludge."
 				""
-				"{moni.quest.1AC91A3E05215569.description3}"
+				"You will also get a bit back from growing &6Stem Cells&r later."
 			]
 			icon: "gtceu:bacterial_sludge_bucket"
 			id: "1AC91A3E05215569"
@@ -189,16 +189,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.1AC91A3E05215569.title}"
+			title: "&2Bacterial Sludge"
 			x: 1.25d
 			y: 1.25d
 		}
 		{
 			dependencies: ["1AC91A3E05215569"]
 			description: [
-				"{moni.quest.35D128D56DAFDFAA.description1}"
+				"Use &6Uranium-238&r (or more efficiently, &6Uranium-235&r) to enrich &6Bacterial Sludge&r, and distill it to &6Mutagen&r. You can also use &6Naquadria&r to double your &6Enriched Bacterial Sludge&r yield."
 				""
-				"{moni.quest.35D128D56DAFDFAA.description2}"
+				"Mutagen is used in &6Sterilized Growth Medium&r production."
 			]
 			icon: "gtceu:mutagen_bucket"
 			id: "35D128D56DAFDFAA"
@@ -221,22 +221,22 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.35D128D56DAFDFAA.title}"
+			title: "&2Mutagen"
 			x: 0.25d
 			y: 1.25d
 		}
 		{
 			dependencies: ["35D128D56DAFDFAA"]
 			description: [
-				"{moni.quest.2F6EC962007FA9FB.description1}"
+				"&9Sterilized Growth Medium&r is needed for &6Wetware Circuits&r."
 				""
-				"{moni.quest.2F6EC962007FA9FB.description2}"
+				"You'll need to mix &6Mincemeat&r, &2Calcium, Salt, Agar, and Mutagen&r in a mixer to make &9Raw Growth Medium&r, then use a &3Fluid Heater&r to sterilize it. &2This is a significantly more involved process than before.&r"
 				""
-				"{moni.quest.2F6EC962007FA9FB.description3}"
+				"Mincemeat comes from pulverizing any kind of animal meat. A &aFisher&r might be useful for this endeavor - especially &bThermal's&r &6Aquatic Entangler&r which can operate passively, produces only &6Fishes&r, and &eaccepts augments&r."
 				""
-				"{moni.quest.2F6EC962007FA9FB.description4}"
+				"Alternatively, you might be able to purify &6Rotten Flesh&r and get useful products out of it."
 				""
-				"{moni.quest.2F6EC962007FA9FB.description5}"
+				"&2Agar is produced from Mincemeat through multiple steps."
 			]
 			icon: "gtceu:sterilized_growth_medium_bucket"
 			id: "2F6EC962007FA9FB"
@@ -259,16 +259,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.2F6EC962007FA9FB.title}"
+			title: "&2Sterilized Growth Medium"
 			x: -0.75d
 			y: 1.25d
 		}
 		{
 			dependencies: ["0F6B344C265D1FBB"]
 			description: [
-				"{moni.quest.4AC51394FB5152E5.description1}"
+				"The most advanced substrate available, prepared for bleeding-edge bioengineering technology."
 				""
-				"{moni.quest.4AC51394FB5152E5.description2}"
+				"&6Wetware Circuit Boards&r are the basis of &6Neuro Processing Units&r."
 			]
 			icon: "gtceu:wetware_printed_circuit_board"
 			id: "4AC51394FB5152E5"
@@ -299,7 +299,7 @@
 				"039F70814051413E"
 				"7D4B29BA4D8CB153"
 			]
-			description: ["{moni.quest.0F6B344C265D1FBB.description1}"]
+			description: ["Each craft in an &dLuV &3Chemical Reactor&r takes five minutes, so it's probably a good idea to have a machine passively running this recipe. At least you're guaranteed &264 from a craft."]
 			id: "0F6B344C265D1FBB"
 			rewards: [{
 				id: "2197DF9CB672D42E"
@@ -308,7 +308,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "{moni.quest.0F6B344C265D1FBB.subtitle}"
+			subtitle: "Just ignore the protesters outside your base."
 			tasks: [{
 				id: "360EB81FFBAF3EFD"
 				item: "gtceu:stem_cells"
@@ -320,11 +320,11 @@
 		{
 			dependencies: ["49B872B193268554"]
 			description: [
-				"{moni.quest.039F70814051413E.description1}"
+				"\"&6Dragon Eggs&r?\" You might ask. Yep."
 				""
-				"{moni.quest.039F70814051413E.description2}"
+				"The next circuit theme, Wetware, will require a lot of them."
 				""
-				"{moni.quest.039F70814051413E.description3}"
+				"&6Tier Six Microminers&r are the first option to get some eggs (enough for this quest, as it happens). Later on, you'll also get a much better mission for them using a &6Tier Eight Microminer&r."
 			]
 			id: "039F70814051413E"
 			rewards: [{
@@ -339,7 +339,7 @@
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
-			title: "{moni.quest.039F70814051413E.title}"
+			title: "Breaking Some Eggs"
 			x: -1.75d
 			y: 0.25d
 		}
@@ -350,9 +350,9 @@
 				"44B0AB41C076E779"
 			]
 			description: [
-				"{moni.quest.5FE96C30454A0374.description1}"
+				"The first source of &9Warden Hearts&r and the only source of &9Lair of The Warden Data&r."
 				""
-				"{moni.quest.5FE96C30454A0374.description2}"
+				"As a bonus, it also brings back &9Sculk Catalysts, Warden Tendrils, &2Blocks of Ruthenium&r, and plenty of other different precious metals and gems."
 			]
 			id: "5FE96C30454A0374"
 			rewards: [{
@@ -367,7 +367,7 @@
 				item: "kubejs:microminer_t7"
 				type: "item"
 			}]
-			title: "{moni.quest.5FE96C30454A0374.title}"
+			title: "&9Tier Seven Microminer"
 			x: 0.75d
 			y: 3.5d
 		}
@@ -378,11 +378,11 @@
 				"37DC6C37EA24BF4D"
 			]
 			description: [
-				"{moni.quest.7C89BC235C988689.description1}"
+				"&6Bathyal Energy Cores&r are your first proper &6Energy Cores&r."
 				""
-				"{moni.quest.7C89BC235C988689.description2}"
+				"Just like all future energy cores, they will need to be filled with sculk and then charged."
 				""
-				"{moni.quest.7C89BC235C988689.description3}"
+				"Charging can be done in &3Auto Chargers&r from &bGregTech Modern Utilities&r, which function identically to normal &bGregTech&r &3Turbo Chargers&r but with the capability to output charged items."
 			]
 			id: "7C89BC235C988689"
 			rewards: [{
@@ -397,13 +397,13 @@
 				item: "kubejs:bathyal_energy_core"
 				type: "item"
 			}]
-			title: "{moni.quest.7C89BC235C988689.title}"
+			title: "&9Bathyal Energy Core"
 			x: 5.25d
 			y: 3.5d
 		}
 		{
 			dependencies: ["5FE96C30454A0374"]
-			description: ["{moni.quest.7FAB6FD0A054443E.description1}"]
+			description: ["&6Warden Hearts&r are needed in making &6Cryococcus&r."]
 			id: "7FAB6FD0A054443E"
 			rewards: [{
 				id: "2AA894050D239DEE"
@@ -411,19 +411,19 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.7FAB6FD0A054443E.subtitle}"
+			subtitle: "It continues to beat, even after removal from its host."
 			tasks: [{
 				id: "7615C990816E6132"
 				item: "kubejs:warden_heart"
 				type: "item"
 			}]
-			title: "{moni.quest.7FAB6FD0A054443E.title}"
+			title: "&9Warden Hearts"
 			x: 2.25d
 			y: 4.25d
 		}
 		{
 			dependencies: ["7C89BC235C988689"]
-			description: ["{moni.quest.713FAECEE5046121.description1}"]
+			description: ["The multiblock uses &6Energy Cores&r to release extremely large amounts of energy at once to craft things."]
 			icon: "gtceu:discharger"
 			id: "713FAECEE5046121"
 			rewards: [{
@@ -433,7 +433,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.0d
-			subtitle: "{moni.quest.713FAECEE5046121.subtitle}"
+			subtitle: "What good is a battery if you don't use it?"
 			tasks: [
 				{
 					id: "3C9333ECA3F6B5F9"
@@ -521,16 +521,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.713FAECEE5046121.title}"
+			title: "&9Discharger"
 			x: 3.75d
 			y: 4.25d
 		}
 		{
 			dependencies: ["41F1837D7C131898"]
 			description: [
-				"{moni.quest.2D47BFA44BDB5E6A.description1}"
+				"The &6only&r source of &9Hadal Shards&r."
 				""
-				"{moni.quest.2D47BFA44BDB5E6A.description2}"
+				"&9This Microminer also brings back Dragon Eggs, Dragon Scales, Dragons Breath, Quantum Stars, and Gravi-Stars&r."
 			]
 			id: "2D47BFA44BDB5E6A"
 			rewards: [{
@@ -545,16 +545,16 @@
 				item: "kubejs:microminer_t8"
 				type: "item"
 			}]
-			title: "{moni.quest.2D47BFA44BDB5E6A.title}"
+			title: "&9Tier Eight Microminer"
 			x: 2.0d
 			y: 9.25d
 		}
 		{
 			dependencies: ["28CA4E5308EC0BB9"]
 			description: [
-				"{moni.quest.7E3A179376673590.description1}"
+				"The &3Elite Microverse Projector&r is an even more powerful projector required for sending &6Tier Seven&r through &6Tier Ten Microminers&r into microverses."
 				""
-				"{moni.quest.7E3A179376673590.description2}"
+				"With your third tier projector, you are now able to get up to two perfect overclocks on microverse recipes."
 			]
 			icon: "monilabs:elite_microverse_projector"
 			id: "7E3A179376673590"
@@ -654,9 +654,9 @@
 				"713FAECEE5046121"
 			]
 			description: [
-				"{moni.quest.0562D9F4C441EAF9.description1}"
+				"&6Cryococcus&r is a powerful material used for crafting high-grade components, items, and machines from &9Sculk&r. It is also able to conduct quite a few amps of &4UHV&r power."
 				""
-				"{moni.quest.0562D9F4C441EAF9.description2}"
+				"Five &6Cryolobus Blocks&r can be processed in the Discharger to create an equal output of five &6Cryococcus Blocks&r."
 			]
 			id: "0562D9F4C441EAF9"
 			rewards: [{
@@ -670,7 +670,7 @@
 				item: "gtceu:cryococcus_block"
 				type: "item"
 			}]
-			title: "{moni.quest.0562D9F4C441EAF9.title}"
+			title: "&9Cryococcus"
 			x: 3.0d
 			y: 5.25d
 		}
@@ -680,9 +680,9 @@
 				"641B049C71B3EB34"
 			]
 			description: [
-				"{moni.quest.6ABD83B58FADD4DF.description1}"
+				"With &6Cryococcus&r and a bit of &6Americium&r, you can now craft the next tier of energy core, the &6Abyssal Energy Core&r."
 				""
-				"{moni.quest.6ABD83B58FADD4DF.description2}"
+				"This core is directly used in &6Universal Warp Cores&r and &6Hadal Warp Engines&r, but more importantly can be upgraded into a &6Hadal Energy Core&r."
 			]
 			id: "6ABD83B58FADD4DF"
 			rewards: [{
@@ -696,7 +696,7 @@
 				item: "kubejs:abyssal_energy_core"
 				type: "item"
 			}]
-			title: "{moni.quest.6ABD83B58FADD4DF.title}"
+			title: "&9Abyssal Energy Core"
 			x: 2.0d
 			y: 6.25d
 		}
@@ -707,13 +707,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.22E50A6923EBF5CB.description1}"
+				"&6Neutronium&r is a hyper-dense material normally found in the hearts of neutron stars: the collapsed cores of stars between ten and thirty times the size of the Sun."
 				""
-				"{moni.quest.22E50A6923EBF5CB.description2}"
+				"Fun fact: a single neutronium block is approximately 2884 million metric tons and somewhere around 600000K, yet you're somehow capable of holding one with your bare hands. Don't think about it too much."
 				""
-				"{moni.quest.22E50A6923EBF5CB.description3}"
+				"Your first neutronium will be obtained from a &6T8&r or &6T9 Microminer&r, or a &3Mk3 Fusion Reactor&r."
 				""
-				"{moni.quest.22E50A6923EBF5CB.description4}"
+				"Later on, you might consider using &3Naquadah Chemistry&r or processing &6Alien Scrap&r to boost your Neutronium production."
 			]
 			id: "22E50A6923EBF5CB"
 			rewards: [{
@@ -729,18 +729,18 @@
 				item: "gtceu:neutronium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.22E50A6923EBF5CB.title}"
+			title: "&2Neutronium Ingot"
 			x: -2.0d
 			y: 9.25d
 		}
 		{
 			dependencies: ["22E50A6923EBF5CB"]
 			description: [
-				"{moni.quest.485CEA4199AAD352.description1}"
+				"Using &6Neutronium&r boules grants even more wafers per boule and even higher yields from laser engraving."
 				""
-				"{moni.quest.485CEA4199AAD352.description2}"
+				"These boules will be required for &6HASoC&r and &6UXPIC Wafers&r. "
 				""
-				"{moni.quest.485CEA4199AAD352.description3}"
+				"HASoCs grant access to cheaper &6Wetware Processors&r, but require a &3Circuit Assembler&r running at &4UHV&r."
 			]
 			id: "485CEA4199AAD352"
 			rewards: [{
@@ -761,7 +761,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.485CEA4199AAD352.title}"
+			title: "Neutronium Boules and Wafers"
 			x: -2.75d
 			y: 8.25d
 		}
@@ -771,9 +771,9 @@
 				"41F1837D7C131898"
 			]
 			description: [
-				"{moni.quest.0608EE0A3BDE58D5.description1}"
+				"&9The upgraded form of the Soul Binder.&r"
 				""
-				"{moni.quest.0608EE0A3BDE58D5.description2}"
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!"
 			]
 			icon: "gtceu:quintessence_infuser"
 			id: "0608EE0A3BDE58D5"
@@ -891,7 +891,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.0608EE0A3BDE58D5.title}"
+			title: "&9Quintessence Infuser"
 			x: 4.25d
 			y: 8.25d
 		}
@@ -902,11 +902,11 @@
 				"0B51A633811472A2"
 			]
 			description: [
-				"{moni.quest.1CF77095C203454F.description1}"
+				"Upgraded form of the &3Alloy Blast Smelter&r."
 				""
-				"{moni.quest.1CF77095C203454F.description2}"
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!"
 				""
-				"{moni.quest.1CF77095C203454F.description3}"
+				"If you don't already have &6Neutronium&r, you will need to get some to make this."
 			]
 			id: "1CF77095C203454F"
 			rewards: [{
@@ -921,17 +921,17 @@
 				item: "gtceu:mega_alloy_blast_smelter"
 				type: "item"
 			}]
-			title: "{moni.quest.1CF77095C203454F.title}"
+			title: "&2Mega Alloy Blast Smelter"
 			x: -4.0d
 			y: 9.25d
 		}
 		{
 			dependencies: ["0F6B344C265D1FBB"]
-			description: ["{moni.quest.0B51A633811472A2.description1}"]
+			description: ["The final tier of Soldering Alloy. Requires &6Stem Cells&r, so you'll need to spend some time dealing with Biochemistry to get some."]
 			icon: "gtceu:living_soldering_alloy_bucket"
 			id: "0B51A633811472A2"
 			shape: "hexagon"
-			subtitle: "{moni.quest.0B51A633811472A2.subtitle}"
+			subtitle: "Blood for the Machine"
 			tasks: [
 				{
 					id: "0CC9E1168FF66AB9"
@@ -945,7 +945,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.0B51A633811472A2.title}"
+			title: "Living Solder"
 			x: -4.0d
 			y: 2.5d
 		}
@@ -956,9 +956,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.7F669657313F2E62.description1}"
+				"Cryolobus is a complex material needed in vast quantities."
 				""
-				"{moni.quest.7F669657313F2E62.description2}"
+				"You can create it by mixing &6Sculk Dust&r with either &6Blue&r or &6Red Steel Dust&r, or by directly smelting &6Warden Tendrils&r."
 			]
 			id: "7F669657313F2E62"
 			rewards: [{
@@ -987,7 +987,7 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.7F669657313F2E62.title}"
+			title: "&9Cryolobus Dust"
 			x: 4.75d
 			y: 0.25d
 		}
@@ -997,13 +997,13 @@
 				"7F669657313F2E62"
 			]
 			description: [
-				"{moni.quest.1CC092A2F2CD4589.description1}"
+				"You'll need at least &6Naquadah Coil Blocks&r in your blast furnace to smelt &6Cryolobus&r, as well as a healthy supply of certain liquid fuels to reach the immense heat it takes to liquefy."
 				""
-				"{moni.quest.1CC092A2F2CD4589.description2}"
+				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"{moni.quest.1CC092A2F2CD4589.description3}"
+				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Tendrils&r, which contain Cryolobus, directly into ingots. It uses a lot of combustion fuel, but is the best use of excess &6Warden Tendrils&r."
 				""
-				"{moni.quest.1CC092A2F2CD4589.description4}"
+				"You've been stockpiling fuel, right?"
 			]
 			id: "1CC092A2F2CD4589"
 			rewards: [{
@@ -1017,13 +1017,13 @@
 				item: "gtceu:cryolobus_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.1CC092A2F2CD4589.title}"
+			title: "&9Cryolobus Ingots"
 			x: 5.25d
 			y: 1.25d
 		}
 		{
 			dependencies: ["1CA3A00393EDD648"]
-			description: ["{moni.quest.7D4B29BA4D8CB153.description1}"]
+			description: ["While it is possible to obtain all your sculk from pillaging nearby Deep Darks or using microminers, the demand for these items will only grow, so it is recommended to switch to using a &3Sculk Vat&r soon for all of your sculk needs."]
 			icon: "gtceu:sculk_bucket"
 			id: "7D4B29BA4D8CB153"
 			rewards: [{
@@ -1032,7 +1032,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.7D4B29BA4D8CB153.subtitle}"
+			subtitle: "Locally sourced"
 			tasks: [
 				{
 					id: "7795E782E2941DB5"
@@ -1046,13 +1046,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.7D4B29BA4D8CB153.title}"
+			title: "Growing Sculk"
 			x: 3.75d
 			y: 2.5d
 		}
 		{
 			dependencies: ["7A65459E4DFAAC2D"]
-			description: ["{moni.quest.28834638F1487312.description1}"]
+			description: ["&6Uranium Rhodium Dinaquadide&r is the second &cZPM&r superconductor, and is used to make the &3HPCA&r and &3Research Station&r."]
 			id: "28834638F1487312"
 			rewards: [{
 				id: "077E916B2D91C6AC"
@@ -1065,7 +1065,7 @@
 				item: "gtceu:uranium_rhodium_dinaquadide_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.28834638F1487312.title}"
+			title: "Uranium Rhodium Dinaquadide"
 			x: 1.25d
 			y: -5.5d
 		}
@@ -1074,7 +1074,7 @@
 				"5BADF536443E712D"
 				"0CEF53164D8B6496"
 			]
-			description: ["{moni.quest.00011E5DD7EEE8DB.description1}"]
+			description: ["With the &3Ultimate Assembler&r, you can assemble &6Tritanium Coils&r."]
 			id: "00011E5DD7EEE8DB"
 			rewards: [{
 				id: "6BC43FE9081A6EED"
@@ -1087,7 +1087,7 @@
 				item: "gtceu:uv_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.00011E5DD7EEE8DB.title}"
+			title: "UV Assembler"
 			x: 4.0d
 			y: 11.75d
 		}
@@ -1095,11 +1095,11 @@
 			dependencies: ["2A6E9E7C80754936"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.40E8C7CEE285D702.description1}"
+				"Your first few &6Raw Crystal Chips&r must be grown in an &3Autoclave&r from liquid &6Europium&r and &6Exquisite Emeralds&r or &6Exquisite Olivine&r."
 				""
-				"{moni.quest.40E8C7CEE285D702.description2}"
+				"After the first few, you can smash them into pieces using a Forge Hammer, and duplicate them with Europium, or &6Bacterial Sludge&r or &6Mutagen&r later on."
 				""
-				"{moni.quest.40E8C7CEE285D702.description3}"
+				"Bacterial Sludge can later be obtained in the byproducts of getting Stem Cells."
 			]
 			icon: "gtceu:raw_crystal_chip"
 			id: "40E8C7CEE285D702"
@@ -1114,16 +1114,16 @@
 				item: "gtceu:raw_crystal_chip"
 				type: "item"
 			}]
-			title: "{moni.quest.40E8C7CEE285D702.title}"
+			title: "Crystal Growing"
 			x: -7.5d
 			y: -7.75d
 		}
 		{
 			dependencies: ["40E8C7CEE285D702"]
 			description: [
-				"{moni.quest.2E6BA621B265C3A8.description1}"
+				"By baking a &6Raw Crystal Chip&r and &6Emerald&r or &6Olivine Plates&r with &9Helium&r in an &3Electric Blast Furnace&r, you can create an &6Engraved Crystal Chip&r."
 				""
-				"{moni.quest.2E6BA621B265C3A8.description2}"
+				"This is a material needed for &6Crystal Circuits&r."
 			]
 			hide_dependency_lines: false
 			id: "2E6BA621B265C3A8"
@@ -1138,16 +1138,16 @@
 				item: "gtceu:engraved_crystal_chip"
 				type: "item"
 			}]
-			title: "{moni.quest.2E6BA621B265C3A8.title}"
+			title: "&2Engraved Crystal Chip"
 			x: -6.0d
 			y: -7.75d
 		}
 		{
 			dependencies: ["2E6BA621B265C3A8"]
 			description: [
-				"{moni.quest.67833AE5421E10D4.description1}"
+				"&6Crystal CPUs&r are the cores of &6Crystal Circuits&r."
 				""
-				"{moni.quest.67833AE5421E10D4.description2}"
+				"You'll need an &dLuV &3Laser Engraver&r to craft this."
 			]
 			id: "67833AE5421E10D4"
 			rewards: [{
@@ -1161,16 +1161,16 @@
 				item: "gtceu:crystal_cpu"
 				type: "item"
 			}]
-			title: "{moni.quest.67833AE5421E10D4.title}"
+			title: "&2Crystal Processing Unit"
 			x: -4.5d
 			y: -7.75d
 		}
 		{
 			dependencies: ["7A65459E4DFAAC2D"]
 			description: [
-				"{moni.quest.5792330C6E5B87A3.description1}"
+				"&2A lighter and unstable Naquadah isotope."
 				""
-				"{moni.quest.5792330C6E5B87A3.description2}"
+				"&6Naquadria&o&r is used in the construction of &6UV components&r, the &3Fusion Reactor MK II&r, and in cracking &6Naquadah Fuel&r products."
 			]
 			id: "5792330C6E5B87A3"
 			rewards: [{
@@ -1184,18 +1184,18 @@
 				item: "gtceu:naquadria_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.5792330C6E5B87A3.title}"
+			title: "&2Naquadria"
 			x: 2.75d
 			y: -5.5d
 		}
 		{
 			dependencies: ["1109CFC5D47FC011"]
 			description: [
-				"{moni.quest.2836DDEE49C3CCFB.description1}"
+				"&2Upgraded forms of the EBF and Vacuum Freezer.&r"
 				""
-				"{moni.quest.2836DDEE49C3CCFB.description2}"
+				"Accepts any &6Parallel Control Hatch&r, parallelizing up to &e4096x&r with the best hatch!"
 				""
-				"{moni.quest.2836DDEE49C3CCFB.description3}"
+				"The &aRotary Hearth Furnace&r is quite big!"
 			]
 			id: "2836DDEE49C3CCFB"
 			rewards: [{
@@ -1217,13 +1217,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.2836DDEE49C3CCFB.title}"
+			title: "&2Upgraded EBF and Freezer"
 			x: 0.25d
 			y: -3.5d
 		}
 		{
 			dependencies: ["7A65459E4DFAAC2D"]
-			description: ["{moni.quest.747A3DEA569CB6C9.description1}"]
+			description: ["This is the flight of our lives."]
 			id: "747A3DEA569CB6C9"
 			rewards: [{
 				count: 2
@@ -1242,7 +1242,7 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.747A3DEA569CB6C9.title}"
+			title: "Endgame"
 			x: 0.25d
 			y: -7.0d
 		}
@@ -1252,15 +1252,15 @@
 				"1CC092A2F2CD4589"
 			]
 			description: [
-				"{moni.quest.1CA3A00393EDD648.description1}"
+				"The &3Sculk Vat&r is a multiblock capable of growing Sculk products as well as other micro-organisms."
 				""
-				"{moni.quest.1CA3A00393EDD648.description2}"
+				"Recipes run in the Vat will produce less and less output the farther the output hatch is from half full, producing the amount listed in &bEMI&r at exactly 50%% and up to 8x less as the hatch approaches completely empty or full. Note that the amount a recipe will produce is decided as soon as the recipe starts.\n&2While an optimal setup maintaining an exact 50% fill level is possible, it is not at all necessary to beat the pack and an approximate setup can still be viable all the way to the end.&r"
 				""
-				"{moni.quest.1CA3A00393EDD648.description3}"
+				"The Vat can also store experience for use in growing Sculk. Do this by inserting &6XP Juice&r into a &6Sculk XP Draining Hatch&r. Every second, the Draining Hatch will deposit all XP Juice it has into the internal buffer of the Vat, and the amount of XP inside the Vat will decay by 1/64 of the amount it currently has stored."
 				""
-				"{moni.quest.1CA3A00393EDD648.description4}"
+				"The amount of XP currently in the Vat can be seen in the Vat's GUI, or read out as a redstone signal using a &6Sculk XP Sensor Hatch&r."
 				""
-				"{moni.quest.1CA3A00393EDD648.description5}"
+				"Some recipes require the amount of XP in the Vat to be within a specific range, shown in &bEMI&r, otherwise the recipe will regress."
 			]
 			icon: "monilabs:sculk_vat"
 			id: "1CA3A00393EDD648"
@@ -1369,11 +1369,11 @@
 		{
 			dependencies: ["04EABD3D2C72D2C5"]
 			description: [
-				"{moni.quest.12E06D4D898F3E58.description1}"
+				"Initially, you will need to obtain &6Bacteria&r either from &6Bio Chaff&r or &6Rotten Sludge&r. Both of these recipes must be run in a machine with a &6Sterile Cleaning Hatch&r."
 				""
-				"{moni.quest.12E06D4D898F3E58.description2}"
+				"After you get a starting amount, it is highly recommended to switch to using the &3Sculk Vat&r for its speed. Just because it can grow Sculk doesn't mean it can't grow measly bacteria."
 				""
-				"{moni.quest.12E06D4D898F3E58.description3}"
+				"Bacteria is used in &6Bacterial Sludge&r and &6Stem Cells&r."
 			]
 			icon: "gtceu:bacteria_bucket"
 			id: "12E06D4D898F3E58"
@@ -1396,13 +1396,13 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.12E06D4D898F3E58.title}"
+			title: "Bacteria"
 			x: 2.25d
 			y: 1.25d
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
-			description: ["{moni.quest.41F1837D7C131898.description1}"]
+			description: ["Using your newly acquired &6Cryococcus&r, you can finally make the last &cZPM&r component."]
 			id: "41F1837D7C131898"
 			rewards: [{
 				id: "0DE4943E4564493D"
@@ -1420,7 +1420,7 @@
 		}
 		{
 			dependencies: ["254D6D1470BC197E"]
-			description: ["{moni.quest.44B0AB41C076E779.description1}"]
+			description: ["&6Crystal Matrix&r is a very strong material made out of carbon nanotubes. You will need this to make &6Warp Engines&r."]
 			id: "44B0AB41C076E779"
 			rewards: [{
 				id: "1536CF45AE4AB897"
@@ -1433,16 +1433,16 @@
 				item: "monilabs:crystal_matrix_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.44B0AB41C076E779.title}"
+			title: "Crystal Matrix"
 			x: 0.75d
 			y: 4.75d
 		}
 		{
 			dependencies: ["2D47BFA44BDB5E6A"]
 			description: [
-				"{moni.quest.235C1E5B2C58B5AF.description1}"
+				"&6Hadal Shards&r are a component in &9Hadal Energy Cores&r and &9Hadal Warp Engines&r."
 				""
-				"{moni.quest.235C1E5B2C58B5AF.description2}"
+				"They come exclusively from Tier Eight Microminers. You'll need the Tier Seven Microminer for the &6Lair of the Warden Data&r."
 			]
 			id: "235C1E5B2C58B5AF"
 			rewards: [{
@@ -1456,7 +1456,7 @@
 				item: "kubejs:hadal_shard"
 				type: "item"
 			}]
-			title: "{moni.quest.235C1E5B2C58B5AF.title}"
+			title: "&9Hadal Shards"
 			x: 1.0d
 			y: 10.25d
 		}
@@ -1469,11 +1469,11 @@
 				"0B51A633811472A2"
 			]
 			description: [
-				"{moni.quest.738A141D31AD7CE3.description1}"
+				"&6Hadal Energy Cores&r are the ultimate tier of &6energy core&r, used for the most powerful and advanced items."
 				""
-				"{moni.quest.738A141D31AD7CE3.description2}"
+				"These cores require &6Omnium&r and &6Neutronium&r, must be soldered with &6Living Solder&r, and must be filled with &6Hadal Sculk&r."
 				""
-				"{moni.quest.738A141D31AD7CE3.description3}"
+				"Hope you've got those &6Hadal Shards&r automated."
 			]
 			id: "738A141D31AD7CE3"
 			rewards: [{
@@ -1484,13 +1484,13 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{moni.quest.738A141D31AD7CE3.subtitle}"
+			subtitle: "The culmination of so much effort."
 			tasks: [{
 				id: "140C83AB5FE8450E"
 				item: "kubejs:hadal_energy_core"
 				type: "item"
 			}]
-			title: "{moni.quest.738A141D31AD7CE3.title}"
+			title: "&9Hadal Energy Core"
 			x: -1.0d
 			y: 6.25d
 		}
@@ -1499,7 +1499,7 @@
 				"235C1E5B2C58B5AF"
 				"7D29C79DE1CCA2A2"
 			]
-			description: ["{moni.quest.7FA6B36DCE648C66.description1}"]
+			description: ["Combine &6Hadal Shards&r with various chemicals and a sample of Sculk to create an empowered variant of Sculk that will be used to fill &6Hadal Energy Cores&r and make &6Sculk Bioalloy&r."]
 			icon: "gtceu:hadal_sculk_bucket"
 			id: "7FA6B36DCE648C66"
 			shape: "hexagon"
@@ -1516,16 +1516,16 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.7FA6B36DCE648C66.title}"
+			title: "Hadal Sculk"
 			x: -1.0d
 			y: 10.25d
 		}
 		{
 			dependencies: ["41F1837D7C131898"]
 			description: [
-				"{moni.quest.4261BDA34D716EC8.description1}"
+				"The &3Omnic Synthesizer&r…synthesizes &6Omnium&r. The Synthesizer will create one &6Omnium Nugget&r when its progress value reaches 100. Recipes run in the Synthesizer will grant exponentially more progress based on how many other unique recipes have run since that recipe.\n&9For reference, using a few dozen different ingredients gives hundreds of times better yield than using only two.&r"
 				""
-				"{moni.quest.4261BDA34D716EC8.description2}"
+				"Therefore, the best way to produce &6Omnium&r is to input a variety of elements, and not just throw a ton of &6Iron&r, &6Copper&r, and &6Solidified Hydrogen&r into the machine and hope for the best."
 			]
 			icon: "gtceu:omnic_synthesizer"
 			id: "4261BDA34D716EC8"
@@ -1644,16 +1644,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.4261BDA34D716EC8.title}"
+			title: "&9Omnic Synthesizer"
 			x: 2.0d
 			y: 7.25d
 		}
 		{
 			dependencies: ["1CC092A2F2CD4589"]
 			description: [
-				"{moni.quest.77DB862BCC7BF6A5.description1}"
+				"If you don't already have them, you will need &6Trinium Coils&r to make the engine for this rocket."
 				""
-				"{moni.quest.62C85A1F451C4855.description5}"
+				"With a &3Tier Four Rocket&r you can make it to &eGlacio&r. Glacio has &6Naquadah&r, &6Kaemanite&r, &6Stolzite&r, &6Iridosmine&r, and &6Osmiridium&r, as well as &6Gelid Cryotheum&r fluid veins."
 			]
 			id: "77DB862BCC7BF6A5"
 			shape: "hexagon"
@@ -1672,9 +1672,9 @@
 		{
 			dependencies: ["4261BDA34D716EC8"]
 			description: [
-				"{moni.quest.61301FBD825F8280.description1}"
+				"After combining several dozen elements, or less efficiently, just throwing a bunch of &6Iron&r and &6Copper&r into the &3Omnic Synthesizer&r, you get &6Omnium Nuggets&r. Those nuggets can be further compressed into an ingot form, workable like many of the metals that comprise it."
 				""
-				"{moni.quest.61301FBD825F8280.description2}"
+				"Omnium will be used in increasing frequency throughout the endgame."
 			]
 			icon: "gtceu:omnium_ingot"
 			id: "61301FBD825F8280"
@@ -1696,7 +1696,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.61301FBD825F8280.title}"
+			title: "Omnium"
 			x: 0.0d
 			y: 7.25d
 		}
@@ -1706,11 +1706,11 @@
 				"75810A27FBBBFB77"
 			]
 			description: [
-				"{moni.quest.113E9543ADB1666B.description1}"
+				"&6Ancient Debris Dust&r can be processed into &6Ardite Dust&r and &6Activated Netherite Scrap&r, used for &6Manyullyn&r and &6Activated Netherite&r respectively."
 				""
-				"{moni.quest.113E9543ADB1666B.description2}"
+				"There are two paths when processing Ancient Debris Dust, putting it into an &3EBF&r or a &3Chemical Bath&r. The EBF will grant more Activated Netherite Scrap, at the cost of less Ardite, and the other way around for the Chemical Bath."
 				""
-				"{moni.quest.113E9543ADB1666B.description3}"
+				"Smithing Table recipes can be automated using &6Molecular Assemblers&r."
 			]
 			id: "113E9543ADB1666B"
 			shape: "hexagon"
@@ -1726,13 +1726,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.113E9543ADB1666B.title}"
+			title: "&9Activated Netherite and Manyullyn"
 			x: -0.25d
 			y: 11.0d
 		}
 		{
 			dependencies: ["0562D9F4C441EAF9"]
-			description: ["{moni.quest.57D9FA04817CB92F.description1}"]
+			description: ["A complex plating material used to assemble the Tier Nine Microminer."]
 			id: "57D9FA04817CB92F"
 			rewards: [{
 				id: "6ABD44B2AE43E4E3"
@@ -1745,7 +1745,7 @@
 				item: "kubejs:quantum_fluxed_eternium_heavy_plating"
 				type: "item"
 			}]
-			title: "{moni.quest.57D9FA04817CB92F.title}"
+			title: "Quantum Fluxed Eternium Heavy Plating"
 			x: 4.0d
 			y: 6.25d
 		}
@@ -1755,9 +1755,9 @@
 				"41F1837D7C131898"
 			]
 			description: [
-				"{moni.quest.6BF4A76C5B84EEE9.description1}"
+				"The &6Tier Nine Microminer&r doesn't unlock any new items, but instead grants alternate sources for some pre-existing materials."
 				""
-				"{moni.quest.6BF4A76C5B84EEE9.description2}"
+				"This miner is a great source of &6Darmstadtium&r and &6Duranium&r. It is also a slightly slower but cheaper source of &6Neutronium&r compared to the &3Fusion Reactor MKIII&r."
 			]
 			id: "6BF4A76C5B84EEE9"
 			rewards: [{
@@ -1771,13 +1771,13 @@
 				item: "kubejs:microminer_t9"
 				type: "item"
 			}]
-			title: "{moni.quest.6BF4A76C5B84EEE9.title}"
+			title: "Tier Nine Microminer"
 			x: 4.0d
 			y: 7.25d
 		}
 		{
 			dependencies: ["069773756716E192"]
-			description: ["{moni.quest.641B049C71B3EB34.description1}"]
+			description: ["&6Americium&r can be obtained through fusion in a &3Mk2 Fusion Reactor&r. Soon, you'll be able to use Naquadah Chemistry as an alternate source."]
 			hide_dependency_lines: true
 			id: "641B049C71B3EB34"
 			shape: "hexagon"
@@ -1786,20 +1786,20 @@
 				item: "gtceu:americium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.641B049C71B3EB34.title}"
+			title: "Americium"
 			x: 2.0d
 			y: 5.25d
 		}
 		{
 			dependencies: ["15607184B546F5EE"]
 			description: [
-				"{moni.quest.75810A27FBBBFB77.description1}"
+				"With &6Tritanium Coils&r, you now have the ability to make &6Raw Naquadah Solution&r and therefore &6Activated Naquadah Isotope Blend&r, the starting product of Naquadah Chemistry."
 				""
-				"{moni.quest.75810A27FBBBFB77.description2}"
+				"The process consists of repeatedly distilling and cracking fluids. Cracking is done in &3Fusion Reactors&r, with 4 options of cracking material. Pick whichever one your base can handle best."
 				""
-				"{moni.quest.75810A27FBBBFB77.description3}"
+				"Naquadah Chemistry yields large amounts of a variety of valuable resources. It will serve as your primary source of radioactive elements such as &6Neptunium&r and &6Californium&r, as well as providing quite a bit of other advanced materials such as &6Tritanium&r, &6Darmstadtium&r, and &6Neutronium&r."
 				""
-				"{moni.quest.75810A27FBBBFB77.description4}"
+				"The midproducts of Naquadah Chemistry also have use in the making of Liquid &6Naquadah Fuels&r, made in the &3Naquadah Refinery&r. They can function as your primary power source for the rest of the pack, &6Antimatter Fuel&r being the other option."
 			]
 			icon: "kubejs:naquadah_waste"
 			id: "75810A27FBBBFB77"
@@ -1822,7 +1822,7 @@
 					type: "checkmark"
 				}
 			]
-			title: "{moni.quest.75810A27FBBBFB77.title}"
+			title: "Naquadah Chemistry"
 			x: 2.25d
 			y: 11.0d
 		}
@@ -1833,18 +1833,18 @@
 				"5792330C6E5B87A3"
 			]
 			description: [
-				"{moni.quest.069773756716E192.description1}"
-				"{moni.quest.069773756716E192.description2}"
+				"Upgrade time! "
+				"…or building a new one, which is probably better."
 				""
-				"{moni.quest.069773756716E192.description3}"
+				"Yet again this quest asks for the minimal number of casings. Make an extra &229&r if you don't want more than &a2 Fluid Inputs&r&r and &a1 Fluid Output&r. Don't forget the extra &e31 Fusion Glass&r or &6Fusion Machine Casings&r!"
 				""
-				"{moni.quest.069773756716E192.description4}"
+				"&bYes, the Fusion Glass is the same tier as last time, but the Fusion Machine Casings are more expensive.&r"
 				""
-				"{moni.quest.069773756716E192.description5}"
+				"Make sure you're using &6ZPM Energy Hatches&r!"
 				""
-				"{moni.quest.069773756716E192.description6}"
+				"If you insist on upgrading instead of making a new one, don't dismantle the current one before you're sure you've got everything you need to upgrade it, or you might end up having to rebuild the &3MK I Fusion Reactor&r again."
 				""
-				"{moni.quest.069773756716E192.description7}"
+				"The &3MK II Fusion Reactor&r has an energy buffer of &e320M EU&r."
 			]
 			icon: "gtceu:zpm_fusion_reactor"
 			id: "069773756716E192"
@@ -1932,13 +1932,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.069773756716E192.title}"
+			title: "&2Fusion Reactor MK II"
 			x: 2.0d
 			y: -1.75d
 		}
 		{
 			dependencies: ["069773756716E192"]
-			description: ["{moni.quest.3FFC053E3E11D586.description1}"]
+			description: ["&6Darmstadtium&r is formed by fusing Arsenic and Ruthenium or processing &6Darmstadtite&r, and is the main material for UV machines."]
 			id: "3FFC053E3E11D586"
 			rewards: [{
 				id: "51F748D4099BAC22"
@@ -1951,16 +1951,16 @@
 				item: "gtceu:darmstadtium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.3FFC053E3E11D586.title}"
+			title: "&2Darmstadtium"
 			x: 6.5d
 			y: -1.75d
 		}
 		{
 			dependencies: ["3FFC053E3E11D586"]
 			description: [
-				"{moni.quest.5BADF536443E712D.description1}"
+				"&3UV&r stands for &3Ultimate Voltage&r."
 				""
-				"{moni.quest.5BADF536443E712D.description2}"
+				"This Hull is made with &6Darmstadtium, Yttrium Barium Cuprate Cables, and Polybenzimidazole&r."
 			]
 			id: "5BADF536443E712D"
 			rewards: [{
@@ -1974,18 +1974,18 @@
 				item: "gtceu:uv_machine_hull"
 				type: "item"
 			}]
-			title: "{moni.quest.5BADF536443E712D.title}"
+			title: "&2UV Machine Hulls"
 			x: 6.5d
 			y: 11.75d
 		}
 		{
 			dependencies: ["069773756716E192"]
 			description: [
-				"{moni.quest.79EFCD8E01384C0C.description1}"
+				"To make &6Tritanium&r, you first need to make &6Duranium&r. This is done by fusing &6Liquid Gallium&r and &6Radon&r in a &3Fusion Reactor MK I&r or better."
 				""
-				"{moni.quest.79EFCD8E01384C0C.description2}"
+				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor MK II&r using the Duranium and &6Liquid Titanium&r."
 				""
-				"{moni.quest.79EFCD8E01384C0C.description3}"
+				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into &bEMI&r."
 			]
 			id: "79EFCD8E01384C0C"
 			rewards: [{
@@ -1998,13 +1998,13 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.79EFCD8E01384C0C.title}"
+			title: "&2Tritanium Ingot"
 			x: 2.0d
 			y: -0.25d
 		}
 		{
 			dependencies: ["00011E5DD7EEE8DB"]
-			description: ["{moni.quest.15607184B546F5EE.description1}"]
+			description: ["&2Tritanium Coils are the eighth coil material. At 10800K, it's capable of smelting nearly every material."]
 			id: "15607184B546F5EE"
 			rewards: [{
 				id: "4D377BF47452A80F"
@@ -2018,7 +2018,7 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			title: "{moni.quest.15607184B546F5EE.title}"
+			title: "&2Tritanium Coils"
 			x: 1.0d
 			y: 11.75d
 		}
@@ -2028,21 +2028,21 @@
 				"28834638F1487312"
 			]
 			description: [
-				"{moni.quest.37BE175EEC2ABD59.description1}"
+				"The &3High Performance Computing Array (HPCA)&r is a computer which provides &dComputation Work&r to be used in the &3Research Station&r. The amount of &dComputation Work&r it provides depends on the type of HPCA parts within it. It also needs to receive adequate &dCooling&r provided by Coolers within its structure."
 				""
-				"{moni.quest.37BE175EEC2ABD59.description2}"
+				"Connect the &3Computation Data Transmission Hatch&r to the &3Reception Hatch&r on your &3Research Station&r to transfer the &dCWU/t&r produced to it."
 				"{@pagebreak}"
-				"{moni.quest.37BE175EEC2ABD59.description3}"
+				"The HPCA accepts almost any combination of &3Computation Components&r, &3Coolers&r, &3Bridges&r and &3Empty Components&r within the 3x3 area behind the &aComputer Heat Vents&r. The suggested components will build a &d16 CWU/t&r HPCA, enough for scanning the &3Fusion Reactor Mk2&r, &6UV Circuits&r, and all &6ZPM Components&r. You can get away with less at first, but you will eventually need to upgrade to this computing power. Refer to &eEMI&r for some other possible setups."
 				""
-				"{moni.quest.37BE175EEC2ABD59.description4}"
+				"The &dCWU/t&r of the HPCA is determined by the sum of the outputs of the &3HPCA Computation Components&r within it. Regular &3Computation Components&r produce &d4 CWU/t&r each, and require &d2 Cooling&r each. &3Advanced Computation Components&r, which you do not have access to yet, produce &d16 CWU/t&r each and require &d4 Cooling&r each."
 				""
 				"{@pagebreak}"
 				""
-				"{moni.quest.37BE175EEC2ABD59.description5}"
+				"&dCooling&r is provided by &3Cooler&r blocks within the structure. &3Passive Coolers&r provide &d1 Cooling&r each for free, whereas &3Active Coolers&r provide &d2 Cooling&r each with a steady flow of &9Dielectric PCB Coolant&r, provided through an &3Input Hatch&r. If the Cooling within the HPCA is insufficient, the components may be &cdamaged&r from overheating. The physical position of the components within the HPCA does not matter."
 				""
-				"{moni.quest.37BE175EEC2ABD59.description6}"
+				"A &3Bridge Component&r may be installed, allowing the HPCA to connect to &3Network Switches&r."
 				""
-				"{moni.quest.37BE175EEC2ABD59.description7}"
+				"The energy consumption of the HPCA is determined by the sum of its parts. 'Max Energy' refers to the power draw while the HPCA is computing, while 'Upkeep Energy' refers to the power draw when the HPCA is idling."
 			]
 			icon: "gtceu:high_performance_computation_array"
 			id: "37BE175EEC2ABD59"
@@ -2118,20 +2118,20 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.37BE175EEC2ABD59.title}"
+			title: "&2High Performance Computing Array"
 			x: -1.25d
 			y: -5.5d
 		}
 		{
 			dependencies: ["37BE175EEC2ABD59"]
 			description: [
-				"{moni.quest.1109CFC5D47FC011.description1}"
+				"The &3Research Station&r is an advanced Scanner which consumes &dComputation Work&r provided by connected &3High Performance Computing Arrays&r to research &cZPM&r and higher items."
 				""
-				"{moni.quest.1109CFC5D47FC011.description2}"
+				"The function of this multiblock is similar to the Scanner. Place the &6Data Orb&r or &6Data Module&r into the &3Object Holder&r alongside the item to be scanned. After sufficient &dCWU&r has been drawn, the item will be &cconsumed&r and the corresponding data will be written to the data item. Ensure your &3HPCA&r is supplying sufficient &dCWU/t&r - check the scan recipe in &eEMI&r for how much is required."
 				"{@pagebreak}"
-				"{moni.quest.1109CFC5D47FC011.description3}"
+				"&3Energy&r, &3Maintenance&r, and &3Computation Hatches&r can only replace the 9 &aComputer Casings&r between the &aComputer Heat Vents&r at the back of the structure. The &3Object Holder&r &cmust face&r the &3Research Station&r controller block."
 				""
-				"{moni.quest.1109CFC5D47FC011.description4}"
+				"The Research Station can be accelerated with excess &dCWU/t&r, but it &cdoes not overclock&r with extra &dEU/t&r. Initial recipes run on &dLuV&r power, but &cZPM&r will be required soon, and higher tiers of energy will be required for more advanced scans. As most Research scans take a long time, you should start this process early."
 			]
 			icon: "gtceu:research_station"
 			id: "1109CFC5D47FC011"
@@ -2193,20 +2193,20 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.1109CFC5D47FC011.title}"
+			title: "&2Research Station"
 			x: -1.25d
 			y: -3.5d
 		}
 		{
 			dependencies: ["01E542E1C9DAF5B4"]
 			description: [
-				"{moni.quest.7D29C79DE1CCA2A2.description1}"
+				"This baby can do just about any fusion recipe, notably giving you an alternative method of obtaining &6Neutronium&r."
 				""
-				"{moni.quest.7D29C79DE1CCA2A2.description2}"
+				"The multiblock layout is the same as the MK I and MK II, with the same hatch and casing substitutions permitted."
 				""
-				"{moni.quest.7D29C79DE1CCA2A2.description3}"
+				"Obviously though, this one uses &6Fusion Machine Casing MK &2III&r and only works with &aUV Energy Hatches&r."
 				""
-				"{moni.quest.7D29C79DE1CCA2A2.description4}"
+				"The &3MK III Fusion Reactor&r has an energy buffer of &e640M EU&r."
 			]
 			icon: "gtceu:uv_fusion_reactor"
 			id: "7D29C79DE1CCA2A2"
@@ -2218,7 +2218,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.25d
-			subtitle: "{moni.quest.7D29C79DE1CCA2A2.subtitle}"
+			subtitle: "FUSION!"
 			tasks: [
 				{
 					id: "3816F5546D4E770F"
@@ -2296,20 +2296,20 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7D29C79DE1CCA2A2.title}"
+			title: "&2Fusion Reactor MK III"
 			x: -3.0d
 			y: 10.25d
 		}
 		{
 			dependencies: ["15607184B546F5EE"]
 			description: [
-				"{moni.quest.75DD12FBC8AA39FC.description1}"
+				"The &3Network Switch&r combines any number of &3Computation Data Reception Hatches&r into any number of &3Computation Data Transmission Hatches&r. This will be required when the &dCWU/t&r requirements of your &3Research Station&r exceed what a single &3HPCA&r can provide."
 				""
-				"{moni.quest.75DD12FBC8AA39FC.description2}"
+				"Connect the &3Computation Data Reception Hatches&r&r to your &3HPCAs&r with &3Bridge Components&r within them, and connect a single &3Computation Data Transmission Hatch&r to your &3Research Station&r, and it will receive the sum of &dCWU/t&r from all of your HPCAs!"
 				""
-				"{moni.quest.75DD12FBC8AA39FC.description3}"
+				"Now, all* &3Assembly Line&r recipes are available to you, given you have the &dCWU/t&r to research them. The most computationally demanding recipe needed to beat the pack, the &6Extradimensional Processor Mainframe&r, requires &d192 CWU/t&r."
 				""
-				"{moni.quest.75DD12FBC8AA39FC.description4}"
+				"The Network Switch consumes &d7,680 EU/t&r per &3Computation Hatch&r in its structure."
 			]
 			icon: "gtceu:network_switch"
 			id: "75DD12FBC8AA39FC"
@@ -2377,16 +2377,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.75DD12FBC8AA39FC.title}"
+			title: "&2Network Switch"
 			x: -2.25d
 			y: 11.75d
 		}
 		{
 			dependencies: ["41F1837D7C131898"]
 			description: [
-				"{moni.quest.0CEF53164D8B6496.description1}"
+				"Once you scan and make your first &6UV Circuits&r and &6ZPM Field Generators&r, you can upgrade your &3HPCA Computing Components&r to &3Advanced Components&r. These produce &d16 CWU/t&r each and require &d4 Cooling&r each."
 				""
-				"{moni.quest.0CEF53164D8B6496.description2}"
+				"With them, you can upgrade a single HPCA to produce &d48 CWU/t&r total - enough for basic &6UV components&r and the &3Network Switch&r, which will allow you to go higher."
 			]
 			id: "0CEF53164D8B6496"
 			rewards: [{
@@ -2400,36 +2400,36 @@
 				item: "gtceu:hpca_advanced_computation_component"
 				type: "item"
 			}]
-			title: "{moni.quest.0CEF53164D8B6496.title}"
+			title: "&2Advanced HPCA"
 			x: 4.0d
 			y: 9.25d
 		}
 		{
 			dependencies: ["254D6D1470BC197E"]
 			description: [
-				"{moni.quest.5911900438648430.description1}"
+				"As an advanced polymer, &6Polyethyl Cyanoacrylate&r is required for crafting &4UHV&r circuits and machines."
 				""
-				"{moni.quest.5911900438648430.description2}"
+				"It's a little different from previous polymers, but you'll be fine."
 			]
 			hide_dependency_lines: true
 			id: "5911900438648430"
 			shape: "hexagon"
-			subtitle: "{moni.quest.5911900438648430.subtitle}"
+			subtitle: "Krazy Glue"
 			tasks: [{
 				id: "6A6C0D5FFB29C9E1"
 				item: "gtceu:polyethyl_cyanoacrylate_plate"
 				type: "item"
 			}]
-			title: "{moni.quest.5911900438648430.title}"
+			title: "Polyethyl Cyanoacrylate"
 			x: -3.5d
 			y: 13.25d
 		}
 		{
 			dependencies: ["04EABD3D2C72D2C5"]
 			description: [
-				"{moni.quest.37DC6C37EA24BF4D.description1}"
+				"&6Sculk Agar&r is a specialized growth medium. It's necessary for advanced applications of Sculk, including &6Sculk Energy Cores&r and &6self-healing biomaterials&r."
 				""
-				"{moni.quest.37DC6C37EA24BF4D.description2}"
+				"Production requires several odd materials you may not have automatic production for yet, so you'd benefit from starting this sooner rather than later."
 			]
 			id: "37DC6C37EA24BF4D"
 			tasks: [{
@@ -2441,5 +2441,5 @@
 			y: 2.25d
 		}
 	]
-	title: "{moni.chapter.15E8BBD0CD310663.title}"
+	title: "Feeding the Machine"
 }
