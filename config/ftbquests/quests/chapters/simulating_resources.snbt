@@ -2,52 +2,11 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "simulating_resources"
-	group: "0D5BFFD0A5E49312"
+	group: "7A7ECB813BC25B77"
 	icon: "hostilenetworks:sim_chamber"
 	id: "6D8C988EFB3F7437"
-	order_index: 2
-	quest_links: [
-		{
-			id: "5D19AC088663AC0B"
-			linked_quest: "6FDF37EE046349F7"
-			shape: "hexagon"
-			size: 2.0d
-			x: 3.5d
-			y: -1.0d
-		}
-		{
-			id: "6EE0A9137212A27C"
-			linked_quest: "51FD757E07E397A1"
-			shape: "hexagon"
-			size: 1.5d
-			x: -0.5d
-			y: -3.0d
-		}
-		{
-			id: "710EE32CD2237464"
-			linked_quest: "7A716485BBDA8629"
-			shape: "hexagon"
-			size: 1.5d
-			x: 1.5d
-			y: -3.0d
-		}
-		{
-			id: "7C96B978ECCC01E4"
-			linked_quest: "5A70898C99B828E3"
-			shape: "hexagon"
-			size: 1.75d
-			x: -0.5d
-			y: -5.0d
-		}
-		{
-			id: "58C105ED6ECB1E6D"
-			linked_quest: "161F61C28DBC5941"
-			shape: "hexagon"
-			size: 1.75d
-			x: 1.5d
-			y: -5.0d
-		}
-	]
+	order_index: 3
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: [
@@ -55,11 +14,11 @@
 				"715BC5C7DAC53B7B"
 			]
 			description: [
-				"{moni.quest.0006FEA1843FEA0A.description1}"
+				"Simulating mob kills will occasionally result in &6Predictions&r of that mob's type."
 				""
-				"{moni.quest.0006FEA1843FEA0A.description2}"
+				"Putting &6Mob Predictions&r into a &3Loot Fabricator&r will allow you to obtain one of various items related to that mob."
 				""
-				"{moni.quest.0006FEA1843FEA0A.description3}"
+				"Like &3Simulation Chambers&r, Loot Fabricators are &anot sided&r, accepting input and allowing extraction from &aall sides&r."
 			]
 			hide_until_deps_visible: true
 			id: "0006FEA1843FEA0A"
@@ -80,9 +39,9 @@
 		{
 			dependencies: ["715BC5C7DAC53B7B"]
 			description: [
-				"{moni.quest.73C6E2724EBEC997.description1}"
+				"You can combine various items with a &6Model Framework&r for a completed &6Data Model&r that you can run inside the &3Simulation Chamber&r."
 				""
-				"{moni.quest.73C6E2724EBEC997.description2}"
+				"In &9Monifactory&r, all &6data models&r start out at the Self Aware tier."
 			]
 			icon: "hostilenetworks:blank_data_model"
 			id: "73C6E2724EBEC997"
@@ -104,13 +63,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.73C6E2724EBEC997.title}"
+			title: "Simulated Mobs"
 			x: -2.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["72D61AFACC53A34A"]
-			description: ["{moni.quest.1062A387E899434C.description1}"]
+			description: ["Just as with Overworldian mob data, there's no huge rush or need to focus on these. Just run them while you work on other projects."]
 			id: "1062A387E899434C"
 			rewards: [{
 				count: 10
@@ -181,16 +140,16 @@
 					weak_nbt_match: true
 				}
 			]
-			title: "{moni.quest.1062A387E899434C.title}"
+			title: "&4Nether&r Mobs"
 			x: -0.5d
 			y: 0.75d
 		}
 		{
 			dependencies: ["2201391DEEBE79E4"]
 			description: [
-				"{moni.quest.61E018C3BAB05818.description1}"
+				"There's no rush to get these all done and leveled up, but they do provide a good source of some of the basic resources in exchange for RF."
 				""
-				"{moni.quest.61E018C3BAB05818.description2}"
+				"Look at what the &6Prediction&r for each mob provides, and set up simulators for all the ones you're interested in. If your power can handle it, it can even be advantageous to run several of the same model."
 			]
 			id: "61E018C3BAB05818"
 			rewards: [{
@@ -307,16 +266,16 @@
 					weak_nbt_match: true
 				}
 			]
-			title: "{moni.quest.61E018C3BAB05818.title}"
+			title: "&2Overworld&r Mobs"
 			x: -4.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["73C6E2724EBEC997"]
 			description: [
-				"{moni.quest.2201391DEEBE79E4.description1}"
+				"Provide your &3Simulation Chamber&r with RF power and &6Pulsating Prediction Matrices&r. Then insert a &6Data Model&r of your choice. The Simulation Chamber will consume Prediction Matrices and a decent amount of power to begin simulating mob kills. This will generate &6Overworldian Matter&r and may occasionally provide you with &6Mob Predictions&r."
 				""
-				"{moni.quest.2201391DEEBE79E4.description2}"
+				"&6Overworldian Matter&r can be eaten to gain experience, or combined with other materials to obtain drops from Overworld mobs, as well as other forms of matter. With these drops and the other kinds of matter, you can then create Data Models for lots of other mob types!"
 			]
 			id: "2201391DEEBE79E4"
 			rewards: [{
@@ -330,16 +289,16 @@
 				item: "hostilenetworks:overworld_prediction"
 				type: "item"
 			}]
-			title: "{moni.quest.2201391DEEBE79E4.title}"
+			title: "&2Overworld&r Matter"
 			x: -2.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["2201391DEEBE79E4"]
 			description: [
-				"{moni.quest.72D61AFACC53A34A.description1}"
+				"&6Overworldian Matter&r and &6Netherrack&r can be crafted into &6Hellish Matter&r."
 				""
-				"{moni.quest.72D61AFACC53A34A.description2}"
+				"Netherrack can be obtained by combining a &6Dust Block&r and &cLava&r in a &3Chemical Reactor&r."
 			]
 			id: "72D61AFACC53A34A"
 			rewards: [{
@@ -353,13 +312,13 @@
 				item: "hostilenetworks:nether_prediction"
 				type: "item"
 			}]
-			title: "{moni.quest.72D61AFACC53A34A.title}"
+			title: "&4Nether&r Matter"
 			x: -0.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["72D61AFACC53A34A"]
-			description: ["{moni.quest.09F8678BBA41D15E.description1}"]
+			description: ["&6Hellish Matter&r and &6Ender Pearls&r can be crafted into Extraterrestrial Matter."]
 			id: "09F8678BBA41D15E"
 			rewards: [{
 				id: "1F5EA736BD59C447"
@@ -372,13 +331,13 @@
 				item: "hostilenetworks:end_prediction"
 				type: "item"
 			}]
-			title: "{moni.quest.09F8678BBA41D15E.title}"
+			title: "&5End&r Matter"
 			x: 1.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["09F8678BBA41D15E"]
-			description: ["{moni.quest.637953544CE66BDB.description1}"]
+			description: ["Some of these simulations will start to consume tremendous amounts of power at this point, so if you're finding it a struggle, don't be afraid to hold off on progressing through these data models until a later time."]
 			id: "637953544CE66BDB"
 			rewards: [{
 				count: 10
@@ -464,7 +423,7 @@
 					weak_nbt_match: true
 				}
 			]
-			title: "{moni.quest.637953544CE66BDB.title}"
+			title: "&8End&r Mobs"
 			x: 3.5d
 			y: 2.5d
 		}
@@ -475,17 +434,17 @@
 				"5BE3E37772FAF6CB"
 			]
 			description: [
-				"{moni.quest.715BC5C7DAC53B7B.description1}"
+				"A &3Simulation Chamber&r from &bHostile Neural Networks&r (&bHNN&r) allows you to farm mobs in a totally environmentally (and server) friendly way!"
 				""
-				"{moni.quest.715BC5C7DAC53B7B.description2}"
+				"Simulated mobs can even be used to provide you with many of the basic resources you'll need (such as &6iron&r, &6gold&r, &6tin&r, &6copper&r, &6diamonds&r and much more!), through pristine matter."
 				""
-				"{moni.quest.715BC5C7DAC53B7B.description3}"
+				"Setting up &bHNN&r automation during the early game is &avery important&r as it gives you access to infinite quantities of many resources!"
 				""
-				"{moni.quest.715BC5C7DAC53B7B.description4}"
+				"&3Simulation Chambers&r are not sided, so you can input and output from any side."
 				""
-				"{moni.quest.715BC5C7DAC53B7B.description5}"
+				"&9You no longer need to train &6data models&9, all &6data models&9 start out as Self Aware!"
 				""
-				"{moni.quest.715BC5C7DAC53B7B.description6}"
+				"Yes, you can also use it for generating power &ousing &6Diamonds&r."
 			]
 			hide_until_deps_visible: true
 			id: "715BC5C7DAC53B7B"
@@ -502,10 +461,10 @@
 				item: "hostilenetworks:sim_chamber"
 				type: "item"
 			}]
-			title: "{moni.quest.715BC5C7DAC53B7B.title}"
+			title: "&9Simulating Mobs"
 			x: -0.5d
 			y: -1.0d
 		}
 	]
-	title: "{moni.chapter.6D8C988EFB3F7437.title}"
+	title: "Simulating Resources"
 }

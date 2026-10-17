@@ -1,0 +1,237 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome_to_monifactory"
+	group: ""
+	icon: "kubejs:meowni_plush"
+	id: "28B957B69E806B0A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4A27CC2F431C768A"
+			tasks: [{
+				id: "0AB4D1E077695EDE"
+				item: "minecraft:grass_block"
+				type: "item"
+			}]
+			x: 2.75d
+			y: -5.75d
+		}
+		{
+			description: [
+				"This pack is in &eBeta&r. Issues are to be expected at this stage of development."
+				""
+				"[\"\",{\"color\":\"blue\",\"text\":\"If you find something broken/missing/etc, make an issue on the \"},{\"color\":\"blue\",\"underlined\":true,\"text\":\"Monifactory repository\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"color\":\"blue\",\"text\":\", or submit a Pull Request to fix it yourself.\"}]"
+				""
+				"Do note that a decent number of mods in this pack are also in alpha or beta as well, so before reporting an issue, make sure that the issue can not be replicated with the mod on its own, and if it can, report it to the mod's repository instead."
+			]
+			icon: "thermal:nuke_tnt"
+			id: "46EFEE4FD0E6AFFA"
+			size: 1.5d
+			subtitle: "Bleeding Edge!"
+			tasks: [{
+				id: "5551FCE02CB51064"
+				title: "Acknowledged"
+				type: "checkmark"
+			}]
+			title: "&9This pack is in beta!"
+			x: 2.75d
+			y: -7.25d
+		}
+		{
+			description: [
+				"The &aHang Glider&f is a great way to cross long distances, if you're so inclined."
+				""
+				"If you don't want to go exploring for Cows, just buy a pair of &6Cow Spawn Eggs&r eggs and breed them. Seriously, spend your &9coins&f!"
+			]
+			hide_dependency_lines: true
+			id: "7C3B69B3DC09FE96"
+			rewards: [{
+				id: "73A54AAACBD32969"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B4500A4503F2F6D"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Glider"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"If your server admin allows it, you can use JourneyMap to create and teleport to waypoints you set. You can access JourneyMap waypoints by hitting the N key by default. Use this feature to gather resources quickly."
+				""
+				"If JourneyMap teleportation is disabled, you can still use the &e/sethome&r command to register where your house is, and &e/home&r to return to it. If you supply a name (default \"home\") then you can register and go to multiple locations. There is a limit on the number of homes you can set, though."
+				""
+				"Later on you'll discover other means of teleportation."
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "minecraft:blue_bed"
+			id: "33195ED6D7008E5F"
+			optional: true
+			subtitle: "Make returning home easy!"
+			tasks: [{
+				id: "1FE7AB8BD6D25B47"
+				title: "Checkmark"
+				type: "checkmark"
+			}]
+			title: "JourneyMap and Registering Homes"
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: ["[\"\",{\"text\":\"This pack has \"},{\"color\":\"aqua\",\"text\":\"Inventory Tweaks\"},{\"text\":\", allowing for quick, customizable, and easy sorting of any inventory! The default keybind is \"},{\"color\":\"gold\",\"underlined\":true,\"bold\":1,\"text\":\"\\\\\",\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"\\\"Sort Player Inventory\\\" in keybind option\"}}},{\"text\":\".\"}]"]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "minecraft:chest"
+			id: "0DE9B264A3BA75BB"
+			optional: true
+			subtitle: "Clean your inventory"
+			tasks: [{
+				id: "6EF2221B59F470CB"
+				type: "checkmark"
+			}]
+			title: "Inventory Sorting"
+			x: 0.0d
+			y: -6.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"You may wish to &aautomatically sprint&r instead of having to press &eControl + W&r or &eW twice&r."
+				""
+				"To achieve this, change the &bSprint&r keybind to &eW&r. (or the same keybind as Walk Forward)"
+				""
+				"A &aGrappling Hook&r is also very useful in an urban environment, allowing you to climb buildings with ease!"
+				""
+				"There are lots of ways to upgrade and improve your &aGrappling Hook&r, so play around with it."
+				""
+				"Open your inventory and look for the &3Curios&r button, click it to reveal the additional curio slots, and put the hook in the hook-shaped slot."
+				""
+				"The default key to fire a hook is &6C&r, however if you want to change it, simply search for &5category:ReHooked&r in the key binds screen and change it to whatever you want."
+				""
+				"Just be careful of &4Keybind Conflicts&r!"
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "rehooked:wood_hook"
+			id: "372BE3F076893D71"
+			min_width: 300
+			rewards: [{
+				id: "3A1EB6268A778123"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "&oFaster is better!"
+			tasks: [{
+				id: "2FDEDCA3D120121B"
+				item: "rehooked:wood_hook"
+				type: "item"
+			}]
+			title: "Movin' Around"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"[\"\",{\"text\":\"Take a peek at the \"},{\"color\":\"yellow\",\"underlined\":true,\"text\":\"Elements and Alloys quest book tab\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"25FEB9E61EEC1A96\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}},{\"text\":\". This might seem a bit premature to suggest, but it has a reason.\"}]"
+				""
+				"These are quests for a full stack of many of the materials in the game. Those are the materials you'll be able to use to synthesize &6Omnium&r, an important endgame resource. It's the pack's way of letting you know about materials you should be prepared to mass produce as you approach the end."
+				""
+				"Of course, it's not necessary or even advisable to try to finish up all of these quests the moment they become available. Some will be incredibly easy (like &6Iron&f and &6Copper&f), while others will be brutally grindy at early tech levels. The rewards are all the same: &91 Moniquarter each&f, so use your best judgement on which ones to complete and which to ignore for later."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:omnium_ingot"
+			id: "0C173EF148EFEF8E"
+			tasks: [{
+				id: "647D560D77DBCEA5"
+				type: "checkmark"
+			}]
+			title: "Elements and Alloys"
+			x: 5.25d
+			y: -7.75d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"[\"\",{\"color\":\"dark_green\",\"underlined\":true,\"text\":\"This tab\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"055C0B43FE14258F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}},{\"color\":\"dark_green\",\"text\":\" was added to provide some examples on how to renewably produce useful resources through unconventional means. Use it wisely!\"}]"
+				""
+				"Each quest in the tab will give you a description of the machine and the minimum voltage required to run the recipe."
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "gtceu:mv_chemical_bath"
+			id: "73C713703AB6387C"
+			optional: true
+			tasks: [{
+				id: "4BEDF2126C896A50"
+				type: "checkmark"
+			}]
+			title: "&2Renewable Production Tab"
+			x: 5.25d
+			y: -6.5d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"[\"\",{\"text\":\"The \"},{\"color\":\"yellow\",\"underlined\":true,\"text\":\"Progression tab\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"395B849AC6294153\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}},{\"text\":\" was added so you can keep track of the important bits of the pack.\"}]"
+				""
+				"Circuits are the baseline of the entire &9Monifactory&r progression, so keep climbing!"
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "gtceu:quantum_processor"
+			id: "400AD2B735FF135D"
+			optional: true
+			tasks: [{
+				id: "3378D5EF8B48960E"
+				type: "checkmark"
+			}]
+			title: "Progression Tab"
+			x: 6.75d
+			y: -6.5d
+		}
+		{
+			dependencies: ["66FCC26399376B55"]
+			description: [
+				"Open your inventory and look at the top-left corner of the screen. Click the map-looking icon called &eClaim Manager&r."
+				""
+				"&6Click a chunk&r to claim it as yours. This will prevent unwanted creeper explosions and other players from interacting with your base."
+				""
+				"&eIf you're playing on a server with custom settings, ask the server owner what methods are available&f."
+				""
+				"To invite players to your &bFTB Utils&f party, look for a corresponding button in the same corner. Parties share claimed chunks with each other. You can configure permissions for your party's claimed chunks in the party settings menu."
+			]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "minecraft:tnt"
+			id: "6A7A480FAC6103D2"
+			optional: true
+			subtitle: "You might be wondering what chunkloading options there are in the pack."
+			tasks: [{
+				id: "78BC5B51125B35BD"
+				title: "Claim your chunks!"
+				type: "checkmark"
+			}]
+			title: "Claim Your Chunks and Invite Teammates!"
+			x: 4.5d
+			y: -3.75d
+		}
+	]
+	title: "Welcome To Monifactory"
+}
