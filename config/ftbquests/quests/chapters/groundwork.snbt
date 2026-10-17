@@ -1735,6 +1735,7 @@
 				}
 				{
 					id: "6C13CB1FDE79CC66"
+					optional_task: true
 					type: "checkmark"
 				}
 			]
