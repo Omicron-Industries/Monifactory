@@ -7,6 +7,7 @@
   - [Basics of Git](#basics-of-git)
   - [Git GUIs/CUIs](#git-guiscuis)
   - [Git versus GitHub](#git-versus-github)
+  - [Pull Request Checks](#pull-request-checks)
 - [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
 - [Getting Started](#getting-started)
   - [Setting up an instance repository for use in dev](#setting-up-an-instance-repository-for-use-in-dev)
@@ -50,10 +51,17 @@ Git sometimes is a hard program to master, there are a few ways to use git
 - VSCode built-in Git utility(Requires VSCode, obviously) - Similar to Git Desktop but built into VSCode and is way less invasive, not *as* good as Github Desktop for beginners but can be nice if you don't want to switch programs all the time
 - [LazyGit](https://github.com/jesseduffield/lazygit/tree/master?tab=readme-ov-file#winget-windows-10-1709-or-later)
  - A Command line UI, you use the arrow keys and the "Tab" key to navigate through it's menu's, the middle ground between Github Desktop and just using manual git commands, you can use winget on windows, brew on macOS, your linux distro's package manager, or just compile it from source.
+
 ## Git versus GitHub ##
 
 - Git - Version control software used to manage files in a repository(A directory containing code, in this case, this should be your minecraft folder)
 - GitHub - Used to host said repositories and allow for easy collaboration worldwide.
+
+## Pull Request Checks ##
+
+- Each pull request has some checks run against it to ensure the quality of contributions made to the project.
+- One of these checks is a lint check. It ensures that the source code style and formatting meet our standards.
+- Three other checks are gametests. They launch the game and ensure no errors occur when loading into a world. Due to the way they are structured, they will automatically fail if the pull request comes from a third-party repository and modpack manifest is changed. Any pull requests with changes to the modpack manifest must be made from a branch on [the main repository](https://github.com/Omicron-Industries/Monifactory).
 
 ## What Contributions Are We Seeking? ##
 
