@@ -1,15 +1,12 @@
 import Juke from "juke-build"
 import z from "zod"
-import { cacheFolderByManifestFileEntry, createDownloadModTarget } from "./mods.ts"
+import { cacheFolderByManifestFileEntry, DownloadModsTarget } from "./mods.ts"
 import { readManifest } from "../lib/manifest.ts"
 import { join, resolve } from "path"
 import { readDatafileJSON } from "../lib/json_datafile.ts"
 
 const CORE_MOD_PROJECT_ID = 1266569
 
-const getCoreModManifestFileEntry = () => readManifest()
-    .files
-    .find(file => file.projectID === CORE_MOD_PROJECT_ID)
 
 const zPackMode = z.enum(["normal", "hard", "expert"])
 export type TPackMode = z.infer<typeof zPackMode>
@@ -22,9 +19,14 @@ const executePackModeSwitch = async (mode: TPackMode) => {
     }
     mutex = true
     try {
-        const coreModFolder = cacheFolderByManifestFileEntry(getCoreModManifestFileEntry())
+        const codeModInfo = readManifest().files
+            .find(file => file.projectID === CORE_MOD_PROJECT_ID)
+        if (!codeModInfo) {
+            throw new Error("Core mod is not present in the manifest")
+        }
+        const coreModFolder = cacheFolderByManifestFileEntry(codeModInfo)
         const [coreModJarPath] = Juke.glob(join(coreModFolder, "*.jar"))
-        if (!coreModJarPath) throw new Error("Core mod not found")
+        if (!coreModJarPath) throw new Error("Core mod is not downloaded?")
 
         // Core mod performs pack switching when executed standalone
         await Juke.exec(
@@ -40,7 +42,7 @@ export const getPackModeSwitchTarget = (
     mode: TPackMode,
     { cwd, onlyWhen }: {
         cwd: string,
-        onlyWhen?: Juke.OnlyWhenFn,
+        onlyWhen: Juke.OnlyWhenFn,
     }
 ) => Juke.createTarget({
     name: "switch-pack-mode-to-" + mode,
@@ -49,6 +51,9 @@ export const getPackModeSwitchTarget = (
         if (!await onlyWhen(ctx)) return false
         try {
             const { mode: existingMode } = readDatafileJSON(join(cwd, "config/packmode.json")) as { mode?: string }
+            if (!existingMode) {
+                throw new Error("Current pack mode is not set")
+            }
             return mode !== existingMode.toLowerCase()
         } catch {
             return true
@@ -56,7 +61,7 @@ export const getPackModeSwitchTarget = (
     },
 
     // Needs the core mod jar
-    dependsOn: () => [createDownloadModTarget(getCoreModManifestFileEntry())],
+    dependsOn: () => [DownloadModsTarget],
 
     executes: () => executePackModeSwitch(mode),
 
@@ -66,7 +71,7 @@ export const PackModeParameter = new Juke.Parameter({ type: "string" })
 
 export const SwitchPackModeTarget = new Juke.Target({
     parameters: [PackModeParameter],
-    dependsOn: () => [createDownloadModTarget(getCoreModManifestFileEntry())],
+    dependsOn: () => [DownloadModsTarget],
     executes: ({ get }) => {
         const { data: mode } = zPackMode.safeParse(get(PackModeParameter))
         if (mode === undefined) {
