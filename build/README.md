@@ -20,16 +20,32 @@ You can get a list of all targets that you can build by running the following co
 node index.ts --help
 ```
 
-## Switching the pack mode
+## Environment secrets
+Build script requires configuration that depends on you 🫵🫵🫵.
+It loads an `.env` file at the root of the repository automatically if you just create one.
 
-```sh
-node index.ts switch-pack-mode --pack-mode=hard
+This is where you put your configs in `KEY=VALUE` rows.
+Example:
+```env
+CF_API_KEY='$1a$1a$AaaAa11aAaAaaAaAAaA.A.AaAAa1a1a1a1111aaA1a1AAAA1a1AAa'
 ```
 
-The build script can also execute the coremod's mode switcher, just like the button on the title screen.
-The mode change is repository-wide, every other build task infers this state.
+## Launcher
 
-## Running a dedicated server
+### Downloading mods
+Any task that requires launching the modpack in any way needs to download mods from CurseForge.
+
+Set your `CF_API_KEY` (a [Console API key](https://console.curseforge.com/#/api-keys)) in [.env](#environment-secrets)!
+
+```sh
+# You can pre-warm the mod cache with
+node index.ts download-mods
+
+# Updates mods/ folder at the repo root, for running Monifactory in an external launcher.
+node index.ts update-mods-folder
+```
+
+### Running a dedicated server
 
 ```sh
 node index.ts run-dedicated-server
@@ -37,4 +53,16 @@ node index.ts run-dedicated-server
 
 Runs the dedicated server by assembling the modpack entirely from scratch from your git checkout!
 
-Mods are downloaded from CurseForge, you can set the `CF_API_KEY` environment variable with your [Console API key](https://console.curseforge.com/#/api-keys).
+### Switching the pack mode
+
+```sh
+node index.ts switch-pack-mode --pack-mode=hard
+```
+
+The build script can also execute the coremod's mode switcher, just like the button on the title screen.
+
+> [!CAUTION]
+> Supplying `--pack-mode` to any other task will **not** do anything.
+>
+> Juke's help screen makes it sound like it does, but this is the only task that switches modes.
+> The mode change is lasting, every other build task afterwards infers the repo state.

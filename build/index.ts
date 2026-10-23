@@ -13,17 +13,16 @@ import Juke from "juke-build"
 import { CodegenAllTarget } from "./codegen/target-all.ts"
 export * from "./codegen/target-all.ts"
 
-import { cacheFolderByManifestFileEntry, DownloadModsTarget, modInfoPath } from "./deps/mods.ts"
+import { BuildModlistTarget, cacheFolderByManifestFileEntry, DownloadModsTarget } from "./deps/mods.ts"
 export * from "./deps/mods.ts"
 export * from "./deps/pack_mode_switcher.ts"
 export * from "./run/server.ts"
 
-import type { GetModInfo } from "./lib/curseforge.ts"
 import { readManifest } from "./lib/manifest.ts"
-import { readDatafileJSON } from "./lib/json_datafile.ts"
 import { getZipModPackTarget } from "./lib/zip_mode_target.ts"
 
 Juke.chdir("..", import.meta.url)
+try { process.loadEnvFile(".env") } catch { /* No file */ }
 Juke.setup({ file: import.meta.url })
     .then(code => process.exit(code))
     .catch(err => { throw err })
@@ -77,31 +76,6 @@ const cpMods = (targetDir: string, filter?: (file: string) => boolean) => {
         }
     }
 }
-
-// for --mode=beta/release
-export const ModeParameter = new Juke.Parameter({
-    type: "string"
-})
-
-export const BuildModlistTarget = new Juke.Target({
-    inputs: ["manifest.json"],
-    outputs: ["dist/modlist.html"],
-    dependsOn: [DownloadModsTarget],
-    executes: () => {
-        fs.mkdirSync("dist", { recursive: true })
-        const htmlLines = [
-            "<ul>",
-            ...readManifest().files.map(file => {
-                const modInfo = readDatafileJSON(
-                    cacheFolderByManifestFileEntry(file) + modInfoPath
-                ) as Awaited<ReturnType<typeof GetModInfo>>
-                return `<li><a href=${modInfo.links.websiteUrl}>${modInfo.name} (by ${modInfo.authors.map(a => a.name).join(", ")})</a></li>`
-            }),
-            "</ul>"
-        ]
-        fs.writeFileSync("dist/modlist.html", htmlLines.join("\n"))
-    }
-})
 
 export const UpdateModsFolder = new Juke.Target({
 
@@ -224,18 +198,6 @@ export const BuildDevTarget = getZipModPackTarget("dev", PackSwitchTarget => [
 
 export const BuildAllTarget = new Juke.Target({
     dependsOn: [BuildServerTarget, BuildClientTarget]
-})
-
-export const UploadTarget = new Juke.Target({
-    dependsOn: [BuildAllTarget],
-    parameters: [ModeParameter],
-    inputs: [
-        "dist/client.zip",
-        "dist/server.zip",
-    ],
-    executes: ({ get }) => {
-        get(ModeParameter)
-    },
 })
 
 export const CleanCacheTarget = new Juke.Target({
