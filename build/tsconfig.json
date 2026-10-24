@@ -2,7 +2,7 @@
     "compilerOptions": {
         "target": "esnext",
         "module": "nodenext",
-        "lib": ["ES2023"],
+        "lib": ["ESNext"],
 
         // Pedantic
         "alwaysStrict": true,

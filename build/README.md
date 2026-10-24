@@ -6,7 +6,7 @@ Uses juke from <https://github.com/tgstation/tgstation>
 Juke is a Node.js library, [install Node and NPM](https://nodejs.org/en/download) first.
 
 
-Build steps (**Requires Node 23 or later**):
+Build steps (**Requires Node 26 or later**):
 - Run `npm install`.
 - Run `node index.ts`.
 

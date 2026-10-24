@@ -1,9 +1,9 @@
-import { Readable, type ArrayOptions } from "node:stream"
+import { Readable, type ReadableOperatorOptions } from "node:stream"
 
 export function distribute<T, R>(
     tasks: Iterable<T> | AsyncIterable<T>,
     doTask: (task: T) => R,
-    options: ArrayOptions
+    options: ReadableOperatorOptions
 ): Promise<Awaited<R>[]> {
     return Readable
         .from(tasks)

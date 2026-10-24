@@ -8,12 +8,12 @@
   },
   "type": "module",
   "devDependencies": {
-    "@types/node": "^24.1.0",
+    "@types/node": "^26.6.5",
     "eslint": "^9.19.0",
     "globals": "^16.3.0",
     "jiti": "^2.5.1"
   },
   "engines": {
-    "node": "^23.6.0"
+    "node": "^26.12.1"
   }
 }
