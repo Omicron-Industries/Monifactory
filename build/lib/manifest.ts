@@ -12,6 +12,7 @@ const zManifestFile = z.object({
 export type ManifestFileEntry = z.infer<typeof zManifestFile>
 
 const zManifest = z.object({
+    name: z.string(),
     minecraft: z.object({
         version: z.string().nonempty(),
         modLoaders: z.tuple([
