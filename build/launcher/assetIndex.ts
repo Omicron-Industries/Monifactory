@@ -5,6 +5,7 @@ import { DownloadVersionDescription, readVersionDescription } from "./versionDes
 import { Target } from "juke-build"
 import fs from "fs/promises"
 import { downloadWithChecksum } from "./downloadWithChecksum.ts"
+import { cacheForever } from "../lib/cache.ts"
 
 const CACHE_FOLDER_ASSET_INDEXES = join(CACHE_FOLDER_ASSETS, "indexes")
 /** The game looks up the asset index at `${assets_root}/indexes/${assets_index_name}.json`, this is not configurable! */
@@ -39,11 +40,11 @@ export const DownloadAssetIndex = new Target({
 })
 
 /** A task that reads this must depend on {@linkcode DownloadAssetIndex}! */
-export const readAssetIndex = async () => {
+export const readAssetIndex = cacheForever(async () => {
     const { assetIndex } = await readVersionDescription()
     const json = await fs.readFile(getAssetIndexPath(assetIndex.id), { encoding: "utf8" })
     return zAssetIndex.parse(JSON.parse(json))
-}
+})
 
 if (import.meta.main) {
     console.log(await readAssetIndex())
