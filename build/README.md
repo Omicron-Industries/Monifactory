@@ -8,7 +8,7 @@ Juke is a Node.js library, [install Node and NPM](https://nodejs.org/en/download
 
 Build steps (**Requires Node 26 or later**):
 - Run `npm install`.
-- Run `node index.ts`.
+- Run `node index.ts build-all`.
 
 The script will skip build steps whose inputs have not changed since the last run.
 
@@ -17,7 +17,7 @@ The script will skip build steps whose inputs have not changed since the last ru
 You can get a list of all targets that you can build by running the following command:
 
 ```sh
-node index.ts --help
+node index.ts
 ```
 
 ## Environment secrets

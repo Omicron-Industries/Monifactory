@@ -6,6 +6,8 @@ import path from "path"
 import Juke from "juke-build"
 import { BuildServerTarget } from "../index.ts"
 import { readManifest } from "../lib/manifest.ts"
+import { getJavaPath } from "./java.ts"
+import { DownloadVersionDescription } from "./versionDescription.ts"
 
 const serverProperties = "level-type=lostcities\\:lostcity\n"
 
@@ -32,7 +34,7 @@ const getServerJavaArgs = (jvmOptions: string[], userOptions: string[]) => [
 
 const BuildServerLiveTarget = new Juke.Target({
     name: "build-server-live",
-    dependsOn: () => [BuildServerTarget],
+    dependsOn: () => [DownloadVersionDescription, BuildServerTarget],
     inputs: ["dist/server/**"],
     outputs: [path.join(serverInstanceDir, "manifest.json")],
     executes: async () => {
@@ -54,7 +56,7 @@ const BuildServerLiveTarget = new Juke.Target({
         if (!existsSync(path.join(serverInstanceDir, getForgeLibraryDir()))) {
             Juke.logger.info("Downloading Forge installer")
             const response = await fetch(`https://maven.minecraftforge.net/net/minecraftforge/forge/${forgeVersion}/forge-${forgeVersion}-installer.jar`)
-            if (!response.ok) {
+            if (!(response.ok && response.body)) {
                 Juke.logger.error(`Failed to download Forge installer: ${response.status} ${response.status}`)
                 throw new Juke.ExitCode(1)
             }
@@ -63,7 +65,7 @@ const BuildServerLiveTarget = new Juke.Target({
             await fs.writeFile(installerPath, response.body)
 
             try {
-                await Juke.exec("java", ["-jar", "forge-installer.jar", "--installServer"], { cwd: serverInstanceDir })
+                await Juke.exec(await getJavaPath(), ["-jar", "forge-installer.jar", "--installServer"], { cwd: serverInstanceDir })
             } finally {
                 Juke.rm(installerPath)
                 Juke.rm(`${installerPath}.log`)
@@ -110,6 +112,6 @@ export const RunGametestServerTarget = new Juke.Target({
 })
 
 export const RunDedicatedServerTarget = new Juke.Target({
-    dependsOn: [BuildServerLiveTarget],
-    executes: () => Juke.exec("java", getServerJavaArgs([], ["nogui"]), { cwd: serverInstanceDir }),
+    dependsOn: [DownloadVersionDescription, BuildServerLiveTarget],
+    executes: async () => Juke.exec(await getJavaPath(), getServerJavaArgs([], ["nogui"]), { cwd: serverInstanceDir }),
 })

@@ -4,6 +4,7 @@ import type { FeatureFlag, OS } from "./versionDescription.ts"
 
 /** Launcher version. If this is behind official launcher's version, newer versions of manifests could be incompatible. */
 export const LAUNCHER_VERSION = 21
+export const LAUNCHER_INSTANCE_PATH = join("dist", "client_live")
 
 export const CACHE_FOLDER_ROOT = join("dist", "launcher_cache")
 export const CACHE_FOLDER_ASSETS = join(CACHE_FOLDER_ROOT, "assets")
