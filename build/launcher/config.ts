@@ -5,3 +5,4 @@ export const LAUNCHER_VERSION = 21
 
 export const CACHE_FOLDER_ROOT = join("dist", "launcher_cache")
 export const CACHE_FOLDER_ASSETS = join(CACHE_FOLDER_ROOT, "assets")
+export const CACHE_FOLDER_LOGGER = join(CACHE_FOLDER_ROOT, "logger")
