@@ -19,7 +19,7 @@ export const LAUNCHER_OS: {
 } = {
     name: os.type() === "Windows_NT" ? "windows" : os.type() === "Darwin" ? "osx" : "linux",
     arch: os.arch() === "x64" ? "x86" : undefined,
-    version: os.version(),
+    version: os.release(),
 }
 
 export const LAUNCHER_FEATURES: Readonly<Record<FeatureFlag, boolean>> = {

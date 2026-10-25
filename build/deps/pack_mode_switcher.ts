@@ -4,6 +4,8 @@ import { cacheFolderByManifestFileEntry, DownloadModsTarget } from "./mods.ts"
 import { readManifest } from "../lib/manifest.ts"
 import { join, resolve } from "path"
 import { readDatafileJSON } from "../lib/json_datafile.ts"
+import { getJavaPath } from "../launcher/java.ts"
+import { DownloadVersionDescription } from "../launcher/versionDescription.ts"
 
 const CORE_MOD_PROJECT_ID = 1266569
 
@@ -13,6 +15,9 @@ export type TPackMode = z.infer<typeof zPackMode>
 
 let mutex = false
 
+/**
+ * A task that reads this must depend on {@linkcode DownloadVersionDescription}!
+ */
 const executePackModeSwitch = async (mode: TPackMode) => {
     while (mutex) {
         await new Promise(r => setTimeout(r, 1000))
@@ -30,7 +35,7 @@ const executePackModeSwitch = async (mode: TPackMode) => {
 
         // Core mod performs pack switching when executed standalone
         await Juke.exec(
-            "java",
+            await getJavaPath(),
             ["-jar", resolve(coreModJarPath), mode, "--relative"],
         )
     } finally {
@@ -61,7 +66,7 @@ export const getPackModeSwitchTarget = (
     },
 
     // Needs the core mod jar
-    dependsOn: () => [DownloadModsTarget],
+    dependsOn: [DownloadModsTarget],
 
     executes: () => executePackModeSwitch(mode),
 
@@ -71,7 +76,7 @@ export const PackModeParameter = new Juke.Parameter({ type: "string" })
 
 export const SwitchPackModeTarget = new Juke.Target({
     parameters: [PackModeParameter],
-    dependsOn: () => [DownloadModsTarget],
+    dependsOn: [DownloadModsTarget, DownloadVersionDescription],
     executes: ({ get }) => {
         const { data: mode } = zPackMode.safeParse(get(PackModeParameter))
         if (mode === undefined) {
