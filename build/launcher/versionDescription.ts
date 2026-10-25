@@ -6,6 +6,7 @@ import { join } from "node:path"
 import fs from "fs/promises"
 import { readManifest } from "../lib/manifest.ts"
 import { Target } from "juke-build"
+import { cacheForever } from "../lib/cache.ts"
 
 const CACHE_PATH_VERSION_DESCRIPTIONS = join(CACHE_FOLDER_ROOT, "versions")
 
@@ -216,10 +217,10 @@ export const DownloadVersionDescription = new Target({
 
 
 /** A task that reads this must depend on {@linkcode DownloadVersionDescription}! */
-export async function readVersionDescription() {
+export const readVersionDescription = cacheForever(async () => {
     const json = await fs.readFile(join(CACHE_PATH_VERSION_DESCRIPTIONS, getDesiredVersionId() + ".json"), { encoding: "utf8" })
     return zVersionDescription.parse(JSON.parse(json))
-}
+})
 
 if (import.meta.main) {
     // Redownload and parse all versions to ensure the schema is correct.

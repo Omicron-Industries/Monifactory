@@ -4,6 +4,7 @@ import { CACHE_FOLDER_ROOT } from "./config.ts"
 import z from "zod"
 import fs from "node:fs/promises"
 import { existsSync } from "node:fs"
+import { cacheForever } from "../lib/cache.ts"
 
 const CACHE_PATH_VERSION_MANIFEST = join(CACHE_FOLDER_ROOT, "version_manifest.json")
 
@@ -40,10 +41,10 @@ export const DownloadVersionManifest = new Target({
 })
 
 /** A task that reads this must depend on {@linkcode DownloadVersionManifest}! */
-export async function readVersionManifest() {
+export const readVersionManifest = cacheForever(async () => {
     const json = await fs.readFile(CACHE_PATH_VERSION_MANIFEST, { encoding: "utf8" })
     return zVersionManifest.parse(JSON.parse(json))
-}
+})
 
 if (import.meta.main) {
     console.log(await readVersionManifest())
