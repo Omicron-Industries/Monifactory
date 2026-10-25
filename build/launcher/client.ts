@@ -2,7 +2,7 @@ import fs from "fs/promises"
 import { join, resolve } from "path"
 import Juke from "juke-build"
 import { BuildClientTarget, DownloadModsTarget, writeModsToFolder } from "../index.ts"
-import { CACHE_FOLDER_ASSETS, CACHE_FOLDER_LIBRARIES, CACHE_FOLDER_LOGGER, CACHE_FOLDER_NATIVES, LAUNCHER_INSTANCE_PATH, LAUNCHER_JVM_ARGS, LAUNCHER_OS, LAUNCHER_VERSION } from "./config.ts"
+import { CACHE_FOLDER_ASSETS, CACHE_FOLDER_LIBRARIES, CACHE_FOLDER_LOGGER, CACHE_FOLDER_NATIVES, LAUNCHER_IGNORES_LOGGER_CONFIG, LAUNCHER_INSTANCE_PATH, LAUNCHER_JVM_ARGS, LAUNCHER_OS, LAUNCHER_VERSION } from "./config.ts"
 import { DownloadVersionDescription, type Rules } from "./versionDescription.ts"
 import { readManifest } from "../lib/manifest.ts"
 import { DownloadLibraries, getDownloadLibraries } from "./downloadLibraries.ts"
@@ -117,10 +117,12 @@ export const RunClientTarget = new Juke.Target({
             .map(arg => fillTemplates(arg, LAUNCHER_PARAMETERS))
 
         const jvmArgs = filterAndFillArgs(jvm)
-        if (logging?.client.argument) jvmArgs.push(fillTemplates(
-            logging.client.argument,
-            { path: resolve(CACHE_FOLDER_LOGGER, logging.client.file.id) },
-        ))
+        if (!LAUNCHER_IGNORES_LOGGER_CONFIG && logging?.client.argument) {
+            jvmArgs.push(fillTemplates(
+                logging.client.argument,
+                { path: resolve(CACHE_FOLDER_LOGGER, logging.client.file.id) },
+            ))
+        }
         jvmArgs.push(...LAUNCHER_JVM_ARGS())
 
         const gameArgs = filterAndFillArgs(game)
