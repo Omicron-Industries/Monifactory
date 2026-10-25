@@ -6,6 +6,7 @@ import { readManifest, type ManifestFileEntry } from "../lib/manifest.ts"
 import { DownloadCF, GetModInfo } from "../lib/curseforge.ts"
 import { readDatafileJSON, writeDatafileJSON } from "../lib/json_datafile.ts"
 import { distribute } from "../lib/parallel.ts"
+import { join } from "path"
 
 /** We do not want to DOS CurseForge. */
 const MAX_PARALLEL_MOD_TARGETS = 10
@@ -55,3 +56,23 @@ export const BuildModlistTarget = new Juke.Target({
         await fs.writeFile("dist/modlist.html", htmlLines.join("\n"))
     }
 })
+
+/**
+ * Writes mods from the download cache to a folder.
+ * Files already present in the folder are ignored.
+ */
+export async function writeModsToFolder(targetDir: string, filter?: (file: string) => boolean) {
+    await fs.mkdir(targetDir, { recursive: true })
+
+    // Cache might contain more files than the manifest!
+    // Make sure to copy only the necessary ones.
+    for (const manifile of readManifest().files) {
+        if (!manifile.required) continue
+        const folder = cacheFolderByManifestFileEntry(manifile)
+        for (const file of await fs.readdir(folder, { recursive: false, encoding: "utf8" })) {
+            if (!file.endsWith(".jar")) continue
+            if (filter && !filter(file)) continue
+            await fs.copyFile(join(folder, file), join(targetDir, file))
+        }
+    }
+}
