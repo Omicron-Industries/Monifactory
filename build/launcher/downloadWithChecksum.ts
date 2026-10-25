@@ -1,3 +1,4 @@
+import type { Readable } from "node:stream"
 import type { MinecraftFile } from "./versionDescription.ts"
 import { createHash } from "node:crypto"
 
@@ -28,4 +29,17 @@ export async function *downloadWithChecksum({ url, sha1, size }: MinecraftFile) 
     if (finalHash !== sha1) {
         throw new Error(`Downloaded file checksum mismatch for "${url}": expected ${sha1}, got ${finalHash}`)
     }
+}
+
+export async function matchesChecksum(stream: Readable | AsyncIterable<Buffer>, { sha1, size }: Pick<MinecraftFile, "sha1" | "size">) {
+    const hasher = createHash("sha1")
+    let actualSize = 0
+
+    for await (const chunk of stream as AsyncIterable<Buffer>) {
+        actualSize += chunk.length
+        if (actualSize > size) return false // Already know at least the size is wrong.
+        hasher.update(chunk)
+    }
+
+    return actualSize === size && hasher.digest("hex") === sha1
 }
