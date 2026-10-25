@@ -75,16 +75,16 @@ export const CodegenCreditsTarget = new Juke.Target({
         const getCapesByRole = (role: z.infer<typeof zRole>) =>
             Object
                 .entries(people)
-                .filter(([, data]) => data.mcuuid && data.role?.includes(role))
-                .map(([name, data]) =>
-                    fillTemplates(
+                .flatMap(([name, data]) => data.mcuuid && data.role?.includes(role)
+                    ? [fillTemplates(
                         devCapeTemplate,
                         {
                             "{{NAME}}": name,
                             "{{UUID}}": data.mcuuid,
                             "{{CAPE}}": cape_name_of_role[data.role],
                         },
-                    )
+                    )]
+                    : []
                 )
                 .join("\n")
 
