@@ -29,6 +29,7 @@ Example:
 ```env
 CF_API_KEY='$1a$1a$AaaAa11aAaAaaAaAAaA.A.AaAAa1a1a1a1111aaA1a1AAAA1a1AAa'
 JAVA_PATH=C:\path\to\java\17\bin\java.exe # Do NOT quote the path!
+LAUNCHER_JVM_ARGS='["-Xmx6G", "-XX:+UseZGC"]' # JSON array. Quote with ''!
 ```
 
 ## Launcher

@@ -2,7 +2,8 @@ import { basename, dirname, join } from "node:path"
 import { ZipFile } from "node:zlib"
 import { pipeline } from "node:stream/promises"
 import { createWriteStream, existsSync } from "node:fs"
-import { DownloadVersionDescription, readVersionDescription, type MinecraftFile } from "./versionDescription.ts"
+import { DownloadVersionDescription, readVersionDescription, type Library, type MinecraftFile } from "./versionDescription.ts"
+import { getForgeProfilePath, readForgeVersionDescription as readForgeProfile } from "./forge/forgeVersionDescription.ts"
 import { downloadWithChecksum, matchesChecksum } from "./downloadWithChecksum.ts"
 import fs from "node:fs/promises"
 import { fillTemplates } from "./fillTemplates.ts"
@@ -21,15 +22,11 @@ type LibraryDownloadInfo = {
 }
 
 /**
- * Decides which libraries need to be downloaded for the configured Minecraft version.
+ * Decides which libraries need to be downloaded.
  * This is just logic and does not perform any IO, because this information is used it multiple places -
  * downloading the libraries, and generating the classpath.
- *
- * A task that reads this must depend on {@linkcode DownloadVersionDescription}!
  */
-export const getDownloadLibraries = cacheForever(async (): Promise<readonly LibraryDownloadInfo[]> => {
-    const { libraries } = await readVersionDescription()
-
+function getLibrariesDownloadInfo(libraries: readonly Library[]): readonly LibraryDownloadInfo[] {
     /** Occasionally, classifiers have `${arch}` in them. */
     const variables = {
         arch: process.arch === "x64" ? "64" : "32",
@@ -70,9 +67,16 @@ export const getDownloadLibraries = cacheForever(async (): Promise<readonly Libr
             }
         })
         .toArray()
-})
+}
 
-
+/**
+ * Libraries of Minecraft and Forge.
+ *
+ * A task that reads this must depend on {@linkcode DownloadVersionDescription} and `InstallForgeClient`!
+ */
+export const getDownloadLibraries = cacheForever(async () =>
+    getLibrariesDownloadInfo((await readForgeProfile()).libraries)
+)
 export const DownloadLibraries = new Juke.Target({
     name: "download-libraries",
     dependsOn: [DownloadVersionDescription],
@@ -80,7 +84,10 @@ export const DownloadLibraries = new Juke.Target({
     outputs: [],
     async executes() {
         await distribute(
-            await getDownloadLibraries(),
+            // Subsequent runs validate checksums of Forge's libraries too!
+            existsSync(getForgeProfilePath())
+                ? await getDownloadLibraries()
+                : getLibrariesDownloadInfo((await readVersionDescription()).libraries), // Vanilla libraries.
             async lib => {
                 if (existsSync(lib.filePath)) {
                     await using fileHandle = await fs.open(lib.filePath)

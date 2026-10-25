@@ -9,11 +9,11 @@ export const DownloadClientJar = new Target({
     name: "download-client-jar",
     dependsOn: [DownloadVersionDescription],
     inputs: ["manifest.json"],
-    outputs: [CACHE_PATH_CLIENT_JAR],
+    outputs: () => [CACHE_PATH_CLIENT_JAR()],
     async executes() {
         const { downloads: { client } } = await readVersionDescription()
 
-        await mkdir(dirname(CACHE_PATH_CLIENT_JAR), { recursive: true })
-        await writeFile(CACHE_PATH_CLIENT_JAR, downloadWithChecksum(client))
+        await mkdir(dirname(CACHE_PATH_CLIENT_JAR()), { recursive: true })
+        await writeFile(CACHE_PATH_CLIENT_JAR(), downloadWithChecksum(client))
     }
 })
