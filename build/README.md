@@ -28,6 +28,7 @@ This is where you put your configs in `KEY=VALUE` rows.
 Example:
 ```env
 CF_API_KEY='$1a$1a$AaaAa11aAaAaaAaAAaA.A.AaAAa1a1a1a1111aaA1a1AAAA1a1AAa'
+JAVA_PATH=C:\path\to\java\17\bin\java.exe # Do NOT quote the path!
 ```
 
 ## Launcher
