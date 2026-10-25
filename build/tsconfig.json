@@ -5,12 +5,10 @@
         "lib": ["ESNext"],
 
         // Pedantic
-        "alwaysStrict": true,
+        "strict": true,
         "allowArbitraryExtensions": false,
-        "noImplicitAny": true,
         "noImplicitOverride": true,
         "noImplicitReturns": true,
-        "noImplicitThis": true,
 
         // Settings for running with node ^23.6.0
         "allowJs": false,
