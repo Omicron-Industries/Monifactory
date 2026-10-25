@@ -46,3 +46,5 @@ export const LAUNCHER_JVM_ARGS = (): string[] => z.union([
     z.string().transform(str => [str]),
     z.string().array(),
 ]).parse(JSON.parse(process.env.LAUNCHER_JVM_ARGS ?? "[]"))
+
+export const LAUNCHER_IGNORES_LOGGER_CONFIG = true
