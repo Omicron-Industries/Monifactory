@@ -1,14 +1,12 @@
 import z from "zod"
 import { distribute } from "../lib/parallel.ts"
 import { DownloadVersionManifest, readVersionManifest, zVersionType } from "./versionManifest.ts"
-import { CACHE_FOLDER_ROOT, LAUNCHER_VERSION } from "./config.ts"
+import { CACHE_FOLDER_VERSIONS, LAUNCHER_VERSION } from "./config.ts"
 import { join } from "node:path"
 import fs from "fs/promises"
 import { readManifest } from "../lib/manifest.ts"
 import { Target } from "juke-build"
 import { cacheForever } from "../lib/cache.ts"
-
-const CACHE_PATH_VERSION_DESCRIPTIONS = join(CACHE_FOLDER_ROOT, "versions")
 
 // BE NOT AFRAID
 // The following is just a large zod schema for validating and transforming a version description provided by Mojang.
@@ -44,7 +42,7 @@ const zRules = z.strictObject({
 }).array()
 export type Rules = z.infer<typeof zRules>
 
-const zRuledValues = z.union([
+export const zRuledValues = z.union([
     z.string().transform(str => ({
         rules: undefined,
         value: [str],
@@ -74,6 +72,35 @@ const zFileWithPath = zFile.extend({
     path: z.string(),
 })
 
+export const zLogging = z.strictObject({
+    client: z.strictObject({
+        argument: z.string(),
+        type: z.string(),
+        file: zFileWithId,
+    }),
+})
+
+export const zLibrary = z.strictObject({
+    name: z.string(),
+    downloads: z.union([
+        z.strictObject({
+            artifact: zFileWithPath,
+            classifiers: z.record(z.string(), zFileWithPath).optional(),
+        }),
+        z.strictObject({
+            artifact: z.undefined(),
+            classifiers: z.record(z.string(), zFileWithPath),
+        }),
+    ]),
+    rules: zRules.optional(),
+    natives: z.record(zOs, z.string().optional()).optional(),
+    extract: z.strictObject({
+        /** @example ["META-INF/"] */
+        exclude: z.string().array(),
+    }).optional(),
+})
+export type Library = z.infer<typeof zLibrary>
+
 /** Version manifest for a single version */
 const zVersionDescription = z.object({
     id: z.string(),
@@ -82,32 +109,8 @@ const zVersionDescription = z.object({
     }),
     assets: z.string(),
     mainClass: z.string(),
-    logging: z.strictObject({
-        client: z.strictObject({
-            argument: z.string(),
-            type: z.string(),
-            file: zFileWithId,
-        }),
-    }).optional(),
-    libraries: z.strictObject({
-        name: z.string(),
-        downloads: z.union([
-            z.strictObject({
-                artifact: zFileWithPath,
-                classifiers: z.record(z.string(), zFileWithPath).optional(),
-            }),
-            z.strictObject({
-                artifact: z.undefined(),
-                classifiers: z.record(z.string(), zFileWithPath),
-            }),
-        ]),
-        rules: zRules.optional(),
-        natives: z.record(zOs, z.string().optional()).optional(),
-        extract: z.strictObject({
-            /** @example ["META-INF/"] */
-            exclude: z.string().array(),
-        }).optional(),
-    }).array(),
+    logging: zLogging.optional(),
+    libraries: zLibrary.array(),
     javaVersion: z.strictObject({
         component: z.string(),
         majorVersion: z.number().int(),
@@ -189,8 +192,8 @@ async function downloadVersionDescription(url: string, fileName: string) {
     if (error) {
         throw new Error(`Failed to parse versions: ${z.prettifyError(error)}`)
     }
-    await fs.mkdir(CACHE_PATH_VERSION_DESCRIPTIONS, { recursive: true })
-    await fs.writeFile(join(CACHE_PATH_VERSION_DESCRIPTIONS, fileName + ".json"), JSON.stringify(data))
+    await fs.mkdir(CACHE_FOLDER_VERSIONS, { recursive: true })
+    await fs.writeFile(join(CACHE_FOLDER_VERSIONS, fileName + ".json"), JSON.stringify(data))
 }
 
 /** Which version the modpack actually runs on? */
@@ -203,7 +206,7 @@ export const DownloadVersionDescription = new Target({
         "manifest.json"
     ],
     outputs: () => [
-        join(CACHE_PATH_VERSION_DESCRIPTIONS, getDesiredVersionId() + ".json")
+        join(CACHE_FOLDER_VERSIONS, getDesiredVersionId() + ".json")
     ],
     async executes() {
         const desiredVersionId = getDesiredVersionId()
@@ -218,7 +221,7 @@ export const DownloadVersionDescription = new Target({
 
 /** A task that reads this must depend on {@linkcode DownloadVersionDescription}! */
 export const readVersionDescription = cacheForever(async () => {
-    const json = await fs.readFile(join(CACHE_PATH_VERSION_DESCRIPTIONS, getDesiredVersionId() + ".json"), { encoding: "utf8" })
+    const json = await fs.readFile(join(CACHE_FOLDER_VERSIONS, getDesiredVersionId() + ".json"), { encoding: "utf8" })
     return zVersionDescription.parse(JSON.parse(json))
 })
 

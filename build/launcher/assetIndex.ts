@@ -39,7 +39,7 @@ export const DownloadAssetIndex = new Target({
     }
 })
 
-/** A task that reads this must depend on {@linkcode DownloadAssetIndex}! */
+/** A task that reads this must depend on {@linkcode DownloadVersionDescription} and {@linkcode DownloadAssetIndex}! */
 export const readAssetIndex = cacheForever(async () => {
     const { assetIndex } = await readVersionDescription()
     const json = await fs.readFile(getAssetIndexPath(assetIndex.id), { encoding: "utf8" })

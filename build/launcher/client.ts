@@ -2,11 +2,12 @@ import fs from "fs/promises"
 import { join, resolve } from "path"
 import Juke from "juke-build"
 import { BuildClientTarget, DownloadModsTarget, writeModsToFolder } from "../index.ts"
-import { CACHE_FOLDER_ASSETS, CACHE_FOLDER_LOGGER, CACHE_FOLDER_NATIVES, CACHE_PATH_CLIENT_JAR, LAUNCHER_INSTANCE_PATH, LAUNCHER_OS, LAUNCHER_VERSION } from "./config.ts"
-import { DownloadVersionDescription, readVersionDescription, type Rules } from "./versionDescription.ts"
+import { CACHE_FOLDER_ASSETS, CACHE_FOLDER_LIBRARIES, CACHE_FOLDER_LOGGER, CACHE_FOLDER_NATIVES, LAUNCHER_INSTANCE_PATH, LAUNCHER_JVM_ARGS, LAUNCHER_OS, LAUNCHER_VERSION } from "./config.ts"
+import { DownloadVersionDescription, type Rules } from "./versionDescription.ts"
 import { readManifest } from "../lib/manifest.ts"
 import { DownloadLibraries, getDownloadLibraries } from "./downloadLibraries.ts"
-import { DownloadClientJar } from "./downloadClientJar.ts"
+import { InstallForgeClient } from "./forge/installForge.ts"
+import { readForgeVersionDescription } from "./forge/forgeVersionDescription.ts"
 import { DownloadAssets } from "./downloadAssets.ts"
 import { DownloadLogger } from "./downloadLogger.ts"
 import { execFile } from "child_process"
@@ -48,14 +49,15 @@ export const RunClientTarget = new Juke.Target({
     dependsOn: [
         DownloadVersionDescription,
         BuildClientLiveTarget,
-        DownloadClientJar,
         DownloadAssets,
         DownloadLibraries,
-        DownloadLogger
+        DownloadLogger,
+        InstallForgeClient,
     ],
     async executes() {
         const playerUUID = crypto.randomUUID()
         const modpackName = readManifest().name
+        const classpathSeparator = LAUNCHER_OS.name === "windows" ? ";" : ":"
 
         const {
             type: releaseType,
@@ -63,7 +65,7 @@ export const RunClientTarget = new Juke.Target({
             arguments: { jvm, game },
             logging,
             mainClass,
-        } = await readVersionDescription()
+        } = await readForgeVersionDescription()
 
         /**
          * These are the values used to evaluate ${templates} in launch arguments.
@@ -91,13 +93,14 @@ export const RunClientTarget = new Juke.Target({
             game_assets: resolve(CACHE_FOLDER_ASSETS),
             assets_root: resolve(CACHE_FOLDER_ASSETS),
             natives_directory: resolve(CACHE_FOLDER_NATIVES),
+            library_directory: resolve(CACHE_FOLDER_LIBRARIES),
             launcher_version: `${LAUNCHER_VERSION}`,
             assets_index_name: assetIndexId,
 
             classpath: (await getDownloadLibraries())
                 .map(lib => resolve(lib.filePath)) // Generates classpath from all the libraries specified in the version manifest
-                .concat([resolve(CACHE_PATH_CLIENT_JAR)]) // plus the client jar itself
-                .join(LAUNCHER_OS.name === "windows" ? ";" : ":"),
+                .join(classpathSeparator),
+            classpath_separator: classpathSeparator,
 
             quickPlayPath: "quick_play.json",
             quickPlaySingleplayer: "",
@@ -118,6 +121,7 @@ export const RunClientTarget = new Juke.Target({
             logging.client.argument,
             { path: resolve(CACHE_FOLDER_LOGGER, logging.client.file.id) },
         ))
+        jvmArgs.push(...LAUNCHER_JVM_ARGS())
 
         const gameArgs = filterAndFillArgs(game)
 

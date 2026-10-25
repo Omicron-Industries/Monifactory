@@ -1,90 +1,59 @@
 import fs from "fs/promises"
-import { existsSync } from "fs"
 import readline from "readline"
 import { spawn } from "child_process"
 import path from "path"
 import Juke from "juke-build"
 import { BuildServerTarget } from "../index.ts"
-import { readManifest } from "../lib/manifest.ts"
 import { getJavaPath } from "./java.ts"
 import { DownloadVersionDescription } from "./versionDescription.ts"
+import { getForgeServerLibraryDir, InstallForgeServer } from "./forge/installForge.ts"
+import { SERVER_INSTANCE_PATH } from "./config.ts"
 
 const serverProperties = "level-type=lostcities\\:lostcity\n"
 
 const eula = "eula=true\n"
 
-const serverInstanceDir = "dist/server-live"
-
 const RX_ERRORS = /\/(ERROR|FATAL)\] \[KubeJS( [^\]]*)?\/\]/
-
-const getForgeVersion = () => {
-    const { minecraft } = readManifest()
-    return `${minecraft.version}-${minecraft.modLoaders.id}`
-}
-
-const getForgeLibraryDir = () => path.join("libraries/net/minecraftforge/forge", getForgeVersion())
 
 const getServerJavaArgs = (jvmOptions: string[], userOptions: string[]) => [
     "-Xmx6G",
     ...jvmOptions,
     "@user_jvm_args.txt",
-    `@${getForgeLibraryDir()}/${process.platform === "win32" ? "win" : "unix"}_args.txt`,
+    `@${path.join(getForgeServerLibraryDir(), process.platform === "win32" ? "win_args.txt" : "unix_args.txt")}`,
     ...userOptions,
 ]
 
 const BuildServerLiveTarget = new Juke.Target({
     name: "build-server-live",
-    dependsOn: () => [DownloadVersionDescription, BuildServerTarget],
+    dependsOn: () => [BuildServerTarget],
     inputs: ["dist/server/**"],
-    outputs: [path.join(serverInstanceDir, "manifest.json")],
+    outputs: [path.join(SERVER_INSTANCE_PATH, "manifest.json")],
     executes: async () => {
-        await fs.mkdir(serverInstanceDir, { recursive: true })
+        await fs.mkdir(SERVER_INSTANCE_PATH, { recursive: true })
 
         // Rewrite every folder that is bundled in server build already. Extra folders, like the world, survive.
         for (const entry of await fs.readdir("dist/server")) {
-            await fs.rm(path.join(serverInstanceDir, entry), { recursive: true, force: true })
+            await fs.rm(path.join(SERVER_INSTANCE_PATH, entry), { recursive: true, force: true })
         }
-        await fs.cp("dist/server", serverInstanceDir, { recursive: true })
+        await fs.cp("dist/server", SERVER_INSTANCE_PATH, { recursive: true })
 
         // Sorry Mojang.
-        await fs.writeFile(path.join(serverInstanceDir, "eula.txt"), eula)
-        await fs.writeFile(path.join(serverInstanceDir, "server.properties"), serverProperties)
-
-        const forgeVersion = getForgeVersion()
-
-        // Install Forge if have not yet.
-        if (!existsSync(path.join(serverInstanceDir, getForgeLibraryDir()))) {
-            Juke.logger.info("Downloading Forge installer")
-            const response = await fetch(`https://maven.minecraftforge.net/net/minecraftforge/forge/${forgeVersion}/forge-${forgeVersion}-installer.jar`)
-            if (!(response.ok && response.body)) {
-                Juke.logger.error(`Failed to download Forge installer: ${response.status} ${response.status}`)
-                throw new Juke.ExitCode(1)
-            }
-
-            const installerPath = path.join(serverInstanceDir, "forge-installer.jar")
-            await fs.writeFile(installerPath, response.body)
-
-            try {
-                await Juke.exec(await getJavaPath(), ["-jar", "forge-installer.jar", "--installServer"], { cwd: serverInstanceDir })
-            } finally {
-                Juke.rm(installerPath)
-                Juke.rm(`${installerPath}.log`)
-            }
-        }
+        await fs.writeFile(path.join(SERVER_INSTANCE_PATH, "eula.txt"), eula)
+        await fs.writeFile(path.join(SERVER_INSTANCE_PATH, "server.properties"), serverProperties)
     }
 })
 
 export const RunGametestServerTarget = new Juke.Target({
-    dependsOn: [BuildServerLiveTarget],
+    dependsOn: [DownloadVersionDescription, BuildServerLiveTarget, InstallForgeServer],
     executes: async () => {
         const server = spawn(
-            "java",
+            await getJavaPath(),
             getServerJavaArgs(
                 ["-Dforge.enableGameTest=true", "-Dforge.gameTestServer=true"],
                 ["--universe", "gametest"]
             ),
             {
-                cwd: serverInstanceDir,
+                cwd: SERVER_INSTANCE_PATH,
                 stdio: ["ignore", "pipe", "inherit"],
             }
         )
@@ -112,6 +81,6 @@ export const RunGametestServerTarget = new Juke.Target({
 })
 
 export const RunDedicatedServerTarget = new Juke.Target({
-    dependsOn: [DownloadVersionDescription, BuildServerLiveTarget],
-    executes: async () => Juke.exec(await getJavaPath(), getServerJavaArgs([], ["nogui"]), { cwd: serverInstanceDir }),
+    dependsOn: [DownloadVersionDescription, BuildServerLiveTarget, InstallForgeServer],
+    executes: async () => Juke.exec(await getJavaPath(), getServerJavaArgs([], ["nogui"]), { cwd: SERVER_INSTANCE_PATH }),
 })
