@@ -6,7 +6,7 @@ import z from "zod"
 
 /** Launcher version. If this is behind official launcher's version, newer versions of manifests could be incompatible. */
 export const LAUNCHER_VERSION = 21
-export const LAUNCHER_INSTANCE_PATH = join("dist", "client_live")
+export const LAUNCHER_INSTANCE_PATH = "run"
 export const SERVER_INSTANCE_PATH = join("dist", "server_live")
 
 /** The contents of this folder must have the same layout as official launcher's `.minecraft` folder. */
