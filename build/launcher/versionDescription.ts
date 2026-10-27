@@ -88,7 +88,7 @@ export const zLibrary = z.strictObject({
             classifiers: z.record(z.string(), zFileWithPath).optional(),
         }),
         z.strictObject({
-            artifact: z.undefined(),
+            artifact: z.undefined().optional(),
             classifiers: z.record(z.string(), zFileWithPath),
         }),
     ]),
@@ -134,10 +134,10 @@ const zVersionDescription = z.object({
             "jvm": zRuledValues,
             "default-user-jvm": zRuledValues.optional(),
         }),
-        minecraftArguments: z.undefined(),
+        minecraftArguments: z.undefined().optional(),
     }),
     z.object({
-        arguments: z.undefined(),
+        arguments: z.undefined().optional(),
         minecraftArguments: z.string(), // This is a legacy variant, the launcher hardcodes what to do for JVM arguments, and so we are too.
     }).transform(({ minecraftArguments }) => ({
         arguments: {
