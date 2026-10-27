@@ -10,7 +10,7 @@
   - [Pull Request Checks](#pull-request-checks)
 - [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
 - [Getting Started](#getting-started)
-  - [Setting up an instance repository for use in dev](#setting-up-an-instance-repository-for-use-in-dev)
+  - [Setting up a dev environment](#setting-up-a-dev-environment)
 - [Localization](#localization)
 - [Things to Watch Out For](#things-to-watch-out-for)
   - [Questbook Highlighting](#questbook-highlighting)
@@ -38,9 +38,9 @@ contributing.
 
 ## Basics of Git ##
 
-Not to be confused with GitHub, which we use to host the main Monifactory repository, Git is a program that tracks file changes for us and makes collaboration easier 
-- [Git Basics](https://www.youtube.com/watch?v=hwP7WQkmECE) will give you a basic overview of how to use Git 
-- [Git Cheat Sheet](https://github.com/ReignOfFROZE/Git-Cheatsheet) is a Git cheat sheet which contains most commands you'll need to use. 
+Not to be confused with GitHub, which we use to host the main Monifactory repository, Git is a program that tracks file changes for us and makes collaboration easier
+- [Git Basics](https://www.youtube.com/watch?v=hwP7WQkmECE) will give you a basic overview of how to use Git
+- [Git Cheat Sheet](https://github.com/ReignOfFROZE/Git-Cheatsheet) is a Git cheat sheet which contains most commands you'll need to use.
 - [Git Tips and Tricks](https://www.youtube.com/watch?v=ecK3EnyGD8o) contains tricks you can use with Git to allow you to use it to it's full potential.
 
 ## Git GUIs/CUIs ##
@@ -80,33 +80,17 @@ Specifically, we are not looking for:
 
 ## Getting Started ##
 
-### Setting up an instance repository for use in dev ###
+### Setting up a dev environment ###
 If this is your first time using github, see [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) on how to create a fork and clone it to your desktop.
 
-**PrismLauncher method**
-1. Create a new Monifactory instance from the latest release, in this example, the instance folder will be named Monifactory
-2. Open the `instances\Monifactory` folder, take everything contained within it and store it in a temporary folder (`temp`).
-3. Clone your fork of the Monifactory repository into `instances\Monifactory`, with the repository's folder being named `minecraft`. (If using the desktop app, see [here](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) for an image example.)
-4. Once the repo is installed,  go back to your temporary folder and move the files from the `temp` root folder and `temp\minecraft\mods` folder back into the Monifactory folder.
-5. [Make sure to switch to your preferred pack mode](./README.md#hardexpert-mode-installation).
+Inside the repo, inside `.vscode` folder, you will find a `moni.code-workspace`. Open it with [Visual Studio Code](https://code.visualstudio.com/download). Everything is configured for VSCode specifically, sorry.
 
-**Curseforge launcher method**
-1. Create a new Monifactory instance from the latest release, in this example, the instance folder will be named Monifactory
-2. Open your `instances` folder, take the `Monifactory` folder contained within it and store it elsewhere (`temp`).
-3. Clone the [Monifactory](<https://github.com/Omicron-Industries/Monifactory/>) repository into `instances`, with the repository's folder being named `Monifactory`.
-4. Once the repo is installed, go back to your temporary folder and move minecraftinstance.json from the `temp/Monifactory` folder and the files from the `temp/Monifactory/mods` folder back into the Main Monifactory folder.
-~~5. Install prism launcher because it has no ads and a cat button~~
+Then perform [the build script initial configuration instructions](./build/README.md#initial-setup).
 
-If you encounter a problem and there have been mod updates since the latest release, you may need to update your mods using the mod manifest file.
-1. Look for a file named `manifest.json` in your instance and make a .zip with it inside.
-2. Use your launcher to import the zipped manifest as a new pack - this will download a bunch of updated mod .jars from Curseforge.
-3. Delete the contents of your instance's `mods` folder, and replace them with the mod .jars that were just downloaded.
+See the run configurations (the triangle+bug button at the left bar in VSCode), and launch the modpack. Running the game to test your changes is a core part of development. Good luck!
 
-If you want to use Juke to update your mods folder, you will need to install NodeJS [here](https://nodejs.org/en/download/current), make sure the settings for NodeJS are correct for your system operating system and CPU architecture.
-1. Go to the `build\` directory
-2. Run `npm install .` to install the required packages 
-3. Then run `node index.ts update-mods-folder` to update your mods folder.
-Once those files are moved back in place, you should be able to launch the instance as a modpack while also being able to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance, you can also just rerun the command to completely purge and update your mods folder. 
+> [!TIP]
+> The changes you make in the editor (VSCode) will apply the next time you launch the pack. Even the `manifest.json` changes.
 
 ## Localization ##
 **UPDATE:** Monifactory has temporarily withdrawn support for quest book localization, in order to help development progress more smoothly. This page will be updated once we re-enable support for quest book translations.
@@ -176,7 +160,7 @@ Larger quests should be reserved for important milestones or high-priority objec
 Quests that cover optional content should be smaller.
 
 Quests for the first circuit of each tier should use the gear shape.
-Other quests should either be hexagonal or square. 
+Other quests should either be hexagonal or square.
 
 ### Chapter layout ###
 
@@ -241,7 +225,7 @@ For assisting in pack development, several systems have been implemented in Kube
 
 ## Nukelists ##
 Part of the process for developing a modpack involves removing certain parts of some mods that aren't needed or wanted in the pack. There are several different objects that may need hiding and removal as a part of this - items, fluids, recipes, and tags.
-Nukelists hide and remove recipes that involve a certain item or fluid, as well as removing all tags from that item. 
+Nukelists hide and remove recipes that involve a certain item or fluid, as well as removing all tags from that item.
 
 For adding an item to the nukelist, add the item's resource location or a regex matching that item's resource location to the definition of `global.itemNukeList` in [item.js](kubejs\startup_scripts\nukeLists\item.js).
 
@@ -257,4 +241,4 @@ This process can be performed for items, fluids, and blocks. New deprecation ent
 ## Tiered recipe generation ##
 In GregTech, there are many cases of recipes that are highly similar to one another, but with minor differences in the inputs such as the type of plastic or rubber used, or the tier and quantity of circuit component consumed. The [Tiered Recipe Generator](kubejs\server_scripts\gregtech\tiered_recipes.js) offers a way to generate these types of recipes by copying existing recipes, then performing small modifications before registering the new recipe.
 
-This file also makes use of TypeScript to enforce strict typing. It is easily the most complicated KubeJS file, and beginners are recommended to avoid it. 
+This file also makes use of TypeScript to enforce strict typing. It is easily the most complicated KubeJS file, and beginners are recommended to avoid it.

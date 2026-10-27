@@ -41,6 +41,7 @@
 # Default World Type
 !/config/defaultworldtype
 config/defaultworldtype/world-presets.txt
+config/defaultworldtype/biomes.txt
 
 # EnderIO configs
 !/config/enderio

@@ -46,6 +46,5 @@ jobs:
         run: |
           cd build
           npm ci
-          node index.ts switch-pack-mode --pack-mode=${{ matrix.pack-mode }}
-          node index.ts run-gametest-server
+          node index.ts run-gametest-server --pack-mode=${{ matrix.pack-mode }}
         shell: bash

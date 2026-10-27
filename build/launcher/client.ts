@@ -1,7 +1,10 @@
 import fs from "fs/promises"
 import { join, resolve } from "path"
 import Juke from "juke-build"
-import { BuildClientTarget, DownloadModsTarget, writeModsToFolder } from "../index.ts"
+import { includeList } from "../index.ts"
+import { DownloadModsTarget, writeModsToFolder } from "../deps/mods.ts"
+import { getPackModeSwitchTarget } from "../deps/pack_mode_switcher.ts"
+import { CodegenAllTarget } from "../codegen/target-all.ts"
 import { CACHE_FOLDER_ASSETS, CACHE_FOLDER_LIBRARIES, CACHE_FOLDER_LOGGER, CACHE_FOLDER_NATIVES, LAUNCHER_IGNORES_LOGGER_CONFIG, LAUNCHER_INSTANCE_PATH, LAUNCHER_JVM_ARGS, LAUNCHER_OS, LAUNCHER_VERSION } from "./config.ts"
 import { DownloadVersionDescription, type Rules } from "./versionDescription.ts"
 import { readManifest } from "../lib/manifest.ts"
@@ -10,49 +13,44 @@ import { InstallForgeClient } from "./forge/installForge.ts"
 import { readForgeVersionDescription } from "./forge/forgeVersionDescription.ts"
 import { DownloadAssets } from "./downloadAssets.ts"
 import { DownloadLogger } from "./downloadLogger.ts"
-import { execFile } from "child_process"
 import { checkRulesMatch } from "./checkRulesMatch.ts"
 import { fillTemplates } from "./fillTemplates.ts"
 import { getJavaPath } from "./java.ts"
 
-const clientBuildDir = join("dist", "client", "overrides")
+const clientModsFolder = join(LAUNCHER_INSTANCE_PATH, "mods")
 
-export const BuildClientLiveTarget = new Juke.Target({
+const BuildClientLiveTarget = new Juke.Target({
     name: "build-client-live",
-    dependsOn: () => [
+    dependsOn: [
         DownloadModsTarget,
-        BuildClientTarget
+        CodegenAllTarget,
     ],
-    inputs: [
-        "manifest.json",
-        clientBuildDir,
-    ],
-    outputs: [LAUNCHER_INSTANCE_PATH],
+    inputs: ["manifest.json"],
+    outputs: [clientModsFolder],
     executes: async () => {
-        await fs.mkdir(LAUNCHER_INSTANCE_PATH, { recursive: true })
+        await fs.mkdir(clientModsFolder, { recursive: true })
 
-        // Rewrite every folder that is bundled in client build already. Extra folders, like the saves, survive.
-        for (const entry of await fs.readdir(clientBuildDir)) {
-            await fs.rm(join(LAUNCHER_INSTANCE_PATH, entry), { recursive: true, force: true })
+        // Link every folder that is bundled in client build already. Extra folders/files, like the saves, are unaffected.
+        for (const folderNameToInclude of includeList) {
+            const linkTo = join(LAUNCHER_INSTANCE_PATH, folderNameToInclude)
+            await fs.unlink(linkTo).catch(() => {}) // Remove an existing link, if any.
+            await fs.symlink(resolve(folderNameToInclude), linkTo, "junction") // Fails if there is already a folder with that name, not losing any data.
         }
 
-        const clientModsFolder = join(LAUNCHER_INSTANCE_PATH, "mods")
-        // Nuking mods/, because they also survive the filter.
+        // Nuking mods/, to also mirror deletions of mods from the manifest.
         await fs.rm(clientModsFolder, { force: true, recursive: true })
         await writeModsToFolder(clientModsFolder)
-
-        await fs.cp(clientBuildDir, LAUNCHER_INSTANCE_PATH, { recursive: true })
     }
 })
 
 export const RunClientTarget = new Juke.Target({
     dependsOn: [
         DownloadVersionDescription,
-        BuildClientLiveTarget,
         DownloadAssets,
         DownloadLibraries,
         DownloadLogger,
         InstallForgeClient,
+        getPackModeSwitchTarget("switch-client-live-pack-mode", LAUNCHER_INSTANCE_PATH, [BuildClientLiveTarget]),
     ],
     async executes() {
         const playerUUID = crypto.randomUUID()
@@ -127,22 +125,11 @@ export const RunClientTarget = new Juke.Target({
 
         const gameArgs = filterAndFillArgs(game)
 
-        const child = execFile(
+        await Juke.exec(
             await getJavaPath(),
             [...jvmArgs, mainClass, ...gameArgs],
             { cwd: LAUNCHER_INSTANCE_PATH } // The sole reason for all those resolves above :P
         )
-        child.stderr?.pipe(process.stderr)
-        child.stdout?.pipe(process.stdout)
-        return new Promise<void>((resolve, reject) => {
-            child.once("exit", code => {
-                if (code === 0) {
-                    resolve()
-                } else {
-                    reject(new Error(`Client exited with code ${code}`))
-                }
-            })
-        })
     }
 })
 
