@@ -26,7 +26,10 @@ const BuildClientLiveTarget = new Juke.Target({
         CodegenAllTarget,
     ],
     inputs: ["manifest.json"],
-    outputs: [clientModsFolder],
+    outputs: () => [
+        clientModsFolder,
+        ...includeList.map(folderName => join(LAUNCHER_INSTANCE_PATH, folderName))
+    ],
     executes: async () => {
         await fs.mkdir(clientModsFolder, { recursive: true })
 
