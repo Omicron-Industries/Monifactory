@@ -2,11 +2,16 @@
 # Monifactory gitignore
 #
 
-# Start off by ignoring everything
-/*
+# Build outputs
+/dist
+/kubejs/client_scripts/Dev_Capes.js
+/config/fancymenu/customization/pack_credit_screen_layout.txt
+/config/fancymenu/assets/pack-version.txt
+en_ud.local
+en_ud.json
 
-# Pre-commit ESLint hook
-!/.github
+# The client instance
+/run
 
 # Probe JS
 /kubejs/probe
@@ -15,12 +20,9 @@
 /kubejs/*/jsconfig.json
 
 # VSCode workspace
-!/.vscode
 /.vscode/*
-!/.vscode/*.code-workspace
 
 # Configs
-!/config
 /config/*
 
 # AE2
@@ -40,8 +42,8 @@
 
 # Default World Type
 !/config/defaultworldtype
-config/defaultworldtype/world-presets.txt
-config/defaultworldtype/biomes.txt
+/config/defaultworldtype/world-presets.txt
+/config/defaultworldtype/biomes.txt
 
 # EnderIO configs
 !/config/enderio
@@ -123,56 +125,6 @@ config/defaultworldtype/biomes.txt
 !/config/zume.json5
 !/config/moldraw.yaml
 
-# Config overrides
-!/config-overrides
-
-# defaultconfigs
-!/defaultconfigs
-defaultconfigs/ftbultimine/ftbultimine-client.snbt
-defaultconfigs/ftbultimine/ftbultimine-server.snbt
-
-# journeymap
-!/journeymap
-/journeymap/*
-!/journeymap/config
-/journeymap/config/5.10/*
-!/journeymap/config/5.10/journeymap.core.config
-
-# KubeJS scripts
-!/kubejs
-
-!/mods
-/mods/*
-!/mods/compats.md
-
-# Build script
-!/build
-
-# VSCode Editor Config
-!.editorconfig
-
-# Git files
-!/.gitattributes
-!/.gitignore
-
-# Documentation & README
-!/CHANGELOG.md
-!/CONTRIBUTING.md
-!/FAQ.md
-!/KNOWN-ISSUES.md
-!/LICENSE.md
-!/README.md
-
-# Mod manifest
-!/manifest.json
-
-# Hide code-generated files
-kubejs/client_scripts/Dev_Capes.js
-config/fancymenu/customization/pack_credit_screen_layout.txt
-config/fancymenu/assets/pack-version.txt
-**/en_ud.local
-**/en_ud.json
-
 # dotenv
 .env
 
@@ -207,7 +159,6 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
-kubejs/assets/gtceu/textures/item/material_sets/infinity/infinity_plate.xcf
 
 # Downloadable dependencies
-**/node_modules
+node_modules

@@ -54,7 +54,7 @@ Git sometimes is a hard program to master, there are a few ways to use git
 
 ## Git versus GitHub ##
 
-- Git - Version control software used to manage files in a repository(A directory containing code, in this case, this should be your minecraft folder)
+- Git - Version control software used to manage files in a repository (i.e. a directory containing code)
 - GitHub - Used to host said repositories and allow for easy collaboration worldwide.
 
 ## Pull Request Checks ##
