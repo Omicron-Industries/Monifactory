@@ -26,6 +26,7 @@ export const getZipModPackTarget = (
         dependsOn: [getPackModeSwitchTarget(`switch-${group}-pack-mode`, packSwitchPath, dependsOn)],
 
         executes: async () => {
+            Juke.rm(`dist/${group}.zip`)
             fs.copyFileSync("manifest.json", `dist/${group}/manifest.json`)
             fs.copyFileSync("dist/modlist.html", `dist/${group}/modlist.html`)
             fs.copyFileSync("LICENSE.md", `dist/${group}/LICENSE.md`)
