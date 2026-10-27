@@ -7,6 +7,7 @@
 */
 
 import fs from "fs"
+import path from "path"
 import Juke from "juke-build"
 
 import { CodegenAllTarget } from "./codegen/target-all.ts"
@@ -33,6 +34,9 @@ export const includeList = [
     "kubejs",
 //  "mods"
 ]
+
+const shouldIncludeFileInBuild = (filePath: string) =>
+    path.basename(filePath) !== "node_modules"
 
 /** All mods must be lower-case */
 const clientMods = [
@@ -64,9 +68,10 @@ export const BuildClientTarget = getZipModPackTarget("client", [
         // "dist/client/mods",
         ]),
         executes: () => {
+            Juke.rm("dist/client", { recursive: true })
             fs.mkdirSync("dist/client/overrides", { recursive: true })
             for (const folders of includeList) {
-                fs.cpSync(folders, `dist/client/overrides/${folders}`, { recursive: true })
+                fs.cpSync(folders, `dist/client/overrides/${folders}`, { recursive: true, filter: shouldIncludeFileInBuild })
             }
         }
     })
@@ -89,7 +94,7 @@ export const BuildServerTarget = getZipModPackTarget("server", [
             Juke.rm("dist/server", { recursive: true })
             fs.mkdirSync("dist/server", { recursive: true })
             for (const folders of includeList) {
-                fs.cpSync(folders, `dist/server/${folders}`, { recursive: true })
+                fs.cpSync(folders, `dist/server/${folders}`, { recursive: true, filter: shouldIncludeFileInBuild })
             }
 
             await writeModsToFolder("dist/server/mods", file => {
