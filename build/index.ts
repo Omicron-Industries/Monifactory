@@ -14,7 +14,7 @@ export * from "./codegen/target-all.ts"
 
 import { BuildModlistTarget, DownloadModsTarget, writeModsToFolder } from "./deps/mods.ts"
 export * from "./deps/mods.ts"
-export * from "./deps/pack_mode_switcher.ts"
+export { PackModeParameter } from "./deps/pack_mode_switcher.ts"
 export * from "./launcher/server.ts"
 export * from "./launcher/client.ts"
 
@@ -26,7 +26,7 @@ Juke.setup({ file: import.meta.url })
     .then(code => process.exit(code))
     .catch(err => { throw err })
 
-const includeList = [
+export const includeList = [
     "config",
     "defaultconfigs",
     "config-overrides",
@@ -50,10 +50,10 @@ const clientMods = [
     "phoenixchromaticcodes"
 ]
 
-export const BuildClientTarget = getZipModPackTarget("client", PackSwitchTarget => [
+export const BuildClientTarget = getZipModPackTarget("client", [
     new Juke.Target({
         name: "group-client-files",
-        dependsOn: [CodegenAllTarget, BuildModlistTarget, PackSwitchTarget],
+        dependsOn: [CodegenAllTarget, BuildModlistTarget],
         inputs: [
             ...includeList.map(v => `${v}/**`),
             "dist/modlist.html"
@@ -72,10 +72,10 @@ export const BuildClientTarget = getZipModPackTarget("client", PackSwitchTarget 
     })
 ])
 
-export const BuildServerTarget = getZipModPackTarget("server", PackSwitchTarget => [
+export const BuildServerTarget = getZipModPackTarget("server", [
     new Juke.Target({
         name: "group-server-files",
-        dependsOn: [CodegenAllTarget, BuildModlistTarget, DownloadModsTarget, PackSwitchTarget],
+        dependsOn: [CodegenAllTarget, BuildModlistTarget, DownloadModsTarget],
         inputs: [
             ...includeList.map(v => `${v}/**`),
             "dist/modlist.html"
@@ -114,9 +114,7 @@ export const CleanCacheTarget = new Juke.Target({
 export const CleanBuildTarget = new Juke.Target({
     executes: () => {
         Juke.rm("dist/client", { recursive: true })
-        Juke.rm("dist/dev", { recursive: true })
         Juke.rm("dist/server", { recursive: true })
-        Juke.rm("dist/.devtmp", { recursive: true })
         Juke.rm("dist/*.zip")
     },
 })

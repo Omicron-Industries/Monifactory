@@ -1,0 +1,92 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Client (Normal)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "index.ts",
+            "console": "integratedTerminal",
+            "args": [
+                "run-client",
+                "--pack-mode=normal"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Client (Hard)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "index.ts",
+            "console": "integratedTerminal",
+            "args": [
+                "run-client",
+                "--pack-mode=hard"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Client (Expert)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "index.ts",
+            "console": "integratedTerminal",
+            "args": [
+                "run-client",
+                "--pack-mode=expert"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Server (Normal)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "index.ts",
+            "console": "integratedTerminal",
+            "args": [
+                "run-dedicated-server",
+                "--pack-mode=normal"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Server (Hard)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "index.ts",
+            "console": "integratedTerminal",
+            "args": [
+                "run-dedicated-server",
+                "--pack-mode=hard"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Server (Expert)",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "index.ts",
+            "console": "integratedTerminal",
+            "args": [
+                "run-dedicated-server",
+                "--pack-mode=expert"
+            ]
+        }
+    ]
+}

@@ -1,12 +1,11 @@
 import fs from "fs"
 import Juke from "juke-build"
-import { resolve } from "path"
+import { join, resolve } from "path"
 import { getPackModeSwitchTarget } from "../deps/pack_mode_switcher.ts"
-import { readManifest } from "./manifest.ts"
 
 export const getZipModPackTarget = (
-    group: "server" | "client" | "dev",
-    dependsOn: (packModeSwitchTarget: Juke.Target) => Juke.Target[],
+    group: "server" | "client",
+    dependsOn: Juke.Target[],
 ) => {
     const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}`
 
@@ -17,29 +16,19 @@ export const getZipModPackTarget = (
             "dist/modlist.html",
             "LICENSE.md",
             `dist/${group}`,
+            join(packSwitchPath, ".mode"),
         ],
 
         outputs: [
             `dist/${group}.zip`,
         ],
 
-        dependsOn: () => dependsOn(
-            // Automatically switch to normal mode if no other mode was previously set
-            getPackModeSwitchTarget(
-                "normal",
-                {
-                    cwd: packSwitchPath,
-                    onlyWhen: () => !fs.existsSync("config/packmode.json"),
-                }
-            )
-        ),
+        dependsOn: [getPackModeSwitchTarget(`switch-${group}-pack-mode`, packSwitchPath, dependsOn)],
 
         executes: async () => {
             fs.copyFileSync("manifest.json", `dist/${group}/manifest.json`)
             fs.copyFileSync("dist/modlist.html", `dist/${group}/modlist.html`)
             fs.copyFileSync("LICENSE.md", `dist/${group}/LICENSE.md`)
-
-            fs.writeFileSync(`${packSwitchPath}/config/fancymenu/assets/pack-version.txt`, readManifest().version)
 
             if (process.platform === "win32") {
                 await Juke.exec("powershell", [

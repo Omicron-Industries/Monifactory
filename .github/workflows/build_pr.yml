@@ -73,7 +73,7 @@ jobs:
         run: |
           cd build
           npm install
-          node index.ts ${{ inputs.target }}
+          node index.ts ${{ inputs.target }} --pack-mode=normal
         shell: bash
       - name: Upload client build
         uses: actions/upload-artifact@v7
