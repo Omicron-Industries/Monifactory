@@ -2,10 +2,10 @@
 
 ## Initial setup
 
-- [install Node and NPM](https://nodejs.org/en/download) first. We require **Node 26 or later**.
+- [install Node and NPM](https://nodejs.org/en/download/current) first. We require **Node 26 or later**.
 - Open your terminal, go into the build folder (`cd build`), and run `npm install` there.
 - Run `node index.ts` to print **list of the available tasks** the build script can do, to confirm it is working.
-- Setup [environment secrets](#environment-secrets) if you'll be using it [to launch the game](#launcher) or to create a [build](#build) one can import into any mainstream launcher.
+- Setup [environment secrets](#environment-secrets) if you'll be using it to launch the game or to create a [build](#build) one can import into any mainstream launcher.
 
 ### Environment secrets
 Build script requires configuration that depends on you 🫵🫵🫵.
@@ -18,25 +18,6 @@ CF_API_KEY='$1a$1a$AaaAa11aAaAaaAaAAaA.A.AaAAa1a1a1a1111aaA1a1AAAA1a1AAa' # Get 
 JAVA_PATH=C:\path\to\java\17\bin\java.exe # Do NOT quote the path!
 LAUNCHER_JVM_ARGS='["-Xmx6G", "-XX:+UseZGC"]' # JSON array. Quote with ''!
 ```
-
-## Launcher
-
-### Running the client
-
-```sh
-node index.ts run-client --pack-mode=normal
-```
-
-Runs the game client by assembling the modpack entirely from scratch from your git checkout!
-Changes in quests and configs show up in git too, but stuff like saves and screenshots does not.
-
-### Running a dedicated server
-
-```sh
-node index.ts run-dedicated-server --pack-mode=hard
-```
-
-Runs the dedicated server by assembling the modpack entirely from scratch from your git checkout!
 
 ## Build
 Produces modpack builds in CurseForge format.
