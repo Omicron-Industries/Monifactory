@@ -1,5 +1,4 @@
 # Monifactory build script
-
 ## Initial setup
 
 - [install Node and NPM](https://nodejs.org/en/download/current) first. We require **Node 26 or later**.
@@ -8,10 +7,12 @@
 - Setup [environment secrets](#environment-secrets) if you'll be using it to launch the game or to create a [build](#build) one can import into any mainstream launcher.
 
 ### Environment secrets
-Build script requires configuration that depends on you 🫵🫵🫵.
-It loads an `.env` file at the root of the repository automatically if you just create one.
 
-This is where you put your configs in `KEY=VALUE` rows.
+More configuration for experienced users.
+Build script loads an `.env` file at the root of the repository automatically if you just create one. It is where you put your configs in `KEY=VALUE` rows.
+
+You do not have to configure all of these options at once, or any at all for that matter.
+
 Example:
 ```env
 CF_API_KEY='$1a$1a$AaaAa11aAaAaaAaAAaA.A.AaAAa1a1a1a1111aaA1a1AAAA1a1AAa' # Get yours at https://console.curseforge.com/#/api-keys

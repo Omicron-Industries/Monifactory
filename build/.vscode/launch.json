@@ -12,6 +12,11 @@
                 "<node_internals>/**"
             ],
             "program": "index.ts",
+            "preLaunchTask": "npm install",
+            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+            },
             "console": "integratedTerminal",
             "args": [
                 "run-client",
@@ -26,6 +31,11 @@
                 "<node_internals>/**"
             ],
             "program": "index.ts",
+            "preLaunchTask": "npm install",
+            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+            },
             "console": "integratedTerminal",
             "args": [
                 "run-client",
@@ -40,6 +50,11 @@
                 "<node_internals>/**"
             ],
             "program": "index.ts",
+            "preLaunchTask": "npm install",
+            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+            },
             "console": "integratedTerminal",
             "args": [
                 "run-client",
@@ -54,6 +69,11 @@
                 "<node_internals>/**"
             ],
             "program": "index.ts",
+            "preLaunchTask": "npm install",
+            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+            },
             "console": "integratedTerminal",
             "args": [
                 "run-dedicated-server",
@@ -68,6 +88,11 @@
                 "<node_internals>/**"
             ],
             "program": "index.ts",
+            "preLaunchTask": "npm install",
+            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+            },
             "console": "integratedTerminal",
             "args": [
                 "run-dedicated-server",
@@ -82,6 +107,11 @@
                 "<node_internals>/**"
             ],
             "program": "index.ts",
+            "preLaunchTask": "npm install",
+            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+            },
             "console": "integratedTerminal",
             "args": [
                 "run-dedicated-server",

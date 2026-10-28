@@ -85,8 +85,6 @@ If this is your first time using github, see [here](https://docs.github.com/en/p
 
 Inside the repo, inside `.vscode` folder, you will find a `moni.code-workspace`. Open it with [Visual Studio Code](https://code.visualstudio.com/download). Everything is configured for VSCode specifically, sorry.
 
-Then perform [the build script initial configuration instructions](./build/README.md#initial-setup).
-
 See the run configurations (the triangle+bug button at the left bar in VSCode), and launch the modpack. Running the game to test your changes is a core part of development. Good luck!
 
 > [!TIP]
