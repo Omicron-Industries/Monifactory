@@ -109,21 +109,6 @@ export const BuildAllTarget = new Juke.Target({
     dependsOn: [BuildServerTarget, BuildClientTarget]
 })
 
-export const CleanCacheTarget = new Juke.Target({
-    executes: () => {
-        Juke.rm("dist/mod_cache", { recursive: true })
-        Juke.rm("dist/modlist.html")
-    },
-})
-
-export const CleanBuildTarget = new Juke.Target({
-    executes: () => {
-        Juke.rm("dist/client", { recursive: true })
-        Juke.rm("dist/server", { recursive: true })
-        Juke.rm("dist/*.zip")
-    },
-})
-
-export const CleanAllTarget = new Juke.Target({
-    dependsOn: [CleanCacheTarget, CleanBuildTarget],
+export const CleanTarget = new Juke.Target({
+    executes: () => Juke.rm("dist", { recursive: true }),
 })
