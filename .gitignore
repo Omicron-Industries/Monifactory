@@ -10,7 +10,7 @@
 en_ud.local
 en_ud.json
 
-# The client instance
+# The client and server instances
 /run
 
 # Probe JS
