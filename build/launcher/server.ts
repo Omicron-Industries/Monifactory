@@ -9,7 +9,10 @@ import { DownloadVersionDescription } from "./versionDescription.ts"
 import { getForgeServerLibraryDir, InstallForgeServer } from "./forge/installForge.ts"
 import { SERVER_INSTANCE_PATH } from "./config.ts"
 
-const serverProperties = "level-type=lostcities\\:lostcity\n"
+const serverProperties = [
+    "level-type=lostcities\\:lostcity",
+    "online-mode=false",
+].join("\n")
 
 const eula = "eula=true\n"
 
