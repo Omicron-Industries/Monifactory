@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
 
     // Multidimensional CPU
 
-    event.recipes.gtceu.laser_engraver("engrave_unactivated_dimensional_cpu_null")
+    event.recipes.gtceu.laser_engraver("unactivated_dimensional_cpu_wafer")
         .itemInputs("kubejs:null_wafer")
         .notConsumable("gtceu:light_gray_glass_lens")
         .itemOutputs("kubejs:unactivated_multidimensional_cpu_wafer")
@@ -124,7 +124,7 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.IV])
 
     // Hyperdynamic RAM
-    event.recipes.gtceu.laser_engraver("engrave_hyperdynamic_ram_null")
+    event.recipes.gtceu.laser_engraver("hyperdynamic_ram_wafer")
         .itemInputs("kubejs:null_wafer")
         .notConsumable("gtceu:magenta_glass_lens")
         .itemOutputs("kubejs:hyperdynamic_ram_wafer")
