@@ -261,7 +261,7 @@
 			icon: "ftbquests:book"
 			id: "565CEB96B808827A"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			subtitle: "&eUSE EMI!!!&r"
 			tasks: [{
 				id: "3D960F11E60576E5"
@@ -299,7 +299,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			subtitle: "ULV Beginnings"
 			tasks: [
 				{
@@ -334,7 +334,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "Bags of holding"
 			tasks: [
 				{
@@ -467,7 +467,7 @@
 			icon: "quark:crafter"
 			id: "67690A0E04224141"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			subtitle: "Better than any crafting calculator."
 			tasks: [{
 				id: "69B9A5B79CBB478E"
@@ -499,7 +499,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "&2A highly requested mod to help you manage your tools!&r"
 			tasks: [{
 				id: "45977D529A28B4C7"
@@ -520,7 +520,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "17A6F79CDF1586CA"
 				item: "ironfurnaces:iron_furnace"
@@ -556,7 +556,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "Diggy Diggy Hole"
 			tasks: [{
 				consume_items: false
@@ -600,7 +600,7 @@
 			}
 			id: "0F9D2D32E000F55B"
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "7D8FF627D8EFCB7F"
 				item: {
@@ -635,7 +635,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			size: 1.0d
+			size: 1.25d
 			subtitle: "Confused about all the Wrenches yet?"
 			tasks: [
 				{
@@ -685,7 +685,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "&3Anvils&f can be used to repair almost all &bGregTech tools&f!"
 			tasks: [{
 				id: "1617DD7F34EE35EF"
@@ -718,7 +718,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			subtitle: "Before you continue, you'll need access to some more materials."
 			tasks: [
 				{
@@ -771,7 +771,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			tasks: [{
 				count: 64L
 				id: "4C4A446B7FA55160"
@@ -798,7 +798,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "26F476F33E0B8A57"
 				item: "watercollector:watercollector"
@@ -824,7 +824,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			tasks: [{
 				count: 3L
 				id: "1F0B0DD632A7CD6F"
@@ -854,7 +854,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			tasks: [
 				{
 					count: 16L
@@ -935,7 +935,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			tasks: [{
 				count: 12L
 				id: "4D05080F1C53C061"
@@ -1062,7 +1062,7 @@
 			icon: "gtceu:bronze_large_boiler"
 			id: "349AB63A28FD95B2"
 			optional: true
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "42549C2D094A3AC5"
 				type: "checkmark"
@@ -1141,7 +1141,7 @@
 			icon: "snad:snad"
 			id: "3412D62F98894D59"
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			subtitle: "Yes, Snad."
 			tasks: [
 				{
@@ -1166,7 +1166,7 @@
 				}
 			]
 			title: "Snad"
-			x: -2.0d
+			x: -3.5d
 			y: 16.0d
 		}
 		{
@@ -1180,7 +1180,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "Modular furnaces!"
 			tasks: [
 				{
@@ -1209,7 +1209,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "Copying your furnace's settings"
 			tasks: [{
 				id: "2ABD3A989DA449A5"
@@ -1233,7 +1233,7 @@
 			]
 			id: "133B31B88DC65834"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			tasks: [{
 				id: "1C4117728CBBA036"
 				type: "checkmark"
@@ -1286,7 +1286,7 @@
 				}
 			}
 			id: "5CBB3083D1E65931"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "4910EA312D3375E0"
 				type: "checkmark"
@@ -1357,7 +1357,7 @@
 				}
 			]
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [
 				{
 					id: "05DAD0D1076CC68D"
@@ -1387,7 +1387,7 @@
 				}
 			]
 			title: "&9Steam Grinder"
-			x: 2.56d
+			x: 2.66d
 			y: 14.375d
 		}
 		{
@@ -1408,7 +1408,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			tasks: [
 				{
 					id: "5688CFB416550651"
@@ -1533,7 +1533,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "052A0D37AB2E6DF7"
 				item: {
@@ -1609,7 +1609,7 @@
 			icon: "quark:crafter"
 			id: "7A7B7CF403014757"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			subtitle: "Better than any crafting calculator."
 			tasks: [{
 				id: "2C35508BF5626EFD"
@@ -1623,7 +1623,7 @@
 			dependencies: ["7F41F6FD59E77410"]
 			id: "545E4D09C7F70864"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			tasks: [{
 				count: 16L
 				id: "1D4C10100E775457"
@@ -1638,7 +1638,7 @@
 			hide_dependency_lines: true
 			id: "0D37D05A6B66055F"
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				count: 32L
 				id: "6A6E5B6200412328"
@@ -1670,7 +1670,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			size: 1.0d
+			size: 1.25d
 			subtitle: "&2GT Item Pipes will transport items instantly through them and accept GT covers."
 			tasks: [{
 				icon: "gtceu:tin_normal_item_pipe"
@@ -1687,7 +1687,7 @@
 			}]
 			title: "&2GT Item Pipes"
 			x: -2.0d
-			y: 14.5d
+			y: 14.6d
 		}
 		{
 			dependencies: ["5CBB3083D1E65931"]
@@ -1705,7 +1705,7 @@
 				item: "ulvcovm:ulv_electric_pump"
 				type: "item"
 			}]
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				icon: "gtceu:potin_large_fluid_pipe"
 				id: "075779A039222C28"
@@ -1756,7 +1756,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [
 				{
 					id: "0AE0FECE5532CB4E"
@@ -1862,7 +1862,7 @@
 			icon: "gtceu:resistor"
 			id: "59878F76EE175FA9"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			tasks: [
 				{
 					count: 2L
@@ -1891,13 +1891,13 @@
 			description: ["The &6Forge Hammer&r, despite being inefficient at making plates, can be used to break Cobblestone into Gravel and Gravel into Sand. It's also used to combine 2 Rods into 1 Long Rod."]
 			id: "1246B98A6B968BAC"
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "7119A3718D22B72A"
 				item: "gtceu:hp_steam_forge_hammer"
 				type: "item"
 			}]
-			x: 3.125d
+			x: 3.325d
 			y: 15.0d
 		}
 		{
@@ -1909,7 +1909,7 @@
 			]
 			id: "484A52DFABC9547E"
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "2D4C93801692331E"
 				item: "gtceu:hp_steam_compressor"
@@ -1919,12 +1919,16 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["64ABEB1EF9F81EA4"]
+			dependencies: [
+				"64ABEB1EF9F81EA4"
+				"18F01BB67968C209"
+			]
 			description: ["You might want to save your &6Coal Dust&r for circuits and use &6Charcoal Dust&r instead. Later, you can also process either &6Coal Coke Dust&r or &2Diamond Dust&r into &6Carbon Dust&r, which can be used for other alloys."]
 			hide_until_deps_visible: true
 			id: "5301E546BAA69844"
 			optional: true
 			shape: "hexagon"
+			size: 1.75d
 			subtitle: "You already have &6Steel&r, but it can be made faster in the &3Alloy Smelter&r, at the cost of EU."
 			tasks: [{
 				id: "17210F38B40BAAD7"
@@ -1932,8 +1936,8 @@
 				type: "item"
 			}]
 			title: "&9Alloying Steel"
-			x: 5.5d
-			y: 21.5d
+			x: 3.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["7457A13C74667E40"]
@@ -1952,14 +1956,14 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.25d
+			size: 1.5d
 			tasks: [{
 				id: "3A3A1267DC7F6CAD"
 				title: "Terminal"
 				type: "checkmark"
 			}]
 			title: "&9Terminal"
-			x: 2.56d
+			x: 2.66d
 			y: 15.625d
 		}
 		{
@@ -1985,13 +1989,13 @@
 			hide_dependency_lines: true
 			icon: "gtceu:maintenance_hatch"
 			id: "6A50440BAF07367A"
-			size: 1.0d
+			size: 1.25d
 			tasks: [{
 				id: "170CD6CB33F26797"
 				type: "checkmark"
 			}]
 			title: "&2Maintenance and Muffler Mechanics"
-			x: 2.25d
+			x: 2.35d
 			y: 13.0d
 		}
 		{
@@ -2001,7 +2005,7 @@
 			]
 			id: "5BBF1938168F115D"
 			shape: "hexagon"
-			size: 1.5d
+			size: 1.75d
 			tasks: [{
 				id: "4976FEF43D4F8D8A"
 				item: "craftingstation:crafting_station"
@@ -2011,6 +2015,7 @@
 			y: 8.0d
 		}
 		{
+			dependencies: ["7457A13C74667E40"]
 			description: [
 				"A &aSoft Mallet&f can be used to temporarily stop a machine from functioning. While &9this can also be done by pressing the pause button within the machine's GUI&r, the Soft Mallet allows you to quickly turn machines on and off without entering their GUI. &2In either case, please note that the machine will only stop after it finishes its current recipe.&r This can be helpful if you are low on power, but is mostly useful when you need to upgrade a multiblock (more on those later)."
 				""
@@ -2031,11 +2036,6 @@
 				}
 			}
 			id: "7EA737163230F984"
-			rewards: [{
-				id: "56897FB11AB023CB"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
 			size: 1.25d
 			subtitle: "Bonk!"
 			tasks: [{
@@ -2123,10 +2123,11 @@
 				type: "item"
 			}]
 			title: "&9Soft Mallet"
-			x: 5.3125d
-			y: 15.0d
+			x: 1.0d
+			y: 16.5d
 		}
 		{
+			dependencies: ["7457A13C74667E40"]
 			description: [
 				"To mute a Gregtech machine, right-click it with a &6Hammer&r. (Not the Mining kind!)"
 				""
@@ -2149,8 +2150,8 @@
 				type: "checkmark"
 			}]
 			title: "&9Muting and Muffling"
-			x: 6.6875d
-			y: 15.125d
+			x: -1.0d
+			y: 16.5d
 		}
 	]
 	title: "Steam"

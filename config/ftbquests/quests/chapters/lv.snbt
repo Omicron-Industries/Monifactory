@@ -8,6 +8,7 @@
 	images: [
 		{
 			click: "https://github.com/Omicron-Industries/Monifactory"
+			dependency: "4A5CC6210FCEC075"
 			height: 1.0d
 			hover: ["Report issues here!"]
 			image: "monifactory:textures/quests/github_invertocat_white.png"
@@ -18,6 +19,7 @@
 		}
 		{
 			click: "https://discord.gg/4jch9Rs2Cq"
+			dependency: "4A5CC6210FCEC075"
 			height: 1.0d
 			hover: ["Come give us feedback and chat!"]
 			image: "monifactory:textures/quests/discord-symbol-white.png"
@@ -68,12 +70,16 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["1C30B0E57E195FD7"]
+			dependencies: [
+				"1C30B0E57E195FD7"
+				"6AE36CD4F39DAB08"
+			]
 			description: [
 				"Great for automatically converting between Nuggets, Ingots, and Blocks of metals, or simply storing massive amounts of things. Also works with &9Monicoins&r."
 				""
 				"The appearance can be customized by crafting the drawer into a &aFramed Compacting Drawer&r and then using a &9Framing Template&r or your crafting grid."
 			]
+			hide_dependency_lines: true
 			hide_until_deps_visible: true
 			id: "7460F22545A4EFB2"
 			optional: true
@@ -354,7 +360,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "pentagon"
 			size: 2.5d
 			tasks: [{
 				count: 128L
@@ -511,6 +517,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["6AE36CD4F39DAB08"]
 			description: [
 				"&aFilters&r are a type of machine cover that controls what items or fluids are allowed to pass through it. They can be used directly on the side of a machine to affect external automation or the machine's &aauto-output functionality&r."
 				""
@@ -526,6 +533,7 @@
 				""
 				"All &bGregTech&r Filters can be configured using ghost items from &bEMI&r."
 			]
+			hide_dependency_lines: true
 			id: "5F6B13DBCABA5078"
 			size: 1.25d
 			tasks: [
@@ -637,6 +645,7 @@
 			y: -8.0d
 		}
 		{
+			dependencies: ["6AE36CD4F39DAB08"]
 			description: [
 				"The &bPhytogenic Insolator&r is a way to &9passively produce wood in the earlygame&r. While somewhat slow, it only requires &a10 rf/t&r to operate, meaning you can just set it down and not have to worry about it, and then come back to wood when you need some for crafting or steel production."
 				""
@@ -644,6 +653,7 @@
 				""
 				"By the way, &bThermal&r Machines are capable of Automatic I/O, try placing a 2x2 drawer beside your &bPhytogenic Insolator&r and configuring it to both push to and pull from the side with the drawer."
 			]
+			hide_dependency_lines: true
 			id: "2607F8404B56773B"
 			rewards: [{
 				id: "6AB8644A32EF475D"
@@ -885,6 +895,7 @@
 			y: -6.0d
 		}
 		{
+			dependencies: ["6AE36CD4F39DAB08"]
 			description: [
 				"Your shiny new &3Electric Blast Furnace&r can be used to process ores like regular &3Furnaces&r."
 				""
@@ -892,6 +903,7 @@
 				""
 				"This refinement produces &9Sulfur Dioxide&r as a byproduct, which is useful for the production of &9Sulfuric Acid&r."
 			]
+			hide_dependency_lines: true
 			icon: "gtceu:hot_mercury_barium_calcium_cuprate_ingot"
 			id: "14C50EFF4EB257E3"
 			tasks: [{
@@ -1615,6 +1627,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["6AE36CD4F39DAB08"]
 			dependency_requirement: "one_completed"
 			description: [
 				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are separate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine."
@@ -1640,6 +1653,7 @@
 				""
 				"Covers that move items or fluids can have a &aFilter&r placed inside them. These modify the functionality of covers in ways explained in their own quests."
 			]
+			hide_dependency_lines: true
 			icon: "gtceu:shutter_module_cover"
 			id: "1A427A8CB43C8B59"
 			shape: "square"
@@ -1766,7 +1780,7 @@
 				type: "item"
 			}]
 			title: "Diodes"
-			x: 13.0d
+			x: 15.0d
 			y: 7.0d
 		}
 		{
@@ -1921,7 +1935,7 @@
 				type: "item"
 			}]
 			title: "&2The First Tier Two Circuits"
-			x: 17.0d
+			x: 18.0d
 			y: 7.0d
 		}
 		{
@@ -2011,7 +2025,7 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 18.0d
 			y: 4.0d
 		}
 		{
@@ -2044,7 +2058,7 @@
 				item: { Count: 64, id: "gtceu:basic_electronic_circuit" }
 				type: "item"
 			}]
-			x: -1.0d
+			x: 2.0d
 			y: 4.0d
 		}
 		{
@@ -2058,7 +2072,7 @@
 				item: { Count: 32, id: "gtceu:annealed_copper_ingot" }
 				type: "item"
 			}]
-			x: 11.0d
+			x: 13.0d
 			y: 7.0d
 		}
 		{
@@ -2412,6 +2426,31 @@
 			}]
 			x: 15.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["0381464BDF6B67E5"]
+			id: "55AA34EB02352B2E"
+			size: 1.25d
+			tasks: [
+				{
+					id: "10E0F4CF1718610B"
+					item: "gtceu:lv_machine_hull"
+					type: "item"
+				}
+				{
+					id: "052006C3EA1A9FEF"
+					item: "gtceu:lv_super_chest"
+					type: "item"
+				}
+				{
+					id: "67F3B6B8995A2307"
+					item: "gtceu:lv_super_tank"
+					type: "item"
+				}
+			]
+			title: "Cheaper hulls and bigger storage"
+			x: 16.5d
+			y: 5.0d
 		}
 	]
 	title: "LV"
