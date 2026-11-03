@@ -77,12 +77,13 @@ ServerEvents.recipes(event => {
             .EUt(eut)
     }
 
+    // Fuel values must be multiples of 64 ticks (3.2s)
     LapoFuel("minecraft", "diamond", 80, -GTValues.V[GTValues.MV])
     LapoFuel("minecraft", "emerald", 32, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "sapphire_gem", 32, -GTValues.V[GTValues.MV])
-    LapoFuel("gtceu", "energium_gem", 50, -GTValues.V[GTValues.MV])
+    LapoFuel("gtceu", "energium_gem", 51.2, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "lapotron_gem", 96, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "topaz_gem", 64, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "blue_topaz_gem", 64, -GTValues.V[GTValues.MV])
-    LapoFuel("gtceu", "dilithium_gem", 24, -GTValues.V[GTValues.MV])
+    LapoFuel("gtceu", "dilithium_gem", 25.6, -GTValues.V[GTValues.MV])
 })
