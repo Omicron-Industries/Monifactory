@@ -161,28 +161,26 @@ ServerEvents.recipes(event => {
         .duration(40 * 20)
         .EUt(GTValues.VA[GTValues.LV])
 
-    // Gate CPUs (and thus the entire Micro theme) to HV
-    // Uptiers the additional Wafer recipes by 1 too
-    event.forEachRecipe({ id: "gtceu:laser_engraver/engrave_cpu_silicon" }, recipe => {
-        recipe.set("tickInputs", null)
-        recipe.EUt(GTValues.VA[GTValues.HV])
-    })
-    event.forEachRecipe({ id: "gtceu:laser_engraver/engrave_cpu_phosphorus" }, recipe => {
-        recipe.set("tickInputs", null)
-        recipe.EUt(GTValues.VA[GTValues.EV])
-    })
-    event.forEachRecipe({ id: "gtceu:laser_engraver/engrave_cpu_naquadah" }, recipe => {
-        recipe.set("tickInputs", null)
-        recipe.EUt(GTValues.VA[GTValues.IV])
-    })
-    event.forEachRecipe({ id: "gtceu:laser_engraver/engrave_cpu_neutronium" }, recipe => {
-        recipe.set("tickInputs", null)
-        recipe.EUt(GTValues.VA[GTValues.LuV])
-    })
-    event.forEachRecipe({ output: "gtceu:cpu_chip" }, recipe => {
-        recipe.set("tickInputs", null)
-        recipe.EUt(GTValues.VA[GTValues.HV])
-    })
+    // Gate CPU Chips (and thus the entire Micro theme) to HV
+    // Also halves the durations to compensate
+    event.recipes.gtceu.cutter("cut_cpu")
+        .itemInputs("gtceu:cpu_wafer")
+        .inputFluids("gtceu:lubricant 84")
+        .itemOutputs("8x gtceu:cpu_chip")
+        .duration(22.5 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.cutter("cut_cpu_distilled_water")
+        .itemInputs("gtceu:cpu_wafer")
+        .inputFluids("gtceu:distilled_water 253")
+        .itemOutputs("8x gtceu:cpu_chip")
+        .duration(33.75 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
+    event.recipes.gtceu.cutter("cut_cpu_water")
+        .itemInputs("gtceu:cpu_wafer")
+        .inputFluids("minecraft:water 337")
+        .itemOutputs("8x gtceu:cpu_chip")
+        .duration(45 * 20)
+        .EUt(GTValues.VA[GTValues.HV])
 
     // Make Microchips (Micro LV) not complete ass
     // Removes Transistors, and halves the duration (so it's actually faster than Integrated and pre-nerf Electronic)
