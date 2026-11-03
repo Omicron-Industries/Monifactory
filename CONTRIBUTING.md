@@ -111,7 +111,7 @@ Once those files are moved back in place, you should be able to launch the insta
 ## Localization ##
 Monifactory supports localization for nearly everything, including the questbook. Our weblate instance can be found [here](https://hosted.weblate.org/engage/monifactory/), and guide for using weblate can be found [here](<https://docs.weblate.org/en/latest/user/translating.html>). The site also has a [minimalist mode](<https://docs.weblate.org/en/latest/user/translating.html#zen-mode>), and supports uploading raw language files, if you prefer other options.
 
-If you wish to add a language for localization, either ask Pansmith to add it, or make a pull request with some translations already done in that language. (Weblate will automatically add lang files for everything upon detecting a new language). Also note that the discord has a thread for Monifactory's Translations in the #moni-dev channel for easy communication with other contributors.
+If you wish to add a language for localization, either ask Xefyr to add it, or make a pull request with some translations already done in that language. (Weblate will automatically add lang files for everything upon detecting a new language). Also note that the discord has a thread for Monifactory's Translations in the #moni-dev channel for easy communication with other contributors.
 
 ## Questbook Formatting Guidelines ##
 
