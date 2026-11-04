@@ -1258,7 +1258,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Like with other generators, the &6Advanced Lapotronic Generator II&r is equivalent to 4 generators of the previous tier."
+				"The &6Advanced Lapotronic Generator II&r will burn its gems &e4x&r as fast, in exchange for &e4x&r the EU/t. This results in the same total EU per gem."
 				""
 				"Access to &6Microminers&r in &6HV&r will allow you to automate the production of a variety of gems. In particular, &6Energium&r and &6Lapotron&r gems are a more processed alternative to simpler gems."
 			]
@@ -1282,7 +1282,7 @@
 				""
 				"First, it's a multiblock. This means it takes up more space, requires a &6Maintenance Hatch&r, and costs a significant amount of Titanium."
 				""
-				"Second, it consumes small amounts of &9Quantum Flux&r in addition to regular lapotronic fuels."
+				"Second, it consumes small amounts of &9Liquid Redstone&r in addition to regular lapotronic fuels."
 				""
 				"Third, it can be supercharged with tiny amounts of &9Primal Mana&r to produce &e3x&r more energy from &e2x&r more fuel."
 			]
@@ -1371,7 +1371,7 @@
 			description: [
 				"The Extreme Lapotronic Generator is a direct upgrade to the Large Lapotronic Generator."
 				""
-				"It produces &e4x&r the power for &e4x&r as much fuel like any other generator upgrade, but consumes the same amount of &9Quantum Flux&r."
+				"It produces &e4x&r the power for &e4x&r as much fuel like any other generator upgrade, but consumes the same amount of &9Liquid Redstone&r."
 				""
 				"Additionally, supercharging with &9Primal Mana&r is even more efficient, producing &e4x&r more energy from &e2x&r more fuel."
 			]
