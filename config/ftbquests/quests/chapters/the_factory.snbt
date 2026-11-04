@@ -54,6 +54,21 @@
 			x: 6.25d
 			y: 6.75d
 		}
+		{
+			id: "1BD667B1076EDD5F"
+			linked_quest: "3D6BC54DBE665638"
+			shape: "hexagon"
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "6E8F35B6CC447F93"
+			linked_quest: "1BC6DDC2D50F9C46"
+			shape: "hexagon"
+			size: 2.0d
+			x: 1.0d
+			y: 13.0d
+		}
 	]
 	quests: [
 		{
@@ -1437,99 +1452,6 @@
 		}
 		{
 			dependencies: [
-				"4CD6C60CBEFFA317"
-				"0523F4AB9A794390"
-			]
-			description: [
-				"The &3Electric Blast Furnace&r is a major, major milestone in your &bGregTech&r career. It has the power to smelt more advanced materials. The first of these, &6Aluminium&r, is going to be important in the immediate future."
-				""
-				"Since smelting &6Aluminium&r requires MV power, you're going to have to power this with 2 LV Energy Input Hatches and 4 generators. The reasoning for this is explained in the quest above this one."
-				""
-				"There is a diagram of how to build the EBF in &bEMI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &6sneak-right click&r the controller to enable the in-world preview."
-				""
-				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact center of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all the gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &29&e Heatproof Machine Casings in your layout or the structure will not form&r."
-				""
-				"{@pagebreak}"
-				"This quest calls for a &2maintenance hatch&r, two energy hatches, a fluid input and output, and an item input and output, which is a total of 7 positions. Their specific order and placement don't matter, as long as you can access them. The 8th position is your EBF controller, leaving 9 gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the textures on its hatches and casings will unify, and the controller will say \"Idling.\""
-				""
-				"Hatches and Buses can be replaced by Hatches and Buses of any tier, although the Input Bus must be at least LV, as there are 2 inputs."
-				""
-				"You'll want to use &6Conductive Iron&r to wire up your EBF. It is very power hungry, and cable loss is a serious problem at this stage in progression. If the EBF cannot get enough energy, progress on the item smelting will halt partway through or fail to start."
-				""
-				"&2In Gregtech, all hatches except Maintenance and Parallel Control can be shared between Multiblocks!"
-			]
-			icon: "gtceu:electric_blast_furnace"
-			id: "1BC6DDC2D50F9C46"
-			rewards: [{
-				id: "3B20DB4147336C51"
-				item: "kubejs:moni_dollar"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [
-				{
-					id: "0E093ED43F2B2E14"
-					item: "gtceu:electric_blast_furnace"
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "7998F0B9E0714746"
-					item: "gtceu:heatproof_machine_casing"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "0D6F9EF349C45ADA"
-					item: "gtceu:cupronickel_coil_block"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "215E1D7028D4007A"
-					item: "gtceu:maintenance_hatch"
-					type: "item"
-				}
-				{
-					id: "41EA282C8B1B05AB"
-					item: "gtceu:lv_muffler_hatch"
-					type: "item"
-				}
-				{
-					id: "3917BF19F1C3A0C1"
-					item: "gtceu:lv_input_bus"
-					type: "item"
-				}
-				{
-					id: "3B7D450F27322A57"
-					item: "gtceu:lv_output_bus"
-					type: "item"
-				}
-				{
-					id: "24CB1B1755F635CB"
-					item: "gtceu:lv_input_hatch"
-					type: "item"
-				}
-				{
-					id: "04B80990027093E6"
-					item: "gtceu:lv_output_hatch"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "67A9C3501BB6F0FD"
-					item: "gtceu:lv_energy_input_hatch"
-					type: "item"
-				}
-			]
-			title: "&2Blast Furnace Fun"
-			x: 1.0d
-			y: 13.0d
-		}
-		{
-			dependencies: [
 				"1DBBE96165C7987D"
 				"1BC6DDC2D50F9C46"
 			]
@@ -2517,45 +2439,6 @@
 			title: "Aluminium Dust (HM/EM)"
 			x: -2.5d
 			y: 11.75d
-		}
-		{
-			dependencies: [
-				"3BD20358F137E7C6"
-				"273F3F8DD6A3DCC5"
-			]
-			description: [
-				"Holding one of these reveals &aTravel Anchors&r in range."
-				""
-				"Right-click after aiming to warp to one, or point it anywhere and shift+right-click to teleport forward a short distance (works through walls)."
-				""
-				"These are powered with RF, and can be further enchanted through &bEnder IO&r's enchanting mechanics."
-				""
-				"The &6Pulsating Crystal&r will require an &3Autoclave&r."
-			]
-			id: "3D6BC54DBE665638"
-			rewards: [{
-				id: "096D97D7F08241D4"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "7187745E3D3C66B6"
-				item: {
-					Count: 1
-					id: "enderio:staff_of_travelling"
-					tag: {
-						Energy: {
-							EnergyStored: 100000
-							MaxEnergyStored: 100000
-							MaxEnergyUse: 100000
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: 3.0d
 		}
 		{
 			dependencies: ["6A914B240E1A7BCB"]

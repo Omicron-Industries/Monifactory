@@ -110,6 +110,43 @@
 			x: -9.75d
 			y: -5.5d
 		}
+		{
+			id: "78CBAAFFCED49F1C"
+			linked_quest: "1DB3CCC10C0EB1A8"
+			shape: "hexagon"
+			x: -10.75d
+			y: 8.75d
+		}
+		{
+			id: "752245BAE721598C"
+			linked_quest: "53EC3831D66769CA"
+			shape: "hexagon"
+			x: 9.0d
+			y: 3.75d
+		}
+		{
+			id: "207DD39F07E9EAC9"
+			linked_quest: "3DD8D9EEA7189186"
+			shape: "hexagon"
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			id: "01878A313A454D5D"
+			linked_quest: "53C00EA9D9BEE776"
+			shape: "hexagon"
+			size: 2.0d
+			x: -5.75d
+			y: -3.0d
+		}
+		{
+			id: "79E03BBE3F281AD5"
+			linked_quest: "664107ED03A944CD"
+			shape: "hexagon"
+			size: 1.25d
+			x: 5.0d
+			y: 6.5d
+		}
 	]
 	quests: [
 		{
@@ -624,39 +661,6 @@
 		}
 		{
 			dependencies: [
-				"0874A0191325CFDB"
-				"5B07A88C0BFF6586"
-			]
-			description: [
-				"[\"\",{\"text\":\"The Second Microminer! If this is your first microminer, please read the quests about how microminers and microverses work in the \"},{\"underlined\":true,\"text\":\"Into the Microverse chapter.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"68F29871402A6B1B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}}]"
-				""
-				"&2You'll need Phosphorous in its LV Field Generators&r."
-				""
-				"This Miner is a good source of &6Tungsten and Noble Gases&r, among other things."
-				""
-				"&9Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
-				""
-				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
-			]
-			id: "53C00EA9D9BEE776"
-			rewards: [{
-				id: "66C6B5C146FB14CF"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "0589E6FCB6684938"
-				item: "kubejs:microminer_t2"
-				type: "item"
-			}]
-			title: "&9Tier Two Microminer"
-			x: -5.75d
-			y: -3.0d
-		}
-		{
-			dependencies: [
 				"53C00EA9D9BEE776"
 				"399AE4E449872B8A"
 			]
@@ -711,34 +715,6 @@
 			}]
 			x: -3.75d
 			y: -5.5d
-		}
-		{
-			dependencies: [
-				"3000798ACA51BFDC"
-				"5C78349343BA40D7"
-			]
-			description: [
-				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
-				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Nichrome Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Vacuum Freezer&r."
-				""
-				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &6Input Bus&r of your &3Vacuum Freezer&r via pipes or a &6Tag Filter&r set to 'forge:hot_ingots' with a high priority."
-			]
-			id: "1DB3CCC10C0EB1A8"
-			rewards: [{
-				id: "2C2C08984F62573F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "4DC44D14F05D27B4"
-				item: "gtceu:nichrome_ingot"
-				type: "item"
-			}]
-			title: "Nichrome Ingots"
-			x: -10.75d
-			y: 8.75d
 		}
 		{
 			dependencies: ["1DB3CCC10C0EB1A8"]
@@ -2018,32 +1994,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["14F1FF4656693711"]
-			description: [
-				"The Third Microminer. &2You'll need Boron in its MV Field Generators.&r"
-				""
-				"Look in &bEMI to see what resources this miner can produce."
-				""
-				"At this point in the game, Microminers can get you most basic resources, continue to check &bEMI&r to see what they can give you."
-			]
-			id: "664107ED03A944CD"
-			rewards: [{
-				id: "5F3323232ACD2ED2"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "6652A8526BF40563"
-				item: "kubejs:microminer_t3"
-				type: "item"
-			}]
-			title: "&2Tier Three Microminer"
-			x: 5.0d
-			y: 6.5d
-		}
-		{
 			dependencies: ["358D9A7B1BCFA30A"]
 			description: [
 				"&6Nano CPUs&r are advanced &6Circuit Wafers&r made from infusing a &6CPU Wafer&r with &6Carbon Fibers&r and &6Liquid Glowstone&r in a &3Chemical Reactor&r."
@@ -2570,29 +2520,6 @@
 			title: "Lumium"
 			x: 2.5d
 			y: 1.5d
-		}
-		{
-			dependencies: ["6DC635766CD40FFF"]
-			description: [
-				"&6HSS-G&r is an alloy of &6Tungstensteel&r, &6Chrome&r, &6Molybdenum&r, and &6Vanadium&r."
-				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r or &3Alloy Blast Smelter&r and cooled in a &3Vacuum Freezer&r."
-			]
-			id: "53EC3831D66769CA"
-			rewards: [{
-				id: "794FA2C0EE3BCC27"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "42A0FDC419CC929F"
-				item: "gtceu:hssg_ingot"
-				type: "item"
-			}]
-			title: "High Speed Steel Type G"
-			x: 9.0d
-			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -3505,31 +3432,6 @@
 			title: "&2Polybenzimidazole (PBI)"
 			x: 12.5d
 			y: 0.5d
-		}
-		{
-			dependencies: [
-				"14F1FF4656693711"
-				"53EC3831D66769CA"
-				"5732018AA35D69B6"
-			]
-			description: ["&6HSS-G&r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials, such as &6Naquadah&r."]
-			id: "3DD8D9EEA7189186"
-			rewards: [{
-				id: "0A5B1F97951B104A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				count: 16L
-				id: "585B8ED807736A7A"
-				item: "gtceu:hssg_coil_block"
-				type: "item"
-			}]
-			title: "HSS-G Coil Blocks"
-			x: 9.0d
-			y: 5.0d
 		}
 		{
 			dependencies: ["476F71CC0B0AC2A4"]

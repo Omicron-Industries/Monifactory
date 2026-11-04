@@ -54,6 +54,14 @@
 			x: 6.0d
 			y: 1.75d
 		}
+		{
+			id: "11707078B274A023"
+			linked_quest: "638130DC8A2BF1C1"
+			shape: "hexagon"
+			size: 2.0d
+			x: 3.5d
+			y: 0.0d
+		}
 	]
 	quests: [
 		{
@@ -1118,38 +1126,6 @@
 			}]
 			x: 5.0d
 			y: -2.0d
-		}
-		{
-			dependencies: [
-				"4F572CA3678CB287"
-				"5B07A88C0BFF6586"
-				"798284BA30D818DA"
-				"2D0DF78F71760F00"
-				"7ACF867DECE1C37F"
-			]
-			description: [
-				"This is your first Microminer ever. You'll need &6Phosphorous&r in its &6LV Field Generator&r."
-				""
-				"This Microminer is &6fully reusable&r, so you can send it on as many missions as you want."
-				""
-				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
-			]
-			id: "638130DC8A2BF1C1"
-			rewards: [{
-				id: "5FF12439A660943F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "4362115B3E464772"
-				item: "kubejs:microminer_t1"
-				type: "item"
-			}]
-			title: "&2First Foray Into The Microverse"
-			x: 3.5d
-			y: 0.0d
 		}
 		{
 			dependencies: [

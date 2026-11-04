@@ -7,180 +7,7 @@
 	icon: "minecraft:writable_book"
 	id: "395B849AC6294153"
 	order_index: 5
-	quest_links: [
-		{
-			id: "4CA98E8FC9082FA2"
-			linked_quest: "5F9C7FB40AD2640B"
-			x: 17.0d
-			y: -5.5d
-		}
-		{
-			id: "6E8F35B6CC447F93"
-			linked_quest: "1BC6DDC2D50F9C46"
-			shape: "hexagon"
-			x: 18.5d
-			y: -8.5d
-		}
-		{
-			id: "63280C5F37A22345"
-			linked_quest: "2EBB9A154522348F"
-			size: 2.0d
-			x: 7.0d
-			y: 11.5d
-		}
-		{
-			id: "1BD667B1076EDD5F"
-			linked_quest: "3D6BC54DBE665638"
-			x: 17.0d
-			y: -4.0d
-		}
-		{
-			id: "46C91BC7D1FBA463"
-			linked_quest: "3115EAF1F70A613E"
-			shape: "hexagon"
-			x: 20.0d
-			y: -8.5d
-		}
-		{
-			id: "6D8DCF46A3036C88"
-			linked_quest: "5C78349343BA40D7"
-			shape: "hexagon"
-			x: 18.5d
-			y: -7.0d
-		}
-		{
-			id: "78CBAAFFCED49F1C"
-			linked_quest: "1DB3CCC10C0EB1A8"
-			shape: "hexagon"
-			x: 20.0d
-			y: -7.0d
-		}
-		{
-			id: "752245BAE721598C"
-			linked_quest: "53EC3831D66769CA"
-			shape: "hexagon"
-			x: 20.0d
-			y: -4.0d
-		}
-		{
-			id: "207DD39F07E9EAC9"
-			linked_quest: "3DD8D9EEA7189186"
-			shape: "hexagon"
-			x: 18.5d
-			y: -2.5d
-		}
-		{
-			id: "3260188D1D1543AC"
-			linked_quest: "424413BBCE3FD3BF"
-			shape: "hexagon"
-			x: 20.0d
-			y: -2.5d
-		}
-		{
-			id: "57D9AB6BFC44C8FE"
-			linked_quest: "28CA4E5308EC0BB9"
-			shape: "hexagon"
-			x: 18.5d
-			y: -1.0d
-		}
-		{
-			id: "1280D62386BC2C4E"
-			linked_quest: "15FAEE3F625265F4"
-			shape: "hexagon"
-			x: 20.0d
-			y: -1.0d
-		}
-		{
-			id: "11707078B274A023"
-			linked_quest: "638130DC8A2BF1C1"
-			size: 1.2d
-			x: 22.0d
-			y: -8.5d
-		}
-		{
-			id: "01878A313A454D5D"
-			linked_quest: "53C00EA9D9BEE776"
-			size: 1.2d
-			x: 22.0d
-			y: -7.0d
-		}
-		{
-			id: "79E03BBE3F281AD5"
-			linked_quest: "664107ED03A944CD"
-			size: 1.2d
-			x: 22.0d
-			y: -5.5d
-		}
-		{
-			id: "3FF813B417BA0F0C"
-			linked_quest: "15DBB22E3DC0AFB7"
-			size: 1.4d
-			x: 22.0d
-			y: -4.0d
-		}
-		{
-			id: "357D1A1342B62C34"
-			linked_quest: "023197AB7CDBDD6E"
-			size: 1.4d
-			x: 22.0d
-			y: -2.5d
-		}
-		{
-			id: "73970F01D2A201B5"
-			linked_quest: "49B872B193268554"
-			size: 1.4d
-			x: 22.0d
-			y: -1.0d
-		}
-		{
-			id: "2C75892426FCF3CF"
-			linked_quest: "5FE96C30454A0374"
-			size: 1.4d
-			x: 22.0d
-			y: 0.5d
-		}
-		{
-			id: "0235B280EA62E904"
-			linked_quest: "2D47BFA44BDB5E6A"
-			size: 2.0d
-			x: 22.0d
-			y: 4.5d
-		}
-		{
-			id: "6769FF4B998F524C"
-			linked_quest: "6BF4A76C5B84EEE9"
-			size: 2.0d
-			x: 22.0d
-			y: 6.5d
-		}
-		{
-			id: "2299A97C8D4BF1B8"
-			linked_quest: "27EBB5AAF8A40F3D"
-			size: 2.0d
-			x: 22.0d
-			y: 8.5d
-		}
-		{
-			id: "53D04354B8061A41"
-			linked_quest: "6B80737C5E1359F7"
-			x: 17.0d
-			y: -2.5d
-		}
-		{
-			id: "6A0F4CBB58BE6D22"
-			linked_quest: "7A65459E4DFAAC2D"
-			shape: "hexagon"
-			x: 18.5d
-			y: 0.5d
-		}
-		{
-			id: "72AB40B2D5F508E6"
-			linked_quest: "61301FBD825F8280"
-			shape: "hexagon"
-			x: 20.0d
-			y: 2.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["1A30472430354F1E"]
@@ -3410,6 +3237,823 @@
 			title: "&9Leadstone Backpack"
 			x: 12.5d
 			y: -7.0d
+		}
+		{
+			dependencies: [
+				"5601A05D8361551D"
+				"59219D37B5CE80E6"
+				"4F08AF2C1E6B1736"
+			]
+			description: [
+				"You win."
+				""
+				"Congratulations."
+				""
+				"We hope you enjoyed playing &9Monifactory&r."
+			]
+			id: "2EBB9A154522348F"
+			rewards: [{
+				id: "7424EC770906922F"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:chest"
+						}
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "A winner is you"
+			tasks: [{
+				id: "392DAFD3A4019E34"
+				item: "gtceu:creative_chest"
+				type: "item"
+			}]
+			title: "&9&lCreative Chest&r"
+			x: 7.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3E42B4AAA6D2A05B"]
+			description: [
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
+				""
+				"Also important to note is that it can act wonky with Tile Entities, so it is mainly useful with simple blocks (it doesn't paste machine or hatch configuration, for example)."
+				"{@pagebreak}"
+				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will pull items from the inventory, 'connecting' the gadget to the inventory."
+				""
+				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r, the gadget will use &6Cobblestone&r from that chest to place blocks."
+				""
+				"By default, the config GUI is bound to &8G&r."
+			]
+			icon: "buildinggadgets2:gadget_building"
+			id: "5F9C7FB40AD2640B"
+			subtitle: "This pack has &bBuilding Gadgets&r."
+			tasks: [{
+				id: "512BC0AAD462E586"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_building"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_exchanging"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_copy_paste"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_cut_paste"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_destruction"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Inspector Gadget"
+			x: 17.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3781AD70E71CA0D7"]
+			description: [
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
+				""
+				"Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks."
+				"{@pagebreak}"
+				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with the Portable Spatial Cloner in your offhand and the tool will pull items from the inventory, 'connecting' it to the inventory."
+				""
+				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r with the Portable Spatial Cloner in your offhand, the tool will use &6Cobblestone&r from that chest to place blocks."
+				""
+				"By default, the context menu GUI is bound to &8Left Alt&r."
+			]
+			id: "31EE6E41F509A8CF"
+			subtitle: "This pack has &bSpatial Tools Compatible&r."
+			tasks: [{
+				id: "24B4E26B05F638D6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_storage"
+							}
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_cloner"
+							}
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_replacer"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Pocket-sized pocket dimensions"
+			x: 17.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3BD20358F137E7C6"
+				"273F3F8DD6A3DCC5"
+			]
+			description: [
+				"Holding one of these reveals &aTravel Anchors&r in range."
+				""
+				"Right-click after aiming to warp to one, or point it anywhere and shift+right-click to teleport forward a short distance (works through walls)."
+				""
+				"These are powered with RF, and can be further enchanted through &bEnder IO&r's enchanting mechanics."
+				""
+				"The &6Pulsating Crystal&r will require an &3Autoclave&r."
+			]
+			id: "3D6BC54DBE665638"
+			rewards: [{
+				id: "096D97D7F08241D4"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7187745E3D3C66B6"
+				item: {
+					Count: 1
+					id: "enderio:staff_of_travelling"
+					tag: {
+						Energy: {
+							EnergyStored: 100000
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 17.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["424413BBCE3FD3BF"]
+			description: [
+				"The &9Omni-breaker&r is a tool added by &bGTM Utils&r which can instantly break any block."
+				""
+				"When using the &9Omni-breaker&r you can right click to break one block at a time, or hold left click to continuously break blocks."
+				""
+				"The &9Omni-breaker&r &cdoes not&r automatically relocate blocks to the player, so it is advised to use some type of &6magnet&r to avoid losing blocks."
+			]
+			id: "6B80737C5E1359F7"
+			rewards: [{
+				id: "66946C64C245553F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "om nom nom nom"
+			tasks: [{
+				id: "725DD71DFCCADBE8"
+				item: "gtmutils:omnibreaker"
+				type: "item"
+			}]
+			title: "Omni-breaker"
+			x: 17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4CD6C60CBEFFA317"
+				"0523F4AB9A794390"
+			]
+			description: [
+				"The &3Electric Blast Furnace&r is a major, major milestone in your &bGregTech&r career. It has the power to smelt more advanced materials. The first of these, &6Aluminium&r, is going to be important in the immediate future."
+				""
+				"Since smelting &6Aluminium&r requires MV power, you're going to have to power this with 2 LV Energy Input Hatches and 4 generators. The reasoning for this is explained in the quest above this one."
+				""
+				"There is a diagram of how to build the EBF in &bEMI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &6sneak-right click&r the controller to enable the in-world preview."
+				""
+				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact center of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all the gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &29&e Heatproof Machine Casings in your layout or the structure will not form&r."
+				""
+				"{@pagebreak}"
+				"This quest calls for a &2maintenance hatch&r, two energy hatches, a fluid input and output, and an item input and output, which is a total of 7 positions. Their specific order and placement don't matter, as long as you can access them. The 8th position is your EBF controller, leaving 9 gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the textures on its hatches and casings will unify, and the controller will say \"Idling.\""
+				""
+				"Hatches and Buses can be replaced by Hatches and Buses of any tier, although the Input Bus must be at least LV, as there are 2 inputs."
+				""
+				"You'll want to use &6Conductive Iron&r to wire up your EBF. It is very power hungry, and cable loss is a serious problem at this stage in progression. If the EBF cannot get enough energy, progress on the item smelting will halt partway through or fail to start."
+				""
+				"&2In Gregtech, all hatches except Maintenance and Parallel Control can be shared between Multiblocks!"
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "1BC6DDC2D50F9C46"
+			rewards: [{
+				id: "3B20DB4147336C51"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "0E093ED43F2B2E14"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7998F0B9E0714746"
+					item: "gtceu:heatproof_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0D6F9EF349C45ADA"
+					item: "gtceu:cupronickel_coil_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "215E1D7028D4007A"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "41EA282C8B1B05AB"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "3917BF19F1C3A0C1"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "3B7D450F27322A57"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "24CB1B1755F635CB"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "04B80990027093E6"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "67A9C3501BB6F0FD"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&2Blast Furnace Fun"
+			x: 18.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"776199B37A19A592"
+				"061904A6FEED5B66"
+				"1BC6DDC2D50F9C46"
+				"785300684B1846B2"
+			]
+			description: [
+				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chromium&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r."
+			]
+			id: "3115EAF1F70A613E"
+			rewards: [{
+				id: "4C82AAA84303A281"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "22E54D54259A247A"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			title: "Kanthal Ingots"
+			x: 20.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"3115EAF1F70A613E"
+				"2C6BEB5BBE5A91DC"
+			]
+			description: [
+				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
+				""
+				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Liquid Copper&r."
+				""
+				"&2In GTm, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &9temperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%%&r energy."
+				""
+				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
+			]
+			id: "5C78349343BA40D7"
+			rewards: [{
+				id: "6AAC5C8B746659ED"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "00D5958543D7BBE6"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			title: "Kanthal Coil Blocks"
+			x: 18.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"3000798ACA51BFDC"
+				"5C78349343BA40D7"
+			]
+			description: [
+				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Nichrome Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Vacuum Freezer&r."
+				""
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &6Input Bus&r of your &3Vacuum Freezer&r via pipes or a &6Tag Filter&r set to 'forge:hot_ingots' with a high priority."
+			]
+			id: "1DB3CCC10C0EB1A8"
+			rewards: [{
+				id: "2C2C08984F62573F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "4DC44D14F05D27B4"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			title: "Nichrome Ingots"
+			x: 20.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6DC635766CD40FFF"]
+			description: [
+				"&6HSS-G&r is an alloy of &6Tungstensteel&r, &6Chrome&r, &6Molybdenum&r, and &6Vanadium&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r or &3Alloy Blast Smelter&r and cooled in a &3Vacuum Freezer&r."
+			]
+			id: "53EC3831D66769CA"
+			rewards: [{
+				id: "794FA2C0EE3BCC27"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "42A0FDC419CC929F"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			title: "High Speed Steel Type G"
+			x: 20.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"14F1FF4656693711"
+				"53EC3831D66769CA"
+				"5732018AA35D69B6"
+			]
+			description: ["&6HSS-G&r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials, such as &6Naquadah&r."]
+			id: "3DD8D9EEA7189186"
+			rewards: [{
+				id: "0A5B1F97951B104A"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "585B8ED807736A7A"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			title: "HSS-G Coil Blocks"
+			x: 18.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3DD8D9EEA7189186"
+				"023197AB7CDBDD6E"
+				"1BADB230EB1BEA4D"
+			]
+			description: [
+				"An otherworldly material exclusive to Microverses, &6Naquadah&r is an important material in the late game."
+				""
+				"It can be alloyed and enriched to various forms, and is the eventual source of &6Neutronium&r in a &3MK III Fusion Reactor&r."
+			]
+			id: "424413BBCE3FD3BF"
+			rewards: [{
+				id: "05581326BA7839F9"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "75892E7951C532B7"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "Naquadah Ingots"
+			x: 20.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"424413BBCE3FD3BF"
+				"254D6D1470BC197E"
+			]
+			description: ["&6Naquadah&r is the sixth coil material available, increasing your EBF's operating temperature to 7200K so it can process more advanced materials."]
+			id: "28CA4E5308EC0BB9"
+			rewards: [{
+				id: "76AA0FD4E8D706E5"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "2C1FDC7B8E7B2C03"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			title: "Naquadah Coil Blocks"
+			x: 18.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"28CA4E5308EC0BB9"
+				"0508D3CCB6C876A3"
+			]
+			description: [
+				"&2A strong heavy element obtained from the Naquadah chain."
+				""
+				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &91 Trinium per 12 Naquadah processed&r."
+				""
+				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, and &6Naquadah Alloy&r, among other things. You will need almost 5.5 stacks for a &3Fusion Reactor MK I&r, so stock up on it!"
+			]
+			id: "15FAEE3F625265F4"
+			rewards: [{
+				id: "7C362667765C8A4D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0EDAFBD50F866785"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			title: "Trinium"
+			x: 20.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"41FA85A3920EB334"
+				"5A31EEF439212D6E"
+				"15FAEE3F625265F4"
+			]
+			description: ["&6Trinium&r is the seventh coil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."]
+			id: "7A65459E4DFAAC2D"
+			rewards: [{
+				id: "0F124B2E02F2BD4E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "52F9691851DE4023"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			title: "Trinium Coils"
+			x: 18.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4261BDA34D716EC8"]
+			description: [
+				"After combining several dozen elements, or less efficiently, just throwing a bunch of &6Iron&r and &6Copper&r into the &3Omnic Synthesizer&r, you get &6Omnium Nuggets&r. Those nuggets can be further compressed into an ingot form, workable like many of the metals that comprise it."
+				""
+				"Omnium will be used in increasing frequency throughout the endgame."
+			]
+			icon: "gtceu:omnium_ingot"
+			id: "61301FBD825F8280"
+			rewards: [{
+				id: "01C5A5720A287196"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4205D04F8EFE2D7D"
+					item: "gtceu:omnium_nugget"
+					type: "item"
+				}
+				{
+					id: "56970BBAFAB8BEB7"
+					item: "gtceu:omnium_ingot"
+					type: "item"
+				}
+			]
+			title: "Omnium"
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4F572CA3678CB287"
+				"5B07A88C0BFF6586"
+				"798284BA30D818DA"
+				"2D0DF78F71760F00"
+				"7ACF867DECE1C37F"
+			]
+			description: [
+				"This is your first Microminer ever. You'll need &6Phosphorous&r in its &6LV Field Generator&r."
+				""
+				"This Microminer is &6fully reusable&r, so you can send it on as many missions as you want."
+				""
+				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
+			]
+			id: "638130DC8A2BF1C1"
+			rewards: [{
+				id: "5FF12439A660943F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4362115B3E464772"
+				item: "kubejs:microminer_t1"
+				type: "item"
+			}]
+			title: "First Foray Into The Microverse"
+			x: 22.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"0874A0191325CFDB"
+				"5B07A88C0BFF6586"
+			]
+			description: [
+				"[\"\",{\"text\":\"The Second Microminer! If this is your first microminer, please read the quests about how microminers and microverses work in the \"},{\"underlined\":true,\"text\":\"Into the Microverse chapter.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"68F29871402A6B1B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}}]"
+				""
+				"&2You'll need Phosphorous in its LV Field Generators&r."
+				""
+				"This Miner is a good source of &6Tungsten and Noble Gases&r, among other things."
+				""
+				"&9Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
+				""
+				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
+			]
+			id: "53C00EA9D9BEE776"
+			rewards: [{
+				id: "66C6B5C146FB14CF"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0589E6FCB6684938"
+				item: "kubejs:microminer_t2"
+				type: "item"
+			}]
+			title: "Tier Two Microminer"
+			x: 22.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["14F1FF4656693711"]
+			description: [
+				"The Third Microminer. &2You'll need Boron in its MV Field Generators.&r"
+				""
+				"Look in &bEMI to see what resources this miner can produce."
+				""
+				"At this point in the game, Microminers can get you most basic resources, continue to check &bEMI&r to see what they can give you."
+			]
+			id: "664107ED03A944CD"
+			rewards: [{
+				id: "5F3323232ACD2ED2"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "6652A8526BF40563"
+				item: "kubejs:microminer_t3"
+				type: "item"
+			}]
+			title: "Tier Three Microminer"
+			x: 22.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"52F1953ED72A8AA6"
+				"77582C534A994D7C"
+				"27A80F018F59EF1E"
+			]
+			description: [
+				"All of the Tier Four missions require &6Petrotheum Dust&r."
+				""
+				"This tier of Microminer excels at gathering massive batches of basic materials, such as &6Iron&r, &6Gold&r, or &6Redstone&r. Additionally, this microminer will be your first source of &6Neptunium&r."
+				""
+				"It is also a convenient source of &6Sheldonite&r, the best choice for creating &6Platinum Group Sludge&r, via a mission requiring &6Wither Realm Data&r."
+			]
+			id: "15DBB22E3DC0AFB7"
+			rewards: [{
+				id: "48E752C131EA99AC"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "41398E76BAF0F92E"
+				item: "kubejs:microminer_t4"
+				type: "item"
+			}]
+			title: "Tier Four Microminer"
+			x: 22.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"52F1953ED72A8AA6"
+				"1349044BF8C04A12"
+				"05F7C3F397B329F5"
+			]
+			description: ["The first source of &6Naquadah &r(&6Snowchestite&r on HM+) and &2Kaemanite Ore&r (for &6Trinium&r), via a mission with &6Stabilized Plutonium&r. Later on you can mine these ores from &6Glacio&r."]
+			id: "023197AB7CDBDD6E"
+			rewards: [{
+				id: "5C975732784B15CA"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "51421243D98A03F2"
+				item: "kubejs:microminer_t5"
+				type: "item"
+			}]
+			title: "Tier Five Microminer"
+			x: 22.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7DB174443D7FAFA0"]
+			description: [
+				"The first decent source of &6Dragon Eggs&r."
+				""
+				"This microminer can also provide: &6Uraninite&r, &6Plutonium&r, &6Ancient Debris&r, and more."
+				""
+				"Once you reach the &3Elite Microverse Projector&r, this microminer can also bring back Sculk-related items, such as &6Sculk Blocks&r and &6Veins&r."
+			]
+			id: "49B872B193268554"
+			rewards: [{
+				id: "1A07DD326F7F9A55"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "2BE2D12C219225CD"
+				item: "kubejs:microminer_t6"
+				type: "item"
+			}]
+			title: "Tier Six Microminer"
+			x: 22.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7E3A179376673590"
+				"7C89BC235C988689"
+				"44B0AB41C076E779"
+			]
+			description: [
+				"The first source of &9Warden Hearts&r and the only source of &9Lair of The Warden Data&r."
+				""
+				"As a bonus, it also brings back &9Sculk Catalysts, Warden Tendrils, &2Blocks of Ruthenium&r, and plenty of other different precious metals and gems."
+			]
+			id: "5FE96C30454A0374"
+			rewards: [{
+				id: "054FA1CE3A3D79F3"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0D171B9697B4903C"
+				item: "kubejs:microminer_t7"
+				type: "item"
+			}]
+			title: "Tier Seven Microminer"
+			x: 22.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["41F1837D7C131898"]
+			description: [
+				"The &6only&r source of &9Hadal Shards&r."
+				""
+				"&9This Microminer also brings back Dragon Eggs, Dragon Scales, Dragons Breath, Quantum Stars, and Gravi-Stars&r."
+			]
+			id: "2D47BFA44BDB5E6A"
+			rewards: [{
+				id: "5D074328E8D1E7A2"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "66C53D4610F26EED"
+				item: "kubejs:microminer_t8"
+				type: "item"
+			}]
+			title: "Tier Eight Microminer"
+			x: 22.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"57D9FA04817CB92F"
+				"41F1837D7C131898"
+			]
+			description: [
+				"The &6Tier Nine Microminer&r doesn't unlock any new items, but instead grants alternate sources for some pre-existing materials."
+				""
+				"This miner is a great source of &6Darmstadtium&r and &6Duranium&r. It is also a slightly slower but cheaper source of &6Neutronium&r compared to the &3Fusion Reactor MKIII&r."
+			]
+			id: "6BF4A76C5B84EEE9"
+			rewards: [{
+				id: "5FA553DCC8666ADA"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "4E68CF49A166A50A"
+				item: "kubejs:microminer_t9"
+				type: "item"
+			}]
+			title: "Tier Nine Microminer"
+			x: 22.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"483652BAEF59E125"
+				"0B51A633811472A2"
+			]
+			description: [
+				"You have become Death, destroyer of Universes."
+				""
+				"This miner is your sole source of &6Hearts Of A Universe&r and &3Shattered Microverses&r."
+			]
+			id: "27EBB5AAF8A40F3D"
+			size: 2.0d
+			tasks: [{
+				id: "624B7498A1144A6F"
+				item: "kubejs:microminer_t10"
+				type: "item"
+			}]
+			title: "Tier Ten Microminer"
+			x: 22.0d
+			y: 6.5d
 		}
 	]
 	title: "Progression"

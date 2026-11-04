@@ -121,6 +121,36 @@
 			x: -4.5d
 			y: -3.75d
 		}
+		{
+			id: "72AB40B2D5F508E6"
+			linked_quest: "61301FBD825F8280"
+			shape: "hexagon"
+			x: 0.0d
+			y: 7.25d
+		}
+		{
+			id: "2C75892426FCF3CF"
+			linked_quest: "5FE96C30454A0374"
+			shape: "hexagon"
+			size: 1.5d
+			x: 0.75d
+			y: 3.5d
+		}
+		{
+			id: "0235B280EA62E904"
+			linked_quest: "2D47BFA44BDB5E6A"
+			shape: "hexagon"
+			size: 1.5d
+			x: 2.0d
+			y: 9.25d
+		}
+		{
+			id: "6769FF4B998F524C"
+			linked_quest: "6BF4A76C5B84EEE9"
+			shape: "hexagon"
+			x: 4.0d
+			y: 7.25d
+		}
 	]
 	quests: [
 		{
@@ -345,34 +375,6 @@
 		}
 		{
 			dependencies: [
-				"7E3A179376673590"
-				"7C89BC235C988689"
-				"44B0AB41C076E779"
-			]
-			description: [
-				"The first source of &9Warden Hearts&r and the only source of &9Lair of The Warden Data&r."
-				""
-				"As a bonus, it also brings back &9Sculk Catalysts, Warden Tendrils, &2Blocks of Ruthenium&r, and plenty of other different precious metals and gems."
-			]
-			id: "5FE96C30454A0374"
-			rewards: [{
-				id: "054FA1CE3A3D79F3"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "0D171B9697B4903C"
-				item: "kubejs:microminer_t7"
-				type: "item"
-			}]
-			title: "&9Tier Seven Microminer"
-			x: 0.75d
-			y: 3.5d
-		}
-		{
-			dependencies: [
 				"1CC092A2F2CD4589"
 				"7D4B29BA4D8CB153"
 				"37DC6C37EA24BF4D"
@@ -524,30 +526,6 @@
 			title: "&9Discharger"
 			x: 3.75d
 			y: 4.25d
-		}
-		{
-			dependencies: ["41F1837D7C131898"]
-			description: [
-				"The &6only&r source of &9Hadal Shards&r."
-				""
-				"&9This Microminer also brings back Dragon Eggs, Dragon Scales, Dragons Breath, Quantum Stars, and Gravi-Stars&r."
-			]
-			id: "2D47BFA44BDB5E6A"
-			rewards: [{
-				id: "5D074328E8D1E7A2"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "66C53D4610F26EED"
-				item: "kubejs:microminer_t8"
-				type: "item"
-			}]
-			title: "&9Tier Eight Microminer"
-			x: 2.0d
-			y: 9.25d
 		}
 		{
 			dependencies: ["28CA4E5308EC0BB9"]
@@ -1670,37 +1648,6 @@
 			y: 0.25d
 		}
 		{
-			dependencies: ["4261BDA34D716EC8"]
-			description: [
-				"After combining several dozen elements, or less efficiently, just throwing a bunch of &6Iron&r and &6Copper&r into the &3Omnic Synthesizer&r, you get &6Omnium Nuggets&r. Those nuggets can be further compressed into an ingot form, workable like many of the metals that comprise it."
-				""
-				"Omnium will be used in increasing frequency throughout the endgame."
-			]
-			icon: "gtceu:omnium_ingot"
-			id: "61301FBD825F8280"
-			rewards: [{
-				id: "01C5A5720A287196"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [
-				{
-					id: "4205D04F8EFE2D7D"
-					item: "gtceu:omnium_nugget"
-					type: "item"
-				}
-				{
-					id: "56970BBAFAB8BEB7"
-					item: "gtceu:omnium_ingot"
-					type: "item"
-				}
-			]
-			title: "Omnium"
-			x: 0.0d
-			y: 7.25d
-		}
-		{
 			dependencies: [
 				"15607184B546F5EE"
 				"75810A27FBBBFB77"
@@ -1748,32 +1695,6 @@
 			title: "Quantum Fluxed Eternium Heavy Plating"
 			x: 4.0d
 			y: 6.25d
-		}
-		{
-			dependencies: [
-				"57D9FA04817CB92F"
-				"41F1837D7C131898"
-			]
-			description: [
-				"The &6Tier Nine Microminer&r doesn't unlock any new items, but instead grants alternate sources for some pre-existing materials."
-				""
-				"This miner is a great source of &6Darmstadtium&r and &6Duranium&r. It is also a slightly slower but cheaper source of &6Neutronium&r compared to the &3Fusion Reactor MKIII&r."
-			]
-			id: "6BF4A76C5B84EEE9"
-			rewards: [{
-				id: "5FA553DCC8666ADA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "4E68CF49A166A50A"
-				item: "kubejs:microminer_t9"
-				type: "item"
-			}]
-			title: "Tier Nine Microminer"
-			x: 4.0d
-			y: 7.25d
 		}
 		{
 			dependencies: ["069773756716E192"]
