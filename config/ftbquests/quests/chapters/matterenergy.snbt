@@ -280,7 +280,7 @@
 				"7E59E0E33962D787"
 			]
 			description: [
-				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, or fluids from one location to another using your ME system, without the need to use any cell storage space. &cTransporting EU has a tax on the input energy based on the size and number of amps transported.&r"
+				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, or fluids from one location to another using your ME system, without the need to use any cell storage space. &cTransporting EU has a very large tax on the input energy based on the size and number of amps transported.&r"
 				""
 				"Each P2P tunnel system may have only &cone input&r but &eany number of outputs&r. There is no limit on how many P2P tunnels, or P2P tunnel systems, you can have on one network."
 				""
@@ -711,7 +711,7 @@
 				"{@pagebreak}"
 				"After you have made the &eSingularity&r you will need from the &3Matter Condenser&r, you need to set up a &aQuantum Ring Multiblock&r. Build a 3 by 3 vertical ring with your &6Quantum Rings&r, leaving a hole in the middle. Finally, stick your &6Quantum Link Chamber&r in the hole, and connect it to your ME system. If you built it correctly, the textures of the rings should combine, leaving you with a &aMultiblock&r."
 				""
-				"Next, create a pair of &eQuantum Entangled Singularities&r by throwing Ender Dust and a Singularity into the vicinity of an explosion."
+				"Next, create a pair of &eQuantum Entangled Singularities&r by throwing Ender Dust and a Singularity into the vicinity of an explosion. You should probably rename them so you can tell which singularities are linked later."
 				""
 				"&9Now that you have Quantum Entangled Singularities, put one into the&r &6Quantum Link Chamber&r&9 of the &r&aQuantum Ring&r&9, and the other in the dedicated slot of the &6Wireless Terminal&9!&r"
 				""
@@ -1341,7 +1341,7 @@
 		{
 			dependencies: ["6E27B9938B280291"]
 			description: [
-				"&bApplied Energistics&r does not allow you to use tags when creating &6Processing Patterns&r. This can become annoying when dealing with recipes that use Gregtech Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
+				"&bApplied Energistics&r does not allow you to use tags when creating &6Processing Patterns&r. This can become annoying when dealing with recipes that use &bGregtech&r Circuits, as normally you would have to remake your patterns when you unlock a new tier of circuit."
 				""
 				"&eIf you find this to be an issue, use &9Universal Circuits&e for Processing Patterns that would otherwise use GregTech circuits.&r"
 				""
@@ -1523,7 +1523,7 @@
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
-			subtitle: "&6Accumulation Processors&r are made from a &6Black Steel Plate&r, a &6Silicon Plate&r, and any tier three circuit."
+			subtitle: "&6Accumulation Processors&r are made from a &6Black Steel Plate&r, a &6Silicon Plate&r, and any &6HV&r circuit."
 			tasks: [{
 				id: "4B2E214B3A13DCD5"
 				item: "megacells:accumulation_processor"
@@ -1628,9 +1628,10 @@
 				"4FF4697A8AF10731"
 			]
 			description: [
-				"&6ME Pattern Buffers&r are unlocked after you obtain &6Europium&r. These blocks work quite similarly to &6Pattern Providers&r, with some notable differences. They are used in a multiblocks' structure as a bus/hatch. The items/fluids provided from patterns in the buffer are stored in an infinitely large internal storage. Each pattern has its own buffer, so no two patterns can mix ingredients. Additionally, catalyst items/fluids can be shared across all patterns in the buffer.\n&9Note that Pattern Buffers don't support blocking mode. While this isn't usually an issue, you might want to use regular &6Pattern Providers&9 if you need some form of blocking mode.&r"
+				"&6ME Pattern Buffers&r are unlocked in &9IV&r. These blocks work quite similarly to &6Pattern Providers&r, with some notable differences. They are used in a multiblocks' structure as a bus/hatch. The items/fluids provided from patterns in the buffer are stored in an infinitely large internal storage. Each pattern has its own buffer, so no two patterns can mix ingredients. Additionally, catalyst items/fluids can be shared across all patterns in the buffer."
+				"&9Note that Pattern Buffers don't support blocking mode. While this isn't usually an issue, you might want to use regular &6Pattern Providers&9 if you need some form of blocking mode.&r"
 				""
-				"Later, after building and running a &3Research Station&r, you will be able to make &6ME Pattern Buffer Proxies&r. They can be linked to a parent ME Pattern Buffer by Shift + Right-Clicking on the Buffer with a &6Data Stick&r then Right-Clicking on the Proxy with it. This will make it so that the internal inventory of the Buffer is available to the Proxy, for use in another multiblock."
+				"Later, after building and running an &3Assembly Line&r and &3Fusion Reactor&r, you will be able to make &6ME Pattern Buffer Proxies&r. They can be linked to a parent ME Pattern Buffer by Shift + Right-Clicking on the Buffer with a &6Data Stick&r then Right-Clicking on the Proxy with it. This will make it so that the internal inventory of the Buffer is available to the Proxy, for use in another multiblock."
 			]
 			id: "436707C1C1A6A9DC"
 			shape: "hexagon"
@@ -1727,7 +1728,7 @@
 		{
 			dependencies: ["491180694DA10086"]
 			description: [
-				"Fluix is initially made via in-world crafting, by dropping &6Redstone&r, &6Nether Quartz&r, and a &6Charged Certus Quartz Crystal&r in the same block of &9Water&r. You'll see some sparks then the items will merge into a &6Fluix Crystal&r. Be sure to turn off any nearby item magnets/collectors or they might interrupt this crafting process."
+				"Fluix is initially made via in-world crafting, by dropping &6Redstone&r, &6Nether Quartz&r, and a &6Charged Certus Quartz Crystal&r in the same block of &9Water&r. You'll see some sparks then the items will merge into a &6Fluix Crystal&r. Be sure to turn off any nearby item magnets/collectors or they might interrupt this crafting process. It also has a &3Mixer&r recipe."
 				""
 				"The &3Energy Acceptor&r converts GT power into AE power that Applied Energistics uses, in a 1 EU to 2 AE ratio. This power will be transmitted through adjacent full-block ME Network devices, as well as along all connected &6ME Cables&r and &6Quartz Fibers&r."
 				""
