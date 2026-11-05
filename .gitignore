@@ -20,7 +20,7 @@ en_ud.json
 /kubejs/*/jsconfig.json
 
 # VSCode workspace
-/.vscode/*
+.vscode
 
 # Configs
 /config/*

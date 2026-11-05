@@ -7,15 +7,34 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Lint auto-fix in KubeJS",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "eslint",
+            "cwd": "${workspaceFolder}/kubejs",
+            "preLaunchTask": "npm install kubejs",
+            "runtimeExecutable": "${workspaceFolder}/dist/node/bin/npx",
+            "windows": {
+                "cwd": "${workspaceFolder}\\kubejs",
+                "runtimeExecutable": "${workspaceFolder}\\dist\\node\\npx.exe"
+            },
+            "console": "integratedTerminal",
+            "args": ["--fix"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Client (Normal)",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "index.ts",
-            "preLaunchTask": "npm install",
-            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "program": "build/index.ts",
+            "preLaunchTask": "npm install build",
+            "runtimeExecutable": "${workspaceFolder}/dist/node/bin/node",
             "windows": {
-                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+                "program": "build\\index.ts",
+                "runtimeExecutable": "${workspaceFolder}\\dist\\node\\node.exe"
             },
             "console": "integratedTerminal",
             "args": [
@@ -30,11 +49,12 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "index.ts",
-            "preLaunchTask": "npm install",
-            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "program": "build/index.ts",
+            "preLaunchTask": "npm install build",
+            "runtimeExecutable": "${workspaceFolder}/dist/node/bin/node",
             "windows": {
-                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+                "program": "build\\index.ts",
+                "runtimeExecutable": "${workspaceFolder}\\dist\\node\\node.exe"
             },
             "console": "integratedTerminal",
             "args": [
@@ -49,11 +69,12 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "index.ts",
-            "preLaunchTask": "npm install",
-            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "program": "build/index.ts",
+            "preLaunchTask": "npm install build",
+            "runtimeExecutable": "${workspaceFolder}/dist/node/bin/node",
             "windows": {
-                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+                "program": "build\\index.ts",
+                "runtimeExecutable": "${workspaceFolder}\\dist\\node\\node.exe"
             },
             "console": "integratedTerminal",
             "args": [
@@ -68,11 +89,12 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "index.ts",
-            "preLaunchTask": "npm install",
-            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "program": "build/index.ts",
+            "preLaunchTask": "npm install build",
+            "runtimeExecutable": "${workspaceFolder}/dist/node/bin/node",
             "windows": {
-                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+                "program": "build\\index.ts",
+                "runtimeExecutable": "${workspaceFolder}\\dist\\node\\node.exe"
             },
             "console": "integratedTerminal",
             "args": [
@@ -87,11 +109,12 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "index.ts",
-            "preLaunchTask": "npm install",
-            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "program": "build/index.ts",
+            "preLaunchTask": "npm install build",
+            "runtimeExecutable": "${workspaceFolder}/dist/node/bin/node",
             "windows": {
-                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+                "program": "build\\index.ts",
+                "runtimeExecutable": "${workspaceFolder}\\dist\\node\\node.exe"
             },
             "console": "integratedTerminal",
             "args": [
@@ -106,11 +129,12 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "index.ts",
-            "preLaunchTask": "npm install",
-            "runtimeExecutable": "${workspaceFolder}/../dist/node/bin/node",
+            "program": "build/index.ts",
+            "preLaunchTask": "npm install build",
+            "runtimeExecutable": "${workspaceFolder}/dist/node/bin/node",
             "windows": {
-                "runtimeExecutable": "${workspaceFolder}/../dist/node/node.exe"
+                "program": "build\\index.ts",
+                "runtimeExecutable": "${workspaceFolder}\\dist\\node\\node.exe"
             },
             "console": "integratedTerminal",
             "args": [
