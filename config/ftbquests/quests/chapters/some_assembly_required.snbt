@@ -5,7 +5,7 @@
 	group: "18F0ED1F9A002C08"
 	icon: "gtceu:assembly_line"
 	id: "058B7FE882875343"
-	order_index: 5
+	order_index: 8
 	quest_links: [
 		{
 			id: "4AB71382C803BD92"
@@ -946,7 +946,10 @@
 			y: 7.25d
 		}
 		{
-			dependencies: ["15DBB22E3DC0AFB7"]
+			dependencies: [
+				"15DBB22E3DC0AFB7"
+				"1CA6D620309F2B9E"
+			]
 			description: [
 				"All missions require &6Aerotheum Dust&r. This Microminer can be used to gather more advanced &6Mob Drops&r than the &9Tier 2.5 Microminer&r"
 				""

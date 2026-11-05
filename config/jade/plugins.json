@@ -9,7 +9,6 @@
     "color_info": true,
     "sculk_vat_xp_info": true,
     "omnic_synth_info": true,
-    "virtual_particle_synth_info": true,
     "microverse_info": true
   },
   "minecraft": {
@@ -154,9 +153,6 @@
   },
   "jadeaddons": {
     "equipment_requirement": ""
-  },
-  "hammerlib": {
-    "root": true
   },
   "jadeaddons.lootr": {
     "info": true

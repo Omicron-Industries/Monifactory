@@ -5,7 +5,7 @@
 	group: "18F0ED1F9A002C08"
 	icon: "gtceu:wetware_processor_mainframe"
 	id: "15E8BBD0CD310663"
-	order_index: 6
+	order_index: 9
 	quest_links: [
 		{
 			id: "688ACEE0FD0E5FED"

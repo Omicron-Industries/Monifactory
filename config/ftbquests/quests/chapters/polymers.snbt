@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "polymers"
+	group: "7A7ECB813BC25B77"
+	icon: "gtceu:polytetrafluoroethylene_plate"
+	id: "0852071E2FEC820E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Chemicals"
+}
