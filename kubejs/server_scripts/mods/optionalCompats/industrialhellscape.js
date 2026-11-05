@@ -7,7 +7,7 @@
  */
 
 if (Platform.isLoaded("industrialhellscape")) {
-    console.log("Industrail Hellscape found, loading compat script...");
+    console.log("Industrial Hellscape found, loading compat script...");
 
     ServerEvents.recipes((event) => {
         // Recipe Removal
@@ -112,7 +112,7 @@ if (Platform.isLoaded("industrialhellscape")) {
         encircle(
             "metalworks",
             Item.of("industrialhellscape:metalworks", 48),
-            "gtceu:long_copper_rod",
+            "gtceu:long_iron_rod",
             150,
         );
 
@@ -135,5 +135,5 @@ if (Platform.isLoaded("industrialhellscape")) {
         );
     });
 
-    console.log("Architect's Palette Loaded!");
+    console.log("Industrial Hellscape Loaded!");
 }
