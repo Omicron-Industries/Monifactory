@@ -19,9 +19,6 @@ deprecateItem("travellersbootsreloaded:travellers_boots_tier3", "gtexolegs:hv_ex
 deprecateItem("travellersbootsreloaded:travellers_boots_tier4", "gtexolegs:ev_exoskeleton_legs", "Traveller's Boots Tier 4")
 deprecateItem("travellersbootsreloaded:travellers_boots_tier5", "gtexolegs:iv_exoskeleton_legs", "Traveller's Boots Tier 5")
 
-// Primal Mana
-deprecateFluid("gtceu:mana", "monilabs:mana", "Primal Mana")
-
 // Dilithium
 deprecateItem("kubejs:dilithium_crystal", "gtceu:dilithium_gem", "Dilithium")
 
@@ -128,3 +125,6 @@ deprecated_thermal_wire_materials.forEach(material => {
     deprecateBlock(`gtceu:${material}_octal_wire`, `4x gtceu:${material}_ingot`)
     deprecateBlock(`gtceu:${material}_hex_wire`, `8x gtceu:${material}_ingot`)
 })
+
+// Primal Mana
+deprecateFluid("gtceu:mana", "monilabs:mana", "Primal Mana")
