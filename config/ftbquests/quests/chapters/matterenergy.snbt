@@ -1624,8 +1624,8 @@
 		}
 		{
 			dependencies: [
-				"2A6E9E7C80754936"
 				"4FF4697A8AF10731"
+				"605062720747B482"
 			]
 			description: [
 				"&6ME Pattern Buffers&r are unlocked in &9IV&r. These blocks work quite similarly to &6Pattern Providers&r, with some notable differences. They are used in a multiblocks' structure as a bus/hatch. The items/fluids provided from patterns in the buffer are stored in an infinitely large internal storage. Each pattern has its own buffer, so no two patterns can mix ingredients. Additionally, catalyst items/fluids can be shared across all patterns in the buffer."
@@ -1647,7 +1647,7 @@
 		{
 			dependencies: [
 				"7C0A37EEA3C63B16"
-				"605062720747B482"
+				"785C6332FC7A07A5"
 			]
 			description: [
 				"These blocks function similarly to &6ME Input Buses&r/&6Hatches&r. Rather than specifying an amount to keep, the bus/hatch will make all items/fluid of that type in the network accessible to the multiblock. This does not actually pull the items from the network, so they are still available for use everywhere else in on the network."
