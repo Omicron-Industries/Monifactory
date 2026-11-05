@@ -104,7 +104,7 @@
     "monilabs.menu.SaveTmpModeFileAction.description": "Saves the letter that packmodeswitcher reads",
     "microverse.monilabs.type.corrupted": "Corrupted",
     "monilabs.recipe.mistake_output_colors": "You made a mistake defining this recipe's output colors.",
-    "emi_info.monilabs.projector_info": "Projector tier: %d",
+    "emi_info.monilabs.projector_info": "Projector tier: %d (%s)",
     "monilabs.tooltip.prismatic.0": "Use the power of %s to transform items!",
     "gtceu.placeholder_info.microverseStability.0": "Returns the stability of the microverse.",
     "emi_info.monilabs.integrity_healed": "Integrity healed: %.2f",
