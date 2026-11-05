@@ -280,7 +280,7 @@
 				"7E59E0E33962D787"
 			]
 			description: [
-				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, or fluids from one location to another using your ME system, without the need to use any cell storage space. &cTransporting EU has a very large tax on the input energy based on the size and number of amps transported.&r"
+				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, or fluids from one location to another using your ME system, without the need to use any cell storage space."
 				""
 				"Each P2P tunnel system may have only &cone input&r but &eany number of outputs&r. There is no limit on how many P2P tunnels, or P2P tunnel systems, you can have on one network."
 				""
