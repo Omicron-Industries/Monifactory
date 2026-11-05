@@ -5,10 +5,10 @@
             "label": "node install",
             "type": "shell",
             "command": [
-                "[ -x ../dist/node/bin/node ] || {",
-                "mkdir -p ../dist/node &&",
+                "[ -x dist/node/bin/node ] || {",
+                "mkdir -p dist/node &&",
                 "curl -fL https://nodejs.org/dist/v26.12.1/node-v26.12.1-$(uname -s | tr A-Z a-z)-$(uname -m | sed 's/x86_64/x64/;s/aarch64/arm64/')$(ldd --version 2>&1 | grep -q musl && echo -musl).tar.gz",
-                "| tar -xz --strip-components=1 -C ../dist/node;",
+                "| tar -xz --strip-components=1 -C dist/node;",
                 "}"
             ],
             "options": {
@@ -21,12 +21,12 @@
             },
             "windows": {
                 "command": [
-                    "if (!(Test-Path ../dist/node/node.exe)) {",
+                    "if (!(Test-Path dist/node/node.exe)) {",
                     "$ProgressPreference = 'SilentlyContinue';",
                     "$name = 'node-v26.12.1-win-' + ($env:PROCESSOR_ARCHITECTURE -replace 'AMD64', 'x64').ToLower();",
                     "iwr https://nodejs.org/dist/v26.12.1/$name.zip -OutFile node.zip;",
-                    "Expand-Archive node.zip ../dist;",
-                    "mv ../dist/$name ../dist/node;",
+                    "Expand-Archive node.zip dist;",
+                    "mv dist/$name dist/node;",
                     "rm node.zip",
                     "}"
                 ],
@@ -43,19 +43,42 @@
             "problemMatcher": []
         },
         {
-            "label": "npm install",
+            "label": "npm install build",
             "dependsOn": "node install",
             "type": "shell",
             "command": "npm install",
             "options": {
+                "cwd": "${workspaceFolder}/build",
                 "env": {
-                    "PATH": "${workspaceFolder}/../dist/node/bin:${env:PATH}"
+                    "PATH": "${workspaceFolder}/dist/node/bin:${env:PATH}"
                 }
             },
             "windows": {
                 "options": {
+                    "cwd": "${workspaceFolder}\\build",
                     "env": {
-                        "PATH": "${workspaceFolder}\\..\\dist\\node;${env:PATH}"
+                        "PATH": "${workspaceFolder}\\dist\\node;${env:PATH}"
+                    }
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "npm install kubejs",
+            "dependsOn": "node install",
+            "type": "shell",
+            "command": "npm install",
+            "options": {
+                "cwd": "${workspaceFolder}/kubejs",
+                "env": {
+                    "PATH": "${workspaceFolder}/dist/node/bin:${env:PATH}"
+                }
+            },
+            "windows": {
+                "options": {
+                    "cwd": "${workspaceFolder}\\kubejs",
+                    "env": {
+                        "PATH": "${workspaceFolder}\\dist\\node;${env:PATH}"
                     }
                 }
             },
