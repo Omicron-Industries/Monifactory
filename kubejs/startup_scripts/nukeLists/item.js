@@ -138,6 +138,7 @@ global.itemNukeList = [
     "gtceu:configurable_maintenance_hatch",
     /^gtceu.*a_energy_converter$/,
     /^gtceu:\w+_world_accelerator/,
+    /^gtceu:.*fisher/,
     /^gtceu:uiv/,
     /^gtceu:uxv/,
     /^gtceu:opv/,
