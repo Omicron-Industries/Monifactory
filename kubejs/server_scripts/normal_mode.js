@@ -69,13 +69,15 @@ ServerEvents.recipes(event => {
         event.remove({ output: "gtceu:bronze_large_boiler" })
         event.recipes.gtceu.shaped("gtceu:bronze_large_boiler", [
             "BVB",
-            "AFA",
+            "LFS",
             "BVB"
         ], {
             F: "gtceu:bronze_firebox_casing",
             B: "gtceu:steam_machine_casing",
             V: "gtceu:vacuum_tube",
-            A: "gtceu:hp_steam_alloy_smelter"
+            S: "gtceu:hp_steam_solid_boiler",
+            L: "gtceu:hp_steam_liquid_boiler"
+
         }).addMaterialInfo()
 
         // Handmade rubber - no match for the power of the factory
