@@ -1311,10 +1311,7 @@
 				{
 					count: 20L
 					id: "7454C711D2F19706"
-					item: {
-						Count: 20
-						id: "monilabs:energetic_titanium_casing"
-					}
+					item: { Count: 20, id: "monilabs:energetic_titanium_casing" }
 					optional_task: true
 					type: "item"
 				}
@@ -1403,10 +1400,7 @@
 				{
 					count: 20L
 					id: "463A26F2B638923D"
-					item: {
-						Count: 20
-						id: "monilabs:lapotronic_tungstensteel_casing"
-					}
+					item: { Count: 20, id: "monilabs:lapotronic_tungstensteel_casing" }
 					optional_task: true
 					type: "item"
 				}
