@@ -1115,7 +1115,7 @@
 			description: ["&9Glue&r can be centrifuged from &6Sticky Resin&r. This is the simplest recipe for the stuff, and the cheapest unless you have a surplus of certain chemicals.\n\n&9Glue&r itself has several applications, most of which are &3Assembler&r counterparts to recipes performed in a &3Crafting Table&r."]
 			icon: "gtceu:glue_bucket"
 			id: "519389755420A7A8"
-			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},{\"italic\":\"true\",\"text\":\" or \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Chemical Bath\"},\".\"]"
+			subtitle: "[\"\",{\"italic\":\"true\",\"text\":\"This step requires a \"},{\"italic\":\"true\",\"bold\":\"true\",\"text\":\"Centrifuge\"},\".\"]"
 			tasks: [
 				{
 					id: "48CAAA4DA3F8281C"
