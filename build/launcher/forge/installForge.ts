@@ -2,7 +2,7 @@ import { resolve, basename, join } from "path"
 import { CACHE_FOLDER_FORGE, CACHE_FOLDER_ROOT, CACHE_PATH_FORGE_INSTALLER, SERVER_INSTANCE_PATH } from "../config.ts"
 import { DownloadClientJar } from "../downloadClientJar.ts"
 import { DownloadLibraries } from "../downloadLibraries.ts"
-import { getJavaPath } from "../java.ts"
+import { DownloadJava, getJavaPath } from "../downloadJava.ts"
 import { DownloadVersionDescription } from "../versionDescription.ts"
 import { DownloadForgeInstaller, getForgeVersion } from "./downloadForge.ts"
 import Juke from "juke-build"
@@ -10,7 +10,7 @@ import fs from "node:fs/promises"
 import { getForgeProfilePath } from "./forgeVersionDescription.ts"
 
 /**
- * A task that calls this must depend on {@linkcode DownloadVersionDescription} and {@linkcode DownloadForgeInstaller}!
+ * A task that calls this must depend on {@linkcode DownloadVersionDescription}, {@linkcode DownloadJava} and {@linkcode DownloadForgeInstaller}!
  */
 async function runForgeInstaller(args: string[], cwd: string) {
     try {
@@ -26,7 +26,7 @@ async function runForgeInstaller(args: string[], cwd: string) {
  */
 export const InstallForgeClient = new Juke.Target({
     name: "install-forge-client",
-    dependsOn: () => [DownloadVersionDescription, DownloadClientJar, DownloadLibraries, DownloadForgeInstaller],
+    dependsOn: () => [DownloadVersionDescription, DownloadJava, DownloadClientJar, DownloadLibraries, DownloadForgeInstaller],
     inputs: ["manifest.json"],
     outputs: () => [getForgeProfilePath()],
     async executes() {
@@ -50,7 +50,7 @@ export const getForgeServerLibraryDir = () => resolve(SERVER_INSTANCE_PATH, "lib
  */
 export const InstallForgeServer = new Juke.Target({
     name: "install-forge-server",
-    dependsOn: () => [DownloadVersionDescription, DownloadForgeInstaller],
+    dependsOn: () => [DownloadVersionDescription, DownloadJava, DownloadForgeInstaller],
     inputs: ["manifest.json"],
     outputs: () => [getForgeServerLibraryDir()],
     async executes() {

@@ -24,9 +24,9 @@ export const DownloadAssets = new Juke.Target({
         const { objects } = await readAssetIndex()
 
         let alreadyDownloadedBytes = 0
-        let lastLogTime = -Infinity
+        let lastLogTime = performance.now()
         function logStatus() {
-            if (performance.now() - lastLogTime <= 5_000)
+            if (performance.now() - lastLogTime <= 3_000)
                 return  // Log every 5 seconds only.
             lastLogTime = performance.now()
 
