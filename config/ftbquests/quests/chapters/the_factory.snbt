@@ -281,7 +281,7 @@
 			description: [
 				"The &3Lathe&r is an important machine that makes &6Rods&r less expensive to craft. One ingot will yield two rods, doubling your output compared to manually crafting it."
 				""
-				"In addition to this, it can also be used to craft &6Screws&r and &6Buzzsaw Blades&r."
+				"In addition to this, it can also be used to craft &6Screws&r and later on &6Buzzsaw Blades&r."
 				""
 				"You will need it later on to craft &6Lenses&r."
 			]
@@ -1218,11 +1218,11 @@
 		}
 		{
 			description: [
-				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
+				"Obtaining &6Grains of Nihilty&r will require you to mine all the way down to Bedrock level."
 				""
 				"Fire on bedrock will convert into Grains after a short time. Make sure the grains don't burn in surrounding fires."
 				""
-				"You can automate grains of infinity using an &bMV&r &3Rock Breaker&r at a low Y coordinate with &6Lava&r and &6Fluid of the Void&r adjacent to the machine. You could alternatively use a &3Rock Cycle Simulator&r to bypass the fluid adjacency requirements."
+				"You can automate Grains of Nihility using an &bMV&r &3Rock Breaker&r at a low Y coordinate with &6Lava&r and &6Fluid of the Void&r adjacent to the machine. You could alternatively use a &3Rock Cycle Simulator&r to bypass the fluid adjacency requirements."
 			]
 			icon: "enderio:grains_of_infinity"
 			id: "1CA6D620309F2B9E"
@@ -1250,7 +1250,7 @@
 					type: "item"
 				}
 			]
-			title: "Grains Of Infinity"
+			title: "Grains Of Nihility"
 			x: 6.25d
 			y: 9.5d
 		}
@@ -1537,7 +1537,7 @@
 				""
 				"For now, you'll be using it to make &6Energetic Alloy Dust&r which is made from &6Redstone&r, &6Gold Dust&r and &6Glowstone Dust&r. "
 				""
-				"You can get some Glowstone by mixing &6Tricalcium Phosphate Dust&r and &6Gold Dust&r."
+				"You can get some Glowstone by mixing &6Tricalcium Phosphate Dust&r, &6Gold Dust&r, and &6Barite Dust&r."
 			]
 			icon: "gtceu:lv_mixer"
 			id: "1DBBE96165C7987D"
