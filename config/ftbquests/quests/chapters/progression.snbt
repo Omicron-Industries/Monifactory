@@ -13,13 +13,13 @@
 			dependencies: ["1A30472430354F1E"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are LV, and can all be substituted in recipes."
+				"Circuits along this row are &7LV&r, and can all be substituted in recipes."
 				""
-				"&2Electronic Circuits&r are the worst in terms of cost and effort required to produce, but you have to start with something."
+				"&6Electronic Circuits&r are the worst in terms of cost and effort required to produce, but you have to start with something."
 				""
-				"&2Integrated Circuits&r are the middle layer between &2Electronic Circuits and Microprocessors.&r"
+				"&6Integrated Circuits&r are the middle columb between Electronic Circuits and &6Microprocessors&r."
 				""
-				"And finally, &2Microprocessors&r, which take the lowest effort."
+				"And finally, Microprocessors, which take the lowest effort."
 			]
 			id: "5B6811964444497F"
 			min_required_dependencies: 1
@@ -41,7 +41,7 @@
 				title: "Any #gtceu:circuits/lv"
 				type: "item"
 			}]
-			title: "LV Circuits"
+			title: "&7LV&r Circuits"
 			x: -9.5d
 			y: -5.5d
 		}
@@ -49,7 +49,7 @@
 			dependencies: ["3B639F4061B00F1A"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are MV, and can all be substituted in recipes."
+				"Circuits along this row are &bMV&r, and can all be substituted in recipes."
 				""
 				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
 			]
@@ -72,7 +72,7 @@
 				title: "Any #gtceu:circuits/mv"
 				type: "item"
 			}]
-			title: "MV Circuits"
+			title: "&bMV&r Circuits"
 			x: -8.0d
 			y: -4.0d
 		}
@@ -80,7 +80,7 @@
 			dependencies: ["6169C04DF463502F"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are HV, and can all be substituted in recipes."
+				"Circuits along this row are &6HV&r, and can all be substituted in recipes."
 				""
 				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
 			]
@@ -103,7 +103,7 @@
 				title: "Any #gtceu:circuits/hv"
 				type: "item"
 			}]
-			title: "HV Circuits"
+			title: "&6HV&r Circuits"
 			x: -6.5d
 			y: -2.5d
 		}
@@ -111,7 +111,7 @@
 			dependencies: ["7E09D4E00BFA4970"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are EV, and can all be substituted in recipes."
+				"Circuits along this row are &5EV&r, and can all be substituted in recipes."
 				""
 				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
 			]
@@ -134,7 +134,7 @@
 				title: "Any #gtceu:circuits/ev"
 				type: "item"
 			}]
-			title: "EV Circuits"
+			title: "&5EV&r Circuits"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -142,7 +142,7 @@
 			dependencies: ["39FD6F1076559156"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are IV, and can all be substituted in recipes."
+				"Circuits along this row are &9IV&r, and can all be substituted in recipes."
 				""
 				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
 			]
@@ -160,7 +160,7 @@
 				title: "Any #gtceu:circuits/iv"
 				type: "item"
 			}]
-			title: "IV Circuits"
+			title: "&9IV&r Circuits"
 			x: -3.5d
 			y: 0.5d
 		}
@@ -168,11 +168,9 @@
 			dependencies: ["4DB622A78605A2EB"]
 			dependency_requirement: "one_completed"
 			description: [
-				"Circuits along this line are LuV, and can all be substituted in recipes."
+				"Circuits along this row are &dLuV&r, and can all be substituted in recipes."
 				""
 				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
-				""
-				"Make sure to set up wetware board production as soon as possible! They take a very long time to make."
 				""
 				"It's LuV, not LUV."
 			]
@@ -191,14 +189,14 @@
 				title: "Any #gtceu:circuits/luv"
 				type: "item"
 			}]
-			title: "LuV Circuits"
+			title: "&dLuV&r Circuits"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["521977C7165229F1"]
 			dependency_requirement: "one_completed"
-			description: ["Circuits along this line are ZPM, and can all be substituted in recipes."]
+			description: ["Circuits along this row are &cZPM&r, and can all be substituted in recipes."]
 			disable_toast: true
 			id: "0472A05CFBF4A2F0"
 			tasks: [{
@@ -214,14 +212,14 @@
 				title: "Any #gtceu:circuits/zpm"
 				type: "item"
 			}]
-			title: "ZPM Circuits"
+			title: "&cZPM&r Circuits"
 			x: -0.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["115B96B2092D671E"]
 			dependency_requirement: "one_completed"
-			description: ["Circuits along this line are UV, and can all be substituted in recipes."]
+			description: ["Circuits along this row are &3UV&r, and can all be substituted in recipes."]
 			id: "519A11FDC6A7EF21"
 			tasks: [{
 				icon: "kubejs:uv_universal_circuit"
@@ -236,14 +234,14 @@
 				title: "Any #gtceu:circuits/uv"
 				type: "item"
 			}]
-			title: "UV Circuits"
+			title: "&3UV&r Circuits"
 			x: 1.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["01E542E1C9DAF5B4"]
 			dependency_requirement: "one_completed"
-			description: ["Circuits along this line are UHV, and can all be substituted in recipes."]
+			description: ["Circuits along this row are &4UHV&r, and can all be substituted in recipes."]
 			id: "0C50D78D8F63CAFE"
 			tasks: [{
 				icon: "kubejs:uhv_universal_circuit"
@@ -258,7 +256,7 @@
 				title: "Any #gtceu:circuits/uhv"
 				type: "item"
 			}]
-			title: "&9UHV Circuits"
+			title: "&4UHV&r Circuits"
 			x: 2.5d
 			y: 6.5d
 		}
@@ -271,7 +269,7 @@
 				""
 				"Check if that tool has that tier first! &6Drills&r are available at all tiers, the &6Wrench&r is available at &7LV&r, &6HV&r and &9IV&r, and the other electric tools, such as &6Chainsaws&r and &6Screwdrivers&r are only available at &7LV&r. "
 				""
-				"&2A new addition among them is the Drill, which at LV tier can mine a 3x3x1 area of blocks, and at MV tier can mine a 3x3x3 area of blocks."
+				"&2Drills at LV tier can mine a 3x3x1 area of blocks, and at MV tier can mine a 3x3x3 area of blocks."
 				""
 				"Higher tier drills can mine 5x5x5, 7x7x7 and 9x9x9 areas! Shift-right-click to change the breaking area.&r"
 				""
@@ -315,9 +313,10 @@
 			}]
 			title: "GregTech Electric Tools"
 			x: 17.0d
-			y: -7.0d
+			y: -8.5d
 		}
 		{
+			dependencies: ["2E8BFA2E719B1C47"]
 			dependency_requirement: "all_started"
 			description: ["Carry stuff."]
 			disable_toast: true
@@ -327,7 +326,7 @@
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
-			title: "&9Backpack"
+			title: "Backpack"
 			x: 12.5d
 			y: -8.5d
 		}
@@ -344,7 +343,7 @@
 				item: "sophisticatedbackpacks:netherite_backpack"
 				type: "item"
 			}]
-			title: "&9Resonant Backpack"
+			title: "Resonant Backpack"
 			x: 12.5d
 			y: -1.0d
 		}
@@ -394,7 +393,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&9Hardened Backpack"
+			title: "Hardened Backpack"
 			x: 12.5d
 			y: -5.5d
 		}
@@ -429,7 +428,7 @@
 				}
 				type: "item"
 			}]
-			title: "&9Reinforced Backpack"
+			title: "Reinforced Backpack"
 			x: 12.5d
 			y: -4.0d
 		}
@@ -460,7 +459,7 @@
 				}
 				type: "item"
 			}]
-			title: "&9Signalum Backpack"
+			title: "Signalum Backpack"
 			x: 12.5d
 			y: -2.5d
 		}
@@ -490,16 +489,16 @@
 				item: "gtceu:rtm_alloy_ingot"
 				type: "item"
 			}]
-			title: "&9RTM Alloy"
+			title: "RTM Alloy"
 			x: 20.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["5D0A642048AF909B"]
 			description: [
-				"&6RTM Alloy&r is the fourth coil material available, increasing your EBF's operating temperature to 4500K so it can process more advanced materials."
+				"&6RTM Alloy&r is the fourth coil material available, increasing your &3EBF&r's operating temperature to &a4500&rK so it can process more advanced materials."
 				""
-				"With these coils you can now smelt &6Tungstensteel&r, required for IV machinery, and &6Tantalum Carbide&r, required for the &3Alloy Blast Smelter&r."
+				"With these coils you can now smelt &6Tungstensteel&r, required for &9IV&r machinery, and &6Tantalum Carbide&r, required for the &3Alloy Blast Smelter&r."
 			]
 			disable_toast: true
 			id: "6DC635766CD40FFF"
@@ -515,7 +514,7 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			title: "&9RTM Alloy Coil Blocks"
+			title: "RTM Alloy Coil Blocks"
 			x: 18.5d
 			y: -4.0d
 		}
@@ -578,6 +577,7 @@
 				"64F45D98FA48D834"
 				"6ABF927014F8B79D"
 				"1AA0A089DCA17FC8"
+				"273F3F8DD6A3DCC5"
 			]
 			description: ["Flying faster is nice."]
 			disable_toast: true
@@ -682,13 +682,13 @@
 				item: "better_angel_ring:angel_ring"
 				type: "item"
 			}]
-			title: "&9Captain… Marvel? IDK"
+			title: "Captain… Marvel? IDK"
 			x: 14.75d
 			y: -4.0d
 		}
 		{
 			dependencies: ["6F5BB99060FF03AC"]
-			description: ["This is the first circuit that requires &6Polyethyl Cyanoacrylate&r, so go check that out if you haven't already."]
+			description: ["Nothing really special about this tier."]
 			id: "4EB9D1ADC4814330"
 			shape: "hexagon"
 			tasks: [{
@@ -696,7 +696,7 @@
 				item: "kubejs:optical_processor_computer"
 				type: "item"
 			}]
-			title: "&9The Second Tier Nine Circuit"
+			title: "The Second Tier Nine Circuit"
 			x: 5.5d
 			y: 6.5d
 		}
@@ -713,16 +713,18 @@
 				item: "kubejs:optical_processor_mainframe"
 				type: "item"
 			}]
-			title: "&9The First Tier Ten Circuit"
+			title: "The First Tier Ten Circuit"
 			x: 5.5d
 			y: 8.0d
 		}
 		{
 			dependencies: ["0C9A9F33EEA3AB5E"]
 			description: [
-				"Assembling &6Optical Circuitry&r inside Microverse shards is quite tricky and inconsistent, but pulling it off is the key to assembling the perfect circuit, the &6Extradimensional Processor Mainframe&r.\n&6Optical Extradimensional CPU Cores&2 are very delicate and have a chance to fail entirely, so you'll have to get creative automating those.&r"
+				"Assembling &6Optical Circuitry&r inside Microverse shards is quite tricky and inconsistent, but pulling it off is the key to assembling the perfect circuit, the &6Extradimensional Processor Mainframe&r."
 				""
-				"&6Extradimensional Processor Mainframes&r are unique in that there are no subsequent circuit themes, and thus no other kinds of Tier Eleven circuits."
+				"&6Optical Extradimensional CPU Cores&r are very delicate and have a chance to fail entirely, so you'll have to get creative automating those."
+				""
+				"Extradimensional Processor Mainframes are unique in that there are no subsequent circuit themes, and thus no other kinds of Tier Eleven circuits."
 			]
 			icon: "kubejs:extradimensional_processor_mainframe"
 			id: "5601A05D8361551D"
@@ -740,7 +742,7 @@
 					type: "item"
 				}
 			]
-			title: "&9The First (And Only) Tier Eleven Circuit"
+			title: "The First (And Only) Tier Eleven Circuit"
 			x: 7.0d
 			y: 9.5d
 		}
@@ -754,7 +756,7 @@
 				item: "kubejs:optical_processor_assembly"
 				type: "item"
 			}]
-			title: "&9The Third Tier Eight Circuit"
+			title: "The Third Tier Eight Circuit"
 			x: 5.5d
 			y: 5.0d
 		}
@@ -765,7 +767,7 @@
 				"3E1A349F989835F7"
 			]
 			description: [
-				"&6Optical Circuits&r and those that follow it are far more expensive than previous circuit themes, requiring Sapphire wafers or chips imbued with &6Hearts of A Universe&r."
+				"&6Optical Circuits&r and those that follow it are far more expensive than previous circuit themes, requiring chromatically processed Chips (yum)."
 				""
 				"Don't let that discourage you, though. They unlock many useful tools to add to your factory."
 			]
@@ -776,34 +778,29 @@
 				item: "kubejs:optical_processor"
 				type: "item"
 			}]
-			title: "&9The Fourth And Final Tier Seven Circuits"
+			title: "The Fourth And Final Tier Seven Circuits"
 			x: 5.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["5601A05D8361551D"]
-			description: ["The MAX voltage lacks machines to call its own, with the primary usage of its circuits being to craft &6MAX Energy Hatches&r and the &9Creative Quantum Chest&r."]
+			description: ["The &cMAX&r voltage lacks machines to call its own, with the primary usage of its circuits being to craft &cMAX &6Energy Hatches&r and the &6Creative Quantum Chest&r."]
+			disable_toast: true
 			id: "11FDFB08CD48D66E"
 			subtitle: "There can be only one!"
 			tasks: [{
 				id: "703CDB7D8BF05A55"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "gtceu:circuits/max"
-					}
-				}
+				item: "kubejs:extradimensional_processor_mainframe"
 				type: "item"
 			}]
-			title: "&9MAX Circuit"
+			title: "&cMAX&r Circuit"
 			x: 5.5d
 			y: 9.5d
 		}
 		{
 			dependencies: ["07057CDE4E021BA7"]
 			dependency_requirement: "one_completed"
-			description: ["Circuits along this line are UEV, and can all be substituted in recipes."]
+			description: ["Circuits along this row are &aUEV&r, and can all be substituted in recipes."]
 			id: "0B923E8ED6161CA8"
 			tasks: [{
 				icon: "kubejs:uev_universal_circuit"
@@ -817,7 +814,7 @@
 				}
 				type: "item"
 			}]
-			title: "&9UEV Circuits"
+			title: "&aUEV&r Circuits"
 			x: 4.0d
 			y: 8.0d
 		}
@@ -842,7 +839,7 @@
 					type: "item"
 				}
 			]
-			title: "&9The Second Tier Ten Circuit"
+			title: "The Second Tier Ten Circuit"
 			x: 7.0d
 			y: 8.0d
 		}
@@ -864,7 +861,7 @@
 					type: "item"
 				}
 			]
-			title: "&9The Third Tier Nine Circuit"
+			title: "The Third Tier Nine Circuit"
 			x: 7.0d
 			y: 6.5d
 		}
@@ -873,7 +870,11 @@
 				"7979D07FBDC6D170"
 				"1E36AFB19932C805"
 			]
-			description: ["Putting batches of &6Quantum Circuit&r parts inside of miniaturized microverses and mounting them to a processing unit allows you to create the best Tier Eight circuit, the &6Extradimensional Processor&r. Be warned, this circuit theme will put both your Microverse management skills and your earlier circuit infrastructure to the test.\n\n&6Complex SMD Components&r are now mandatory."]
+			description: [
+				"Putting batches of &6Quantum Circuit&r parts inside of miniaturized microverses and mounting them to a processing unit allows you to create the best &3UV&r circuit, the &6Extradimensional Processor&r. Be warned, this circuit theme will put both your Microverse management skills and your earlier circuit infrastructure to the test."
+				""
+				"&6Complex SMD Components&r are now mandatory."
+			]
 			icon: "kubejs:extradimensional_processor"
 			id: "5A8D2BFAF02E6325"
 			shape: "hexagon"
@@ -890,7 +891,7 @@
 					type: "item"
 				}
 			]
-			title: "&9The Fourth And Final Tier Eight Circuits"
+			title: "The Fourth And Final Tier Eight Circuits"
 			x: 7.0d
 			y: 5.0d
 		}
@@ -904,7 +905,7 @@
 				item: "kubejs:optical_processing_unit"
 				type: "item"
 			}]
-			title: "&9Optical Processing Unit"
+			title: "Optical Processing Unit"
 			x: 5.5d
 			y: -8.5d
 		}
@@ -914,7 +915,7 @@
 				"7EE334D3AA1E68ED"
 				"07057CDE4E021BA7"
 			]
-			description: ["The final processing unit. Capable of storing and interacting with miniaturized microverses. "]
+			description: ["The final processing unit. Capable of storing and interacting with miniaturized microverses. You will use these to make &6Dimensional Circuits&r."]
 			id: "7979D07FBDC6D170"
 			shape: "hexagon"
 			tasks: [{
@@ -922,7 +923,7 @@
 				item: "kubejs:extradimensional_processing_unit"
 				type: "item"
 			}]
-			title: "&9Extradimensional Processing Unit"
+			title: "Extradimensional Processing Unit"
 			x: 7.0d
 			y: -8.5d
 		}
@@ -958,7 +959,7 @@
 					type: "item"
 				}
 			]
-			title: "&2Electronic Components"
+			title: "Electronic Components"
 			x: -6.5d
 			y: -8.5d
 		}
@@ -969,7 +970,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&9This is where &bEMI&9 really shines! Using it alongside &3Crafting Stations&9, you should be able to easily calculate the amount of raw resources and intermediate components you'll need to &ebatch craft &9electronic circuits quickly."
+				"&2This is where &bEMI&2 really shines! Using it alongside &3Crafting Stations&2, you should be able to easily calculate the amount of raw resources and intermediate components you'll need to &ebatch craft&2 these circuits quickly."
 				""
 				"You'll be making a LOT&r of circuits, so take advantage of the improved crafting efficiency."
 			]
@@ -981,7 +982,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "With all of the components made, it's time to craft an &2Electronic Circuit&r."
+			subtitle: "With all of the components made, it's time to craft &6Electronic Circuits&r."
 			tasks: [{
 				count: 32L
 				id: "5DED56006806D2E0"
@@ -995,9 +996,9 @@
 		{
 			dependencies: ["71C7B47DC85AA016"]
 			description: [
-				"&2Phenolic Substrates need to be turned into Circuit Boards with Silver before being usable in Circuit production."
+				"&6Phenolic Substrates&r need to be turned into &6Circuit Boards&r with &6Silver&r before being usable in Circuit production."
 				""
-				"&2Sodium Persulfate and Iron III Chloride are troublesome to get right now, but using them in making Circuit Boards will reduce the amount of Silver required by 4 times."
+				"&9Sodium Persulfate&r and &9Iron III Chloride&r can be annoying to get right now, but using them in making Circuit Boards will reduce the amount of Silver required by 4 times."
 			]
 			id: "3650EF39B5AB4A7D"
 			rewards: [{
@@ -1011,7 +1012,7 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			title: "&2Good Circuit Boards"
+			title: "Good Circuit Boards"
 			x: -5.0d
 			y: -8.5d
 		}
@@ -1024,7 +1025,7 @@
 			description: [
 				"Your first &6Tier Two Circuits&r will require three &6Tier One Circuits&r plus two &6Diodes&r."
 				""
-				"These are rather expensive. Always be on the lookout for a cheaper way to make your circuits — new sets of recipes become available each time you make a new tier of &2Circuit Assembler&r. Conveniently, this tier of Circuit unlocks one now!"
+				"These are rather expensive. &2Always be on the lookout for a cheaper way to make your circuits&r — new sets of recipes become available each time you make a new tier of &3Circuit Assembler&r. Conveniently, this tier of Circuit unlocks one now!"
 			]
 			id: "3B639F4061B00F1A"
 			rewards: [{
@@ -1039,7 +1040,7 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			title: "&2The First Tier Two Circuits"
+			title: "The First Tier Two Circuits"
 			x: -6.5d
 			y: -4.0d
 		}
@@ -1055,7 +1056,7 @@
 				""
 				"&2The LV Circuit Assembler allows you to make Electronic Circuits far more easily."
 				""
-				"The circuit progression is largely based on native GTm progression, with a few minor changes to reflect the progression of this pack better.&r Check out the &9Progression quest book tab&r to see the flow of circuit progression."
+				"The circuit progression is largely based on native GTm progression, with a few minor changes to reflect the progression of this pack better.&r Check out the &bProgression quest book tab&r to see the flow of circuit progression."
 			]
 			id: "73F8EA8E7DCC94E9"
 			rewards: [{
@@ -1071,7 +1072,7 @@
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2LV Circuit Assembler"
+			title: "&7LV&r Circuit Assembler"
 			x: -5.0d
 			y: -7.0d
 		}
@@ -1081,7 +1082,7 @@
 				"73F8EA8E7DCC94E9"
 			]
 			description: [
-				"While LV Integrated Circuits might not seem easier to mass produce than &6Electronic Circuits&r, they allow for drastically cheaper MV circuits and they're required to produce the &6Advanced Integrated Circuit&r, your first &6HV&r circuit."
+				"While &7LV&r &6Integrated Circuits&r might not seem easier to mass produce than &6Electronic Circuits&r, they're required to produce the &6Advanced Integrated Circuit&r, your first &6HV&r circuit."
 				""
 				"Otherwise, they fulfill the same requirements."
 			]
@@ -1097,13 +1098,13 @@
 				item: "gtceu:basic_integrated_circuit"
 				type: "item"
 			}]
-			title: "&2The Second Tier One Circuits"
+			title: "The Second Tier One Circuits"
 			x: -5.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["27FAD6A8FCFAB543"]
-			description: ["&2Two Integrated Circuits&r and various other components will create a &2Good Integrated Circuit."]
+			description: ["Two &6Basic Integrated Circuits&r and various other components will create a &6Good Integrated Circuit&r."]
 			id: "2AC61192BCD459F2"
 			rewards: [{
 				id: "447C6A40A5BA0F42"
@@ -1116,7 +1117,7 @@
 				item: "gtceu:good_integrated_circuit"
 				type: "item"
 			}]
-			title: "&2The Second Tier Two Circuits"
+			title: "The Second Tier Two Circuits"
 			x: -5.0d
 			y: -4.0d
 		}
@@ -1127,11 +1128,11 @@
 				"2AC61192BCD459F2"
 			]
 			description: [
-				"Your first Tier Three circuit, formed from &2two Good Integrated Circuits&r, &6RAM&r, and &6Transistors&r, among other ingredients."
+				"Your first &6HV&r circuit, formed from two &6Good Integrated Circuits&r, &6RAM&r, and &6Transistors&r, among other ingredients."
 				""
 				"As you'll realize is the pattern, it is expensive and unwieldy to make the first forms of each tier of circuits. Fortunately, you don't have to make many of them."
 				""
-				"Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce. Eventually each circuit tier through Tier Eight will have a Processor recipe instead of requiring Processor Assemblies, Supercomputers, or Mainframes."
+				"&2Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce.&r Eventually each circuit tier through Tier Eight will have a Processor recipe instead of requiring Processor Assemblies, Supercomputers, or Mainframes."
 			]
 			id: "6169C04DF463502F"
 			rewards: [{
@@ -1146,13 +1147,13 @@
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			title: "&2The First Tier Three Circuits"
+			title: "The First Tier Three Circuits"
 			x: -5.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["6169C04DF463502F"]
-			description: ["With the &3Advanced Circuit Assembler&r, a new theme of Circuits is available."]
+			description: ["With the &3Advanced Circuit Assembler&r, the &6Microprocessor&r theme of Circuits is available."]
 			id: "1F101D4F758ACECB"
 			rewards: [{
 				id: "1C6128ACCE36223A"
@@ -1166,7 +1167,7 @@
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2MV Circuit Assembler"
+			title: "&bMV&r Circuit Assembler"
 			x: -3.5d
 			y: -7.0d
 		}
@@ -1194,7 +1195,7 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			title: "&2The Third And Final Tier One Circuits"
+			title: "The Third And Final Tier One Circuits"
 			x: -3.5d
 			y: -5.5d
 		}
@@ -1203,7 +1204,7 @@
 			description: [
 				"Better substrates. Using &6Polyvinyl Chloride&r (PVC) instead of &6Polyethylene&r (PE) doubles your yield."
 				""
-				"The &2other three material options&r are much more difficult to make and probably not worth considering for now."
+				"The other three material and &9Hexafluorosilicic Acid&r options are much more difficult to make and probably not worth considering for now."
 			]
 			id: "7D3FAEA5E0071BDC"
 			rewards: [{
@@ -1217,7 +1218,7 @@
 				item: "gtceu:plastic_printed_circuit_board"
 				type: "item"
 			}]
-			title: "&2Plastic Substrate"
+			title: "Plastic Printed Circuit Board"
 			x: -3.5d
 			y: -8.5d
 		}
@@ -1245,7 +1246,7 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			title: "&2The Third And Final Tier Two Circuits"
+			title: "The Third And Final Tier Two Circuits"
 			x: -3.5d
 			y: -4.0d
 		}
@@ -1254,7 +1255,7 @@
 				"7308924C9A481443"
 				"66E1F1B28E4577B2"
 			]
-			description: ["Marginally cheaper to make than &2Advanced Integrated Circuits&r, and also the only way to make the &2Microprocessor Supercomputer&r, which is the first Tier Four circuit."]
+			description: ["Marginally cheaper to make than &6Advanced Integrated Circuits&r, and also the only way to make the &6Microprocessor Supercomputer&r, which is the first &5EV&r circuit."]
 			id: "5759E8587624BEF1"
 			rewards: [{
 				id: "07F79912C88F145F"
@@ -1267,7 +1268,7 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			title: "&2The Second Tier Three Circuits"
+			title: "The Second Tier Three Circuits"
 			x: -3.5d
 			y: -2.5d
 		}
@@ -1277,29 +1278,29 @@
 				"6169C04DF463502F"
 			]
 			description: [
-				"The &2Cleanroom&r is a hollow multiblock free of contaminants. Going forward, most new circuit-related recipes, as well as some unique things like &3Fusion Casings&r, will need to be run in machines inside a Cleanroom. This is another ported &5GT5u&r feature, but just like with &aMaintenance&r, it won't be nearly as harsh."
+				"The &3Cleanroom&r is a hollow multiblock free of contaminants. Going forward, most new circuit-related recipes, as well as some unique things like &6Fusion Casings&r, will need to be run in machines inside a Cleanroom."
 				""
 				"Once built, it must be well-maintained and powered for a while to clean the inside. The Cleanroom's power draw will decrease once it fully cleans itself. Recipes requiring the Cleanroom will &conly&r run when inside a &cfully-cleaned&r Cleanroom; if not, the recipe will not start, or recipe progress might be lost. (Recipe inputs will &enever be voided&r.)"
 				"{@pagebreak}"
-				"The Cleanroom can be built in any size between 5x5x5 and 15x15x15. The Controller is placed in the center of the top face, and the rest of the top face is built from &3Filter Casings&r, save for the edges and corners. The rest of the wall and floor space is filled with &3Plascrete&r."
+				"The Cleanroom can be built in any size between 5x5x5 and 15x15x15. The Controller is placed in the center of the top face, and the rest of the top face is built from &6Filter Casings&r, save for the edges and corners. The rest of the wall and floor space is filled with &6Plascrete&r."
 				""
 				"For transfer between the clean environment and the outside world:"
 				""
-				"- Items and fluids through &3Passthrough Hatches&r. They automatically input from one side and output from the opposite side."
+				"- Items and fluids through &6Passthrough Hatches&r. They automatically input from one side and output from the opposite side."
 				""
-				"- Energy through &bGregTech &3Hulls&r or &3Diodes&r (of any tier). Note that Diodes can transport up to &e16 amps&r, whilst Hulls can only transport &e1 amp&r."
+				"- Energy through any tier of &bGregTech &6Hull&r or &6Diode&r (the block). Note that Diodes can transport up to &a16 amps&r, whilst Hulls can only transport &a1 amp&r."
 				""
 				"- Your AE network through &bGregTech&r &3Hulls&r (of any tier)."
 				""
-				"- Players through &3Doors&r of any kind. The room remains clean when doors are opened."
+				"- Players through &6Doors&r of any kind. The room remains clean when doors are opened."
 				"{@pagebreak}"
-				"Apart from the \"official\" solutions, non-physical methods of transfer such as &3Ender Chests&r might be effective. &bApplied Energistics&r &3P2P Tunnels&r may also fit your liking."
+				"Apart from the \"official\" solutions, non-physical methods of transfer such as &6Ender Chests&r might be effective. &bApplied Energistics&r &6P2P Tunnels&r may also fit your liking."
 				""
-				"You will also need an &3Energy &rand &3Maintenance Hatch &rfor cleaning. &3Cleanroom Glass&r can replace any &3Plascrete&r, apart from the edges."
+				"You will also need an &aEnergy &rand &aMaintenance Hatch &rfor cleaning. &6Cleanroom Glass&r can replace any Plascrete, apart from the edges."
 				""
 				"If you're facing issues forming the Cleanroom:"
 				""
-				"- The wall space must be at least 75%% &3Plascrete&r or &3Cleanroom Glass&r. The floor block directly under the controller must also be &3Plascrete&r or &3Cleanroom Glass&r."
+				"- The wall space must be at least 75%% Plascrete or Cleanroom Glass. The floor block directly under the controller must also be Plascrete or Cleanroom Glass."
 				""
 				"- GT generators and Muffler Hatches are &cnot allowed&r in Cleanrooms."
 				""
@@ -1378,13 +1379,14 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "46EB73137CAAD497"
 					item: "minecraft:iron_door"
 					optional_task: true
 					type: "item"
 				}
 			]
-			title: "&2Cleanroom"
+			title: "Cleanroom"
 			x: -2.5d
 			y: -8.5d
 		}
@@ -1395,9 +1397,9 @@
 				"5759E8587624BEF1"
 			]
 			description: [
-				"This is the first Tier Four circuit, which is used for EV-tier machinery. Requires some Vibrant Alloy."
+				"This is the first &5EV&r circuit. Requires some &6Vibrant Alloy&r."
 				""
-				"&2The HV Circuit Assembler only unlocks one circuit type, the Microprocessor Mainframe. There is no circuit theme associated with the HV Circuit Assembler; instead, the HV (non-Circuit) Assembler unlocks easier Circuit components. The next circuit theme is not until EV."
+				"The &6HV&r Circuit Assembler only unlocks one circuit, the &6Microprocessor Mainframe&r. There is no circuit theme associated with the &6HV &3Circuit Assembler&r; instead, the &6HV&r (non-Circuit) &3Assembler&r unlocks easier Circuit components. The next circuit theme is not until &5EV&r."
 			]
 			id: "7E09D4E00BFA4970"
 			rewards: [{
@@ -1413,16 +1415,16 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			title: "&2The First Tier Four Circuits"
+			title: "The First Tier Four Circuits"
 			x: -2.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["7E09D4E00BFA4970"]
 			description: [
-				"The &3HV Circuit Assembler&r unlocks &2the Microprocessor Mainframe. That's it.&r"
+				"The &6HV Circuit Assembler&r unlocks &6the Microprocessor Mainframe&r. That's it."
 				""
-				"It can also optionally overclock recipes up to 128 EU/t, gaining additional speed for relatively more power."
+				"It can also optionally &aoverclock&r recipes up to &a128 EU/t&r, gaining additional speed for relatively more power."
 			]
 			id: "6B908DECFA46C8E0"
 			require_sequential_tasks: false
@@ -1438,7 +1440,7 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2HV Circuit Assembler"
+			title: "&6HV&r Circuit Assembler"
 			x: -1.5d
 			y: -7.0d
 		}
@@ -1449,9 +1451,9 @@
 				"56924FC6B029BA0F"
 			]
 			description: [
-				"The first Mainframe you'll have to contend with."
+				"The first &6Mainframe&r you'll have to contend with."
 				""
-				"This is the first Tier Five circuit available, and consequently the most expensive to make. As always, invest in the next circuit theme to get to cheaper recipes as soon as possible."
+				"This is the first &9IV&r circuit available, and consequently the most expensive to make. As always, &2invest in the next circuit theme to get to cheaper recipes as soon as possible.&r"
 			]
 			id: "39FD6F1076559156"
 			rewards: [{
@@ -1465,13 +1467,13 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			title: "&2The First Tier Five Circuit"
+			title: "The First Tier Five Circuit"
 			x: -1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["26ECEC06CCAB3E56"]
-			description: ["&6Epoxy Circuit Boards&r are a more advanced substrate type that gives you access to &2Nanocircuits, which span tiers three through six."]
+			description: ["&6Epoxy Printed Circuit Boards&r are a more advanced substrate type that gives you access to &6Nano Circuits&r, which span tiers three through six."]
 			id: "0B8CE3FBF62B099D"
 			rewards: [{
 				id: "0161DA06BA4790AF"
@@ -1484,7 +1486,7 @@
 				item: "gtceu:epoxy_printed_circuit_board"
 				type: "item"
 			}]
-			title: "&2Epoxy Substrate"
+			title: "Epoxy Printed Circuit Board"
 			x: -0.5d
 			y: -8.5d
 		}
@@ -1511,7 +1513,7 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			title: "&2The Third And Final Tier Three Circuits"
+			title: "The Third And Final Tier Three Circuits"
 			x: -0.5d
 			y: -2.5d
 		}
@@ -1522,9 +1524,9 @@
 				"39FD6F1076559156"
 			]
 			description: [
-				"With your &6Titanium&r-based machine hulls and &6Mainframes&r squared away, you can finally get on the path to making an Extreme Voltage &3Circuit Assembler&r."
+				"With your &6Titanium&r-based machine hulls and &6Mainframes&r squared away, you can finally get on the path to making an &5EV &3Circuit Assembler&r."
 				""
-				"This tier of Assembler unlocks &6Nanoprocessors&r, as well as handling crafting recipes up to EV (2048 EU/t). It can also optionally overclock recipes that consume up to HV power (512 EU/t) for improved speed at the cost of relatively more power."
+				"This tier of Circuit Assembler unlocks &6Nanoprocessors&r, as well as running crafting recipes up to &5EV&r (&a2048 EU/t&r). It can also optionally overclock recipes that consume up to &6HV&r power (&a512 EU/t&r) for improved speed at the cost of relatively more power."
 			]
 			id: "5B9F1EE13E397DEE"
 			rewards: [{
@@ -1539,7 +1541,7 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2EV Circuit Assembler"
+			title: "&5EV&r Circuit Assembler"
 			x: -0.5d
 			y: -7.0d
 		}
@@ -1614,7 +1616,7 @@
 			description: [
 				"A &6Reinforced Epoxy Resin Sheet&r is made in a &3Chemical Bath&r, not a &3Chemical Reactor&r. The board itself is made in a Chemical Reactor though."
 				""
-				"Other than that, it's very similar to the other substrates you've made so far. This board type unlocks &2Quantum Circuits, which span tiers four through seven."
+				"Other than that, it's very similar to the other substrates you've made so far. This board type unlocks &6Quantum Circuits&r, which span tiers four through seven."
 			]
 			icon: "gtceu:fiber_reinforced_printed_circuit_board"
 			id: "57A6FE885489C3ED"
@@ -1653,9 +1655,9 @@
 			description: [
 				"With your &6Tungstensteel&r-based machine hulls and &6Nanoprocessor Mainframes&r squared away, you can finally get on the path to making an Insane Voltage &3Circuit Assembler&r."
 				""
-				"This tier of Circuit Assembler unlocks &6Quantum Circuits&r, as well as handling crafting recipes up to IV. It can also optionally overclock recipes that consume up to EV power for improved speed at the cost of relatively more power."
+				"This tier of Circuit Assembler unlocks &6Quantum Circuits&r, as well as handling crafting recipes up to &9IV&r. It can also optionally overclock recipes that consume up to &5EV&r power for improved speed at the cost of relatively more power."
 				""
-				"Alternatively, you can make an &6IV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
+				"&2It is recommended to upgrade your Circuit Assembler into a &3Large Circuit Assembling Facility&2 and power it with an &9IV &6Energy Hatch&2 for your circuit crafting needs."
 			]
 			icon: "gtceu:iv_circuit_assembler"
 			id: "4E63CE9607E3B792"
@@ -1668,25 +1670,10 @@
 			size: 1.0d
 			tasks: [{
 				id: "781C7E03F26807E5"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:iv_circuit_assembler"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_energy_input_hatch"
-							}
-						]
-					}
-				}
+				item: "gtceu:iv_circuit_assembler"
 				type: "item"
 			}]
-			title: "&2IV Circuit Assembler"
+			title: "&9IV&r Circuit Assembler"
 			x: 1.0d
 			y: -7.0d
 		}
@@ -1698,9 +1685,9 @@
 				"70FD95AEA44548B0"
 			]
 			description: [
-				"With your new &6Epoxy Circuit Boards&r, &6Advanced Soldering Alloy&r, &6QBit CPUs&r, and some standard components, you can make the final type of Tier Four Circuit: the &6Quantum Processor&r."
+				"With your new &6Fiber-Reinforced PCBs&r, &6Advanced Soldering Alloy&r, &6Qubit CPUs&r, and some standard components, you can make the final type of &5EV&r Circuit: the &6Quantum Processor&r."
 				""
-				"As the best form of Tier Four circuit, these should be automated and stockpiled. The variant recipe requiring &6Advanced System-on-Chip&r won't be available until &cZPM&r."
+				"As the best form of &5EV&r circuit, these should be automated and stockpiled. The variant recipe requiring &6Advanced System-on-Chips&r won't be available until &cZPM&r."
 			]
 			id: "47D092CBA484C0DE"
 			rewards: [{
@@ -1762,9 +1749,9 @@
 		{
 			dependencies: ["6CE6674C20500023"]
 			description: [
-				"Now you can craft the &6Quantum Processor Mainframe&r, the first Tier Seven circuit."
+				"Now you can craft the &6Quantum Processor Mainframe&r, the first &cZPM&r circuit."
 				""
-				"These are required for crafting the Ludicrous Voltage (LuV) &3Circuit Assembler&r."
+				"These are required for crafting the &dLuV &3Circuit Assembler&r."
 			]
 			id: "521977C7165229F1"
 			rewards: [{
@@ -1779,7 +1766,7 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			title: "&2The First Tier Seven Circuits"
+			title: "The First Tier Seven Circuits"
 			x: 1.0d
 			y: 3.5d
 		}
@@ -1791,11 +1778,11 @@
 				"458FF3F9BC8E025B"
 			]
 			description: [
-				"With your &2Rhodium Plated Lumium-Palladium&r-based machine hulls, Assembler built, and &6Quantum Processor Mainframes&r squared away, you can finally get on the path to making a Ludicrous Voltage &3Circuit Assembler&r."
+				"With your &6Rhodium Plated Lumium-Palladium&r-based machine hulls, &3Assembly Line&r built, and &6Quantum Processor Mainframes&r squared away, you can finally get on the path to making a &dLudicrous Voltage &3Circuit Assembler&r."
 				""
-				"This tier of Assembler unlocks &6Crystal Circuits&r, as well as handling crafting recipes up to LuV. It can also optionally overclock recipes that consume up to IV power for improved speed at the cost of relatively more power."
+				"This tier of Assembler unlocks &6Crystal Circuits&r, as well as handling crafting recipes up to &dLuV&r. It can also optionally overclock recipes that consume up to &9IV&r power for improved speed at the cost of relatively more power."
 				""
-				"Alternatively, you can make a &6LuV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
+				"&2Making a &dLuV &6Energy Hatch&2 and using the &3Large Circuit Assembling Facility&2 instead is also a good idea."
 			]
 			icon: "gtceu:luv_circuit_assembler"
 			id: "0BB798ACFE684AA9"
@@ -1826,7 +1813,7 @@
 				}
 				type: "item"
 			}]
-			title: "&2LuV Circuit Assembler"
+			title: "&dLuV&r Circuit Assembler"
 			x: 2.5d
 			y: -7.0d
 		}
@@ -1838,11 +1825,11 @@
 				"38791476E970C57D"
 			]
 			description: [
-				"With your &6Crystal CPUs&r and the &dLuV &3Assembler&r crafted, you can make the final type of Tier Five Circuit: the &6Crystal Processor&r."
+				"With your &6Crystal CPUs&r and the &dLuV &3Circuit Assembler&r crafted, you can make the final type of &9IV&r Circuit: the &6Crystal Processor&r."
 				""
-				"This is the first Circuit which strictly requires &6Advanced SMD components&r. All of them will from now on."
+				"This is the first Circuit to require &6Advanced&r or higher &6SMD components&r. All of them will from now on."
 				""
-				"As the best form of Tier Five circuit, these should be automated and stockpiled. The variant recipe requiring &6Crystal System-on-Chip&r won't be available until you can make a &3UV Circuit Assembler&r."
+				"As the best form of &9IV&r circuit, these should be automated and stockpiled. The variant recipe requiring &6Crystal System-on-Chip&r won't be available until you can make a &3UV Circuit Assembler&r."
 			]
 			id: "3C3B5875FCD6B5B7"
 			rewards: [{
@@ -1856,7 +1843,7 @@
 				item: "gtceu:crystal_processor"
 				type: "item"
 			}]
-			title: "&2The Fourth and Final Tier Five Circuits"
+			title: "The Fourth and Final Tier Five Circuits"
 			x: 2.5d
 			y: 0.5d
 		}
@@ -1933,7 +1920,7 @@
 				item: "gtceu:crystal_processor_computer"
 				type: "item"
 			}]
-			title: "&2The Second Tier Seven Circuits"
+			title: "The Second Tier Seven Circuits"
 			x: 2.5d
 			y: 3.5d
 		}
@@ -1943,11 +1930,11 @@
 				"26CA20E74A62FA6E"
 			]
 			description: [
-				"The &6Crystal Processor Mainframe&r is the first Tier Eight circuit."
+				"The &6Crystal Processor Mainframe&r is the first &3UV&r circuit."
 				""
 				"To get the data needed to assemble these, you will need an &3HPCA&r and the &3Research Station&r."
 				""
-				"These are required for crafting the &3ZPM Circuit Assembler&r and &3Mk2 Fusion Reactor&r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these."
+				"These are required for crafting the &cZPM &3Circuit Assembler&r and &3Mk2 Fusion Reactor&r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these."
 			]
 			id: "115B96B2092D671E"
 			rewards: [{
@@ -1961,7 +1948,7 @@
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			title: "&2The First Tier Eight Circuits"
+			title: "The First Tier Eight Circuits"
 			x: 2.5d
 			y: 5.0d
 		}
@@ -1971,11 +1958,11 @@
 				"115B96B2092D671E"
 			]
 			description: [
-				"With your &2Naquadah Alloy&r-based machine hulls and &6Crystal Processor Mainframes&r squared away, you can finally get on the path to making a ZPM &3Circuit Assembler&r."
+				"With your &6Naquadah Alloy&r-based machine hulls and &6Crystal Processor Mainframes&r squared away, you can finally get on the path to making a &cZPM &3Circuit Assembler&r."
 				""
-				"This tier of Assembler unlocks &6Wetware Circuits&r, as well as handling crafting recipes up to ZPM. It can also optionally overclock recipes that consume up to LuV power for improved speed at the cost of relatively more power."
+				"This tier of Circuit Assembler unlocks &6Wetware Circuits&r, as well as handling crafting recipes up to ZPM. It can also optionally overclock recipes that consume up to LuV power for improved speed at the cost of relatively more power."
 				""
-				"Alternatively, you can make a &6ZPM Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
+				"Alternatively, you can make a &cZPM &6Energy Hatch&r and use the &3Large Circuit Assembling Facility&r instead."
 			]
 			icon: "gtceu:zpm_circuit_assembler"
 			id: "49E9A178F6A52A62"
@@ -2006,13 +1993,13 @@
 				}
 				type: "item"
 			}]
-			title: "&2ZPM Circuit Assembler"
+			title: "&cZPM&r Circuit Assembler"
 			x: 4.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["4AC51394FB5152E5"]
-			description: ["Use more &6Stem Cells&r and more advanced materials to build a &6Neuro Processing Unit&r. This is used in &6Wetware Processors&r."]
+			description: ["Use more &6Stem Cells&r and more advanced materials to build a &6Neuro Processing Unit&r. This is used in &6Wetware Circuits&r."]
 			id: "4FABACAB7C4A74AC"
 			rewards: [{
 				id: "5A005B4C81258B80"
@@ -2025,7 +2012,7 @@
 				item: "gtceu:neuro_processing_unit"
 				type: "item"
 			}]
-			title: "&2Neuro Processing Unit"
+			title: "Neuro Processing Unit"
 			x: 4.0d
 			y: -8.5d
 		}
@@ -2035,11 +2022,11 @@
 				"4FABACAB7C4A74AC"
 			]
 			description: [
-				"The final form of Tier Six circuits."
+				"The final form of &dLuV&r circuits."
 				""
-				"Using your &2Neuro Processing Units&r, you can craft (grow?) these circuits in a &cZPM&r or better &3Circuit Assembler&r."
+				"Using your &6Neuro Processing Units&r, you can craft (grow?) these circuits in a &cZPM&r or better &3Circuit Assembler&r."
 				""
-				"These are fairly slow to craft and you're going to need decent quantities, so make sure you have good infrastructure for keeping these stocked."
+				"&2These are fairly slow to craft and you're going to need decent quantities, so make sure you have good infrastructure for keeping these stocked."
 			]
 			id: "5ECF0A787D861C89"
 			rewards: [{
@@ -2053,13 +2040,13 @@
 				item: "gtceu:wetware_processor"
 				type: "item"
 			}]
-			title: "&2The Fourth And Final Tier Six Circuits"
+			title: "The Fourth And Final Tier Six Circuits"
 			x: 4.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["5ECF0A787D861C89"]
-			description: ["&6Wetware Processor Assemblies&r are made in a &cZPM&r+ &3Circuit Assembler&r still. At this point, if you are not already using a &3Large Circuit Assembling Factory&r to perform your Circuit Assembler recipes, you really should be."]
+			description: ["&6Wetware Processor Assemblies&r are made in a &cZPM&r+ &3Circuit Assembler&r still. At this point, &2if you are not already using a &3Large Circuit Assembling Facility&2 to perform your Circuit Assembler recipes, you really should be."]
 			id: "1289F9FE461BFE01"
 			rewards: [{
 				id: "7027E316193CFB45"
@@ -2072,7 +2059,7 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			title: "&2The Third Tier Seven Circuits"
+			title: "The Third Tier Seven Circuits"
 			x: 4.0d
 			y: 3.5d
 		}
@@ -2148,15 +2135,15 @@
 		}
 		{
 			dependencies: [
-				"217F85D6FE2A467D"
+				"5BADF536443E712D"
 				"01E542E1C9DAF5B4"
 			]
 			description: [
-				"With your &2Darmstadtium&r-based machine hulls and &6Wetware Mainframes&r squared away, you can finally get on the path to making a UV &3Circuit Assembler&r."
+				"With your &6Darmstadtium&r-based machine hulls and &6Wetware Mainframes&r squared away, you can finally get on the path to making a &3UV Circuit Assembler&r."
 				""
-				"This tier of Assembler unlocks &6Optical Circuits&r, as well as handling crafting recipes up to UV. It can also optionally overclock recipes that consume up to ZPM power for improved speed at the cost of relatively more power."
+				"This tier of Assembler unlocks &6Optical Circuits&r, as well as handling crafting recipes up to &3UV&r. It can also optionally overclock recipes that consume up to &cZP&rM power for improved speed at the cost of relatively more power."
 				""
-				"Alternatively, you can make an &6UV Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
+				"Alternatively, you can make an &3UV &6Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
 			]
 			icon: "gtceu:uv_circuit_assembler"
 			id: "44E2C12FC4C26CA9"
@@ -2187,7 +2174,7 @@
 				}
 				type: "item"
 			}]
-			title: "&2UV Circuit Assembler"
+			title: "&3UV&r Circuit Assembler"
 			x: 5.5d
 			y: -7.0d
 		}
@@ -2198,11 +2185,11 @@
 				""
 				"Notice that an &6HV&r &3Assembler&r is required to make them. Each tier of coil requires their tier of Assembler - we won't remind you again."
 				""
-				"&93600K&r is now also hot enough to grant a single &9100%% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
+				"&a3600K&r is now also hot enough to grant a single &9100% efficient overclock&r to &a1800K&r and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
 				""
-				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at HV. Once you upgrade your EBF to EV power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to &6Nichrome&r once you can afford it. "
+				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at &6HV&r. Once you upgrade your EBF to &5EV&r power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to Nichrome once you can afford it. "
 				""
-				"Later coils will give similar bonuses. Additionally, the EBF's temperature will increase by &9100K&r for each voltage tier above MV, which could make a difference for future materials."
+				"Later coils will give similar bonuses. Additionally, the EBF's temperature will increase by &a100K&r for each voltage tier above &bMV&r, which could make a difference for future materials."
 			]
 			disable_toast: true
 			id: "544E87F5E356FE10"
@@ -2213,7 +2200,7 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			title: "&2Nichrome Coil Blocks"
+			title: "Nichrome Coil Blocks"
 			x: 18.5d
 			y: -5.5d
 		}
@@ -2237,13 +2224,13 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			title: "&2Tritanium Ingot"
+			title: "Tritanium Ingot"
 			x: 20.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6C199A6CBC13A481"]
-			description: ["&2Tritanium Coils are the eighth coil material. At 10800K, it's capable of smelting nearly every material."]
+			description: ["Tritanium Coils are the eighth coil material. At &a10800K&r, it's capable of smelting nearly every material."]
 			disable_toast: true
 			id: "2E87146C82EF941C"
 			shape: "hexagon"
@@ -2252,7 +2239,7 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			title: "&2Tritanium Coils"
+			title: "Tritanium Coils"
 			x: 18.5d
 			y: 2.0d
 		}
@@ -2261,7 +2248,7 @@
 				"61301FBD825F8280"
 				"6A6983C64374366C"
 			]
-			description: ["&6Omnic Matrix Coils&r are the final coil type you will need. At &a12600K&r, they're capable of smelting every material and make your EBF look &4f&6a&eb&au&2l&3o&9u&ds&5."]
+			description: ["&6Omnic Matrix Coils&r are the final coil type you will need. At &a12600K&r, they're capable of smelting every material and make your &3EBF&r look &4f&6a&eb&au&2l&3o&9u&ds&5."]
 			disable_toast: true
 			id: "6EA130B04FDE6868"
 			shape: "hexagon"
@@ -2270,7 +2257,7 @@
 				item: "kubejs:omnic_matrix_coil_block"
 				type: "item"
 			}]
-			title: "&9Omnic Matrix Coil"
+			title: "Omnic Matrix Coil"
 			x: 18.5d
 			y: 3.5d
 		}
@@ -2282,7 +2269,7 @@
 			description: [
 				"Welcome to the &bMV&r Age!"
 				""
-				"In this age, you'll gain access to &bApplied Energistics 2&r, make your first &6Silicon Wafers&r and expand your growing collection of machines."
+				"In this age, you'll gain access to &bApplied Energistics 2&r, make your first &6Silicon Wafers&r, and expand your growing collection of machines."
 			]
 			icon: "gtceu:mv_machine_hull"
 			id: "6C028CD89745098E"
@@ -2448,7 +2435,7 @@
 			description: [
 				"Welcome to the &7LV&r Age!"
 				""
-				"In this age, you'll create your first machines, including the multiblock &3Electric Blast Furnace&r, and learn the ropes of developing your Factory."
+				"In this age, you'll create your first machines, including the multiblock &3Electric Blast Furnace&r, and learn the ropes of developing your factory."
 			]
 			icon: "gtceu:lv_machine_hull"
 			id: "61CC4AD6FAE15248"
@@ -2531,7 +2518,7 @@
 			description: [
 				"Welcome to the &6HV&r Age!"
 				""
-				"In this age, you'll begin autocrafting with &bApplied Energistics 2&r, gain access to the &3Distillation Tower&r, and begin work on the &3Cleanroom&r."
+				"In this age, you'll begin autocrafting with &bApplied Energistics 2&r, begin petrochemistry with &3Distillation Towers&r, and construct a &3Cleanroom&r."
 			]
 			icon: "gtceu:hv_machine_hull"
 			id: "48CAEBEE83D7C791"
@@ -2614,7 +2601,7 @@
 			description: [
 				"Welcome to the &5EV&r Age!"
 				""
-				"In this age, you can begin processing &6Deepslate&r for &9Fluorine&r and &6Thorium&r, gain access to the &3Alloy Blast Smelter&r, begin making &6Nanoprocessors&r, and start on the &3Platline&r."
+				"In this age, you can begin processing &6Deepslate&r for &9Fluorine&r, gain access to the &3Alloy Blast Smelter&r, begin making &6Nanoprocessors&r, and start on the &3Platline&r."
 			]
 			icon: "gtceu:ev_machine_hull"
 			id: "30AAFB97813DEB6C"
@@ -2780,7 +2767,7 @@
 			description: [
 				"Welcome to the &cZPM&r Age!"
 				""
-				"In this age, you should continue to expand and upgrade your &3Fusion&r infrastructure to support the gathering of your first endgame materials like &6Hadal Shards&r, &6Cryococcus&r, &6Omnium&r, and &6Neutronium&r."
+				"In this age, you will begin &dResearching&r components and upgrade your &3Fusion&r infrastructure to support the gathering of your first endgame materials like &6Cryococcus&r, &6Omnium&r, and &6Neutronium&r."
 			]
 			icon: "gtceu:zpm_machine_hull"
 			id: "11B25506F679ACBD"
@@ -2863,7 +2850,7 @@
 			description: [
 				"Welcome to the &3UV&r Age!"
 				""
-				"In this age, you will harvest a microverse whole, and put its &6heart&r to use creating endgame technologies such as the &6Stabilized Microminers&r and &6Prismatic Cores&r."
+				"In this age, you will upgrade your &dResearch&r infrastructure, assemble the final &6Energy Core&r, and harvest a microverse whole, ripping its &6Heart&r out."
 			]
 			icon: "gtceu:uv_machine_hull"
 			id: "4B497D256FB3983F"
@@ -2943,7 +2930,8 @@
 			description: [
 				"Welcome to the &4UHV&r Age!"
 				""
-				"This age will have you interact with &9new Microverse types&r, introduce &9crafting with Color&r and offers the key to &2Unlimited Knowledge&r.\nCraft &6Optical Circuits&r and &6Infinity Ingots&r, and obtain &6Necrosiderite&r from &3Shattered Microverses&r to enter UEV."
+				"This age will have you interact with new Microverse types, introduce crafting with &cC&6o&el&ao&9r&r, offer the key to &9Unlimited&r Knowledge."
+				"Craft &6Optical Circuits&r and &6Infinity Ingots&r, and obtain &6Necrosiderite&r from &3Shattered Microverses&r to enter UEV."
 			]
 			icon: "gtceu:uhv_machine_hull"
 			id: "0A34290F579BB4E2"
@@ -3024,7 +3012,9 @@
 			description: [
 				"Welcome to the &aUEV&r Age!"
 				""
-				"This age will expect both &9Prismatic and Microversal mastery&r of you, and let you unlock the secrets of &9Infinite Power&r.\nProject, shatter and corrupt dozens of Microverses, package circuit parts inside Microverse shards to craft the powerful &6Extradimensional Circuits&r, and craft highly unstable &6Supercritical Prismatic Cores&r allowing the production of &6Monium&r, a &3Post-Infinity Material&r."
+				"This age will expect both Prismatic and Microversal mastery of you, and let you unlock the secrets of &3Infinite Power&r."
+				""
+				"Project, shatter and corrupt dozens of Microverses, package circuit parts inside Microverse shards to craft the powerful &6Extradimensional Circuits&r, and craft highly unstable &6Supercritical Prismatic Cores&r allowing the production of &6Monium&r."
 			]
 			icon: "gtceu:uev_machine_hull"
 			id: "63812416270292A4"
@@ -3104,7 +3094,9 @@
 			description: [
 				"Welcome to the &cMAX&r Age!"
 				""
-				"This final age will put your factory to the ultimate test! Resolve your final infrastructure bottlenecks through the help of &3Infinite power&r and &cMAX&6 Energy Hatches&r.\nWill you be able to produce hundreds of &6MAX Circuits&r and thousands of &6Monium&r?"
+				"This final age will put your factory to the ultimate test! Resolve your final infrastructure bottlenecks through the help of &3Infinite power&r and &cMAX&6 Energy Hatches&r."
+				""
+				"Will you be able to produce hundreds of &cMAX &6Circuits&r and thousands of &6Monium&r?"
 			]
 			icon: "gtceu:max_machine_hull"
 			id: "1A6F087E10DC036E"
@@ -3187,7 +3179,7 @@
 				"7C9C91EC9F3930C2"
 			]
 			description: [
-				"To be able to fully harness the power of Shattered Microverses, you'll need a brand new tier of Microminer."
+				"To be able to fully harness the power of &3Shattered Microverses&r, you'll need a brand new tier of Microminer."
 				""
 				"This Microminer can be used to obtain &6Necrosiderite&r, &6Quasi-Stable Neutron Stars&r, and will be used later for making &6Extradimensional Circuits&r."
 				""
@@ -3202,9 +3194,9 @@
 				item: "kubejs:microminer_t11"
 				type: "item"
 			}]
-			title: "&9Tier Eleven Microminer"
+			title: "Tier Eleven Microminer"
 			x: 22.0d
-			y: 10.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["040B3FCD82533BD9"]
@@ -3219,9 +3211,9 @@
 				item: "kubejs:microminer_t12"
 				type: "item"
 			}]
-			title: "&9Tier Twelve Microminer"
+			title: "Tier Twelve Microminer"
 			x: 22.0d
-			y: 12.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3270496124969A51"]
@@ -3234,7 +3226,7 @@
 				item: "sophisticatedbackpacks:copper_backpack"
 				type: "item"
 			}]
-			title: "&9Leadstone Backpack"
+			title: "Leadstone Backpack"
 			x: 12.5d
 			y: -7.0d
 		}
@@ -3281,13 +3273,13 @@
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
-				"Also important to note is that it can act wonky with Tile Entities, so it is mainly useful with simple blocks (it doesn't paste machine or hatch configuration, for example)."
+				"Also important to note is that &eit can act wonky with Tile Entities&r, so it is mainly useful with simple blocks (it doesn't paste machine or hatch configuration, for example)."
 				"{@pagebreak}"
-				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will pull items from the inventory, 'connecting' the gadget to the inventory."
+				"A very cool feature of this mod is how you can &7shift-right click&r an inventory with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will pull items from the inventory, 'connecting' the gadget to the inventory."
 				""
-				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r, the gadget will use &6Cobblestone&r from that chest to place blocks."
+				"For example, if you &7shift-right click&r a chest full of &6Cobblestone&r, the gadget will use Cobblestone from that chest to place blocks."
 				""
-				"By default, the config GUI is bound to &8G&r."
+				"By default, the config GUI is bound to &7G&r."
 			]
 			icon: "buildinggadgets2:gadget_building"
 			id: "5F9C7FB40AD2640B"
@@ -3335,11 +3327,11 @@
 				""
 				"Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks."
 				"{@pagebreak}"
-				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with the Portable Spatial Cloner in your offhand and the tool will pull items from the inventory, 'connecting' it to the inventory."
+				"A very cool feature of this mod is how you can &7shift-right click&r an inventory with the &6Portable Spatial Cloner&r in your offhand and the tool will pull items from the inventory, 'connecting' it to the inventory."
 				""
-				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r with the Portable Spatial Cloner in your offhand, the tool will use &6Cobblestone&r from that chest to place blocks."
+				"For example, if you &7shift-right click&r a chest full of &6Cobblestone&r with the Portable Spatial Cloner in your offhand, the tool will use Cobblestone from that chest to place blocks."
 				""
-				"By default, the context menu GUI is bound to &8Left Alt&r."
+				"By default, the context menu GUI is bound to &7Left Alt&r."
 			]
 			id: "31EE6E41F509A8CF"
 			subtitle: "This pack has &bSpatial Tools Compatible&r."
@@ -3377,9 +3369,9 @@
 				"273F3F8DD6A3DCC5"
 			]
 			description: [
-				"Holding one of these reveals &aTravel Anchors&r in range."
+				"Holding one of these reveals &6Travel Anchors&r in range."
 				""
-				"Right-click after aiming to warp to one, or point it anywhere and shift+right-click to teleport forward a short distance (works through walls)."
+				"&7Right-click&r after aiming to warp to one, or point it anywhere and &7shift+right-click&r to teleport forward a short distance (works through walls)."
 				""
 				"These are powered with RF, and can be further enchanted through &bEnder IO&r's enchanting mechanics."
 				""
@@ -3412,11 +3404,11 @@
 		{
 			dependencies: ["424413BBCE3FD3BF"]
 			description: [
-				"The &9Omni-breaker&r is a tool added by &bGTM Utils&r which can instantly break any block."
+				"The &6Omni-breaker&r is a tool added by &bGTM Utils&r which can instantly break any block."
 				""
-				"When using the &9Omni-breaker&r you can right click to break one block at a time, or hold left click to continuously break blocks."
+				"When using the Omni-breaker you can &7right click&r to break one block at a time, or hold &7left click&r to continuously break blocks."
 				""
-				"The &9Omni-breaker&r &cdoes not&r automatically relocate blocks to the player, so it is advised to use some type of &6magnet&r to avoid losing blocks."
+				"The Omni-breaker also automatically relocates blocks to your inventory when using the &7right click&r, though not for the &7left click&r."
 			]
 			id: "6B80737C5E1359F7"
 			rewards: [{
@@ -3442,18 +3434,18 @@
 			description: [
 				"The &3Electric Blast Furnace&r is a major, major milestone in your &bGregTech&r career. It has the power to smelt more advanced materials. The first of these, &6Aluminium&r, is going to be important in the immediate future."
 				""
-				"Since smelting &6Aluminium&r requires MV power, you're going to have to power this with 2 LV Energy Input Hatches and 4 generators. The reasoning for this is explained in the quest above this one."
+				"Since smelting &6Aluminium&r requires &bMV&r power, you're going to have to power this with 2 &7LV&r &6Energy Hatches&r and 4 generators. The reasoning for this is explained in the quest above this one."
 				""
-				"There is a diagram of how to build the EBF in &bEMI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &6sneak-right click&r the controller to enable the in-world preview."
+				"There is a diagram of how to build the EBF in &bEMI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &7sneak-right click&r the controller to enable the in-world preview."
 				""
-				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact center of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all the gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &29&e Heatproof Machine Casings in your layout or the structure will not form&r."
+				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact center of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all the gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &c9&e Heatproof Machine Casings in your layout or the structure will not form&r."
 				""
 				"{@pagebreak}"
-				"This quest calls for a &2maintenance hatch&r, two energy hatches, a fluid input and output, and an item input and output, which is a total of 7 positions. Their specific order and placement don't matter, as long as you can access them. The 8th position is your EBF controller, leaving 9 gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the textures on its hatches and casings will unify, and the controller will say \"Idling.\""
+				"This quest calls for a &6Maintenance Hatch&r, two energy hatches, a fluid input and output, and an item input and output, which is a total of 7 positions. Their specific order and placement don't matter, as long as you can access them. The 8th position is your EBF controller, leaving 9 gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the textures on its hatches and casings will unify, and the controller will say \"&aStrucure Formed&r\"."
 				""
-				"Hatches and Buses can be replaced by Hatches and Buses of any tier, although the Input Bus must be at least LV, as there are 2 inputs."
+				"Hatches and Buses can be replaced by Hatches and Buses of any tier, just &emake sure it has enough slots / capacity to hold the ingredients of the recipe you are running&r."
 				""
-				"You'll want to use &6Conductive Iron&r to wire up your EBF. It is very power hungry, and cable loss is a serious problem at this stage in progression. If the EBF cannot get enough energy, progress on the item smelting will halt partway through or fail to start."
+				"You'll want to use &6Conductive Iron&r to wire up your EBF. It is very power hungry, and cable loss is a serious problem at this stage in progression. If the EBF cannot get enough energy, progress on the item smelting will regress partway through or fail to start."
 				""
 				"&2In Gregtech, all hatches except Maintenance and Parallel Control can be shared between Multiblocks!"
 			]
@@ -3560,11 +3552,11 @@
 				"2C6BEB5BBE5A91DC"
 			]
 			description: [
-				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
+				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to &a2700K&r so it can process more advanced materials."
 				""
-				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Liquid Copper&r."
+				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r (for Circuit parts), and &6Titanium&r (for &5EV&r machines). An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Liquid Copper&r."
 				""
-				"&2In GTm, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &9temperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%%&r energy."
+				"&2In GTm, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &atemperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%&r energy."
 				""
 				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
 			]
@@ -3642,7 +3634,7 @@
 				"53EC3831D66769CA"
 				"5732018AA35D69B6"
 			]
-			description: ["&6HSS-G&r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials, such as &6Naquadah&r."]
+			description: ["&6HSS-G&r is the fifth coil material available, increasing your &3EBF&r's operating temperature to &a5400K&r so it can process more advanced materials, such as &6Naquadah&r."]
 			id: "3DD8D9EEA7189186"
 			rewards: [{
 				id: "0A5B1F97951B104A"
@@ -3667,9 +3659,9 @@
 				"1BADB230EB1BEA4D"
 			]
 			description: [
-				"An otherworldly material exclusive to Microverses, &6Naquadah&r is an important material in the late game."
+				"An otherworldly material exclusive to Microverses and Space, &6Naquadah&r is an important material in the late game."
 				""
-				"It can be alloyed and enriched to various forms, and is the eventual source of &6Neutronium&r in a &3MK III Fusion Reactor&r."
+				"It can be alloyed and enriched to various forms, and is eventually able to be processed into a powerful endgame fuel."
 			]
 			id: "424413BBCE3FD3BF"
 			rewards: [{
@@ -3692,7 +3684,7 @@
 				"424413BBCE3FD3BF"
 				"254D6D1470BC197E"
 			]
-			description: ["&6Naquadah&r is the sixth coil material available, increasing your EBF's operating temperature to 7200K so it can process more advanced materials."]
+			description: ["&6Naquadah&r is the sixth coil material available, increasing your &3EBF&r's operating temperature to &a7200K&r so it can process more advanced materials, such as &6Trinium&r."]
 			id: "28CA4E5308EC0BB9"
 			rewards: [{
 				id: "76AA0FD4E8D706E5"
@@ -3716,9 +3708,9 @@
 				"0508D3CCB6C876A3"
 			]
 			description: [
-				"&2A strong heavy element obtained from the Naquadah chain."
+				"A strong heavy element obtained from the &3Naquadah processing line&r."
 				""
-				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &91 Trinium per 12 Naquadah processed&r."
+				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have &9Fluorine&r under control, you can hold off doing the full chain if you don't need to yet. &2You get 1 Trinium per 12 Naquadah processed&r."
 				""
 				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, and &6Naquadah Alloy&r, among other things. You will need almost 5.5 stacks for a &3Fusion Reactor MK I&r, so stock up on it!"
 			]
@@ -3744,7 +3736,7 @@
 				"5A31EEF439212D6E"
 				"15FAEE3F625265F4"
 			]
-			description: ["&6Trinium&r is the seventh coil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."]
+			description: ["&6Trinium&r is the seventh coil material available, increasing your &3EBF&r's operating temperature to &a9001K&r so it can process more advanced materials, such as &6Naquadria&r."]
 			id: "7A65459E4DFAAC2D"
 			rewards: [{
 				id: "0F124B2E02F2BD4E"
@@ -3832,11 +3824,11 @@
 			description: [
 				"[\"\",{\"text\":\"The Second Microminer! If this is your first microminer, please read the quests about how microminers and microverses work in the \"},{\"underlined\":true,\"text\":\"Into the Microverse chapter.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"68F29871402A6B1B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}}]"
 				""
-				"&2You'll need Phosphorous in its LV Field Generators&r."
+				"You'll need Phosphorous in its LV Field Generators."
 				""
-				"This Miner is a good source of &6Tungsten and Noble Gases&r, among other things."
+				"This Miner is you first source of &6Tungsten&r, and can also help with sourcing &6Noble Gasses&r."
 				""
-				"&9Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
+				"&2Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
 				""
 				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
 			]
@@ -3859,9 +3851,7 @@
 		{
 			dependencies: ["14F1FF4656693711"]
 			description: [
-				"The Third Microminer. &2You'll need Boron in its MV Field Generators.&r"
-				""
-				"Look in &bEMI to see what resources this miner can produce."
+				"The Third Microminer. You'll need &6Boron&r in its &bMV&r &6Field Generators&r."
 				""
 				"At this point in the game, Microminers can get you most basic resources, continue to check &bEMI&r to see what they can give you."
 			]
@@ -3916,7 +3906,7 @@
 				"1349044BF8C04A12"
 				"05F7C3F397B329F5"
 			]
-			description: ["The first source of &6Naquadah &r(&6Snowchestite&r on HM+) and &2Kaemanite Ore&r (for &6Trinium&r), via a mission with &6Stabilized Plutonium&r. Later on you can mine these ores from &6Glacio&r."]
+			description: ["The first source of &6Naquadah &r(&6Snowchestite&e on HM+&r) and &6Kaemanite Ore&r (for &6Trinium&r), via a mission with &6Stabilized Plutonium&r. Later on you can mine these ores on &bGlacio&r."]
 			id: "023197AB7CDBDD6E"
 			rewards: [{
 				id: "5C975732784B15CA"
@@ -3965,9 +3955,9 @@
 				"44B0AB41C076E779"
 			]
 			description: [
-				"The first source of &9Warden Hearts&r and the only source of &9Lair of The Warden Data&r."
+				"The first source of &6Warden Hearts&r and the only source of &6Lair of The Warden Data&r."
 				""
-				"As a bonus, it also brings back &9Sculk Catalysts, Warden Tendrils, &2Blocks of Ruthenium&r, and plenty of other different precious metals and gems."
+				"As a bonus, it also brings back &6Sculk Catalysts&r, &6Warden Tendrils&r, &6Blocks of Ruthenium&r, and plenty of other different precious metals and gems."
 			]
 			id: "5FE96C30454A0374"
 			rewards: [{
@@ -3988,9 +3978,9 @@
 		{
 			dependencies: ["41F1837D7C131898"]
 			description: [
-				"The &6only&r source of &9Hadal Shards&r."
+				"The &6only&r source of &6Hadal Shards&r."
 				""
-				"&9This Microminer also brings back Dragon Eggs, Dragon Scales, Dragons Breath, Quantum Stars, and Gravi-Stars&r."
+				"This Microminer also brings back &6Dragon Eggs&r, &6Dragon Scales&r, &6Dragons Breath&r, &6Quantum Stars&r, and &6Gravi-Stars&r."
 			]
 			id: "2D47BFA44BDB5E6A"
 			rewards: [{
