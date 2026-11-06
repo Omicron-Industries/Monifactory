@@ -26,5 +26,14 @@
             "path": "../.github/workflows"
         }
     ],
-    "settings": {}
+    "settings": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit",
+        },
+    },
+    "extensions": {
+        "recommendations": [
+            "dbaeumer.vscode-eslint",
+        ],
+    },
 }
