@@ -41,4 +41,11 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:sulfuric_heavy_fuel 15", "gtceu:sulfuric_light_fuel 75", "gtceu:sulfuric_naphtha 120", "gtceu:sulfuric_gas 60")
         .duration(20)
         .EUt(0.75 * GTValues.V[GTValues.MV])
+
+    // Reduce Liquid Oxygen duration
+    event.recipes.gtceu.vacuum_freezer("liquid_oxygen")
+        .inputFluids("gtceu:oxygen 1000")
+        .outputFluids("gtceu:liquid_oxygen 1000")
+        .duration(120)
+        .EUt(GTValues.VA[GTValues.EV])
 })
