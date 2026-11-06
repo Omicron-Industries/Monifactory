@@ -4,7 +4,7 @@ import fs from "node:fs/promises"
 import { cacheFolderByManifestFileEntry, DownloadModsTarget } from "./mods.ts"
 import { readManifest } from "../lib/manifest.ts"
 import { join, resolve } from "path"
-import { getJavaPath } from "../launcher/java.ts"
+import { DownloadJava, getJavaPath } from "../launcher/downloadJava.ts"
 import { DownloadVersionDescription } from "../launcher/versionDescription.ts"
 
 const CORE_MOD_PROJECT_ID = 1266569
@@ -24,7 +24,7 @@ export const getPackModeSwitchTarget = (
 ) => Juke.createTarget({
     name,
     parameters: [PackModeParameter],
-    dependsOn: [...dependsOn, DownloadModsTarget, DownloadVersionDescription],
+    dependsOn: [...dependsOn, DownloadModsTarget, DownloadVersionDescription, DownloadJava],
     async executes({ get }) {
         const { data: mode } = zPackMode.safeParse(get(PackModeParameter))
         if (mode === undefined) {

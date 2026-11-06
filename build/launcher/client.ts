@@ -15,7 +15,7 @@ import { DownloadAssets } from "./downloadAssets.ts"
 import { DownloadLogger } from "./downloadLogger.ts"
 import { checkRulesMatch } from "./checkRulesMatch.ts"
 import { fillTemplates } from "./fillTemplates.ts"
-import { getJavaPath } from "./java.ts"
+import { DownloadJava, getJavaPath } from "./downloadJava.ts"
 
 const clientModsFolder = join(LAUNCHER_INSTANCE_PATH, "mods")
 
@@ -49,6 +49,7 @@ const BuildClientLiveTarget = new Juke.Target({
 export const RunClientTarget = new Juke.Target({
     dependsOn: [
         DownloadVersionDescription,
+        DownloadJava,
         DownloadAssets,
         DownloadLibraries,
         DownloadLogger,

@@ -4,7 +4,7 @@ import { spawn } from "child_process"
 import path from "path"
 import Juke from "juke-build"
 import { BuildServerTarget } from "../index.ts"
-import { getJavaPath } from "./java.ts"
+import { DownloadJava, getJavaPath } from "./downloadJava.ts"
 import { DownloadVersionDescription } from "./versionDescription.ts"
 import { getForgeServerLibraryDir, InstallForgeServer } from "./forge/installForge.ts"
 import { SERVER_INSTANCE_PATH } from "./config.ts"
@@ -47,7 +47,7 @@ const BuildServerLiveTarget = new Juke.Target({
 })
 
 export const RunGametestServerTarget = new Juke.Target({
-    dependsOn: [DownloadVersionDescription, BuildServerLiveTarget, InstallForgeServer],
+    dependsOn: [DownloadVersionDescription, DownloadJava, BuildServerLiveTarget, InstallForgeServer],
     executes: async () => {
         const server = spawn(
             await getJavaPath(),
@@ -84,6 +84,6 @@ export const RunGametestServerTarget = new Juke.Target({
 })
 
 export const RunDedicatedServerTarget = new Juke.Target({
-    dependsOn: [DownloadVersionDescription, BuildServerLiveTarget, InstallForgeServer],
+    dependsOn: [DownloadVersionDescription, DownloadJava, BuildServerLiveTarget, InstallForgeServer],
     executes: async () => Juke.exec(await getJavaPath(), getServerJavaArgs([], ["nogui"]), { cwd: SERVER_INSTANCE_PATH }),
 })

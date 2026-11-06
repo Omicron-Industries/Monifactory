@@ -20,6 +20,7 @@ export const CACHE_PATH_CLIENT_JAR = () => {
     const { version } = readManifest().minecraft
     return join(CACHE_FOLDER_VERSIONS, version, version + ".jar")
 }
+export const CACHE_FOLDER_RUNTIME = join(CACHE_FOLDER_ROOT, "runtime")
 export const CACHE_FOLDER_FORGE = join(CACHE_FOLDER_ROOT, "forge")
 export const CACHE_PATH_FORGE_INSTALLER = join(CACHE_FOLDER_FORGE, "installer.jar")
 

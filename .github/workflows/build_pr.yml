@@ -66,10 +66,11 @@ jobs:
       - uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
-          java-version: '21'
+          java-version: '17'
       - name: Pack Modpack
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          JAVA_PATH: ${{ env.JAVA_HOME }}/bin/java
         run: |
           cd build
           npm install

@@ -57,9 +57,9 @@ export const zRuledValues = z.union([
 ]).array()
 type RuledValues = z.infer<typeof zRuledValues>
 
-const zFile = z.strictObject({
+export const zFile = z.strictObject({
     sha1: z.string(),
-    size: z.number(),
+    size: z.number().int(),
     url: z.url(),
 })
 export type MinecraftFile = z.infer<typeof zFile>
@@ -114,7 +114,11 @@ const zVersionDescription = z.object({
     javaVersion: z.strictObject({
         component: z.string(),
         majorVersion: z.number().int(),
-    }).optional(),
+    }).default({
+        // This is a legacy variant.
+        component: "jre-legacy",
+        majorVersion: 8,
+    }),
     complianceLevel: z.number().int().optional(),
     downloads: z.strictObject({
         client: zFile,
