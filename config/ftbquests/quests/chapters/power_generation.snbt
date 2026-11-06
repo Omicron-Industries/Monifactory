@@ -159,13 +159,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"The Large Combustion Engine is much like an &5EV&r upgrade to an &6HV&r combustion Generator, but with a few differences."
+				"The Large Combustion Engine is much like an &5EV&r upgrade to an &6HV&r Combustion Generator, but with a few differences."
 				""
 				"First, it's a multiblock. This means it takes up more space, requires a &6Maintenance Hatch&r, and costs a significant amount of Titanium."
 				""
 				"Second, it consumes &9Lubricant&r in addition to regular combustion fuels."
 				""
-				"Third, it can be supercharged with &9Oxygen&r to produce &e3x&r more energy from &e2x&r more fuel."
+				"Third, it can be supercharged with &9Oxygen&r to produce &e3A&r &5EV&r with &e2A&r worth of fuel."
 				"{@pagebreak}"
 				"[\"\",{\"text\":\"While you're at it, you should also look into switching to \"},{\"color\":\"blue\",\"underlined\":\"true\",\"text\":\"High Octane Gasoline\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"text\":\" if your previous fuel is failing you.\"}]"
 				""
@@ -269,7 +269,7 @@
 				""
 				"It produces &e4x&r the power for &e4x&r as much fuel like any other generator upgrade, but consumes the same amount of &9Lubricant&r."
 				""
-				"Additionally, supercharging uses &9Liquid Oxygen&r instead of the gas version."
+				"Additionally, supercharging uses &9Liquid Oxygen&r instead of Oxygen Gas."
 				"{@pagebreak}"
 				"[\"\",{\"text\":\"As for fuels, you should look into \"},{\"color\":\"blue\",\"underlined\":\"true\",\"text\":\"JEAN Gasoline\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"053DDDCD2505E20B\"}},{\"text\":\". It's a potent concoction of exotic and dangerous ingredients, but will last for quite some time even in these generators.\"}]"
 			]
@@ -1284,7 +1284,7 @@
 				""
 				"Second, it consumes small amounts of &9Liquid Redstone&r in addition to regular lapotronic fuels."
 				""
-				"Third, it can be supercharged with tiny amounts of &9Primal Mana&r to produce &e3x&r more energy from &e2x&r more fuel."
+				"Third, it can be supercharged with tiny amounts of &9Primal Mana&r to produce &e3A&r &5EV&r with &e2A&r worth of fuel."
 			]
 			icon: "monilabs:large_lapotronic_generator"
 			id: "7EC8FB68BD2AB417"
@@ -1373,7 +1373,7 @@
 				""
 				"It produces &e4x&r the power for &e4x&r as much fuel like any other generator upgrade, but consumes the same amount of &9Liquid Redstone&r."
 				""
-				"Additionally, supercharging with &9Primal Mana&r is even more efficient, producing &e4x&r more energy from &e2x&r more fuel."
+				"Additionally, supercharging with &9Primal Mana&r is even more efficient, producing &e4A&r &9IV&r with &e2A&r worth of fuel."
 			]
 			icon: "monilabs:extreme_lapotronic_generator"
 			id: "11CF72393601F450"
