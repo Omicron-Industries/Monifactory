@@ -11,10 +11,10 @@ let active_transformer_pattern = (definition) => FactoryBlockPattern.start()
     .aisle("XXX", "XCX", "XXX")
     .aisle("XXX", "XSX", "XXX")
     .where("S", Predicates.controller(Predicates.blocks(GTMultiMachines.ACTIVE_TRANSFORMER.get())))
-    .where("X", Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get()).setMinGlobalLimited(12)
+    .where("X", Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get())
+        .setMinGlobalLimited(12)
         .or(ActiveTransformerMachine.getHatchPredicates()))
-    .where("C", Predicates.blocks(GTBlocks.HIGH_POWER_CASING.get())
-        .or(Predicates.blocks(GTBlocks.SUPERCONDUCTING_COIL.get())))
+    .where("C", Predicates.blocks("monilabs:lapotronic_tungstensteel_casing"))
     .build()
 
 // Set the pattern for Active Transformer
