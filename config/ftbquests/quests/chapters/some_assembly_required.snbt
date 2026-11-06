@@ -141,6 +141,67 @@
 			x: -8.5d
 			y: -5.25d
 		}
+		{
+			id: "53D04354B8061A41"
+			linked_quest: "6B80737C5E1359F7"
+			shape: "hexagon"
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			id: "3260188D1D1543AC"
+			linked_quest: "424413BBCE3FD3BF"
+			shape: "hexagon"
+			x: 7.25d
+			y: 4.75d
+		}
+		{
+			id: "57D9AB6BFC44C8FE"
+			linked_quest: "28CA4E5308EC0BB9"
+			shape: "hexagon"
+			size: 1.25d
+			x: 4.25d
+			y: 2.75d
+		}
+		{
+			id: "1280D62386BC2C4E"
+			linked_quest: "15FAEE3F625265F4"
+			shape: "hexagon"
+			x: 0.75d
+			y: 6.75d
+		}
+		{
+			id: "6A0F4CBB58BE6D22"
+			linked_quest: "7A65459E4DFAAC2D"
+			shape: "hexagon"
+			size: 1.5d
+			x: 0.75d
+			y: 8.75d
+		}
+		{
+			id: "3FF813B417BA0F0C"
+			linked_quest: "15DBB22E3DC0AFB7"
+			shape: "hexagon"
+			size: 2.0d
+			x: 13.25d
+			y: 4.75d
+		}
+		{
+			id: "357D1A1342B62C34"
+			linked_quest: "023197AB7CDBDD6E"
+			shape: "hexagon"
+			size: 2.0d
+			x: 10.75d
+			y: 4.75d
+		}
+		{
+			id: "73970F01D2A201B5"
+			linked_quest: "49B872B193268554"
+			shape: "hexagon"
+			size: 1.5d
+			x: 4.25d
+			y: -1.5d
+		}
 	]
 	quests: [
 		{
@@ -251,36 +312,6 @@
 			title: "Advanced Microverse Projector"
 			x: 12.0d
 			y: 7.25d
-		}
-		{
-			dependencies: [
-				"52F1953ED72A8AA6"
-				"77582C534A994D7C"
-				"27A80F018F59EF1E"
-			]
-			description: [
-				"All of the Tier Four missions require &6Petrotheum Dust&r."
-				""
-				"This tier of Microminer excels at gathering massive batches of basic materials, such as &6Iron&r, &6Gold&r, or &6Redstone&r. Additionally, this microminer will be your first source of &6Neptunium&r."
-				""
-				"It is also a convenient source of &6Sheldonite&r, the best choice for creating &6Platinum Group Sludge&r, via a mission requiring &6Wither Realm Data&r."
-			]
-			id: "15DBB22E3DC0AFB7"
-			rewards: [{
-				id: "48E752C131EA99AC"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "41398E76BAF0F92E"
-				item: "kubejs:microminer_t4"
-				type: "item"
-			}]
-			title: "&9Tier Four Microminer"
-			x: 13.25d
-			y: 4.75d
 		}
 		{
 			dependencies: ["53C00EA9D9BEE776"]
@@ -502,57 +533,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: [
-				"52F1953ED72A8AA6"
-				"1349044BF8C04A12"
-				"05F7C3F397B329F5"
-			]
-			description: ["The first source of &6Naquadah &r(&6Snowchestite&r on HM+) and &2Kaemanite Ore&r (for &6Trinium&r), via a mission with &6Stabilized Plutonium&r. Later on you can mine these ores from &6Glacio&r."]
-			id: "023197AB7CDBDD6E"
-			rewards: [{
-				id: "5C975732784B15CA"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "51421243D98A03F2"
-				item: "kubejs:microminer_t5"
-				type: "item"
-			}]
-			title: "&2Tier Five Microminer"
-			x: 10.75d
-			y: 4.75d
-		}
-		{
-			dependencies: [
-				"3DD8D9EEA7189186"
-				"023197AB7CDBDD6E"
-				"1BADB230EB1BEA4D"
-			]
-			description: [
-				"An otherworldly material exclusive to Microverses, &6Naquadah&r is an important material in the late game."
-				""
-				"It can be alloyed and enriched to various forms, and is the eventual source of &6Neutronium&r in a &3MK III Fusion Reactor&r."
-			]
-			id: "424413BBCE3FD3BF"
-			rewards: [{
-				id: "05581326BA7839F9"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "75892E7951C532B7"
-				item: "gtceu:naquadah_ingot"
-				type: "item"
-			}]
-			title: "Naquadah Ingots"
-			x: 7.25d
-			y: 4.75d
-		}
-		{
 			dependencies: ["424413BBCE3FD3BF"]
 			description: [
 				"The &6Naquadah-doped Boule&r produces even more wafers per boule. It also is relatively cheap, due to the abundance of Naquadah that is gained from the &eTier 5 Microminer Mission&r."
@@ -605,30 +585,6 @@
 			y: 0.75d
 		}
 		{
-			dependencies: [
-				"424413BBCE3FD3BF"
-				"254D6D1470BC197E"
-			]
-			description: ["&6Naquadah&r is the sixth coil material available, increasing your EBF's operating temperature to 7200K so it can process more advanced materials."]
-			id: "28CA4E5308EC0BB9"
-			rewards: [{
-				id: "76AA0FD4E8D706E5"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				count: 16L
-				id: "2C1FDC7B8E7B2C03"
-				item: "gtceu:naquadah_coil_block"
-				type: "item"
-			}]
-			title: "Naquadah Coil Blocks"
-			x: 4.25d
-			y: 2.75d
-		}
-		{
 			dependencies: ["424413BBCE3FD3BF"]
 			dependency_requirement: "one_completed"
 			description: [
@@ -667,34 +623,6 @@
 			]
 			title: "Naquadah Processing"
 			x: 4.25d
-			y: 6.75d
-		}
-		{
-			dependencies: [
-				"28CA4E5308EC0BB9"
-				"0508D3CCB6C876A3"
-			]
-			description: [
-				"&2A strong heavy element obtained from the Naquadah chain."
-				""
-				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have Fluorine under control, you can hold off doing the full chain if you don't need to yet. You get &91 Trinium per 12 Naquadah processed&r."
-				""
-				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, and &6Naquadah Alloy&r, among other things. You will need almost 5.5 stacks for a &3Fusion Reactor MK I&r, so stock up on it!"
-			]
-			id: "15FAEE3F625265F4"
-			rewards: [{
-				id: "7C362667765C8A4D"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "0EDAFBD50F866785"
-				item: "gtceu:trinium_ingot"
-				type: "item"
-			}]
-			title: "&2Trinium"
-			x: 0.75d
 			y: 6.75d
 		}
 		{
@@ -1224,32 +1152,6 @@
 			y: 4.75d
 		}
 		{
-			dependencies: ["7DB174443D7FAFA0"]
-			description: [
-				"The first decent source of &6Dragon Eggs&r."
-				""
-				"This microminer can also provide: &6Uraninite&r, &6Plutonium&r, &6Ancient Debris&r, and more."
-				""
-				"Once you reach the &3Elite Microverse Projector&r, this microminer can also bring back Sculk-related items, such as &6Sculk Blocks&r and &6Veins&r."
-			]
-			id: "49B872B193268554"
-			rewards: [{
-				id: "1A07DD326F7F9A55"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "2BE2D12C219225CD"
-				item: "kubejs:microminer_t6"
-				type: "item"
-			}]
-			title: "&2Tier Six Microminer"
-			x: 4.25d
-			y: -1.5d
-		}
-		{
 			dependencies: [
 				"5732018AA35D69B6"
 				"6E5343E45E99CBAD"
@@ -1605,32 +1507,6 @@
 			y: 2.75d
 		}
 		{
-			dependencies: ["424413BBCE3FD3BF"]
-			description: [
-				"The &9Omni-breaker&r is a tool added by &bGTM Utils&r which can instantly break any block."
-				""
-				"When using the &9Omni-breaker&r you can right click to break one block at a time, or hold left click to continuously break blocks."
-				""
-				"The &9Omni-breaker&r &cdoes not&r automatically relocate blocks to the player, so it is advised to use some type of &6magnet&r to avoid losing blocks."
-			]
-			id: "6B80737C5E1359F7"
-			rewards: [{
-				id: "66946C64C245553F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			subtitle: "om nom nom nom"
-			tasks: [{
-				id: "725DD71DFCCADBE8"
-				item: "gtmutils:omnibreaker"
-				type: "item"
-			}]
-			title: "Omni-breaker"
-			x: 8.5d
-			y: 6.0d
-		}
-		{
 			dependencies: [
 				"217F85D6FE2A467D"
 				"2A6E9E7C80754936"
@@ -1678,31 +1554,6 @@
 			title: "&2ZPM Machine Hulls"
 			x: -1.5d
 			y: 7.75d
-		}
-		{
-			dependencies: [
-				"41FA85A3920EB334"
-				"5A31EEF439212D6E"
-				"15FAEE3F625265F4"
-			]
-			description: ["&6Trinium&r is the seventh coil material available, increasing your EBF's operating temperature to 9001K so it can process more advanced materials."]
-			id: "7A65459E4DFAAC2D"
-			rewards: [{
-				id: "0F124B2E02F2BD4E"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				count: 16L
-				id: "52F9691851DE4023"
-				item: "gtceu:trinium_coil_block"
-				type: "item"
-			}]
-			title: "&2Trinium Coils"
-			x: 0.75d
-			y: 8.75d
 		}
 		{
 			dependencies: ["52F1953ED72A8AA6"]

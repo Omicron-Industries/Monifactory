@@ -127,6 +127,21 @@
 			x: -6.0d
 			y: -8.75d
 		}
+		{
+			id: "1CE5B013A0E898F9"
+			linked_quest: "2EBB9A154522348F"
+			size: 4.0d
+			x: 0.0d
+			y: 9.75d
+		}
+		{
+			id: "2299A97C8D4BF1B8"
+			linked_quest: "27EBB5AAF8A40F3D"
+			shape: "hexagon"
+			size: 1.5d
+			x: -1.75d
+			y: -10.25d
+		}
 	]
 	quests: [
 		{
@@ -231,66 +246,6 @@
 			}]
 			x: 0.0d
 			y: -8.75d
-		}
-		{
-			dependencies: [
-				"483652BAEF59E125"
-				"0B51A633811472A2"
-			]
-			description: [
-				"You have become Death, destroyer of Universes."
-				""
-				"This miner is your sole source of &6Hearts Of A Universe&r and &3Shattered Microverses&r."
-			]
-			id: "27EBB5AAF8A40F3D"
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "624B7498A1144A6F"
-				item: "kubejs:microminer_t10"
-				type: "item"
-			}]
-			title: "&9Tier Ten Microminer"
-			x: -1.75d
-			y: -10.25d
-		}
-		{
-			dependencies: [
-				"5601A05D8361551D"
-				"59219D37B5CE80E6"
-				"4F08AF2C1E6B1736"
-			]
-			description: [
-				"You win."
-				""
-				"Congratulations."
-				""
-				"We hope you enjoyed playing &9Monifactory&r."
-			]
-			id: "2EBB9A154522348F"
-			rewards: [{
-				id: "7424EC770906922F"
-				item: {
-					Count: 1
-					id: "trofers:large_pillar"
-					tag: {
-						BlockEntityTag: {
-							Trophy: "monifactory:chest"
-						}
-					}
-				}
-				type: "item"
-			}]
-			size: 4.0d
-			subtitle: "A winner is you"
-			tasks: [{
-				id: "392DAFD3A4019E34"
-				item: "gtceu:creative_chest"
-				type: "item"
-			}]
-			title: "&9&lCreative Chest&r"
-			x: 0.0d
-			y: 9.75d
 		}
 		{
 			dependencies: [

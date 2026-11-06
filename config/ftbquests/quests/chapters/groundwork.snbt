@@ -175,6 +175,33 @@
 			x: 0.75d
 			y: 12.5d
 		}
+		{
+			id: "4CA98E8FC9082FA2"
+			linked_quest: "5F9C7FB40AD2640B"
+			x: 2.75d
+			y: -1.0d
+		}
+		{
+			id: "481713554AE262D9"
+			linked_quest: "31EE6E41F509A8CF"
+			shape: "hexagon"
+			x: -6.25d
+			y: -5.0d
+		}
+		{
+			id: "46C91BC7D1FBA463"
+			linked_quest: "3115EAF1F70A613E"
+			shape: "hexagon"
+			x: -5.5d
+			y: -4.25d
+		}
+		{
+			id: "6D8DCF46A3036C88"
+			linked_quest: "5C78349343BA40D7"
+			shape: "hexagon"
+			x: -8.0d
+			y: -2.0d
+		}
 	]
 	quests: [
 		{
@@ -666,34 +693,6 @@
 		}
 		{
 			dependencies: [
-				"776199B37A19A592"
-				"061904A6FEED5B66"
-				"1BC6DDC2D50F9C46"
-				"785300684B1846B2"
-			]
-			description: [
-				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chromium&r."
-				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r."
-			]
-			id: "3115EAF1F70A613E"
-			rewards: [{
-				id: "4C82AAA84303A281"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "22E54D54259A247A"
-				item: "gtceu:kanthal_ingot"
-				type: "item"
-			}]
-			title: "Kanthal Ingots"
-			x: -5.5d
-			y: -4.25d
-		}
-		{
-			dependencies: [
 				"061904A6FEED5B66"
 				"776199B37A19A592"
 			]
@@ -1088,36 +1087,6 @@
 			title: "&2MV Assembler"
 			x: -6.75d
 			y: -0.5d
-		}
-		{
-			dependencies: [
-				"3115EAF1F70A613E"
-				"2C6BEB5BBE5A91DC"
-			]
-			description: [
-				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to 2700K so it can process more advanced materials."
-				""
-				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r, required for Circuit parts, and &6Titanium&r, used for &5EV&r machines. An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Liquid Copper&r."
-				""
-				"&2In GTm, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &9temperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%%&r energy."
-				""
-				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
-			]
-			id: "5C78349343BA40D7"
-			rewards: [{
-				id: "6AAC5C8B746659ED"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				count: 16L
-				id: "00D5958543D7BBE6"
-				item: "gtceu:kanthal_coil_block"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -2.0d
 		}
 		{
 			dependencies: ["5C78349343BA40D7"]
@@ -2286,58 +2255,6 @@
 			y: -9.75d
 		}
 		{
-			dependencies: ["3E42B4AAA6D2A05B"]
-			description: [
-				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
-				""
-				"Also important to note is that it can act wonky with Tile Entities, so it is mainly useful with simple blocks (it doesn't paste machine or hatch configuration, for example)."
-				"{@pagebreak}"
-				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will pull items from the inventory, 'connecting' the gadget to the inventory."
-				""
-				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r, the gadget will use &6Cobblestone&r from that chest to place blocks."
-				""
-				"By default, the config GUI is bound to &8G&r."
-			]
-			icon: "buildinggadgets2:gadget_building"
-			id: "5F9C7FB40AD2640B"
-			subtitle: "This pack has &bBuilding Gadgets&r."
-			tasks: [{
-				id: "512BC0AAD462E586"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "buildinggadgets2:gadget_building"
-							}
-							{
-								Count: 1b
-								id: "buildinggadgets2:gadget_exchanging"
-							}
-							{
-								Count: 1b
-								id: "buildinggadgets2:gadget_copy_paste"
-							}
-							{
-								Count: 1b
-								id: "buildinggadgets2:gadget_cut_paste"
-							}
-							{
-								Count: 1b
-								id: "buildinggadgets2:gadget_destruction"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "Inspector Gadget"
-			x: 3.5d
-			y: 0.75d
-		}
-		{
 			dependencies: ["3B639F4061B00F1A"]
 			description: ["Now that you have some &6MV circuits&r, you can make a &6Factory Augment&r that lets you &2smelt multiple items at once&r with your furnaces!"]
 			id: "6DAA25CA26AE05E9"
@@ -2494,49 +2411,6 @@
 			title: "&2Phosphorus Doped Silicon Boule"
 			x: -8.0d
 			y: -4.25d
-		}
-		{
-			dependencies: ["3E42B4AAA6D2A05B"]
-			description: [
-				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
-				""
-				"Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks."
-				"{@pagebreak}"
-				"A very cool feature of this mod is how you can &8shift-right click&r an inventory with the Portable Spatial Cloner in your offhand and the tool will pull items from the inventory, 'connecting' it to the inventory."
-				""
-				"For example, if you &8shift-right click&r a chest full of &6Cobblestone&r with the Portable Spatial Cloner in your offhand, the tool will use &6Cobblestone&r from that chest to place blocks."
-				""
-				"By default, the context menu GUI is bound to &8Left Alt&r."
-			]
-			id: "31EE6E41F509A8CF"
-			subtitle: "This pack has &bSpatial Tools Compatible&r."
-			tasks: [{
-				id: "24B4E26B05F638D6"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "spatialtoolscmp:portable_spatial_storage"
-							}
-							{
-								Count: 1b
-								id: "spatialtoolscmp:portable_spatial_cloner"
-							}
-							{
-								Count: 1b
-								id: "spatialtoolscmp:portable_spatial_replacer"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "Pocket-sized pocket dimensions"
-			x: 5.0d
-			y: 0.75d
 		}
 		{
 			dependencies: ["61AD3760E271B431"]
