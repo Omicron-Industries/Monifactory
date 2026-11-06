@@ -758,7 +758,7 @@
 		}
 		{
 			dependencies: ["5E2489DE2E840738"]
-			description: ["Mix &9Oxygen&r and &9Dimethylhydrazine&r together to make &9Rocket Fuel&r."]
+			description: ["Mix &9Oxygen&r and &9Dimethylhydrazine&r together to make &9Rocket Fuel&r. You can also mix &9Dinitrogen Tetroxide&r with &9Dimethylhydrazine&r for a greater yeild."]
 			icon: "gtceu:rocket_fuel_bucket"
 			id: "24415A26E5A0FD72"
 			rewards: [{
@@ -856,7 +856,7 @@
 				""
 				"&ePlease note that Hypochlorous Acid and Hydrochloric Acid are different things.&r"
 				""
-				"You're already familiar with Chlorine production from your forays into Plastics, but a great source of Mercury is &2centrifuging &6Redstone&r."
+				"You're already familiar with Chlorine production from your forays into Plastics, but a great source of Mercury is &2centrifuging &6Cinnabar&r or &6Redstone&r."
 			]
 			icon: "gtceu:hypochlorous_acid_bucket"
 			id: "5DA5231489336B1B"
@@ -998,11 +998,11 @@
 			description: [
 				"This is your first &3Microverse Projector&r."
 				""
-				"These structures are used to project &eMicroverses&r and send &6Microminers&r into them to obtain valuable loot such as &6ores&r, &6gems&r, and otherwise unobtainable items&r like &6Radon Salt&r and &6Naquadah&r. &eMost Microminers are &6fully reusable&r, including your first one.&r"
+				"These structures are used to project &eMicroverses&r and send &6Microminers&r into them to obtain valuable loot such as &6ores&r, &6gems&r, and otherwise unobtainable items&r like &6Radon Salt&r and &6Naquadah&r. &eAll Microminers are &6fully reusable&r, including your first one. However, some Later ones may require repairing."
 				""
 				"Microverse Projectors are &bGregTech&r multiblocks, which means that they're just as flexible as other machines in terms of the I/O block placement: &epositions of Buses and Hatches can be swapped with any Microverse Projector Casing&r."
 				""
-				"A single &6HV Energy Input&r supports missions up to 1024 EU/t. To process the rest, you'll need to upgrade the multiblock to at least &eEV power&r, with either &6two HV Energy Inputs&r or &6one EV Energy Input&r. Missions will also overclock, increasing in speed each time the projector's energy tier increases."
+				"A single &6HV Energy Input&r supports missions up to 512 EU/t. To process the rest, you'll need to upgrade the multiblock to at least &eEV power&r, with either &6two HV Energy Inputs&r or &6one EV Energy Input&r. Missions will also overclock, increasing in speed each time the projector's energy tier increases."
 				""
 				"Hover your mouse over the projector and press &8U&r to see all available missions."
 				""
@@ -1343,7 +1343,7 @@
 			description: [
 				"Now that you have your &3Microverse Projector&r, you will need to project a microverse for the &6microminers&r to use. This is done using &6Universe Creation Data&r and quite a bit of &6Quantum Flux&r."
 				""
-				"Looking at the Creation Data's uses in &bEMI&r, you'll see that it changes the microverse type to Normal. For quite a while, all microminers will require the Normal microverse type to run."
+				"Looking at the Creation Data's uses in &bEMI&r, you'll see that it changes the microverse type to Normal. For now, all microminers will require the Normal microverse type to run."
 				""
 				"After projecting your microverse, the inside of the projector will change appearance, and you should be ready to send off your first microverse mission."
 			]

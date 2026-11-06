@@ -977,7 +977,7 @@
 			description: [
 				"When a &6Heart of the Universe&r is extracted from a Microverse, it becomes highly unstable, transforming into a &3Shattered Microverse&r &ewith the same Integrity&r."
 				""
-				"Shattered microverses cannot be repaired in any way. To run more missions, you must re-shatter a Normal microverse. When a Shattered microverse reaches 0%% Integrity, it becomes a &3Corrupted Microverse&r."
+				"Shattered microverses cannot be repaired in any way. To run more missions, you must re-shatter a Normal microverse. When a Shattered microverse reaches 0% Integrity, it becomes a &3Corrupted Microverse&r."
 			]
 			icon: "kubejs:shattered_universe_data"
 			id: "38B1588655AA9BDF"
@@ -997,7 +997,7 @@
 				""
 				"Corrupted Microverses decay passively, even when a recipe is running."
 				""
-				"Corrupted microverses can be repaired with &6Quantum Flux&r, however be careful to not overfeed it. Flux can now be consumed even when less than 1%% of Integrity is missing, and when it does so the recipe progress regresses."
+				"Corrupted microverses can be repaired with &6Quantum Flux&r, however be careful to not overfeed it. Flux can now be consumed even when less than 1% of Integrity is missing, and when it does so the recipe progress regresses."
 			]
 			icon: "kubejs:corrupted_universe_data"
 			id: "062B4DDD703338D1"
