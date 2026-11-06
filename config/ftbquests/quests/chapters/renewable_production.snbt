@@ -105,7 +105,11 @@
 		}
 		{
 			dependency_requirement: "one_completed"
-			description: ["The best source of &6Cobblestone&r early on is &eThermal &3Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r.\n\nAlso a cheap building block."]
+			description: [
+				"The best source of &6Cobblestone&r early on is &eThermal &3Igneous Extruders&r or &bGregtech&r &3Rock Breakers&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r."
+				""
+				"Also a cheap building block."
+			]
 			disable_toast: true
 			hide_until_deps_visible: true
 			id: "1881488CEB982FCD"
@@ -673,7 +677,11 @@
 		}
 		{
 			dependencies: ["5BE3E37772FAF6CB"]
-			description: ["The best source of &6Cobblestone&r early on is &eThermal &3Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r.\n\nAlso a cheap building block."]
+			description: [
+				"The best source of &6Cobblestone&r early on is &eThermal &3Igneous Extruders&r or &bGregtech&r &3Rock Breakers&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &eCobbleworks&r."
+				""
+				"Also a cheap building block."
+			]
 			id: "6D61F343826FD239"
 			optional: true
 			size: 1.0d
