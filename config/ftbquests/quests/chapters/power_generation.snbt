@@ -373,7 +373,7 @@
 				""
 				"It requires a &6Maintenance Hatch&r, though."
 				""
-				"At this point you're also able to make &9Wither Gas&r, the most potent Gas Turbine fuel available."
+				"At this point you're also able to make &9Wither-Doped Gas&r, the most potent Gas Turbine fuel available."
 			]
 			icon: "gtceu:gas_large_turbine"
 			id: "7D72B3FF808CE13C"
