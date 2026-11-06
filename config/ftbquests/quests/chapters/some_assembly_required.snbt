@@ -384,6 +384,8 @@
 				""
 				"Make sure your power generation and circuit production are up to the challenge. &2None of the Assembly Line recipes require programmed circuits.&r"
 				""
+				"Unlike other machines, the &3Assembly Line&r requires that its item inputs are in order and that any unused inputs are empty. Fluid inputs also need to be in order in Expert Mode. The first item in the recipe should be in the closest input bus to the controller. This makes it substantially more complex to automate."
+				""
 				"This quest calls for an Assembly Line that's 10 units long, allowing for 9 inputs and one output. This is a large enough Assembly Line to make &6LuV components&r, but you'll need to expand to more inputs for later projects."
 				"{@pagebreak}"
 				"The structure of the Assembly Line is a little stricter than other multiblocks:"
@@ -842,12 +844,6 @@
 							value: "moni:laser_target_hatch"
 						}
 					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "0BEAC4361C8F8FD5"
-					item: "monilabs:lapotronic_tungstensteel_casing"
 					optional_task: true
 					type: "item"
 				}
@@ -1566,7 +1562,7 @@
 			description: [
 				"Tier 4+ Microminer missions that require the &3Advanced Microverse Projector&r are quite taxing on the projected Microverse. As the recipes run, the Integrity of the microverse depletes. The total depletion a recipe causes can be seen in &bEMI&r."
 				""
-				"To combat this decay, &6Quantum Flux&r can be used to patch up the microverse. By placing the Flux in any input bus, it will be automatically consumed to repair the microverse, regardless of if a recipe is running. Each Flux repairs 1%%, and is only consumed if more than 1%% is missing."
+				"To combat this decay, &6Quantum Flux&r can be used to patch up the microverse. By placing the Flux in any input bus, it will be automatically consumed to repair the microverse, regardless of if a recipe is running. Each Flux repairs 1%, and is only consumed if more than 1% is missing."
 				""
 				"Note that the above behavior is specific to Normal microverses. &eEach microverse type repairs in different ways&r, so make sure to read their quests!"
 				""
