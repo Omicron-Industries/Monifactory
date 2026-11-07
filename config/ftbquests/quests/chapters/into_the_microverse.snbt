@@ -1002,7 +1002,7 @@
 				""
 				"Microverse Projectors are &bGregTech&r multiblocks, which means that they're just as flexible as other machines in terms of the I/O block placement: &epositions of Buses and Hatches can be swapped with any Microverse Projector Casing&r."
 				""
-				"A single &6HV Energy Input&r supports missions up to 512 EU/t. To process the rest, you'll need to upgrade the multiblock to at least &eEV power&r, with either &6two HV Energy Inputs&r or &6one EV Energy Input&r. Missions will also overclock, increasing in speed each time the projector's energy tier increases."
+				"A single &6HV Energy Input&r supports missions up to &6HV&r. To process the rest, you'll need to upgrade the multiblock to at least &eEV power&r, with either &6two HV Energy Inputs&r or &6one EV Energy Input&r. Missions will also overclock, increasing in speed each time the projector's energy tier increases."
 				""
 				"Hover your mouse over the projector and press &8U&r to see all available missions."
 				""
