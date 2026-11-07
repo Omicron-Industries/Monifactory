@@ -3798,7 +3798,7 @@
 				""
 				"This Microminer is &6fully reusable&r, so you can send it on as many missions as you want."
 				""
-				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
+				"This Microminer can bring back most basic resources and can provide some rarer resources using ore processing. Check its recipes in &bEMI&r."
 			]
 			id: "638130DC8A2BF1C1"
 			rewards: [{
