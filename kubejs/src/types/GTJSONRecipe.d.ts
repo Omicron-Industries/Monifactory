@@ -1,3 +1,7 @@
+/**
+ * JSON-serialized GTM recipe types.
+ */
+
 export type ValueOf<T> = T[keyof T]
 
 export type MCIdentifier = `${string}:${string}`
@@ -8,11 +12,14 @@ export type GTJSONRecipeChanced = {
 }
 export type GTJSONRecipeChancedContents<Content> = ({content: Content} & GTJSONRecipeChanced)[]
 
-export type GTJSONRecipeItemIngredient = {
+/** Single value of a vanilla `Ingredient` */
+export type MCIngredientValue = {
     item: Special.Item
 } | {
-    tag: string
-} | {
+    tag: MCIdentifier
+}
+
+export type GTJSONRecipeItemIngredient = MCIngredientValue | {
     type: "forge:nbt"
     item: MCIdentifier
     count: number
@@ -25,23 +32,34 @@ export type GTJSONRecipeItemIngredient = {
 export type GTJSONRecipeItem = {
     type: "gtceu:sized"
     count: number
-    ingredient: GTJSONRecipeItemIngredient
+    ingredient: GTJSONRecipeItemIngredient | GTJSONRecipeItemIngredient[]
 } | {
     type: "gtceu:circuit"
     configuration: number
 } | {
     type: "forge:intersection"
     children: {tag: MCIdentifier}[]
-}
+} | MCIngredientValue
+  | MCIngredientValue[]
 
 export type GTJSONRecipeFluid = {
     amount: number
-    // Yes, this array does always have exactly 1 element. IDK why.
-    value: [{
+    value: ({
         tag: MCIdentifier
     } | {
         fluid: MCIdentifier
-    }]
+    })[]
+} | {
+    /** Ranged fluid, `IntProviderFluidIngredient` in GTM. */
+    count_provider: unknown
+    inner: GTJSONRecipeFluid
+    sampledCount: number
+}
+
+export type GTJSONRecipeEnergy = number | {
+    /** The object form is only used when amperage isn't 1. */
+    /** @default 0 */ voltage?: number
+    /** @default 1 */ amperage?: number
 }
 
 export type GTJSONRecipeIO = {
@@ -86,16 +104,16 @@ export type GTJSONRecipe = {
     outputs?: GTJSONRecipeIO
 
     tickInputs?: {
-        eu?: GTJSONRecipeChancedContents<number>
+        eu?: GTJSONRecipeChancedContents<GTJSONRecipeEnergy>
         cwu?: GTJSONRecipeChancedContents<number>
     }
     tickOutputs?: {
-        eu?: GTJSONRecipeChancedContents<number>
+        eu?: GTJSONRecipeChancedContents<GTJSONRecipeEnergy>
     }
     // All fields above are 100% complete
 
     recipeConditions?: (GTJSONRecipeCondition | ValueOf<{
-        [T in GTJSONRecipeCondition['type']]: {
+        [T in GTJSONRecipeCondition["type"]]: {
             type: T
             data: Omit<GTJSONRecipeCondition & { type: T }, "type">
         }

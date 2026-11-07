@@ -1,4 +1,3 @@
-// @ts-check
 /**
  * "When dealing with long concatenated method calls or extended lists of parameters,
  * indent any continuations of that statement on a new line,
