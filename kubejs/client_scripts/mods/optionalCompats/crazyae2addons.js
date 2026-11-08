@@ -10,7 +10,7 @@ if (Platform.isLoaded("crazyae2addons")) {
     JEIEvents.hideItems(event => {
         // Hide Recipe Fabricator item removed from recipes.
         event.hide([
-            'crazyae2addons:recipe_fabricator'
+            "crazyae2addons:recipe_fabricator"
         ])
     })
 }
