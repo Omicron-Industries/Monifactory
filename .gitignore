@@ -121,6 +121,7 @@ config/defaultworldtype/world-presets.txt
 !/config/wirelesschargers-common.toml
 !/config/zume.json5
 !/config/moldraw.yaml
+!/config/crazyae2addons-common.toml
 
 # Config overrides
 !/config-overrides

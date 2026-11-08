@@ -1,0 +1,194 @@
+
+#Crazy AE2 Addons - Common Config
+#All feature toggles and feature-specific options are defined here.
+#For every config entry that defines a limit, -1 means no limit.
+[features]
+
+	#Display feature.
+	#A part that renders dynamic text, images, and AE2-related data.
+	#Supports token-based content, colors, icons, stock/delta rendering, and merged multi-display surfaces.
+	[features.display]
+		#Enable or disable the entire display feature.
+		enabled = true
+		#Enable or disable ME Display Database.
+		#When disabled, the database GUI will not open, ComputerCraft peripheral methods will not work,
+		#and display database tokens such as &key will not resolve.
+		databaseEnabled = true
+		#Enable or disable uploading and rendering custom images on displays.
+		imagesEnabled = true
+		#Maximum size in bytes of a single uploaded image.
+		#Uploads are split into chunks, so this is not limited by the vanilla packet size.
+		#Range: 1048576 ~ 67108864
+		imageMaxBytes = 16777216
+		#Maximum width and height in pixels of a single uploaded image.
+		#Larger images are downscaled by the client before they are sent.
+		#Range: 16 ~ 4096
+		imageMaxDimension = 2048
+		#Total size in bytes of all images stored in the world.
+		#Identical images are stored once and shared, so copying a display with a memory card is free.
+		#Range: 67108864 ~ 536870912
+		imagesTotalBytes = 134217728
+		#Enable or disable playback of animated images such as GIFs.
+		#When disabled, animated images render their first frame only.
+		imageAnimationEnabled = true
+		#Maximum number of frames kept when an animated image is imported.
+		#Longer animations are sampled evenly down to this many frames.
+		#Range: 1 ~ 512
+		imageMaxFrames = 256
+		#Enable or disable dynamic rendering of resource amounts from the connected network on displays.
+		stockEnabled = true
+		#Enable or disable rendering inline resource icons on displays.
+		iconsEnabled = true
+		#Enable or disable dynamic rendering of resource amount changes over time on displays.
+		deltaEnabled = true
+
+	#Emitter terminal feature.
+	#The emitter terminal allows the player to access, query, and configure
+	#all level emitters in the connected grid from a single terminal.
+	[features.emitterTerminal]
+		#Enable or disable the emitter terminal feature.
+		enabled = true
+		#Enable or disable the wireless variant.
+		wirelessEnabled = true
+
+	#Wireless notification terminal feature.
+	#The wireless notification terminal allows the player to configure
+	#tracked resources in the connected grid and display their amounts
+	#when they are above or below a given threshold.
+	[features.wirelessNotificationTerminal]
+		#Enable or disable the wireless notification terminal feature.
+		enabled = true
+		#Configure how many slots the wireless notification terminal should have.
+		#Range: > 0
+		configSlot = 16
+
+	#Multi level emitter feature.
+	#The multi level emitter tracks and triggers multiple conditions at once.
+	[features.multiLevelEmitter]
+		#Enable or disable the multi level emitter feature.
+		enabled = true
+		#Configure how many slots the multi level emitter should have.
+		#Range: > 0
+		configSlot = 16
+
+	#Tag level emitter feature.
+	#The tag level emitter tracks resources based on a tag expression
+	#and can monitor multiple resources at once.
+	[features.tagLevelEmitter]
+		#Enable or disable the tag level emitter feature.
+		enabled = true
+
+	#Redstone emitter / terminal feature.
+	#The redstone terminal allows the player to control the redstone output
+	#of connected redstone emitters.
+	[features.redstoneEmitterTerminal]
+		#Enable or disable the redstone emitter / terminal feature.
+		enabled = true
+		#Enable or disable the wireless terminal variant.
+		wirelessEnabled = true
+
+	#Wormhole feature.
+	#Wormhole is a large feature that acts as a universal capability proxy
+	#and also allows remote interactions or teleportation.
+	#The tunnel always forwards from any output to the input,
+	#or from the input to the closest output. It never splits
+	#resources between multiple outputs. But can merge from many
+	#outputs to the same input.
+	[features.wormhole]
+		#Enable or disable the entire wormhole feature.
+		enabled = false
+		#Enable or disable teleportation through wormholes.
+		#This controls whether clicking on a wormhole with an ender pearl
+		#teleports the player to the other side.
+		teleportationEnabled = true
+		#Allow routing P2P tunnels through a wormhole tunnel.
+		nestedP2psEnabled = false
+		#Allow item proxying through wormholes.
+		itemProxyEnabled = true
+		#Allow fluid proxying through wormholes.
+		fluidProxyEnabled = true
+		#Allow FE proxying through wormholes.
+		feProxyEnabled = true
+		#Allow GregTech EU proxying through wormholes.
+		euProxyEnabled = true
+		#Allow proxying of other capabilities through wormholes.
+		#Example: Mekanism heat pipes.
+		otherCapabilityProxyEnabled = true
+		#Allow merged capability proxying through wormholes.
+		#Allow merging all output handlers that are the same type (e.g. items)
+		#so the input sees them all at the same time.
+		mergedCapabilityProxyEnabled = true
+		#Allow remote interactions through wormholes.
+		#This controls whether clicking on one side of a wormhole
+		#opens the GUI of the machine on the other side.
+		remoteInteractionsEnabled = true
+
+	#Round robin P2P features.
+	#Round robin P2P tunnels always split inputs evenly between all outputs,
+	#even across multiple insertions.
+	[features.roundRobinP2p]
+		#Enable or disable round robin item P2P.
+		itemEnabled = true
+		#Enable or disable round robin fluid P2P.
+		fluidEnabled = true
+
+	#CPU priorities feature.
+	#CPU priorities make higher-priority CPUs receive crafting jobs more often,
+	#receive crafted results before lower-priority CPUs,
+	#and use machines before lower-priority CPUs.
+	[features.cpuPriorities]
+		#Enable or disable CPU priorities.
+		enabled = true
+
+	#Tag view cell feature.
+	#The tag view cell filters the terminal it is placed in based on a tag expression
+	#instead of selected individual resources.
+	[features.tagViewCell]
+		#Enable or disable tag view cells.
+		enabled = true
+
+	#Pattern multiplier feature.
+	#The pattern multiplier allows the player to multiply patterns, multiply them up to a limit,
+	#or clear all patterns inside it. It can also multiply all patterns in any container
+	#such as a pattern provider or chest when shift-right-clicked on it.
+	[features.patternMultiplier]
+		#Enable or disable the pattern multiplier feature.
+		enabled = true
+
+	#Crazy pattern provider features.
+	#The crazy pattern provider starts with 72 pattern slots
+	#and can be upgraded using crazy upgrades.
+	#Each upgrade adds 1 row (9 slots) to the pattern inventory.
+	[features.crazyPatternProvider]
+		#Enable or disable the crazy pattern provider block.
+		blockEnabled = true
+		#Enable or disable the crazy pattern provider part.
+		partEnabled = true
+		#Maximum number of upgrades allowed for the crazy pattern provider.
+		#-1 means no limit.
+		#Note: each upgrade adds 1 row (9 slots).
+		#Range: > -1
+		maxUpgrades = -1
+
+	#Ejector feature.
+	#The ejector allows the player to configure its 36-slot config inventory
+	#with any amount of any resource. When provided with a redstone signal,
+	#it ejects those resources from the connected network storage to
+	#the adjacent inventory. It can also craft missing resources
+	#if the system has the required patterns and ingredients.
+	#Crafting is performed atomically as a single crafting operation
+	#using one crafting job / CPU.
+	[features.ejector]
+		#Enable or disable the ejector feature.
+		enabled = true
+		#Allow the ejector to craft missing items.
+		craftMissingEnabled = false
+
+	#Resource tracking terminal feature.
+	#The resource tracking terminal shows per-minute consumption of every resource
+	#in the connected grid, grouped by what consumes it (crafting, machines, interfaces),
+	#and can highlight the consuming block in the world.
+	[features.resourceTrackingTerminal]
+		#Enable or disable the resource tracking terminal feature.
+		enabled = true
+
