@@ -373,7 +373,7 @@
 				""
 				"If you haven't made it already, you will need &9Polyether Ether Ketone&r."
 				""
-				"(Unique multi mechanic code taken from the Cosmic Frontiers team with Caitlynn's gracious permission.)"
+				"(Unique multi mechanic code taken from the Cosmic Frontiers team with Ghosti's gracious permission.)"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_visible: true
@@ -529,6 +529,8 @@
 				"The &3Dimensional Superassembler&r uses dimensional warping to process hundreds of Assembly Line recipes at once. "
 				""
 				"Notably, the Dimensional Superassembler bypasses the need to use &6ULV Input Buses&r, so you are free to stuff the entirety of a recipe into a single input bus."
+				""
+				"It is also the only parallel version of a multiblock that &eaccepts Laser Target Hatches&r as a power source. Assembly Lines will never be your bottleneck ever again!"
 			]
 			id: "73A44214C2B44D53"
 			size: 1.25d
@@ -787,7 +789,6 @@
 				"4C0BCA64D5B409F2"
 				"7EE334D3AA1E68ED"
 				"601A47A727AC3BD2"
-				"0E9B96B17D140B99"
 			]
 			description: [
 				"Bending the laws of physics is no small feat. Thankfully, you've come up with a solution that is compact enough to fit on a Microminer."
@@ -832,7 +833,7 @@
 				""
 				"For every Hatch it has, its buffer increases by 160M EU, up to a maximum of 2560M."
 				""
-				"With the Helical you can now make &6Hyperdegenerate Matter&r, which is used in &6Hyperdegenerate Darconite&r and &6Naquadah Superfuel&r."
+				"With it, you can now make &6Hyperdegenerate Matter&r, which is used in &6Hyperdegenerate Darconite&r and &6Naquadah Superfuel&r."
 			]
 			id: "4E4F03C44623A85D"
 			size: 1.25d
@@ -977,7 +978,7 @@
 			description: [
 				"When a &6Heart of the Universe&r is extracted from a Microverse, it becomes highly unstable, transforming into a &3Shattered Microverse&r &ewith the same Integrity&r."
 				""
-				"Shattered microverses cannot be repaired in any way. To run more missions, you must re-shatter a Normal microverse. When a Shattered microverse reaches 0%% Integrity, it becomes a &3Corrupted Microverse&r."
+				"Shattered microverses cannot be repaired in any way. To run more missions, you must re-shatter a Normal microverse. When a Shattered microverse reaches 0% Integrity, it becomes a &3Corrupted Microverse&r."
 			]
 			icon: "kubejs:shattered_universe_data"
 			id: "38B1588655AA9BDF"
@@ -997,7 +998,7 @@
 				""
 				"Corrupted Microverses decay passively, even when a recipe is running."
 				""
-				"Corrupted microverses can be repaired with &6Quantum Flux&r, however be careful to not overfeed it. Flux can now be consumed even when less than 1%% of Integrity is missing, and when it does so the recipe progress regresses."
+				"Corrupted microverses can be repaired with &6Quantum Flux&r, however be careful to not overfeed it. Flux can now be consumed even when less than 1% of Integrity is missing, and when it does so the recipe progress regresses."
 			]
 			icon: "kubejs:corrupted_universe_data"
 			id: "062B4DDD703338D1"
@@ -1090,8 +1091,8 @@
 				}
 			]
 			title: "Polyether Ether Ketone"
-			x: -0.75d
-			y: -4.5d
+			x: -0.25d
+			y: -3.5d
 		}
 		{
 			dependencies: ["4E4F03C44623A85D"]
@@ -1121,6 +1122,8 @@
 				"Pure Radiation Inhibiting Spectral Medium Glass, also known as &6P.R.I.S.M Glass&r, is the final tier of Glass available. It catches high energy radiation passing through and slows it down to visible light, seen as streaks of color. It will be used in a few multiblock structures and various &aUEV&r singleblocks."
 				""
 				"This will be the first automation challenge you'll face with the &3Prismatic Crucible&r. While it is possible to make all your P.R.I.S.M by using a single Crucible and countless &6Chromatic Stabilizers&r, consider exploring alternate, cheaper sequences processing the Glass midproducts out of order, or using multiple Crucibles alongside each other."
+				""
+				"Also, the colorful particle trails are very pretty. Feel free to build a cube out of this block to check it out!"
 			]
 			id: "415F2703877FBE21"
 			shape: "hexagon"
@@ -1223,7 +1226,9 @@
 		{
 			dependencies: ["415F2703877FBE21"]
 			description: [
-				"&6Photonic SoCs (PSoCs)&r can be used to more cheaply make &6Photonic Processors&r.\n\nImagine each PSoC has three on/off levers for the Red, Green, and Blue colors."
+				"&6Photonic SoCs (PSoCs)&r are necessary to make &6Optical Processors&r."
+				""
+				"Imagine each PSoC has three on/off levers for the Red, Green, and Blue colors."
 				""
 				"{image:monifactory:textures/quests/psoc_switches.png width:200 height:21 align:center}"
 				""

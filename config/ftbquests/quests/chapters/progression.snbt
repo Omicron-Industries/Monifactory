@@ -1298,7 +1298,7 @@
 				""
 				"If you're facing issues forming the Cleanroom:"
 				""
-				"- The wall space must be at least 75%% Plascrete or Cleanroom Glass. The floor block directly under the controller must also be Plascrete or Cleanroom Glass."
+				"- The wall space must be at least 75% Plascrete or Cleanroom Glass. The floor block directly under the controller must also be Plascrete or Cleanroom Glass."
 				""
 				"- GT generators and Muffler Hatches are &cnot allowed&r in Cleanrooms."
 				""
@@ -3796,7 +3796,7 @@
 				""
 				"This Microminer is &6fully reusable&r, so you can send it on as many missions as you want."
 				""
-				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
+				"This Microminer can bring back most basic resources and can provide some rarer resources using ore processing. Check its recipes in &bEMI&r."
 			]
 			id: "638130DC8A2BF1C1"
 			rewards: [{

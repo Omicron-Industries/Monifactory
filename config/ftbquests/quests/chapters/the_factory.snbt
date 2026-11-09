@@ -77,7 +77,7 @@
 				"0381DCD3FD3C9ED2"
 			]
 			description: [
-				"The &3Wiremill&r is a major efficiency boost, giving you double the amount of &6wires&r per ingot. But first, you'll need to make some &6Motors&r."
+				"The &3Wiremill&r is a major efficiency boost, giving you 2 &6Wires&r per ingot. But first, you'll need to make some &6Motors&r."
 				""
 				"&bGregTech&r machines are built from a number of components, many of which are shared between the machines. Motors&r are used in a great number of things, including other components."
 				""
@@ -281,7 +281,7 @@
 			description: [
 				"The &3Lathe&r is an important machine that makes &6Rods&r less expensive to craft. One ingot will yield two rods, doubling your output compared to manually crafting it."
 				""
-				"In addition to this, it can also be used to craft &6Screws&r and &6Buzzsaw Blades&r."
+				"In addition to this, it can also be used to craft &6Screws&r and later on &6Buzzsaw Blades&r."
 				""
 				"You will need it later on to craft &6Lenses&r."
 			]
@@ -406,7 +406,7 @@
 			description: [
 				"&2Careful: This is not a Bender."
 				""
-				"However, this machine will still see use for compressing &eNuggets&r into&e Ingots&r, &eIngots&r into &eBlocks&r, &eGem Dusts&r into &ePlates&r (such as &6Certus Quartz&r), as well as various other useful recipes."
+				"However, this machine will still see use for compressing &eNuggets&r into&e Ingots&r, &eIngots&r into &eBlocks&r, certain &eGem Dusts&r into &ePlates&r (such as &6Certus Quartz&r), as well as various other useful recipes."
 			]
 			icon: "gtceu:lv_compressor"
 			id: "5795EE147D4879B7"
@@ -485,9 +485,9 @@
 			description: [
 				"&3Macerators&r are useful for grinding things down, replacing the &aMortars&r you've needed until now. This is an important machine you will be using for many things in the future."
 				""
-				"You don't really need an LV one, as you can use the superior &3Steam Grinder&r. LV or MV ones could be used for automation. However, HV ones provide chanced outputs, extremely important for &eOre Processing&r and other processes."
+				"You don't really need an &7LV&r one, as you can use the superior &3Steam Grinder&r. &7LV&r or &bMV&r ones could be used for automation. However, &6HV&r ones provide byproducts, extremely important for &eOre Processing&r and other processes."
 				""
-				"One useful application for a Macerator in the near future is grinding down &6Clay&r or &6Terracotta&r into &6Clay Dust&f."
+				"One useful application for a Macerator in the near future is grinding down &6Clay&r or &6Terracotta&r into &6Clay Dust&r."
 				""
 				"Besides not having limited durability, a key advantage of Macerators over Mortars is the chance to get additional materials when grinding things down. These are called &ebyproducts&r, and HV or better Macerators will allow byproducts to appear."
 				"{@pagebreak}"
@@ -523,6 +523,10 @@
 							{
 								Count: 1b
 								id: "gtceu:hv_macerator"
+							}
+							{
+								Count: 1b
+								id: "gtceu:steam_grinder"
 							}
 						]
 					}
@@ -623,7 +627,7 @@
 		{
 			dependencies: ["604CCBE824D03A74"]
 			description: [
-				"An &3Autoclave&r is a machine that uses liquids (usually water) to polish stones, carve gems into lenses, infuse gems with special liquids, and crystallize various dusts."
+				"An &3Autoclave&r is a machine that uses liquids (usually water) to polish stones, infuse gems with special liquids, and crystallize various dusts."
 				""
 				"You'll need an Autoclave for many recipes, but most presently you will need it to make &6Pulsating Crystals&r and &6Vibrant Crystals&r from &bEnderIO&r."
 			]
@@ -822,7 +826,7 @@
 		{
 			dependencies: ["29A487F0BC43AAF9"]
 			description: [
-				"&6Nickel&r comes from several different ores, including &6Pentlandite&r and &6Garnierite&r, but they're all found in the same vein."
+				"&6Nickel&r comes from several different ores, including &6Pentlandite&r, &6Garnierite&r, and Nickel Ore itself, but they're all found in the same vein."
 				""
 				"Nickel is used mostly for several very important alloys, including &6Invar&r and &6Cupronickel&r."
 			]
@@ -901,7 +905,7 @@
 		}
 		{
 			dependencies: ["025543EDB0A4AC22"]
-			description: ["Needs 2 &6Water Source Blocks&r around it to generate water. You will also need a way to pull the water out of the accumulator, such as using an &6LV pump&f as a &acover&f."]
+			description: ["Needs 2 &6Water Source Blocks&r around it to generate water. You will also need a way to pull the water out of the accumulator, such as using an &6LV pump&f as a &acover&r on an adjacent pipe."]
 			icon: {
 				Count: 1
 				id: "thermal:device_water_gen"
@@ -979,7 +983,7 @@
 			description: [
 				"&oThis is part of a Processing Line. Visit the Renewable Production tab to have more info, useful tips and a visual representation.&r"
 				""
-				"Now that you have acquired &6Steel&r, your path to infinite cobblestone awaits! The &6Igneous Extruder&r continuously generates cobblestone for free."
+				"Now that you have acquired &6Steel&r, your path to infinite cobblestone awaits! The &6Igneous Extruder&r continuously generates cobblestone for free. Look in &bEMI&r for recipes."
 				""
 				"Later on, you could look into the &6Rock Crusher&r, which can do it faster at the cost of requiring power."
 			]
@@ -1000,7 +1004,7 @@
 		}
 		{
 			dependencies: ["604CCBE824D03A74"]
-			description: ["The &6Forge Hammer&r, despite being inefficient at making plates, can be used to break Cobblestone into Gravel and Gravel into Sand. It's also used to combine 2 Rods into 1 Long Rod."]
+			description: ["The &6Forge Hammer&r, despite being inefficient at making plates, can be used to break Cobblestone into Gravel and Gravel into Sand very quickly. It's also used to combine 2 Rods into 1 Long Rod."]
 			icon: "gtceu:lv_forge_hammer"
 			id: "0EDFB0C24B9129AB"
 			rewards: [{
@@ -1097,7 +1101,7 @@
 				"29A487F0BC43AAF9"
 			]
 			description: [
-				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r."
+				"The &6Steam Grinder&r functions as 5.3 &7LV &3Macerators&r in parallel! It requires an input of &9Steam&r through a &eSteam Input Hatch&r."
 				""
 				"You may want to consider setting up a rudimentary &eore-doubling&r setup with it. Point the output in the direction of several upgraded &3Furnaces&r, but be wary of ore types that can't be smelted after being crushed."
 				""
@@ -1194,6 +1198,8 @@
 				""
 				"2) A &aSteel Pickaxe&r."
 				""
+				"You can also use a &3Fluid Solidifier&r with a bucket of &9Lava&r."
+				""
 				"Later, you can use a &3Rock Breaker&r at voltage &aHV&r or higher to make &6Obsidian&r without spending &6Lava&r!"
 			]
 			id: "74B5CA5A48CE7B39"
@@ -1212,11 +1218,11 @@
 		}
 		{
 			description: [
-				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
+				"Obtaining &6Grains of Nihilty&r will require you to mine all the way down to Bedrock level."
 				""
 				"Fire on bedrock will convert into Grains after a short time. Make sure the grains don't burn in surrounding fires."
 				""
-				"You can automate grains of infinity using an &bMV&r &3Rock Breaker&r at a low Y coordinate with &6Lava&r and &6Fluid of the Void&r adjacent to the machine. You could alternatively use a &3Rock Cycle Simulator&r to bypass the fluid adjacency requirements."
+				"You can automate Grains of Nihility using an &bMV&r &3Rock Breaker&r at a low Y coordinate with &6Lava&r and &6Fluid of the Void&r adjacent to the machine. You could alternatively use a &3Rock Cycle Simulator&r to bypass the fluid adjacency requirements."
 			]
 			icon: "enderio:grains_of_infinity"
 			id: "1CA6D620309F2B9E"
@@ -1244,7 +1250,7 @@
 					type: "item"
 				}
 			]
-			title: "Grains Of Infinity"
+			title: "Grains Of Nihility"
 			x: 6.25d
 			y: 9.5d
 		}
@@ -1279,7 +1285,7 @@
 		{
 			dependencies: ["025543EDB0A4AC22"]
 			description: [
-				"The first tier of &6capacitors&r. These (or stronger versions) are required to make &bEnder IO&r machines run. They're also used as components in a variety of recipes."
+				"The first tier of &bEnder IO&r &6capacitors&r. These (or stronger versions) are required to make &bEnder IO&r machines run. They're also used as components in a variety of recipes."
 				""
 				"Higher tier capacitors will significantly increase the speed at which these machines operate, among other machine-specific properties."
 			]
@@ -1354,7 +1360,7 @@
 				""
 				"Instead, the best way of making early game &6Oxygen&r is &6Silicon Dioxide&r."
 				""
-				"&6Hydrogen&r is a bit trickier, but you can put &6Methane&r and &6Water&r together in a &3Chemical Reactor&r. &6Methane&r can be achieved by centrifuging &6Food&r and &6Wood&r, processing &6Pyrolyse Byproducts&r, or through &6Petroleum&r. "
+				"&6Hydrogen&r is a bit trickier. In &bMV&r, reacting Water with &6Caesium&r and looping the products is a great source. Another one is electrolyzing &9Formic Acid&r and looping those outputs. In &6HV&r you can loop &9Methane&r."
 				""
 				"Right now, for the small quantities you need, you can simply electrolyze &9Water&r. Just keep those other ways in mind, for later in the game."
 			]
@@ -1426,7 +1432,7 @@
 			description: [
 				"With your EBF running, start to create a supply of &6Aluminium Ingots&r. These are a crucial ingredient for MV machines, including &bApplied Energistics&r."
 				""
-				"If you find your power supply is faltering, you may want to increase your power generation. Make additional dynamos and turn them into steam boilers and turbines. Upgrading your dynamos is also advisable. You can also make more GT generators if you prefer those."
+				"If you find your power supply is faltering, you may want to increase your power generation. Make additional steam boilers and turbines, or other types of GT generators if you prefer those."
 				""
 				"However, you're also about to reach MV. You're bound to discover a better power source than steam before long."
 				""
@@ -1531,7 +1537,7 @@
 				""
 				"For now, you'll be using it to make &6Energetic Alloy Dust&r which is made from &6Redstone&r, &6Gold Dust&r and &6Glowstone Dust&r. "
 				""
-				"You can get some Glowstone by mixing &6Tricalcium Phosphate Dust&r and &6Gold Dust&r."
+				"You can get some Glowstone by mixing &6Tricalcium Phosphate Dust&r, &6Gold Dust&r, and &6Barite Dust&r."
 			]
 			icon: "gtceu:lv_mixer"
 			id: "1DBBE96165C7987D"
@@ -1616,7 +1622,7 @@
 				"{@pagebreak}"
 				"- &aMaintenance&r: You will need to do Maintenance for the Multiblock to begin operating. This is done by having a &9Wrench&r, a &9Screwdriver&r, a &9Soft Mallet&r, a &9Hammer&r, a &9Wire Cutter&r, and a &9Crowbar&r in your inventory, opening the Maintenance Hatch and &eclicking the center spot once&r. &cNo need to move tools individually&r. Alternatively, you can fix problems by placing &bGregtech&r &9Tape&r in the Maintenance Hatch. "
 				""
-				"Maintenance problems may occur after &948 real hours of activity&r. Needless to say, they are very rare. Each problem increases recipe durations by 10%%. Fixing the problems is done the same way as above."
+				"Maintenance problems may occur after &948 real hours of activity&r. Needless to say, they are very rare. Each problem increases recipe durations by 10%. Fixing the problems is done the same way as above."
 				"{@pagebreak}"
 				"Later, you will unlock other Maintenance Hatches that do not enforce fixing the problems manually. Both start with &6no Maintenance required&r:"
 				""
@@ -1665,9 +1671,13 @@
 			dependencies: ["604CCBE824D03A74"]
 			dependency_requirement: "one_completed"
 			description: [
-				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are separate on each side of the machine, meaning you can have up to six different covers! &9Covers can be edited and removed via the given machine's GUI&r, but for the others, you'll need to make yourself a &aScrewdriver&r to configure covers, and a &aCrowbar&r to remove covers without having to break the machine."
+				"&bGregTech&r adds a very versatile way of augmenting machines with &aMachine Covers&r. Covers are \"upgrades\" that you can put on any &eGregTech machine, crate, or drum&r to expand its functionality. These are separate on each side of the machine, meaning you can have up to six different covers! "
 				""
-				"Here's a list of some covers there are in the game, and what they do:"
+				"Most covers have settings that can be modified, and some covers are even able to have &6filters&r placed inside of them! More info about filters can be found in their own quest."
+				""
+				"Covers can be modified by &7shift right-clicking&r the block or &7right-clicking&r with a &6Screwdriver&r. Covers can be removed using a &6Crowbar&r. Covers can be added/removed/edited inside the gui of electric machines through a button in the corner."
+				""
+				"Here's a list of some covers in the game, and what they do:"
 				""
 				"- &lConveyor&r: transfers items continuously to or from an adjacent inventory; is capable of round robin."
 				""
@@ -1685,11 +1695,10 @@
 				"- &lDetector&r: Available in Item, Fluid, Energy and Activity flavors, with each having an advanced version for more precise monitoring. Emits a Redstone signal depending on the status of whatever it's detecting."
 				""
 				"- &lMachine Controller&r: Allows the enabling/disabling of machines or covers. Can also remove the ability of machines to pause themselves when out of power."
-				""
-				"Covers that move items or fluids can have a &aFilter&r placed inside them. These modify the functionality of covers in ways explained in their own quests."
 			]
 			icon: "gtceu:shutter_module_cover"
 			id: "1A427A8CB43C8B59"
+			min_width: 300
 			shape: "hexagon"
 			size: 2.0d
 			tasks: [
@@ -1891,7 +1900,7 @@
 			description: [
 				"The main function of this oven is to increase the fuel values of your wood and coal while also recovering some of the various potentially useful waste products."
 				""
-				"Turning &6Coal&r into &6Coal Coke&r will not only make it more useful as fuel, but will also produce &9Phenol&r, which you'll need for circuits."
+				"Turning &6Coal&r into &6Coal Coke&r will make it more useful as fuel, or into &9Phenol&r, which you'll need for circuits."
 				""
 				"The Pyrolyse Oven is also the source of several other fluids that can be distilled for useful ingredients."
 				""
@@ -2057,7 +2066,7 @@
 				"64ABEB1EF9F81EA4"
 				"29A487F0BC43AAF9"
 			]
-			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
+			description: ["The &6Steam Foundry&r functions as 5.3 &7LV &3Alloy Smelters&r in parallel! It requires an input of &9Steam&r through a &eSteam Input Hatch&r, but it uses very little Steam, perfect for bulk crafting alloys or mold recipes."]
 			hide_until_deps_visible: true
 			icon: "steamadditions:steam_foundry"
 			id: "5D60CAE3A33000C3"
@@ -2168,7 +2177,7 @@
 			description: [
 				"To mute a Gregtech machine, right-click it with a &6Hammer&r. (Not the Mining kind!)"
 				""
-				"For other sounds, there is a button in the &etop-left&r of your inventory that looks like a speaker. Clicking it brings you to the &bExtreme Sound Muffler&r menu."
+				"For other sounds, there is a button to the &eleft of the crafting grid&r in your inventory that looks like a speaker. Clicking it brings you to the &bExtreme Sound Muffler&r menu."
 				""
 				"In this menu you can &eattenuate the volume of sounds that were recently played&r, or set an \"Anchor\" to reduce the volume of sounds in that area - most of the controls in this menu have a tooltip to tell you what they do."
 			]
@@ -2493,7 +2502,7 @@
 				""
 				"Placing two &7LV&r &6Energy Hatches&r on your EBF lets you power the machine with total of four &7LV&r (32EU/t) amps, worth one &bMV&r (128EU/t) amp. This raises the maximum recipe tier of the EBF to &bMV&r, allowing it to run &bMV&r-tier recipes."
 				""
-				"[\"\",{\"text\":\"Raising the maximum recipe tier this way can result in &e&ooverclocking&r, which is a distinct mechanic not to be confused with over-tiering. You can read more about it \"},{\"underlined\":\"true\",\"text\":\"here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"31AE366B15538079\"}},{\"text\":\".\"}]"
+				"[\"\",{\"text\":\"Raising the maximum recipe tier this way can result in \"},{\"color\":\"yellow\",\"italic\":\"true\",\"text\":\"overclocking\"},{\"text\":\", which is a distinct mechanic not to be confused with over-tiering. You can read more about it \"},{\"underlined\":\"true\",\"text\":\"here\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"31AE366B15538079\"}},{\"text\":\".\"}]"
 			]
 			icon: "gtceu:lv_voltage_coil"
 			id: "02B78A0C4F3C4ECA"
@@ -2523,8 +2532,6 @@
 				"- &6Fluorine&r, &6Certus Quartz&r, &6Molybdenum&r, &6Antimony&r, and &6Gold&r-bearing ores"
 				"- &2Nether Air&r, which can be distilled for useful gases"
 				"- &eLava&r and &eNatural Gas&r from &2Fluid Rigs&r"
-				""
-				"In Normal Mode, &eNether&r travel is still strictly optional in the pack, although it is recommended."
 			]
 			hide_until_deps_visible: true
 			id: "7A67E519745A8361"
@@ -2558,7 +2565,7 @@
 		}
 		{
 			dependencies: ["025543EDB0A4AC22"]
-			description: ["The &3Aquatic Entangler&r is an alternative to the &bGregtech&r &3Fisher&r for producing &6Fish&r. You may find it to be useful later to produce &6Mincemeat&r en masse."]
+			description: ["The &3Aquatic Entangler&r is a machine that automatically produces &6Fish&r. You may find it to be useful later to produce &6Mincemeat&r en masse."]
 			id: "7045BE273C44BA35"
 			rewards: [{
 				id: "54871D72B9A05DF7"
