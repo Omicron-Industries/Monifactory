@@ -1542,7 +1542,7 @@
 			description: [
 				"&2You can make HV Batteries like LV and MV ones, but there is a better option."
 				""
-				"&2Energium Crystals can store 6,400,000 EU, at the cost of some crafting complexity. They need an HV Autoclave and Laser Engraver."
+				"&6Energium Crystals&2 (not to be confused with &6Energium Gems&2, one of their ingredients) can store 6,400,000 EU, at the cost of some crafting complexity. They need an HV Autoclave and Laser Engraver."
 			]
 			id: "1EBF9D9EADB7C451"
 			rewards: [{
