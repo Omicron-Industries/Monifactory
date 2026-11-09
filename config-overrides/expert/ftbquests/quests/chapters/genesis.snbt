@@ -1854,7 +1854,7 @@
 		{
 			dependencies: ["5A94534682807314"]
 			description: [
-				"Now that you have everything you need to power you machines, it's time to put it all together."
+				"Now that you have everything you need to power your machines, it's time to put it all together."
 				""
 				"Your &3Steam Boiler&r needs burnable fuel (like &6Coal&r) and &9Water&r. Singleblock Boilers will automatically push &9Steam&r to adjacent inventories."
 				""
