@@ -267,8 +267,6 @@
 				""
 				"With &bGregTech &6Power Storage&r unlocked, you can make &aPower Units&r for electric GT tools."
 				""
-				"Check if that tool has that tier first! &6Drills&r are available at all tiers, the &6Wrench&r is available at &7LV&r, &6HV&r and &9IV&r, and the other electric tools, such as &6Chainsaws&r and &6Screwdrivers&r are only available at &7LV&r. "
-				""
 				"&2Drills at LV tier can mine a 3x3x1 area of blocks, and at MV tier can mine a 3x3x3 area of blocks."
 				""
 				"Higher tier drills can mine 5x5x5, 7x7x7 and 9x9x9 areas! Shift-right-click to change the breaking area.&r"

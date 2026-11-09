@@ -75,7 +75,7 @@
 		{
 			dependencies: ["2A511DB40C66CF35"]
 			description: [
-				"This pack is intended to be played on &bPeaceful&r."
+				"This pack is intended to be played on &bPeaceful&r, and is set to that by default."
 				""
 				"You start off in &2The Overworld&r, a resource-rich wilderness dotted by clusters of urban buildings like the one you spawned in."
 				""
@@ -304,7 +304,7 @@
 			description: [
 				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at your base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
-				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 3 barrels worth of items at its lowest tier, costing only a bit of steel and invar to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
+				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 2 chests worth of items at its lowest tier, costing only a bit of Bronze and Lead to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
@@ -401,12 +401,82 @@
 								}
 								{
 									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "acacia"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "birch"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "crimson"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "dark_oak"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "jungle"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "oak"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "spruce"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "warped"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "cherry"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "bamboo"
+									}
+								}
+								{
+									Count: 1b
 									id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
 								}
 							]
 						}
 					}
-					title: "Any Sophisticated Storage Bronze Barrel"
+					title: "Any Sophisticated Storage Bronze Container"
 					type: "item"
 				}
 				{
@@ -667,7 +737,6 @@
 		{
 			dependencies: ["3969150B59EA38A2"]
 			description: ["It smelts items at a blazing quick &a5 ticks&r each, but is incredibly expensive and only included here for completeness. You should just make a &3Multi Smelter&r instead."]
-			hide_until_deps_complete: true
 			id: "69E77BD01CFF65EB"
 			rewards: [{
 				id: "2BBD659B19ED9807"
@@ -812,14 +881,16 @@
 			description: [
 				"&aMining Hammers&r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 area of blocks (unless you're crouching) and mine quickly."
 				""
-				"&2Gregtech has Mining Hammers natively! You can craft them with any GT tool material. &r"
+				"&2Gregtech has Mining Hammers natively! You can craft them with any GT tool material.&r"
 			]
 			icon: {
 				Count: 1
 				id: "gtceu:iron_mining_hammer"
 				tag: {
 					Damage: 0
-					GT.Tool: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+					}
 				}
 			}
 			id: "07D45A3F8A74A61C"
@@ -942,7 +1013,6 @@
 				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
 				""
 				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the mortar and the plunger."
-				""
 			]
 			id: "5430ED88A8D10502"
 			rewards: [{
@@ -1384,7 +1454,7 @@
 				"- &eMax Amperage&r: The maximum number of amps of power that can pass through this cable safely. Different materials may have different ratings even with the same cable thickness."
 				"- &cLoss&r: The amount of energy lost from each amp for each block of cable traveled."
 				""
-				"Consider using &aSuperconductors&r or positioning machines close to your power source."
+				"[\"\",{\"text\":\"Consider using \"},{\"color\":\"green\",\"text\":\"Superconductors\"},{\"text\":\" or positioning machines close to your power source. More info about Superconductors can be found \"},{\"underlined\":true,\"text\":\"here.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2861BA7C235C52A3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click To Jump\"}}}]"
 			]
 			id: "12B95158E4C792DB"
 			rewards: [{
@@ -1408,7 +1478,7 @@
 			description: [
 				"Your initial method of &9Steam&r production, to fuel your first machines. They automatically output Steam on all faces except the bottom. Water converts to steam at a 1:160 ratio."
 				""
-				"Once you get Steel, consider investing in HP Solar Boilers."
+				"Once you get &6Steel&r, consider investing in a &3Large Bronze Boiler&r."
 			]
 			id: "34CA940B412284F2"
 			tasks: [{
@@ -1785,6 +1855,8 @@
 				"{@pagebreak}"
 				"The flow of power can be thought of as machines pulling power from the source through the cables. If a wire or cable is transporting too many amps or too high a voltage &cit will burn up&r, starting with its coating. Similarly, if a machine receives too high a voltage, &cit will explode&r. &eOn Hard/Expert modes, this explosion will break blocks!&r Be careful!"
 				""
+				"When the internal energy buffer of a machine is less than 50%, &eit can draw up to 2 amp of power to fill itself up, be careful&r."
+				""
 				"Each voltage tier is &a4x the size&r of the previous tier, starting with 32EU/t at &7LV&r, 128EU/t at &bMV&r, 512 at &6HV&r and so on."
 			]
 			icon: "gtceu:hpic_wafer"
@@ -2138,6 +2210,41 @@
 			title: "Connecting Pipes and Cables"
 			x: -9.0d
 			y: 8.5d
+		}
+		{
+			dependencies: ["5A94534682807314"]
+			description: [
+				"Now that you have everything you need to power your machines, it's time to put it all together."
+				""
+				"Your &3Steam Boiler&r needs burnable fuel (like &6Coal&r) and &9Water&r. Singleblock Boilers will automatically push &9Steam&r to adjacent inventories."
+				""
+				"Your &3Steam Turbine&r needs Steam from your boilers. It will output &aEU&r power through the side with the dot. Orientation can be adjusted by &7Shift-Right-Clicking&r with a &aWrench&r, if needed."
+				""
+				"Attach your &6Conductive Iron Wires&r to the output side of the Steam Turbine. Be sure to use wires or cables that can handle the output amperage of however many turbines you have."
+				""
+				"Now all you need are some &bGregTech&r machines to power up! You can make whatever you want, but it's recommended that you get these two first:"
+				""
+				"- A &3Wireimll&r will make crafting wires much, much easier."
+				"- A &3Bender&r will make &6Plates&r from one ingot instead of two."
+				""
+				"If you are using the bare minimum size of wire, it's important to note that machines can &edraw up to 2 amps of power&r when their internal buffer is &ebelow 50%&r."
+			]
+			icon: "gtceu:uhpic_wafer"
+			id: "2D31856F6EF1ED69"
+			rewards: [{
+				id: "56BBC13076DA2EA4"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [{
+				id: "44E7A2BF6528EC4E"
+				type: "checkmark"
+			}]
+			title: "Putting it all Together"
+			x: 0.0d
+			y: 21.0d
 		}
 	]
 	title: "A Hard Genesis"
