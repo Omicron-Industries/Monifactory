@@ -979,7 +979,7 @@
 				""
 				"Cryolobus gets so hot that it requires the potent coolant &9Gelid Cryotheum&r to aid your &3Vacuum Freezer&r in turning it into usable ingots."
 				""
-				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Tendrils&r, which contain Cryolobus, directly into ingots. It uses a lot of combustion fuel, but is the best use of excess &6Warden Tendrils&r."
+				"There are several ways to make Cryolobus: dust can be smelted into ingots, but you can also turn &6Warden Tendrils&r, which contain Cryolobus, directly into ingots. It uses a lot of combustion or gas fuel, but is the best use of excess &6Warden Tendrils&r."
 				""
 				"You've been stockpiling fuel, right?"
 			]
@@ -1030,7 +1030,7 @@
 		}
 		{
 			dependencies: ["7A65459E4DFAAC2D"]
-			description: ["&6Uranium Rhodium Dinaquadide&r is the second &cZPM&r superconductor, and is used to make the &3HPCA&r and &3Research Station&r."]
+			description: ["&6Uranium Rhodium Dinaquadide&r is the &cZPM&r superconductor, and is used to make the &3HPCA&r and &3Research Station&r."]
 			id: "28834638F1487312"
 			rewards: [{
 				id: "077E916B2D91C6AC"
