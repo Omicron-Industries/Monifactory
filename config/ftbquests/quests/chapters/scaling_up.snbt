@@ -2739,9 +2739,9 @@
 				""
 				"&aProduction:&r 4096 * 2.80 * 2=22938 EU/t"
 				"&aEfficiency:&r 1.40 * 1.10=154.0%"
-				"You can run the &6Large Gas Turbine&r off &9LPG&r and &9Methane&r from &3Fluid Rigs&r, or &9Nitrobenzene&r from &6Wood&r."
+				"You can run the &6Large Gas Turbine&r off &9LPG&r and &9Methane&r from &3Fluid Rigs&r, &9Nitrobenzene&r from &6Wood&r, or the more potent &9Wither Gas&r if you want to go even further."
 				""
-				"The best &6Large Steam Turbine&r fuel is a closely-guarded government secret. &mIt's just Wither-Doped Gas.&r"
+				"The best &6Large Steam Turbine&r fuel is a closely-guarded government secret."
 			]
 			icon: {
 				Count: 1
