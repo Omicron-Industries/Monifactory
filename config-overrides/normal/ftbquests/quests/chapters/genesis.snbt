@@ -364,7 +364,7 @@
 			description: [
 				"&bSophisticated Storage&r and &bSophisticated Backpacks&r are great options for storing items, both at your base and on the go, as well as offering a variety of both helpful and fun upgrades."
 				""
-				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 3 barrels worth of items at its lowest tier, costing only a bit of steel and invar to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
+				"&bSophisticated Storage&r in particular is great for cheap storage, able to store 2 chests worth of items at its lowest tier, costing only a bit of Bronze and Lead to craft, and can be upgraded with barrel upgrades to hold even more items and upgrades."
 			]
 			id: "61E5D7EEE745C6FB"
 			rewards: [{
@@ -384,89 +384,145 @@
 							items: [
 								{
 									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
-									tag: {
-										woodType: "acacia"
-									}
-								}
-								{
-									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
-									tag: {
-										woodType: "birch"
-									}
-								}
-								{
-									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
-									tag: {
-										woodType: "crimson"
-									}
-								}
-								{
-									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
-									tag: {
-										woodType: "dark_oak"
-									}
-								}
-								{
-									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
-									tag: {
-										woodType: "jungle"
-									}
-								}
-								{
-									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "oak"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
+									id: "sophisticatedstorage:iron_barrel"
+									tag: {
+										woodType: "acacia"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_barrel"
+									tag: {
+										woodType: "crimson"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_barrel"
+									tag: {
+										woodType: "dark_oak"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_barrel"
+									tag: {
+										woodType: "jungle"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "spruce"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "warped"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "mangrove"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
-									tag: {
-										woodType: "cherry"
-									}
-								}
-								{
-									Count: 1b
-									id: "sophisticatedstorage:gold_barrel"
+									id: "sophisticatedstorage:iron_barrel"
 									tag: {
 										woodType: "bamboo"
 									}
 								}
 								{
 									Count: 1b
-									id: "sophisticatedstorage:basic_to_gold_tier_upgrade"
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "acacia"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "birch"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "crimson"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "dark_oak"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "jungle"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "oak"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "spruce"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "warped"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "cherry"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:iron_chest"
+									tag: {
+										woodType: "bamboo"
+									}
+								}
+								{
+									Count: 1b
+									id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
 								}
 							]
 						}
 					}
-					title: "Any Sophisticated Storage Steel Barrel"
+					title: "Any Sophisticated Storage Bronze Container"
 					type: "item"
 				}
 				{
@@ -868,7 +924,7 @@
 			description: [
 				"&aMining Hammers&r offer a relatively cheap way to mine out areas much faster. They clear a 3x3 area of blocks (unless you're crouching) and mine quickly."
 				""
-				"&2Gregtech has Mining Hammers natively! You can craft them with any GT tool material. &r"
+				"&2Gregtech has Mining Hammers natively! You can craft them with any GT tool material.&r"
 				""
 				"Your free 4 Diamond Mining Hammers should last you a while, and you can always fix them using an anvil and some diamonds."
 			]
@@ -877,7 +933,9 @@
 				id: "gtceu:iron_mining_hammer"
 				tag: {
 					Damage: 0
-					GT.Tool: { }
+					GT.Tool: {
+						DefaultEnchantments: [ ]
+					}
 				}
 			}
 			id: "07D45A3F8A74A61C"
@@ -1000,6 +1058,8 @@
 				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
 				""
 				"Put a damaged tool and some material it's made of inside. For example, you'll need to use &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the Mortar and the Plunger."
+				""
+				"The XP cost of repairing items does not increase when you repair, it stays at 1 level per repair item."
 				""
 				"Also, you can now repair your free &6Mining Hammers&r with some &6Diamonds&r!"
 			]
@@ -1314,7 +1374,7 @@
 				"- &eMax Amperage&r: The maximum number of amps of power that can pass through this cable safely. Different materials may have different ratings even with the same cable thickness."
 				"- &cLoss&r: The amount of energy lost from each amp for each block of cable traveled."
 				""
-				"Consider using &aSuperconductors&r or positioning machines close to your power source."
+				"[\"\",{\"text\":\"Consider using \"},{\"color\":\"green\",\"text\":\"Superconductors\"},{\"text\":\" or positioning machines close to your power source. More info about Superconductors can be found \"},{\"underlined\":true,\"text\":\"here.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2861BA7C235C52A3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click To Jump\"}}}]"
 			]
 			id: "12B95158E4C792DB"
 			rewards: [{
@@ -1529,13 +1589,20 @@
 		{
 			dependencies: ["5A94534682807314"]
 			description: [
-				"Unlike the &aRF power&r you may be familiar with, &aEU power &erequires caution&r. Without proper attention, it is possible that your expensive wires, cables, or machines could be destroyed."
+				"Now that you have everything you need to power you machines, it's time to put it all together."
 				""
-				"EU is transported in &aamperes&r (&aamps&r), which can be thought of as packets of energy. The amount of energy stored in the packet is the &avoltage tier&r."
-				"{@pagebreak}"
-				"The flow of power can be thought of as machines pulling power from the source through the cables. If a wire or cable is transporting too many amps or too high a voltage &cit will burn up&r, starting with its coating. Similarly, if a machine receives too high a voltage, &cit will explode&r. &eOn Hard/Expert modes, this explosion will break blocks!&r Be careful!"
+				"Your &3Steam Boiler&r needs burnable fuel (like &6Coal&r) and &9Water&r. It will automatically push &9Steam&r to adjacent inventories."
 				""
-				"Each voltage tier is &a4x the size&r of the previous tier, starting with 32EU/t at &7LV&r, 128EU/t at &bMV&r, 512 at &6HV&r and so on."
+				"Your &3Steam Turbine&r needs Steam from your boilers. It will output &aEU&r power through the side with the dot. Orientation can be adjusted by &7Shift-Right-Clicking&r with a &aWrench&r, if needed."
+				""
+				"Attach your &6Conductive Iron Wires&r to the output side of the Steam Turbine. Be sure to use wires or cables that can handle the output amperage of however many turbines you have."
+				""
+				"Now all you need are some &bGregTech&r machines to power up! You can make whatever you want, but it's recommended that you get these two first:"
+				""
+				"- A &3Wireimll&r will make crafting wires much, much easier."
+				"- A &3Bender&r will make &6Plates&r from one ingot instead of two."
+				""
+				"If you are using the bare minimum size of wire, it's important to note that machines can &edraw up to 2 amps of power&r when their internal buffer is &ebelow 50%&r."
 			]
 			icon: "gtceu:uhpic_wafer"
 			id: "2D31856F6EF1ED69"
@@ -1841,12 +1908,11 @@
 				""
 				"The sugar cane it produces can be used as a fuel for your dynamos, and later you can even brew it for &9Biomass&r."
 				""
-				"This quest calls for a &aRedstone Clock&r because it grows Snad even on the fastest setting - vanilla Observer clocks pulse too quickly."
+				"This quest calls for a &aRedstone Clock&r because it updates Snad even on the fastest setting - vanilla Observer clocks pulse too quickly."
 				""
 				"To collect the sugar cane, you can use a piston and an observer."
 				""
 				"For now, a &3Vacuum Chest&r should help keep the floor clean, and causes less lag than Hoppers. A &6Void Upgrade&r in a &6Storage Drawer&r will automatically delete any items that overflow the drawer's capacity, so it's a good way to ensure you don't crash your server from accumulating a massive sugar cane pile."
-				""
 				""
 				"[\"\",{\"text\":\"If the noises are annoying to you, take a look at \"},{\"underlined\":true,\"text\":\"this\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5B52FFEBF5D65C20\"}},{\"text\":\" quest to see how to mute them.\"}]"
 			]
@@ -1857,7 +1923,23 @@
 			tasks: [
 				{
 					id: "77ADD3B3DA61DC55"
-					item: "snad:snad"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "snad:snad"
+								}
+								{
+									Count: 1b
+									id: "snad:red_snad"
+								}
+							]
+						}
+					}
+					title: "Any Snad"
 					type: "item"
 				}
 				{
