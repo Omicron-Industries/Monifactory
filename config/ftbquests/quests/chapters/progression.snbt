@@ -929,7 +929,7 @@
 			dependencies: ["7FA0E6F3B466576C"]
 			dependency_requirement: "one_completed"
 			description: [
-				"A \"&esubstrate&f\" is the \"board\" part of a circuit board — the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
+				"A \"&esubstrate&f\" is the \"board\" part of a circuit board - the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
 				""
 				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
 			]
@@ -1023,7 +1023,7 @@
 			description: [
 				"Your first &6Tier Two Circuits&r will require three &6Tier One Circuits&r plus two &6Diodes&r."
 				""
-				"These are rather expensive. &2Always be on the lookout for a cheaper way to make your circuits&r — new sets of recipes become available each time you make a new tier of &3Circuit Assembler&r. Conveniently, this tier of Circuit unlocks one now!"
+				"These are rather expensive. &2Always be on the lookout for a cheaper way to make your circuits&r - new sets of recipes become available each time you make a new tier of &3Circuit Assembler&r. Conveniently, this tier of Circuit unlocks one now!"
 			]
 			id: "3B639F4061B00F1A"
 			rewards: [{

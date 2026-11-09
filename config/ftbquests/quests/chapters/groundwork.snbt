@@ -411,7 +411,7 @@
 			description: [
 				"&2Initial circuit components can be complex in GTm, as you need both Arsenic and Gallium.&r"
 				""
-				"For &9Gallium&r, you may, ranked from worst to best:"
+				"For &9Gallium&r, you may, ranked &efrom worst to best&r:"
 				""
 				"- &3Electrolyze &aSphalerite&r for a low chance of small dust. Note that you lose on direct smelting value."
 				""
@@ -488,7 +488,7 @@
 				""
 				"The &3Dark Steel Enchanter&r is a device that uses &6Book and Quill&r, experience levels, lapis, and enchant-specific items to create an &6Enchanted Book&r with an enchantment of your choosing. Then you can just use an Anvil to enchant your item like usual."
 				""
-				"You can also make the &9Mending&r enchant which allows you to infinitely repair the item when damaged using &9Liquid XP&r in an &bEnder IO &aFluid Tank&r or &aPressurized Fluid Tank&r. Keep in mind that &9Mending&r does not work on &3Gregtech Tools&r."
+				"You can also make the &9Mending&r enchant which allows you to infinitely repair the item when damaged using &9Liquid XP&r in an &bEnder IO &aFluid Tank&r or &aPressurized Fluid Tank&r."
 			]
 			id: "4D6AC14CAEEFC793"
 			rewards: [{
@@ -565,7 +565,8 @@
 				""
 				"The blade will require you to make &2Vanadium Steel&r."
 				""
-				"Cutting Machines work with plain &9Water&r for all recipes. You can also use &9Distilled Water&r which speeds up the processing somewhat, or &9Lubricant&r that speeds it up greatly (and uses very little per operation). These might be a little tricky to make right now, but are very worthwhile upgrades in the future."
+				"Cutting Machines work with plain &9Water&r for all recipes. You can also use &9Distilled Water&r which speeds up the processing somewhat, or &9Lubricant&r that speeds it up greatly (and uses very little per operation)."
+				"&2It might be worth handcrafting a drum worth of Lubricant to save a significant amount of processing time. Later on, you will be able to fully automate production and supply of Lubricant.&r"
 			]
 			id: "1F7FD354C79771A1"
 			rewards: [{
@@ -624,7 +625,7 @@
 		{
 			dependencies: ["3781AD70E71CA0D7"]
 			description: [
-				"A &3Precision Laser Engraver&r is used to engrave circuits onto &6Wafers&r."
+				"A &3Laser Engraver&r is used to engrave circuits onto &6Wafers&r."
 				""
 				"The type of circuit will depend on the kind of wafer used and which &aLens&r is in the machine."
 			]
@@ -640,7 +641,7 @@
 				item: "gtceu:mv_laser_engraver"
 				type: "item"
 			}]
-			title: "MV Precision Laser Engraver"
+			title: "MV Laser Engraver"
 			x: -4.75d
 			y: -6.0d
 		}
@@ -769,6 +770,7 @@
 				item: "gtceu:mv_electrolyzer"
 				type: "item"
 			}]
+			title: "&bMV Electrolyzer&r"
 			x: 3.25d
 			y: -4.25d
 		}
@@ -829,7 +831,7 @@
 			description: [
 				"The &6Machine Controller&r is a cover that manages the operation of &bGregTech&r machines, similar to a &aSoft Mallet&r. These are crucial for &epassive automation&r, where a machine is dedicated to keeping something in stock for you."
 				""
-				"\"Machines\" here is broader than you might think. It of course works on single-block machines, but can also be used on &eMultiblock Controllers&r like your &3Electronic Blast Furnace&r. But it's even more flexible than that: you can use it on any &bGregTech&r block that accepts transfer covers, as long as the controllable cover is placed on it first! This means it also works for things like &6Chests&r, &6Drums&r, and Multiblock inputs."
+				"\"Machines\" here is broader than you might think. It of course works on single-block machines, but can also be used on &eMultiblock Controllers&r like your &3Electronic Blast Furnace&r. But it's even more flexible than that: you can use it on &eany &bGregTech&e block that accepts transfer covers&r, as long as the controllable cover is placed on it first! This means it also works for things like &6Chests&r, &6Drums&r, and Multiblock inputs."
 				"{@pagebreak}"
 				"The cover works by detecting a &eredstone signal&r. By default, the entire machine will be disabled if a sufficiently strong signal is detected by the cover."
 				""
@@ -952,7 +954,9 @@
 			description: [
 				"&2Sodium Persulfate and Iron III Chloride&r are used to make cheaper &9Good Circuit Boards&r, as it cuts the Silver amount by a factor of four. They are also &9required&r to make &9Plastic Circuit Boards&r, and circuit boards afterwards."
 				""
-				"Making &aSodium Persulfate&r with &6Salt&r will yield &aHydrochloric Acid&r as a coproduct, which you may re-use to make &aIron III Chloride&r. Alternatively, the &aHydrogen&r byproduct when making &aIron III Chloride&r can be recycled back into &aHydrochloric Acid&r in a closed loop, requiring only &aChlorine&r and &aIron&r as inputs. The decision is entirely yours as there is no single best approach as of now. With more automation later in the game, Iron III Chloride will be the cheaper and more straightforward path."
+				"Making &aSodium Persulfate&r with &6Salt&r will yield &aHydrochloric Acid&r as a coproduct, which you may re-use to make &aIron III Chloride&r."
+				"Alternatively, the &aHydrogen&r byproduct when making &aIron III Chloride&r can be recycled back into &aHydrochloric Acid&r in a closed loop, requiring only &aChlorine&r and &aIron&r as inputs."
+				"The decision is entirely yours as there is no single best approach as of now. With more automation later in the game, Iron III Chloride will be the cheaper and more straightforward path."
 				""
 				"Sodium Persulfate&r can also be used in &9Ore Processing&r in the &3Chemical Bath&r to get various bonus outputs you would not normally obtain. It is completely optional, but pretty rewarding."
 			]
@@ -1538,7 +1542,7 @@
 			description: [
 				"&2You can make HV Batteries like LV and MV ones, but there is a better option."
 				""
-				"&2Energium Crystals can store 6,400,000 EU, at the cost of some crafting complexity. They need an HV Autoclave."
+				"&6Energium Crystals&2 (not to be confused with &6Energium Gems&2, one of their ingredients) can store 6,400,000 EU, at the cost of some crafting complexity. They need an HV Autoclave and Laser Engraver."
 			]
 			id: "1EBF9D9EADB7C451"
 			rewards: [{
@@ -2372,7 +2376,7 @@
 				""
 				"In addition to dye-able blocks, &bGregTech&r &6wires&r, &6cables&r, &6machines&r, &6hatches&r and &6buses&r can be dyed."
 				""
-				"Importantly, dyed &bGT&r hatches/buses behave differently than when undyed. When dyed, they will share their contents with all other hatches/buses on the multi that are dyed the same color or undyed. Hatches/buses of different colors will not share contents. This can be quite helpful when you need to have separate 'groups' of hatches/buses on a multiblock, such as when dealing with different program circuits."
+				"Importantly, &edyed &bGT&e hatches/buses behave differently than when undyed&r. When dyed, they will share their contents with all other hatches/buses on the multi that are dyed the same color or undyed. Hatches/buses of different colors will not share contents. This can be quite helpful when you need to have separate 'groups' of hatches/buses on a multiblock, such as when dealing with different program circuits."
 			]
 			hide_dependency_lines: true
 			id: "2C7306C74609E995"
