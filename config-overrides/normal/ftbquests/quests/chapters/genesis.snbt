@@ -779,7 +779,6 @@
 		{
 			dependencies: ["3969150B59EA38A2"]
 			description: ["It smelts items at a blazing quick &a5 ticks&r each, but is incredibly expensive and only included here for completeness. You should just make a &3Multi Smelter&r instead."]
-			hide_until_deps_complete: true
 			id: "69E77BD01CFF65EB"
 			rewards: [{
 				id: "2BBD659B19ED9807"
