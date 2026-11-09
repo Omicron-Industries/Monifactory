@@ -282,11 +282,7 @@
 				"5D5B76387841C3FA"
 				"6D70F91101D8CBB4"
 			]
-			description: [
-				"ASSEMBLE!"
-				""
-				"&6Mana Dust&r is an important material. It is needed for a variety of materials related to &bThermal Expansion&r."
-			]
+			description: ["&6Mana Dust&r is an important material. It is needed for a variety of materials related to &bThermal Expansion&r."]
 			id: "227F448DFCC3E8C3"
 			rewards: [{
 				id: "6CA886F14DF08A57"
@@ -294,6 +290,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "ASSEMBLE!"
 			tasks: [{
 				id: "25D333A97EBBD6A4"
 				item: "kubejs:primal_mana"
@@ -478,9 +475,9 @@
 				"227F448DFCC3E8C3"
 			]
 			description: [
-				"Mixing &6Titanium&r with &6Mana Dust&r creates &6Mythril Dust&r. This can be smelted into ingots in an &3Electric Blast Furnace&r equipped with &6Kanthal Coils&r or better."
+				"Mixing &6Titanium&r with &9Mana&r in liquid form creates &6Mythril Dust&r. This can be smelted into ingots in an &3Electric Blast Furnace&r equipped with &6Kanthal Coils&r or better."
 				""
-				"Mythril is the basis of &bThermal Expansion&r device casings, and is used for many advanced &aAugments&r."
+				"Mythril is used for multiple useful tools, such as the &6ME Infinite Water Cell&r and &6ME Infinite Cobblestone Cell&r."
 			]
 			id: "3E12862AD553EB8A"
 			rewards: [{
@@ -1271,13 +1268,11 @@
 				"1F2E76FA4B2C2E84"
 			]
 			description: [
-				"&9Diesel&r is a mixture of &9Light Fuel&r and &9Heavy Fuel&r."
+				"&9Diesel&r is a mixture of &9Light Fuel&r and &9Heavy Fuel&r. It makes for a perfectly fine early fuel to your &6Combustion Generators&r."
 				""
-				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6Cryolobus&r. &2Alternatively, &6Gasoline&2 can be used for that purpose, and later be upgraded into &6High Octane Gasoline&2 and &6JEAN Gasoline&r."
+				"You can also use it for making the better &2Cetane-Boosted Diesel&r, which you might want in large quantities for the later production of &6Cryolobus&r. &2Alternatively, &6Gasoline&2 can be used for that purpose, and later be upgraded into &6High Octane Gasoline&2 and &6JEAN Gasoline&r."
 				""
-				"The performance of Combustion Generators is also improved, but you probably want to refine Diesel anyway."
-				""
-				"&2While it is more power efficient to use singleblock Distilleries over a Distillation Tower for Oil, it is still recommended to use Distillation Towers, to get the other useful byproducts too. For Diesel, the correct ratio is 3 Distilleries for Light Oil and 2 Distilleries for Heavy Oil."
+				"&2If you are producing Diesel from Raw Oil, &6Distillation Towers&2 are as energy efficient at separating it as singleblock distilleries, while also giving useful byproducts. You will want to use one if you don't already."
 			]
 			icon: "gtceu:diesel_bucket"
 			id: "74EDAE84246C7228"
@@ -1400,7 +1395,7 @@
 			description: [
 				"Like other petroleum products, &9Sulfuric Gas&r &2or Natural Gas&r is hydrodesulfurized into &9Refinery Gas&r using &9Hydrogen&r in a &3Chemical Reactor&r."
 				""
-				"Refinery Gas can be cracked and further distilled for its constituents, but it is also useful as fuel for &3Gas Turbines&r. While it can be burned directly, centrifuging Refinery Gas produces &9LPG&r (Liquefied Petroleum Gas), which is an ideal fuel for Gas Turbines, and &9Methane&r which is a potential (suboptimal) turbine fuel but is also useful for various chemical reactions."
+				"Refinery Gas can be cracked and further distilled for its constituents, but it is also a good source of fuels for &3Gas Turbines&r. While it &ecan't be burned directly&r, centrifuging Refinery Gas produces &9LPG&r (Liquefied Petroleum Gas), which is an ideal fuel for Gas Turbines, and &9Methane&r which is a potential (suboptimal) turbine fuel but is also useful for various chemical reactions."
 			]
 			icon: "gtceu:refinery_gas_bucket"
 			id: "2396EF225839C65D"
@@ -1684,7 +1679,7 @@
 				"78EB8574A67B10D4"
 			]
 			description: [
-				"The reaction that produces &9Bio Diesel&r is also the only source of &9Glycerol&r, which is an easy way to make &9Epichlorohydrin&r, an important ingredient of &9Epoxy&r."
+				"The reaction that produces &9Bio Diesel&r is also one of two sources of &9Glycerol&r, which is an easy way to make &9Epichlorohydrin&r, an important ingredient of &9Epoxy&r."
 				""
 				"&9Glycerol&r is also used in the production of &9Glyceryl Trinitrate&r, an important step in making &6Dynamite&r, which can be used later in the &3Implosion Compressor&r."
 				""
@@ -1692,7 +1687,7 @@
 				""
 				"Bio Diesel can be used for power, but it is probably better to convert it to &2Cetane-Boosted Diesel&r."
 			]
-			icon: "gtceu:glycerol_bucket"
+			icon: "gtceu:bio_diesel_bucket"
 			id: "502AB887CB316377"
 			shape: "hexagon"
 			tasks: [
@@ -1749,7 +1744,7 @@
 				""
 				"The easiest ways to get seeds are with a &9Greenhouse&r."
 				""
-				"The easiest way to get fish is through using a &aGregtech Fisher&r. If you are playing Normal Mode, a &aGuardian Model&r from &bHNN&r is also an option."
+				"The easiest way to get fish is through using an &aAquatic Engangler&r. If you are playing Normal Mode, a &aGuardian Model&r from &bHNN&r is also an option."
 				""
 				"Both are viable, so it's ultimately up to you."
 			]
@@ -2020,7 +2015,7 @@
 			description: [
 				"&6Carbon Fibers&r are useful for a variety of things."
 				""
-				"&2They are made with Carbon Dust and polymers. Higher tier polymers grant higher yields. It's also not a chanced output anymore."
+				"&2They are made with Carbon Dust and polymers. Higher tier polymers grant higher yields."
 			]
 			id: "358D9A7B1BCFA30A"
 			rewards: [{
@@ -2166,7 +2161,7 @@
 				"7F1EE712BD9CC811"
 			]
 			description: [
-				"The &3Alloy Blast Smelter&r directly smelts dust combinations into molten Alloys, skipping the Mixer step, and applying a 3/4 discount to your EBF time. Some molten alloys may need to be cooled in a Vacuum Freezer before being usable, though they take much less time than freezing Hot Ingots."
+				"The &3Alloy Blast Smelter&r directly smelts dust combinations into molten Alloys, skipping the Mixer step, and applying a 25% discount to your EBF time. Some molten alloys may need to be cooled in a Vacuum Freezer before being usable, though they take much less time than freezing Hot Ingots."
 				""
 				"This is the only way to create some of the advanced alloys used in multiblock machines. You can also use it for most normal alloys if you want, such as &6Invar&r, &6Conductive Iron&r, and &6Dark Steel&r."
 			]
@@ -2529,7 +2524,7 @@
 			description: [
 				"This one is decently slow to cook, so make sure to have it going constantly or stocked up."
 				""
-				"&6Signalum&r is noteworthy as the long-awaited next tier upgrade for your &bThermal Expansion&r machines and dynamos following \"Reinforced\" back in MV."
+				"&6Signalum&r can also be used in the next tier upgrade for your &bThermal Expansion&r machines following \"Reinforced\" back in MV."
 			]
 			id: "27A80F018F59EF1E"
 			rewards: [{
@@ -2738,16 +2733,15 @@
 				""
 				"Each Large Turbine will need a &3Rotor Holder&r of the same or higher tier than the Large Turbine itself, and a &3Dynamo Hatch&r capable of handling the energy output. Each &3Rotor Holder&r tier above the Large Turbine &9doubles&r the energy production and adds 10% to fuel efficiency."
 				""
-				"You will need a &aRotor&r to go into each &3Rotor Holder&r&r. The Rotor will grant multiplicative Power and Efficiency bonuses depending on its material. Each Rotor also has a Durability, which is the number of seconds it will last."
+				"You will need a &aRotor&r to go into each &3Rotor Holder&r&r. The Rotor will grant multiplicative Power and Efficiency bonuses depending on its material. &2Rotors do not have durability in Monifactory, which means they will last forever.&r"
 				""
 				"&aExample: &r&6Large Gas Turbine&r, with &3HSS-E Rotor&r and &3IV Rotor Holder&r:"
 				""
 				"&aProduction:&r 4096 * 2.80 * 2=22938 EU/t"
 				"&aEfficiency:&r 1.40 * 1.10=154.0%"
-				"&aDurability:&r 205,600 s (57.1 h)"
 				"You can run the &6Large Gas Turbine&r off &9LPG&r and &9Methane&r from &3Fluid Rigs&r, or &9Nitrobenzene&r from &6Wood&r."
 				""
-				"The best &6Large Steam Turbine&r fuel is a closely-guarded government secret."
+				"The best &6Large Steam Turbine&r fuel is a closely-guarded government secret. &mIt's just Wither-Doped Gas.&r"
 			]
 			icon: {
 				Count: 1
@@ -3301,7 +3295,6 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
 			tasks: [
 				{
 					id: "1CA9B9FE385B774C"
@@ -3757,7 +3750,7 @@
 				""
 				"The full processing line will require &9Oxalic Acid Solution&r, but you've had access to that for a few tiers by now."
 				""
-				"A note on Germanium: like &6Indium&r, it's only used in small amounts for alloys. As such, it's not worth gathering extreme quantities as you might with common resources like &6Iron&r, &6Copper&r, &6Tin&r, or &6Redstone&r."
+				"A note on Germanium: like &6Indium&r, it's &eonly used in small amounts&r for alloys. As such, it's &enot worth gathering extreme quantities&r as you might with common resources like &6Iron&r, &6Copper&r, &6Tin&r, or &6Redstone&r."
 			]
 			icon: "gtceu:germanium_dust"
 			id: "63C3077124BC81FD"
