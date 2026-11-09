@@ -1232,7 +1232,7 @@
 			description: [
 				"The &3Sculk Vat&r is a multiblock capable of growing Sculk products as well as other micro-organisms."
 				""
-				"Recipes run in the Vat will produce less and less output the farther the output hatch is from half full, producing the amount listed in &bEMI&r at exactly 50%% and up to 8x less as the hatch approaches completely empty or full. Note that the amount a recipe will produce is decided as soon as the recipe starts.\n&2While an optimal setup maintaining an exact 50% fill level is possible, it is not at all necessary to beat the pack and an approximate setup can still be viable all the way to the end.&r"
+				"Recipes run in the Vat will produce less and less output the farther the output hatch is from half full, producing the amount listed in &bEMI&r at exactly 50% and up to 8x less as the hatch approaches completely empty or full. Note that the amount a recipe will produce is decided as soon as the recipe starts.\n&2While an optimal setup maintaining an exact 50% fill level is possible, it is not at all necessary to beat the pack and an approximate setup can still be viable all the way to the end.&r"
 				""
 				"The Vat can also store experience for use in growing Sculk. Do this by inserting &6XP Juice&r into a &6Sculk XP Draining Hatch&r. Every second, the Draining Hatch will deposit all XP Juice it has into the internal buffer of the Vat, and the amount of XP inside the Vat will decay by 1/64 of the amount it currently has stored."
 				""

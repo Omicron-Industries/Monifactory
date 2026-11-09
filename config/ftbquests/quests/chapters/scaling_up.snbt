@@ -723,7 +723,7 @@
 				""
 				"Note that an &6HV&r &3Assembler&r is required to make them. &cEach tier of coil requires their tier of Assembler&r - we won't remind you again."
 				""
-				"&93600K&r is now also hot enough to grant a single &9100%% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
+				"&93600K&r is now also hot enough to grant a single &9100% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
 				""
 				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at HV. Once you upgrade your EBF to EV power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to &6Nichrome&r once you can afford it. "
 				""
@@ -996,7 +996,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&9Nitrogen&r comprises 78%% of the atmosphere. Because of this, after the first few processes of &9Liquid Air&r, you'll probably have more Nitrogen than you know what to do with."
+				"&9Nitrogen&r comprises 78% of the atmosphere. Because of this, after the first few processes of &9Liquid Air&r, you'll probably have more Nitrogen than you know what to do with."
 				""
 				"If you got here centrifuging air, then it's gonna take you longer to get to that point."
 				""
@@ -1475,7 +1475,7 @@
 				""
 				"Any other recipe which could be done in a normal &9Chemical Reactor&r, as well as certain &9Mixer&r recipes, can also be done in an &3LCR&r."
 				""
-				"All &9Overclocks&r in the &3LCR&r are &6100%% efficient&r; each overclock will &5quadruple the speed&r, as opposed to doubling it. This type of overclock is called a Perfect Overclock."
+				"All &9Overclocks&r in the &3LCR&r are &6100% efficient&r; each overclock will &5quadruple the speed&r, as opposed to doubling it. This type of overclock is called a Perfect Overclock."
 			]
 			icon: "gtceu:large_chemical_reactor"
 			id: "21B16C005E9E3B0E"
@@ -1642,7 +1642,7 @@
 		{
 			dependencies: ["4C76017864258EA9"]
 			description: [
-				"&6High-Octane Gasoline&r &2is an even more powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in Cryolobus production, using 75%% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it.&r"
+				"&6High-Octane Gasoline&r &2is an even more powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in Cryolobus production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it.&r"
 				""
 				"To refine Gasoline to High-Octane Gasoline, you will need:"
 				"- 20 parts Gasoline"
@@ -2736,14 +2736,14 @@
 				""
 				"[\"\",{\"text\":\"Right now, you can make the \"},{\"color\":\"gold\",\"underlined\":true,\"text\":\"Large Steam Turbine\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"15A5B4C632836306\"}},{\"text\":\" and \"},{\"color\":\"gold\",\"underlined\":true,\"text\":\"Large Gas Turbine\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D72B3FF808CE13C\"}},{\"text\":\". Once you get a \"},{\"color\":\"dark_aqua\",\"text\":\"Fusion Reactor\"},{\"text\":\" going, you can make the \"},{\"color\":\"gold\",\"underlined\":true,\"text\":\"Large Plasma Turbine\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1405D08C6A87B3BB\"}},{\"text\":\".\"}]"
 				""
-				"Each Large Turbine will need a &3Rotor Holder&r of the same or higher tier than the Large Turbine itself, and a &3Dynamo Hatch&r capable of handling the energy output. Each &3Rotor Holder&r tier above the Large Turbine &9doubles&r the energy production and adds 10%% to fuel efficiency."
+				"Each Large Turbine will need a &3Rotor Holder&r of the same or higher tier than the Large Turbine itself, and a &3Dynamo Hatch&r capable of handling the energy output. Each &3Rotor Holder&r tier above the Large Turbine &9doubles&r the energy production and adds 10% to fuel efficiency."
 				""
 				"You will need a &aRotor&r to go into each &3Rotor Holder&r&r. The Rotor will grant multiplicative Power and Efficiency bonuses depending on its material. Each Rotor also has a Durability, which is the number of seconds it will last."
 				""
 				"&aExample: &r&6Large Gas Turbine&r, with &3HSS-E Rotor&r and &3IV Rotor Holder&r:"
 				""
 				"&aProduction:&r 4096 * 2.80 * 2=22938 EU/t"
-				"&aEfficiency:&r 1.40 * 1.10=154.0%%"
+				"&aEfficiency:&r 1.40 * 1.10=154.0%"
 				"&aDurability:&r 205,600 s (57.1 h)"
 				"You can run the &6Large Gas Turbine&r off &9LPG&r and &9Methane&r from &3Fluid Rigs&r, or &9Nitrobenzene&r from &6Wood&r."
 				""
@@ -3548,7 +3548,7 @@
 				""
 				"Insert power through &6Energy Hatches&r and extract from &6Dynamo Hatches&r, each of any tier. The Power Substation can accept special &664A Substation Hatches&r, as well as &aLaser Hatches&r."
 				""
-				"The Power Substation will &cpassively lose 1%%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
+				"The Power Substation will &cpassively lose 1%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:power_substation"

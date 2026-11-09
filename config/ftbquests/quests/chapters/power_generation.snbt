@@ -980,6 +980,7 @@
 			]
 			description: [
 				"When fueled, the &3Transdimensional Energy Singularity&r grants unlimited energy to all EU-based machines and energy hatches, removing their need to push or pull power."
+				"This also applies to &6Laser and Dynamo Hatches&r, allowing you to keep your AE2 network and &3Dimensional Superassembler&r running."
 				""
 				"Note that while this is running, &3Power Substations&r and &3Active Transformers&r will stop functioning."
 				""
