@@ -1012,6 +1012,8 @@
 			description: [
 				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
 				""
+				"The XP cost of repairing items does not increase when you repair it, it stays at 1 level per repair item."
+				""
 				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Wrought Iron Ingots&f to repair tools made of &6Wrought Iron&f. The only tools unable to be repaired are the mortar and the plunger."
 			]
 			id: "5430ED88A8D10502"
@@ -1854,8 +1856,6 @@
 				"EU is transported in &aamperes&r (&aamps&r), which can be thought of as packets of energy. The amount of energy stored in the packet is the &avoltage tier&r."
 				"{@pagebreak}"
 				"The flow of power can be thought of as machines pulling power from the source through the cables. If a wire or cable is transporting too many amps or too high a voltage &cit will burn up&r, starting with its coating. Similarly, if a machine receives too high a voltage, &cit will explode&r. &eOn Hard/Expert modes, this explosion will break blocks!&r Be careful!"
-				""
-				"When the internal energy buffer of a machine is less than 50%, &eit can draw up to 2 amp of power to fill itself up, be careful&r."
 				""
 				"Each voltage tier is &a4x the size&r of the previous tier, starting with 32EU/t at &7LV&r, 128EU/t at &bMV&r, 512 at &6HV&r and so on."
 			]

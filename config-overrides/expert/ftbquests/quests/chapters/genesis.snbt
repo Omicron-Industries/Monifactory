@@ -996,6 +996,8 @@
 			description: [
 				"You might want to get yourself an anvil instead of breaking and crafting new tools every time. Anvils&f spawn abundantly in &bLost Cities&f buildings, so go and snatch one!"
 				""
+				"The XP cost of repairing items does not increase when you repair, it stays at 1 level per repair item."
+				""
 				"Put a damaged tool inside and put some material it's made of. For example, you'll need to put &6Iron Ingots&f to repair tools made of &6Iron&f. The only tools unable to be repaired are the mortar and the plunger."
 			]
 			id: "5430ED88A8D10502"

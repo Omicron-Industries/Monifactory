@@ -675,7 +675,7 @@
 				""
 				"The sugar cane it produces can be used as fuel for your dynamos, and later you can even brew &9Biomass&r with it."
 				""
-				"This quest calls for a &aRedstone Clock&r because it grows Snad even on the fastest setting - vanilla Observer clocks pulse too quickly."
+				"This quest calls for a &aRedstone Clock&r because it updates Snad even on the fastest setting - vanilla Observer clocks pulse too quickly."
 				""
 				"To harvest the sugar cane, you can use a piston and an observer."
 				""
@@ -690,7 +690,23 @@
 			tasks: [
 				{
 					id: "677A2551088FF511"
-					item: "snad:snad"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "snad:red_snad"
+								}
+								{
+									Count: 1b
+									id: "snad:snad"
+								}
+							]
+						}
+					}
+					title: "Any Snad"
 					type: "item"
 				}
 				{
