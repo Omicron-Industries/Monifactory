@@ -880,4 +880,17 @@ ServerEvents.recipes(event => {
         S: "gtceu:hp_steam_solid_boiler",
         L: "gtceu:hp_steam_liquid_boiler"
     }).addMaterialInfo()
+
+    event.remove({ output: "gtceu:steel_large_boiler" })
+    event.recipes.gtceu.shaped("gtceu:steel_large_boiler", [
+        "BVB",
+        "LFS",
+        "BVB"
+    ], {
+        F: "gtceu:steel_firebox_casing",
+        B: "gtceu:solid_machine_casing",
+        V: "#gtceu:circuits/mv",
+        S: "gtceu:hp_steam_solid_boiler",
+        L: "gtceu:hp_steam_liquid_boiler"
+    }).addMaterialInfo()
 })
