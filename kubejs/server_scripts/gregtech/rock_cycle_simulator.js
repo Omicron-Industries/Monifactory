@@ -45,6 +45,7 @@ ServerEvents.recipes(event => {
     RockCycle("permafrost", "quark:permafrost", "quark:permafrost", GTValues.VHA[GTValues.MV])
     RockCycle("shale", "quark:shale", "quark:shale", GTValues.VHA[GTValues.MV])
     RockCycle("myalite", "quark:myalite", "quark:myalite", GTValues.VHA[GTValues.MV])
+    RockCycle("myalite", "quark:dusky_myalite", "quark:dusky_myalite", GTValues.VHA[GTValues.MV])
 
     function DimensionalRockCrushing(namespace, output, EUt, dimension, waterReplacement) {
         if (waterReplacement === undefined) waterReplacement = "minecraft:water"
