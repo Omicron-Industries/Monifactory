@@ -984,7 +984,7 @@
 				""
 				"Note that while this is running, &3Power Substations&r and &3Active Transformers&r will stop functioning."
 				""
-				"(Unique multi mechanic code taken from the Cosmic Frontiers team with Caitlynn's gracious permission.)"
+				"(Unique multi mechanic code taken from the Cosmic Frontiers team with Ghosti's gracious permission.)"
 			]
 			icon: "monilabs:creative_energy_multi"
 			id: "19084E91F357C8C2"
