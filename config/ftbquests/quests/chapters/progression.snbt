@@ -3214,7 +3214,10 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["3270496124969A51"]
+			dependencies: [
+				"3270496124969A51"
+				"1229234A71CE0A99"
+			]
 			dependency_requirement: "all_started"
 			description: ["Carry more stuff."]
 			hide_dependency_lines: false
