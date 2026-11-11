@@ -1204,7 +1204,7 @@
 		{
 			dependencies: ["4FE53F31E68F4C1C"]
 			description: [
-				"Feeding a &3Steam Dynamo&f with water by hand is a pretty silly idea."
+				"Feeding a &3Steam Boiler&f with water by hand is a pretty silly idea."
 				""
 				"A &6Water Collector&f will take care of that for you, albeit slowly. It does, however, auto-output the water, making it simple to use."
 				""
@@ -1905,7 +1905,7 @@
 			description: [
 				"This pack has &aSnad&r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block update or a redstone update."
 				""
-				"The sugar cane it produces can be used as a fuel for your dynamos, and later you can even brew it for &9Biomass&r."
+				"The sugar cane it produces can be used as a fuel for your boilers, and later you can even brew it for &9Biomass&r."
 				""
 				"This quest calls for a &aRedstone Clock&r because it updates Snad even on the fastest setting - vanilla Observer clocks pulse too quickly."
 				""

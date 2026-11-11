@@ -673,7 +673,7 @@
 			description: [
 				"This pack has &aSnad&r, which is simply a sand-like block that instantly grows sugar cane/cactus on top of it when it receives either a block update or a redstone update."
 				""
-				"The sugar cane it produces can be used as fuel for your dynamos, and later you can even brew &9Biomass&r with it."
+				"The sugar cane it produces can be used as fuel for your boilers, and later you can even brew &9Biomass&r with it."
 				""
 				"This quest calls for a &aRedstone Clock&r because it updates Snad even on the fastest setting - vanilla Observer clocks pulse too quickly."
 				""
