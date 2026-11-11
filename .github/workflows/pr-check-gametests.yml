@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
         with:
-          node-version: 23
+          node-version: 26
           cache: 'npm'
           cache-dependency-path: build/package-lock.json
       - uses: actions/cache@v6
@@ -43,9 +43,9 @@ jobs:
       - name: Run game test server
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          JAVA_PATH: ${{ env.JAVA_HOME }}/bin/java
         run: |
           cd build
           npm ci
-          node index.ts switch-pack-mode --pack-mode=${{ matrix.pack-mode }}
-          node index.ts run-gametest-server
+          node index.ts run-gametest-server --pack-mode=${{ matrix.pack-mode }}
         shell: bash

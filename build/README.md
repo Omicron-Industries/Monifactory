@@ -1,40 +1,33 @@
 # Monifactory build script
+## Initial setup
 
-Uses juke from <https://github.com/tgstation/tgstation>
+- [install Node and NPM](https://nodejs.org/en/download/current) first. We require **Node 26 or later**.
+- Open your terminal, go into the build folder (`cd build`), and run `npm install` there.
+- Run `node index.ts` to print **list of the available tasks** the build script can do, to confirm it is working.
+- Setup [environment secrets](#environment-secrets) if you'll be using it to launch the game or to create a [build](#build) one can import into any mainstream launcher.
 
+### Environment secrets
 
-Juke is a Node.js library, [install Node and NPM](https://nodejs.org/en/download) first.
+More configuration for experienced users.
+Build script loads an `.env` file at the root of the repository automatically if you just create one. It is where you put your configs in `KEY=VALUE` rows.
 
+You do not have to configure all of these options at once, or any at all for that matter.
 
-Build steps (**Requires Node 23 or later**):
-- Run `npm install`.
-- Run `node index.ts`.
-
-The script will skip build steps whose inputs have not changed since the last run.
-
-## Getting list of available targets
-
-You can get a list of all targets that you can build by running the following command:
-
-```sh
-node index.ts --help
+Example:
+```env
+CF_API_KEY='$1a$1a$AaaAa11aAaAaaAaAAaA.A.AaAAa1a1a1a1111aaA1a1AAAA1a1AAa' # Get yours at https://console.curseforge.com/#/api-keys
+JAVA_PATH=C:\path\to\java\17\bin\java.exe # Do NOT quote the path!
+LAUNCHER_JVM_ARGS='["-Xmx6G", "-XX:+UseZGC"]' # JSON array. Quote with ''!
 ```
 
-## Switching the pack mode
+## Build
+Produces modpack builds in CurseForge format.
 
-```sh
-node index.ts switch-pack-mode --pack-mode=hard
-```
+Assuming you have a [CurseForge token configured](#environment-secrets), so that mods can be downloaded:
+- The `build-client` task creates a `client.zip` in the `dist` directory.
+- The `build-server` task creates a `server.zip` in the `dist` directory.
+- The `build-all` task does both in one process.
 
-The build script can also execute the coremod's mode switcher, just like the button on the title screen.
-The mode change is repository-wide, every other build task infers this state.
+They all require `--pack-mode` to be set to either `normal`, `hard`, or `expert`, which defines the **initial** pack mode the game boots with. (CurseForge releases are made with `--pack-mode=normal`, as you could have guessed.)
 
-## Running a dedicated server
-
-```sh
-node index.ts run-dedicated-server
-```
-
-Runs the dedicated server by assembling the modpack entirely from scratch from your git checkout!
-
-Mods are downloaded from CurseForge, you can set the `CF_API_KEY` environment variable with your [Console API key](https://console.curseforge.com/#/api-keys).
+The `node index.ts download-mods` task warms up the mods cache, which can be used to debug CurseForge token issues without actually rebuilding the modpack over and over.
