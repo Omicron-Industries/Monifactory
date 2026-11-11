@@ -187,4 +187,5 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:formic_acid 16000", "gtceu:hydrogen_sulfide 9000", "minecraft:water 4000")
         .duration(12 * GTValues.SECONDS)
         .EUt(GTValues.VA[GTValues.MV])
+        .circuit(2)
 })
