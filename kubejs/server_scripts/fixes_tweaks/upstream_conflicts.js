@@ -21,4 +21,22 @@ ServerEvents.recipes((event) => {
             .EUt(GTValues.VA[GTValues.LV])
             .circuit(1);
     }
+
+    // Fix the conflict between assembler hopper and storage cover recipe.
+    // This fixes the upstream GTM issue "Recipe conflict between Hopper
+    // and Storage Cover":
+    // https://github.com/GregTechCEu/GregTech-Modern/issues/5523
+    //
+    // The fix we employ here is to simply add a circuit 1 to the iron
+    // hopper recipe. For consistency, we also change the wrought iron hopper
+    // recipe, though that recipe didn't have any conflicts to begin with.
+    for (const material of ["iron", "wrought_iron"]) {
+        event.recipes.gtceu
+            .assembler(`hopper_${material}`)
+            .itemInputs("#forge:chests/wooden", `5x gtceu:${material}_plate`)
+            .itemOutputs("minecraft:hopper")
+            .duration(800)
+            .EUt(2)
+            .circuit(1);
+    }
 });
