@@ -259,7 +259,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 4c374fba-dceb-4cfa-a60c-72e62e097912-1756056299327
-  [executable_action_instance:1a5835a0-abab-4e60-a71f-67e50f3097ec-1756056363981][action_type:openlink] = https://github.com/ThePansmith/Monifactory/blob/main/README.md#hardexpert-mode
+  [executable_action_instance:1a5835a0-abab-4e60-a71f-67e50f3097ec-1756056363981][action_type:openlink] = https://github.com/Omicron-Industries/Monifactory/blob/main/README.md#hardexpert-mode
   [executable_block:4c374fba-dceb-4cfa-a60c-72e62e097912-1756056299327][type:generic] = [executables:1a5835a0-abab-4e60-a71f-67e50f3097ec-1756056363981;]
   restartbackgroundanimations = true
   nine_slice_custom_background = false

@@ -71,13 +71,19 @@ Specifically, we are not looking for:
 ### Setting up an instance repository for use in dev ###
 If this is your first time using github, see [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) on how to create a fork and clone it to your desktop.
 
-The following guide was written with prism launcher in mind, see [here](<https://discord.com/channels/914926812948234260/1229929078547550238/1298732957204221965>) for curselauncher instructions.
-
+**PrismLauncher method**
 1. Create a new Monifactory instance from the latest release, in this example, the instance folder will be named Monifactory
 2. Open the `instances\Monifactory` folder, take everything contained within it and store it in a temporary folder (`temp`).
 3. Clone your fork of the Monifactory repository into `instances\Monifactory`, with the repository's folder being named `minecraft`. (If using the desktop app, see [here](https://github.com/user-attachments/assets/f9de6554-925d-4827-b51c-c7159e6f915f) for an image example.)
 4. Once the repo is installed,  go back to your temporary folder and move the files from the `temp` root folder and `temp\minecraft\mods` folder back into the Monifactory folder.
 5. [Make sure to switch to your preferred pack mode](./README.md#hardexpert-mode-installation).
+
+**Curseforge launcher method**
+1. Create a new Monifactory instance from the latest release, in this example, the instance folder will be named Monifactory
+2. Open your `instances` folder, take the `Monifactory` folder contained within it and store it elsewhere (`temp`).
+3. Clone the [Monifactory](<https://github.com/Omicron-Industries/Monifactory/>) repository into `instances`, with the repository's folder being named `Monifactory`.
+4. Once the repo is installed, go back to your temporary folder and move minecraftinstance.json from the `temp/Monifactory` folder and the files from the `temp/Monifactory/mods` folder back into the Main Monifactory folder.
+~~5. Install prism launcher because it has no ads and a cat button~~
 
 If you encounter a problem and there have been mod updates since the latest release, you may need to update your mods using the mod manifest file.
 1. Look for a file named `manifest.json` in your instance and make a .zip with it inside.
@@ -168,7 +174,7 @@ Most quest chapters in the "Main Progression" have a sidebar-like arrangement of
 
 ### Quest Links and dependency relationships ###
 
-All quests should have at least one dependency except the quests in the "dependencies" chapter and the first quest in Genesis.
+When starting a new world, all Main Progression quests should be locked behind one or more dependencies except the quests in the "dependencies" chapter and the first quest in Genesis.
 
 Some quests may be helpful to have in multiple chapters. Quest Links are used to accomplish this.
 1. If a quest is needed in multiple "Main Progression" chapters, then the quest should be present in the earliest of those chapters and a quest link made in all subsequent chapters.

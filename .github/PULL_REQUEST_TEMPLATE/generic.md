@@ -1,6 +1,6 @@
 ### Checklist
 - [ ] I have followed the [contributing guidelines](
-https://github.com/ThePansmith/Monifactory/blob/main/CONTRIBUTING.md)
+https://github.com/Omicron-Industries/Monifactory/blob/main/CONTRIBUTING.md)
 - [ ] I have tested that my changes work as intended and do not break any other features
 
 # What

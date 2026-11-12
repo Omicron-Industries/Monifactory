@@ -13,5 +13,17 @@
     "tag.item.gtceu.circuits.lv": "LV Circuits",
     "tag.item.gtceu.circuits.zpm": "ZPM Circuits",
     "tag.item.moni.output_bus": "Item Output Buses",
-    "tag.item.moni.output_hatch": "Fluid Output Hatches"
+    "tag.item.moni.output_hatch": "Fluid Output Hatches",
+    "tag.item.moni.muffler_hatch": "Muffler Hatches",
+    "tag.item.moni.parallel_hatch": "Parallel Control Hatches",
+    "tag.item.moni.rotor_holder": "Rotor Holders",
+    "tag.item.moni.substation_input_hatch": "Substation Input Hatches",
+    "tag.item.moni.maintenance_hatch": "Maintenance Hatches",
+    "tag.item.moni.energy_hatch": "Energy Hatches",
+    "tag.item.moni.substation_output_hatch": "Substation Output Hatches",
+    "tag.item.gtceu.circuits/universal": "Universal Circuits",
+    "tag.item.moni.laser_target_hatch": "Laser Target Hatches",
+    "tag.item.moni.laser_source_hatch": "Laser Source Hatches",
+    "tag.item.moni.dynamo_hatch": "Dynamo Hatches",
+    "tag.item.moni.heating_coil": "EBF Coils"
 }

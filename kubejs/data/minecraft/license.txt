@@ -8,4 +8,4 @@ Biome jsons and other files owned by Mojang, despite being modified by WWOO, fal
 https://www.minecraft.net/en-us/usage-guidelines
 
 William Wythers is aware of this derivative work and condones it:
-https://github.com/ThePansmith/Monifactory/pull/1406
+https://github.com/Omicron-Industries/Monifactory/pull/1406

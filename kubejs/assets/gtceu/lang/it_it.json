@@ -319,8 +319,6 @@
     "material.gtceu.dichloroacetate": "Dicloroacetato",
     "material.gtceu.trichloroacetate": "Tricloroacetato",
     "material.gtceu.cyanoacetic_acid": "Acido Cianoacetico",
-    "material.gtceu.ethyl_cyanoacetate": "Cianoacetato di Etile",
-    "material.gtceu.uncracked_ethyl_cyanoacrylate": "Etil-cianoacrilato non Crepato",
     "material.gtceu.ethyl_cyanoacrylate": "Etil-cianoacrilato",
     "material.gtceu.polyethyl_cyanoacrylate": "Etil-cianoacrilato Polietile",
     "material.gtceu.dimethyl_sulfoxide": "Dimetilsolfossido",
@@ -590,5 +588,7 @@
     "material.gtceu.pyrope_slurry": "Pyrope Slurry",
     "material.gtceu.emerald_slurry": "Emerald Slurry",
     "material.gtceu.anorthite_slurry": "Anorthite Slurry",
-    "material.gtceu.titanite_slurry": "Titanite Slurry"
+    "material.gtceu.titanite_slurry": "Titanite Slurry",
+    "material.gtceu.uncracked_ethyl_cyanoacrylate": "Uncracked Ethyl Cyanoacrylate",
+    "material.gtceu.ethyl_cyanoacetate": "Ethyl Cyanoacetate"
 }

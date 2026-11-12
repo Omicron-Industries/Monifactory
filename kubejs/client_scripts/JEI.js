@@ -27,12 +27,6 @@ JEIEvents.hideItems(event => {
         event.hide("thermal:flux_drill")
     }
 
-    // Simple Compacting Drawers (TEMPORARY UNTIL BUG FIXED)
-    if (doCompacting) {
-        event.hide("functionalstorage:simple_compacting_drawer")
-        event.hide("functionalstorage:framed_simple_compacting_drawer")
-    }
-
     // Hide GT ores to prevent clutter
     GTMaterialRegistry.getRegisteredMaterials().forEach(id => {
         event.hide([

@@ -83,6 +83,23 @@ ServerEvents.recipes(event => {
         .duration(200)
         .EUt(7)
 
+    // Coal tar from coke & coal dusts (with fly ash)
+    event.recipes.gtceu.pyrolyse_oven("coke_dust_to_coal_tar")
+        .circuit(8)
+        .itemInputs("8x gtceu:coke_dust")
+        .chancedOutput("gtceu:coal_fly_ash_dust", 7500, 0)
+        .outputFluids("gtceu:coal_tar 4000")
+        .duration(320)
+        .EUt(96);
+
+    event.recipes.gtceu.pyrolyse_oven("coal_dust_to_coal_tar")
+        .circuit(8)
+        .itemInputs("12x gtceu:coal_dust")
+        .chancedOutput("gtceu:coal_fly_ash_dust", 5000, 0)
+        .outputFluids("gtceu:coal_tar 3000")
+        .duration(320)
+        .EUt(96);
+
     // Phenol direct from Coal
     event.recipes.gtceu.pyrolyse_oven("coal_to_phenol")
         .itemInputs("16x minecraft:coal")

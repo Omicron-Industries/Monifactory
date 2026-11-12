@@ -71,11 +71,11 @@ By default, Monifactory only supports the mods included with it, and has *option
 **Q. How do I download Monifactory?**
 
 Stable releases of Monifactory can be downloaded from CurseForge using any launcher of your choice (PrismLauncher, CurseForge, etc.)
-Bleeding edge builds can be found [here](https://github.com/ThePansmith/Monifactory/releases).
+Bleeding edge builds can be found [here](https://github.com/Omicron-Industries/Monifactory/releases).
 
 **Q. How do I play Hard Mode/Expert Mode?**
 
-[Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#hardexpert-mode-installation)
+[Instructions can be found here](https://github.com/Omicron-Industries/Monifactory?tab=readme-ov-file#hardexpert-mode-installation)
 
 **Q. How do I update the modpack?**
 *Make a backup first.*
@@ -98,11 +98,11 @@ Instead:
 
 **Q. How do I add optional compat mods?**
 
-[Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#Addon-Mods-AKA-Optional-Compats)
+[Instructions can be found here](https://github.com/Omicron-Industries/Monifactory?tab=readme-ov-file#Addon-Mods-AKA-Optional-Compats)
 
 **Q. How do I setup a dedicated multiplayer server?**
 
-[Instructions can be found here](https://github.com/ThePansmith/Monifactory?tab=readme-ov-file#dedicated-server-installation)
+[Instructions can be found here](https://github.com/Omicron-Industries/Monifactory?tab=readme-ov-file#dedicated-server-installation)
 
 **Q. How do I get old Gregtech textures?**
 
@@ -163,7 +163,7 @@ Essential is not officially supported, and various unsupported bugs and crashes 
 
 **Q. Where do I report an issue?**
 
-Check the [Known Issues document](KNOWN-ISSUES.md) first. If it's not there, report it to the [issue tracker](https://github.com/ThePansmith/Monifactory/issues), or get help on the [Discord](https://discord.gg/N8b2JEfAqb) in the #moni-support channel
+Check the [Known Issues document](KNOWN-ISSUES.md) first. If it's not there, report it to the [issue tracker](https://github.com/Omicron-Industries/Monifactory/issues), or get help on the [Discord](https://discord.gg/4jch9Rs2Cq) in the #moni-help channel
 
 <hr>
 

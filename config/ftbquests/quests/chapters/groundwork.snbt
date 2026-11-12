@@ -1308,6 +1308,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "62F12BA3B6FA408B"
 					item: {
 						Count: 1
@@ -1320,6 +1321,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2C58DEED8CC0A1A1"
 					item: {
 						Count: 1
@@ -1332,6 +1334,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1694E5B8C2F84FCB"
 					item: {
 						Count: 1
@@ -1344,6 +1347,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "40A6244AC2D781F8"
 					item: {
 						Count: 1
@@ -1356,6 +1360,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "5069AB6458137945"
 					item: {
 						Count: 1
@@ -1459,6 +1464,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "444A645B6B1BC86C"
 					item: {
 						Count: 1
@@ -1471,6 +1477,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "7506B76C757A2CB2"
 					item: {
 						Count: 1
@@ -1484,6 +1491,7 @@
 				}
 				{
 					count: 4L
+					disable_toast: true
 					id: "5864B152107FCE6C"
 					item: {
 						Count: 1
@@ -1496,6 +1504,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "601F027D7E5D187D"
 					item: {
 						Count: 1
@@ -1508,6 +1517,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6DDA8E557481D63E"
 					item: {
 						Count: 1
@@ -1878,6 +1888,7 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["1229234A71CE0A99"]
 			description: [
 				"{moni.quest.0E010F5348FC89BF.description1}"
 				""

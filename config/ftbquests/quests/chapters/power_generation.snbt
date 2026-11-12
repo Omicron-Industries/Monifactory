@@ -112,6 +112,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "301CF2A3BA001822"
 					item: {
 						Count: 1
@@ -124,6 +125,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "63F4FAC8E029A009"
 					item: {
 						Count: 1
@@ -136,6 +138,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "775AD2C090731966"
 					item: {
 						Count: 1
@@ -148,6 +151,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "004DD7D2B9EC4FC8"
 					item: {
 						Count: 1
@@ -160,6 +164,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1F08B37942BEA3E9"
 					item: {
 						Count: 1
@@ -244,6 +249,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "6DCB7529F995D084"
 					item: {
 						Count: 1
@@ -256,6 +262,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "1BB40E614CD157CD"
 					item: {
 						Count: 1
@@ -269,6 +276,7 @@
 				}
 				{
 					count: 2L
+					disable_toast: true
 					id: "0B273647ED198545"
 					item: {
 						Count: 1
@@ -281,6 +289,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "7CC906C9ACF550A0"
 					item: {
 						Count: 1
@@ -342,6 +351,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "68518BE60919B608"
 					item: {
 						Count: 1
@@ -354,6 +364,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "7DAC029E717D9714"
 					item: {
 						Count: 1
@@ -367,6 +378,7 @@
 				}
 				{
 					count: 2L
+					disable_toast: true
 					id: "245ACBD325101089"
 					item: {
 						Count: 1
@@ -379,6 +391,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "020C7B58AB5D77C5"
 					item: {
 						Count: 1
@@ -431,6 +444,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4AA4FFC8D6999D40"
 					item: {
 						Count: 1
@@ -443,6 +457,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "254E48F08E28E45B"
 					item: {
 						Count: 1
@@ -455,6 +470,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2664982E2F0E4FE1"
 					item: {
 						Count: 1
@@ -467,6 +483,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4B102A02B05A2310"
 					item: {
 						Count: 1
@@ -479,6 +496,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4B92FCE6B3CBCAE7"
 					item: {
 						Count: 1
@@ -692,6 +710,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2DEBD8A6A8BC0170"
 					item: {
 						Count: 1
@@ -704,6 +723,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "596B8FB04A7A1632"
 					item: {
 						Count: 1
@@ -716,6 +736,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "000856171A15B268"
 					item: {
 						Count: 1
@@ -728,6 +749,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "123613F91F5DF726"
 					item: {
 						Count: 1
@@ -740,6 +762,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "2B8B86BDA4967B87"
 					item: {
 						Count: 1
@@ -960,6 +983,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4FE47BEFAE4E9E6C"
 					item: {
 						Count: 1
@@ -972,6 +996,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "721FF89E84E9906E"
 					item: {
 						Count: 1
@@ -984,6 +1009,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "445CE7EB4B5AE481"
 					item: {
 						Count: 1
@@ -1118,6 +1144,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "41D0FA4040EC3D96"
 					item: {
 						Count: 1
@@ -1130,6 +1157,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "4C9AA0B7472B7A34"
 					item: {
 						Count: 1
@@ -1235,6 +1263,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "18055674BE83C339"
 					item: {
 						Count: 1
@@ -1247,6 +1276,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "78CF01BB53CA4768"
 					item: {
 						Count: 1
@@ -1324,6 +1354,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "403A7248D61807FB"
 					item: {
 						Count: 1
@@ -1337,6 +1368,7 @@
 				}
 				{
 					count: 2L
+					disable_toast: true
 					id: "2376BF2FB1E854F0"
 					item: {
 						Count: 1
@@ -1349,6 +1381,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "69008CFFD19026C7"
 					item: {
 						Count: 1

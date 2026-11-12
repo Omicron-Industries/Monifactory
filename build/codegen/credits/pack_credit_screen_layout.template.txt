@@ -13,7 +13,7 @@ layout-meta {
 }
 
 menu_background {
-  image_path = [source:web]https://raw.githubusercontent.com/ThePansmith/MonifactoryAssets/refs/heads/main/menubg/monibgoverrideblur.png
+  image_path = [source:web]https://raw.githubusercontent.com/Omicron-Industries/MonifactoryAssets/refs/heads/main/menubg/monibgoverrideblur.png
   slide = false
   repeat_texture = false
   fallback_path = [source:local]/config/fancymenu/assets/monibgblur.png

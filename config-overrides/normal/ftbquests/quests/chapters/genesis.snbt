@@ -49,7 +49,7 @@
 			description: [
 				"{moni.quest.2A511DB40C66CF35.description1}"
 				""
-				"[\"\",{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/thepansmith/monifactory\"}},{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description3\"}]"
+				"[\"\",{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"color\":\"blue\",\"translate\":\"moni.quest.2A511DB40C66CF35.rich_description3\"}]"
 				""
 				"{moni.quest.2A511DB40C66CF35.description3}"
 			]
@@ -319,7 +319,7 @@
 				"{moni.quest.2E8BFA2E719B1C47.description5}"
 			]
 			icon: "gtceu:wrought_iron_ingot"
-			id: "4D1D437CC1EA334D"
+			id: "2E8BFA2E719B1C47"
 			rewards: [{
 				id: "318894ADCA9CF9DB"
 				item: {
@@ -354,7 +354,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["4D1D437CC1EA334D"]
+			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"{moni.quest.61E5D7EEE745C6FB.description1}"
 				""
@@ -481,7 +481,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["4D1D437CC1EA334D"]
+			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"[\"\",{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description1\"},{\"color\":\"yellow\",\"underlined\":true,\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"25FEB9E61EEC1A96\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description.hover_text2\"}}},{\"translate\":\"moni.quest.0C173EF148EFEF8E.rich_description3\"}]"
 				""
@@ -500,7 +500,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["4D1D437CC1EA334D"]
+			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"{moni.quest.64AAF0CD958D836A.description1}"
 				""
@@ -533,7 +533,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["4D1D437CC1EA334D"]
+			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"{moni.quest.58566C7BF4C22D86.description1}"
 				""
@@ -564,7 +564,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["4D1D437CC1EA334D"]
+			dependencies: ["2E8BFA2E719B1C47"]
 			description: [
 				"{moni.quest.1B86EF5A24286787.description1}"
 				""
@@ -595,7 +595,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["4D1D437CC1EA334D"]
+			dependencies: ["2E8BFA2E719B1C47"]
 			description: ["{moni.quest.5D97206C8135872B.description1}"]
 			id: "5D97206C8135872B"
 			tasks: [{
@@ -607,7 +607,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["4D1D437CC1EA334D"]
+			dependencies: ["2E8BFA2E719B1C47"]
 			description: ["{moni.quest.7865CDE5CFE005DC.description1}"]
 			id: "7865CDE5CFE005DC"
 			rewards: [{
@@ -1896,9 +1896,9 @@
 				""
 				"{moni.quest.70026930847E8EC0.description3}"
 				"{@pagebreak}"
-				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/ThePansmith\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description3\"}]"
+				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description1\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description2\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description3\"}]"
 				""
-				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description4\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/ThePansmith/Monifactory\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description6\"}]"
+				"[\"\",{\"translate\":\"moni.quest.70026930847E8EC0.rich_description4\"},{\"color\":\"blue\",\"underlined\":true,\"translate\":\"moni.quest.70026930847E8EC0.rich_description5\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Omicron-Industries/Monifactory\"}},{\"translate\":\"moni.quest.70026930847E8EC0.rich_description6\"}]"
 			]
 			disable_toast: true
 			icon: "minecraft:writable_book"

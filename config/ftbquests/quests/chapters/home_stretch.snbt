@@ -346,6 +346,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "597971EBEA5EEED3"
 					item: {
 						Count: 1
@@ -358,6 +359,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "57970C5F2A8D3AA0"
 					item: {
 						Count: 1
@@ -370,6 +372,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "3959605B34EE33AF"
 					item: {
 						Count: 1
@@ -382,6 +385,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "7CA49671A871458E"
 					item: {
 						Count: 1
@@ -480,6 +484,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "0437D37AB4B199BC"
 					item: {
 						Count: 1
@@ -492,6 +497,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "3368B4295FE2E6EB"
 					item: {
 						Count: 1
@@ -504,6 +510,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "61809B879181AE14"
 					item: {
 						Count: 1
@@ -516,6 +523,7 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "45A9D9A28CDD88A4"
 					item: {
 						Count: 1
