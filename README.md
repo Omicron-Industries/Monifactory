@@ -95,6 +95,8 @@ To spice up your Monifactory experience, you can add any of the following mods t
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+The AGENTS.md file is included specifically as a method of harm-reduction to make sure people see the AI policy. Please do not use AI if you can help it.
+
 ## Frequently Asked Questions
 
 See [FAQ.md](FAQ.md)
