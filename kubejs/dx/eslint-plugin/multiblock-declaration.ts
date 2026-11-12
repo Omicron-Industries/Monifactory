@@ -1,16 +1,14 @@
-// @ts-check
 /**
  * An ESLint rule that ensures all multiblock pattern builders use
  * `@` char for the controller, ` ` (space) for air and `#` for the 'any' predicate.
  */
 
-import { ESLintUtils } from "@typescript-eslint/utils"
+import { ESLintUtils, type TSESTree } from "@typescript-eslint/utils"
 
 const builderFactoryArgs = "definition"
 const builderName = "FactoryBlockPattern"
 
-/** @type {Record<string, string>} */
-const rulePredicateCode = {
+const rulePredicateCode: Record<string, string> = {
     "@": `Predicates.controller(Predicates.blocks(${builderFactoryArgs}.get()))`,
     "#": "Predicates.any()",
     " ": "Predicates.air()",
@@ -18,9 +16,8 @@ const rulePredicateCode = {
 
 /**
  * Finds the root expression in the call chain
- * @param {import('@typescript-eslint/utils').TSESTree.CallExpression} rootCall
  */
-export function isInMultiblockBuilderCallChain(rootCall) {
+export function isInMultiblockBuilderCallChain(rootCall: TSESTree.CallExpression) {
     let rootCallee
     for(;;) {
         if(rootCall.callee.type === "MemberExpression")
@@ -86,7 +83,7 @@ export default ESLintUtils.RuleCreator.withoutDocs({
                 const predicateCodeShouldBe = rulePredicateCode[char.value]
                 if(predicateCodeShouldBe && predicateCodeActual !== predicateCodeShouldBe)
                     context.report({
-                        // @ts-ignore It's not smart enough
+                        // @ts-expect-error It's not smart enough
                         messageId: "predicate-for-" + char.value,
                         node: predicate,
                         fix: fixer => [
@@ -107,8 +104,7 @@ export default ESLintUtils.RuleCreator.withoutDocs({
                         node: node
                     })
 
-                /** @type {[number, number]} */
-                const paramsRange = [
+                const paramsRange: [number, number] = [
                     node.params[0].range[0],
                     node.params.at(-1).range[1]
                 ]

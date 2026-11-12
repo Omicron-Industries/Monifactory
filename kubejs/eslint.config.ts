@@ -3,12 +3,27 @@
  */
 
 import js from "@eslint/js";
-import stylistic from "@stylistic/eslint-plugin-js";
-import { MoniLabs } from "./dx/eslint-plugin/custom-plugin.mjs";
+import stylistic from "@stylistic/eslint-plugin";
+import tseslint, { type ConfigArray } from "typescript-eslint";
+import { MoniLabs } from "./dx/eslint-plugin/custom-plugin.ts";
 
-/** @type {import('eslint').Linter.Config[]} */
 export default [
+    {
+        // Code-gen.
+        ignores: [
+            "*_scripts/bundle.js",
+            ".tsbuild/",
+        ],
+    },
     js.configs.recommended,
+    {
+        ...tseslint.configs.base,
+        files: [
+            "*.{m,c,}ts",
+            "src/**/*.{m,c,}ts",
+            "dx/**/*.{m,c,}ts"
+        ],
+    },
     {
         plugins: {
             "@stylistic/js": stylistic,
@@ -20,7 +35,7 @@ export default [
             "no-var": "error",
             "no-useless-escape": "warn",
             "space-infix-ops": ["error", { "int32Hint": true }],
-            "@stylistic/js/indent": ["error", 4],
+            "@stylistic/js/indent": ["error", 4, { SwitchCase: 0 }],
             "@stylistic/js/spaced-comment": "error",
             "@stylistic/js/linebreak-style": ["error", "unix"],
             "@stylistic/js/no-trailing-spaces": "error",
@@ -32,4 +47,4 @@ export default [
         },
     },
     MoniLabs,
-];
+] satisfies ConfigArray;
