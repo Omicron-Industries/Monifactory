@@ -61,7 +61,7 @@
 	"Iron Rod" = true
 	"Metal Buttons" = true
 	"Obsidian Plate" = true
-	"Pistons Move Tile Entities" = true
+	"Pistons Move Tile Entities" = false
 	"Redstone Randomizer" = true
 
 	[automation.crafter]

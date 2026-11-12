@@ -18,7 +18,7 @@ if (Platform.isLoaded("createdeco")) {
                 .itemInputs(`3x ${sheetsInput}`)
                 .itemOutputs(`2x createdeco:${output}`)
                 .duration(56)
-                .EUt(16)
+                .EUt(GTValues.VHA[GTValues.LV])
 
             event.recipes.gtceu.bender(`${output}_sheet`)
                 .itemInputs(sheetsInput)
@@ -42,13 +42,13 @@ if (Platform.isLoaded("createdeco")) {
             .itemInputs("create:industrial_iron_block")
             .itemOutputs("9x createdeco:industrial_iron_sheet")
             .duration(448)
-            .EUt(30)
+            .EUt(GTValues.VA[GTValues.LV])
 
         event.recipes.gtceu.cutter("andesite_sheet")
             .itemInputs("create:andesite_alloy_block")
             .itemOutputs("9x createdeco:andesite_sheet")
             .duration(448)
-            .EUt(30)
+            .EUt(GTValues.VA[GTValues.LV])
 
         function decor(sheet, ingot, bars, decorOutput, block) {
             // Windows
@@ -220,7 +220,7 @@ if (Platform.isLoaded("createdeco")) {
                 .itemInputs("minecraft:torch")
                 .itemOutputs(`createdeco:yellow_${decorOutput}_lamp`)
                 .duration(300)
-                .EUt(7)
+                .EUt(GTValues.VA[GTValues.ULV])
             event.shaped(`createdeco:red_${decorOutput}_lamp`, [
                 " I ",
                 "WLD",
@@ -238,7 +238,7 @@ if (Platform.isLoaded("createdeco")) {
                 .itemInputs("minecraft:redstone_torch")
                 .itemOutputs(`createdeco:red_${decorOutput}_lamp`)
                 .duration(300)
-                .EUt(7)
+                .EUt(GTValues.VA[GTValues.ULV])
             event.shaped(`createdeco:green_${decorOutput}_lamp`, [
                 " I ",
                 "WLD",
@@ -256,7 +256,7 @@ if (Platform.isLoaded("createdeco")) {
                 .itemInputs("minecraft:glow_berries")
                 .itemOutputs(`createdeco:green_${decorOutput}_lamp`)
                 .duration(300)
-                .EUt(7)
+                .EUt(GTValues.VA[GTValues.ULV])
             event.shaped(`createdeco:blue_${decorOutput}_lamp`, [
                 " I ",
                 "WLD",
@@ -274,7 +274,7 @@ if (Platform.isLoaded("createdeco")) {
                 .itemInputs("minecraft:soul_torch")
                 .itemOutputs(`createdeco:blue_${decorOutput}_lamp`)
                 .duration(300)
-                .EUt(7)
+                .EUt(GTValues.VA[GTValues.ULV])
             // Sheetmetal
             event.remove({ output: `createdeco:${decorOutput}_sheet_metal` })
             event.shaped(`4x createdeco:${decorOutput}_sheet_metal`, [
@@ -323,14 +323,14 @@ if (Platform.isLoaded("createdeco")) {
                 .itemOutputs(`createdeco:${decorOutput}_trapdoor`)
                 .circuit(4)
                 .duration(100)
-                .EUt(16)
+                .EUt(GTValues.VHA[GTValues.LV])
             // Doors
             event.recipes.gtceu.assembler(`createdeco:${decorOutput}_door`)
                 .itemInputs(`6x ${sheet}`)
                 .itemOutputs(`createdeco:${decorOutput}_door`)
                 .circuit(4)
                 .duration(100)
-                .EUt(16)
+                .EUt(GTValues.VHA[GTValues.LV])
         }
 
         ironlessDecor("createdeco:andesite_sheet", "create:andesite_alloy", "andesite")

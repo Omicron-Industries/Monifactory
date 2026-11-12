@@ -15,6 +15,8 @@ export * from "./codegen/target-all.ts"
 
 import { cacheFolderByManifestFileEntry, DownloadModsTarget, modInfoPath } from "./deps/mods.ts"
 export * from "./deps/mods.ts"
+export * from "./deps/pack_mode_switcher.ts"
+export * from "./run/server.ts"
 
 import type { GetModInfo } from "./lib/curseforge.ts"
 import { readManifest } from "./lib/manifest.ts"
@@ -147,7 +149,7 @@ export const BuildServerTarget = getZipModPackTarget("server", PackSwitchTarget 
         name: "group-server-files",
         dependsOn: [CodegenAllTarget, BuildModlistTarget, DownloadModsTarget, PackSwitchTarget],
         inputs: [
-            ...includeList,
+            ...includeList.map(v => `${v}/**`),
             "dist/modlist.html"
         ],
         outputs: () => ([
@@ -156,6 +158,7 @@ export const BuildServerTarget = getZipModPackTarget("server", PackSwitchTarget 
             "dist/server/mods"
         ]),
         executes: () => {
+            Juke.rm("dist/server", { recursive: true })
             fs.mkdirSync("dist/server", { recursive: true })
             for (const folders of includeList) {
                 fs.cpSync(folders, `dist/server/${folders}`, { recursive: true })

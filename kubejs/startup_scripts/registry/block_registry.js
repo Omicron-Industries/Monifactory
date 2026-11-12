@@ -135,41 +135,6 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
 
-
-    // Dense Ores
-    const ores = [
-        "redstone",
-        "diamond",
-        "emerald",
-        "gold",
-        "lapis",
-        "iron",
-        "coal",
-        "copper",
-        "nether_quartz",
-        "oilsands"
-    ]
-
-    ores.forEach(ore => {
-        event.create(`dense_${ore}_ore`)
-            .textureAll(`kubejs:block/deprecated/dense_${ore}_ore`)
-            .soundType("stone")
-            .tagBlock("mineable/pickaxe")
-            .tagBoth("forge:ores/dense")
-            .tagBoth(`forge:ores/dense/${ore}`)
-            .requiresTool(true);
-    });
-
-    event.create("dense_magma_block")
-        .textureAll("kubejs:block/deprecated/dense_magma_block")
-        .soundType("stone")
-        .tagBlock("mineable/pickaxe")
-        .tagBoth("forge:ores/dense")
-        .tagBoth("forge:ores/dense/magma")
-        .requiresTool(true)
-        .lightLevel(1.0);
-
-
     // Machine Casings
     const casings = [
         "dark_soularium",
@@ -196,35 +161,12 @@ StartupEvents.registry("block", event => {
         .tagBlock("forge:mineable/wrench")
         .requiresTool(true);
 
-    // Misc
-    event.create("starry_diamond_block")
-        .displayName("Starry Diamatine Block")
-        .soundType("metal")
-        .resistance(6).hardness(5)
-        .tagBlock("mineable/pickaxe").requiresTool(true)
-        .textureAll("kubejs:block/deprecated/starry_diamond_block")
-
     event.create("dust", "falling")
         .textureAll("kubejs:block/dust")
         .soundType("sand")
         .resistance(0.4).hardness(0.4)
         .tag("mineable/shovel").displayName("Dust Block")
         .property(BlockProperties.FALLING);
-
-    event.create("excitationcoil")
-        .displayName("Excitation Coil")
-        .soundType("metal")
-        .renderType("solid")
-        .notSolid()
-        .fullBlock(false)
-        .noValidSpawns(true)
-        .property(BlockProperties.FACING)
-        .property(BlockProperties.WATERLOGGED)
-        .placementState((/** @type {Internal.BlockStateModifyPlacementCallbackJS} */ context) => context.set(BlockProperties.FACING, context.clickedFace))
-        .tag("mineable/pickaxe")
-        .tagBlock("forge:mineable/wrench")
-        .requiresTool(true)
-        .lightLevel(0.5);
 
     event.create("lyso_ce_glass")
         .displayName("Cerium-doped Lutetium Yttrium Oxyorthosilicate Glass")

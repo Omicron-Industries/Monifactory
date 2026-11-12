@@ -268,13 +268,13 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:fluid_cell", "4x gtceu:iron_plate")
         .itemOutputs("ad_astra:gas_tank")
         .duration(100)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
     event.recipes.gtceu.assembler("ad_astra/large_gas_tank")
         .itemInputs("3x gtceu:fluid_cell", "12x gtceu:steel_plate")
         .itemOutputs("ad_astra:large_gas_tank")
         .duration(100)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
 
 
@@ -284,7 +284,7 @@ ServerEvents.recipes(event => {
         .itemInputs("9x gtceu:dense_steel_plate", "27x gtceu:concrete_dust")
         .itemOutputs("ad_astra:launch_pad")
         .duration(300)
-        .EUt(30)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
 
     // Oxygen Loading
@@ -346,7 +346,7 @@ ServerEvents.recipes(event => {
         .itemInputs(["8x gtceu:steel_plate", "4x ad_astra:wheel", "2x gtceu:lv_electric_motor", "ad_astra:radio", "gtceu:lv_sensor"])
         .itemOutputs("ad_astra:tier_1_rover")
         .duration(600)
-        .EUt(32)
+        .EUt(GTValues.VA[GTValues.LV])
         .addMaterialInfo(true)
 
     const decormaterials = ["iron", "etrium", "steel", "desh", "ostrum", "calorite"]
@@ -475,16 +475,26 @@ ServerEvents.tags("fluid", event => {
 })
 
 ServerEvents.tags("item", event => {
-    const quarkTechArmor = [
+    const spaceImmuneEquipment = [
         "gtceu:quarktech_helmet",
         "gtceu:quarktech_chestplate",
         "gtceu:advanced_quarktech_chestplate",
         "gtceu:quarktech_leggings",
         "gtceu:quarktech_boots"
     ]
-    event.add("ad_astra:space_resistant_armor", quarkTechArmor)
-    event.add("ad_astra:freeze_resistant_armor", quarkTechArmor)
-    event.add("ad_astra:heat_resistant_armor", quarkTechArmor)
+    // If Advanced AE is found, add Quantum Armour to the list.
+    if (Platform.isLoaded("advanced_ae")) {
+        spaceImmuneEquipment.push(
+            "advanced_ae:quantum_helmet",
+            "advanced_ae:quantum_chestplate",
+            "advanced_ae:quantum_leggings",
+            "advanced_ae:quantum_boots"
+        )
+    }
+
+    event.add("ad_astra:space_resistant_armor", spaceImmuneEquipment)
+    event.add("ad_astra:freeze_resistant_armor", spaceImmuneEquipment)
+    event.add("ad_astra:heat_resistant_armor", spaceImmuneEquipment)
 
     // Make Ad Astra doors act as cleanroom doors
     event.add("gtceu:cleanroom_doors", /^ad_astra:[\w_]+_door/)

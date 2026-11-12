@@ -13,9 +13,6 @@
     "item.thermal.rf_coil_xfer_augment_advanced": "Advanced High-Flux RF Coil",
     "item.thermal.fluid_tank_augment_advanced": "Advanced Expanded Tank Construction",
 
-    "info.thermal.dynamo_stirling.0": "Generates Redstone Flux using solid fuels.",
-    "info.thermal.dynamo_stirling.1": "Most things that work in a Furnace work here too.",
-
     "info.thermal.machine_bottler.0": "Fills containers with fluids.",
     "info.thermal.machine_bottler.1": "This is required to consume certain beverages.",
     "info.thermal.machine_bottler.2": "Refreshing!",

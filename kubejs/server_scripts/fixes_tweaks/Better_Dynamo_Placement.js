@@ -1,4 +1,5 @@
 /** Shamelessly stolen from A&B :) */
+/** Let's NOT delete this in case we need it for something else in the future but it should be commented out when we enter 0.15 cycle.*/
 
 const MetaMachine = Java.loadClass("com.gregtechceu.gtceu.api.machine.MetaMachine")
 

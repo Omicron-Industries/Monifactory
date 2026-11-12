@@ -44,7 +44,7 @@
     "emi_info.monilabs.integrity_drained": "Integrity drained: %.2f",
     "emi_info.monilabs.integrity_healed": "Integrity healed: %.2f",
     "emi_info.monilabs.new_microverse": "Новый тип: %s",
-    "emi_info.monilabs.projector_info": "Уровень проекта: %d",
+    "emi_info.monilabs.projector_info": "Уровень проекта: %d (%s)",
     "emi_info.monilabs.required_microverse": "Требуемый тип: %s",
     "gtceu.antimatter_manipulator": "Манипуляция Антиматерией",
     "gtceu.chromatic_processing": "Хроматическая обработка",

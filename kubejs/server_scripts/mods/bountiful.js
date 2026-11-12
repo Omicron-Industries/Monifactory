@@ -69,14 +69,13 @@ ServerEvents.recipes(event => {
         event.shaped("kubejs:ender_widget", [
             "APB",
             "PGP",
-            "CPD"
+            "PCP"
         ], {
             P: "gtceu:vibrant_alloy_plate",
             G: "gtceu:electrical_steel_gear",
             A: "laserio:card_item",
             B: "laserio:card_fluid",
-            C: "laserio:card_energy",
-            D: "laserio:card_redstone"
+            C: "laserio:card_redstone"
         }).id("kubejs:bountiful/ender_widget")
     }
 })

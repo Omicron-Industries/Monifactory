@@ -1,5 +1,0 @@
-[{
-  "type": "aluminum",
-  "heat": 175,
-  "placement_rule": ["quartz_heat_sink", "lapis_heat_sink"]
-}]

@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.large_chemical_reactor("sculk_catalyst_boosted")
         .notConsumable("minecraft:sculk_catalyst")
         .itemInputs("4x #chipped:deepslate", "3x minecraft:bone_block")
-        .inputFluids("gtceu:sculk 576", "enderio:xp_juice 2000", "gtceu:berkelium 36")
+        .inputFluids("gtceu:sculk 576", "enderio:xp_juice 2000", "gtceu:curium 36")
         .itemOutputs("4x minecraft:sculk_catalyst")
         .duration(1000)
         .EUt(GTValues.VA[GTValues.EV])

@@ -1,5 +1,0 @@
-[{
-  "type": "gold",
-  "heat": 120,
-  "placement_rule": ["water_heat_sink", "redstone_heat_sink"]
-}]

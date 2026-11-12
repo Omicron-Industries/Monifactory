@@ -5,16 +5,6 @@
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
-
-    // Primal Mana is shoved here at the start to make absolute sure nothing that uses it is declared before it
-
-    event.create("mana")
-        .liquid(new GTFluidBuilder().state(GTFluidState.LIQUID).customStill())
-        .element(GTElements.get("mana"))
-        .iconSet("mana")
-        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
-
-
     // Hyperdegenerate Matter *should* be in the naqfuel file, but it's used in HDD
 
     event.create("hyperdegenerate_matter")
@@ -30,8 +20,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .element(GTElements.get("cryolobus"))
         .color(0x035155).secondaryColor(0x04203d).iconSet("dull")
         .blastTemp(6800, "higher")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME)
-        .cableProperties(GTValues.V[GTValues.UV], 4, 0, true);
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR)
+        .rotorStats(280, 180, 5.0, 5120)
 
     event.create("cryococcus")
         .ingot().fluid()
@@ -39,18 +29,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x009295).secondaryColor(0x07303b).iconSet("dull")
         .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME)
         .cableProperties(GTValues.V[GTValues.UHV], 4, 6, false);
-
-    event.create("sculk_superconductor")
-        .element(GTElements.get("sculk_superconductor"))
-        .color(0xffffff)
-        .iconSet("crystal")
-        .flags(GTMaterialFlags.NO_SMELTING, GTMaterialFlags.NO_SMASHING, GTMaterialFlags.NO_WORKING, GTMaterialFlags.DISABLE_DECOMPOSITION)
-        .cableProperties(GTValues.V[GTValues.UHV], 8, 0, true)
-        .ignoredTagPrefixes([
-            TagPrefix.dust,
-            TagPrefix.dustSmall,
-            TagPrefix.dustTiny,
-        ])
 
 
     // Prismatic Crucible Materials
@@ -91,19 +69,21 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .fluidPipeProperties(12500, 800, true, false, false, true)
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_ROTOR, GTMaterialFlags.NO_UNIFICATION)
         .ignoredTagPrefixes([TagPrefix.dust, TagPrefix.dustSmall, TagPrefix.dustTiny, TagPrefix.nugget, TagPrefix.ring, TagPrefix.bolt, TagPrefix.screw])
+        .rotorStats(300, 400, 10.0, 655360)
 
     event.create("ardite")
         .ingot().fluid()
         .color(0xad2f05).secondaryColor(0x823c08)
         .iconSet("dull")
         .blastTemp(9200, "highest", GTValues.VHA[GTValues.UV], 1000)
-        .flags(GTMaterialFlags.GENERATE_PLATE)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROTOR)
+        .rotorStats(280, 280, 10.0, 655360)
 
     event.create("manyullyn")
         .ingot().fluid()
         .color(0xc05cff).secondaryColor(0xff00e0).iconSet("magic")
         .blastTemp(9200, "highest", GTValues.VA[GTValues.UV], 1200)
-        .components("4x ardite", "4x cobalt", "mana")
+        .components("4x ardite", "4x cobalt", "monilabs:mana")
         .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_SMALL_GEAR)
 
 

@@ -68,6 +68,8 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
       - name: Pack Modpack
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
         run: |
           cd build
           npm install

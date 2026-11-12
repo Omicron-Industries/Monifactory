@@ -23,15 +23,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: /^sophisticatedstorage:.*copper.*tier_upgrade$/ })
     event.remove({ input: /^sophisticatedstorage:.*copper.*tier_upgrade$/ })
 
-    // Remove iron (bronze) tier storage in NM
-    if (!doSteamAge) {
-        event.remove({ output: "sophisticatedstorage:iron_barrel" })
-        event.remove({ output: "sophisticatedstorage:iron_chest" })
-        event.remove({ output: "sophisticatedstorage:iron_shulker_box" })
-        event.remove({ output: /^sophisticatedstorage:.*iron.*tier_upgrade$/ })
-        event.remove({ input: /^sophisticatedstorage:.*iron.*tier_upgrade$/ })
-    }
-
     // Standard backpack recipe if you don't want to loot it
     event.shaped("sophisticatedbackpacks:backpack", [
         " N ",
@@ -102,11 +93,6 @@ ServerEvents.recipes(event => {
         ["", "chest"],
         ["", "shulker_box"]
     ]
-
-    // Skip bronze tier storage in NM
-    if (!doSteamAge) {
-        sophStorageMaterials.splice(1, 1);
-    }
 
     sophStorageMaterials.forEach((material, toIndex) => {
         if (toIndex == 0) return;

@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
         .inputFluids("gtceu:advanced_soldering_alloy 1152", "gtceu:duranium 288")
         .itemOutputs("gtceu:naquadah_reactor")
         .duration(1500)
-        .EUt(122880)
+        .EUt(GTValues.VA[GTValues.ZPM])
         .stationResearch(b => b.researchStack(Item.of("kubejs:empty_fuel_rod")).EUt(GTValues.VA[GTValues.LuV]).CWUt(16, 64000))
         .addMaterialInfo(true)
 
@@ -19,23 +19,14 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .itemOutputs("3x kubejs:hot_naquadah_fuel_rod", "1x kubejs:hot_depleted_naquadah_fuel_rod")
         .duration(24000)
-        .EUt(-GTValues.V[GTValues.ZPM], 2)
-
-    /*
-    event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah_2")
-        .itemInputs("4x kubejs:naquadah_fuel_rod")
-        .circuit(2)
-        .itemOutputs("2x kubejs:hot_naquadah_fuel_rod", "2x kubejs:hot_depleted_naquadah_fuel_rod")
-        .duration(16000)
-        .EUt(-GTValues.V[GTValues.ZPM], 3)
-    */
+        .EUt(-GTValues.V[GTValues.ZPM], 4)
 
     event.recipes.gtceu.naquadah_reactor("kubejs:process_naquadah_3")
         .itemInputs("4x kubejs:naquadah_fuel_rod")
         .circuit(3)
         .itemOutputs("1x kubejs:hot_naquadah_fuel_rod", "3x kubejs:hot_depleted_naquadah_fuel_rod")
-        .duration(12000)
-        .EUt(-GTValues.V[GTValues.ZPM], 4)
+        .duration(8000)
+        .EUt(-GTValues.V[GTValues.ZPM], 16)
 
     // Large Naquadah Reactor recipe
     event.recipes.gtceu.assembly_line("kubejs:large_naquadah_reactor")
@@ -49,8 +40,8 @@ ServerEvents.recipes(event => {
 
     // Refinery Recipe
     event.recipes.gtceu.assembly_line("kubejs:naquadah_refinery")
-        .itemInputs("gtceu:large_mixer", "4x #gtceu:circuits/uv", "8x nuclearcraft:plate_elite", "4x gtceu:zpm_field_generator", "4x gtceu:uv_hermetic_casing", "2x kubejs:empty_fuel_rod", "2x gtceu:zpm_electric_pump", "2x gtceu:duranium_huge_fluid_pipe", "16x gtceu:double_tritanium_plate")
-        .inputFluids("gtceu:omnium 1152", "gtceu:living_soldering_alloy 1152", "gtceu:polybenzimidazole 2304")
+        .itemInputs("gtceu:large_mixer", "4x #gtceu:circuits/uv", "8x gtceu:double_enderium_plate", "4x gtceu:zpm_field_generator", "4x gtceu:uv_hermetic_casing", "2x kubejs:empty_fuel_rod", "2x gtceu:zpm_electric_pump", "2x gtceu:duranium_huge_fluid_pipe", "16x gtceu:double_tritanium_plate")
+        .inputFluids("gtceu:omnium 1152", "gtceu:living_soldering_alloy 1152", "gtceu:polyethyl_cyanoacrylate 2304")
         .itemOutputs("gtceu:naquadah_refinery")
         .duration(1500)
         .EUt(GTValues.VA[GTValues.UV])

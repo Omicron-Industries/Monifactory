@@ -60,9 +60,6 @@ config/defaultworldtype/world-presets.txt
 /config/functionalstorage/*
 !/config/functionalstorage-common.toml
 
-# Hammer Lib
-!/config/hammerlib
-
 # Iron Jetpacks
 !/config/ironjetpacks
 
@@ -75,18 +72,6 @@ config/defaultworldtype/world-presets.txt
 !/config/lostcities
 /config/lostcities/profiles/*
 !/config/lostcities/profiles/monidefault.json
-
-# NCN
-!/config/NuclearCraft
-/config/NuclearCraft/*
-!/config/NuclearCraft/fission_fuel
-!/config/NuclearCraft/heat_sinks
-!/config/NuclearCraft/common.toml
-!/config/NuclearCraft/fission.toml
-!/config/NuclearCraft/materials.toml
-
-# SolarFlux
-!/config/solarflux
 
 # WaterMedia
 !/config/watermedia

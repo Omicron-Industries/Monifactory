@@ -41,16 +41,16 @@
 			#By adding values to this list, Energy Overclocker(s') will be generated (1 tier for each value).
 			#The maximum FE/operation for each tier is specified using this list. Ex: [512, 2000, 51873]
 			#Note: Since this is a feature meant for pack developers, no recipes will be generated
-			max_fe_tiers = [512, 2048, 8192, 32768, 131072, 524288, 2097152, 8388608, 134217728]
+			max_fe_tiers = [512, 2048, 8192, 32768]
 			#By adding values to this list, Energy Overclocker(s') name(s) can be chosen (1 value for each tier).
 			#Normal string rules apply. Ex: ["name", "longer name", "NaME wiTh CapiTAL lETters"]
 			#Note: Default names will be generated if this list is empty/doesn't contain enough elements
-			name_tiers = ["Conductive Iron FE Overclocker", "Energetic Alloy FE Overclocker", "Vibrant Alloy FE Overclocker", "End Steel FE Overclocker", "Lumium FE Overclocker", "Signalum FE Overclocker", "Enderium FE Overclocker", "Cryolobus FE Overclocker", "Sculk Superconductor FE Overclocker"]
+			name_tiers = ["Conductive Iron FE Overclocker", "Energetic Alloy FE Overclocker", "Vibrant Alloy FE Overclocker", "End Steel FE Overclocker"]
 			#By adding values to this list, Energy Overclocker(s') color(s) can be chosen (1 value for each tier).
 			#Each color must be provided as a string using its octal, decimal, or hexadecimal representation.
 			#Example with tier 1 as blue, 2 as green, and 3 as red: ["0377", "65280", "#ff0000"]
 			#Note: Default colors will be generated if this list is empty/doesn't contain enough elements
-			color_tiers = ["0xf7b29b", "0xffb545", "0xa4ff70", "0xd6d980", "0xf6ff99", "0xff7f0f", "0x1f6b62", "0x022C34", "0xffffff"]
+			color_tiers = ["0xf7b29b", "0xffb545", "0xa4ff70", "0xd6d980"]
 
 	#Chemical Card (only if Mekanism is installed)
 	[card.chemical_card]

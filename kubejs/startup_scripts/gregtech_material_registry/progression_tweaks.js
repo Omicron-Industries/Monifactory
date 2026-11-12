@@ -46,8 +46,18 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components(GTMaterials.get("living_solder_base").multiply(7), GTMaterials.Meat.multiply(3))
 
-    event.create("silicon_germanium")
-        .dust()
-        .color(0x6B7873)
-        .components(GTMaterials.Silicon.multiply(4), GTMaterials.Germanium.multiply(1))
+    // Fixing the Energium and Lapotron
+    event.create("energium")
+        .gem()
+        .color(0xa03D42).secondaryColor(0x9F2748)
+        .iconSet("dilithium")
+        .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .components("5x redstone", "4x ruby")
+        .ignoredTagPrefixes([
+            TagPrefix.dustSmall,
+            TagPrefix.dustTiny,
+            TagPrefix.gemExquisite,
+            TagPrefix.gemFlawless,
+            TagPrefix.rod,
+        ])
 })

@@ -1,6 +1,5 @@
 import Juke from "juke-build"
 import fs from "fs"
-import https from "https"
 import { z } from "zod"
 import type { ManifestFileEntry } from "./manifest.ts"
 
@@ -16,13 +15,21 @@ const zCFModInfo = z.object({
     }),
 })
 
-export const GetModInfo = async (modID: number) => {
-    const modData = await fetch(`https://api.curse.tools/v1/cf/mods/${modID}`, {
+function fetchCurseForge(path: string, init?: RequestInit): Promise<Response> {
+    const token = process.env.CF_API_KEY
+    return fetch(`${token ? "https://api.curseforge.com/v1/" : "https://api.curse.tools/v1/cf/"}${path}`, {
         redirect: "follow",
+        ...init,
         headers: {
-            Accept: "application/json"
+            Accept: "application/json",
+            ...(token && { "x-api-key": token }),
+            ...init?.headers,
         }
     })
+}
+
+export const GetModInfo = async (modID: number) => {
+    const modData = await fetchCurseForge(`mods/${modID}`)
 
     if (modData.status !== 200) {
         if (modData.status == 403) {
@@ -37,10 +44,14 @@ export const GetModInfo = async (modID: number) => {
 
 const zCFModData = z.object({
     data: z.object({
+        id: z.number().int().positive().pipe(z.coerce.bigint()),
         fileName: z.string().regex(/\.(?:jar|zip)$/),
         fileLength: z.number().int().positive(),
-        downloadUrl: z.string().url(),
-    }),
+        downloadUrl: z.url().or(z.null()),
+    }).transform(data => ({
+        ...data,
+        downloadUrl: data.downloadUrl ?? `https://edge.forgecdn.net/files/${data.id / 1000n}/${data.id % 1000n}/${encodeURIComponent(data.fileName)}`
+    })),
 })
 type CFModData = z.infer<typeof zCFModData>
 
@@ -54,10 +65,7 @@ export const DownloadCF = async (modInfo: Partial<ManifestFileEntry> = {}, dest:
         throw new Juke.ExitCode(1)
     }
 
-    const modData = await fetch(`https://api.curse.tools/v1/cf/mods/${modID}/files/${modFileID}`, {
-        redirect: "follow",
-        headers: {Accept: "application/json"}
-    })
+    const modData = await fetchCurseForge(`mods/${modID}/files/${modFileID}`)
 
     if (modData.status !== 200) {
         if (modData.status == 403) {
@@ -109,39 +117,13 @@ export const DownloadCF = async (modInfo: Partial<ManifestFileEntry> = {}, dest:
     return modDataJson
 }
 
-async function download_file(url: string, options = {}, file: string) {
-    return new Promise<void>((resolve, reject) => {
-        const file_stream = fs.createWriteStream(file)
-        https.get(url, options, function(response) {
-            if (response.statusCode === 302) {
-                file_stream.close()
-                response.resume()
-                download_file(response.headers.location, options, file)
-                    .then(resolve)
-                    .catch(reject)
-                return
-            }
-            if (response.statusCode !== 200) {
-                Juke.logger.error(`Failed to download ${url}: Status ${response.statusCode}`)
-                file_stream.close()
-                response.resume()
-                // eslint-disable-next-line @typescript-eslint/prefer-promise-reject-errors
-                reject()
-                return
-            }
-            response.pipe(file_stream)
-
-            // after download completed close filestream
-            file_stream.on("finish", () => {
-                file_stream.close()
-                resolve()
-            })
-
-        }).on("error", (err) => {
-            file_stream.close()
-            Juke.rm(file)
-            Juke.logger.error(`Failed to download ${url}: ${err.message}`)
-            reject(err)
-        })
-    })
+async function download_file(url: string, options: RequestInit = {}, file: string) {
+    const response = await fetch(url, options)
+    if (response.status !== 200) {
+        return Juke.logger.error(`Failed to download ${url}: Status ${response.status}`)
+    }
+    if (response.body === null) {
+        return Juke.logger.error(`Failed to download ${url}: No response body`)
+    }
+    await fs.promises.writeFile(file, response.body)
 }

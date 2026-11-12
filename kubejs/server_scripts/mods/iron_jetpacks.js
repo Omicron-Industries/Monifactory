@@ -6,10 +6,10 @@ ServerEvents.recipes(event => {
 
     // Generate thermal thruster recipes
     const thermalThrusters = [
-        ["leadstone", "lead", "lead", "steamdynamo:steam_dynamo"],
-        ["hardened", "invar", "invar", "thermal:dynamo_magmatic"],
-        ["reinforced", "aluminium", "electrum", "thermal:dynamo_compression"],
-        ["resonant", "enderium", "enderium", "thermal:dynamo_numismatic"]
+        ["leadstone", "lead", "lead", "gtceu:lv_steam_turbine"],
+        ["hardened", "invar", "invar", "gtceu:lv_gas_turbine"],
+        ["reinforced", "aluminium", "electrum", "gtceu:mv_combustion"],
+        ["resonant", "enderium", "enderium", "monilabs:hv_lapotronic"]
     ]
 
     thermalThrusters.forEach(([newTier, plate1, plate2, dynamo]) => {
@@ -29,20 +29,20 @@ ServerEvents.recipes(event => {
 
     // Generate EnderIO thruster recipes
     const eioThrusters = [
-        ["conductive_iron", "conductive_alloy", "1", "kubejs:resonating_crystal", "gtceu:red_alloy_plate"],
-        ["electrical_steel", "electrical_steel", "1", "enderio:pulsating_crystal", Item.of("kubejs:conductive_iron_thruster").weakNBT()],
-        ["energetic", "energetic_alloy", "2", "enderio:vibrant_crystal", Item.of("kubejs:electrical_steel_thruster").weakNBT()],
-        ["vibrant", "vibrant_alloy", "3", "enderio:prescient_crystal", Item.of("kubejs:energetic_thruster").weakNBT()]
+        ["conductive_iron", "conductive_alloy", "red_alloy", "kubejs:resonating_crystal", "gtceu:red_alloy_plate"],
+        ["electrical_steel", "electrical_steel", "conductive_alloy", "enderio:pulsating_crystal", Item.of("kubejs:conductive_iron_thruster").weakNBT()],
+        ["energetic", "energetic_alloy", "energetic_alloy", "enderio:vibrant_crystal", Item.of("kubejs:electrical_steel_thruster").weakNBT()],
+        ["vibrant", "vibrant_alloy", "vibrant_alloy", "enderio:prescient_crystal", Item.of("kubejs:energetic_thruster").weakNBT()]
     ]
 
-    eioThrusters.forEach(([newTier, plate, card, crystal, lastTier]) => {
+    eioThrusters.forEach(([newTier, plate, wire, crystal, lastTier]) => {
         event.recipes.gtceu.shaped(Item.of(`kubejs:${newTier}_thruster`), [
             "PCP",
             "PRP",
             "BTB"
         ], {
             P: `#forge:plates/${plate}`,
-            C: `laserio:energy_overclocker_card_tier_${card}`,
+            C: `gtceu:${wire}_octal_wire`,
             R: crystal,
             T: lastTier,
             B: "gtceu:red_alloy_plate"
@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         "TTT"
     ], {
         I: "gtceu:double_dark_soularium_plate",
-        C: "laserio:energy_overclocker_card_tier_8",
+        C: "gtceu:cryolobus_frame",
         F: "enderio:weather_crystal",
         T: Item.of("kubejs:vibrant_thruster").weakNBT()
     }).id("kubejs:ironjetpacks/thrusters/dark_soularium")

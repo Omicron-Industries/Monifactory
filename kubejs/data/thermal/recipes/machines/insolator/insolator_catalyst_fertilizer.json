@@ -4,7 +4,7 @@
         "item": "gtceu:fertilizer"
     },
     "primary_mod": 2.0,
-    "secondary_mod":0.5,
+    "secondary_mod": 0.95,
     "energy_mod": 0.8,
     "min_chance": 0.5,
     "use_chance": 1.0

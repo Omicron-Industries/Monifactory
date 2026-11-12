@@ -13,9 +13,8 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xf6ff99).secondaryColor(0xff7400)
         .iconSet("magic")
         .blastTemp(4500, "mid", GTValues.VA[GTValues.EV], 1000)
-        .cableProperties(8192, 3, 0, true)
         .fluidPipeProperties(4500, 256, true, true, true, false)
-        .components("4x tin_alloy", "2x sterling_silver", "mana")
+        .components("4x tin_alloy", "2x sterling_silver", "monilabs:mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR, GTMaterialFlags.GENERATE_FINE_WIRE)
 
     event.create("signalum")
@@ -23,8 +22,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0xff6b0f).secondaryColor(0xc32e00)
         .iconSet("magic")
         .blastTemp(4000, "high", GTValues.VA[GTValues.IV], 1400)
-        .cableProperties(32768, 3, 0, true)
-        .components("4x annealed_copper", "2x red_steel", "2x red_alloy", "mana")
+        .components("4x annealed_copper", "2x red_steel", "2x red_alloy", "monilabs:mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_GEAR)
 
     event.create("enderium")
@@ -32,8 +30,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x1f6b62).secondaryColor(0x16455f)
         .iconSet("magic")
         .blastTemp(6400, "highest", GTValues.VA[GTValues.LuV], 1600)
-        .cableProperties(131072, 4, 0, true)
-        .components("4x lead", "2x platinum", "blue_steel", "osmium", "tantalum", "mana")
+        .components("4x lead", "2x platinum", "blue_steel", "osmium", "tantalum", "monilabs:mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_ROD, GTMaterialFlags.GENERATE_FINE_WIRE)
 })
 
@@ -62,7 +59,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(1250, "low", 120, 400)
         .components("2x gold", "redstone", "glowstone")
         .cableProperties(128, 1, 0, true)
-        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)");
+        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)");
 
     event.create("vibrant_alloy")
         .ingot().fluid()
@@ -71,7 +68,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .blastTemp(1350, "low", 120, 400)
         .components("energetic_alloy", "ender_pearl")
         .cableProperties(512, 2, 0, true)
-        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5)");
+        .formula("Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)(BeK4N5)");
 
     event.create("pulsating_alloy") // Pulsating Iron
         .ingot().fluid()
@@ -94,7 +91,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .toolStats(new ToolProperty(4.0, 3.5, 1024, 3, []))
         .cableProperties(2048, 2, 0, true)
         .components("dark_steel", "endstone", "vibrant_alloy")
-        .formula("Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)(BeK4N5))");
+        .formula("Fe(SiO2)(Au2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)(BeK4N5))");
 
     event.create("soularium")
         .ingot().fluid()
@@ -219,28 +216,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .components("charged_certus_quartz", "redstone", "nether_quartz")
 })
 
-// Nuclearcraft: Neoteric
-
-GTCEuStartupEvents.registry("gtceu:material", event => {
-
-    event.create("uranium_233")
-        .liquid(1405)
-        .color(0x116311).secondaryColor(0x33342c).iconSet(GTMaterialIconSet.RADIOACTIVE)
-        .element(GTElements.get("uranium_233"))
-
-    event.create("plutonium_238")
-        .liquid(913)
-        .color(0x8e1818).secondaryColor(0x222730).iconSet(GTMaterialIconSet.RADIOACTIVE)
-        .element(GTElements.get("plutonium_238"))
-
-    event.create("plutonium_242")
-        .liquid(913)
-        .color(0x8e1818).secondaryColor(0x222730).iconSet(GTMaterialIconSet.RADIOACTIVE)
-        .element(GTElements.get("plutonium_242"))
-
-})
-
-
 // One-offs/Miscellaneous
 
 GTCEuStartupEvents.registry("gtceu:material", event => {
@@ -263,7 +238,7 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
         .color(0x00d5ff).secondaryColor(0x0067ff)
         .iconSet("magic")
         .blastTemp(2141, null)
-        .components("titanium", "mana")
+        .components("titanium", "monilabs:mana")
         .flags(GTMaterialFlags.DISABLE_DECOMPOSITION, GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_GEAR)
 
     // Trinaquadalloy is, to my knowledge, from a GregTech addon that has since been removed from the pack.
@@ -282,11 +257,16 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
     event.create("microversium")
         .ingot().liquid()
         .color(0xa777bf).secondaryColor(0x60417a).iconSet("dull")
-        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
+        .flags(GTMaterialFlags.GENERATE_PLATE, GTMaterialFlags.GENERATE_DENSE, GTMaterialFlags.GENERATE_FRAME, GTMaterialFlags.GENERATE_FOIL, GTMaterialFlags.DISABLE_DECOMPOSITION)
         .components("2x steel", "glowstone", "redstone", "deuterium")
         .blastTemp(1700, "mid", 120, 600)
         .cableProperties(128, 4, 2, false)
-        .formula("Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2)D");
+        .formula("Fe2(Si(FeS2)5(CrAl2O3)Hg3)(AuCa3(PO4)2BaSO4)D");
 
     // Ardite isn't here since it's more closely related to nethline than actually being a TiC material.
+
+    // Compost Mix for GT-style Thermal Expansion Compost
+    event.create("compost_mix")
+        .dust()
+        .color(0x7C592D).iconSet("wood")
 })

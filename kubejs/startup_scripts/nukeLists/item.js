@@ -60,6 +60,7 @@ global.itemNukeList = [
     "enderio:dark_steel_grinding_ball",
     "enderio:end_steel_grinding_ball",
     "enderio:energetic_alloy_grinding_ball",
+    /^enderio:extraction_speed_upgrade_./,
     "enderio:flour",
     "enderio:industrial_insulation_block",
     "enderio:nethercotta",
@@ -84,6 +85,8 @@ global.itemNukeList = [
     "enderio:vibrant_photovoltaic_module",
     "enderio:energetic_photovoltaic_module",
     "enderio:pulsating_photovoltaic_module",
+    "enderio:photovoltaic_plate",
+    "enderio:photovoltaic_composite",
     "enderio:light",
     "enderio:light_inverted",
     "enderio:powered_light",
@@ -92,11 +95,6 @@ global.itemNukeList = [
     "enderio:powered_light_inverted_wireless",
     "enderio:glider_wing",
     "enderio:nutritious_stick",
-
-    // Ender Storage
-    // TODO: Need to add greggy recipes for these
-    "endertanks:ender_bucket",
-    "enderchests:ender_bag",
 
     // ExtendedAE
     "expatternprovider:silicon_block",
@@ -130,7 +128,6 @@ global.itemNukeList = [
     "gtceu:hot_silicon_ingot",
     "gtceu:milk",
     "gtceu:steel_machine_casing",
-    "gtceu:uv_world_accelerator",
     "gtceu:mv_solar_panel",
     "gtceu:hv_solar_panel",
     "gtceu:ev_solar_panel",
@@ -138,6 +135,10 @@ global.itemNukeList = [
     "gtceu:luv_solar_panel",
     "gtceu:zpm_solar_panel",
     "gtceu:uv_solar_panel",
+    "gtceu:configurable_maintenance_hatch",
+    /^gtceu.*a_energy_converter$/,
+    /^gtceu:\w+_world_accelerator/,
+    /^gtceu:.*fisher/,
     /^gtceu:uiv/,
     /^gtceu:uxv/,
     /^gtceu:opv/,
@@ -145,8 +146,20 @@ global.itemNukeList = [
     /^gtmutils:uxv/,
     /^gtmutils:opv/,
 
-    // Hammerlib
-    /^hammerlib:/,
+    // Turbine rotor rebalance
+    "gtceu:magnalium_turbine_blade",
+    "gtceu:wrought_iron_turbine_blade",
+    "gtceu:manganese_turbine_blade",
+    "gtceu:molybdenum_turbine_blade",
+    "gtceu:iron_turbine_blade",
+    "gtceu:neodymium_turbine_blade",
+    "gtceu:brass_turbine_blade",
+    "gtceu:cobalt_brass_turbine_blade",
+    "gtceu:rose_gold_turbine_blade",
+    "gtceu:sterling_silver_turbine_blade",
+    "gtceu:tungsten_turbine_blade",
+    "gtceu:iridium_turbine_blade",
+    "gtceu:chromium_turbine_blade",
 
     // HNN
     "hostilenetworks:deep_learner",
@@ -211,6 +224,8 @@ global.itemNukeList = [
     // LaserIO
     "laserio:logic_chip",
     "laserio:logic_chip_raw",
+    "laserio:card_energy",
+    /^laserio:energy_overclocker_card_.*/,
 
     // Megacells
     "megacells:mega_crafting_accelerator",
@@ -247,17 +262,15 @@ global.itemNukeList = [
     "projectred_transmission:low_load_power_wire",
     "projectred_transmission:low_load_framed_power_wire",
 
-    // Solar Flux
-    /^solarflux:.*/,
-
     // Looking for removed Sophisticated Storage items?
     // Look in configs/sophisticatedcore-common.toml.
     // SophStorage offers a way to remove items from the registry with config.
 
+    // Steam Dynamo (Mod can be removed in .15)
+    "steamdynamo:steam_dynamo",
+
     // Systeams
-    "systeams:disenchantment_boiler",
-    "systeams:lapidary_boiler",
-    "systeams:steamiestest_ball",
+    /^systeams:.*/,
 
     // Telepastries
     "telepastries:custom_cake2",
@@ -273,9 +286,9 @@ global.itemNukeList = [
     "thermal:constantan_coin",
     "thermal:cured_rubber",
     "thermal:drill_head",
-    "thermal:dynamo_disenchantment",
-    "thermal:dynamo_lapidary",
-    "thermal:dynamo_stirling",
+    /^thermal:dynamo_.*/,
+    "thermal:energy_cell",
+    "thermal:energy_cell_frame",
     "thermal:niter",
     "thermal:oil_red_sand",
     "thermal:oil_sand",
@@ -287,6 +300,7 @@ global.itemNukeList = [
     "thermal:sawdust",
     "thermal:sulfur",
     "thermal:tar",
+    "thermal:tar_block",
     "thermal:refined_fuel_bucket",
     /^thermal:.*_cast$/,
 
@@ -296,7 +310,6 @@ global.itemNukeList = [
     "thermal:machine_pulverizer",
     "thermal:machine_smelter",
     "thermal:machine_centrifuge",
-    "thermal:machine_crucible",
     "thermal:machine_chiller",
     "thermal:machine_refinery",
     "thermal:machine_pyrolyzer",
@@ -309,191 +322,15 @@ global.itemNukeList = [
     "wirelesschargers:basic_wireless_block_charger",
     "wirelesschargers:advanced_wireless_block_charger",
 
-    // NuclearCraft regexes
-    /^nuclearcraft:turbine[\w_]*/,
-    /^nuclearcraft:fusion[\w_]*/,
-    /^nuclearcraft:[\w_]*_cooler$/,
-    /^nuclearcraft:[\w_]*accelerator[\w_]+$/,
-    /^nuclearcraft:[\w_]*chamber[\w_]*$/,
-    /^nuclearcraft:[\w_]*_ore$/,
-    /^nuclearcraft:\w+_chunk$/,
-    /^nuclearcraft:source_\w+_\w+$/,
-    /^nuclearcraft:[\w_]*electromagnet/,
-    /^nuclearcraft:solar_panel.*/,
-    /^nuclearcraft:[\w_]+_voltaic_pile$/,
-    /^nuclearcraft:[\w_]+_container$/,
-    /^nuclearcraft:[\w_]*_collector$/,
-    /^nuclearcraft:[\w_]*smore$/,
-    /^nuclearcraft:[\w_]*_battery$/,
-    /^nuclearcraft:[\w_]*_barrel$/,
-    /^nuclearcraft:[\w_]+_bucket$/,
-    /^nuclearcraft:upgrade_[\w_]+/,
-    /^nuclearcraft:particle/,
-    /^nuclearcraft:[\w]+_spallation_waste/,
-    /^nuclearcraft:msr/,
-
-    // Nuclearcraft
-    "nuclearcraft:xenorium_298",
-    "nuclearcraft:silicon_tracker",
-    "nuclearcraft:em_calorimeter",
-    "nuclearcraft:hadron_calorimeter",
-    "nuclearcraft:tungsten_filament",
-    "nuclearcraft:subatomic_liquifier",
-    "nuclearcraft:quantite",
-    "nuclearcraft:portal",
-    "nuclearcraft:wasteland_earth",
-    "nuclearcraft:feral_ghoul_spawn_egg",
-    "nuclearcraft:expl",
-    "nuclearcraft:motor",
-    "nuclearcraft:plate_extreme",
-    "nuclearcraft:actuator",
-    "nuclearcraft:tough_helmet",
-    "nuclearcraft:tough_chest",
-    "nuclearcraft:tough_pants",
-    "nuclearcraft:tough_boots",
-    "nuclearcraft:empty_frame",
-    "nuclearcraft:dps",
-    "nuclearcraft:rad_x",
-    "nuclearcraft:servo",
-    "nuclearcraft:bscco_electromagnet",
-    "nuclearcraft:bscco_rf_amplifier",
-    "nuclearcraft:niobium_tin_electromagnet",
-    "nuclearcraft:niobium_tin_rf_amplifier",
-    "nuclearcraft:lithium_ion_cell",
-    "nuclearcraft:empty_frame",
-    "nuclearcraft:supercooler",
-    "nuclearcraft:steel_frame",
-    "nuclearcraft:quantum_flux_regulator",
-    "nuclearcraft:chamber_port",
-    "nuclearcraft:fission_reactor_irradiation_chamber",
-    "nuclearcraft:chamber_terminal",
-    "nuclearcraft:event_horizon_stabilizer",
-    "nuclearcraft:quantum_transformer",
-    "nuclearcraft:black_hole",
-    "nuclearcraft:neutronium_frame",
-    "nuclearcraft:photon_concentrator",
-    "nuclearcraft:redstone_dimmer",
-    "nuclearcraft:rad_x",
-    "nuclearcraft:research_paper",
-    "nuclearcraft:gelatin",
-    "nuclearcraft:basic_electric_circuit",
-    "nuclearcraft:sic_fiber",
-    "nuclearcraft:spaxelhoe_tough",
-    "nuclearcraft:spaxelhoe_thorium",
-    "nuclearcraft:multitool",
-    "nuclearcraft:qnp",
-    "nuclearcraft:lithium_ion_cell",
-    "nuclearcraft:dps",
-    "nuclearcraft:servo",
-    "nuclearcraft:bioplastic",
-    "nuclearcraft:empty_sink",
-    "nuclearcraft:radaway_slow",
-    "nuclearcraft:salt",
-    "nuclearcraft:cocoa_butter",
-    "nuclearcraft:sawdust",
-    "nuclearcraft:flour",
-    "nuclearcraft:dominos",
-    "nuclearcraft:radaway",
-    "nuclearcraft:coil_bscco",
-    "nuclearcraft:supercold_ice_block",
-    "nuclearcraft:silicon_wafer",
-    "nuclearcraft:basic_processor",
-    "nuclearcraft:advanced_processor",
-    "nuclearcraft:elite_processor",
-    "nuclearcraft:empty_detector",
-    "nuclearcraft:silicon_boule",
-    "nuclearcraft:laser_assembly",
-    "nuclearcraft:scintillator_pwo",
-    "nuclearcraft:scintillator_plastic",
-    "nuclearcraft:coil_magnesium_diboride",
-    "nuclearcraft:wire_gold_tungsten",
-    "nuclearcraft:silicon_p_doped",
-    "nuclearcraft:silicon_n_doped",
-
-    // NuclearCraft Heat Sinks
-    "nuclearcraft:slime_heat_sink",
-    "nuclearcraft:netherite_heat_sink",
-    "nuclearcraft:liquid_nitrogen_heat_sink",
-    "nuclearcraft:end_stone_heat_sink",
-    "nuclearcraft:cobalt_heat_sink",
-    "nuclearcraft:fluorite_heat_sink",
-    "nuclearcraft:lithium_heat_sink",
-    "nuclearcraft:platinum_heat_sink",
-    "nuclearcraft:arsenic_heat_sink",
-    "nuclearcraft:lead_heat_sink",
-    "nuclearcraft:gold_heat_sink",
-    "nuclearcraft:silver_heat_sink",
-    "nuclearcraft:prismarine_heat_sink",
-    "nuclearcraft:obsidian_heat_sink",
-    "nuclearcraft:purpur_heat_sink",
-    "nuclearcraft:nether_brick_heat_sink",
-    "nuclearcraft:diamond_heat_sink",
-    "nuclearcraft:iron_heat_sink",
-    "nuclearcraft:villiaumite_heat_sink",
-    "nuclearcraft:carobbiite_heat_sink",
-
-    "nuclearcraft:empty_active_heat_sink",
-    /^nuclearcraft:active_[\w_]+_heat_sink$/,
-
-    "nuclearcraft:graphite_block",
-    "nuclearcraft:beryllium_block",
-
-    "nuclearcraft:heat_exchanger",
-
-    // Nuclearcraft Machines
-    "nuclearcraft:rock_crusher",
-    "nuclearcraft:decay_hastener",
-    "nuclearcraft:irradiator",
-    "nuclearcraft:nuclear_furnace",
-    "nuclearcraft:extractor",
-    "nuclearcraft:electrolyzer",
-    "nuclearcraft:pressurizer",
-    "nuclearcraft:alloy_smelter",
-    "nuclearcraft:centrifuge",
-    "nuclearcraft:manufactory",
-    "nuclearcraft:gas_scrubber",
-    "nuclearcraft:fluid_enricher",
-    "nuclearcraft:isotope_separator",
-    "nuclearcraft:fluid_infuser",
-    "nuclearcraft:chemical_reactor",
-    "nuclearcraft:analyzer",
-    "nuclearcraft:ingot_former",
-    "nuclearcraft:pump",
-    "nuclearcraft:fuel_reprocessor",
-    "nuclearcraft:leacher",
-    "nuclearcraft:crystallizer",
-    "nuclearcraft:assembler",
-    "nuclearcraft:steam_turbine",
-    "nuclearcraft:melter",
-
-    // Nuclearcraft Isotopes
-    "nuclearcraft:fuel_mixed_mix_239",
-    "nuclearcraft:fuel_mixed_mix_241",
-    "nuclearcraft:lithium_6",
-    "nuclearcraft:lithium_7",
-    "nuclearcraft:boron_10",
-    "nuclearcraft:boron_11",
-    "nuclearcraft:thorium_230",
-    "nuclearcraft:thorium_232",
-    "nuclearcraft:uranium_235",
-    "nuclearcraft:uranium_238",
-    "nuclearcraft:plutonium_239",
-    "nuclearcraft:plutonium_241",
-    "nuclearcraft:curium_246",
-    "nuclearcraft:curium_247",
-    "nuclearcraft:californium_249",
-    "nuclearcraft:sodium_22",
-    "nuclearcraft:copernicium_291",
-    "nuclearcraft:beryllium_7",
-    "nuclearcraft:magnesium_26",
-    "nuclearcraft:calcium_48",
-    "nuclearcraft:magnesium_24",
-    "nuclearcraft:iridium_192",
-    "nuclearcraft:cobalt_60",
+    // Pipez
+    "pipez:energy_pipe",
+    "pipez:gas_pipe",
+    "pipez:universal_pipe",
+    "pipez:infinity_upgrade"
 ];
 
 // Create Compat
-// Removes machines related to processing
+// Removes machines related to processing and recipe-less items
 if (Platform.isLoaded("create")) {
     global.itemNukeList.push(
         "create:millstone",
@@ -506,7 +343,80 @@ if (Platform.isLoaded("create")) {
         "create:mechanical_harvester",
         "create:mechanical_press",
         "create:mechanical_roller",
-        "create:encased_fan"
+        "create:encased_fan",
+        /^create:raw_.*$/,
+        /^create:.*_ore$/,
+        /^create:.*_ingot$/,
+        /^create:.*_nugget$/,
+        /^create:.*_sheet$/,
+        "create:zinc_block",
+        "create:brass_block",
+        "create:powdered_obsidian"
+    );
+}
+
+// Advanced AE Compat
+// Removes all those boring solutions, useless crafting components, and whatever
+if (Platform.isLoaded("advanced_ae")) {
+    global.itemNukeList.push(
+        "advanced_ae:adv_pattern_encoder",
+        "advanced_ae:adv_pattern_provider_capacity_upgrade",
+        "advanced_ae:adv_pattern_provider_part",
+        "advanced_ae:adv_pattern_provider_upgrade",
+        "advanced_ae:adv_pattern_provider",
+        "advanced_ae:advanced_io_bus_part",
+        "advanced_ae:import_export_bus_part",
+        "advanced_ae:printed_quantum_processor",
+        "advanced_ae:quantum_alloy_block",
+        "advanced_ae:quantum_alloy_plate",
+        "advanced_ae:quantum_alloy_slab",
+        "advanced_ae:quantum_alloy_stairs",
+        "advanced_ae:quantum_alloy_wall",
+        "advanced_ae:quantum_alloy",
+        "advanced_ae:quantum_infused_dust",
+        "advanced_ae:quantum_processor_press",
+        "advanced_ae:quantum_processor",
+        "advanced_ae:quantum_storage_128",
+        "advanced_ae:quantum_storage_component",
+        "advanced_ae:reaction_chamber",
+        "advanced_ae:shattered_singularity",
+        "advanced_ae:small_adv_pattern_provider_part",
+        "advanced_ae:small_adv_pattern_provider",
+        "advanced_ae:stock_export_bus_part",
+    );
+}
+
+// Integrated Dynamics/Tunnels Compat
+if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
+    global.itemNukeList.push(
+        "integrateddynamics:energy_battery",
+        "integrateddynamics:energy_battery_creative",
+        "integrateddynamics:coal_generator",
+        "integrateddynamics:drying_basin",
+        "integrateddynamics:squeezer",
+        "integrateddynamics:mechanical_drying_basin",
+        "integrateddynamics:mechanical_squeezer",
+        "integrateddynamics:logic_director",
+        "integrateddynamics:proto_chorus",
+        "integrateddynamics:part_entity_writer",
+        "integrateddynamics:part_machine_writer",
+        "integrateddynamics:part_inventory_writer",
+        "integrateddynamics:part_connector_mono_directional",
+        "integrateddynamics:part_connector_omni_directional",
+        "integrateddynamics:part_audio_reader",
+        "integrateddynamics:part_entity_reader",
+        "integrateddynamics:part_extradimensional_reader",
+        "integrateddynamics:part_machine_reader",
+        "integrateddynamics:part_world_reader",
+        "integrateddynamics:part_audio_writer",
+        "integrateddynamics:part_effect_writer",
+        "integratedtunnels:part_interface_energy",
+        "integratedtunnels:part_interface_filter_energy",
+        "integratedtunnels:part_importer_energy",
+        "integratedtunnels:part_exporter_energy",
+        "integratedtunnels:part_importer_world_energy",
+        "integratedtunnels:part_exporter_world_energy",
+        "integratedtunnels:part_player_simulator"
     );
 }
 
@@ -518,5 +428,6 @@ if (!global.doBoilers) {
         "systeams:gourmand_boiler",
         "systeams:magmatic_boiler",
         "systeams:numismatic_boiler",
+        "systeams:boiler_pipe"
     );
 }

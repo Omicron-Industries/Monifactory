@@ -1,5 +1,0 @@
-[{
-  "type": "liquid_nitrogen",
-  "heat": 185,
-  "placement_rule": ["copper_heat_sink", "purpur_heat_sink"]
-}]

@@ -6,7 +6,7 @@
 
 **Q. How "finished" is Monifactory?**
 
-The main path of progression is fully playable - multiple groups have obtained the Creative Chest in Normal Mode.
+The main path of progression is fully playable - multiple groups have obtained the Creative Chest in all modes: Normal mode, Hard Mode, and Expert Mode.
 
 **Q. Is Monifactory still being updated?**
 
@@ -71,7 +71,7 @@ By default, Monifactory only supports the mods included with it, and has *option
 **Q. How do I download Monifactory?**
 
 Stable releases of Monifactory can be downloaded from CurseForge using any launcher of your choice (PrismLauncher, CurseForge, etc.)
-Bleeding edge builds can be found [here](https://github.com/Omicron-Industries/Monifactory/releases).
+We will occasionally release Bleeding Edge builds during the development of larger updates. Since the goal of those builds is to gather direct feedback on WIP features, they will exclusively be available in our [Discord server](https://discord.gg/4jch9Rs2Cq), usually attached to a dev blog entry in the #moni-meowdays channel. 
 
 **Q. How do I play Hard Mode/Expert Mode?**
 
@@ -93,6 +93,7 @@ Instead:
     `emi.json`
     `options.txt`
     `emi.css` (located in `\config\`)
+    `prospection_cache` (located in `\gtceu\`)
 3. Replace the contents of your world's `serverconfig` folder with the contents of the `defaultconfigs` folder in the pack's root directory.
 4. Adjust the pack mode of the new instance, if needed (Instructions above)
 

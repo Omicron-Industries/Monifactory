@@ -13,9 +13,6 @@
   "item.thermal.rf_coil_xfer_augment_advanced": "Bobina RF High-Flux Avanzata",
   "item.thermal.fluid_tank_augment_advanced": "Costruzione Cisterna Ampliata Avanzata",
 
-  "info.thermal.dynamo_stirling.0": "Genera RF usando combustibili solidi.",
-  "info.thermal.dynamo_stirling.1": "Tutte le cose che funzionano in una fornace funzionano anche qua.",
-
   "info.thermal.machine_bottler.0": "Riempe contenitori con fluidi.",
   "info.thermal.machine_bottler.1": "é richiesto per consumare certe bevande.",
   "info.thermal.machine_bottler.2": "Rinfrescante!",

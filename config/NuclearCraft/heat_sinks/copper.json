@@ -1,5 +1,0 @@
-[{
-  "type": "copper",
-  "heat": 80,
-  "placement_rule": ["glowstone_heat_sink"]
-}]

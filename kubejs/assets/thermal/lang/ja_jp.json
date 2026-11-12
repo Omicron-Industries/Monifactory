@@ -7,8 +7,6 @@
     "item.thermal.upgrade_augment_3.desc": "基本属性を改良し、オーグメントを拡張します。",
     "item.thermal.upgrade_augment_4": "シグナルム統合コンポーネント",
     "item.thermal.upgrade_augment_4.desc": "基本属性を改良し、オーグメントを拡張します。",
-    "info.thermal.dynamo_stirling.0": "固形燃料からRFを生成します。",
-    "info.thermal.dynamo_stirling.1": "かまどの燃料はほとんど使用できます。",
     "info.thermal.machine_bottler.0": "容器に液体を詰めます。",
     "info.thermal.machine_bottler.1": "特定の飲み物を摂取するために必要となります。",
     "info.thermal.machine_bottler.2": "さわやか",

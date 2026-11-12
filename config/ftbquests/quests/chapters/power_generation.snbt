@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "power_generation"
 	group: "0D5BFFD0A5E49312"
-	icon: "thermal:dynamo_numismatic"
+	icon: "monilabs:creative_energy_multi"
 	id: "0102198269F850CD"
 	images: [
 		{
@@ -15,64 +15,19 @@
 			y: 0.0d
 		}
 		{
-			height: 2.0d
-			image: "kubejs:textures/gui/rf_timeline.png"
-			rotation: 0.0d
-			width: 27.78d
-			x: 0.0d
-			y: 6.0d
-		}
-		{
 			height: 1.5d
 			hover: ["Energy Units are used to power GregTech machines."]
 			image: "kubejs:textures/gui/eu_letters.png"
 			rotation: 0.0d
 			width: 1.95d
 			x: 0.0d
-			y: -4.25d
-		}
-		{
-			height: 1.5d
-			hover: ["Forge Energy is easier to transport."]
-			image: "kubejs:textures/gui/fe_letters.png"
-			rotation: 0.0d
-			width: 1.95d
-			x: 0.0d
-			y: 2.75d
+			y: -5.75d
 		}
 	]
 	order_index: 4
 	progression_mode: "flexible"
-	quest_links: [{
-		id: "34461D7A562415D3"
-		linked_quest: "19084E91F357C8C2"
-		x: 11.0d
-		y: 5.0d
-	}]
+	quest_links: [ ]
 	quests: [
-		{
-			dependencies: [
-				"7423181A27FC773B"
-				"29A487F0BC43AAF9"
-			]
-			description: [
-				"{moni.quest.0E75B671DAC85309.description1}"
-				""
-				"{moni.quest.0E75B671DAC85309.description2}"
-				""
-				"{moni.quest.0E75B671DAC85309.description3}"
-			]
-			hide_until_deps_visible: true
-			id: "0E75B671DAC85309"
-			optional: true
-			tasks: [{
-				id: "36B4AD08FD0B6C09"
-				item: "systeams:steam_dynamo"
-				type: "item"
-			}]
-			x: -8.75d
-			y: 5.0d
-		}
 		{
 			dependencies: [
 				"1B04AA7D9AEB2CFA"
@@ -80,13 +35,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.15A5B4C632836306.description1}"
+				"Although it requires &6Blue Steel&r to make and takes up far more space, the &6Large Steam Turbine&r is far more scalable than its predecessor."
 				""
-				"{moni.quest.15A5B4C632836306.description2}"
+				"Only the &6Rotor Holder&r needs upgrading every tier, improving power generation by &e2x&r each time."
 				""
-				"{moni.quest.15A5B4C632836306.description3}"
+				"You should also look into the &3Large Titanium Boiler&r in the near future to produce enough &9Steam&r to feed it."
 				""
-				"{moni.quest.15A5B4C632836306.description4}"
+				"Your pipes may be a bottleneck with this level of &9Steam&r throughput however, so make sure to upgrade them!"
 			]
 			icon: "gtceu:steam_large_turbine"
 			id: "15A5B4C632836306"
@@ -183,11 +138,9 @@
 		{
 			dependencies: ["1A30472430354F1E"]
 			description: [
-				"{moni.quest.34876F54406B6A04.description1}"
+				"&6Steam Turbine Generators&r are the easiest way to start generating &eEU&r with &bGregTech&r."
 				""
-				"{moni.quest.34876F54406B6A04.description2}"
-				""
-				"{moni.quest.34876F54406B6A04.description3}"
+				"&9Steam&r can be input on any side other than the side with the red square around a wire, which is reserved for &eEU&r output."
 			]
 			id: "34876F54406B6A04"
 			progression_mode: "flexible"
@@ -206,17 +159,17 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.677D081CD7612FB0.description1}"
+				"The Large Combustion Engine is much like an &5EV&r upgrade to an &6HV&r Combustion Generator, but with a few differences."
 				""
-				"{moni.quest.677D081CD7612FB0.description2}"
+				"First, it's a multiblock. This means it takes up more space, requires a &6Maintenance Hatch&r, and costs a significant amount of Titanium."
 				""
-				"{moni.quest.677D081CD7612FB0.description3}"
+				"Second, it consumes &9Lubricant&r in addition to regular combustion fuels."
 				""
-				"{moni.quest.677D081CD7612FB0.description4}"
+				"Third, it can be supercharged with &9Oxygen&r to produce &e3A&r &5EV&r with &e2A&r worth of fuel."
 				"{@pagebreak}"
-				"[\"\",{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0D0A0C18ED958511\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.677D081CD7612FB0.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"translate\":\"moni.quest.677D081CD7612FB0.rich_description5\"}]"
+				"[\"\",{\"text\":\"While you're at it, you should also look into switching to \"},{\"color\":\"blue\",\"underlined\":\"true\",\"text\":\"High Octane Gasoline\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"text\":\" if your previous fuel is failing you.\"}]"
 				""
-				"{moni.quest.677D081CD7612FB0.description6}"
+				"In addition to being more efficient, High Octane Gasoline also has an additional use in smelting &6Cryolobus&r later on."
 			]
 			icon: "gtceu:large_combustion_engine"
 			id: "677D081CD7612FB0"
@@ -312,13 +265,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.0BFAE16A8B131E84.description1}"
+				"The Extreme Combustion Engine is a direct upgrade to the Large Combustion Engine."
 				""
-				"{moni.quest.0BFAE16A8B131E84.description2}"
+				"It produces &e4x&r the power for &e4x&r as much fuel like any other generator upgrade, but consumes the same amount of &9Lubricant&r."
 				""
-				"{moni.quest.0BFAE16A8B131E84.description3}"
+				"Additionally, supercharging uses &9Liquid Oxygen&r instead of Oxygen Gas."
 				"{@pagebreak}"
-				"[\"\",{\"translate\":\"moni.quest.0BFAE16A8B131E84.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.0BFAE16A8B131E84.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"053DDDCD2505E20B\"}},{\"translate\":\"moni.quest.0BFAE16A8B131E84.rich_description3\"}]"
+				"[\"\",{\"text\":\"As for fuels, you should look into \"},{\"color\":\"blue\",\"underlined\":\"true\",\"text\":\"JEAN Gasoline\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"053DDDCD2505E20B\"}},{\"text\":\". It's a potent concoction of exotic and dangerous ingredients, but will last for quite some time even in these generators.\"}]"
 			]
 			icon: "gtceu:extreme_combustion_engine"
 			id: "0BFAE16A8B131E84"
@@ -414,11 +367,13 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.7D72B3FF808CE13C.description1}"
+				"The &6Large Gas Turbine&r is a big upgrade to &6Advanced Gas Turbine Generator II&rs, providing &e8x&r as much power for &e8x&r the fuel consumption."
 				""
-				"{moni.quest.7D72B3FF808CE13C.description2}"
+				"This can be further increased by upgrading the &6Rotor Holder&r, which multiplicatively stacks another &e2x&r per tier."
 				""
-				"{moni.quest.7D72B3FF808CE13C.description3}"
+				"It requires a &6Maintenance Hatch&r, though."
+				""
+				"At this point you're also able to make &9Wither-Doped Gas&r, the most potent Gas Turbine fuel available."
 			]
 			icon: "gtceu:gas_large_turbine"
 			id: "7D72B3FF808CE13C"
@@ -448,9 +403,27 @@
 					id: "4AA4FFC8D6999D40"
 					item: {
 						Count: 1
-						id: "itemfilters:tag"
+						id: "itemfilters:and"
 						tag: {
-							value: "moni:rotor_holder"
+							items: [
+								{
+									Count: 1b
+									id: "itemfilters:tag"
+									tag: {
+										value: "moni:rotor_holder"
+									}
+								}
+								{
+									Count: 1b
+									id: "itemfilters:not"
+									tag: {
+										items: [{
+											Count: 1b
+											id: "gtceu:hv_rotor_holder"
+										}]
+									}
+								}
+							]
 						}
 					}
 					optional_task: true
@@ -515,11 +488,11 @@
 		{
 			dependencies: ["5E3CBC929557418F"]
 			description: [
-				"{moni.quest.68E87B959F6E9216.description1}"
+				"In the Steam age, &9Steam&r is used for power instead of &eEnergy Units&r."
 				""
-				"{moni.quest.68E87B959F6E9216.description2}"
+				"You can generate it by burning solid fuel, burning liquid fuel, or by harnessing the power of the sun as long as you have the respective boiler."
 				""
-				"{moni.quest.68E87B959F6E9216.description3}"
+				"All three boilers can be upgraded to High Pressure boilers upon gaining access to &6Steel&r, which more than doubles their &9Steam&r production."
 			]
 			hide_until_deps_visible: true
 			id: "68E87B959F6E9216"
@@ -543,7 +516,7 @@
 							]
 						}
 					}
-					title: "{moni.task.605439A2CADCAF97}"
+					title: "Any Steam Solid Boiler"
 					type: "item"
 				}
 				{
@@ -564,7 +537,7 @@
 							]
 						}
 					}
-					title: "{moni.task.3841F8562D4A3EC1}"
+					title: "Any Steam Liquid Boiler"
 					type: "item"
 				}
 				{
@@ -585,11 +558,11 @@
 							]
 						}
 					}
-					title: "{moni.task.5439FB3F1821906B}"
+					title: "Any Steam Solar Boiler"
 					type: "item"
 				}
 			]
-			title: "{moni.quest.68E87B959F6E9216.title}"
+			title: "Steam Power"
 			x: -11.0d
 			y: -1.0d
 		}
@@ -600,7 +573,7 @@
 			size: 0.2d
 			tasks: [{
 				id: "2026CA71AB1F0711"
-				title: "{moni.task.2026CA71AB1F0711}"
+				title: " "
 				type: "checkmark"
 			}]
 			x: 1.5d
@@ -613,39 +586,11 @@
 			size: 0.2d
 			tasks: [{
 				id: "0CD3D25A52ED3F2F"
-				title: "{moni.task.0CD3D25A52ED3F2F}"
+				title: " "
 				type: "checkmark"
 			}]
 			x: 5.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["6FDF37EE046349F7"]
-			hide_until_deps_visible: true
-			id: "315E1575528E0B30"
-			optional: true
-			size: 0.2d
-			tasks: [{
-				id: "6DD48E23EA3C1FDC"
-				title: "{moni.task.6DD48E23EA3C1FDC}"
-				type: "checkmark"
-			}]
-			x: -1.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["0E75B671DAC85309"]
-			hide_until_deps_visible: true
-			id: "22984820BE9A3068"
-			optional: true
-			size: 0.2d
-			tasks: [{
-				id: "1A05380382832D36"
-				title: "{moni.task.1A05380382832D36}"
-				type: "checkmark"
-			}]
-			x: -5.5d
-			y: 5.0d
 		}
 		{
 			dependencies: ["15A5B4C632836306"]
@@ -654,7 +599,7 @@
 			size: 0.2d
 			tasks: [{
 				id: "1852A862553D4C79"
-				title: "{moni.task.1852A862553D4C79}"
+				title: " "
 				type: "checkmark"
 			}]
 			x: -2.25d
@@ -667,7 +612,7 @@
 			size: 0.2d
 			tasks: [{
 				id: "5B2F5A3BD09E835A"
-				title: "{moni.task.5B2F5A3BD09E835A}"
+				title: " "
 				type: "checkmark"
 			}]
 			x: -0.5d
@@ -677,9 +622,9 @@
 			dependencies: ["2D10F2E538486624"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.1405D08C6A87B3BB.description1}"
+				"&3Large Plasma Turbines&r are a potent late game method of generating &aEU&r. However, they require some investment."
 				""
-				"{moni.quest.1405D08C6A87B3BB.description2}"
+				"One Large Plasma Turbine produces &2a base of 16384 EU/t when using an IV Rotor Holder&r."
 			]
 			icon: "gtceu:plasma_large_turbine"
 			id: "1405D08C6A87B3BB"
@@ -775,16 +720,16 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.1405D08C6A87B3BB.title}"
+			title: "&2Plasma Turbine"
 			x: 1.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["1A30472430354F1E"]
 			description: [
-				"{moni.quest.34F0E33D33EB82E2.description1}"
+				"&6Gas Turbine Generators&r are another good &eEU&r generation choice when starting out, and scale better into the midgame than &9Steam&r-based power."
 				""
-				"{moni.quest.34F0E33D33EB82E2.description2}"
+				"If you're looking to get into power generation with a &6Gas Turbine Generator&r as early as &7LV&r, your best fuel option is &9Methane Gas&r centrifuged from &6Rubber Logs&r."
 			]
 			id: "34F0E33D33EB82E2"
 			tasks: [{
@@ -798,9 +743,9 @@
 		{
 			dependencies: ["1A30472430354F1E"]
 			description: [
-				"{moni.quest.685330660E88E827.description1}"
+				"It's a little difficult to produce energy using combustion in &7LV&r, but if you have easy access to a nearby &9Oil&r spout it may be beneficial to you; &6Combustion Generators&r can use both &9Raw Oil&r and &9Light Oil&r for power."
 				""
-				"{moni.quest.685330660E88E827.description2}"
+				"However, burning &9Oil&r for power isn't very efficient. You'll want to process the &9Oil&r if you want to make better use of the stuff."
 			]
 			id: "685330660E88E827"
 			tasks: [{
@@ -818,9 +763,8 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.63B27CA5BB60B740.description1}"
-				""
-				"[\"\",{\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description1\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0E20199737DFE4AC\"}},{\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description3\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description4\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1F2E76FA4B2C2E84\"}},{\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description5\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.63B27CA5BB60B740.rich_description6\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"04BDE09518C184E4\"}}]"
+				"Each new tier of generator consumes 4x as much fuel as the previous tier to produce 4x as much &eEU&r, so you should be looking into better fuels."
+				"[\"\",{\"text\":\"In particular, you should start making \"},{\"color\":\"blue\",\"underlined\":\"true\",\"text\":\"Diesel\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"74EDAE84246C7228\"}},{\"text\":\" if you aren't using it already.\"}]"
 			]
 			id: "63B27CA5BB60B740"
 			tasks: [{
@@ -838,11 +782,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"[\"\",{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description1\"},{\"underlined\":\"true\",\"translate\":\"moni.quest.6974AA409CC355E6.rich_description2\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7641AE777370BE1A\"}},{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description3\"}]"
+				"[\"\",{\"text\":\"By this point, the \"},{\"underlined\":\"true\",\"text\":\"Distillation Tower\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7641AE777370BE1A\"}},{\"text\":\" should be within reach.\"}]"
 				""
-				"{moni.quest.6974AA409CC355E6.description2}"
+				"This enables you to produce all byproducts from &9Oil&r instead of just one."
 				""
-				"[\"\",{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description4\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.6974AA409CC355E6.rich_description5\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4C76017864258EA9\"}},{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description6\"},{\"color\":\"blue\",\"underlined\":\"true\",\"translate\":\"moni.quest.6974AA409CC355E6.rich_description7\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"74EDAE84246C7228\"}},{\"translate\":\"moni.quest.6974AA409CC355E6.rich_description8\"}]"
+				"[\"\",{\"text\":\"At this point, you should consider producing \"},{\"color\":\"blue\",\"underlined\":\"true\",\"text\":\"Gasoline\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4C76017864258EA9\"}},{\"text\":\" or \"},{\"color\":\"blue\",\"underlined\":\"true\",\"text\":\"Cetane Boosted Diesel\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0D0A0C18ED958511\"}},{\"text\":\" if your generators consume too much of your current fuel - they'll last longer than less sophisticated fuels.\"}]"
 			]
 			id: "6974AA409CC355E6"
 			tasks: [{
@@ -859,7 +803,7 @@
 				"15E34DEC491FAB81"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.1B04AA7D9AEB2CFA.description1}"]
+			description: ["The &6Advanced Steam Turbine Generator II&r, as expected, consumes even more &9Steam&r to produce even more power.\nAt this point the demand for &9Steam&r may get out of hand a little, so you may benefit from looking into the &3Large Steel boiler&3."]
 			id: "1B04AA7D9AEB2CFA"
 			tasks: [{
 				id: "149469B15ABAD598"
@@ -875,7 +819,7 @@
 				"5C4E189A3E401566"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.7976402E2E5FD625.description1}"]
+			description: ["To upgrade power production in &bGregTech&r, you can either make better generators, or make more of them. The &6Advanced Steam Turbine Generator&r consumes 4x as much &9Steam&r, but in exchange produces 4x as much &eEU&r."]
 			id: "7976402E2E5FD625"
 			tasks: [{
 				id: "04357A2098C6F6CC"
@@ -891,7 +835,10 @@
 				"5C4E189A3E401566"
 			]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.2BCE3E3E0B8180F7.description1}"]
+			description: [
+				"In &bMV&r, you unlock new gasses that are cheaper to produce or last longer in your generators. In particular, &9Benzene&r and &9LPG&r are good options at this stage."
+				"You'll likely need one of them, as &6Advanced Gas Turbine Generators&r consume 4x as much fuel to generate 4x as much &eEU&r."
+			]
 			id: "2BCE3E3E0B8180F7"
 			tasks: [{
 				id: "2D43432E922A6B74"
@@ -908,9 +855,9 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.7E276DF48E9085A4.description1}"
+				"Just like last time, the &6Advanced Gas Turbine Generator II&r is equivalent to 4 turbines of the previous tier."
 				""
-				"{moni.quest.7E276DF48E9085A4.description2}"
+				"If you didn't choose a better fuel then, You'll definitely need one now. &9Nitrobenzene&r is far and away the best option at this stage, being the most efficient fuel available at &6HV&r for &3Gas Turbines&r."
 			]
 			id: "7E276DF48E9085A4"
 			tasks: [{
@@ -928,7 +875,7 @@
 			size: 0.2d
 			tasks: [{
 				id: "5C7471C734001626"
-				title: "{moni.task.5C7471C734001626}"
+				title: " "
 				type: "checkmark"
 			}]
 			x: 10.0d
@@ -937,9 +884,9 @@
 		{
 			dependencies: ["61301FBD825F8280"]
 			description: [
-				"{moni.quest.425D1C34A82B054D.description1}"
+				"The &3Naquadah Reactor&r is a structure used to generate considerable amounts of EU power from decaying &6Naquadah Fuel Rods&r. You will need a little bit of &6Omnium&r to make them."
 				""
-				"{moni.quest.425D1C34A82B054D.description2}"
+				"There are two recipes the reactor can run, each of them with a different balance between power output and fuel efficiency."
 			]
 			icon: "gtceu:naquadah_reactor"
 			id: "425D1C34A82B054D"
@@ -1022,155 +969,33 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.425D1C34A82B054D.title}"
+			title: "&9Naquadah Reactor"
 			x: 2.75d
 			y: -1.0d
 		}
 		{
 			dependencies: [
-				"73C1AB31431B5C11"
-				"0006FEA1843FEA0A"
-				"5BE3E37772FAF6CB"
-			]
-			description: [
-				"{moni.quest.6FDF37EE046349F7.description1}"
-				""
-				"{moni.quest.6FDF37EE046349F7.description2}"
-				""
-				"{moni.quest.6FDF37EE046349F7.description3}"
-				""
-				"{moni.quest.6FDF37EE046349F7.description4}"
-			]
-			hide_until_deps_visible: true
-			id: "6FDF37EE046349F7"
-			optional: true
-			rewards: [{
-				id: "00CF22695EBB0588"
-				item: "kubejs:moni_quarter"
-				type: "item"
-			}]
-			tasks: [{
-				id: "552C09235D8FE4F1"
-				item: "thermal:dynamo_numismatic"
-				type: "item"
-			}]
-			title: "{moni.quest.6FDF37EE046349F7.title}"
-			x: -4.75d
-			y: 5.0d
-		}
-		{
-			dependencies: [
 				"786AECA42F53B45A"
-				"4C0BCA64D5B409F2"
+				"040B3FCD82533BD9"
 			]
 			description: [
-				"{moni.quest.19084E91F357C8C2.description1}"
+				"When fueled, the &3Transdimensional Energy Singularity&r grants unlimited energy to all EU-based machines and energy hatches, removing their need to push or pull power."
+				"This also applies to &6Laser and Dynamo Hatches&r, allowing you to keep your AE2 network and &3Dimensional Superassembler&r running."
 				""
-				"{moni.quest.19084E91F357C8C2.description2}"
+				"Note that while this is running, &3Power Substations&r and &3Active Transformers&r will stop functioning."
 				""
-				"{moni.quest.19084E91F357C8C2.description3}"
+				"(Unique multi mechanic code taken from the Cosmic Frontiers team with Ghosti's gracious permission.)"
 			]
 			icon: "monilabs:creative_energy_multi"
 			id: "19084E91F357C8C2"
 			size: 1.0d
-			subtitle: "{moni.quest.19084E91F357C8C2.subtitle}"
-			tasks: [
-				{
-					id: "0312D4E6C4C1C552"
-					item: "monilabs:creative_energy_multi"
-					type: "item"
-				}
-				{
-					count: 230L
-					id: "79FE36D6072A5662"
-					item: "monilabs:dimensional_stabilization_netherite_casing"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 175L
-					id: "6BEAAF4B3C1E82DD"
-					item: "gtceu:atomic_casing"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 84L
-					id: "0ADE2D96AE891B4F"
-					item: "gtceu:high_power_casing"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "3787F80E70ED6992"
-					item: "gtceu:superconducting_coil"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "29D0F93DC1F493B1"
-					item: "monilabs:eltz_casing"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 28L
-					id: "222886166B3D73B9"
-					item: "monilabs:eltz_frame"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "2AAB4A2C3350A98E"
-					item: "gtceu:heat_vent"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 9L
-					id: "5EE6666A4EDADBDD"
-					item: "gtceu:ptfe_pipe_casing"
-					optional_task: true
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "5332123FE5D91A7F"
-					item: "gtceu:uev_machine_casing"
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "41D0FA4040EC3D96"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:maintenance_hatch"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-				{
-					disable_toast: true
-					id: "4C9AA0B7472B7A34"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "moni:input_hatch"
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			title: "{moni.quest.19084E91F357C8C2.title}"
+			subtitle: "Imbue your factory with infinite power!"
+			tasks: [{
+				id: "0312D4E6C4C1C552"
+				item: "monilabs:creative_energy_multi"
+				type: "item"
+			}]
+			title: "&9Creative Power"
 			x: 11.0d
 			y: -1.0d
 		}
@@ -1182,9 +1007,9 @@
 				"425D1C34A82B054D"
 			]
 			description: [
-				"{moni.quest.21E10888F52A3C73.description1}"
+				"The &3Large Naquadah Reactor&r is an upgraded reactor that can generate immense amounts of EU energy from burning liquid &6Naquadah Fuels&r. These fuels are more complicated than the fuel rods, but will generate massive amounts of power in return."
 				""
-				"{moni.quest.21E10888F52A3C73.description2}"
+				"You will need quite robust Fusion infrastructure to make all of the &6Tritanium&r needed for the coils."
 			]
 			icon: "gtceu:large_naquadah_reactor"
 			id: "21E10888F52A3C73"
@@ -1289,7 +1114,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.21E10888F52A3C73.title}"
+			title: "&9Large Naquadah Reactor"
 			x: 5.5d
 			y: -1.0d
 		}
@@ -1299,15 +1124,15 @@
 				"113E9543ADB1666B"
 			]
 			description: [
-				"{moni.quest.5EE2338113F22952.description1}"
+				"The &3Antimatter Collider&r is a large multiblock that can generate more energy than you will be able to transport."
 				""
-				"{moni.quest.5EE2338113F22952.description2}"
+				"It does so by gathering energy from the annihilation of &6Antimatter Fuel&r and one of two collidants: &6Neutronium&r or &6Eltz&r."
 				""
-				"{moni.quest.5EE2338113F22952.description3}"
+				"When building the collider, note that each ring of &6Netherite Casing&r must have its own fluid input hatch, and that only single fluid hatches are accepted."
 				"{@pagebreak}"
-				"{moni.quest.5EE2338113F22952.description4}"
+				"&cOnce the collider is turned on, all fluids in both hatches will be constantly consumed.&r Energy will be created for equal amounts of matter and antimatter, with a bonus multiplier for larger batches of collidants."
 				""
-				"{moni.quest.5EE2338113F22952.description5}"
+				"&eExcess of either fluid will be destroyed&r. Energy created that doesn't fit into the dynamo/laser hatch &ewill be lost&r."
 			]
 			icon: "gtceu:antimatter_collider"
 			id: "5EE2338113F22952"
@@ -1394,7 +1219,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.5EE2338113F22952.title}"
+			title: "&9Antimatter Collider"
 			x: 6.5d
 			y: -2.0d
 		}
@@ -1411,6 +1236,235 @@
 			x: 11.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["5C4E189A3E401566"]
+			description: [
+				"If you want to move on from &9Steam&r but aren't particularly fond of &3Combustion Generators&r and &3Gas Turbines&r, Monifactory also offers a third option in the form of the &3Lapotronic Generator&r."
+				""
+				"With it, you can &eproduce power out of gems&r. Currently, you will have access to &6Topaz&r, &6Diamonds&r and &6Emeralds&r but you will gain access to better fuels later on."
+			]
+			id: "3467DBD5B3D84F51"
+			tasks: [{
+				id: "0A6DF2A9B9BC5EC6"
+				item: "monilabs:mv_lapotronic"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3467DBD5B3D84F51"
+				"15E34DEC491FAB81"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The &6Advanced Lapotronic Generator II&r will burn its gems &e4x&r as fast, in exchange for &e4x&r the EU/t. This results in the same total EU per gem."
+				""
+				"Access to &6Microminers&r in &6HV&r will allow you to automate the production of a variety of gems. In particular, &6Energium&r and &6Lapotron&r gems are a more processed alternative to simpler gems."
+			]
+			id: "2FA11287735CE67F"
+			tasks: [{
+				id: "5A04194846F29AED"
+				item: "monilabs:hv_lapotronic"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2FA11287735CE67F"
+				"785C6332FC7A07A5"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Large Lapotronic Generator is much like an &5EV&r upgrade to an &6HV&r lapotronic Generator, but with a few differences."
+				""
+				"First, it's a multiblock. This means it takes up more space, requires a &6Maintenance Hatch&r, and costs a significant amount of Titanium."
+				""
+				"Second, it consumes small amounts of &9Liquid Redstone&r in addition to regular lapotronic fuels."
+				""
+				"Third, it can be supercharged with tiny amounts of &9Primal Mana&r to produce &e3A&r &5EV&r with &e2A&r worth of fuel."
+			]
+			icon: "monilabs:large_lapotronic_generator"
+			id: "7EC8FB68BD2AB417"
+			tasks: [
+				{
+					id: "30F87C1F36EF0136"
+					item: "monilabs:large_lapotronic_generator"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "5C10B8D78F60E258"
+					item: { Count: 6, id: "gtceu:stable_machine_casing" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "322EA160CAD9AC64"
+					item: { Count: 2, id: "gtceu:titanium_gearbox" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "7454C711D2F19706"
+					item: { Count: 20, id: "monilabs:energetic_titanium_casing" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4A795B80331A8962"
+					item: { Count: 4, id: "gtceu:titanium_frame" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1557ED0AD97AD3E2"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "64C1BCDCA013452D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "315F0560311C1BE7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"7EC8FB68BD2AB417"
+				"605062720747B482"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"The Extreme Lapotronic Generator is a direct upgrade to the Large Lapotronic Generator."
+				""
+				"It produces &e4x&r the power for &e4x&r as much fuel like any other generator upgrade, but consumes the same amount of &9Liquid Redstone&r."
+				""
+				"Additionally, supercharging with &9Primal Mana&r is even more efficient, producing &e4A&r &9IV&r with &e2A&r worth of fuel."
+			]
+			icon: "monilabs:extreme_lapotronic_generator"
+			id: "11CF72393601F450"
+			tasks: [
+				{
+					id: "653ECF6D0B4EC32F"
+					item: "monilabs:extreme_lapotronic_generator"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "459928CD1EF289CD"
+					item: { Count: 6, id: "gtceu:robust_machine_casing" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0174D69C294267A3"
+					item: { Count: 2, id: "gtceu:tungstensteel_gearbox" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "463A26F2B638923D"
+					item: { Count: 20, id: "monilabs:lapotronic_tungstensteel_casing" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5183C056B8D157BD"
+					item: { Count: 4, id: "gtceu:tungsten_steel_frame" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F69DD8612BD4338"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:maintenance_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1F7BDDB4E6F31918"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:input_bus"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36F7F8F62814B2D1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "moni:dynamo_hatch"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11CF72393601F450"]
+			id: "3E9842ABB6C5B16A"
+			optional: true
+			size: 0.2d
+			tasks: [{
+				id: "661057768850D9B1"
+				type: "checkmark"
+			}]
+			title: " "
+			x: 2.5d
+			y: -4.0d
+		}
 	]
-	title: "{moni.chapter.0102198269F850CD.title}"
+	title: "Power Generation"
 }

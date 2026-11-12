@@ -7,204 +7,19 @@
 	icon: "minecraft:writable_book"
 	id: "395B849AC6294153"
 	order_index: 5
-	quest_links: [
-		{
-			id: "7D217833035647CD"
-			linked_quest: "04A0863937695AC4"
-			x: 17.0d
-			y: -8.5d
-		}
-		{
-			id: "4CA98E8FC9082FA2"
-			linked_quest: "5F9C7FB40AD2640B"
-			x: 17.0d
-			y: -5.5d
-		}
-		{
-			id: "6E8F35B6CC447F93"
-			linked_quest: "1BC6DDC2D50F9C46"
-			shape: "hexagon"
-			x: 18.5d
-			y: -8.5d
-		}
-		{
-			id: "63280C5F37A22345"
-			linked_quest: "2EBB9A154522348F"
-			size: 2.0d
-			x: 7.0d
-			y: 11.5d
-		}
-		{
-			id: "2D26C83F2B01F12D"
-			linked_quest: "3E69E1949316BD0C"
-			x: 17.0d
-			y: -1.0d
-		}
-		{
-			id: "1BD667B1076EDD5F"
-			linked_quest: "3D6BC54DBE665638"
-			x: 17.0d
-			y: -4.0d
-		}
-		{
-			id: "46C91BC7D1FBA463"
-			linked_quest: "3115EAF1F70A613E"
-			shape: "hexagon"
-			x: 20.0d
-			y: -8.5d
-		}
-		{
-			id: "6D8DCF46A3036C88"
-			linked_quest: "5C78349343BA40D7"
-			shape: "hexagon"
-			x: 18.5d
-			y: -7.0d
-		}
-		{
-			id: "78CBAAFFCED49F1C"
-			linked_quest: "1DB3CCC10C0EB1A8"
-			shape: "hexagon"
-			x: 20.0d
-			y: -7.0d
-		}
-		{
-			id: "752245BAE721598C"
-			linked_quest: "53EC3831D66769CA"
-			shape: "hexagon"
-			x: 20.0d
-			y: -4.0d
-		}
-		{
-			id: "207DD39F07E9EAC9"
-			linked_quest: "3DD8D9EEA7189186"
-			shape: "hexagon"
-			x: 18.5d
-			y: -2.5d
-		}
-		{
-			id: "3260188D1D1543AC"
-			linked_quest: "424413BBCE3FD3BF"
-			shape: "hexagon"
-			x: 20.0d
-			y: -2.5d
-		}
-		{
-			id: "57D9AB6BFC44C8FE"
-			linked_quest: "28CA4E5308EC0BB9"
-			shape: "hexagon"
-			x: 18.5d
-			y: -1.0d
-		}
-		{
-			id: "1280D62386BC2C4E"
-			linked_quest: "15FAEE3F625265F4"
-			shape: "hexagon"
-			x: 20.0d
-			y: -1.0d
-		}
-		{
-			id: "11707078B274A023"
-			linked_quest: "638130DC8A2BF1C1"
-			size: 1.2d
-			x: 22.0d
-			y: -8.5d
-		}
-		{
-			id: "01878A313A454D5D"
-			linked_quest: "53C00EA9D9BEE776"
-			size: 1.2d
-			x: 22.0d
-			y: -7.0d
-		}
-		{
-			id: "79E03BBE3F281AD5"
-			linked_quest: "664107ED03A944CD"
-			size: 1.2d
-			x: 22.0d
-			y: -5.5d
-		}
-		{
-			id: "3FF813B417BA0F0C"
-			linked_quest: "15DBB22E3DC0AFB7"
-			size: 1.4d
-			x: 22.0d
-			y: -4.0d
-		}
-		{
-			id: "357D1A1342B62C34"
-			linked_quest: "023197AB7CDBDD6E"
-			size: 1.4d
-			x: 22.0d
-			y: -2.5d
-		}
-		{
-			id: "73970F01D2A201B5"
-			linked_quest: "49B872B193268554"
-			size: 1.4d
-			x: 22.0d
-			y: -1.0d
-		}
-		{
-			id: "2C75892426FCF3CF"
-			linked_quest: "5FE96C30454A0374"
-			size: 1.4d
-			x: 22.0d
-			y: 0.5d
-		}
-		{
-			id: "0235B280EA62E904"
-			linked_quest: "2D47BFA44BDB5E6A"
-			size: 2.0d
-			x: 22.0d
-			y: 4.5d
-		}
-		{
-			id: "6769FF4B998F524C"
-			linked_quest: "6BF4A76C5B84EEE9"
-			size: 2.0d
-			x: 22.0d
-			y: 6.5d
-		}
-		{
-			id: "2299A97C8D4BF1B8"
-			linked_quest: "27EBB5AAF8A40F3D"
-			size: 2.0d
-			x: 22.0d
-			y: 8.5d
-		}
-		{
-			id: "53D04354B8061A41"
-			linked_quest: "6B80737C5E1359F7"
-			x: 17.0d
-			y: -2.5d
-		}
-		{
-			id: "6A0F4CBB58BE6D22"
-			linked_quest: "7A65459E4DFAAC2D"
-			shape: "hexagon"
-			x: 18.5d
-			y: 0.5d
-		}
-		{
-			id: "72AB40B2D5F508E6"
-			linked_quest: "61301FBD825F8280"
-			shape: "hexagon"
-			x: 20.0d
-			y: 2.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["1A30472430354F1E"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.5B6811964444497F.description1}"
+				"Circuits along this row are &7LV&r, and can all be substituted in recipes."
 				""
-				"{moni.quest.5B6811964444497F.description2}"
+				"&6Electronic Circuits&r are the worst in terms of cost and effort required to produce, but you have to start with something."
 				""
-				"{moni.quest.5B6811964444497F.description3}"
+				"&6Integrated Circuits&r are the middle column between Electronic Circuits and &6Microprocessors&r."
 				""
-				"{moni.quest.5B6811964444497F.description4}"
+				"And finally, Microprocessors, which take the lowest effort."
 			]
 			id: "5B6811964444497F"
 			min_required_dependencies: 1
@@ -223,10 +38,10 @@
 						value: "gtceu:circuits/lv"
 					}
 				}
-				title: "{moni.task.6DFE042FD9FCC8D1}"
+				title: "Any #gtceu:circuits/lv"
 				type: "item"
 			}]
-			title: "{moni.quest.5B6811964444497F.title}"
+			title: "&7LV&r Circuits"
 			x: -9.5d
 			y: -5.5d
 		}
@@ -234,9 +49,9 @@
 			dependencies: ["3B639F4061B00F1A"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.1510DC51CDC3F609.description1}"
+				"Circuits along this row are &bMV&r, and can all be substituted in recipes."
 				""
-				"{moni.quest.1510DC51CDC3F609.description2}"
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
 			]
 			id: "1510DC51CDC3F609"
 			rewards: [{
@@ -254,10 +69,10 @@
 						value: "gtceu:circuits/mv"
 					}
 				}
-				title: "{moni.task.51CD461474675310}"
+				title: "Any #gtceu:circuits/mv"
 				type: "item"
 			}]
-			title: "{moni.quest.1510DC51CDC3F609.title}"
+			title: "&bMV&r Circuits"
 			x: -8.0d
 			y: -4.0d
 		}
@@ -265,9 +80,9 @@
 			dependencies: ["6169C04DF463502F"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.01CC71429CFCAE0B.description1}"
+				"Circuits along this row are &6HV&r, and can all be substituted in recipes."
 				""
-				"{moni.quest.01CC71429CFCAE0B.description2}"
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
 			]
 			id: "01CC71429CFCAE0B"
 			rewards: [{
@@ -285,10 +100,10 @@
 						value: "gtceu:circuits/hv"
 					}
 				}
-				title: "{moni.task.75DC170D1A2B3236}"
+				title: "Any #gtceu:circuits/hv"
 				type: "item"
 			}]
-			title: "{moni.quest.01CC71429CFCAE0B.title}"
+			title: "&6HV&r Circuits"
 			x: -6.5d
 			y: -2.5d
 		}
@@ -296,9 +111,9 @@
 			dependencies: ["7E09D4E00BFA4970"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.22B3F2351CB4B7D8.description1}"
+				"Circuits along this row are &5EV&r, and can all be substituted in recipes."
 				""
-				"{moni.quest.22B3F2351CB4B7D8.description2}"
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
 			]
 			id: "22B3F2351CB4B7D8"
 			rewards: [{
@@ -316,10 +131,10 @@
 						value: "gtceu:circuits/ev"
 					}
 				}
-				title: "{moni.task.53B9C726DD479B51}"
+				title: "Any #gtceu:circuits/ev"
 				type: "item"
 			}]
-			title: "{moni.quest.22B3F2351CB4B7D8.title}"
+			title: "&5EV&r Circuits"
 			x: -5.0d
 			y: -1.0d
 		}
@@ -327,9 +142,9 @@
 			dependencies: ["39FD6F1076559156"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.2179B83440CEF343.description1}"
+				"Circuits along this row are &9IV&r, and can all be substituted in recipes."
 				""
-				"{moni.quest.2179B83440CEF343.description2}"
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
 			]
 			id: "2179B83440CEF343"
 			tasks: [{
@@ -342,10 +157,10 @@
 						value: "gtceu:circuits/iv"
 					}
 				}
-				title: "{moni.task.4FBA73EEA5437DC6}"
+				title: "Any #gtceu:circuits/iv"
 				type: "item"
 			}]
-			title: "{moni.quest.2179B83440CEF343.title}"
+			title: "&9IV&r Circuits"
 			x: -3.5d
 			y: 0.5d
 		}
@@ -353,13 +168,11 @@
 			dependencies: ["4DB622A78605A2EB"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.536CEDA3142BCE63.description1}"
+				"Circuits along this row are &dLuV&r, and can all be substituted in recipes."
 				""
-				"{moni.quest.536CEDA3142BCE63.description2}"
+				"The pattern stays the same: the rightmost circuit comes in larger quantities and is overall easier to produce."
 				""
-				"{moni.quest.536CEDA3142BCE63.description3}"
-				""
-				"{moni.quest.536CEDA3142BCE63.description4}"
+				"It's LuV, not LUV."
 			]
 			hide_dependency_lines: false
 			id: "536CEDA3142BCE63"
@@ -373,17 +186,17 @@
 						value: "gtceu:circuits/luv"
 					}
 				}
-				title: "{moni.task.42DE11F1A04B0B97}"
+				title: "Any #gtceu:circuits/luv"
 				type: "item"
 			}]
-			title: "{moni.quest.536CEDA3142BCE63.title}"
+			title: "&dLuV&r Circuits"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["521977C7165229F1"]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.0472A05CFBF4A2F0.description1}"]
+			description: ["Circuits along this row are &cZPM&r, and can all be substituted in recipes."]
 			disable_toast: true
 			id: "0472A05CFBF4A2F0"
 			tasks: [{
@@ -396,17 +209,17 @@
 						value: "gtceu:circuits/zpm"
 					}
 				}
-				title: "{moni.task.29F9B9784EDCAC70}"
+				title: "Any #gtceu:circuits/zpm"
 				type: "item"
 			}]
-			title: "{moni.quest.0472A05CFBF4A2F0.title}"
+			title: "&cZPM&r Circuits"
 			x: -0.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["115B96B2092D671E"]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.519A11FDC6A7EF21.description1}"]
+			description: ["Circuits along this row are &3UV&r, and can all be substituted in recipes."]
 			id: "519A11FDC6A7EF21"
 			tasks: [{
 				icon: "kubejs:uv_universal_circuit"
@@ -418,17 +231,17 @@
 						value: "gtceu:circuits/uv"
 					}
 				}
-				title: "{moni.task.5D3D61A04CC17374}"
+				title: "Any #gtceu:circuits/uv"
 				type: "item"
 			}]
-			title: "{moni.quest.519A11FDC6A7EF21.title}"
+			title: "&3UV&r Circuits"
 			x: 1.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["01E542E1C9DAF5B4"]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.0C50D78D8F63CAFE.description1}"]
+			description: ["Circuits along this row are &4UHV&r, and can all be substituted in recipes."]
 			id: "0C50D78D8F63CAFE"
 			tasks: [{
 				icon: "kubejs:uhv_universal_circuit"
@@ -440,29 +253,27 @@
 						value: "gtceu:circuits/uhv"
 					}
 				}
-				title: "{moni.task.23886E0727C34288}"
+				title: "Any #gtceu:circuits/uhv"
 				type: "item"
 			}]
-			title: "{moni.quest.0C50D78D8F63CAFE.title}"
+			title: "&4UHV&r Circuits"
 			x: 2.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["077AA27F26B7831F"]
 			description: [
-				"{moni.quest.2280472741683581.description1}"
+				"&oNote: this quest accepts a Power Unit of any voltage (LV, MV, HV, EV \\& IV).&r"
 				""
-				"{moni.quest.2280472741683581.description2}"
+				"With &bGregTech &6Power Storage&r unlocked, you can make &aPower Units&r for electric GT tools."
 				""
-				"{moni.quest.2280472741683581.description3}"
+				"&2Drills at LV tier can mine a 3x3x1 area of blocks, and at MV tier can mine a 3x3x3 area of blocks."
 				""
-				"{moni.quest.2280472741683581.description4}"
+				"Higher tier drills can mine 5x5x5, 7x7x7 and 9x9x9 areas! Shift-right-click to change the breaking area.&r"
 				""
-				"{moni.quest.2280472741683581.description5}"
+				"Charge these with a &6Battery&r of appropriate tier, or in an appropriately tiered &3Machine&r, &3Battery Buffer&r or &3Turbo Charger&r. "
 				""
-				"{moni.quest.2280472741683581.description6}"
-				""
-				"{moni.quest.2280472741683581.description7}"
+				"You may want to look into &6Chainsaws&r for mass tree felling as well, or a &6Wrench&r for breaking machines very quickly. The other electric tools are probably not worth making."
 			]
 			id: "2280472741683581"
 			tasks: [{
@@ -495,16 +306,17 @@
 						]
 					}
 				}
-				title: "{moni.task.028CED757315461B}"
+				title: "Any Power Unit"
 				type: "item"
 			}]
-			title: "{moni.quest.2280472741683581.title}"
+			title: "GregTech Electric Tools"
 			x: 17.0d
-			y: -7.0d
+			y: -8.5d
 		}
 		{
-			dependencies: ["66FCC26399376B55"]
-			description: ["{moni.quest.3270496124969A51.description1}"]
+			dependencies: ["2E8BFA2E719B1C47"]
+			dependency_requirement: "all_started"
+			description: ["Carry stuff."]
 			disable_toast: true
 			id: "3270496124969A51"
 			tasks: [{
@@ -512,8 +324,8 @@
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
-			title: "{moni.quest.3270496124969A51.title}"
-			x: 10.5d
+			title: "Backpack"
+			x: 12.5d
 			y: -8.5d
 		}
 		{
@@ -521,7 +333,7 @@
 				"0A9BC922CF76F48A"
 				"7DB174443D7FAFA0"
 			]
-			description: ["{moni.quest.6DEA5CE28A667453.description1}"]
+			description: ["Carry &3&l&o&neven more&r stuff."]
 			disable_toast: true
 			id: "6DEA5CE28A667453"
 			tasks: [{
@@ -529,45 +341,17 @@
 				item: "sophisticatedbackpacks:netherite_backpack"
 				type: "item"
 			}]
-			title: "{moni.quest.6DEA5CE28A667453.title}"
-			x: 10.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"7DB174443D7FAFA0"
-				"1CC092A2F2CD4589"
-				"14F1FF4656693711"
-				"55074143B559493F"
-			]
-			description: [
-				"{moni.quest.15B1277EF8657C65.description1}"
-				""
-				"{moni.quest.15B1277EF8657C65.description2}"
-				""
-				"{moni.quest.15B1277EF8657C65.description3}"
-			]
-			disable_toast: true
-			id: "15B1277EF8657C65"
-			rewards: [{
-				id: "790D1FEAB25D4ACD"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			tasks: [{
-				id: "445CD99C82559395"
-				item: "thermal:upgrade_augment_3"
-				type: "item"
-			}]
+			title: "Resonant Backpack"
 			x: 12.5d
-			y: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"3F6EDC2481D5877F"
 				"2C89DAD26E08E382"
 			]
-			description: ["{moni.quest.1F976B197DEFF654.description1}"]
+			dependency_requirement: "all_started"
+			description: ["Carry &oeven more&r stuff."]
 			icon: {
 				Count: 1
 				id: "sophisticatedbackpacks:iron_backpack"
@@ -607,8 +391,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "{moni.quest.1F976B197DEFF654.title}"
-			x: 10.5d
+			title: "Hardened Backpack"
+			x: 12.5d
 			y: -5.5d
 		}
 		{
@@ -616,7 +400,7 @@
 				"3AB0402B19DD5BA8"
 				"1F976B197DEFF654"
 			]
-			description: ["{moni.quest.503CA19637471E6E.description1}"]
+			description: ["Carry &o&leven more&r stuff."]
 			disable_toast: true
 			id: "503CA19637471E6E"
 			rewards: [{
@@ -642,8 +426,8 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.503CA19637471E6E.title}"
-			x: 10.5d
+			title: "Reinforced Backpack"
+			x: 12.5d
 			y: -4.0d
 		}
 		{
@@ -651,7 +435,7 @@
 				"27A80F018F59EF1E"
 				"503CA19637471E6E"
 			]
-			description: ["{moni.quest.0A9BC922CF76F48A.description1}"]
+			description: ["Carry &l&o&neven more&r stuff."]
 			disable_toast: true
 			id: "0A9BC922CF76F48A"
 			shape: "square"
@@ -673,100 +457,9 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.0A9BC922CF76F48A.title}"
-			x: 10.5d
+			title: "Signalum Backpack"
+			x: 12.5d
 			y: -2.5d
-		}
-		{
-			dependencies: [
-				"025543EDB0A4AC22"
-				"3F6EDC2481D5877F"
-			]
-			description: [
-				"{moni.quest.126ED4A0AEA05DCD.description1}"
-				""
-				"{moni.quest.126ED4A0AEA05DCD.description2}"
-				""
-				"{moni.quest.126ED4A0AEA05DCD.description3}"
-			]
-			disable_toast: true
-			id: "126ED4A0AEA05DCD"
-			rewards: [{
-				id: "48105C59C4C73BF9"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-			subtitle: "{moni.quest.126ED4A0AEA05DCD.subtitle}"
-			tasks: [{
-				id: "78E3752A857221D8"
-				item: {
-					Count: 1
-					id: "thermal:upgrade_augment_1"
-					tag: {
-						AugmentData: {
-							BaseMod: 1.5f
-							Type: "Upgrade"
-						}
-					}
-				}
-				match_nbt: false
-				type: "item"
-			}]
-			x: 12.5d
-			y: -8.5d
-		}
-		{
-			dependencies: [
-				"126ED4A0AEA05DCD"
-				"3000798ACA51BFDC"
-			]
-			description: [
-				"{moni.quest.5CFBAB5F83E33064.description1}"
-				""
-				"{moni.quest.5CFBAB5F83E33064.description2}"
-				""
-				"{moni.quest.5CFBAB5F83E33064.description3}"
-			]
-			disable_toast: true
-			id: "5CFBAB5F83E33064"
-			shape: "square"
-			size: 1.0d
-			tasks: [{
-				id: "5A83B44B86BFE10C"
-				item: "thermal:upgrade_augment_2"
-				type: "item"
-			}]
-			x: 12.5d
-			y: -7.0d
-		}
-		{
-			dependencies: [
-				"27A80F018F59EF1E"
-				"5CFBAB5F83E33064"
-			]
-			description: [
-				"{moni.quest.55074143B559493F.description1}"
-				""
-				"{moni.quest.55074143B559493F.description2}"
-				""
-				"{moni.quest.55074143B559493F.description3}"
-			]
-			disable_toast: true
-			id: "55074143B559493F"
-			rewards: [{
-				id: "233CDA5C0B9CDB1A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "square"
-			tasks: [{
-				id: "22B125A4AD3E034B"
-				item: "thermal:upgrade_augment_4"
-				match_nbt: false
-				type: "item"
-			}]
-			x: 12.5d
-			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -775,11 +468,11 @@
 				"044553423097C3C7"
 			]
 			description: [
-				"{moni.quest.5D0A642048AF909B.description1}"
+				"&6RTM Alloy&r is an alloy of &6Ruthenium&r, &6Tungsten&r and &6Molybdenum&r, hence the name."
 				""
-				"{moni.quest.5D0A642048AF909B.description2}"
+				"This alloy is cooked in an &3Electric Blast Furnace&r and cooled in a &3Vacuum Freezer&r."
 				""
-				"{moni.quest.5D0A642048AF909B.description3}"
+				"For now, &6Ruthenium&r must be processed from &6Platinum Group Sludge&r."
 			]
 			disable_toast: true
 			id: "5D0A642048AF909B"
@@ -794,16 +487,16 @@
 				item: "gtceu:rtm_alloy_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.5D0A642048AF909B.title}"
+			title: "RTM Alloy"
 			x: 20.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["5D0A642048AF909B"]
 			description: [
-				"{moni.quest.6DC635766CD40FFF.description1}"
+				"&6RTM Alloy&r is the fourth coil material available, increasing your &3EBF&r's operating temperature to &a4500&rK so it can process more advanced materials."
 				""
-				"{moni.quest.6DC635766CD40FFF.description2}"
+				"With these coils you can now smelt &6Tungstensteel&r, required for &9IV&r machinery, and &6Tantalum Carbide&r, required for the &3Alloy Blast Smelter&r."
 			]
 			disable_toast: true
 			id: "6DC635766CD40FFF"
@@ -819,20 +512,20 @@
 				item: "gtceu:rtm_alloy_coil_block"
 				type: "item"
 			}]
-			title: "{moni.quest.6DC635766CD40FFF.title}"
+			title: "RTM Alloy Coil Blocks"
 			x: 18.5d
 			y: -4.0d
 		}
 		{
-			dependencies: ["3A5387B2003177B2"]
+			dependencies: ["06E9B9DDDB245F38"]
 			description: [
-				"{moni.quest.712023557B5B1812.description1}"
+				"It's probably a bit premature to consider a &6jetpack&r at this point, but if you really want to craft this bad boy, I won't stop you."
 				""
-				"{moni.quest.712023557B5B1812.description2}"
+				"There's also a quest chain for &bEnder IO&r Jetpacks (starting with the &6Conductive Iron Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you &oreally&r like flying."
 			]
 			disable_toast: true
 			id: "712023557B5B1812"
-			subtitle: "{moni.quest.712023557B5B1812.subtitle}"
+			subtitle: "Being able to fly is pretty sick. It's also pretty expensive."
 			tasks: [{
 				id: "0AEBB08D9E593A5B"
 				item: {
@@ -851,9 +544,9 @@
 		{
 			dependencies: ["7842EC1C389C4B7E"]
 			description: [
-				"{moni.quest.6ABF927014F8B79D.description1}"
+				"Being able to fly is nice. This is the first jetpack that uses &bEnder IO&r materials."
 				""
-				"{moni.quest.6ABF927014F8B79D.description2}"
+				"There's also a quest chain for &bThermal Expansion&r Jetpacks (starting with the &6Leadstone Jetpack&r). Eventually you'll need to make both, but not for a long time, so feel free to ignore at least one of these quest chains unless you &oreally&r like flying."
 			]
 			disable_toast: true
 			id: "6ABF927014F8B79D"
@@ -881,8 +574,10 @@
 			dependencies: [
 				"64F45D98FA48D834"
 				"6ABF927014F8B79D"
+				"1AA0A089DCA17FC8"
+				"273F3F8DD6A3DCC5"
 			]
-			description: ["{moni.quest.7B1D349ADD9D1140.description1}"]
+			description: ["Flying faster is nice."]
 			disable_toast: true
 			id: "7B1D349ADD9D1140"
 			rewards: [{
@@ -902,7 +597,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "{moni.quest.7B1D349ADD9D1140.title}"
+			title: "Ironman 2"
 			x: 14.0d
 			y: -7.0d
 		}
@@ -911,7 +606,7 @@
 				"0607A59215F0F8B3"
 				"7B1D349ADD9D1140"
 			]
-			description: ["{moni.quest.15A43AB700CADF2D.description1}"]
+			description: ["Flying faster, even nicer."]
 			disable_toast: true
 			id: "15A43AB700CADF2D"
 			rewards: [{
@@ -932,7 +627,7 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "{moni.quest.15A43AB700CADF2D.title}"
+			title: "Ironman 3"
 			x: 14.0d
 			y: -5.5d
 		}
@@ -943,7 +638,7 @@
 				"712023557B5B1812"
 				"3F6EDC2481D5877F"
 			]
-			description: ["{moni.quest.4542BF5E00FCBEA1.description1}"]
+			description: ["Better flying."]
 			disable_toast: true
 			id: "4542BF5E00FCBEA1"
 			tasks: [{
@@ -967,9 +662,9 @@
 				"15A43AB700CADF2D"
 			]
 			description: [
-				"{moni.quest.2923E98849358E16.description1}"
+				"The &aAngel Ring&r is actually slower than a jetpack, but it grants creative flight and requires no fuel."
 				""
-				"{moni.quest.2923E98849358E16.description2}"
+				"Up to you if you want to use it over a jetpack for day-to-day stuff, but it's an ingredient in each of the Jetplates so if you want either of them you'll need to make one eventually."
 			]
 			disable_toast: true
 			id: "2923E98849358E16"
@@ -979,22 +674,19 @@
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
-			subtitle: "{moni.quest.2923E98849358E16.subtitle}"
+			subtitle: "I'm running out of MCU puns."
 			tasks: [{
 				id: "1E1C020C525B7F47"
 				item: "better_angel_ring:angel_ring"
 				type: "item"
 			}]
-			title: "{moni.quest.2923E98849358E16.title}"
+			title: "Captain… Marvel? IDK"
 			x: 14.75d
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"6F5BB99060FF03AC"
-				"5911900438648430"
-			]
-			description: ["{moni.quest.4EB9D1ADC4814330.description1}"]
+			dependencies: ["6F5BB99060FF03AC"]
+			description: ["Nothing really special about this tier."]
 			id: "4EB9D1ADC4814330"
 			shape: "hexagon"
 			tasks: [{
@@ -1002,7 +694,7 @@
 				item: "kubejs:optical_processor_computer"
 				type: "item"
 			}]
-			title: "{moni.quest.4EB9D1ADC4814330.title}"
+			title: "The Second Tier Nine Circuit"
 			x: 5.5d
 			y: 6.5d
 		}
@@ -1011,7 +703,7 @@
 				"4EB9D1ADC4814330"
 				"7AF06CB391779388"
 			]
-			description: ["{moni.quest.07057CDE4E021BA7.description1}"]
+			description: ["Your first &aUEV&r circuit. With this circuit tier, you have unlocked the door to technological marvels that bend the laws of reality."]
 			id: "07057CDE4E021BA7"
 			shape: "hexagon"
 			tasks: [{
@@ -1019,21 +711,23 @@
 				item: "kubejs:optical_processor_mainframe"
 				type: "item"
 			}]
-			title: "{moni.quest.07057CDE4E021BA7.title}"
+			title: "The First Tier Ten Circuit"
 			x: 5.5d
 			y: 8.0d
 		}
 		{
 			dependencies: ["0C9A9F33EEA3AB5E"]
 			description: [
-				"{moni.quest.5601A05D8361551D.description1}"
+				"Assembling &6Optical Circuitry&r inside Microverse shards is quite tricky and inconsistent, but pulling it off is the key to assembling the perfect circuit, the &6Extradimensional Processor Mainframe&r."
 				""
-				"{moni.quest.5601A05D8361551D.description2}"
+				"&6Optical Extradimensional CPU Cores&r are very delicate and have a chance to fail entirely, so you'll have to get creative automating those."
+				""
+				"Extradimensional Processor Mainframes are unique in that there are no subsequent circuit themes, and thus no other kinds of Tier Eleven circuits."
 			]
 			icon: "kubejs:extradimensional_processor_mainframe"
 			id: "5601A05D8361551D"
 			shape: "hexagon"
-			subtitle: "{moni.quest.5601A05D8361551D.subtitle}"
+			subtitle: "The Final Circuit!"
 			tasks: [
 				{
 					id: "7C6BFAE0BEAADEA4"
@@ -1046,13 +740,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.5601A05D8361551D.title}"
+			title: "The First (And Only) Tier Eleven Circuit"
 			x: 7.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["248ABB7F26EB72EE"]
-			description: ["{moni.quest.6F5BB99060FF03AC.description1}"]
+			description: ["At this point, if you are not already using multiple &3Assembly Lines&r to perform your Circuit recipes, you really should be."]
 			id: "6F5BB99060FF03AC"
 			shape: "hexagon"
 			tasks: [{
@@ -1060,7 +754,7 @@
 				item: "kubejs:optical_processor_assembly"
 				type: "item"
 			}]
-			title: "{moni.quest.6F5BB99060FF03AC.title}"
+			title: "The Third Tier Eight Circuit"
 			x: 5.5d
 			y: 5.0d
 		}
@@ -1068,12 +762,12 @@
 			dependencies: [
 				"0F56F4E642BC2B85"
 				"44E2C12FC4C26CA9"
-				"187083EB66D95726"
+				"3E1A349F989835F7"
 			]
 			description: [
-				"{moni.quest.248ABB7F26EB72EE.description1}"
+				"&6Optical Circuits&r and those that follow it are far more expensive than previous circuit themes, requiring chromatically processed Chips (yum)."
 				""
-				"{moni.quest.248ABB7F26EB72EE.description2}"
+				"Don't let that discourage you, though. They unlock many useful tools to add to your factory."
 			]
 			id: "248ABB7F26EB72EE"
 			shape: "hexagon"
@@ -1082,34 +776,29 @@
 				item: "kubejs:optical_processor"
 				type: "item"
 			}]
-			title: "{moni.quest.248ABB7F26EB72EE.title}"
+			title: "The Fourth And Final Tier Seven Circuits"
 			x: 5.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["5601A05D8361551D"]
-			description: ["{moni.quest.11FDFB08CD48D66E.description1}"]
+			description: ["The &cMAX&r voltage lacks machines to call its own, with the primary usage of its circuits being to craft &cMAX &6Energy Hatches&r and the &6Creative Quantum Chest&r."]
+			disable_toast: true
 			id: "11FDFB08CD48D66E"
-			subtitle: "{moni.quest.11FDFB08CD48D66E.subtitle}"
+			subtitle: "There can be only one!"
 			tasks: [{
 				id: "703CDB7D8BF05A55"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "gtceu:circuits/max"
-					}
-				}
+				item: "kubejs:extradimensional_processor_mainframe"
 				type: "item"
 			}]
-			title: "{moni.quest.11FDFB08CD48D66E.title}"
+			title: "&cMAX&r Circuit"
 			x: 5.5d
 			y: 9.5d
 		}
 		{
 			dependencies: ["07057CDE4E021BA7"]
 			dependency_requirement: "one_completed"
-			description: ["{moni.quest.0B923E8ED6161CA8.description1}"]
+			description: ["Circuits along this row are &aUEV&r, and can all be substituted in recipes."]
 			id: "0B923E8ED6161CA8"
 			tasks: [{
 				icon: "kubejs:uev_universal_circuit"
@@ -1123,7 +812,7 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.0B923E8ED6161CA8.title}"
+			title: "&aUEV&r Circuits"
 			x: 4.0d
 			y: 8.0d
 		}
@@ -1132,7 +821,7 @@
 				"3D7924B550A1BBA0"
 				"2D5677EA9F47AA83"
 			]
-			description: ["{moni.quest.0C9A9F33EEA3AB5E.description1}"]
+			description: ["Combining &6Wetware&r bioengineering technologies with non-Euclidean spaces together allows you to assemble the &6Extradimensional Processor Supercomputer&r."]
 			icon: "kubejs:extradimensional_processor_computer"
 			id: "0C9A9F33EEA3AB5E"
 			shape: "hexagon"
@@ -1148,13 +837,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.0C9A9F33EEA3AB5E.title}"
+			title: "The Second Tier Ten Circuit"
 			x: 7.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["5A8D2BFAF02E6325"]
-			description: ["{moni.quest.3D7924B550A1BBA0.description1}"]
+			description: ["Packaging &6Crystal Circuit&r components inside miniature pocket dimensions allows you to push Extradimensional computation further, unlocking the &6Extradimensional Processor Assembly&r."]
 			icon: "kubejs:extradimensional_processor_assembly"
 			id: "3D7924B550A1BBA0"
 			shape: "hexagon"
@@ -1170,7 +859,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.3D7924B550A1BBA0.title}"
+			title: "The Third Tier Nine Circuit"
 			x: 7.0d
 			y: 6.5d
 		}
@@ -1179,11 +868,15 @@
 				"7979D07FBDC6D170"
 				"1E36AFB19932C805"
 			]
-			description: ["{moni.quest.5A8D2BFAF02E6325.description1}"]
+			description: [
+				"Putting batches of &6Quantum Circuit&r parts inside of miniaturized microverses and mounting them to a processing unit allows you to create the best &3UV&r circuit, the &6Extradimensional Processor&r. Be warned, this circuit theme will put both your Microverse management skills and your earlier circuit infrastructure to the test."
+				""
+				"&6Complex SMD Components&r are now mandatory."
+			]
 			icon: "kubejs:extradimensional_processor"
 			id: "5A8D2BFAF02E6325"
 			shape: "hexagon"
-			subtitle: "{moni.quest.5A8D2BFAF02E6325.subtitle}"
+			subtitle: "The Beginning of The End"
 			tasks: [
 				{
 					id: "3EFB11DA4735807C"
@@ -1196,13 +889,13 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.5A8D2BFAF02E6325.title}"
+			title: "The Fourth And Final Tier Eight Circuits"
 			x: 7.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["5A07988F5AD20A06"]
-			description: ["{moni.quest.0F56F4E642BC2B85.description1}"]
+			description: ["Crafted from the aforementioned Circuit Boards, these Processing Units will be used to create &6Optical Circuits&r."]
 			id: "0F56F4E642BC2B85"
 			shape: "hexagon"
 			tasks: [{
@@ -1210,7 +903,7 @@
 				item: "kubejs:optical_processing_unit"
 				type: "item"
 			}]
-			title: "{moni.quest.0F56F4E642BC2B85.title}"
+			title: "Optical Processing Unit"
 			x: 5.5d
 			y: -8.5d
 		}
@@ -1220,7 +913,7 @@
 				"7EE334D3AA1E68ED"
 				"07057CDE4E021BA7"
 			]
-			description: ["{moni.quest.7979D07FBDC6D170.description1}"]
+			description: ["The final processing unit. Capable of storing and interacting with miniaturized microverses. You will use these to make &6Dimensional Circuits&r."]
 			id: "7979D07FBDC6D170"
 			shape: "hexagon"
 			tasks: [{
@@ -1228,22 +921,23 @@
 				item: "kubejs:extradimensional_processing_unit"
 				type: "item"
 			}]
-			title: "{moni.quest.7979D07FBDC6D170.title}"
+			title: "Extradimensional Processing Unit"
 			x: 7.0d
 			y: -8.5d
 		}
 		{
-			dependencies: ["17312BF0197B87A8"]
+			dependencies: ["7FA0E6F3B466576C"]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.77670BF761084AA2.description1}"
+				"A \"&esubstrate&f\" is the \"board\" part of a circuit board - the backing that the circuit components and wires are laid into. A good substrate needs to not conduct electricity, for obvious reasons. &6Wood&r coated in &6Sticky Resin&r is a primitive but effective material to use as your first substrate."
 				""
-				"{moni.quest.77670BF761084AA2.description2}"
+				"You'll also need to make &6Vacuum Tubes&f, as well as some primitive &6Resistors&r. &6Paper&r will work as a material for these, for now."
 			]
 			disable_toast: true
 			icon: "gtceu:resistor"
 			id: "77670BF761084AA2"
 			shape: "hexagon"
+			size: 1.25d
 			tasks: [
 				{
 					count: 2L
@@ -1263,20 +957,20 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.77670BF761084AA2.title}"
+			title: "Electronic Components"
 			x: -6.5d
 			y: -8.5d
 		}
 		{
 			dependencies: [
-				"12B95158E4C792DB"
 				"77670BF761084AA2"
+				"12B95158E4C792DB"
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"{moni.quest.1A30472430354F1E.description1}"
+				"&2This is where &bEMI&2 really shines! Using it alongside &3Crafting Stations&2, you should be able to easily calculate the amount of raw resources and intermediate components you'll need to &ebatch craft&2 these circuits quickly."
 				""
-				"{moni.quest.1A30472430354F1E.description2}"
+				"You'll be making a LOT&r of circuits, so take advantage of the improved crafting efficiency."
 			]
 			icon: "gtceu:basic_electronic_circuit"
 			id: "1A30472430354F1E"
@@ -1286,22 +980,23 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{moni.quest.1A30472430354F1E.subtitle}"
+			subtitle: "With all of the components made, it's time to craft &6Electronic Circuits&r."
 			tasks: [{
+				count: 32L
 				id: "5DED56006806D2E0"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			title: "{moni.quest.1A30472430354F1E.title}"
+			title: "Your First Circuit"
 			x: -6.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["71C7B47DC85AA016"]
 			description: [
-				"{moni.quest.3650EF39B5AB4A7D.description1}"
+				"&6Phenolic Substrates&r need to be turned into &6Circuit Boards&r with &6Silver&r before being usable in Circuit production."
 				""
-				"{moni.quest.3650EF39B5AB4A7D.description2}"
+				"&9Sodium Persulfate&r and &9Iron III Chloride&r can be annoying to get right now, but using them in making Circuit Boards will reduce the amount of Silver required by 4 times."
 			]
 			id: "3650EF39B5AB4A7D"
 			rewards: [{
@@ -1315,7 +1010,7 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			title: "{moni.quest.3650EF39B5AB4A7D.title}"
+			title: "Good Circuit Boards"
 			x: -5.0d
 			y: -8.5d
 		}
@@ -1326,9 +1021,9 @@
 				"1A30472430354F1E"
 			]
 			description: [
-				"{moni.quest.3B639F4061B00F1A.description1}"
+				"Your first &6Tier Two Circuits&r will require three &6Tier One Circuits&r plus two &6Diodes&r."
 				""
-				"{moni.quest.3B639F4061B00F1A.description2}"
+				"These are rather expensive. &2Always be on the lookout for a cheaper way to make your circuits&r - new sets of recipes become available each time you make a new tier of &3Circuit Assembler&r. Conveniently, this tier of Circuit unlocks one now!"
 			]
 			id: "3B639F4061B00F1A"
 			rewards: [{
@@ -1343,7 +1038,7 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			title: "{moni.quest.3B639F4061B00F1A.title}"
+			title: "The First Tier Two Circuits"
 			x: -6.5d
 			y: -4.0d
 		}
@@ -1353,13 +1048,13 @@
 				"3B639F4061B00F1A"
 			]
 			description: [
-				"{moni.quest.73F8EA8E7DCC94E9.description1}"
+				"&3Circuit Assemblers&r are the linchpin of your factory, gating progression through the &6Circuits&r. "
 				""
-				"{moni.quest.73F8EA8E7DCC94E9.description2}"
+				"Each time you upgrade to a new voltage of Circuit Assembler, you will be able to craft more advanced &ethemes&r of circuits. These use more complex ingredients and require new infrastructure to be in place, but are more efficient to craft overall than the same tier of circuit from the prior theme."
 				""
-				"{moni.quest.73F8EA8E7DCC94E9.description3}"
+				"&2The LV Circuit Assembler allows you to make Electronic Circuits far more easily."
 				""
-				"{moni.quest.73F8EA8E7DCC94E9.description4}"
+				"The circuit progression is largely based on native GTm progression, with a few minor changes to reflect the progression of this pack better.&r Check out the &bProgression quest book tab&r to see the flow of circuit progression."
 			]
 			id: "73F8EA8E7DCC94E9"
 			rewards: [{
@@ -1369,13 +1064,13 @@
 			}]
 			shape: "hexagon"
 			size: 1.0d
-			subtitle: "{moni.quest.73F8EA8E7DCC94E9.subtitle}"
+			subtitle: "Pick-n-Place"
 			tasks: [{
 				id: "7E8AC4BB3E3E0461"
 				item: "gtceu:lv_circuit_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.73F8EA8E7DCC94E9.title}"
+			title: "&7LV&r Circuit Assembler"
 			x: -5.0d
 			y: -7.0d
 		}
@@ -1385,9 +1080,9 @@
 				"73F8EA8E7DCC94E9"
 			]
 			description: [
-				"{moni.quest.27FAD6A8FCFAB543.description1}"
+				"While &7LV&r &6Integrated Circuits&r might not seem easier to mass produce than &6Electronic Circuits&r, they're required to produce the &6Advanced Integrated Circuit&r, your first &6HV&r circuit."
 				""
-				"{moni.quest.27FAD6A8FCFAB543.description2}"
+				"Otherwise, they fulfill the same requirements."
 			]
 			id: "27FAD6A8FCFAB543"
 			rewards: [{
@@ -1401,13 +1096,13 @@
 				item: "gtceu:basic_integrated_circuit"
 				type: "item"
 			}]
-			title: "{moni.quest.27FAD6A8FCFAB543.title}"
+			title: "The Second Tier One Circuits"
 			x: -5.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["27FAD6A8FCFAB543"]
-			description: ["{moni.quest.2AC61192BCD459F2.description1}"]
+			description: ["Two &6Basic Integrated Circuits&r and various other components will create a &6Good Integrated Circuit&r."]
 			id: "2AC61192BCD459F2"
 			rewards: [{
 				id: "447C6A40A5BA0F42"
@@ -1420,7 +1115,7 @@
 				item: "gtceu:good_integrated_circuit"
 				type: "item"
 			}]
-			title: "{moni.quest.2AC61192BCD459F2.title}"
+			title: "The Second Tier Two Circuits"
 			x: -5.0d
 			y: -4.0d
 		}
@@ -1431,11 +1126,11 @@
 				"2AC61192BCD459F2"
 			]
 			description: [
-				"{moni.quest.6169C04DF463502F.description1}"
+				"Your first &6HV&r circuit, formed from two &6Good Integrated Circuits&r, &6RAM&r, and &6Transistors&r, among other ingredients."
 				""
-				"{moni.quest.6169C04DF463502F.description2}"
+				"As you'll realize is the pattern, it is expensive and unwieldy to make the first forms of each tier of circuits. Fortunately, you don't have to make many of them."
 				""
-				"{moni.quest.6169C04DF463502F.description3}"
+				"&2Prioritize using these circuits to make things needed for unlocking the next theme of circuits, which require more infrastructure but are much cheaper to produce.&r Eventually each circuit tier through Tier Eight will have a Processor recipe instead of requiring Processor Assemblies, Supercomputers, or Mainframes."
 			]
 			id: "6169C04DF463502F"
 			rewards: [{
@@ -1450,13 +1145,13 @@
 				item: "gtceu:advanced_integrated_circuit"
 				type: "item"
 			}]
-			title: "{moni.quest.6169C04DF463502F.title}"
+			title: "The First Tier Three Circuits"
 			x: -5.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["6169C04DF463502F"]
-			description: ["{moni.quest.1F101D4F758ACECB.description1}"]
+			description: ["With the &3Advanced Circuit Assembler&r, the &6Microprocessor&r theme of Circuits is available."]
 			id: "1F101D4F758ACECB"
 			rewards: [{
 				id: "1C6128ACCE36223A"
@@ -1470,7 +1165,7 @@
 				item: "gtceu:mv_circuit_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.1F101D4F758ACECB.title}"
+			title: "&bMV&r Circuit Assembler"
 			x: -3.5d
 			y: -7.0d
 		}
@@ -1481,9 +1176,9 @@
 				"7D3FAEA5E0071BDC"
 			]
 			description: [
-				"{moni.quest.2FD1AE24CD8BEBEB.description1}"
+				"&2You can start to churn out Microprocessors&r. These are the best kind of Tier One circuits you can make, and you won't unlock the better recipes for them until &5EV&r."
 				""
-				"{moni.quest.2FD1AE24CD8BEBEB.description2}"
+				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
 			]
 			id: "2FD1AE24CD8BEBEB"
 			rewards: [{
@@ -1498,16 +1193,16 @@
 				item: "gtceu:microchip_processor"
 				type: "item"
 			}]
-			title: "{moni.quest.2FD1AE24CD8BEBEB.title}"
+			title: "The Third And Final Tier One Circuits"
 			x: -3.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["417D97D9E3562F45"]
 			description: [
-				"{moni.quest.7D3FAEA5E0071BDC.description1}"
+				"Better substrates. Using &6Polyvinyl Chloride&r (PVC) instead of &6Polyethylene&r (PE) doubles your yield."
 				""
-				"{moni.quest.7D3FAEA5E0071BDC.description2}"
+				"The other three material and &9Hexafluorosilicic Acid&r options are much more difficult to make and probably not worth considering for now."
 			]
 			id: "7D3FAEA5E0071BDC"
 			rewards: [{
@@ -1521,7 +1216,7 @@
 				item: "gtceu:plastic_printed_circuit_board"
 				type: "item"
 			}]
-			title: "{moni.quest.7D3FAEA5E0071BDC.title}"
+			title: "Plastic Printed Circuit Board"
 			x: -3.5d
 			y: -8.5d
 		}
@@ -1532,9 +1227,9 @@
 				"7D3FAEA5E0071BDC"
 			]
 			description: [
-				"{moni.quest.7308924C9A481443.description1}"
+				"&2Unique to this Circuit theme, this MV circuit doesn't require the previous tier to craft.&r These are the best kind of Tier Two circuits you can make, and you won't unlock the better recipes for them until &9IV&r."
 				""
-				"{moni.quest.7308924C9A481443.description2}"
+				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
 			]
 			id: "7308924C9A481443"
 			rewards: [{
@@ -1549,7 +1244,7 @@
 				item: "gtceu:micro_processor"
 				type: "item"
 			}]
-			title: "{moni.quest.7308924C9A481443.title}"
+			title: "The Third And Final Tier Two Circuits"
 			x: -3.5d
 			y: -4.0d
 		}
@@ -1558,7 +1253,7 @@
 				"7308924C9A481443"
 				"66E1F1B28E4577B2"
 			]
-			description: ["{moni.quest.5759E8587624BEF1.description1}"]
+			description: ["Marginally cheaper to make than &6Advanced Integrated Circuits&r, and also the only way to make the &6Microprocessor Supercomputer&r, which is the first &5EV&r circuit."]
 			id: "5759E8587624BEF1"
 			rewards: [{
 				id: "07F79912C88F145F"
@@ -1571,7 +1266,7 @@
 				item: "gtceu:micro_processor_assembly"
 				type: "item"
 			}]
-			title: "{moni.quest.5759E8587624BEF1.title}"
+			title: "The Second Tier Three Circuits"
 			x: -3.5d
 			y: -2.5d
 		}
@@ -1581,33 +1276,33 @@
 				"6169C04DF463502F"
 			]
 			description: [
-				"{moni.quest.244F2CC5484A7B21.description1}"
+				"The &3Cleanroom&r is a hollow multiblock free of contaminants. Going forward, most new circuit-related recipes, as well as some unique things like &6Fusion Casings&r, will need to be run in machines inside a Cleanroom."
 				""
-				"{moni.quest.244F2CC5484A7B21.description2}"
+				"Once built, it must be well-maintained and powered for a while to clean the inside. The Cleanroom's power draw will decrease once it fully cleans itself. Recipes requiring the Cleanroom will &conly&r run when inside a &cfully-cleaned&r Cleanroom; if not, the recipe will not start, or recipe progress might be lost. (Recipe inputs will &enever be voided&r.)"
 				"{@pagebreak}"
-				"{moni.quest.244F2CC5484A7B21.description3}"
+				"The Cleanroom can be built in any size between 5x5x5 and 15x15x15. The Controller is placed in the center of the top face, and the rest of the top face is built from &6Filter Casings&r, save for the edges and corners. The rest of the wall and floor space is filled with &6Plascrete&r."
 				""
-				"{moni.quest.244F2CC5484A7B21.description4}"
+				"For transfer between the clean environment and the outside world:"
 				""
-				"{moni.quest.244F2CC5484A7B21.description5}"
+				"- Items and fluids through &6Passthrough Hatches&r. They automatically input from one side and output from the opposite side."
 				""
-				"{moni.quest.244F2CC5484A7B21.description6}"
+				"- Energy through any tier of &bGregTech &6Hull&r or &6Diode&r (the block). Note that Diodes can transport up to &a16 amps&r, whilst Hulls can only transport &a1 amp&r."
 				""
-				"{moni.quest.244F2CC5484A7B21.description7}"
+				"- Your AE network through &bGregTech&r &3Hulls&r (of any tier)."
 				""
-				"{moni.quest.244F2CC5484A7B21.description8}"
+				"- Players through &6Doors&r of any kind. The room remains clean when doors are opened."
 				"{@pagebreak}"
-				"{moni.quest.244F2CC5484A7B21.description9}"
+				"Apart from the \"official\" solutions, non-physical methods of transfer such as &6Ender Chests&r might be effective. &bApplied Energistics&r &6P2P Tunnels&r may also fit your liking."
 				""
-				"{moni.quest.244F2CC5484A7B21.description10}"
+				"You will also need an &aEnergy &rand &aMaintenance Hatch &rfor cleaning. &6Cleanroom Glass&r can replace any Plascrete, apart from the edges."
 				""
-				"{moni.quest.244F2CC5484A7B21.description11}"
+				"If you're facing issues forming the Cleanroom:"
 				""
-				"{moni.quest.244F2CC5484A7B21.description12}"
+				"- The wall space must be at least 75% Plascrete or Cleanroom Glass. The floor block directly under the controller must also be Plascrete or Cleanroom Glass."
 				""
-				"{moni.quest.244F2CC5484A7B21.description13}"
+				"- GT generators and Muffler Hatches are &cnot allowed&r in Cleanrooms."
 				""
-				"{moni.quest.244F2CC5484A7B21.description14}"
+				"- Try rotating the controller with a wrench, or for even side lengths, try the other central positions."
 			]
 			icon: "gtceu:cleanroom"
 			id: "244F2CC5484A7B21"
@@ -1645,7 +1340,7 @@
 						}
 					}
 					optional_task: true
-					title: "{moni.task.2BD9B381C408FF8B}"
+					title: "Cleanroom Blocks"
 					type: "item"
 				}
 				{
@@ -1682,13 +1377,14 @@
 					type: "item"
 				}
 				{
+					disable_toast: true
 					id: "46EB73137CAAD497"
 					item: "minecraft:iron_door"
 					optional_task: true
 					type: "item"
 				}
 			]
-			title: "{moni.quest.244F2CC5484A7B21.title}"
+			title: "Cleanroom"
 			x: -2.5d
 			y: -8.5d
 		}
@@ -1699,9 +1395,9 @@
 				"5759E8587624BEF1"
 			]
 			description: [
-				"{moni.quest.7E09D4E00BFA4970.description1}"
+				"This is the first &5EV&r circuit. Requires some &6Vibrant Alloy&r."
 				""
-				"{moni.quest.7E09D4E00BFA4970.description2}"
+				"The &6HV&r Circuit Assembler only unlocks one circuit, the &6Microprocessor Mainframe&r. There is no circuit theme associated with the &6HV &3Circuit Assembler&r; instead, the &6HV&r (non-Circuit) &3Assembler&r unlocks easier Circuit components. The next circuit theme is not until &5EV&r."
 			]
 			id: "7E09D4E00BFA4970"
 			rewards: [{
@@ -1717,16 +1413,16 @@
 				item: "gtceu:micro_processor_computer"
 				type: "item"
 			}]
-			title: "{moni.quest.7E09D4E00BFA4970.title}"
+			title: "The First Tier Four Circuits"
 			x: -2.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["7E09D4E00BFA4970"]
 			description: [
-				"{moni.quest.6B908DECFA46C8E0.description1}"
+				"The &6HV Circuit Assembler&r unlocks &6the Microprocessor Mainframe&r. That's it."
 				""
-				"{moni.quest.6B908DECFA46C8E0.description2}"
+				"It can also optionally &aoverclock&r recipes up to &a128 EU/t&r, gaining additional speed for relatively more power."
 			]
 			id: "6B908DECFA46C8E0"
 			require_sequential_tasks: false
@@ -1742,7 +1438,7 @@
 				item: "gtceu:hv_circuit_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.6B908DECFA46C8E0.title}"
+			title: "&6HV&r Circuit Assembler"
 			x: -1.5d
 			y: -7.0d
 		}
@@ -1753,9 +1449,9 @@
 				"56924FC6B029BA0F"
 			]
 			description: [
-				"{moni.quest.39FD6F1076559156.description1}"
+				"The first &6Mainframe&r you'll have to contend with."
 				""
-				"{moni.quest.39FD6F1076559156.description2}"
+				"This is the first &9IV&r circuit available, and consequently the most expensive to make. As always, &2invest in the next circuit theme to get to cheaper recipes as soon as possible.&r"
 			]
 			id: "39FD6F1076559156"
 			rewards: [{
@@ -1769,13 +1465,13 @@
 				item: "gtceu:micro_processor_mainframe"
 				type: "item"
 			}]
-			title: "{moni.quest.39FD6F1076559156.title}"
+			title: "The First Tier Five Circuit"
 			x: -1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["26ECEC06CCAB3E56"]
-			description: ["{moni.quest.0B8CE3FBF62B099D.description1}"]
+			description: ["&6Epoxy Printed Circuit Boards&r are a more advanced substrate type that gives you access to &6Nano Circuits&r, which span tiers three through six."]
 			id: "0B8CE3FBF62B099D"
 			rewards: [{
 				id: "0161DA06BA4790AF"
@@ -1788,7 +1484,7 @@
 				item: "gtceu:epoxy_printed_circuit_board"
 				type: "item"
 			}]
-			title: "{moni.quest.0B8CE3FBF62B099D.title}"
+			title: "Epoxy Printed Circuit Board"
 			x: -0.5d
 			y: -8.5d
 		}
@@ -1799,9 +1495,9 @@
 				"5B9F1EE13E397DEE"
 			]
 			description: [
-				"{moni.quest.5672773780EE8267.description1}"
+				"&2You can start to churn out Nanoprocessors&r. These are the best kind of Tier Three circuits you can make, and you won't unlock the better recipes for them until &dLuV&r."
 				""
-				"{moni.quest.5672773780EE8267.description2}"
+				"You should absolutely automate the production of these circuits, and &ekeep a stockpile automatically crafted&r so you don't have to wait around for them or bloat your crafting orders making them on-demand through AE."
 			]
 			id: "5672773780EE8267"
 			rewards: [{
@@ -1815,7 +1511,7 @@
 				item: "gtceu:nano_processor"
 				type: "item"
 			}]
-			title: "{moni.quest.5672773780EE8267.title}"
+			title: "The Third And Final Tier Three Circuits"
 			x: -0.5d
 			y: -2.5d
 		}
@@ -1826,9 +1522,9 @@
 				"39FD6F1076559156"
 			]
 			description: [
-				"{moni.quest.5B9F1EE13E397DEE.description1}"
+				"With your &6Titanium&r-based machine hulls and &6Mainframes&r squared away, you can finally get on the path to making an &5EV &3Circuit Assembler&r."
 				""
-				"{moni.quest.5B9F1EE13E397DEE.description2}"
+				"This tier of Circuit Assembler unlocks &6Nanoprocessors&r, as well as running crafting recipes up to &5EV&r (&a2048 EU/t&r). It can also optionally overclock recipes that consume up to &6HV&r power (&a512 EU/t&r) for improved speed at the cost of relatively more power."
 			]
 			id: "5B9F1EE13E397DEE"
 			rewards: [{
@@ -1843,13 +1539,13 @@
 				item: "gtceu:ev_circuit_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.5B9F1EE13E397DEE.title}"
+			title: "&5EV&r Circuit Assembler"
 			x: -0.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["5672773780EE8267"]
-			description: ["{moni.quest.1DFF7C35B5B26B80.description1}"]
+			description: ["Nothing you haven't seen here: just combine some standard circuit components and &6Nanoprocessors&r to make &6Nanoprocessor Assemblies&r."]
 			id: "1DFF7C35B5B26B80"
 			rewards: [{
 				count: 2
@@ -1863,7 +1559,7 @@
 				item: "gtceu:nano_processor_assembly"
 				type: "item"
 			}]
-			title: "{moni.quest.1DFF7C35B5B26B80.title}"
+			title: "The Second Tier Four Circuits"
 			x: -0.5d
 			y: -1.0d
 		}
@@ -1872,7 +1568,7 @@
 				"1DFF7C35B5B26B80"
 				"54C3B1B782FDF57F"
 			]
-			description: ["{moni.quest.2DD1E2391DA3170C.description1}"]
+			description: ["Upgrading to the &6Nanoprocessor Supercomputer&r requires some standard circuit components and &6Lumium Wire&r."]
 			id: "2DD1E2391DA3170C"
 			rewards: [{
 				count: 2
@@ -1886,16 +1582,16 @@
 				item: "gtceu:nano_processor_computer"
 				type: "item"
 			}]
-			title: "{moni.quest.2DD1E2391DA3170C.title}"
+			title: "The Second Tier Five Circuits"
 			x: -0.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["2DD1E2391DA3170C"]
 			description: [
-				"{moni.quest.4DB622A78605A2EB.description1}"
+				"The first and most expensive Tier Six Circuit, needed for crafting the &9IV &3Circuit Assembler&r."
 				""
-				"{moni.quest.4DB622A78605A2EB.description2}"
+				"Requires a bunch of standard circuit components."
 			]
 			id: "4DB622A78605A2EB"
 			rewards: [{
@@ -1909,16 +1605,16 @@
 				item: "gtceu:nano_processor_mainframe"
 				type: "item"
 			}]
-			title: "{moni.quest.4DB622A78605A2EB.title}"
+			title: "The First Tier Six Ciruits"
 			x: -0.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0B8CE3FBF62B099D"]
 			description: [
-				"{moni.quest.57A6FE885489C3ED.description1}"
+				"A &6Reinforced Epoxy Resin Sheet&r is made in a &3Chemical Bath&r, not a &3Chemical Reactor&r. The board itself is made in a Chemical Reactor though."
 				""
-				"{moni.quest.57A6FE885489C3ED.description2}"
+				"Other than that, it's very similar to the other substrates you've made so far. This board type unlocks &6Quantum Circuits&r, which span tiers four through seven."
 			]
 			icon: "gtceu:fiber_reinforced_printed_circuit_board"
 			id: "57A6FE885489C3ED"
@@ -1945,7 +1641,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.57A6FE885489C3ED.title}"
+			title: "Fiber-Reinforced Printed Circuit Board"
 			x: 1.0d
 			y: -8.5d
 		}
@@ -1955,11 +1651,11 @@
 				"4DB622A78605A2EB"
 			]
 			description: [
-				"{moni.quest.4E63CE9607E3B792.description1}"
+				"With your &6Tungstensteel&r-based machine hulls and &6Nanoprocessor Mainframes&r squared away, you can finally get on the path to making an Insane Voltage &3Circuit Assembler&r."
 				""
-				"{moni.quest.4E63CE9607E3B792.description2}"
+				"This tier of Circuit Assembler unlocks &6Quantum Circuits&r, as well as handling crafting recipes up to &9IV&r. It can also optionally overclock recipes that consume up to &5EV&r power for improved speed at the cost of relatively more power."
 				""
-				"{moni.quest.4E63CE9607E3B792.description3}"
+				"&2It is recommended to upgrade your Circuit Assembler into a &3Large Circuit Assembling Facility&2 and power it with an &9IV &6Energy Hatch&2 for your circuit crafting needs."
 			]
 			icon: "gtceu:iv_circuit_assembler"
 			id: "4E63CE9607E3B792"
@@ -1972,25 +1668,10 @@
 			size: 1.0d
 			tasks: [{
 				id: "781C7E03F26807E5"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:iv_circuit_assembler"
-							}
-							{
-								Count: 1b
-								id: "gtceu:iv_energy_input_hatch"
-							}
-						]
-					}
-				}
+				item: "gtceu:iv_circuit_assembler"
 				type: "item"
 			}]
-			title: "{moni.quest.4E63CE9607E3B792.title}"
+			title: "&9IV&r Circuit Assembler"
 			x: 1.0d
 			y: -7.0d
 		}
@@ -2002,9 +1683,9 @@
 				"70FD95AEA44548B0"
 			]
 			description: [
-				"{moni.quest.47D092CBA484C0DE.description1}"
+				"With your new &6Fiber-Reinforced PCBs&r, &6Advanced Soldering Alloy&r, &6Qubit CPUs&r, and some standard components, you can make the final type of &5EV&r Circuit: the &6Quantum Processor&r."
 				""
-				"{moni.quest.47D092CBA484C0DE.description2}"
+				"As the best form of &5EV&r circuit, these should be automated and stockpiled. The variant recipe requiring &6Advanced System-on-Chips&r won't be available until &cZPM&r."
 			]
 			id: "47D092CBA484C0DE"
 			rewards: [{
@@ -2019,13 +1700,13 @@
 				item: "gtceu:quantum_processor"
 				type: "item"
 			}]
-			title: "{moni.quest.47D092CBA484C0DE.title}"
+			title: "The Third and Final Tier Four Circuits"
 			x: 1.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["47D092CBA484C0DE"]
-			description: ["{moni.quest.1FF5C2A3CAB76088.description1}"]
+			description: ["Nothing new here, just use more standard circuit stuff and you can upgrade a pair of &6Quantum Processors&r into &6Quantum Processor Assemblies&r."]
 			id: "1FF5C2A3CAB76088"
 			rewards: [{
 				count: 2
@@ -2039,13 +1720,13 @@
 				item: "gtceu:quantum_processor_assembly"
 				type: "item"
 			}]
-			title: "{moni.quest.1FF5C2A3CAB76088.title}"
+			title: "The Third Tier Five Circuit"
 			x: 1.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["1FF5C2A3CAB76088"]
-			description: ["{moni.quest.6CE6674C20500023.description1}"]
+			description: ["Nothing special about this tier either."]
 			id: "6CE6674C20500023"
 			rewards: [{
 				count: 2
@@ -2059,16 +1740,16 @@
 				item: "gtceu:quantum_processor_computer"
 				type: "item"
 			}]
-			title: "{moni.quest.6CE6674C20500023.title}"
+			title: "The Second Tier Six Circuits"
 			x: 1.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6CE6674C20500023"]
 			description: [
-				"{moni.quest.521977C7165229F1.description1}"
+				"Now you can craft the &6Quantum Processor Mainframe&r, the first &cZPM&r circuit."
 				""
-				"{moni.quest.521977C7165229F1.description2}"
+				"These are required for crafting the &dLuV &3Circuit Assembler&r."
 			]
 			id: "521977C7165229F1"
 			rewards: [{
@@ -2083,7 +1764,7 @@
 				item: "gtceu:quantum_processor_mainframe"
 				type: "item"
 			}]
-			title: "{moni.quest.521977C7165229F1.title}"
+			title: "The First Tier Seven Circuits"
 			x: 1.0d
 			y: 3.5d
 		}
@@ -2095,11 +1776,11 @@
 				"458FF3F9BC8E025B"
 			]
 			description: [
-				"{moni.quest.0BB798ACFE684AA9.description1}"
+				"With your &6Rhodium Plated Lumium-Palladium&r-based machine hulls, &3Assembly Line&r built, and &6Quantum Processor Mainframes&r squared away, you can finally get on the path to making a &dLudicrous Voltage &3Circuit Assembler&r."
 				""
-				"{moni.quest.0BB798ACFE684AA9.description2}"
+				"This tier of Assembler unlocks &6Crystal Circuits&r, as well as handling crafting recipes up to &dLuV&r. It can also optionally overclock recipes that consume up to &9IV&r power for improved speed at the cost of relatively more power."
 				""
-				"{moni.quest.0BB798ACFE684AA9.description3}"
+				"&2Making a &dLuV &6Energy Hatch&2 and using the &3Large Circuit Assembling Facility&2 instead is also a good idea."
 			]
 			icon: "gtceu:luv_circuit_assembler"
 			id: "0BB798ACFE684AA9"
@@ -2130,7 +1811,7 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.0BB798ACFE684AA9.title}"
+			title: "&dLuV&r Circuit Assembler"
 			x: 2.5d
 			y: -7.0d
 		}
@@ -2142,11 +1823,11 @@
 				"38791476E970C57D"
 			]
 			description: [
-				"{moni.quest.3C3B5875FCD6B5B7.description1}"
+				"With your &6Crystal CPUs&r and the &dLuV &3Circuit Assembler&r crafted, you can make the final type of &9IV&r Circuit: the &6Crystal Processor&r."
 				""
-				"{moni.quest.3C3B5875FCD6B5B7.description2}"
+				"This is the first Circuit to require &6Advanced&r or higher &6SMD components&r. All of them will from now on."
 				""
-				"{moni.quest.3C3B5875FCD6B5B7.description3}"
+				"As the best form of &9IV&r circuit, these should be automated and stockpiled. The variant recipe requiring &6Crystal System-on-Chip&r won't be available until you can make a &3UV Circuit Assembler&r."
 			]
 			id: "3C3B5875FCD6B5B7"
 			rewards: [{
@@ -2160,13 +1841,13 @@
 				item: "gtceu:crystal_processor"
 				type: "item"
 			}]
-			title: "{moni.quest.3C3B5875FCD6B5B7.title}"
+			title: "The Fourth and Final Tier Five Circuits"
 			x: 2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["3C3B5875FCD6B5B7"]
-			description: ["{moni.quest.64C33333ECCAABC7.description1}"]
+			description: ["With some now-standard components you can upgrade a pair of &6Crystal Processors&r into &6Crystal Processor Assemblies&r."]
 			id: "64C33333ECCAABC7"
 			rewards: [{
 				id: "190E006926FD0AAE"
@@ -2179,16 +1860,16 @@
 				item: "gtceu:crystal_processor_assembly"
 				type: "item"
 			}]
-			title: "{moni.quest.64C33333ECCAABC7.title}"
+			title: "The Third Tier Six Circuits"
 			x: 2.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["57A6FE885489C3ED"]
 			description: [
-				"{moni.quest.7E51D15F38C3B356.description1}"
+				"That's a lot of foil."
 				""
-				"{moni.quest.7E51D15F38C3B356.description2}"
+				"These boards are required for &6Crystal Circuits&r, as well as the future basis of &6Wetware Circuit Boards&r. These will get you from tier five to tier eight."
 			]
 			icon: "gtceu:multilayer_fiber_reinforced_printed_circuit_board"
 			id: "7E51D15F38C3B356"
@@ -2215,7 +1896,7 @@
 					type: "item"
 				}
 			]
-			title: "{moni.quest.7E51D15F38C3B356.title}"
+			title: "Multi-Layer Fiber-Reinforced Printed Circuit Board"
 			x: 2.5d
 			y: -8.5d
 		}
@@ -2224,7 +1905,7 @@
 				"7DB174443D7FAFA0"
 				"64C33333ECCAABC7"
 			]
-			description: ["{moni.quest.26CA20E74A62FA6E.description1}"]
+			description: ["With &6Enderium&r, you can assemble a &6Crystal Processor Supercomputer&r."]
 			id: "26CA20E74A62FA6E"
 			rewards: [{
 				id: "094C791F0E6EF144"
@@ -2237,7 +1918,7 @@
 				item: "gtceu:crystal_processor_computer"
 				type: "item"
 			}]
-			title: "{moni.quest.26CA20E74A62FA6E.title}"
+			title: "The Second Tier Seven Circuits"
 			x: 2.5d
 			y: 3.5d
 		}
@@ -2247,11 +1928,11 @@
 				"26CA20E74A62FA6E"
 			]
 			description: [
-				"{moni.quest.115B96B2092D671E.description1}"
+				"The &6Crystal Processor Mainframe&r is the first &3UV&r circuit."
 				""
-				"{moni.quest.115B96B2092D671E.description2}"
+				"To get the data needed to assemble these, you will need an &3HPCA&r and the &3Research Station&r."
 				""
-				"{moni.quest.115B96B2092D671E.description3}"
+				"These are required for crafting the &cZPM &3Circuit Assembler&r and &3Mk2 Fusion Reactor&r. As usual, these are extremely expensive: invest in the next theme of circuits instead of trying to mass-produce these."
 			]
 			id: "115B96B2092D671E"
 			rewards: [{
@@ -2265,7 +1946,7 @@
 				item: "gtceu:crystal_processor_mainframe"
 				type: "item"
 			}]
-			title: "{moni.quest.115B96B2092D671E.title}"
+			title: "The First Tier Eight Circuits"
 			x: 2.5d
 			y: 5.0d
 		}
@@ -2275,11 +1956,11 @@
 				"115B96B2092D671E"
 			]
 			description: [
-				"{moni.quest.49E9A178F6A52A62.description1}"
+				"With your &6Naquadah Alloy&r-based machine hulls and &6Crystal Processor Mainframes&r squared away, you can finally get on the path to making a &cZPM &3Circuit Assembler&r."
 				""
-				"{moni.quest.49E9A178F6A52A62.description2}"
+				"This tier of Circuit Assembler unlocks &6Wetware Circuits&r, as well as handling crafting recipes up to ZPM. It can also optionally overclock recipes that consume up to LuV power for improved speed at the cost of relatively more power."
 				""
-				"{moni.quest.49E9A178F6A52A62.description3}"
+				"Alternatively, you can make a &cZPM &6Energy Hatch&r and use the &3Large Circuit Assembling Facility&r instead."
 			]
 			icon: "gtceu:zpm_circuit_assembler"
 			id: "49E9A178F6A52A62"
@@ -2310,13 +1991,13 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.49E9A178F6A52A62.title}"
+			title: "&cZPM&r Circuit Assembler"
 			x: 4.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["4AC51394FB5152E5"]
-			description: ["{moni.quest.4FABACAB7C4A74AC.description1}"]
+			description: ["Use more &6Stem Cells&r and more advanced materials to build a &6Neuro Processing Unit&r. This is used in &6Wetware Circuits&r."]
 			id: "4FABACAB7C4A74AC"
 			rewards: [{
 				id: "5A005B4C81258B80"
@@ -2329,7 +2010,7 @@
 				item: "gtceu:neuro_processing_unit"
 				type: "item"
 			}]
-			title: "{moni.quest.4FABACAB7C4A74AC.title}"
+			title: "Neuro Processing Unit"
 			x: 4.0d
 			y: -8.5d
 		}
@@ -2339,11 +2020,11 @@
 				"4FABACAB7C4A74AC"
 			]
 			description: [
-				"{moni.quest.5ECF0A787D861C89.description1}"
+				"The final form of &dLuV&r circuits."
 				""
-				"{moni.quest.5ECF0A787D861C89.description2}"
+				"Using your &6Neuro Processing Units&r, you can craft (grow?) these circuits in a &cZPM&r or better &3Circuit Assembler&r."
 				""
-				"{moni.quest.5ECF0A787D861C89.description3}"
+				"&2These are fairly slow to craft and you're going to need decent quantities, so make sure you have good infrastructure for keeping these stocked."
 			]
 			id: "5ECF0A787D861C89"
 			rewards: [{
@@ -2357,13 +2038,13 @@
 				item: "gtceu:wetware_processor"
 				type: "item"
 			}]
-			title: "{moni.quest.5ECF0A787D861C89.title}"
+			title: "The Fourth And Final Tier Six Circuits"
 			x: 4.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["5ECF0A787D861C89"]
-			description: ["{moni.quest.1289F9FE461BFE01.description1}"]
+			description: ["&6Wetware Processor Assemblies&r are made in a &cZPM&r+ &3Circuit Assembler&r still. At this point, &2if you are not already using a &3Large Circuit Assembling Facility&2 to perform your Circuit Assembler recipes, you really should be."]
 			id: "1289F9FE461BFE01"
 			rewards: [{
 				id: "7027E316193CFB45"
@@ -2376,13 +2057,13 @@
 				item: "gtceu:wetware_processor_assembly"
 				type: "item"
 			}]
-			title: "{moni.quest.1289F9FE461BFE01.title}"
+			title: "The Third Tier Seven Circuits"
 			x: 4.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["1289F9FE461BFE01"]
-			description: ["{moni.quest.67663B49B80849C1.description1}"]
+			description: ["&6Wetware Processor Supercomputers&r are made in an &3Assembly Line&r at &cZPM&r or higher power."]
 			id: "67663B49B80849C1"
 			rewards: [{
 				id: "1E545E4FCEB06428"
@@ -2395,7 +2076,7 @@
 				item: "gtceu:wetware_processor_computer"
 				type: "item"
 			}]
-			title: "{moni.quest.67663B49B80849C1.title}"
+			title: "The Second Tier Eight Circuits"
 			x: 4.0d
 			y: 5.0d
 		}
@@ -2403,8 +2084,9 @@
 			dependencies: [
 				"67663B49B80849C1"
 				"75DD12FBC8AA39FC"
+				"5911900438648430"
 			]
-			description: ["{moni.quest.01E542E1C9DAF5B4.description1}"]
+			description: ["To research this recipe you will need multiple &3HPCA&rs linked together with a &3Network Switch&r."]
 			id: "01E542E1C9DAF5B4"
 			rewards: [{
 				count: 10
@@ -2418,7 +2100,7 @@
 				item: "gtceu:wetware_processor_mainframe"
 				type: "item"
 			}]
-			title: "{moni.quest.01E542E1C9DAF5B4.title}"
+			title: "The First Tier Nine Circuit"
 			x: 4.0d
 			y: 6.5d
 		}
@@ -2428,9 +2110,9 @@
 				"6A914B240E1A7BCB"
 			]
 			description: [
-				"{moni.quest.28854E7AC91786E9.description1}"
+				"Even better flying."
 				""
-				"{moni.quest.28854E7AC91786E9.description2}"
+				"You're not getting up to Resonant for a long time, just FYI."
 			]
 			disable_toast: true
 			id: "28854E7AC91786E9"
@@ -2451,15 +2133,15 @@
 		}
 		{
 			dependencies: [
-				"217F85D6FE2A467D"
+				"5BADF536443E712D"
 				"01E542E1C9DAF5B4"
 			]
 			description: [
-				"{moni.quest.44E2C12FC4C26CA9.description1}"
+				"With your &6Darmstadtium&r-based machine hulls and &6Wetware Mainframes&r squared away, you can finally get on the path to making a &3UV Circuit Assembler&r."
 				""
-				"{moni.quest.44E2C12FC4C26CA9.description2}"
+				"This tier of Assembler unlocks &6Optical Circuits&r, as well as handling crafting recipes up to &3UV&r. It can also optionally overclock recipes that consume up to &cZP&rM power for improved speed at the cost of relatively more power."
 				""
-				"{moni.quest.44E2C12FC4C26CA9.description3}"
+				"Alternatively, you can make an &3UV &6Energy Hatch&r and use the &3Large Circuit Assembling Factory&r instead."
 			]
 			icon: "gtceu:uv_circuit_assembler"
 			id: "44E2C12FC4C26CA9"
@@ -2490,22 +2172,22 @@
 				}
 				type: "item"
 			}]
-			title: "{moni.quest.44E2C12FC4C26CA9.title}"
+			title: "&3UV&r Circuit Assembler"
 			x: 5.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["1DB3CCC10C0EB1A8"]
 			description: [
-				"{moni.quest.544E87F5E356FE10.description1}"
+				"&6Nichrome&r is the third coil material available, increasing your EBF's operating temperature to 3600K so it can process more advanced materials."
 				""
-				"{moni.quest.544E87F5E356FE10.description2}"
+				"Notice that an &6HV&r &3Assembler&r is required to make them. Each tier of coil requires their tier of Assembler - we won't remind you again."
 				""
-				"{moni.quest.544E87F5E356FE10.description3}"
+				"&a3600K&r is now also hot enough to grant a single &9100% efficient overclock&r to &a1800K&r and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
 				""
-				"{moni.quest.544E87F5E356FE10.description4}"
+				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at &6HV&r. Once you upgrade your EBF to &5EV&r power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to Nichrome once you can afford it. "
 				""
-				"{moni.quest.544E87F5E356FE10.description5}"
+				"Later coils will give similar bonuses. Additionally, the EBF's temperature will increase by &a100K&r for each voltage tier above &bMV&r, which could make a difference for future materials."
 			]
 			disable_toast: true
 			id: "544E87F5E356FE10"
@@ -2516,7 +2198,7 @@
 				item: "gtceu:nichrome_coil_block"
 				type: "item"
 			}]
-			title: "{moni.quest.544E87F5E356FE10.title}"
+			title: "Nichrome Coil Blocks"
 			x: 18.5d
 			y: -5.5d
 		}
@@ -2526,11 +2208,11 @@
 				"069773756716E192"
 			]
 			description: [
-				"{moni.quest.6C199A6CBC13A481.description1}"
+				"To make &9Tritanium&r, you first need to make &9Duranium&r. This is done by fusing &9Liquid Gallium&r and &9Radon&r in a &3Fusion Reactor MK I&r or better."
 				""
-				"{moni.quest.6C199A6CBC13A481.description2}"
+				"Once you have Duranium, you can fuse Tritanium in a &3Fusion Reactor MK II&r using the Duranium and &9Liquid Titanium&r."
 				""
-				"{moni.quest.6C199A6CBC13A481.description3}"
+				"If you're having trouble figuring out the right item and fluid ratios for batching up these processes, consider plugging the relevant recipes into &aEMI&r."
 			]
 			disable_toast: true
 			id: "6C199A6CBC13A481"
@@ -2540,13 +2222,13 @@
 				item: "gtceu:tritanium_ingot"
 				type: "item"
 			}]
-			title: "{moni.quest.6C199A6CBC13A481.title}"
+			title: "Tritanium Ingot"
 			x: 20.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6C199A6CBC13A481"]
-			description: ["{moni.quest.2E87146C82EF941C.description1}"]
+			description: ["Tritanium Coils are the eighth coil material. At &a10800K&r, it's capable of smelting nearly every material."]
 			disable_toast: true
 			id: "2E87146C82EF941C"
 			shape: "hexagon"
@@ -2555,7 +2237,7 @@
 				item: "gtceu:tritanium_coil_block"
 				type: "item"
 			}]
-			title: "{moni.quest.2E87146C82EF941C.title}"
+			title: "Tritanium Coils"
 			x: 18.5d
 			y: 2.0d
 		}
@@ -2564,7 +2246,7 @@
 				"61301FBD825F8280"
 				"6A6983C64374366C"
 			]
-			description: ["{moni.quest.6EA130B04FDE6868.description1}"]
+			description: ["&6Omnic Matrix Coils&r are the final coil type you will need. At &a12600K&r, they're capable of smelting every material and make your &3EBF&r look &4f&6a&eb&au&2l&3o&9u&ds&5."]
 			disable_toast: true
 			id: "6EA130B04FDE6868"
 			shape: "hexagon"
@@ -2573,7 +2255,7 @@
 				item: "kubejs:omnic_matrix_coil_block"
 				type: "item"
 			}]
-			title: "{moni.quest.6EA130B04FDE6868.title}"
+			title: "Omnic Matrix Coil"
 			x: 18.5d
 			y: 3.5d
 		}
@@ -2583,9 +2265,9 @@
 				"5C4E189A3E401566"
 			]
 			description: [
-				"{moni.quest.6C028CD89745098E.description1}"
+				"Welcome to the &bMV&r Age!"
 				""
-				"{moni.quest.6C028CD89745098E.description2}"
+				"In this age, you'll gain access to &bApplied Energistics 2&r, make your first &6Silicon Wafers&r, and expand your growing collection of machines."
 			]
 			icon: "gtceu:mv_machine_hull"
 			id: "6C028CD89745098E"
@@ -2653,10 +2335,10 @@
 						]
 					}
 				}
-				title: "{moni.task.2A5B75587F16782E}"
+				title: "Any Qualifying MV Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.6C028CD89745098E.title}"
+			title: "&bMV&r Age"
 			x: -9.0d
 			y: -3.0d
 		}
@@ -2666,9 +2348,9 @@
 				"605062720747B482"
 			]
 			description: [
-				"{moni.quest.6E27637A9C94A0AA.description1}"
+				"Welcome to the &9IV&r Age!"
 				""
-				"{moni.quest.6E27637A9C94A0AA.description2}"
+				"In this age, you can start making Multiblock versions of most of your machines, finish up the &3Platline&r. and start constructing &3Assembly Lines&r."
 			]
 			icon: "gtceu:iv_machine_hull"
 			id: "6E27637A9C94A0AA"
@@ -2736,10 +2418,10 @@
 						]
 					}
 				}
-				title: "{moni.task.4E566F8EF19BE210}"
+				title: "Any Qualifying IV Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.6E27637A9C94A0AA.title}"
+			title: "&9IV&r Age"
 			x: -4.5d
 			y: 1.5d
 		}
@@ -2749,9 +2431,9 @@
 				"604CCBE824D03A74"
 			]
 			description: [
-				"{moni.quest.61CC4AD6FAE15248.description1}"
+				"Welcome to the &7LV&r Age!"
 				""
-				"{moni.quest.61CC4AD6FAE15248.description2}"
+				"In this age, you'll create your first machines, including the multiblock &3Electric Blast Furnace&r, and learn the ropes of developing your factory."
 			]
 			icon: "gtceu:lv_machine_hull"
 			id: "61CC4AD6FAE15248"
@@ -2819,10 +2501,10 @@
 						]
 					}
 				}
-				title: "{moni.task.04444449DCA34F30}"
+				title: "Any Qualifying LV Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.61CC4AD6FAE15248.title}"
+			title: "&7LV&r Age"
 			x: -10.5d
 			y: -4.5d
 		}
@@ -2832,9 +2514,9 @@
 				"15E34DEC491FAB81"
 			]
 			description: [
-				"{moni.quest.48CAEBEE83D7C791.description1}"
+				"Welcome to the &6HV&r Age!"
 				""
-				"{moni.quest.48CAEBEE83D7C791.description2}"
+				"In this age, you'll begin autocrafting with &bApplied Energistics 2&r, begin petrochemistry with &3Distillation Towers&r, and construct a &3Cleanroom&r."
 			]
 			icon: "gtceu:hv_machine_hull"
 			id: "48CAEBEE83D7C791"
@@ -2902,10 +2584,10 @@
 						]
 					}
 				}
-				title: "{moni.task.1FEF896D9E8055D5}"
+				title: "Any Qualifying HV Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.48CAEBEE83D7C791.title}"
+			title: "&6HV&r Age"
 			x: -7.5d
 			y: -1.5d
 		}
@@ -2915,9 +2597,9 @@
 				"785C6332FC7A07A5"
 			]
 			description: [
-				"{moni.quest.30AAFB97813DEB6C.description1}"
+				"Welcome to the &5EV&r Age!"
 				""
-				"{moni.quest.30AAFB97813DEB6C.description2}"
+				"In this age, you can begin processing &6Deepslate&r for &9Fluorine&r, gain access to the &3Alloy Blast Smelter&r, begin making &6Nanoprocessors&r, and start on the &3Platline&r."
 			]
 			icon: "gtceu:ev_machine_hull"
 			id: "30AAFB97813DEB6C"
@@ -2985,10 +2667,10 @@
 						]
 					}
 				}
-				title: "{moni.task.01AFBFF0D9532F27}"
+				title: "Any Qualifying EV Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.30AAFB97813DEB6C.title}"
+			title: "&5EV&r Age"
 			x: -6.0d
 			y: 0.0d
 		}
@@ -2998,9 +2680,9 @@
 				"76BAC72CC89F390E"
 			]
 			description: [
-				"{moni.quest.646B8CD10787D899.description1}"
+				"Welcome to the &dLuV&r Age!"
 				""
-				"{moni.quest.646B8CD10787D899.description2}"
+				"In this age, you begin sending microminer missions for &6Naquadah&r, which is then processed into the materials needed to construct the &3Fusion Reactor&r."
 			]
 			icon: "gtceu:luv_machine_hull"
 			id: "646B8CD10787D899"
@@ -3068,10 +2750,10 @@
 						]
 					}
 				}
-				title: "{moni.task.553B2A8341469AE8}"
+				title: "Any Qualifying LuV Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.646B8CD10787D899.title}"
+			title: "&dLuV&r Age"
 			x: -3.0d
 			y: 3.0d
 		}
@@ -3081,9 +2763,9 @@
 				"217F85D6FE2A467D"
 			]
 			description: [
-				"{moni.quest.11B25506F679ACBD.description1}"
+				"Welcome to the &cZPM&r Age!"
 				""
-				"{moni.quest.11B25506F679ACBD.description2}"
+				"In this age, you will begin &dResearching&r components and upgrade your &3Fusion&r infrastructure to support the gathering of your first endgame materials like &6Cryococcus&r, &6Omnium&r, and &6Neutronium&r."
 			]
 			icon: "gtceu:zpm_machine_hull"
 			id: "11B25506F679ACBD"
@@ -3151,10 +2833,10 @@
 						]
 					}
 				}
-				title: "{moni.task.52571DFFC6CB4D85}"
+				title: "Any Qualifying ZPM Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.11B25506F679ACBD.title}"
+			title: "&cZPM&r Age"
 			x: -1.5d
 			y: 4.5d
 		}
@@ -3164,9 +2846,9 @@
 				"5BADF536443E712D"
 			]
 			description: [
-				"{moni.quest.4B497D256FB3983F.description1}"
+				"Welcome to the &3UV&r Age!"
 				""
-				"{moni.quest.4B497D256FB3983F.description2}"
+				"In this age, you will upgrade your &dResearch&r infrastructure, assemble the final &6Energy Core&r, and harvest a microverse whole, ripping its &6Heart&r out."
 			]
 			icon: "gtceu:uv_machine_hull"
 			id: "4B497D256FB3983F"
@@ -3234,19 +2916,20 @@
 						]
 					}
 				}
-				title: "{moni.task.088FB8F945D0645E}"
+				title: "Any Qualifying UV Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.4B497D256FB3983F.title}"
+			title: "&3UV&r Age"
 			x: 0.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["0C50D78D8F63CAFE"]
 			description: [
-				"{moni.quest.0A34290F579BB4E2.description1}"
+				"Welcome to the &4UHV&r Age!"
 				""
-				"{moni.quest.0A34290F579BB4E2.description2}"
+				"This age will have you interact with new Microverse types, introduce crafting with &cC&6o&el&ao&9r&r, offer the key to &9Unlimited&r Knowledge."
+				"Craft &6Optical Circuits&r and &6Infinity Ingots&r, and obtain &6Necrosiderite&r from &3Shattered Microverses&r to enter UEV."
 			]
 			icon: "gtceu:uhv_machine_hull"
 			id: "0A34290F579BB4E2"
@@ -3265,7 +2948,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{moni.quest.0A34290F579BB4E2.subtitle}"
+			subtitle: "The Game has Changed"
 			tasks: [{
 				id: "2A4AFA6140DAFF4D"
 				item: {
@@ -3315,19 +2998,21 @@
 						]
 					}
 				}
-				title: "{moni.task.2A4AFA6140DAFF4D}"
+				title: "Any Qualifying UHV Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.0A34290F579BB4E2.title}"
+			title: "&4UHV&r Age"
 			x: 1.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["0B923E8ED6161CA8"]
 			description: [
-				"{moni.quest.63812416270292A4.description1}"
+				"Welcome to the &aUEV&r Age!"
 				""
-				"{moni.quest.63812416270292A4.description2}"
+				"This age will expect both Prismatic and Microversal mastery of you, and let you unlock the secrets of &3Infinite Power&r."
+				""
+				"Project, shatter and corrupt dozens of Microverses, package circuit parts inside Microverse shards to craft the powerful &6Extradimensional Circuits&r, and craft highly unstable &6Supercritical Prismatic Cores&r allowing the production of &6Monium&r."
 			]
 			icon: "gtceu:uev_machine_hull"
 			id: "63812416270292A4"
@@ -3395,19 +3080,21 @@
 						]
 					}
 				}
-				title: "{moni.task.22F57F4F6D41251B}"
+				title: "Any Qualifying UEV Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.63812416270292A4.title}"
+			title: "&aUEV&r Age"
 			x: 3.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["11FDFB08CD48D66E"]
 			description: [
-				"{moni.quest.1A6F087E10DC036E.description1}"
+				"Welcome to the &cMAX&r Age!"
 				""
-				"{moni.quest.1A6F087E10DC036E.description2}"
+				"This final age will put your factory to the ultimate test! Resolve your final infrastructure bottlenecks through the help of &3Infinite power&r and &cMAX&6 Energy Hatches&r."
+				""
+				"Will you be able to produce hundreds of &cMAX &6Circuits&r and thousands of &6Monium&r?"
 			]
 			icon: "gtceu:max_machine_hull"
 			id: "1A6F087E10DC036E"
@@ -3475,10 +3162,10 @@
 						]
 					}
 				}
-				title: "{moni.task.4BB940DD5512BB62}"
+				title: "Any Qualifying MAX Machine"
 				type: "item"
 			}]
-			title: "{moni.quest.1A6F087E10DC036E.title}"
+			title: "&cMAX&r Age"
 			x: 4.5d
 			y: 10.5d
 		}
@@ -3490,11 +3177,11 @@
 				"7C9C91EC9F3930C2"
 			]
 			description: [
-				"{moni.quest.33F610CF136278AE.description1}"
+				"To be able to fully harness the power of &3Shattered Microverses&r, you'll need a brand new tier of Microminer."
 				""
-				"{moni.quest.33F610CF136278AE.description3}"
+				"This Microminer can be used to obtain &6Necrosiderite&r, &6Quasi-Stable Neutron Stars&r, and will be used later for making &6Extradimensional Circuits&r."
 				""
-				"{moni.quest.33F610CF136278AE.description2}"
+				"This Microminer requires an &6Epic Extended Crafting Table&r to fit all the things required for a foray into shattered microverses."
 			]
 			hide_dependency_lines: true
 			id: "0121E9498A8802BA"
@@ -3505,40 +3192,860 @@
 				item: "kubejs:microminer_t11"
 				type: "item"
 			}]
-			title: "{moni.quest.33F610CF136278AE.title}"
+			title: "Tier Eleven Microminer"
 			x: 22.0d
-			y: 10.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["040B3FCD82533BD9"]
-			description: ["{moni.quest.13578427FD9CC2CE.description1}"]
+			description: ["The &6IPMEPS&r is capable of altering the laws of physics on a microversal scale, thus allowing the production of previously &9impossible materials&r."]
 			hide_dependency_lines: true
 			id: "55919EFAB081C7C4"
 			shape: "square"
 			size: 2.0d
-			subtitle: "{moni.quest.13578427FD9CC2CE.subtitle}"
+			subtitle: "The final Microminer!"
 			tasks: [{
 				id: "41BBCA2B62901FE8"
 				item: "kubejs:microminer_t12"
 				type: "item"
 			}]
-			title: "{moni.quest.13578427FD9CC2CE.title}"
+			title: "Tier Twelve Microminer"
 			x: 22.0d
-			y: 12.5d
+			y: 10.5d
 		}
 		{
-			dependencies: ["3270496124969A51"]
-			description: ["{moni.quest.2C89DAD26E08E382.description1}"]
+			dependencies: [
+				"3270496124969A51"
+				"1229234A71CE0A99"
+			]
+			dependency_requirement: "all_started"
+			description: ["Carry more stuff."]
+			hide_dependency_lines: false
 			id: "2C89DAD26E08E382"
 			tasks: [{
 				id: "177E323157097C11"
 				item: "sophisticatedbackpacks:copper_backpack"
 				type: "item"
 			}]
-			title: "{moni.quest.2C89DAD26E08E382.title}"
-			x: 10.5d
+			title: "Leadstone Backpack"
+			x: 12.5d
 			y: -7.0d
 		}
+		{
+			dependencies: [
+				"5601A05D8361551D"
+				"59219D37B5CE80E6"
+				"4F08AF2C1E6B1736"
+			]
+			description: [
+				"You win."
+				""
+				"Congratulations."
+				""
+				"We hope you enjoyed playing &9Monifactory&r."
+			]
+			id: "2EBB9A154522348F"
+			rewards: [{
+				id: "7424EC770906922F"
+				item: {
+					Count: 1
+					id: "trofers:large_pillar"
+					tag: {
+						BlockEntityTag: {
+							Trophy: "monifactory:chest"
+						}
+					}
+				}
+				type: "item"
+			}]
+			size: 2.0d
+			subtitle: "A winner is you"
+			tasks: [{
+				id: "392DAFD3A4019E34"
+				item: "gtceu:creative_chest"
+				type: "item"
+			}]
+			title: "&9&lCreative Chest&r"
+			x: 7.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["3E42B4AAA6D2A05B"]
+			description: [
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
+				""
+				"Also important to note is that &eit can act wonky with Tile Entities&r, so it is mainly useful with simple blocks (it doesn't paste machine or hatch configuration, for example)."
+				"{@pagebreak}"
+				"A very cool feature of this mod is how you can &7shift-right click&r an inventory with any gadget (if you are using a &6Copy-Paste Gadget&r to do this, it must be on &ePaste&r mode) and the gadget will pull items from the inventory, 'connecting' the gadget to the inventory."
+				""
+				"For example, if you &7shift-right click&r a chest full of &6Cobblestone&r, the gadget will use Cobblestone from that chest to place blocks."
+				""
+				"By default, the config GUI is bound to &7G&r."
+			]
+			icon: "buildinggadgets2:gadget_building"
+			id: "5F9C7FB40AD2640B"
+			subtitle: "This pack has &bBuilding Gadgets&r."
+			tasks: [{
+				id: "512BC0AAD462E586"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_building"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_exchanging"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_copy_paste"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_cut_paste"
+							}
+							{
+								Count: 1b
+								id: "buildinggadgets2:gadget_destruction"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Inspector Gadget"
+			x: 17.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3781AD70E71CA0D7"]
+			description: [
+				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
+				""
+				"Also important to note is that it is compatible with &esome&r Tile Entities, as opposed to &bBuilding Gadgets&r which is mainly useful with simple blocks."
+				"{@pagebreak}"
+				"A very cool feature of this mod is how you can &7shift-right click&r an inventory with the &6Portable Spatial Cloner&r in your offhand and the tool will pull items from the inventory, 'connecting' it to the inventory."
+				""
+				"For example, if you &7shift-right click&r a chest full of &6Cobblestone&r with the Portable Spatial Cloner in your offhand, the tool will use Cobblestone from that chest to place blocks."
+				""
+				"By default, the context menu GUI is bound to &7Left Alt&r."
+			]
+			id: "31EE6E41F509A8CF"
+			subtitle: "This pack has &bSpatial Tools Compatible&r."
+			tasks: [{
+				id: "24B4E26B05F638D6"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_storage"
+							}
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_cloner"
+							}
+							{
+								Count: 1b
+								id: "spatialtoolscmp:portable_spatial_replacer"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Pocket-sized pocket dimensions"
+			x: 17.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3BD20358F137E7C6"
+				"273F3F8DD6A3DCC5"
+			]
+			description: [
+				"Holding one of these reveals &6Travel Anchors&r in range."
+				""
+				"&7Right-click&r after aiming to warp to one, or point it anywhere and &7shift+right-click&r to teleport forward a short distance (works through walls)."
+				""
+				"These are powered with RF, and can be further enchanted through &bEnder IO&r's enchanting mechanics."
+				""
+				"The &6Pulsating Crystal&r will require an &3Autoclave&r."
+			]
+			id: "3D6BC54DBE665638"
+			rewards: [{
+				id: "096D97D7F08241D4"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7187745E3D3C66B6"
+				item: {
+					Count: 1
+					id: "enderio:staff_of_travelling"
+					tag: {
+						Energy: {
+							EnergyStored: 100000
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 17.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["424413BBCE3FD3BF"]
+			description: [
+				"The &6Omni-breaker&r is a tool added by &bGTM Utils&r which can instantly break any block."
+				""
+				"When using the Omni-breaker you can &7right click&r to break one block at a time, or hold &7left click&r to continuously break blocks."
+				""
+				"The Omni-breaker also automatically relocates blocks to your inventory when using the &7right click&r, though not for the &7left click&r."
+			]
+			id: "6B80737C5E1359F7"
+			rewards: [{
+				id: "66946C64C245553F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			subtitle: "om nom nom nom"
+			tasks: [{
+				id: "725DD71DFCCADBE8"
+				item: "gtmutils:omnibreaker"
+				type: "item"
+			}]
+			title: "Omni-breaker"
+			x: 17.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4CD6C60CBEFFA317"
+				"0523F4AB9A794390"
+			]
+			description: [
+				"The &3Electric Blast Furnace&r is a major, major milestone in your &bGregTech&r career. It has the power to smelt more advanced materials. The first of these, &6Aluminium&r, is going to be important in the immediate future."
+				""
+				"Since smelting &6Aluminium&r requires &bMV&r power, you're going to have to power this with 2 &7LV&r &6Energy Hatches&r and 4 generators. The reasoning for this is explained in the quest above this one."
+				""
+				"There is a diagram of how to build the EBF in &bEMI&r. The second and third levels must be a 3x3 square shape of Coil Blocks (&6Cupronickel&r is the only type of coil block you have access to for now) with an empty center. You can also &7sneak-right click&r the controller to enable the in-world preview."
+				""
+				"However, the bottom and top layers are very flexible. The &6EBF Controller&r must be on the &ebottom layer&r of the structure, and on the &emiddle of an outer edge&r; the &6Muffler Hatch&r must be in the &eexact center of the top layer&r. Otherwise, you can put the hatches and buses wherever you want, filling in all the gaps in each layer with &6Heatproof Machine Casings&r. It's worth noting that you must &euse at least &c9&e Heatproof Machine Casings in your layout or the structure will not form&r."
+				""
+				"{@pagebreak}"
+				"This quest calls for a &6Maintenance Hatch&r, two energy hatches, a fluid input and output, and an item input and output, which is a total of 7 positions. Their specific order and placement don't matter, as long as you can access them. The 8th position is your EBF controller, leaving 9 gaps to be filled by Heatproof Machine Casings. If you did everything right, the structure will form: the textures on its hatches and casings will unify, and the controller will say \"&aStrucure Formed&r\"."
+				""
+				"Hatches and Buses can be replaced by Hatches and Buses of any tier, just &emake sure it has enough slots / capacity to hold the ingredients of the recipe you are running&r."
+				""
+				"You'll want to use &6Conductive Iron&r to wire up your EBF. It is very power hungry, and cable loss is a serious problem at this stage in progression. If the EBF cannot get enough energy, progress on the item smelting will regress partway through or fail to start."
+				""
+				"&2In Gregtech, all hatches except Maintenance and Parallel Control can be shared between Multiblocks!"
+			]
+			icon: "gtceu:electric_blast_furnace"
+			id: "1BC6DDC2D50F9C46"
+			rewards: [{
+				id: "3B20DB4147336C51"
+				item: "kubejs:moni_dollar"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "0E093ED43F2B2E14"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7998F0B9E0714746"
+					item: "gtceu:heatproof_machine_casing"
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0D6F9EF349C45ADA"
+					item: "gtceu:cupronickel_coil_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "215E1D7028D4007A"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "41EA282C8B1B05AB"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "3917BF19F1C3A0C1"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "3B7D450F27322A57"
+					item: "gtceu:lv_output_bus"
+					type: "item"
+				}
+				{
+					id: "24CB1B1755F635CB"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "04B80990027093E6"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "67A9C3501BB6F0FD"
+					item: "gtceu:lv_energy_input_hatch"
+					type: "item"
+				}
+			]
+			title: "&2Blast Furnace Fun"
+			x: 18.5d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"776199B37A19A592"
+				"061904A6FEED5B66"
+				"1BC6DDC2D50F9C46"
+				"785300684B1846B2"
+			]
+			description: [
+				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chromium&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r."
+			]
+			id: "3115EAF1F70A613E"
+			rewards: [{
+				id: "4C82AAA84303A281"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "22E54D54259A247A"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			title: "Kanthal Ingots"
+			x: 20.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"3115EAF1F70A613E"
+				"2C6BEB5BBE5A91DC"
+			]
+			description: [
+				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to &a2700K&r so it can process more advanced materials."
+				""
+				"&6Kanthal Coils&r are required primarily for producing &6Silicon&r (for Circuit parts), and &6Titanium&r (for &5EV&r machines). An &bMV &3Assembler&r is required to produce them, and they require &62x Kanthal Wire&r, &6Aluminium Foil&r, and &9Liquid Copper&r."
+				""
+				"&2In GTm, using higher-tier coils provides some bonuses to their multiblocks.&r For the &3Electric Blast Furnace&r, running recipes hotter than required can reduce the energy cost and time taken. The &atemperature&r of the EBF depends on the coil used and the voltage it is running at. For Kanthal Coils, this means that recipes you could run with &6Cupronickel Coils&r will save &95%&r energy."
+				""
+				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
+			]
+			id: "5C78349343BA40D7"
+			rewards: [{
+				id: "6AAC5C8B746659ED"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "00D5958543D7BBE6"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			title: "Kanthal Coil Blocks"
+			x: 18.5d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"3000798ACA51BFDC"
+				"5C78349343BA40D7"
+			]
+			description: [
+				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Nichrome Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Vacuum Freezer&r."
+				""
+				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &6Input Bus&r of your &3Vacuum Freezer&r via pipes or a &6Tag Filter&r set to 'forge:hot_ingots' with a high priority."
+			]
+			id: "1DB3CCC10C0EB1A8"
+			rewards: [{
+				id: "2C2C08984F62573F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "4DC44D14F05D27B4"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			title: "Nichrome Ingots"
+			x: 20.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6DC635766CD40FFF"]
+			description: [
+				"&6HSS-G&r is an alloy of &6Tungstensteel&r, &6Chrome&r, &6Molybdenum&r, and &6Vanadium&r."
+				""
+				"This alloy is cooked in an &3Electric Blast Furnace&r or &3Alloy Blast Smelter&r and cooled in a &3Vacuum Freezer&r."
+			]
+			id: "53EC3831D66769CA"
+			rewards: [{
+				id: "794FA2C0EE3BCC27"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "42A0FDC419CC929F"
+				item: "gtceu:hssg_ingot"
+				type: "item"
+			}]
+			title: "High Speed Steel Type G"
+			x: 20.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"14F1FF4656693711"
+				"53EC3831D66769CA"
+				"5732018AA35D69B6"
+			]
+			description: ["&6HSS-G&r is the fifth coil material available, increasing your &3EBF&r's operating temperature to &a5400K&r so it can process more advanced materials, such as &6Naquadah&r."]
+			id: "3DD8D9EEA7189186"
+			rewards: [{
+				id: "0A5B1F97951B104A"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "585B8ED807736A7A"
+				item: "gtceu:hssg_coil_block"
+				type: "item"
+			}]
+			title: "HSS-G Coil Blocks"
+			x: 18.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3DD8D9EEA7189186"
+				"023197AB7CDBDD6E"
+				"1BADB230EB1BEA4D"
+			]
+			description: [
+				"An otherworldly material exclusive to Microverses and Space, &6Naquadah&r is an important material in the late game."
+				""
+				"It can be alloyed and enriched to various forms, and is eventually able to be processed into a powerful endgame fuel."
+			]
+			id: "424413BBCE3FD3BF"
+			rewards: [{
+				id: "05581326BA7839F9"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "75892E7951C532B7"
+				item: "gtceu:naquadah_ingot"
+				type: "item"
+			}]
+			title: "Naquadah Ingots"
+			x: 20.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"424413BBCE3FD3BF"
+				"254D6D1470BC197E"
+			]
+			description: ["&6Naquadah&r is the sixth coil material available, increasing your &3EBF&r's operating temperature to &a7200K&r so it can process more advanced materials, such as &6Trinium&r."]
+			id: "28CA4E5308EC0BB9"
+			rewards: [{
+				id: "76AA0FD4E8D706E5"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "2C1FDC7B8E7B2C03"
+				item: "gtceu:naquadah_coil_block"
+				type: "item"
+			}]
+			title: "Naquadah Coil Blocks"
+			x: 18.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"28CA4E5308EC0BB9"
+				"0508D3CCB6C876A3"
+			]
+			description: [
+				"A strong heavy element obtained from the &3Naquadah processing line&r."
+				""
+				"&6Trinium&r can come from &6Kaemanite Ore&r, but you will probably want to bolster its production with &6Naquadah Dust&r processing. It comes out at the second stage, so if you don't mind storing the intermediates and have &9Fluorine&r under control, you can hold off doing the full chain if you don't need to yet. &2You get 1 Trinium per 12 Naquadah processed&r."
+				""
+				"This will be required in large quantities for &6Trinium Coils&r, &6Superconducting Coil Blocks&r, and &6Naquadah Alloy&r, among other things. You will need almost 5.5 stacks for a &3Fusion Reactor MK I&r, so stock up on it!"
+			]
+			id: "15FAEE3F625265F4"
+			rewards: [{
+				id: "7C362667765C8A4D"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "0EDAFBD50F866785"
+				item: "gtceu:trinium_ingot"
+				type: "item"
+			}]
+			title: "Trinium"
+			x: 20.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"41FA85A3920EB334"
+				"5A31EEF439212D6E"
+				"15FAEE3F625265F4"
+			]
+			description: ["&6Trinium&r is the seventh coil material available, increasing your &3EBF&r's operating temperature to &a9001K&r so it can process more advanced materials, such as &6Naquadria&r."]
+			id: "7A65459E4DFAAC2D"
+			rewards: [{
+				id: "0F124B2E02F2BD4E"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				count: 16L
+				id: "52F9691851DE4023"
+				item: "gtceu:trinium_coil_block"
+				type: "item"
+			}]
+			title: "Trinium Coils"
+			x: 18.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4261BDA34D716EC8"]
+			description: [
+				"After combining several dozen elements, or less efficiently, just throwing a bunch of &6Iron&r and &6Copper&r into the &3Omnic Synthesizer&r, you get &6Omnium Nuggets&r. Those nuggets can be further compressed into an ingot form, workable like many of the metals that comprise it."
+				""
+				"Omnium will be used in increasing frequency throughout the endgame."
+			]
+			icon: "gtceu:omnium_ingot"
+			id: "61301FBD825F8280"
+			rewards: [{
+				id: "01C5A5720A287196"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4205D04F8EFE2D7D"
+					item: "gtceu:omnium_nugget"
+					type: "item"
+				}
+				{
+					id: "56970BBAFAB8BEB7"
+					item: "gtceu:omnium_ingot"
+					type: "item"
+				}
+			]
+			title: "Omnium"
+			x: 20.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4F572CA3678CB287"
+				"5B07A88C0BFF6586"
+				"798284BA30D818DA"
+				"2D0DF78F71760F00"
+				"7ACF867DECE1C37F"
+			]
+			description: [
+				"This is your first Microminer ever. You'll need &6Phosphorous&r in its &6LV Field Generator&r."
+				""
+				"This Microminer is &6fully reusable&r, so you can send it on as many missions as you want."
+				""
+				"This Microminer can bring back most basic resources and can provide some rarer resources using ore processing. Check its recipes in &bEMI&r."
+			]
+			id: "638130DC8A2BF1C1"
+			rewards: [{
+				id: "5FF12439A660943F"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4362115B3E464772"
+				item: "kubejs:microminer_t1"
+				type: "item"
+			}]
+			title: "First Foray Into The Microverse"
+			x: 22.0d
+			y: -8.5d
+		}
+		{
+			dependencies: [
+				"0874A0191325CFDB"
+				"5B07A88C0BFF6586"
+			]
+			description: [
+				"[\"\",{\"text\":\"The Second Microminer! If this is your first microminer, please read the quests about how microminers and microverses work in the \"},{\"underlined\":true,\"text\":\"Into the Microverse chapter.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"68F29871402A6B1B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}}]"
+				""
+				"You'll need Phosphorous in its LV Field Generators."
+				""
+				"This Miner is you first source of &6Tungsten&r, and can also help with sourcing &6Noble Gasses&r."
+				""
+				"&2Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
+				""
+				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
+			]
+			id: "53C00EA9D9BEE776"
+			rewards: [{
+				id: "66C6B5C146FB14CF"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "0589E6FCB6684938"
+				item: "kubejs:microminer_t2"
+				type: "item"
+			}]
+			title: "Tier Two Microminer"
+			x: 22.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["14F1FF4656693711"]
+			description: [
+				"The Third Microminer. You'll need &6Boron&r in its &bMV&r &6Field Generators&r."
+				""
+				"At this point in the game, Microminers can get you most basic resources, continue to check &bEMI&r to see what they can give you."
+			]
+			id: "664107ED03A944CD"
+			rewards: [{
+				id: "5F3323232ACD2ED2"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "6652A8526BF40563"
+				item: "kubejs:microminer_t3"
+				type: "item"
+			}]
+			title: "Tier Three Microminer"
+			x: 22.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"52F1953ED72A8AA6"
+				"77582C534A994D7C"
+				"27A80F018F59EF1E"
+			]
+			description: [
+				"All of the Tier Four missions require &6Petrotheum Dust&r."
+				""
+				"This tier of Microminer excels at gathering massive batches of basic materials, such as &6Iron&r, &6Gold&r, or &6Redstone&r. Additionally, this microminer will be your first source of &6Neptunium&r."
+				""
+				"It is also a convenient source of &6Sheldonite&r, the best choice for creating &6Platinum Group Sludge&r, via a mission requiring &6Wither Realm Data&r."
+			]
+			id: "15DBB22E3DC0AFB7"
+			rewards: [{
+				id: "48E752C131EA99AC"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "41398E76BAF0F92E"
+				item: "kubejs:microminer_t4"
+				type: "item"
+			}]
+			title: "Tier Four Microminer"
+			x: 22.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"52F1953ED72A8AA6"
+				"1349044BF8C04A12"
+				"05F7C3F397B329F5"
+			]
+			description: ["The first source of &6Naquadah &r(&6Snowchestite&e on HM+&r) and &6Kaemanite Ore&r (for &6Trinium&r), via a mission with &6Stabilized Plutonium&r. Later on you can mine these ores on &bGlacio&r."]
+			id: "023197AB7CDBDD6E"
+			rewards: [{
+				id: "5C975732784B15CA"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "51421243D98A03F2"
+				item: "kubejs:microminer_t5"
+				type: "item"
+			}]
+			title: "Tier Five Microminer"
+			x: 22.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7DB174443D7FAFA0"]
+			description: [
+				"The first decent source of &6Dragon Eggs&r."
+				""
+				"This microminer can also provide: &6Uraninite&r, &6Plutonium&r, &6Ancient Debris&r, and more."
+				""
+				"Once you reach the &3Elite Microverse Projector&r, this microminer can also bring back Sculk-related items, such as &6Sculk Blocks&r and &6Veins&r."
+			]
+			id: "49B872B193268554"
+			rewards: [{
+				id: "1A07DD326F7F9A55"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "2BE2D12C219225CD"
+				item: "kubejs:microminer_t6"
+				type: "item"
+			}]
+			title: "Tier Six Microminer"
+			x: 22.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7E3A179376673590"
+				"7C89BC235C988689"
+				"44B0AB41C076E779"
+			]
+			description: [
+				"The first source of &6Warden Hearts&r and the only source of &6Lair of The Warden Data&r."
+				""
+				"As a bonus, it also brings back &6Sculk Catalysts&r, &6Warden Tendrils&r, &6Blocks of Ruthenium&r, and plenty of other different precious metals and gems."
+			]
+			id: "5FE96C30454A0374"
+			rewards: [{
+				id: "054FA1CE3A3D79F3"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "0D171B9697B4903C"
+				item: "kubejs:microminer_t7"
+				type: "item"
+			}]
+			title: "Tier Seven Microminer"
+			x: 22.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["41F1837D7C131898"]
+			description: [
+				"The &6only&r source of &6Hadal Shards&r."
+				""
+				"This Microminer also brings back &6Dragon Eggs&r, &6Dragon Scales&r, &6Dragons Breath&r, &6Quantum Stars&r, and &6Gravi-Stars&r."
+			]
+			id: "2D47BFA44BDB5E6A"
+			rewards: [{
+				id: "5D074328E8D1E7A2"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "66C53D4610F26EED"
+				item: "kubejs:microminer_t8"
+				type: "item"
+			}]
+			title: "Tier Eight Microminer"
+			x: 22.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"57D9FA04817CB92F"
+				"41F1837D7C131898"
+			]
+			description: [
+				"The &6Tier Nine Microminer&r doesn't unlock any new items, but instead grants alternate sources for some pre-existing materials."
+				""
+				"This miner is a great source of &6Darmstadtium&r and &6Duranium&r. It is also a slightly slower but cheaper source of &6Neutronium&r compared to the &3Fusion Reactor MKIII&r."
+			]
+			id: "6BF4A76C5B84EEE9"
+			rewards: [{
+				id: "5FA553DCC8666ADA"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "4E68CF49A166A50A"
+				item: "kubejs:microminer_t9"
+				type: "item"
+			}]
+			title: "Tier Nine Microminer"
+			x: 22.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"483652BAEF59E125"
+				"0B51A633811472A2"
+			]
+			description: [
+				"You have become Death, destroyer of Universes."
+				""
+				"This miner is your sole source of &6Hearts Of A Universe&r and &3Shattered Microverses&r."
+			]
+			id: "27EBB5AAF8A40F3D"
+			size: 2.0d
+			tasks: [{
+				id: "624B7498A1144A6F"
+				item: "kubejs:microminer_t10"
+				type: "item"
+			}]
+			title: "Tier Ten Microminer"
+			x: 22.0d
+			y: 6.5d
+		}
 	]
-	title: "{moni.chapter.395B849AC6294153.title}"
+	title: "Progression"
 }

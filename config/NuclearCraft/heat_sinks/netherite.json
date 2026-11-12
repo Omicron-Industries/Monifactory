@@ -1,5 +1,0 @@
-[{
-  "type": "netherite",
-  "heat": 150,
-  "placement_rule": ["obsidian_heat_sink", "fission_reactor_irradiation_chamber"]
-}]

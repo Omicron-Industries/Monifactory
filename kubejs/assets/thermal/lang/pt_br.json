@@ -7,8 +7,6 @@
     "item.thermal.upgrade_augment_3.desc": "Melhora atributos base. Como resultado, outros aumentos podem se tornar mais efetivos.",
     "item.thermal.upgrade_augment_4": "Componentes integrais de signálio",
     "item.thermal.upgrade_augment_4.desc": "Melhora atributos base. Como resultado, outros aumentos podem se tornar mais efetivos.",
-    "info.thermal.dynamo_stirling.0": "Gera Fluxo de Redstone com combustíveis sólidos.",
-    "info.thermal.dynamo_stirling.1": "A maioria das coisas que funcionam em uma Fornalha também funcionam aqui.",
     "info.thermal.machine_bottler.0": "Enche recipientes com fluidos.",
     "info.thermal.machine_bottler.1": "Isto é necessário para consumir certas bebidas.",
     "info.thermal.machine_bottler.2": "Refrescante!",

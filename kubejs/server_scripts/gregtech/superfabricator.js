@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             .circuit(circuit)
             .itemOutputs(output)
             .duration(60) // same for all recipes
-            .EUt(64) // same for all recipes
+            .EUt(GTValues.VHA[GTValues.MV]) // same for all recipes
     }
     if (doHNN) {
         // //// Machine Recipe //////
@@ -32,11 +32,11 @@ ServerEvents.recipes(event => {
             .addMaterialInfo(true)
             .stationResearch(b => b
                 .researchStack("gtceu:loot_superfabricator")
-                .EUt(1966080)
+                .EUt(GTValues.VA[GTValues.UHV])
                 .CWUt(108, 512000)
             )
             .duration(1200)
-            .EUt(1966080)
+            .EUt(GTValues.VA[GTValues.UHV])
 
         // //// Fabricator Recipes //////
 
@@ -49,9 +49,8 @@ ServerEvents.recipes(event => {
         fabricator("drowned", 1, "64x minecraft:rotten_flesh")
         fabricator("drowned", 2, "24x minecraft:copper_ingot")
         fabricator("drowned", 3, "1x minecraft:nautilus_shell")
-        fabricator("ender_dragon", 1, "2x minecraft:dragon_breath")
-        fabricator("ender_dragon", 2, "kubejs:dragon_lair_data")
-        fabricator("ender_dragon", 3, "4x kubejs:ender_dragon_scale")
+        fabricator("ender_dragon", 1, "kubejs:dragon_lair_data")
+        fabricator("ender_dragon", 2, "4x kubejs:ender_dragon_scale")
         fabricator("enderman", 1, "6x minecraft:ender_pearl")
         fabricator("enderman", 2, "6x minecraft:emerald")
         fabricator("enderman", 3, "2x enderio:enderman_head")
@@ -81,9 +80,8 @@ ServerEvents.recipes(event => {
         fabricator("thermal/thermal_elemental", 4, "8x thermal:blitz_rod")
         fabricator("thermal/thermal_elemental", 5, "8x thermal:basalz_rod")
         fabricator("thermal/thermal_elemental", 6, "8x thermal:blizz_rod")
-        fabricator("warden", 1, "minecraft:sculk_catalyst")
-        fabricator("warden", 2, "kubejs:deep_dark_data")
-        fabricator("warden", 3, "kubejs:warden_horn")
+        fabricator("warden", 1, "kubejs:deep_dark_data")
+        fabricator("warden", 2, "kubejs:warden_horn")
         fabricator("witch", 1, "16x minecraft:redstone")
         fabricator("witch", 2, "16x minecraft:glowstone_dust")
         fabricator("witch", 3, "16x minecraft:sugar")

@@ -3,7 +3,10 @@
  */
 ServerEvents.recipes(event => {
     if (doHarderRecipes) {
-        event.remove({ id: /spatialtoolscmp/ })
+        event.remove({
+            id: /spatialtoolscmp/,
+            not: { id: /spatial_tool_merge|crafting_buffer/ } // Merge is custom recipe so the tools won't loose their upgrades etc.
+        })
 
         // Crafting Table recipes are near-identical to Building Gadgets counterparts
         event.shaped("spatialtoolscmp:portable_spatial_replacer", [
@@ -41,6 +44,18 @@ ServerEvents.recipes(event => {
             C: "#gtceu:circuits/lv",
             B: "#gtceu:batteries/hv"
         })
+        event.shaped("spatialtoolscmp:portable_spatial_piper", [
+            "SE",
+            "CM",
+            "PB"
+        ], {
+            M: "#forge:plates/glass",
+            P: "gtceu:aluminium_plate",
+            E: "gtceu:lv_emitter",
+            S: "gtceu:lv_sensor",
+            C: "#gtceu:circuits/lv",
+            B: "#gtceu:batteries/lv"
+        })
     } else {
         event.replaceInput({ id: /^spatialtoolscmp:/}, "minecraft:nether_star", "gtceu:mv_emitter")
     }
@@ -50,7 +65,8 @@ ServerEvents.recipes(event => {
     const GadgetReconstructPairs = [
         { gadget: "gadget_exchanging", spatialtool: "portable_spatial_replacer"},
         { gadget: "gadget_copy_paste", spatialtool: "portable_spatial_cloner"},
-        { gadget: "gadget_cut_paste", spatialtool: "portable_spatial_storage"}
+        { gadget: "gadget_cut_paste", spatialtool: "portable_spatial_storage"},
+        { gadget: "gadget_building", spatialtool: "portable_spatial_piper"}
     ]
 
     GadgetReconstructPairs.forEach(pair => {

@@ -1,5 +1,0 @@
-[{
-  "type": "emerald",
-  "heat": 160,
-  "placement_rule": ["fission_reactor_solid_fuel_cell", "#nuclearcraft:moderators"]
-}]

@@ -8,9 +8,8 @@ ServerEvents.recipes(event => {
             "#forge:frames/stainless_steel",
             "6x #forge:plates/platinum",
             "#gtceu:circuits/hv",
-            "8x #forge:fine_wires/iridium",
             "8x #forge:fine_wires/neptunium_palladium_aluminium",
-            "2x gtceu:osmium_single_wire",
+            "4x gtceu:osmium_single_wire",
         )
         .itemOutputs("2x gtceu:high_power_casing")
         .duration(100).EUt(GTValues.VA[GTValues.EV])

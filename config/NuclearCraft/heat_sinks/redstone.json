@@ -1,5 +1,0 @@
-[{
-  "type": "redstone",
-  "heat": 90,
-  "placement_rule": ["fission_reactor_solid_fuel_cell"]
-}]

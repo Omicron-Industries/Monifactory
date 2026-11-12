@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         for (let itemA of inputA) {
             for (let itemB of inputB) {
                 // the a here is so that it gets sorted on top, jei sorts by recipe id
-                event.recipes.gtceu.alloy_smelter(`gtceu:${Item.of(itemA).idLocation.path}_and_${Item.of(itemB).idLocation.path}_into_${Item.of(result).idLocation.path}`)
+                event.recipes.gtceu.alloy_smelter(`gtceu:${Item.of(itemA).idLocation.path}_and_${Item.of(itemB).idLocation.path}_into_${Item.of(result.concat("_ingot")).idLocation.path}`)
                     .itemInputs(itemA, itemB)
                     .itemOutputs(Item.of(result.concat("_ingot")))
                     .duration(duration * 20)
@@ -70,32 +70,9 @@ ServerEvents.recipes(event => {
         "gtceu:soularium", 6, GTValues.VA[GTValues.LV], true);
 
     alloySmeltingVariant(
-        ["4x #forge:dusts/steel", "4x #forge:ingots/steel"],
-        ["#forge:dusts/boron"],
-        "5x nuclearcraft:ferroboron", 15, GTValues.VA[GTValues.MV], true);
-
-    alloySmeltingVariant(
-        ["#forge:ingots/ferroboron"],
-        ["#forge:dusts/lithium"],
-        "2x nuclearcraft:tough_alloy", 15, GTValues.VHA[GTValues.LV], false);
-
-    alloySmeltingVariant(
-        ["#forge:dusts/diamond", "#forge:gems/diamond"],
-        ["3x #forge:dusts/steel", "3x #forge:ingots/steel"],
-        "nuclearcraft:hard_carbon", 15, GTValues.VA[GTValues.HV], true);
-
-    event.recipes.gtceu.alloy_smelter("kubejs:fission_reactor_glass")
-        .itemInputs("nuclearcraft:fission_reactor_casing", "#forge:glass/colorless")
-        .itemOutputs("nuclearcraft:fission_reactor_glass")
-        .duration(50)
-        .EUt(GTValues.VHA[GTValues.LV])
-
-    event.remove({ output: "minecraft:netherite_ingot" })
-    event.recipes.gtceu.alloy_smelter("kubejs:netherite_ingot")
-        .itemInputs("4x #forge:ingots/gold", "4x minecraft:netherite_scrap") // was flipped
-        .itemOutputs("1x minecraft:netherite_ingot")
-        .duration(100)
-        .EUt(GTValues.VA[GTValues.LV])
+        ["4x #forge:dusts/gold", "4x #forge:ingots/gold"],
+        ["4x #forge:dusts/netherite_scrap", "4x #forge:ingots/netherite_scrap"],
+        "minecraft:netherite", 5, GTValues.VA[GTValues.LV], false);
 })
 
 // Change base GT alloy recipes
@@ -153,13 +130,26 @@ ServerEvents.recipes(event => {
             .blastFurnaceTemp(1200)
     })
 
-    // Replace default GTCEu glowstone separation recipe to match mixing recipe
-    event.replaceOutput({ id: "gtceu:centrifuge/glowstone_separation" }, "minecraft:redstone", "gtceu:tricalcium_phosphate_dust")
+    // Replace default GTCEu glowstone separation recipe to match composition
     event.recipes.gtceu.mixer("kubejs:glowstone_dust")
-        .itemInputs("gtceu:tricalcium_phosphate_dust", "#forge:dusts/gold")
-        .itemOutputs("2x minecraft:glowstone_dust")
+        .itemInputs("gtceu:tricalcium_phosphate_dust", "#forge:dusts/gold", "#forge:dusts/barite")
+        .itemOutputs("3x minecraft:glowstone_dust")
         .duration(80)
         .EUt(GTValues.VHA[GTValues.LV])
+    event.recipes.gtceu.centrifuge("glowstone_separation")
+        .itemInputs("5x minecraft:glowstone_dust")
+        .itemOutputs("gtceu:tricalcium_phosphate_dust", "gtceu:gold_dust", "gtceu:barite_dust")
+        .duration(976)  // Copied from the default Glowstone Separation recipe
+        .EUt(80)        // Copied from the default Glowstone Separation recipe
+
+    // Synthesis recipe for Barite since it's used for synthetic Glowstone
+    event.recipes.gtceu.chemical_reactor("barite_from_barium")
+        .itemInputs("gtceu:barium_dust")
+        .inputFluids("gtceu:sulfuric_acid 1000")
+        .itemOutputs("6x gtceu:barite_dust")
+        .outputFluids("gtceu:hydrogen 2000")
+        .duration(100)
+        .EUt(GTValues.VA[GTValues.ULV])
 
     // Remove old rhodium plated palladium recipe
     event.remove({ id: "gtceu:mixer/rhodium_plated_palladium" })
@@ -199,7 +189,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer("kubejs:mythril")
         .itemInputs("#forge:dusts/titanium")
-        .inputFluids(Fluid.of("gtceu:mana", 1000))
+        .inputFluids(Fluid.of("monilabs:mana", 1000))
         .itemOutputs("2x gtceu:mythril_dust")
         .duration(200)
         .EUt(GTValues.VA[GTValues.LV])
@@ -207,28 +197,28 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.mixer("kubejs:lumium_dust")
         .itemInputs("4x #forge:dusts/tin_alloy", "2x #forge:dusts/sterling_silver", "2x extendedcrafting:luminessence", "kubejs:energized_clathrate")
         .itemOutputs("7x gtceu:lumium_dust")
-        .inputFluids(Fluid.of("gtceu:mana", 1000))
+        .inputFluids(Fluid.of("monilabs:mana", 1000))
         .duration(300)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.mixer("kubejs:signalum_dust")
         .itemInputs("4x #forge:dusts/annealed_copper", "2x #forge:dusts/red_steel", "2x #forge:dusts/red_alloy", "kubejs:destabilized_clathrate")
         .itemOutputs("9x gtceu:signalum_dust")
-        .inputFluids(Fluid.of("gtceu:mana", 1000))
+        .inputFluids(Fluid.of("monilabs:mana", 1000))
         .duration(300)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.mixer("kubejs:enderium_dust")
         .itemInputs("4x gtceu:lead_dust", "2x gtceu:platinum_dust", "gtceu:blue_steel_dust", "gtceu:osmium_dust", "gtceu:tantalum_dust", "kubejs:resonant_clathrate")
         .itemOutputs("10x gtceu:enderium_dust")
-        .inputFluids(Fluid.of("gtceu:mana", 1000))
+        .inputFluids(Fluid.of("monilabs:mana", 1000))
         .duration(300)
         .EUt(GTValues.VA[GTValues.EV])
 
     event.recipes.gtceu.mixer("kubejs:manyullyn_dust")
         .itemInputs("4x gtceu:ardite_dust", "4x gtceu:cobalt_dust")
         .itemOutputs("9x gtceu:manyullyn_dust")
-        .inputFluids(Fluid.of("gtceu:mana", 1000))
+        .inputFluids(Fluid.of("monilabs:mana", 1000))
         .duration(400)
         .EUt(GTValues.VA[GTValues.LV])
 })

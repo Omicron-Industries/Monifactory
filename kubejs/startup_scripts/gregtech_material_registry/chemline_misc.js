@@ -189,6 +189,25 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 })
 
+// Wither Gas
+GTCEuStartupEvents.registry("gtceu:material", event => {
+    event.create("dodecene")
+        .fluid()
+        .color(0xbfa53f)
+
+    event.create("alkylbenzene")
+        .fluid()
+        .color(0xbcbf65)
+
+    event.create("overbased_magnesium_sulfonate")
+        .fluid()
+        .color(0x8b8c66)
+
+    event.create("wither_gas")
+        .gas()
+        .color(0x3c3d2d)
+})
+
 // Primal Mana ...Chemline?
 GTCEuStartupEvents.registry("gtceu:material", event => {
 
@@ -294,30 +313,12 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
 
 // I don't know what this is for
 GTCEuStartupEvents.registry("gtceu:material", event => {
-    event.create("butanol")
-        .fluid()
-        .color(0xc7af2e)
-        .components("4x carbon", "10x hydrogen", "1x oxygen")
-        .formula("C4H9OH")
-
-    event.create("phosphorus_trichloride")
-        .fluid()
-        .color(0xe8c474)
-        .components("1x phosphorus", "3x chlorine")
-
-    event.create("phosphoryl_chloride")
-        .fluid()
-        .color(0xe8bb5b)
-        .components("1x phosphorus", "1x oxygen", "3x chlorine")
-
-    event.create("tributyl_phosphate")
-        .fluid()
-        .color(0xe8c474)
-        .components("12x carbon", "27x hydrogen", "4x oxygen", "1x phosphorus")
-        .formula("(C4H9O)3PO")
-
     event.create("tantalum_pentoxide")
         .dust()
         .color(0x72728A).iconSet("rough")
         .components("2x tantalum", "5x oxygen")
+
+    event.create("purpur")
+        .dust()
+        .color(0xaf7baf).secondaryColor(0x965196).iconSet("rough")
 })

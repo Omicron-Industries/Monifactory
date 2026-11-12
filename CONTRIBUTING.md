@@ -7,6 +7,7 @@
   - [Basics of Git](#basics-of-git)
   - [Git GUIs/CUIs](#git-guiscuis)
   - [Git versus GitHub](#git-versus-github)
+  - [Pull Request Checks](#pull-request-checks)
 - [What Contributions Are We Seeking?](#what-contributions-are-we-seeking)
 - [Getting Started](#getting-started)
   - [Setting up an instance repository for use in dev](#setting-up-an-instance-repository-for-use-in-dev)
@@ -18,6 +19,10 @@
   - [Asset \& Data folder Organization](#asset--data-folder-organization)
 - [Optional Compats](#optional-compats)
 - [Updating Mods](#updating-mods)
+- [KubeJS Systems](#kubejs-systems)
+  - [Nukelists](#nukelists)
+  - [Deprecation Pipeline](#deprecation-pipeline)
+  - [Tiered Recipe Generator](#tiered-recipe-generation)
 
 
 ## Introduction ##
@@ -46,10 +51,17 @@ Git sometimes is a hard program to master, there are a few ways to use git
 - VSCode built-in Git utility(Requires VSCode, obviously) - Similar to Git Desktop but built into VSCode and is way less invasive, not *as* good as Github Desktop for beginners but can be nice if you don't want to switch programs all the time
 - [LazyGit](https://github.com/jesseduffield/lazygit/tree/master?tab=readme-ov-file#winget-windows-10-1709-or-later)
  - A Command line UI, you use the arrow keys and the "Tab" key to navigate through it's menu's, the middle ground between Github Desktop and just using manual git commands, you can use winget on windows, brew on macOS, your linux distro's package manager, or just compile it from source.
+
 ## Git versus GitHub ##
 
 - Git - Version control software used to manage files in a repository(A directory containing code, in this case, this should be your minecraft folder)
 - GitHub - Used to host said repositories and allow for easy collaboration worldwide.
+
+## Pull Request Checks ##
+
+- Each pull request has some checks run against it to ensure the quality of contributions made to the project.
+- One of these checks is a lint check. It ensures that the source code style and formatting meet our standards.
+- Three other checks are gametests. They launch the game and ensure no errors occur when loading into a world. Due to the way they are structured, they will automatically fail if a pull request comes from a third-party repository and modpack manifest is changed. As such, they are not required to pass for pull requests that modify for the modpack manifest, but we request that those PRs do not modify any other files to mitigate the risks of this exception.
 
 ## What Contributions Are We Seeking? ##
 
@@ -97,9 +109,10 @@ If you want to use Juke to update your mods folder, you will need to install Nod
 Once those files are moved back in place, you should be able to launch the instance as a modpack while also being able to commit and pull from it as a repository, saving you tons of time.  Do note that if the modlist changes, you will need to install the applicable mods/updates into your instance, you can also just rerun the command to completely purge and update your mods folder. 
 
 ## Localization ##
-Monifactory supports localization for nearly everything, including the questbook. Our weblate instance can be found [here](https://hosted.weblate.org/engage/monifactory/), and guide for using weblate can be found [here](<https://docs.weblate.org/en/latest/user/translating.html>). The site also has a [minimalist mode](<https://docs.weblate.org/en/latest/user/translating.html#zen-mode>), and supports uploading raw language files, if you prefer other options.
+**UPDATE:** Monifactory has temporarily withdrawn support for quest book localization, in order to help development progress more smoothly. This page will be updated once we re-enable support for quest book translations.
+Monifactory supports localization for many things. Our weblate instance can be found [here](https://hosted.weblate.org/engage/monifactory/), and guide for using weblate can be found [here](<https://docs.weblate.org/en/latest/user/translating.html>). The site also has a [minimalist mode](<https://docs.weblate.org/en/latest/user/translating.html#zen-mode>), and supports uploading raw language files, if you prefer other options.
 
-If you wish to add a language for localization, either ask Pansmith to add it, or make a pull request with some translations already done in that language. (Weblate will automatically add lang files for everything upon detecting a new language). Also note that the discord has a thread for Monifactory's Translations in the #moni-dev channel for easy communication with other contributors.
+If you wish to add a language for localization, either ask Xefyr to add it, or make a pull request with some translations already done in that language. (Weblate will automatically add lang files for everything upon detecting a new language). Also note that the discord has a thread for Monifactory's Translations in the #moni-dev channel for easy communication with other contributors.
 
 ## Questbook Formatting Guidelines ##
 
@@ -212,7 +225,7 @@ KubeJS offers a feature to automatically load resource packs & datapacks put int
 4. Do not leave any unused files or assets in these folders! One example is how there used to be an entire suite of Draconic Evolution-themed casings before the theming was switched to the Deep Dark instead. Those unused assets were left in the folder for _months_ after the switch. Debug assets such as those in `kubejs\assets\kubejs\textures\block\debug` are exempt.
 
 ## Optional Compats ##
-Optional Compatiblities for mods should be balanced so that they fit naturally in the modpack's progression without overshadowing existing options. For example, an optional compatability should not have wireless be unlocked before it's possible in the base modpack. Optional Compatibilies serve to extend and add additional options, not replace.
+Optional Compatibilities for mods should be balanced so that they fit naturally in the modpack's progression without overshadowing existing options. For example, an optional compatibility should not have wireless be unlocked before it's possible in the base modpack. Optional Compatibilities serve to extend and add additional options, not replace.
 
 ## Updating Mods ##
 
@@ -222,5 +235,26 @@ It's easy to forget, but mod updates can break as many things as they fix - don'
 PERFORM THOROUGH CHECKS BEFORE UPDATING:
 | Mod | Problems that result from updating |
 | ------------- | ------------- |
-| HammerLib | Causes datapack errors when loading into existing worlds |
-| Solar Flux Reborn | Depends on an updated HammerLib |
+
+# KubeJS Systems #
+For assisting in pack development, several systems have been implemented in KubeJS to perform repetitive tasks en masse more easily.
+
+## Nukelists ##
+Part of the process for developing a modpack involves removing certain parts of some mods that aren't needed or wanted in the pack. There are several different objects that may need hiding and removal as a part of this - items, fluids, recipes, and tags.
+Nukelists hide and remove recipes that involve a certain item or fluid, as well as removing all tags from that item. 
+
+For adding an item to the nukelist, add the item's resource location or a regex matching that item's resource location to the definition of `global.itemNukeList` in [item.js](kubejs\startup_scripts\nukeLists\item.js).
+
+For adding a fluid to the nukelist, add the fluid's resource location or a regex matching that fluid's resource location to the definition of `global.fluidNukeList` in [fluid.js](kubejs\startup_scripts\nukeLists\fluid.js). This will also perform the equivalent operations as if the fluid's bucket were added to the item nukelist.
+
+## Deprecation Pipeline ##
+As this modpack updates over time, players will want to port their saves to newer releases. In some updates, however, certain objects may have their resource locations altered or be removed from the game entirely. Without use of the DataFixerUpper (DFU) library, this results in those objects disappearing from the save, causing the player to lose the object without recourse or refund.
+
+The Deprecation Pipeline acts as a "safety net" for certain cases of this type of issue. When properly configured, it creates a new, hidden, and otherwise unobtainable object with the same resource location as the removed object. This new object can then be used an in-game analog of a refund or exchange. The process of performing this refund or exchange is listed on the object's tooltip, and typically involves putting it in the crafting table or a GregTech machine.
+
+This process can be performed for items, fluids, and blocks. New deprecation entries should be put [deprecations.js](kubejs\startup_scripts\deprecations.js), and deprecation entries should be removed two minor versions after they are created.
+
+## Tiered recipe generation ##
+In GregTech, there are many cases of recipes that are highly similar to one another, but with minor differences in the inputs such as the type of plastic or rubber used, or the tier and quantity of circuit component consumed. The [Tiered Recipe Generator](kubejs\server_scripts\gregtech\tiered_recipes.js) offers a way to generate these types of recipes by copying existing recipes, then performing small modifications before registering the new recipe.
+
+This file also makes use of TypeScript to enforce strict typing. It is easily the most complicated KubeJS file, and beginners are recommended to avoid it. 

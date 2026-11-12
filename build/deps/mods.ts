@@ -1,5 +1,6 @@
 import Juke from "juke-build"
 import fs from "fs/promises"
+import { existsSync } from "fs"
 
 import { readManifest, type ManifestFileEntry } from "../lib/manifest.ts"
 import { DownloadCF, GetModInfo } from "../lib/curseforge.ts"
@@ -23,8 +24,7 @@ export const createDownloadModTarget = (file: ManifestFileEntry, dependsOn?: Juk
     return new Juke.Target({
         name: `Download mod from project ${file.projectID}, version ${file.fileID}`,
 
-        inputs: ["manifest.json"],
-        outputs: [/* Jar path cannot be predetermined */ modInfoFullPath],
+        onlyWhen: () => !existsSync(modInfoFullPath), // Jar path cannot be predetermined, so check what we can, the mod info path.
 
         dependsOn,
 

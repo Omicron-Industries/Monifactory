@@ -175,7 +175,7 @@ ServerEvents.recipes(event => {
             .itemInputs("48x gtceu:flawless_dilithium_gem")
             .itemInputs("kubejs:elite_drilling_kit")
             .itemInputs("gtceu:duranium_drill_head")
-            .itemInputs("4x nuclearcraft:plate_du")
+            .itemInputs("8x gtceu:double_yttrium_barium_cuprate_plate")
             .itemInputs("gtceu:uranium_block")
             .damageRate(6)
             .itemOutputs(

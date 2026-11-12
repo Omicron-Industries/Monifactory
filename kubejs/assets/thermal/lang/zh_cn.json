@@ -7,8 +7,6 @@
     "item.thermal.upgrade_augment_3.desc": "提升基础属性。其它升级也可能由此得到进一步增强。",
     "item.thermal.upgrade_augment_4": "信素整合组件",
     "item.thermal.upgrade_augment_4.desc": "提升基础属性。其它升级也可能由此得到进一步增强。",
-    "info.thermal.dynamo_stirling.0": "燃烧固体燃料，产出红石通量。",
-    "info.thermal.dynamo_stirling.1": "大部分在熔炉里能烧的东西，在这儿也能行。",
     "info.thermal.machine_bottler.0": "将流体灌入容器中。",
     "info.thermal.machine_bottler.1": "如果你想来点好喝的，那必须备一台这种机器。",
     "info.thermal.machine_bottler.2": "满上！",

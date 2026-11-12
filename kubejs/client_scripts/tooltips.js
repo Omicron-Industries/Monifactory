@@ -14,6 +14,7 @@ ItemEvents.tooltip(tooltip => {
     }
 
     tooltip.add("kubejs:microminer_t2half", Text.translatable("item.kubejs.microminer_t2half.desc"))
+    tooltip.add("kubejs:microminer_t3half", Text.translatable("item.kubejs.microminer_t3half.desc"))
     tooltip.add("kubejs:microminer_t4half", Text.translatable("item.kubejs.microminer_t4half.desc"))
 
     tooltip.addAdvanced(["/kubejs:stabilized_microminer/"], (item, adv, text) => {
@@ -200,7 +201,6 @@ ItemEvents.tooltip(tooltip => {
         text.add(2, Text.translatable("extendedcrafting.auto_table.tooltip.2"))
     })
 
-    tooltip.add("kubejs:excitationcoil", Text.translatable("kubejs.excitationcoil.tooltip"));
     tooltip.add("gtceu:terminal", Text.translatable("gtceu.terminal.tooltip"));
 
     tooltip.add(["gtceu:prospector.lv", "gtceu:prospector.hv", "gtceu:prospector.luv"], Text.translatable("gtceu.prospector.tooltip.1"));
@@ -214,26 +214,6 @@ ItemEvents.tooltip(tooltip => {
             text.add(2, Text.translatable(`telepastries.${dim}_cake.tooltip.2`))
         })
     })
-
-    // NuclearCraft
-    tooltip.add("nuclearcraft:rhodochrosite_dust", "§eMnCO₃");
-    tooltip.add("nuclearcraft:tough_alloy_ingot", "§eLiFeB");
-    tooltip.add("nuclearcraft:ferroboron_ingot", "§eFe₄B");
-    tooltip.add("nuclearcraft:hard_carbon_ingot", "§eFe₃C");
-    tooltip.add("nuclearcraft:uranium_233", "§eU²³³");
-    tooltip.add("nuclearcraft:plutonium_238", "§ePu²³⁸");
-    tooltip.add("nuclearcraft:plutonium_242", "§ePu²⁴²");
-    tooltip.add("nuclearcraft:neptunium_236", "§eNp²³⁶");
-    tooltip.add("nuclearcraft:neptunium_237", "§eNp²³⁷");
-    tooltip.add("nuclearcraft:americium_241", "§eAm²⁴¹");
-    tooltip.add("nuclearcraft:americium_242", "§eAm²⁴²");
-    tooltip.add("nuclearcraft:americium_243", "§eAm²⁴³");
-    tooltip.add("nuclearcraft:curium_243", "§eCm²⁴³");
-    tooltip.add("nuclearcraft:curium_245", "§eCm²⁴⁵");
-    tooltip.add("nuclearcraft:berkelium_247", "§eBk²⁴⁷");
-    tooltip.add("nuclearcraft:berkelium_248", "§eBk²⁴⁸");
-    tooltip.add("nuclearcraft:californium_251", "§eCf²⁵¹");
-    tooltip.add("nuclearcraft:californium_252", "§eCf²⁵²");
 
     tooltip.addAdvanced(["/^kubejs:.+infinity_dust_block$/", "kubejs:infinity_dust_block"], (item, adv, text) => {
         text.add(1, Text.translatable("item.kubejs.infinity_dust_block.tooltip"))
@@ -272,8 +252,31 @@ ItemEvents.tooltip(tooltip => {
         "packagedexexcrafting:epic_crafter"
     ], Text.translatable("packagedexcrafting.crafterspeed.tooltip"))
 
+    // Battery Buffer tooltips
+    tooltip.add(/gtceu:.*_battery_buffer_.*/, Text.translatable("block.gtceu.battery_buffer.tooltip"))
+
     // Tempad
     if (Platform.isLoaded("tempad")) {
         tooltip.add("tempad:tempad", Text.translatable("tempad.tempad.tooltip"))
+    }
+
+    // Advanced AE
+    if (Platform.isLoaded("advanced_ae")) {
+        tooltip.add([
+            "advanced_ae:water_breathing_card",
+            "advanced_ae:auto_feeding_card",
+            "advanced_ae:hp_buffer_card",
+            "advanced_ae:evasion_card",
+            "advanced_ae:regeneration_card",
+            "advanced_ae:strength_card",
+            "advanced_ae:attack_speed_card",
+            "advanced_ae:luck_card",
+            "advanced_ae:swim_speed_card"
+        ], Text.translatable("advanced_ae.disabled_card.tooltip"))
+    }
+
+    // Integrated Dynamics & Tunnels
+    if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
+        tooltip.add("integrateddynamics:on_the_dyanmics_of_integration", Text.translatable("integrateddynamics.on_the_dynamics_of_integration.tooltip"))
     }
 })

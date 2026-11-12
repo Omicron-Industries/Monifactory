@@ -3,37 +3,6 @@
 ServerEvents.recipes(event => {
     if (!doHNN) {
         event.remove({ id: /hostilenetworks/ })
-
-        // Mixer for recipes that fit in singleblocks
-        const xpjuice_small = [
-            ["enderio:pulsating_powder", 6720],
-            ["enderio:vibrant_powder", 8960],
-            ["kubejs:grains_of_innocence", 16000]
-        ]
-
-        for (const [input, output] of xpjuice_small) {
-            event.recipes.gtceu.mixer(`kubejs:xpjuice_${output}`)
-                .inputFluids(Fluid.of("gtceu:mana", 250))
-                .itemInputs(input)
-                .outputFluids(Fluid.of("enderio:xp_juice", output))
-                .EUt(GTValues.VA[GTValues.HV])
-                .duration(100)
-        }
-
-        // LCR needed for larger recipes
-        const xpjuice_large = [
-            ["enderio:ender_crystal_powder", 35840],
-            ["enderio:prescient_powder", 44800]
-        ]
-
-        for (const [input, output] of xpjuice_large) {
-            event.recipes.gtceu.large_chemical_reactor(`kubejs:xpjuice_${output}`)
-                .inputFluids(Fluid.of("gtceu:mana", 500))
-                .itemInputs(input)
-                .outputFluids(Fluid.of("enderio:xp_juice", output))
-                .EUt(GTValues.VA[GTValues.EV])
-                .duration(100)
-        }
     }
 
     if(doHarderRecipes) {

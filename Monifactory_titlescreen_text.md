@@ -1,3 +1,3 @@
-# Moni 0.13.6
-*NEW MOD: Spatial Tools Compatible! A copy-paste tool that supports GT machines and AE2 multiparts.
-*Also includes minor QoL and fixes.
+# Moni 0.13.8
+*Various QoL and fixes  
+*We are now releasing **Bleeding Edge builds** of the in-development upcoming update in our **discord server**. The full update will be published on curseforge as usual.

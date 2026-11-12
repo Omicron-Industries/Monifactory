@@ -15,7 +15,7 @@
             "category": "thermal:gourmand_fuel"
         },
         {
-            "category": "thermal:disenchantement_fuel"
+            "category": "thermal:disenchantment_fuel"
         },
         {
             "category": "thermal:lapidary_fuel"
@@ -31,84 +31,6 @@
         },
         {
             "category": "ironfurnaces:generator_blasting"
-        },
-        {
-            "category": "nuclearcraft:supercooler"
-        },
-        {
-            "category": "nuclearcraft:rock_crusher"
-        },
-        {
-            "category": "nuclearcraft:decay_hastener"
-        },
-        {
-            "category": "nuclearcraft:irradiator"
-        },
-        {
-            "category": "nuclearcraft:nuclear_furnace"
-        },
-        {
-            "category": "nuclearcraft:extractor"
-        },
-        {
-            "category": "nuclearcraft:electrolyzer"
-        },
-        {
-            "category": "nuclearcraft:pressurizer"
-        },
-        {
-            "category": "nuclearcraft:alloy_smelter"
-        },
-        {
-            "category": "nuclearcraft:centrifuge"
-        },
-        {
-            "category": "nuclearcraft:manufactory"
-        },
-        {
-            "category": "nuclearcraft:gas_scrubber"
-        },
-        {
-            "category": "nuclearcraft:fluid_enricher"
-        },
-        {
-            "category": "nuclearcraft:isotope_separator"
-        },
-        {
-            "category": "nuclearcraft:fluid_infuser"
-        },
-        {
-            "category": "nuclearcraft:chemical_reactor"
-        },
-        {
-            "category": "nuclearcraft:analyzer"
-        },
-        {
-            "category": "nuclearcraft:ingot_former"
-        },
-        {
-            "category": "nuclearcraft:pump"
-        },
-        {
-            "category": "nuclearcraft:fuel_reprocessor"
-        },
-        {
-            "category": "nuclearcraft:leacher"
-        },
-        {
-            "category": "nuclearcraft:crystallizer"
-        },
-        {
-            "category": "nuclearcraft:assembler"
-        },
-        {
-            "category": "nuclearcraft:steam_turbine"
-        },
-        {
-            "category": "nuclearcraft:melter"
-        },
-        {
-            "category": "nuclearcraft:nc_ore_veins"
         },
         {
             "category": "ftbquests:quest"
@@ -147,13 +69,10 @@
             "category": "thermal:pulverizer_catalyst"
         },
         {
-            "category": "thermal:disenchantement_fuel"
+            "category": "thermal:disenchantment_fuel"
         },
         {
             "category": "thermal:crystallizer"
-        },
-        {
-            "category": "thermal:crucible"
         },
         {
             "category": "thermal:chiller"
@@ -180,25 +99,37 @@
             "category": "emi_loot:block_drops"
         },
         {
-            "category": "minecraft:alchemy_bench"
+            "category": "chipped:alchemy_bench"
         },
         {
-            "category": "minecraft:botanist_workbench"
+            "category": "chipped:botanist_workbench"
         },
         {
-            "category": "minecraft:glassblower"
+            "category": "chipped:glassblower"
         },
         {
-            "category": "minecraft:carpenters_table"
+            "category": "chipped:carpenters_table"
         },
         {
-            "category": "minecraft:loom_table"
+            "category": "chipped:loom_table"
         },
         {
-            "category": "minecraft:mason_table"
+            "category": "chipped:mason_table"
         },
         {
-            "category": "minecraft:tinkering_table"
+            "category": "chipped:tinkering_table"
+        },
+        {
+            "category": "ad_astra:compressing"
+        },
+        {
+            "category": "ad_astra:cryo_freezing"
+        },
+        {
+            "category": "ad_astra:alloying"
+        },
+        {
+            "category": "ad_astra:refining"
         },
         {
             "category": "create:automatic_shaped" 
@@ -226,15 +157,6 @@
         },
         {
             "category": "create:pressing" 
-        },
-        {
-            "category": "nuclearcraft:fusion_coolant" 
-        },
-        {
-            "category": "nuclearcraft:fusion_core" 
-        },
-        {
-            "category": "nuclearcraft:turbine_controller" 
         },
         {
             "category": "enderio:primitive_alloy_smelting" 

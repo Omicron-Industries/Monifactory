@@ -18,6 +18,36 @@
             },
             "entries": [
                 {
+                    "type": "minecraft:item",
+                    "name": "quark:glow_shroom",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:ender_spore",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
                     "type": "minecraft:loot_table",
                     "name": "lostcities:chests/lostcitychest",
                     "weight": 8
