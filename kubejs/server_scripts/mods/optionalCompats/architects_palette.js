@@ -72,12 +72,6 @@ if (Platform.isLoaded("architects_palette")) {
             .duration(20)
             .EUt(GTValues.VA[GTValues.ULV])
 
-        event.recipes.gtceu.mixer("sunmetal_blend_9x")
-            .itemInputs("9x minecraft:soul_sand", "gtceu:gold_dust")
-            .itemOutputs("36x architects_palette:sunmetal_blend")
-            .duration(100)
-            .EUt(GTValues.VA[GTValues.ULV])
-
         event.recipes.gtceu.mixer("nether_brass_blend")
             .itemInputs("minecraft:soul_sand", "gtceu:copper_dust", "gtceu:tiny_iron_dust")
             .itemOutputs("4x architects_palette:nether_brass_blend")
