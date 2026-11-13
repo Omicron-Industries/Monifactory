@@ -97,8 +97,6 @@ ServerEvents.recipes(event => {
             .adjacentFluids("minecraft:lava", "minecraft:water")
     }
 
-    generateRockBreakerStoneRecipe("minecraft:calcite")
-    generateRockBreakerStoneRecipe("minecraft:tuff")
     generateRockBreakerStoneRecipe("quark:jasper")
     generateRockBreakerStoneRecipe("quark:limestone")
     generateRockBreakerStoneRecipe("quark:permafrost")
