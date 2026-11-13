@@ -37,6 +37,22 @@ function remove_grindstone_assembler_conflict(event) {
     event.remove("gtceu:assembler/grindstone");
 }
 
+// In HM-, beehives conflict with wooden stairs, both being
+// on circuit 7.
+//
+// Fix this by using the EM recipes across all modes.
+// This *BUFFS* the HM- recipe, it previously used
+// 6x planks and 3x honeycomb.
+function remove_beehive_stairs_conflict(event) {
+    event.recipes.gtceu
+        .assembler("beehive")
+        .itemInputs("2x gtceu:wood_screw", "5x #minecraft:planks")
+        .itemOutputs("minecraft:beehive")
+        .circuit(2)
+        .duration(100)
+        .EUt(4);
+}
+
 // Fix the conflict in assemblers between ladders and grindstones.
 // This is only relevant for HM- I think, because it relies on
 // doHarderMiscRecipes being off, but I think it's fine to nuke this
