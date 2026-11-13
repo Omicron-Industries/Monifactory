@@ -324,12 +324,6 @@ if (Platform.isLoaded("architects_palette")) {
             .duration(20)
             .EUt(GTValues.VA[GTValues.LV])
 
-        event.recipes.gtceu.atomic_reconstruction("moonshale")
-            .itemInputs("minecraft:stone")
-            .itemOutputs("architects_palette:moonshale")
-            .duration(20)
-            .EUt(GTValues.VA[GTValues.LV])
-
         event.recipes.gtceu.atomic_reconstruction("hadaline_lamp")
             .itemInputs("architects_palette:abyssaline_lamp")
             .itemOutputs("architects_palette:hadaline_lamp")
