@@ -23,6 +23,20 @@ function remove_formic_acid_conflict(event) {
     }
 }
 
+// There is a conflict between grindstones and stonecutters in an
+// assemblers in EM. See:
+// https://github.com/GregTechCEu/GregTech-Modern/issues/5641
+//
+// This problem only appears in EM, so a fix that is conditional on
+// EM would be nice, however that's annoying (see the way we removed
+// button recipes in another function of this file). We solve this
+// problem by ignoring it: Grindstones aren't really needed for
+// anything except maybe building. Hopefully upstream fixes this
+// eventually, this is not an ideal solution.
+function remove_grindstone_assembler_conflict(event) {
+    event.remove("gtceu:assembler/grindstone");
+}
+
 // Fix the conflict in assemblers between ladders and grindstones.
 // This is only relevant for HM- I think, because it relies on
 // doHarderMiscRecipes being off, but I think it's fine to nuke this
@@ -101,6 +115,7 @@ function remove_hopper_conflict(event) {
 
 ServerEvents.recipes((event) => {
     remove_formic_acid_conflict(event);
+    remove_grindstone_assembler_conflict(event);
     remove_ladder_grindstone_conflict(event);
     remove_button_cutting_conflict(event);
     remove_hopper_conflict(event);
