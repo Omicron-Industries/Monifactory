@@ -37,12 +37,17 @@ function remove_grindstone_assembler_conflict(event) {
     event.remove("gtceu:assembler/grindstone");
 }
 
-// In HM-, beehives conflict with wooden stairs, both being
-// on circuit 7.
+// In HM-, wooden stairs conflict with beehives, fletching tables,
+// cartography tables, and smithing tables, all of them being
+// circuit 7 and using wooden planks.
 //
-// Fix this by using the EM recipes across all modes.
-// This *BUFFS* the HM- recipe, it previously used
-// 6x planks and 3x honeycomb.
+// Fix this by using the EM recipes across all modes for everything
+// except smithing tables, which:
+// - BUFFS the HM- beehive recipe
+// - Slightly buffs fletching and cartography table in HM- I guess
+//
+// The EM smithing table recipe is annoying, so I'll just make up
+// a new one across all modes that's decent enough.
 function remove_beehive_stairs_conflict(event) {
     event.recipes.gtceu
         .assembler("beehive")
@@ -51,6 +56,39 @@ function remove_beehive_stairs_conflict(event) {
         .circuit(2)
         .duration(100)
         .EUt(4);
+    event.recipes.gtceu
+        .assembler("fletching_table")
+        .itemInputs("minecraft:feather", "#minecraft:logs")
+        .itemOutputs("minecraft:fletching_table")
+        .duration(80)
+        .EUt(6); // No Circuit
+    event.recipes.gtceu
+        .assembler("cartography_table")
+        .itemInputs("minecraft:paper", "#minecraft:logs")
+        .itemOutputs("minecraft:cartography_table")
+        .duration(80)
+        .EUt(6); // No Circuit
+    event.recipes.gtceu
+        .assembler("smithing_table")
+        .itemInputs("3x gtceu:wrought_iron_plate", "#minecraft:logs")
+        .itemOutputs("minecraft:smithing_table")
+        .duration(80)
+        .EUt(6); // No Circuit
+}
+
+// In HM-, there's a recipe conflict between crafting table and
+// signs, both on circuit 4 and using planks. Unfortunately,
+// there are no good circuit frequencies to assign the recipe to.
+//
+// We instead use any log on circuit 1.
+function remove_craftingtable_sign_conflict(event) {
+    event.recipes.gtceu
+        .assembler("crafting_table")
+        .itemInputs("#minecraft:logs")
+        .circuit(1)
+        .itemOutputs("minecraft:crafting_table")
+        .duration(80)
+        .EUt(6);
 }
 
 // Fix the conflict in assemblers between ladders and grindstones.
@@ -132,6 +170,8 @@ function remove_hopper_conflict(event) {
 ServerEvents.recipes((event) => {
     remove_formic_acid_conflict(event);
     remove_grindstone_assembler_conflict(event);
+    remove_beehive_stairs_conflict(event);
+    remove_craftingtable_sign_conflict(event);
     remove_ladder_grindstone_conflict(event);
     remove_button_cutting_conflict(event);
     remove_hopper_conflict(event);
