@@ -23,6 +23,16 @@ function remove_formic_acid_conflict(event) {
     }
 }
 
+// Fix the conflict in assemblers between ladders and grindstones.
+// This is only relevant for HM- I think, because it relies on
+// doHarderMiscRecipes being off, but I think it's fine to nuke this
+// recipe in EM as well, because... who uses ladders. Also for reasons
+// I can't figure out (also upstream GTM maybe?) there's a great
+// tool-less crafting table recipe for ladders in EM anyway.
+function remove_ladder_grindstone_conflict(event) {
+    event.remove("gtceu:assembler/ladder");
+}
+
 // Fix the conflict that gives you fewer buttons in EM than you're
 // supposed to get, when cutting stone pressure plates.
 // https://github.com/GregTechCEu/GregTech-Modern/issues/5221
@@ -91,6 +101,7 @@ function remove_hopper_conflict(event) {
 
 ServerEvents.recipes((event) => {
     remove_formic_acid_conflict(event);
+    remove_ladder_grindstone_conflict(event);
     remove_button_cutting_conflict(event);
     remove_hopper_conflict(event);
 });
