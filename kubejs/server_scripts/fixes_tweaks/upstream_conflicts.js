@@ -22,6 +22,52 @@ ServerEvents.recipes((event) => {
             .circuit(1);
     }
 
+    // Fix the conflict that gives you fewer buttons in EM than you're
+    // supposed to get, when cutting stone pressure plates.
+    // https://github.com/GregTechCEu/GregTech-Modern/issues/5221
+    //
+    // This one is annoying to fix, because it only appears in EM due to
+    // a GT config. Instead of relying on packmode and risking drift,
+    // we'll instead check if the better EM stone button recipes exist,
+    // and if they do, remove the bad NM stone button recipes.
+    //
+    // To that end, we execute `find_recipes` once. Doing this, instead
+    // of, say, `count_recipes` for each of the stone types individually,
+    // we end up only needing to iterate over the list of recipes once,
+    // which is more efficient.
+    const materials = ["stone", "polished_blackstone"];
+    // Could be fancy and do this with some array funprog magic,
+    // but this is more readable.
+    const good_to_bad_button_recipe = {
+        "gtceu:cutter/blackstone_button":
+            "gtceu:cutter/cut_polished_blackstoneslab_into_button",
+        "gtceu:cutter/blackstone_button_distilled_water":
+            "gtceu:cutter/cut_polished_blackstoneslab_into_button_distilled_water",
+        "gtceu:cutter/blackstone_button_water":
+            "gtceu:cutter/cut_polished_blackstoneslab_into_button_water",
+        "gtceu:cutter/stone_button": "gtceu:cutter/cut_stoneslab_into_button",
+        "gtceu:cutter/stone_button_distilled_water":
+            "gtceu:cutter/cut_stoneslab_into_button_distilled_water",
+        "gtceu:cutter/stone_button_water":
+            "gtceu:cutter/cut_stoneslab_into_button_water",
+    };
+    const good_recipes = event.findRecipes(
+        Object.keys(good_to_bad_button_recipe).map((str) => {
+            return {
+                id: str,
+            };
+        }),
+    );
+    good_recipes.forEach((good_recipe) => {
+        const recipe_to_remove = good_to_bad_button_recipe[good_recipe["id"]];
+        // This seems to be a hashmap check instead of an iteration
+        // over all the recipes, so should be efficient enough.
+        // https://github.com/kube-mods/kubejs/blob/ba142541dcc1d230383f4a55e38dd92ff10d1029/common/src/main/java/dev/latvian/mods/kubejs/recipe/RecipesEventJS.java#L578
+        if (recipe_to_remove !== undefined) {
+            event.remove({ id: recipe_to_remove });
+        }
+    });
+
     // Fix the conflict between assembler hopper and storage cover recipe.
     // This fixes the upstream GTM issue "Recipe conflict between Hopper
     // and Storage Cover":
