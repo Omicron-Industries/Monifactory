@@ -288,7 +288,7 @@ if (Platform.isLoaded("createdeco")) {
             event.recipes.gtceu.assembler(`createdeco:${decorOutput}_sheet_metal`)
                 .itemInputs(sheet)
                 .itemOutputs(`createdeco:${decorOutput}_sheet_metal`)
-                .circuit(1)
+                .circuit(10)
                 .duration(100)
                 .EUt(4)
         }
@@ -328,7 +328,7 @@ if (Platform.isLoaded("createdeco")) {
             event.recipes.gtceu.assembler(`createdeco:${decorOutput}_door`)
                 .itemInputs(`6x ${sheet}`)
                 .itemOutputs(`createdeco:${decorOutput}_door`)
-                .circuit(4)
+                .circuit(6)
                 .duration(100)
                 .EUt(GTValues.VHA[GTValues.LV])
         }

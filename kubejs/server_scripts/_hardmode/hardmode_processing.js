@@ -103,16 +103,6 @@ ServerEvents.recipes(event => {
             .outputFluids(Fluid.of("gtceu:polyvinyl_acetate", 4320))
             .duration(800).EUt(GTValues.VA[GTValues.LV])
 
-        // Recipe conflict of 2-Ethylanthraquinone from Ethylbenzene with Styrene from Ethylbenzene
-        event.remove({ id: "gtceu:chemical_reactor/styrene_from_ethylbenzene" })
-        event.remove({ id: "gtceu:large_chemical_reactor/styrene_from_ethylbenzene" })
-
-        event.recipes.gtceu.chemical_reactor("styrene_from_ethylbenzene_hm")
-            .inputFluids("gtceu:ethylbenzene 1000")
-            .circuit(1)
-            .outputFluids("gtceu:styrene 1000", "gtceu:hydrogen 2000")
-            .duration(30).EUt(GTValues.VA[GTValues.LV])
-
         // Hydrazine Rocket Fuel
         event.recipes.gtceu.large_chemical_reactor("rocket_fuel_from_hydrazine")
             .inputFluids("gtceu:hydrazine 1000", "gtceu:dimethylhydrazine 1000", "gtceu:dinitrogen_tetroxide 2000")

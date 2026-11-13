@@ -1207,7 +1207,7 @@ ServerEvents.recipes(event => {
         .itemInputs("gtceu:iv_machine_hull", "2x ae2:pattern_provider", "2x ae2:interface", "gtceu:iv_robot_arm", "gtceu:iv_electric_pump", "4x ae2:speed_card", "2x ae2:capacity_card", "#gtceu:circuits/iv")
         .inputFluids("gtceu:soldering_alloy 288")
         .itemOutputs("gtceu:me_pattern_buffer")
-        .circuit(1)
+        .circuit(2)
         .duration(600)
         .EUt(GTValues.VA[GTValues.IV])
 
@@ -1223,23 +1223,22 @@ ServerEvents.recipes(event => {
         .EUt(GTValues.VA[GTValues.LuV])
 
     // Expanded ME Pattern Buffer
-
     event.remove({ id: "gtceu:research_station/1x_gtceu_zpm_dual_input_hatch" })
     event.remove({ output: "gtmutils:expanded_me_pattern_buffer" })
     event.recipes.gtceu.assembler("kubejs:expanded_me_pattern_buffer")
-        .itemInputs("gtceu:iv_machine_hull", "4x ae2:pattern_provider", "4x ae2:interface", "2x gtceu:iv_robot_arm", "2x gtceu:iv_electric_pump", "8x ae2:speed_card", "4x ae2:capacity_card", "2x #gtceu:circuits/iv")
-        .inputFluids("gtceu:soldering_alloy 1152")
+        .itemInputs("gtceu:me_pattern_buffer", "2x ae2:pattern_provider", "2x ae2:interface", "gtceu:iv_robot_arm", "gtceu:iv_electric_pump", "4x ae2:speed_card", "2x ae2:capacity_card", "#gtceu:circuits/iv")
+        .inputFluids("gtceu:soldering_alloy 864")
         .itemOutputs("gtmutils:expanded_me_pattern_buffer")
         .circuit(2)
-        .duration(4000)
+        .duration(3400)
         .EUt(GTValues.VA[GTValues.IV])
 
     // Expanded ME Pattern Buffer Proxy
     event.remove({ id: "gtceu:research_station/1x_gtceu_me_pattern_buffer_proxy" })
     event.remove({ output: "gtmutils:expanded_me_pattern_buffer_proxy" })
     event.recipes.gtceu.assembly_line("kubejs:expanded_me_pattern_buffer_proxy")
-        .itemInputs("gtceu:luv_machine_hull", "4x gtceu:luv_sensor", "2x #gtceu:circuits/luv", "2x ae2:quantum_link", "4x ae2:quantum_ring", "48x gtceu:fine_europium_wire", "48x gtceu:fine_europium_wire", "48x gtceu:fine_europium_wire", "48x gtceu:fine_europium_wire")
-        .inputFluids("gtceu:soldering_alloy 1152", "gtceu:lubricant 2000")
+        .itemInputs("gtceu:me_pattern_buffer_proxy", "2x gtceu:luv_sensor", "#gtceu:circuits/luv", "ae2:quantum_link", "2x ae2:quantum_ring", "64x gtceu:fine_europium_wire", "64x gtceu:fine_europium_wire")
+        .inputFluids("gtceu:soldering_alloy 576", "gtceu:lubricant 1500")
         .itemOutputs("gtmutils:expanded_me_pattern_buffer_proxy")
         .scannerResearch("gtceu:me_pattern_buffer_proxy")
         .duration(600)
