@@ -40,12 +40,6 @@ ServerEvents.recipes(event => {
     // NETHER STAR RECIPES
     event.remove({ id: "hostilenetworks:living_matter/extraterrestrial/nether_star" })
 
-    event.recipes.gtceu.forge_hammer("nether_star_block_to_star")
-        .itemInputs("gtceu:nether_star_block")
-        .itemOutputs("9x minecraft:nether_star")
-        .duration(100)
-        .EUt(24)
-
     // Other Quantum Flux Recipes
     event.recipes.gtceu.mixer("quantum_flux_hm")
         .itemInputs("redstone_arsenal:flux_gem")
