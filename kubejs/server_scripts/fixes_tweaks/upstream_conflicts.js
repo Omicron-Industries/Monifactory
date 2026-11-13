@@ -50,6 +50,33 @@ const fixes = [
         event.remove("gtceu:assembler/grindstone");
     },
 
+    // There is an assembler conflict between doors and normal wood pipes.
+    //
+    // They both use circuit 6 and the same item ingredients, but normal
+    // wood pipes also use glue. We shouldn't change the wood door circuit,
+    // since that would disorganize the whole neat door category.
+    //
+    // We also can't really add anything plausible to the wood door recipe.
+    // One plausible fix would be to craft the wood pipes from slabs instead
+    // of planks, or even from the GT wood plates (for some reason).
+    // Instead, I'll just move the wood pipes to a different assembler
+    // circuit. Wood assembler circuits are already polluted with all
+    // sorts of strange recipes, but circuit 10 is still free. This is not
+    // a very useful assembler circuit, but past HV (where you stop setting
+    // circuits manually in your assemblers, because AE2) you will no longer
+    // need the wood pipes anyway.
+    // Better than removing the recipe outright, at any rate.
+    function remove_wood_door_pipe_conflict(event) {
+        event.recipes.gtceu
+            .assembler("gtceu:normal_wood_pipe")
+            .itemInputs("6x #minecraft:planks")
+            .inputFluids("gtceu:glue 20")
+            .itemOutputs("gtceu:wood_normal_fluid_pipe")
+            .circuit(10)
+            .duration(200)
+            .EUt(30);
+    },
+
     // In HM-, wooden stairs conflict with beehives, fletching tables,
     // cartography tables, and smithing tables, all of them being
     // circuit 7 and using wooden planks.
