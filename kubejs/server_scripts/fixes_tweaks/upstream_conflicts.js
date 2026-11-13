@@ -2,7 +2,6 @@
  * Fixes upstream GregTech recipe conflicts.
  */
 
-
 // Using functions for isolated fixes makes sure to keep the scopes separate,
 // as KubeJS does not seem to like regular JS scopes.
 //
@@ -44,6 +43,9 @@ const fixes = [
     // problem by ignoring it: Grindstones aren't really needed for
     // anything except maybe building. Hopefully upstream fixes this
     // eventually, this is not an ideal solution.
+    //
+    // Incidentally, this also fixes weak conflicts between ladders
+    // and grindstones, and wood stairs and grindstones.
     function remove_grindstone_assembler_conflict(event) {
         event.remove("gtceu:assembler/grindstone");
     },
@@ -100,16 +102,6 @@ const fixes = [
             .itemOutputs("minecraft:crafting_table")
             .duration(80)
             .EUt(6);
-    },
-
-    // Fix the conflict in assemblers between ladders and grindstones.
-    // This is only relevant for HM- I think, because it relies on
-    // doHarderMiscRecipes being off, but I think it's fine to nuke this
-    // recipe in EM as well, because... who uses ladders. Also for reasons
-    // I can't figure out (also upstream GTM maybe?) there's a great
-    // tool-less crafting table recipe for ladders in EM anyway.
-    function remove_ladder_grindstone_conflict(event) {
-        event.remove("gtceu:assembler/ladder");
     },
 
     // Fix the conflict that gives you fewer buttons in EM than you're
