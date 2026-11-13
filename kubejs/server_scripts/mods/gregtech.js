@@ -39,19 +39,12 @@ ServerEvents.recipes(event => {
 
     // NETHER STAR RECIPES
     event.remove({ id: "hostilenetworks:living_matter/extraterrestrial/nether_star" })
-    event.remove({ id: "gtceu:implosion_compressor/implodedust_nether_star_tnt" })
 
     event.recipes.gtceu.forge_hammer("nether_star_block_to_star")
         .itemInputs("gtceu:nether_star_block")
         .itemOutputs("9x minecraft:nether_star")
         .duration(100)
         .EUt(24)
-
-    event.recipes.gtceu.implosion_compressor("implosion_star_tnt")
-        .itemInputs("4x gtceu:nether_star_dust", "2x minecraft:tnt", "#forge:small_dusts/dark_ash")
-        .itemOutputs("3x minecraft:nether_star")
-        .duration(20)
-        .EUt(GTValues.VA[GTValues.LV])
 
     // Other Quantum Flux Recipes
     event.recipes.gtceu.mixer("quantum_flux_hm")
