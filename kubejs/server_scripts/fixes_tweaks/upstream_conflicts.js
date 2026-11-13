@@ -138,6 +138,23 @@ const fixes = [
             .EUt(6);
     },
 
+    // In all modes, there is a conflict between (treated) wood frames
+    // and signs.
+    //
+    // These are all on circuit 4, and remapping frames to any circuit
+    // frequency other than 4 feels wrong.
+    // Unfortunately, I can't really change the signs either, because
+    // for lack of KubeJS having API docs, I can't figure out how to
+    // change the sign recipe's circuit without affecting the other
+    // values.
+    // We fix this problem by ignoring it: Just nuke wood frame and
+    // treated wood frame recipes for now. The latter is only used
+    // in primitive pumps, and the former is completely useless.
+    function remove_wood_frame_recipes(event) {
+        event.remove("gtceu:assembler/assemble_wood_frame")
+        event.remove("gtceu:assembler/assemble_treated_wood_frame")
+    },
+
     // Fix the conflict that gives you fewer buttons in EM than you're
     // supposed to get, when cutting stone pressure plates.
     // https://github.com/GregTechCEu/GregTech-Modern/issues/5221
