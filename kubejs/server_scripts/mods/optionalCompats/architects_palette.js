@@ -271,7 +271,7 @@ if (Platform.isLoaded("architects_palette")) {
             .EUt(GTValues.VA[GTValues.LV])
 
         event.recipes.gtceu.atomic_reconstruction("twisted_sapling")
-            .itemInputs("#minecraft:saplings")
+            .itemInputs("minecraft:acacia_sapling")
             .itemOutputs("architects_palette:twisted_sapling")
             .duration(20)
             .EUt(GTValues.VA[GTValues.LV])
