@@ -2,16 +2,16 @@
  * Fixes upstream GregTech recipe conflicts.
  */
 
-ServerEvents.recipes((event) => {
-    // Fix the conflict between a formic acid and sodium bicarbonate recipe.
-    // This fixes the upstream GTM issue "Recipe conflict between Formic Acid
-    // and Sodium Bicarbonate Dust":
-    // https://github.com/GregTechCEu/GregTech-Modern/issues/4823
-    //
-    // The fix we employ here is to simply add a circuit 1 to formic acid.
-    //
-    // This conflict only exists in Normal Mode, as Hard Mode+ changes the
-    // recipe in ../_hardmode/platline.js.
+// Fix the conflict between a formic acid and sodium bicarbonate recipe.
+// This fixes the upstream GTM issue "Recipe conflict between Formic Acid
+// and Sodium Bicarbonate Dust":
+// https://github.com/GregTechCEu/GregTech-Modern/issues/4823
+//
+// The fix we employ here is to simply add a circuit 1 to formic acid.
+//
+// This conflict only exists in Normal Mode, as Hard Mode+ changes the
+// recipe in ../_hardmode/platline.js.
+function remove_formic_acid_conflict(event) {
     if (!doHarderProcessing) {
         event.recipes.gtceu
             .chemical_reactor("formic_acid")
@@ -21,21 +21,22 @@ ServerEvents.recipes((event) => {
             .EUt(GTValues.VA[GTValues.LV])
             .circuit(1);
     }
+}
 
-    // Fix the conflict that gives you fewer buttons in EM than you're
-    // supposed to get, when cutting stone pressure plates.
-    // https://github.com/GregTechCEu/GregTech-Modern/issues/5221
-    //
-    // This one is annoying to fix, because it only appears in EM due to
-    // a GT config. Instead of relying on packmode and risking drift,
-    // we'll instead check if the better EM stone button recipes exist,
-    // and if they do, remove the bad NM stone button recipes.
-    //
+// Fix the conflict that gives you fewer buttons in EM than you're
+// supposed to get, when cutting stone pressure plates.
+// https://github.com/GregTechCEu/GregTech-Modern/issues/5221
+//
+// This one is annoying to fix, because it only appears in EM due to
+// a GT config. Instead of relying on packmode and risking drift,
+// we'll instead check if the better EM stone button recipes exist,
+// and if they do, remove the bad NM stone button recipes.
+function remove_button_cutting_conflict(event) {
     // To that end, we execute `find_recipes` once. Doing this, instead
     // of, say, `count_recipes` for each of the stone types individually,
     // we end up only needing to iterate over the list of recipes once,
     // which is more efficient.
-    const materials = ["stone", "polished_blackstone"];
+    //
     // Could be fancy and do this with some array funprog magic,
     // but this is more readable.
     const good_to_bad_button_recipe = {
@@ -67,15 +68,16 @@ ServerEvents.recipes((event) => {
             event.remove({ id: recipe_to_remove });
         }
     });
-
-    // Fix the conflict between assembler hopper and storage cover recipe.
-    // This fixes the upstream GTM issue "Recipe conflict between Hopper
-    // and Storage Cover":
-    // https://github.com/GregTechCEu/GregTech-Modern/issues/5523
-    //
-    // The fix we employ here is to simply add a circuit 1 to the iron
-    // hopper recipe. For consistency, we also change the wrought iron hopper
-    // recipe, though that recipe didn't have any conflicts to begin with.
+}
+// Fix the conflict between assembler hopper and storage cover recipe.
+// This fixes the upstream GTM issue "Recipe conflict between Hopper
+// and Storage Cover":
+// https://github.com/GregTechCEu/GregTech-Modern/issues/5523
+//
+// The fix we employ here is to simply add a circuit 1 to the iron
+// hopper recipe. For consistency, we also change the wrought iron hopper
+// recipe, though that recipe didn't have any conflicts to begin with.
+function remove_hopper_conflict(event) {
     for (const material of ["iron", "wrought_iron"]) {
         event.recipes.gtceu
             .assembler(`hopper_${material}`)
@@ -85,4 +87,10 @@ ServerEvents.recipes((event) => {
             .EUt(2)
             .circuit(1);
     }
+}
+
+ServerEvents.recipes((event) => {
+    remove_formic_acid_conflict(event);
+    remove_button_cutting_conflict(event);
+    remove_hopper_conflict(event);
 });
