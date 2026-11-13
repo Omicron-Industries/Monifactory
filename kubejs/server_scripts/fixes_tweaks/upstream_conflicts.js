@@ -77,8 +77,8 @@ const fixes = [
             .EUt(30);
     },
 
-    // In HM-, wooden stairs conflict with beehives, fletching tables,
-    // cartography tables, and smithing tables, all of them being
+    // In HM-, wooden stairs conflict with beehives, looms,
+    // fletching/cartography/smithing tables, all of them being
     // circuit 7 and using wooden planks.
     //
     // Fix this by using the EM recipes across all modes for everything
@@ -88,6 +88,7 @@ const fixes = [
     //
     // The EM smithing table recipe is annoying, so I'll just make up
     // a new one across all modes that's decent enough.
+    // For loom, we just copy the NM recipe, but remove the circuit.
     function remove_beehive_stairs_conflict(event) {
         event.recipes.gtceu
             .assembler("beehive")
@@ -112,6 +113,12 @@ const fixes = [
             .assembler("smithing_table")
             .itemInputs("3x gtceu:wrought_iron_plate", "#minecraft:logs")
             .itemOutputs("minecraft:smithing_table")
+            .duration(80)
+            .EUt(6); // No Circuit
+        event.recipes.gtceu
+            .assembler("loom")
+            .itemInputs("2x minecraft:string", "4x #minecraft:planks")
+            .itemOutputs("minecraft:loom")
             .duration(80)
             .EUt(6); // No Circuit
     },
