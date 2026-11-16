@@ -327,8 +327,8 @@ if (Platform.isLoaded("createdeco")) {
             // Doors
             event.recipes.gtceu.assembler(`createdeco:${decorOutput}_door`)
                 .itemInputs(`6x ${sheet}`)
-                .itemOutputs(`createdeco:${decorOutput}_door`)
-                .circuit(4)
+                .itemOutputs(`3x createdeco:${decorOutput}_door`)
+                .circuit(6)
                 .duration(100)
                 .EUt(GTValues.VHA[GTValues.LV])
         }
