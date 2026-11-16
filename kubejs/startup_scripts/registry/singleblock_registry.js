@@ -5,8 +5,24 @@
  */
 const $ParallelHatchPartMachine = Java.loadClass("com.gregtechceu.gtceu.common.machine.multiblock.part.ParallelHatchPartMachine")
 
-// GT Atomic Reconstructor recipe type
+/**
+ * Extended Crafting table tier corresponding to each Extended Crafter tier.
+ * Change tooltips and translations too, if you are changing this.
+ */
+global.extendedCrafterTables = {
+    mv: "advanced",
+    hv: "elite",
+    ev: "elite",
+    iv: "elite",
+    luv: "ultimate",
+    zpm: "ultimate",
+    uv: "ultimate",
+    uhv: "epic",
+    uev: "epic",
+}
+
 GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
+    // GT Atomic Reconstructor recipe type
     event.create("atomic_reconstruction")
         .category("reconstruction")
         .setEUIO("in")
@@ -14,10 +30,28 @@ GTCEuStartupEvents.registry("gtceu:recipe_type", event => {
         .setSlotOverlay(false, false, GuiTextures.ARROW_INPUT_OVERLAY)
         .setProgressBar(MoniGuiTextures.PROGRESS_BAR_RECONSTRUCTION, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.ELECTROLYZER)
+
+
+    // GT Extended Crafter recipe type
+
+    // This will get players discussing lmao
+    // Pls let this easter egg be, for fun
+    const progressBars = [
+        GuiTextures.PROGRESS_BAR_ARROW_MULTIPLE,
+        GuiTextures.PROGRESS_BAR_UNPACKER,
+    ]
+    event.create("extended_crafting")
+        .category("extended_crafting")
+        .setEUIO("in")
+        .setMaxIOSize(24, 1, 0, 0)
+        .setSlotOverlay(false, false, GuiTextures.RESEARCH_STATION_OVERLAY)
+        .setSlotOverlay(true, false, GuiTextures.BOX_OVERLAY)
+        .setProgressBar(progressBars[Math.floor(Math.random() * progressBars.length)], FillDirection.LEFT_TO_RIGHT)
+        .setSound(GTSoundEntries.ASSEMBLER)
 })
 
-// GT Atomic Reconstructor machine
 GTCEuStartupEvents.registry("gtceu:machine", event => {
+    // GT Atomic Reconstructor machine
     event.create("atomic_reconstructor", "simple")
         .tiers(GTValues.LV, GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV)
         .definition((tier, builder) =>
@@ -25,6 +59,16 @@ GTCEuStartupEvents.registry("gtceu:machine", event => {
                 .langValue(`${GTValues.VLVH[tier]} Atomic Reconstructor`)
                 .recipeType("atomic_reconstruction")
                 .workableTieredHullModel("gtceu:block/machines/reconstructor")
+        )
+
+    // GT Extended Crafter machine
+    event.create("extended_crafter", "simple")
+        .tiers(GTValues.MV, GTValues.HV, GTValues.EV, GTValues.IV, GTValues.LuV, GTValues.ZPM, GTValues.UV, GTValues.UHV, GTValues.UEV)
+        .definition((tier, builder) =>
+            builder
+                .langValue(`${GTValues.VLVH[tier]} Extended Crafter`)
+                .recipeType("extended_crafting")
+                .workableTieredHullModel(`gtceu:block/machines/extended_crafter/${global.extendedCrafterTables[GTValues.VN[tier].toLowerCase()]}`)
         )
 })
 

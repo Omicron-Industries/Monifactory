@@ -101,6 +101,11 @@ ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced(["gtceu:iv_atomic_reconstructor", "gtceu:luv_atomic_reconstructor", "gtceu:zpm_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.ivzpm_atomic_reconstructor.desc"))) })
     tooltip.addAdvanced(["gtceu:uv_atomic_reconstructor", "gtceu:uhv_atomic_reconstructor", "gtceu:uev_atomic_reconstructor"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.uvuiv_atomic_reconstructor.desc"))) })
 
+    tooltip.addAdvanced(["gtceu:mv_extended_crafter"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.mv_extended_crafter.desc"))) })
+    tooltip.addAdvanced(["gtceu:hv_extended_crafter", "gtceu:ev_extended_crafter", "gtceu:iv_extended_crafter"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.hviv_extended_crafter.desc"))) })
+    tooltip.addAdvanced(["gtceu:luv_extended_crafter", "gtceu:zpm_extended_crafter", "gtceu:uv_extended_crafter"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.luvuv_extended_crafter.desc"))) })
+    tooltip.addAdvanced(["gtceu:uhv_extended_crafter", "gtceu:uev_extended_crafter"], (item, adv, text) => { text.add(1, Text.gray(Text.translatable("block.gtceu.uhvuev_extended_crafter.desc"))) })
+
     tooltip.addAdvanced("gtceu:naquadah_reactor", (item, adv, text) => {
         text.add(1, [Text.gray("A reactor that produces energy from "), Text.gold(Text.translate("item.kubejs.naquadah_fuel_rod")), Text.gray(" decay.")])
     })

@@ -178,6 +178,9 @@
         },
         {
             "category": "enderio:sagmilling" 
+        },
+        {
+            "category": "gtceu:extended_crafting"
         }
     ]
 }
