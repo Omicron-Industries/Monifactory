@@ -157,13 +157,13 @@
 			dependencies: ["6974AA409CC355E6"]
 			dependency_requirement: "one_completed"
 			description: [
-				"The Large Combustion Engine is much like an &5EV&r upgrade to an &6HV&r combustion Generator, but with a few differences."
+				"The Large Combustion Engine is much like an &5EV&r upgrade to an &6HV&r Combustion Generator, but with a few differences."
 				""
 				"First, it's a multiblock. This means it takes up more space, requires a &6Maintenance Hatch&r, and costs a significant amount of Titanium."
 				""
 				"Second, it consumes &9Lubricant&r in addition to regular combustion fuels."
 				""
-				"Third, it can be supercharged with &9Oxygen&r to produce &e3x&r more energy from &e2x&r more fuel."
+				"Third, it can be supercharged with &9Oxygen&r to produce &e3A&r &5EV&r with &e2A&r worth of fuel."
 				"{@pagebreak}"
 				"[\"\",{\"text\":\"While you're at it, you should also look into switching to \"},{\"color\":\"blue\",\"underlined\":\"true\",\"text\":\"High Octane Gasoline\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"2CC50101A39EA2C0\"}},{\"text\":\" if your previous fuel is failing you.\"}]"
 				""
@@ -264,7 +264,7 @@
 				""
 				"It produces &e4x&r the power for &e4x&r as much fuel like any other generator upgrade, but consumes the same amount of &9Lubricant&r."
 				""
-				"Additionally, supercharging uses &9Liquid Oxygen&r instead of the gas version."
+				"Additionally, supercharging uses &9Liquid Oxygen&r instead of Oxygen Gas."
 				"{@pagebreak}"
 				"[\"\",{\"text\":\"As for fuels, you should look into \"},{\"color\":\"blue\",\"underlined\":\"true\",\"text\":\"JEAN Gasoline\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"053DDDCD2505E20B\"}},{\"text\":\". It's a potent concoction of exotic and dangerous ingredients, but will last for quite some time even in these generators.\"}]"
 			]
@@ -365,7 +365,7 @@
 				""
 				"It requires a &6Maintenance Hatch&r, though."
 				""
-				"At this point you're also able to make &9Wither Gas&r, the most potent Gas Turbine fuel available."
+				"At this point you're also able to make &9Wither-Doped Gas&r, the most potent Gas Turbine fuel available."
 			]
 			icon: "gtceu:gas_large_turbine"
 			id: "7D72B3FF808CE13C"
@@ -969,10 +969,11 @@
 			]
 			description: [
 				"When fueled, the &3Transdimensional Energy Singularity&r grants unlimited energy to all EU-based machines and energy hatches, removing their need to push or pull power."
+				"This also applies to &6Laser and Dynamo Hatches&r, allowing you to keep your AE2 network and &3Dimensional Superassembler&r running."
 				""
 				"Note that while this is running, &3Power Substations&r and &3Active Transformers&r will stop functioning."
 				""
-				"(Unique multi mechanic code taken from the Cosmic Frontiers team with Caitlynn's gracious permission.)"
+				"(Unique multi mechanic code taken from the Cosmic Frontiers team with Ghosti's gracious permission.)"
 			]
 			icon: "monilabs:creative_energy_multi"
 			id: "19084E91F357C8C2"
@@ -1241,7 +1242,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"Like with other generators, the &6Advanced Lapotronic Generator II&r is equivalent to 4 generators of the previous tier."
+				"The &6Advanced Lapotronic Generator II&r will burn its gems &e4x&r as fast, in exchange for &e4x&r the EU/t. This results in the same total EU per gem."
 				""
 				"Access to &6Microminers&r in &6HV&r will allow you to automate the production of a variety of gems. In particular, &6Energium&r and &6Lapotron&r gems are a more processed alternative to simpler gems."
 			]
@@ -1265,9 +1266,9 @@
 				""
 				"First, it's a multiblock. This means it takes up more space, requires a &6Maintenance Hatch&r, and costs a significant amount of Titanium."
 				""
-				"Second, it consumes small amounts of &9Quantum Flux&r in addition to regular lapotronic fuels."
+				"Second, it consumes small amounts of &9Liquid Redstone&r in addition to regular lapotronic fuels."
 				""
-				"Third, it can be supercharged with tiny amounts of &9Primal Mana&r to produce &e3x&r more energy from &e2x&r more fuel."
+				"Third, it can be supercharged with tiny amounts of &9Primal Mana&r to produce &e3A&r &5EV&r with &e2A&r worth of fuel."
 			]
 			icon: "monilabs:large_lapotronic_generator"
 			id: "7EC8FB68BD2AB417"
@@ -1354,9 +1355,9 @@
 			description: [
 				"The Extreme Lapotronic Generator is a direct upgrade to the Large Lapotronic Generator."
 				""
-				"It produces &e4x&r the power for &e4x&r as much fuel like any other generator upgrade, but consumes the same amount of &9Quantum Flux&r."
+				"It produces &e4x&r the power for &e4x&r as much fuel like any other generator upgrade, but consumes the same amount of &9Liquid Redstone&r."
 				""
-				"Additionally, supercharging with &9Primal Mana&r is even more efficient, producing &e4x&r more energy from &e2x&r more fuel."
+				"Additionally, supercharging with &9Primal Mana&r is even more efficient, producing &e4A&r &9IV&r with &e2A&r worth of fuel."
 			]
 			icon: "monilabs:extreme_lapotronic_generator"
 			id: "11CF72393601F450"

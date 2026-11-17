@@ -1,18 +1,38 @@
 {
   "chunkSaveDelay": {
-    "desc:": "Delay before a chunk is saved to disk, default: 300 seconds",
+    // Delay before a chunk is saved to disk, 
+    // Default: 300 seconds
     "chunkSaveDelay": 300
   },
+
   "chunkUnloadLimit": {
-    "desc:": "Maximum amount of chunks unloaded per tick, default: 20, vanilla:200",
+    // Maximum amount of chunks unloaded per tick, 
+    // Default: 20, vanilla:200
     "chunkUnloadLimit": 20
   },
+
   "disableProtoSave": {
-    "desc:": "Disables saving of protochunks(not fully generated chunks) to reduce saving lag. Default: true",
+    // Disables saving of protochunks(not fully generated chunks) to reduce saving lag. 
+    // Default: true
     "disableProtoSave": true
   },
+
+  "detectBrokenPOIs": {
+    // Detects broken POI locations and fixes them. Recommended to use when using disableProtoSave,
+    // as it can leave behind broken POIs when changing world generation on an existing world(e.g. removing a biome mod).
+    // Default: true
+    "detectBrokenPOIs": true
+  },
+
+  "logPOIRepair": {
+    // Detects broken POI locations and fixes them. DisableProtoSave can leave behind broken POIs when changing world generation on an existing world(e.g. removing a biome mod).
+    // Default: true
+    "logPOIRepair": true
+  },
+
   "debugLogging": {
-    "desc:": "Enables debug logging of how many chunks got saved in a tick. default: false",
+    // Enables debug logging of how many chunks got saved in a tick. 
+    // Default: false
     "debugLogging": false
   }
 }

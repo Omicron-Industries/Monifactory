@@ -1,0 +1,29 @@
+#Early window height
+earlyWindowHeight = 480
+#Enable forge global version checking
+versionCheck = false
+#Should we control the window. Disabling this disables new GL features and can be bad for mods that rely on them.
+earlyWindowControl = true
+#Early window framebuffer scale
+earlyWindowFBScale = 1
+#Early window provider
+earlyWindowProvider = "fmlearlywindow"
+#Early window width
+earlyWindowWidth = 854
+#Early window starts maximized
+earlyWindowMaximized = false
+#Default config path for servers
+defaultConfigPath = "defaultconfigs"
+#Disables Optimized DFU client-side - already disabled on servers
+disableOptimizedDFU = true
+#Skip specific GL versions, may help with buggy graphics card drivers
+earlyWindowSkipGLVersions = []
+#Whether to log a help message on first attempt, to aid troubleshooting. This setting should automatically disable itself after a successful launch
+earlyWindowLogHelpMessage = false
+#Max threads for early initialization parallelism,  -1 is based on processor count
+maxThreads = -1
+#Squir?
+earlyWindowSquir = false
+#Whether to show CPU usage stats in early window
+earlyWindowShowCPU = false
+

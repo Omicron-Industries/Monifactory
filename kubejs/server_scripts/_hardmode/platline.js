@@ -57,6 +57,14 @@ if (doHarderProcessing) {
             .duration(16).EUt(GTValues.VA[GTValues.LV])
             .circuit(5)
 
+        // This changes the GT recipe for formic_acid.
+        // At the time of writing this comment, there is a file
+        // ../fixes_tweaks/upstream_conflicts.js
+        // where we additionally change the formic_acid recipe for Normal Mode,
+        // because upstream GTM has a recipe conflict for formic acid
+        // (see https://github.com/GregTechCEu/GregTech-Modern/issues/4823).
+        // If this here recipe gets moved to Normal Mode, make sure to remove
+        // the corresponding one in ../fixes_tweaks/upstream_conflicts.js
         event.recipes.gtceu.chemical_reactor("formic_acid")
             .inputFluids("gtceu:methyl_formate 1000", "minecraft:water 1000")
             .outputFluids("gtceu:formic_acid 1000", "gtceu:methanol 1000")

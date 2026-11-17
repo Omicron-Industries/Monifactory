@@ -44,7 +44,7 @@
     "emi_info.monilabs.integrity_drained": "Intégrité drainée : %.2f",
     "emi_info.monilabs.integrity_healed": "Intégrité soignée : %.2f",
     "emi_info.monilabs.new_microverse": "Nouveau type : %s",
-    "emi_info.monilabs.projector_info": "Niveau du projecteur : %d",
+    "emi_info.monilabs.projector_info": "Niveau du projecteur : %d (%s)",
     "emi_info.monilabs.required_microverse": "Type requis : %s",
     "gtceu.antimatter_manipulator": "Manipulation d'antimatière",
     "gtceu.chromatic_processing": "Processus chromatique",

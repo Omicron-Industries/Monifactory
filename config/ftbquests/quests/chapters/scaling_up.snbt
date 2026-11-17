@@ -110,6 +110,43 @@
 			x: -9.75d
 			y: -5.5d
 		}
+		{
+			id: "78CBAAFFCED49F1C"
+			linked_quest: "1DB3CCC10C0EB1A8"
+			shape: "hexagon"
+			x: -10.75d
+			y: 8.75d
+		}
+		{
+			id: "752245BAE721598C"
+			linked_quest: "53EC3831D66769CA"
+			shape: "hexagon"
+			x: 9.0d
+			y: 3.75d
+		}
+		{
+			id: "207DD39F07E9EAC9"
+			linked_quest: "3DD8D9EEA7189186"
+			shape: "hexagon"
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			id: "01878A313A454D5D"
+			linked_quest: "53C00EA9D9BEE776"
+			shape: "hexagon"
+			size: 2.0d
+			x: -5.75d
+			y: -3.0d
+		}
+		{
+			id: "79E03BBE3F281AD5"
+			linked_quest: "664107ED03A944CD"
+			shape: "hexagon"
+			size: 1.25d
+			x: 5.0d
+			y: 6.5d
+		}
 	]
 	quests: [
 		{
@@ -245,11 +282,7 @@
 				"5D5B76387841C3FA"
 				"6D70F91101D8CBB4"
 			]
-			description: [
-				"ASSEMBLE!"
-				""
-				"&6Mana Dust&r is an important material. It is needed for a variety of materials related to &bThermal Expansion&r."
-			]
+			description: ["&6Mana Dust&r is an important material. It is needed for a variety of materials related to &bThermal Expansion&r."]
 			id: "227F448DFCC3E8C3"
 			rewards: [{
 				id: "6CA886F14DF08A57"
@@ -257,6 +290,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			subtitle: "ASSEMBLE!"
 			tasks: [{
 				id: "25D333A97EBBD6A4"
 				item: "kubejs:primal_mana"
@@ -441,9 +475,9 @@
 				"227F448DFCC3E8C3"
 			]
 			description: [
-				"Mixing &6Titanium&r with &6Mana Dust&r creates &6Mythril Dust&r. This can be smelted into ingots in an &3Electric Blast Furnace&r equipped with &6Kanthal Coils&r or better."
+				"Mixing &6Titanium&r with &9Mana&r in liquid form creates &6Mythril Dust&r. This can be smelted into ingots in an &3Electric Blast Furnace&r equipped with &6Kanthal Coils&r or better."
 				""
-				"Mythril is the basis of &bThermal Expansion&r device casings, and is used for many advanced &aAugments&r."
+				"Mythril is used for multiple useful tools, such as the &6ME Infinite Water Cell&r and &6ME Infinite Cobblestone Cell&r."
 			]
 			id: "3E12862AD553EB8A"
 			rewards: [{
@@ -624,39 +658,6 @@
 		}
 		{
 			dependencies: [
-				"0874A0191325CFDB"
-				"5B07A88C0BFF6586"
-			]
-			description: [
-				"[\"\",{\"text\":\"The Second Microminer! If this is your first microminer, please read the quests about how microminers and microverses work in the \"},{\"underlined\":true,\"text\":\"Into the Microverse chapter.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"68F29871402A6B1B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}}]"
-				""
-				"&2You'll need Phosphorous in its LV Field Generators&r."
-				""
-				"This Miner is a good source of &6Tungsten and Noble Gases&r, among other things."
-				""
-				"&9Don't forget that you can automate Extended Crafting recipes before you get PackagedAuto by converting your Extended Crafting tables into autocrafting tables."
-				""
-				"To see what this Microminer can bring back, check its recipes in &bEMI&r."
-			]
-			id: "53C00EA9D9BEE776"
-			rewards: [{
-				id: "66C6B5C146FB14CF"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 2.0d
-			tasks: [{
-				id: "0589E6FCB6684938"
-				item: "kubejs:microminer_t2"
-				type: "item"
-			}]
-			title: "&9Tier Two Microminer"
-			x: -5.75d
-			y: -3.0d
-		}
-		{
-			dependencies: [
 				"53C00EA9D9BEE776"
 				"399AE4E449872B8A"
 			]
@@ -713,41 +714,13 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"3000798ACA51BFDC"
-				"5C78349343BA40D7"
-			]
-			description: [
-				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
-				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Hot Nichrome Ingot&r which will damage you if it is held. To prevent this damage and obtain the desired ingot, the Hot Ingot must be cooled in a &3Vacuum Freezer&r."
-				""
-				"It is best to directly route this Hot Ingot from the &6Output Bus&r of your Blast Furnace to the &6Input Bus&r of your &3Vacuum Freezer&r via pipes or a &6Tag Filter&r set to 'forge:hot_ingots' with a high priority."
-			]
-			id: "1DB3CCC10C0EB1A8"
-			rewards: [{
-				id: "2C2C08984F62573F"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "4DC44D14F05D27B4"
-				item: "gtceu:nichrome_ingot"
-				type: "item"
-			}]
-			title: "Nichrome Ingots"
-			x: -10.75d
-			y: 8.75d
-		}
-		{
 			dependencies: ["1DB3CCC10C0EB1A8"]
 			description: [
 				"&6Nichrome&r is the third coil material available, increasing your EBF's operating temperature to 3600K so it can process more advanced materials."
 				""
 				"Note that an &6HV&r &3Assembler&r is required to make them. &cEach tier of coil requires their tier of Assembler&r - we won't remind you again."
 				""
-				"&93600K&r is now also hot enough to grant a single &9100%% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
+				"&93600K&r is now also hot enough to grant a single &9100% efficient overclock&r to 1800K and below recipes. This means that one overclock will grant &94x speed&r instead of the normal &92x&r. In effect, you will get an additional 2x speed boost by overclocking once. "
 				""
 				"This means that the gas-boosted recipe for &6Aluminium&r will get cut from about &e7s&r to &e3s&r at HV. Once you upgrade your EBF to EV power, &6Stainless Steel Ingots&r will get cut from about &e37s&r to &e9s&r! It's well worth upgrading the EBFs producing these materials to &6Nichrome&r once you can afford it. "
 				""
@@ -1020,7 +993,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&9Nitrogen&r comprises 78%% of the atmosphere. Because of this, after the first few processes of &9Liquid Air&r, you'll probably have more Nitrogen than you know what to do with."
+				"&9Nitrogen&r comprises 78% of the atmosphere. Because of this, after the first few processes of &9Liquid Air&r, you'll probably have more Nitrogen than you know what to do with."
 				""
 				"If you got here centrifuging air, then it's gonna take you longer to get to that point."
 				""
@@ -1295,13 +1268,11 @@
 				"1F2E76FA4B2C2E84"
 			]
 			description: [
-				"&9Diesel&r is a mixture of &9Light Fuel&r and &9Heavy Fuel&r."
+				"&9Diesel&r is a mixture of &9Light Fuel&r and &9Heavy Fuel&r. It makes for a perfectly fine early fuel to your &6Combustion Generators&r."
 				""
-				"The primary use is for making &2Cetane-Boosted Diesel&r, which you will want to stockpile in large quantities for the later production of &6Cryolobus&r. &2Alternatively, &6Gasoline&2 can be used for that purpose, and later be upgraded into &6High Octane Gasoline&2 and &6JEAN Gasoline&r."
+				"You can also use it for making the better &2Cetane-Boosted Diesel&r, which you might want in large quantities for the later production of &6Cryolobus&r. &2Alternatively, &6Gasoline&2 can be used for that purpose, and later be upgraded into &6High Octane Gasoline&2 and &6JEAN Gasoline&r."
 				""
-				"The performance of Combustion Generators is also improved, but you probably want to refine Diesel anyway."
-				""
-				"&2While it is more power efficient to use singleblock Distilleries over a Distillation Tower for Oil, it is still recommended to use Distillation Towers, to get the other useful byproducts too. For Diesel, the correct ratio is 3 Distilleries for Light Oil and 2 Distilleries for Heavy Oil."
+				"&2If you are producing Diesel from Raw Oil, &6Distillation Towers&2 are as energy efficient at separating it as singleblock distilleries, while also giving useful byproducts. You will want to use one if you don't already."
 			]
 			icon: "gtceu:diesel_bucket"
 			id: "74EDAE84246C7228"
@@ -1424,7 +1395,7 @@
 			description: [
 				"Like other petroleum products, &9Sulfuric Gas&r &2or Natural Gas&r is hydrodesulfurized into &9Refinery Gas&r using &9Hydrogen&r in a &3Chemical Reactor&r."
 				""
-				"Refinery Gas can be cracked and further distilled for its constituents, but it is also useful as fuel for &3Gas Turbines&r. While it can be burned directly, centrifuging Refinery Gas produces &9LPG&r (Liquefied Petroleum Gas), which is an ideal fuel for Gas Turbines, and &9Methane&r which is a potential (suboptimal) turbine fuel but is also useful for various chemical reactions."
+				"Refinery Gas can be cracked and further distilled for its constituents, but it is also a good source of fuels for &3Gas Turbines&r. While it &ecan't be burned directly&r, centrifuging Refinery Gas produces &9LPG&r (Liquefied Petroleum Gas), which is an ideal fuel for Gas Turbines, and &9Methane&r which is a potential (suboptimal) turbine fuel but is also useful for various chemical reactions."
 			]
 			icon: "gtceu:refinery_gas_bucket"
 			id: "2396EF225839C65D"
@@ -1499,7 +1470,7 @@
 				""
 				"Any other recipe which could be done in a normal &9Chemical Reactor&r, as well as certain &9Mixer&r recipes, can also be done in an &3LCR&r."
 				""
-				"All &9Overclocks&r in the &3LCR&r are &6100%% efficient&r; each overclock will &5quadruple the speed&r, as opposed to doubling it. This type of overclock is called a Perfect Overclock."
+				"All &9Overclocks&r in the &3LCR&r are &6100% efficient&r; each overclock will &5quadruple the speed&r, as opposed to doubling it. This type of overclock is called a Perfect Overclock."
 			]
 			icon: "gtceu:large_chemical_reactor"
 			id: "21B16C005E9E3B0E"
@@ -1666,7 +1637,7 @@
 		{
 			dependencies: ["4C76017864258EA9"]
 			description: [
-				"&6High-Octane Gasoline&r &2is an even more powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in Cryolobus production, using 75%% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it.&r"
+				"&6High-Octane Gasoline&r &2is an even more powerful combustion fuel, generating 3200 EU per mB of fuel. It can also be used in Cryolobus production, using 75% less fuel than Cetane-Boosted Diesel or normal Gasoline. The trade-off is the very complex processing lines you must set up for it.&r"
 				""
 				"To refine Gasoline to High-Octane Gasoline, you will need:"
 				"- 20 parts Gasoline"
@@ -1708,7 +1679,7 @@
 				"78EB8574A67B10D4"
 			]
 			description: [
-				"The reaction that produces &9Bio Diesel&r is also the only source of &9Glycerol&r, which is an easy way to make &9Epichlorohydrin&r, an important ingredient of &9Epoxy&r."
+				"The reaction that produces &9Bio Diesel&r is also one of two sources of &9Glycerol&r, which is an easy way to make &9Epichlorohydrin&r, an important ingredient of &9Epoxy&r."
 				""
 				"&9Glycerol&r is also used in the production of &9Glyceryl Trinitrate&r, an important step in making &6Dynamite&r, which can be used later in the &3Implosion Compressor&r."
 				""
@@ -1716,7 +1687,7 @@
 				""
 				"Bio Diesel can be used for power, but it is probably better to convert it to &2Cetane-Boosted Diesel&r."
 			]
-			icon: "gtceu:glycerol_bucket"
+			icon: "gtceu:bio_diesel_bucket"
 			id: "502AB887CB316377"
 			shape: "hexagon"
 			tasks: [
@@ -1773,7 +1744,7 @@
 				""
 				"The easiest ways to get seeds are with a &9Greenhouse&r."
 				""
-				"The easiest way to get fish is through using a &aGregtech Fisher&r. If you are playing Normal Mode, a &aGuardian Model&r from &bHNN&r is also an option."
+				"The easiest way to get fish is through using an &aAquatic Engangler&r. If you are playing Normal Mode, a &aGuardian Model&r from &bHNN&r is also an option."
 				""
 				"Both are viable, so it's ultimately up to you."
 			]
@@ -2018,32 +1989,6 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["14F1FF4656693711"]
-			description: [
-				"The Third Microminer. &2You'll need Boron in its MV Field Generators.&r"
-				""
-				"Look in &bEMI to see what resources this miner can produce."
-				""
-				"At this point in the game, Microminers can get you most basic resources, continue to check &bEMI&r to see what they can give you."
-			]
-			id: "664107ED03A944CD"
-			rewards: [{
-				id: "5F3323232ACD2ED2"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.5d
-			tasks: [{
-				id: "6652A8526BF40563"
-				item: "kubejs:microminer_t3"
-				type: "item"
-			}]
-			title: "&2Tier Three Microminer"
-			x: 5.0d
-			y: 6.5d
-		}
-		{
 			dependencies: ["358D9A7B1BCFA30A"]
 			description: [
 				"&6Nano CPUs&r are advanced &6Circuit Wafers&r made from infusing a &6CPU Wafer&r with &6Carbon Fibers&r and &6Liquid Glowstone&r in a &3Chemical Reactor&r."
@@ -2070,7 +2015,7 @@
 			description: [
 				"&6Carbon Fibers&r are useful for a variety of things."
 				""
-				"&2They are made with Carbon Dust and polymers. Higher tier polymers grant higher yields. It's also not a chanced output anymore."
+				"&2They are made with Carbon Dust and polymers. Higher tier polymers grant higher yields."
 			]
 			id: "358D9A7B1BCFA30A"
 			rewards: [{
@@ -2216,7 +2161,7 @@
 				"7F1EE712BD9CC811"
 			]
 			description: [
-				"The &3Alloy Blast Smelter&r directly smelts dust combinations into molten Alloys, skipping the Mixer step, and applying a 3/4 discount to your EBF time. Some molten alloys may need to be cooled in a Vacuum Freezer before being usable, though they take much less time than freezing Hot Ingots."
+				"The &3Alloy Blast Smelter&r directly smelts dust combinations into molten Alloys, skipping the Mixer step, and applying a 25% discount to your EBF time. Some molten alloys may need to be cooled in a Vacuum Freezer before being usable, though they take much less time than freezing Hot Ingots."
 				""
 				"This is the only way to create some of the advanced alloys used in multiblock machines. You can also use it for most normal alloys if you want, such as &6Invar&r, &6Conductive Iron&r, and &6Dark Steel&r."
 			]
@@ -2571,29 +2516,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["6DC635766CD40FFF"]
-			description: [
-				"&6HSS-G&r is an alloy of &6Tungstensteel&r, &6Chrome&r, &6Molybdenum&r, and &6Vanadium&r."
-				""
-				"This alloy is cooked in an &3Electric Blast Furnace&r or &3Alloy Blast Smelter&r and cooled in a &3Vacuum Freezer&r."
-			]
-			id: "53EC3831D66769CA"
-			rewards: [{
-				id: "794FA2C0EE3BCC27"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			tasks: [{
-				id: "42A0FDC419CC929F"
-				item: "gtceu:hssg_ingot"
-				type: "item"
-			}]
-			title: "High Speed Steel Type G"
-			x: 9.0d
-			y: 3.75d
-		}
-		{
 			dependencies: [
 				"6DC635766CD40FFF"
 				"227F448DFCC3E8C3"
@@ -2601,7 +2523,7 @@
 			description: [
 				"This one is decently slow to cook, so make sure to have it going constantly or stocked up."
 				""
-				"&6Signalum&r is noteworthy as the long-awaited next tier upgrade for your &bThermal Expansion&r machines and dynamos following \"Reinforced\" back in MV."
+				"&6Signalum&r can also be used in the next tier upgrade for your &bThermal Expansion&r machines following \"Reinforced\" back in MV."
 			]
 			id: "27A80F018F59EF1E"
 			rewards: [{
@@ -2808,16 +2730,15 @@
 				""
 				"[\"\",{\"text\":\"Right now, you can make the \"},{\"color\":\"gold\",\"underlined\":true,\"text\":\"Large Steam Turbine\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"15A5B4C632836306\"}},{\"text\":\" and \"},{\"color\":\"gold\",\"underlined\":true,\"text\":\"Large Gas Turbine\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7D72B3FF808CE13C\"}},{\"text\":\". Once you get a \"},{\"color\":\"dark_aqua\",\"text\":\"Fusion Reactor\"},{\"text\":\" going, you can make the \"},{\"color\":\"gold\",\"underlined\":true,\"text\":\"Large Plasma Turbine\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1405D08C6A87B3BB\"}},{\"text\":\".\"}]"
 				""
-				"Each Large Turbine will need a &3Rotor Holder&r of the same or higher tier than the Large Turbine itself, and a &3Dynamo Hatch&r capable of handling the energy output. Each &3Rotor Holder&r tier above the Large Turbine &9doubles&r the energy production and adds 10%% to fuel efficiency."
+				"Each Large Turbine will need a &3Rotor Holder&r of the same or higher tier than the Large Turbine itself, and a &3Dynamo Hatch&r capable of handling the energy output. Each &3Rotor Holder&r tier above the Large Turbine &9doubles&r the energy production and adds 10% to fuel efficiency."
 				""
-				"You will need a &aRotor&r to go into each &3Rotor Holder&r&r. The Rotor will grant multiplicative Power and Efficiency bonuses depending on its material. Each Rotor also has a Durability, which is the number of seconds it will last."
+				"You will need a &aRotor&r to go into each &3Rotor Holder&r&r. The Rotor will grant multiplicative Power and Efficiency bonuses depending on its material. &2Rotors do not have durability in Monifactory, which means they will last forever.&r"
 				""
 				"&aExample: &r&6Large Gas Turbine&r, with &3HSS-E Rotor&r and &3IV Rotor Holder&r:"
 				""
 				"&aProduction:&r 4096 * 2.80 * 2=22938 EU/t"
-				"&aEfficiency:&r 1.40 * 1.10=154.0%%"
-				"&aDurability:&r 205,600 s (57.1 h)"
-				"You can run the &6Large Gas Turbine&r off &9LPG&r and &9Methane&r from &3Fluid Rigs&r, or &9Nitrobenzene&r from &6Wood&r."
+				"&aEfficiency:&r 1.40 * 1.10=154.0%"
+				"You can run the &6Large Gas Turbine&r off &9LPG&r and &9Methane&r from &3Fluid Rigs&r, &9Nitrobenzene&r from &6Wood&r, or the more potent &9Wither-Doped Gas&r if you want to go even further."
 				""
 				"The best &6Large Steam Turbine&r fuel is a closely-guarded government secret."
 			]
@@ -3373,7 +3294,6 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "Is this that \"Gregtech PGS\" people refer to?"
 			tasks: [
 				{
 					id: "1CA9B9FE385B774C"
@@ -3428,7 +3348,10 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["6DBD1492197AC92D"]
+			dependencies: [
+				"6DBD1492197AC92D"
+				"05ABE2A5DE6128C4"
+			]
 			description: [
 				"Micro miners that perform combat require a special microverse, a &3Hostile Microverse&r. To create one, declare war on a Normal microverse with a bomb strapped to a &6T2.5MM&r."
 				""
@@ -3504,31 +3427,6 @@
 			title: "&2Polybenzimidazole (PBI)"
 			x: 12.5d
 			y: 0.5d
-		}
-		{
-			dependencies: [
-				"14F1FF4656693711"
-				"53EC3831D66769CA"
-				"5732018AA35D69B6"
-			]
-			description: ["&6HSS-G&r is the fifth coil material available, increasing your EBF's operating temperature to 5400K so it can process more advanced materials, such as &6Naquadah&r."]
-			id: "3DD8D9EEA7189186"
-			rewards: [{
-				id: "0A5B1F97951B104A"
-				item: "kubejs:moni_nickel"
-				type: "item"
-			}]
-			shape: "hexagon"
-			size: 1.25d
-			tasks: [{
-				count: 16L
-				id: "585B8ED807736A7A"
-				item: "gtceu:hssg_coil_block"
-				type: "item"
-			}]
-			title: "HSS-G Coil Blocks"
-			x: 9.0d
-			y: 5.0d
 		}
 		{
 			dependencies: ["476F71CC0B0AC2A4"]
@@ -3642,7 +3540,7 @@
 				""
 				"Insert power through &6Energy Hatches&r and extract from &6Dynamo Hatches&r, each of any tier. The Power Substation can accept special &664A Substation Hatches&r, as well as &aLaser Hatches&r."
 				""
-				"The Power Substation will &cpassively lose 1%%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
+				"The Power Substation will &cpassively lose 1%&r of its total capacity every 24 (real-life) hours, up to 100,000 EU/t per capacitor block. This is equivalent to &95.8 billionths&r of its total capacity per tick, so this should not be a concern under regular operation."
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:power_substation"
@@ -3851,7 +3749,7 @@
 				""
 				"The full processing line will require &9Oxalic Acid Solution&r, but you've had access to that for a few tiers by now."
 				""
-				"A note on Germanium: like &6Indium&r, it's only used in small amounts for alloys. As such, it's not worth gathering extreme quantities as you might with common resources like &6Iron&r, &6Copper&r, &6Tin&r, or &6Redstone&r."
+				"A note on Germanium: like &6Indium&r, it's &eonly used in small amounts&r for alloys. As such, it's &enot worth gathering extreme quantities&r as you might with common resources like &6Iron&r, &6Copper&r, &6Tin&r, or &6Redstone&r."
 			]
 			icon: "gtceu:germanium_dust"
 			id: "63C3077124BC81FD"

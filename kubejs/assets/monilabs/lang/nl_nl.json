@@ -44,7 +44,7 @@
     "emi_info.monilabs.integrity_drained": "Integriteit uitgeput: %.2f",
     "emi_info.monilabs.integrity_healed": "Integriteit hersteld: %.2f",
     "emi_info.monilabs.new_microverse": "Nieuw type: %s",
-    "emi_info.monilabs.projector_info": "Projector klasse: %d",
+    "emi_info.monilabs.projector_info": "Projector klasse: %d (%s)",
     "emi_info.monilabs.required_microverse": "Vereist type: %s",
     "gtceu.antimatter_manipulator": "Antimaterie-manipulatie",
     "gtceu.chromatic_processing": "Chromatische verwerking",

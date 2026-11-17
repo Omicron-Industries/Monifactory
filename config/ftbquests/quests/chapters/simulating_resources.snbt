@@ -180,7 +180,7 @@
 		{
 			dependencies: ["2201391DEEBE79E4"]
 			description: [
-				"There's no rush to get these all done and leveled up, but they do provide a good source of some of the basic resources in exchange for RF."
+				"There's no rush to craft all these, but they do provide a good source of some of the basic resources in exchange for Power. &bGregtech&r wires automatically convert 1 EU into 4 RF/FE but can pull &linfinite&r amps to make sure to limit your power supply to your wires' amperage."
 				""
 				"Look at what the &6Prediction&r for each mob provides, and set up simulators for all the ones you're interested in. If your power can handle it, it can even be advantageous to run several of the same model."
 			]

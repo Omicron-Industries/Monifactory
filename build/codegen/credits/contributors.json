@@ -11,23 +11,29 @@
     "skin": "justenoughitems"
   },
   "people": {
+    "WithersChat": {
+      "mcuuid": "13d0aeda-c1e9-4d91-a9b7-4d4e6a19128e",
+      "role": "dev",
+      "description": "Lead Developer, Author"
+    },
+    "Xefyr0": {
+      "mcuuid": "a3b08192-f19b-4037-abcd-15093454d905",
+      "role": "dev",
+      "description": "Lead Developer"
+    },
+    "NegaNote": {
+      "mcuuid": "5042daf6-7d30-4673-97a7-d9aa58d07609",
+      "role": "dev",
+      "description": "Lead Developer, Coremod developer"
+    },
     "Pansmith": {
       "mcuuid": "e8e08277-cc3d-4b35-8ac9-da0af044815c",
       "role": "dev",
-      "description": "Lead Developer, Author",
-      "link": "https://www.youtube.com/@ThePansmith"
+      "description": "Former Author"
     },
     "Pansmith's Camera Account": {
       "mcuuid": "37753ebd-9605-47c1-8818-1635160e9d73",
       "role": "dev-alt"
-    },
-    "Xefyr0": {
-      "mcuuid": "a3b08192-f19b-4037-abcd-15093454d905",
-      "description": "Lead Developer"
-    },
-    "WithersChat": {
-      "mcuuid": "13d0aeda-c1e9-4d91-a9b7-4d4e6a19128e",
-      "description": "Lead Developer, Artist"
     },
     "Jamiscus": {
       "mcuuid": "56db0044-9fc8-4ae3-83d6-1adee75aa799",
@@ -87,10 +93,6 @@
     },
     "Jollahs": {
       "mcuuid": "b2b0f67c-4db4-4286-b10d-31cebe8cdf7d"
-    },
-    "NegaNote": {
-      "mcuuid": "5042daf6-7d30-4673-97a7-d9aa58d07609",
-      "description": "Coremod developer"
     },
     "PlasmaticVoid": {
       "mcuuid": "39cdf546-0ad3-444e-89aa-d8e69cc3ed3a"

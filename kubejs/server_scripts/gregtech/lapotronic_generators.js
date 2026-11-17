@@ -58,14 +58,14 @@ ServerEvents.recipes(event => {
     }).addMaterialInfo()
 
     event.recipes.gtceu.assembler("energetic_titanium_casing")
-        .itemInputs("2x gtceu:double_titanium_plate", "gtceu:energium_block", "gtceu:titanium_frame")
-        .itemOutputs("2x monilabs:energetic_titanium_casing")
+        .itemInputs("4x gtceu:double_titanium_plate", "2x gtceu:long_titanium_rod", "gtceu:energium_block", "gtceu:titanium_frame")
+        .itemOutputs("4x monilabs:energetic_titanium_casing")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(50)
 
     event.recipes.gtceu.assembler("lapotronic_tungstensteel_casing")
-        .itemInputs("2x gtceu:double_tungsten_steel_plate", "gtceu:lapotron_block", "gtceu:tungsten_steel_frame")
-        .itemOutputs("2x monilabs:lapotronic_tungstensteel_casing")
+        .itemInputs("4x gtceu:double_tungsten_steel_plate", "2x gtceu:long_tungsten_steel_rod", "gtceu:lapotron_block", "gtceu:tungsten_steel_frame")
+        .itemOutputs("4x monilabs:lapotronic_tungstensteel_casing")
         .EUt(GTValues.VA[GTValues.LV])
         .duration(50)
 
@@ -77,12 +77,13 @@ ServerEvents.recipes(event => {
             .EUt(eut)
     }
 
-    LapoFuel("minecraft", "diamond", 64, -GTValues.V[GTValues.MV])
+    // Fuel values must be multiples of 64 ticks (3.2s)
+    LapoFuel("minecraft", "diamond", 80, -GTValues.V[GTValues.MV])
     LapoFuel("minecraft", "emerald", 32, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "sapphire_gem", 32, -GTValues.V[GTValues.MV])
-    LapoFuel("gtceu", "energium_gem", 40, -GTValues.V[GTValues.MV])
-    LapoFuel("gtceu", "lapotron_gem", 72, -GTValues.V[GTValues.MV])
+    LapoFuel("gtceu", "energium_gem", 80, -GTValues.V[GTValues.MV])
+    LapoFuel("gtceu", "lapotron_gem", 144, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "topaz_gem", 64, -GTValues.V[GTValues.MV])
     LapoFuel("gtceu", "blue_topaz_gem", 64, -GTValues.V[GTValues.MV])
-    LapoFuel("gtceu", "dilithium_gem", 24, -GTValues.V[GTValues.MV])
+    LapoFuel("gtceu", "dilithium_gem", 32, -GTValues.V[GTValues.MV])
 })

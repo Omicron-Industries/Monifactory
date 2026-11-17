@@ -101,7 +101,7 @@
     "monilabs.recipe.result_color": "Resulting Color: \n%s",
     "microverse.monilabs.type.corrupted": "Corrupted",
     "monilabs.recipe.mistake_output_colors": "You made a mistake defining this recipe's output colors.",
-    "emi_info.monilabs.projector_info": "Projector tier: %d",
+    "emi_info.monilabs.projector_info": "Projector tier: %d (%s)",
     "monilabs.recipe.color_list_random_start_relative": "Possible Color Increments: \n",
     "monilabs.tooltip.prismatic.0": "Use the power of %s to transform items!",
     "gtceu.placeholder_info.microverseStability.0": "Returns the stability of the microverse.",

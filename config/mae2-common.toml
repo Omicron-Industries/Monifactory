@@ -34,3 +34,8 @@
 		#Range: > 1
 		maxRate = 120
 
+["Faulty Card Modes"]
+	#Max volume in blocks for uber mode of the faulty card
+	#Range: > 0
+	uberMaxVolume = 32768
+
