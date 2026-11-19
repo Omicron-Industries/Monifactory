@@ -14,8 +14,3 @@ deprecated_thermal_wire_materials.forEach(material => {
     deprecateBlock(`gtceu:${material}_octal_wire`, `4x gtceu:${material}_ingot`)
     deprecateBlock(`gtceu:${material}_hex_wire`, `8x gtceu:${material}_ingot`)
 })
-
-/* *** TO BE REMOVED FROM THIS FILE IN MONIFACTORY 0.16 *** */
-
-// Primal Mana
-deprecateFluid("gtceu:mana", "monilabs:mana", "Primal Mana")
