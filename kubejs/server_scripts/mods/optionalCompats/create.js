@@ -4,32 +4,17 @@
 if (Platform.isLoaded("create")) {
     console.log("Create found, loading compat scripts...")
     ServerEvents.recipes(event => {
-
-        // Removes any machines related to processing, the point of this compat is fun not functionality,
-
-
         /* Removes recipes for machines that were not removed, deployers and mechanical crafters are fun!
         Most recipe categories that are removed machines are hidden in
         kubejs/assets/emi/recipe/filters/hidecategories.json as opposed to removing the actual recipes */
         event.remove({ type: "create:deploying" })
         event.remove({ type: "create:milling" })
         event.remove({ type: "create:crushing" })
-        event.remove({ id: "create:crafting/kinetics/millstone" })
-        // event.remove({id: 'create:mechanical_crafting/crushing_wheel'}) //mechanical roller uses this for now
-        event.remove({ id: "create:crafting/kinetics/mechanical_mixer" })
-        event.remove({ id: "create:crafting/kinetics/mechanical_press" })
-        // Remove the hand crank since it's easy to abuse contraptions using it
-        event.remove({ id: "create:crafting/kinetics/hand_crank" })
-        // Remove a few more items that are useless without their machines
-        event.remove({ id: "create:crafting/kinetics/whisk" })
-        event.remove({ id: "create:crafting/kinetics/crafter_slot_cover" })
-        event.remove({ id: "create:crafting/kinetics/nozzle" })
+        event.remove({ type: "create:mechanical_crafting" })
 
-        // w h a t ?
-        event.remove({ id: "gtceu:shaped/lv_kinetic_mixer" })
-        event.remove({ id: "gtceu:shaped/mv_kinetic_mixer" })
-        event.remove({ id: "gtceu:shaped/hv_kinetic_mixer" })
-        event.remove({ id: "gtceu:shaped/ev_kinetic_mixer" })
+        /* Some addons (like Steam'n Rails) use the create propeller in their crafting recipes.
+        As it is nukelisted, this line makes them use the iron rotor (which should be close enough) */
+        event.replaceInput("*", "create:propeller", "gtceu:iron_rotor")
 
         // belts made with rubber
         let kelpRecipes = [

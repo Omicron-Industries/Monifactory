@@ -336,7 +336,6 @@ if (Platform.isLoaded("create")) {
         "create:millstone",
         "create:crushing_wheel",
         "create:mechanical_plough",
-        "create:mechanical_crafter",
         "create:mechanical_mixer",
         "create:mechanical_saw",
         "create:mechanical_drill",
@@ -349,9 +348,19 @@ if (Platform.isLoaded("create")) {
         /^create:.*_ingot$/,
         /^create:.*_nugget$/,
         /^create:.*_sheet$/,
+        /^create:crushed_raw_.*$/,
         "create:zinc_block",
         "create:brass_block",
-        "create:powdered_obsidian"
+        "create:powdered_obsidian",
+        "create:nozzle",
+        // Remove the hand crank since it's easy to abuse contraptions using it
+        "create:hand_crank",
+        // Remove a few more items that are useless without their machines
+        "create:wheat_flour",
+        "create:dough",
+        "create:cinder_flour",
+        "create:propeller",
+        "create:whisk",
     );
 }
 
