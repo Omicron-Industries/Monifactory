@@ -64,6 +64,10 @@ const symlinkSync = (ourDir: fs.PathLike, newDir: fs.PathLike) => {
     fs.symlinkSync(ourDir, newDir)
 }
 
+/** A filter for the built client/server zips. */
+const packFileBlacklist = (source: string) =>
+    !["node_modules", ".tsbuild"].includes(path.basename(source))
+
 const cpMods = (targetDir: string, filter?: (file: string) => boolean) => {
     // Cache might contain more files than the manifest!
     // Make sure to copy only the necessary ones
@@ -138,7 +142,7 @@ export const BuildClientTarget = getZipModPackTarget("client", PackSwitchTarget 
         executes: () => {
             fs.mkdirSync("dist/client/overrides", { recursive: true })
             for (const folders of includeList) {
-                fs.cpSync(folders, `dist/client/overrides/${folders}`, { recursive: true })
+                fs.cpSync(folders, `dist/client/overrides/${folders}`, { recursive: true, filter: packFileBlacklist })
             }
         }
     })
@@ -161,7 +165,7 @@ export const BuildServerTarget = getZipModPackTarget("server", PackSwitchTarget 
             Juke.rm("dist/server", { recursive: true })
             fs.mkdirSync("dist/server", { recursive: true })
             for (const folders of includeList) {
-                fs.cpSync(folders, `dist/server/${folders}`, { recursive: true })
+                fs.cpSync(folders, `dist/server/${folders}`, { recursive: true, filter: packFileBlacklist })
             }
 
             fs.mkdirSync("dist/server/mods")

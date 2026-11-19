@@ -2,17 +2,18 @@
  * Custom ESLint plugin for Monifactory's KubeJS
  */
 
-import commentHeader from "./comment-header.mjs"
-import recipeSpacing from "./recipe-spacing.mjs"
-import multiblockDeclaration from "./multiblock-declaration.mjs"
-import callChains from "./call-chains.mjs"
+import commentHeader from "./comment-header.ts"
+import recipeSpacing from "./recipe-spacing.ts"
+import multiblockDeclaration from "./multiblock-declaration.ts"
+import callChains from "./call-chains.ts"
+import type { TSESLint } from "@typescript-eslint/utils"
 
 /**
  * Creates a custom ESLint plugin
- * @param {string} name Plugin name
- * @param {Record<string, *>} rules Plugin rules
+ * @param name Plugin name
+ * @param rules Plugin rules
  */
-function customPluginWithAllRulesError(name, rules) {
+function customPluginWithAllRulesError(name: string, rules: Record<string, TSESLint.AnyRuleModule>): TSESLint.FlatConfig.Config {
     return {
         plugins: {
             [name]: { rules }

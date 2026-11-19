@@ -139,6 +139,7 @@ defaultconfigs/ftbultimine/ftbultimine-server.snbt
 
 # KubeJS scripts
 !/kubejs
+/kubejs/.tsbuild
 
 !/mods
 /mods/*
@@ -167,6 +168,7 @@ defaultconfigs/ftbultimine/ftbultimine-server.snbt
 
 # Hide code-generated files
 kubejs/client_scripts/Dev_Capes.js
+kubejs/*_scripts/bundle.js
 config/fancymenu/customization/pack_credit_screen_layout.txt
 config/fancymenu/assets/pack-version.txt
 **/en_ud.local
