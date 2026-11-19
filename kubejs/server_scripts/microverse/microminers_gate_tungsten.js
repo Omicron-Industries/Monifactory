@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.chemical_bath("tungstic_acid_from_tungstate")
         .itemInputs("7x gtceu:tungstate_dust")
         .inputFluids("gtceu:hydrochloric_acid 2000")
-        .itemOutputs("7x gtceu:tungstic_acid_dust", "2x gtceu:lithium_chloride_dust")
+        .itemOutputs("7x gtceu:tungstic_acid_dust", "4x gtceu:lithium_chloride_dust")
         .duration(10.5 / 2 * GTValues.SECONDS)
         .EUt(GTValues.VHA[GTValues.IV])
 
