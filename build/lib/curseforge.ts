@@ -32,7 +32,7 @@ const zCFModInfo = z.object({
 })
 
 function fetchCurseForge(path: string): Promise<Response> {
-    const token: string = process.env.CF_API_KEY ?? DEFAULT_CURSEFORGE_API_KEY
+    const token: string = process.env.CF_API_KEY || DEFAULT_CURSEFORGE_API_KEY
     return fetch(`https://api.curseforge.com/v1/${path}`, {
         redirect: "follow",
         headers: {
