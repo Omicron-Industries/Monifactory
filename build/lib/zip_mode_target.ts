@@ -1,12 +1,14 @@
-import fs from "fs"
 import Juke from "juke-build"
-import { resolve } from "path"
+import { join, relative, sep } from "node:path"
+import fs from "node:fs/promises"
+import { pipeline } from "node:stream/promises"
+import { zipFiles } from "node:zlib"
 import { getPackModeSwitchTarget } from "../deps/pack_mode_switcher.ts"
-import { readManifest } from "./manifest.ts"
+import { createWriteStream } from "node:fs"
 
 export const getZipModPackTarget = (
-    group: "server" | "client" | "dev",
-    dependsOn: (packModeSwitchTarget: Juke.Target) => Juke.Target[],
+    group: "server" | "client",
+    dependsOn: Juke.Target[],
 ) => {
     const packSwitchPath = `dist/${group}${group !== "server" ? "/overrides" : ""}`
 
@@ -17,46 +19,36 @@ export const getZipModPackTarget = (
             "dist/modlist.html",
             "LICENSE.md",
             `dist/${group}`,
+            join(packSwitchPath, ".mode"),
         ],
 
         outputs: [
             `dist/${group}.zip`,
         ],
 
-        dependsOn: () => dependsOn(
-            // Automatically switch to normal mode if no other mode was previously set
-            getPackModeSwitchTarget(
-                "normal",
-                {
-                    cwd: packSwitchPath,
-                    onlyWhen: () => !fs.existsSync("config/packmode.json"),
-                }
-            )
-        ),
+        dependsOn: [getPackModeSwitchTarget(`switch-${group}-pack-mode`, packSwitchPath, dependsOn)],
 
-        executes: async () => {
-            fs.copyFileSync("manifest.json", `dist/${group}/manifest.json`)
-            fs.copyFileSync("dist/modlist.html", `dist/${group}/modlist.html`)
-            fs.copyFileSync("LICENSE.md", `dist/${group}/LICENSE.md`)
+        async executes() {
+            Juke.rm(`dist/${group}.zip`)
+            await Promise.all([
+                fs.copyFile("manifest.json", `dist/${group}/manifest.json`),
+                fs.copyFile("dist/modlist.html", `dist/${group}/modlist.html`),
+                fs.copyFile("LICENSE.md", `dist/${group}/LICENSE.md`)
+            ])
 
-            fs.writeFileSync(`${packSwitchPath}/config/fancymenu/assets/pack-version.txt`, readManifest().version)
-
-            if (process.platform === "win32") {
-                await Juke.exec("powershell", [
-                    "Compress-Archive",
-                    `-Path "${resolve(`dist\\${group}\\*`)}"`,
-                    `-DestinationPath "${resolve(`dist\\${group}.zip`)}"`,
-                ])
-            } else {
-                Juke.logger.info("Running zip. This might take a while.")
-                await Juke.exec("zip", [
-                    "-qyr", // how queer
-                    `../${group}.zip`,  // file out
-                    ".", // include everything
-                ], {
-                    cwd: `dist/${group}`,
+            Juke.logger.info("Zipping. This might take a while.")
+            const files = (await fs.readdir(`dist/${group}`, { recursive: true, withFileTypes: true }))
+                .map(entry => {
+                    const entryPath = join(entry.parentPath, entry.name)
+                    // Zip entry names always use /.
+                    const entryName = relative(`dist/${group}`, entryPath).replaceAll(sep, "/")
+                    // Folders always end with /.
+                    return [entryPath, entry.isDirectory() ? `${entryName}/` : entryName] as const
                 })
-            }
+            await pipeline(
+                zipFiles(files),
+                createWriteStream(`dist/${group}.zip`),
+            )
         }
 
     })

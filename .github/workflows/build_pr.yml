@@ -39,7 +39,7 @@ jobs:
       - name: Setup node and npm
         uses: actions/setup-node@v6
         with:
-          node-version: 23
+          node-version: 26
           cache: 'npm'
           cache-dependency-path: build/package-lock.json
       - name: Restore mods cache
@@ -66,14 +66,15 @@ jobs:
       - uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
-          java-version: '21'
+          java-version: '17'
       - name: Pack Modpack
         env:
           CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          JAVA_PATH: ${{ env.JAVA_HOME }}/bin/java
         run: |
           cd build
           npm install
-          node index.ts ${{ inputs.target }}
+          node index.ts ${{ inputs.target }} --pack-mode=normal
         shell: bash
       - name: Upload client build
         uses: actions/upload-artifact@v7
