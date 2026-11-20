@@ -42,7 +42,6 @@ jobs:
           java-version: '17'
       - name: Run game test server
         env:
-          CF_API_KEY: ${{ secrets.CF_API_KEY }}
           JAVA_PATH: ${{ env.JAVA_HOME }}/bin/java
         run: |
           cd build
