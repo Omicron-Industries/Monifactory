@@ -5,7 +5,7 @@
 	group: "18F0ED1F9A002C08"
 	icon: "gtceu:wetware_processor_mainframe"
 	id: "15E8BBD0CD310663"
-	order_index: 9
+	order_index: 10
 	quest_links: [
 		{
 			id: "688ACEE0FD0E5FED"
@@ -928,10 +928,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"227F448DFCC3E8C3"
-				"56FB624B384FFAF5"
-			]
+			dependencies: ["227F448DFCC3E8C3"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Cryolobus is a complex material needed in vast quantities."

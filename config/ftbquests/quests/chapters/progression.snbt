@@ -6,7 +6,7 @@
 	group: "0D5BFFD0A5E49312"
 	icon: "minecraft:writable_book"
 	id: "395B849AC6294153"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -570,12 +570,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"64F45D98FA48D834"
-				"6ABF927014F8B79D"
-				"1AA0A089DCA17FC8"
-				"273F3F8DD6A3DCC5"
-			]
+			dependencies: ["6ABF927014F8B79D"]
 			description: ["Flying faster is nice."]
 			disable_toast: true
 			id: "7B1D349ADD9D1140"
@@ -601,10 +596,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"0607A59215F0F8B3"
-				"7B1D349ADD9D1140"
-			]
+			dependencies: ["7B1D349ADD9D1140"]
 			description: ["Flying faster, even nicer."]
 			disable_toast: true
 			id: "15A43AB700CADF2D"
@@ -633,7 +625,6 @@
 		{
 			dependencies: [
 				"1CA6D620309F2B9E"
-				"3BD20358F137E7C6"
 				"712023557B5B1812"
 				"3F6EDC2481D5877F"
 			]
@@ -987,7 +978,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["71C7B47DC85AA016"]
 			description: [
 				"&6Phenolic Substrates&r need to be turned into &6Circuit Boards&r with &6Silver&r before being usable in Circuit production."
 				""
@@ -1037,10 +1027,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"3E42B4AAA6D2A05B"
-				"3B639F4061B00F1A"
-			]
+			dependencies: ["3B639F4061B00F1A"]
 			description: [
 				"&3Circuit Assemblers&r are the linchpin of your factory, gating progression through the &6Circuits&r. "
 				""
@@ -1069,10 +1056,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"7AA5FD63FA3BA43C"
-				"73F8EA8E7DCC94E9"
-			]
+			dependencies: ["73F8EA8E7DCC94E9"]
 			description: [
 				"While &7LV&r &6Integrated Circuits&r might not seem easier to mass produce than &6Electronic Circuits&r, they're required to produce the &6Advanced Integrated Circuit&r, your first &6HV&r circuit."
 				""
@@ -1085,6 +1069,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 1.0d
 			tasks: [{
 				id: "10446BB3B28E6852"
 				item: "gtceu:basic_integrated_circuit"
@@ -1104,6 +1089,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
+			size: 1.0d
 			tasks: [{
 				id: "79F0CB314856AC60"
 				item: "gtceu:good_integrated_circuit"
@@ -1114,11 +1100,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"13035465E07E34CF"
-				"6C8DE5DC18CDADF0"
-				"2AC61192BCD459F2"
-			]
+			dependencies: ["2AC61192BCD459F2"]
 			description: [
 				"Your first &6HV&r circuit, formed from two &6Good Integrated Circuits&r, &6RAM&r, and &6Transistors&r, among other ingredients."
 				""
@@ -1165,7 +1147,6 @@
 		}
 		{
 			dependencies: [
-				"7D0351942F4DB8E0"
 				"1F101D4F758ACECB"
 				"7D3FAEA5E0071BDC"
 			]
@@ -1192,7 +1173,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["417D97D9E3562F45"]
 			description: [
 				"Better substrates. Using &6Polyvinyl Chloride&r (PVC) instead of &6Polyethylene&r (PE) doubles your yield."
 				""
@@ -1216,7 +1196,6 @@
 		}
 		{
 			dependencies: [
-				"7D0351942F4DB8E0"
 				"1F101D4F758ACECB"
 				"7D3FAEA5E0071BDC"
 			]
@@ -1243,10 +1222,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"7308924C9A481443"
-				"66E1F1B28E4577B2"
-			]
+			dependencies: ["7308924C9A481443"]
 			description: ["Marginally cheaper to make than &6Advanced Integrated Circuits&r, and also the only way to make the &6Microprocessor Supercomputer&r, which is the first &5EV&r circuit."]
 			id: "5759E8587624BEF1"
 			rewards: [{
@@ -1265,10 +1241,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"15E34DEC491FAB81"
-				"6169C04DF463502F"
-			]
+			dependencies: ["6169C04DF463502F"]
 			description: [
 				"The &3Cleanroom&r is a hollow multiblock free of contaminants. Going forward, most new circuit-related recipes, as well as some unique things like &6Fusion Casings&r, will need to be run in machines inside a Cleanroom."
 				""
@@ -1384,7 +1357,6 @@
 		}
 		{
 			dependencies: [
-				"73C1AB31431B5C11"
 				"244F2CC5484A7B21"
 				"5759E8587624BEF1"
 			]
@@ -2099,10 +2071,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: [
-				"4542BF5E00FCBEA1"
-				"6A914B240E1A7BCB"
-			]
+			dependencies: ["4542BF5E00FCBEA1"]
 			description: [
 				"Even better flying."
 				""
@@ -2503,10 +2472,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: [
-				"01CC71429CFCAE0B"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["01CC71429CFCAE0B"]
 			description: [
 				"Welcome to the &6HV&r Age!"
 				""
@@ -3264,7 +3230,6 @@
 			y: 11.5d
 		}
 		{
-			dependencies: ["3E42B4AAA6D2A05B"]
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
@@ -3277,10 +3242,10 @@
 				"By default, the config GUI is bound to &7G&r."
 			]
 			icon: "buildinggadgets2:gadget_building"
-			id: "5F9C7FB40AD2640B"
+			id: "30339EF146932B80"
 			subtitle: "This pack has &bBuilding Gadgets&r."
 			tasks: [{
-				id: "512BC0AAD462E586"
+				id: "4C35EC61D213E1C6"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -3316,7 +3281,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["3781AD70E71CA0D7"]
 			description: [
 				"These devices can help you build, swap blocks, destroy massive areas, or even copy-paste regions. You need the blocks you plan to paste in your inventory though; it doesn't make them from nothing."
 				""
@@ -3328,10 +3292,10 @@
 				""
 				"By default, the context menu GUI is bound to &7Left Alt&r."
 			]
-			id: "31EE6E41F509A8CF"
+			id: "0F6470CA08819729"
 			subtitle: "This pack has &bSpatial Tools Compatible&r."
 			tasks: [{
-				id: "24B4E26B05F638D6"
+				id: "30F5E243BE1AD65C"
 				item: {
 					Count: 1
 					id: "itemfilters:or"
@@ -3359,10 +3323,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"3BD20358F137E7C6"
-				"273F3F8DD6A3DCC5"
-			]
 			description: [
 				"Holding one of these reveals &6Travel Anchors&r in range."
 				""
@@ -3372,14 +3332,14 @@
 				""
 				"The &6Pulsating Crystal&r will require an &3Autoclave&r."
 			]
-			id: "3D6BC54DBE665638"
+			id: "5A2CD0614D4B8043"
 			rewards: [{
-				id: "096D97D7F08241D4"
+				id: "3129347CF00DE7C8"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			tasks: [{
-				id: "7187745E3D3C66B6"
+				id: "78A5D68631267D04"
 				item: {
 					Count: 1
 					id: "enderio:staff_of_travelling"
@@ -3422,10 +3382,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"4CD6C60CBEFFA317"
-				"0523F4AB9A794390"
-			]
+			dependencies: ["4CD6C60CBEFFA317"]
 			description: [
 				"The &3Electric Blast Furnace&r is a major, major milestone in your &bGregTech&r career. It has the power to smelt more advanced materials. The first of these, &6Aluminium&r, is going to be important in the immediate future."
 				""
@@ -3445,66 +3402,66 @@
 				"&2In Gregtech, all hatches except Maintenance and Parallel Control can be shared between Multiblocks!"
 			]
 			icon: "gtceu:electric_blast_furnace"
-			id: "1BC6DDC2D50F9C46"
+			id: "1EC3FA93B0C9C9BA"
 			rewards: [{
-				id: "3B20DB4147336C51"
+				id: "05225815A3F2FE6D"
 				item: "kubejs:moni_dollar"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "0E093ED43F2B2E14"
+					id: "7C19750B63F13B32"
 					item: "gtceu:electric_blast_furnace"
 					type: "item"
 				}
 				{
 					count: 9L
-					id: "7998F0B9E0714746"
+					id: "18E1B2B0D59E2727"
 					item: "gtceu:heatproof_machine_casing"
 					optional_task: true
 					type: "item"
 				}
 				{
 					count: 16L
-					id: "0D6F9EF349C45ADA"
+					id: "5A21D86D4AA8A15C"
 					item: "gtceu:cupronickel_coil_block"
 					optional_task: true
 					type: "item"
 				}
 				{
-					id: "215E1D7028D4007A"
+					id: "1C41EEBBD81133CA"
 					item: "gtceu:maintenance_hatch"
 					type: "item"
 				}
 				{
-					id: "41EA282C8B1B05AB"
+					id: "203F0359751574DB"
 					item: "gtceu:lv_muffler_hatch"
 					type: "item"
 				}
 				{
-					id: "3917BF19F1C3A0C1"
+					id: "22BE6AC2F4F73154"
 					item: "gtceu:lv_input_bus"
 					type: "item"
 				}
 				{
-					id: "3B7D450F27322A57"
+					id: "03F214CA26F5462D"
 					item: "gtceu:lv_output_bus"
 					type: "item"
 				}
 				{
-					id: "24CB1B1755F635CB"
+					id: "05283D479650A5BA"
 					item: "gtceu:lv_input_hatch"
 					type: "item"
 				}
 				{
-					id: "04B80990027093E6"
+					id: "060CC6CC952523C7"
 					item: "gtceu:lv_output_hatch"
 					type: "item"
 				}
 				{
 					count: 2L
-					id: "67A9C3501BB6F0FD"
+					id: "41BA0E6A645AD804"
 					item: "gtceu:lv_energy_input_hatch"
 					type: "item"
 				}
@@ -3514,26 +3471,21 @@
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"776199B37A19A592"
-				"061904A6FEED5B66"
-				"1BC6DDC2D50F9C46"
-				"785300684B1846B2"
-			]
+			dependencies: ["1BC6DDC2D50F9C46"]
 			description: [
 				"&6Kanthal&r is an alloy of &6Iron&r, &6Aluminium&r, and &6Chromium&r."
 				""
 				"This alloy is cooked in an &3Electric Blast Furnace&r into a &6Kanthal Ingot&r."
 			]
-			id: "3115EAF1F70A613E"
+			id: "63F00C8F3FA13962"
 			rewards: [{
-				id: "4C82AAA84303A281"
+				id: "4D58E67FDFCA705C"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
-				id: "22E54D54259A247A"
+				id: "21260A6335C89ECF"
 				item: "gtceu:kanthal_ingot"
 				type: "item"
 			}]
@@ -3542,10 +3494,6 @@
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"3115EAF1F70A613E"
-				"2C6BEB5BBE5A91DC"
-			]
 			description: [
 				"Time to upgrade your &3Electric Blast Furnace&r! &6Kanthal&r is the second coil material available, increasing your EBF's operating temperature to &a2700K&r so it can process more advanced materials."
 				""
@@ -3555,16 +3503,16 @@
 				""
 				"Refer to the coil tooltip and EBF controller tooltip for the other bonuses provided."
 			]
-			id: "5C78349343BA40D7"
+			id: "63BC1D12C8F221D2"
 			rewards: [{
-				id: "6AAC5C8B746659ED"
+				id: "3BBA3FC9C73519E9"
 				item: "kubejs:moni_quarter"
 				type: "item"
 			}]
 			shape: "hexagon"
 			tasks: [{
 				count: 16L
-				id: "00D5958543D7BBE6"
+				id: "0780F554760410F2"
 				item: "gtceu:kanthal_coil_block"
 				type: "item"
 			}]
@@ -3573,10 +3521,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"3000798ACA51BFDC"
-				"5C78349343BA40D7"
-			]
+			dependencies: ["3000798ACA51BFDC"]
 			description: [
 				"&6Nichrome&r is an alloy of &6Nickel&r and &6Chrome&r."
 				""
@@ -3781,13 +3726,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"4F572CA3678CB287"
-				"5B07A88C0BFF6586"
-				"798284BA30D818DA"
-				"2D0DF78F71760F00"
-				"7ACF867DECE1C37F"
-			]
 			description: [
 				"This is your first Microminer ever. You'll need &6Phosphorous&r in its &6LV Field Generator&r."
 				""
@@ -3795,15 +3733,15 @@
 				""
 				"This Microminer can bring back most basic resources and can provide some rarer resources using ore processing. Check its recipes in &bEMI&r."
 			]
-			id: "638130DC8A2BF1C1"
+			id: "126ED72A46C9EA03"
 			rewards: [{
-				id: "5FF12439A660943F"
+				id: "295F21FE341C87FF"
 				item: "kubejs:moni_nickel"
 				type: "item"
 			}]
 			size: 1.25d
 			tasks: [{
-				id: "4362115B3E464772"
+				id: "6213206DC51D33A9"
 				item: "kubejs:microminer_t1"
 				type: "item"
 			}]
@@ -3812,10 +3750,7 @@
 			y: -8.5d
 		}
 		{
-			dependencies: [
-				"0874A0191325CFDB"
-				"5B07A88C0BFF6586"
-			]
+			dependencies: ["0874A0191325CFDB"]
 			description: [
 				"[\"\",{\"text\":\"The Second Microminer! If this is your first microminer, please read the quests about how microminers and microverses work in the \"},{\"underlined\":true,\"text\":\"Into the Microverse chapter.\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"68F29871402A6B1B\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click to go to the chapter\"}}}]"
 				""
@@ -3869,7 +3804,6 @@
 		{
 			dependencies: [
 				"52F1953ED72A8AA6"
-				"77582C534A994D7C"
 				"27A80F018F59EF1E"
 			]
 			description: [

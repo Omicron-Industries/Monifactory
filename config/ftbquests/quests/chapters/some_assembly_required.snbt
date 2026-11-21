@@ -5,7 +5,7 @@
 	group: "18F0ED1F9A002C08"
 	icon: "gtceu:assembly_line"
 	id: "058B7FE882875343"
-	order_index: 8
+	order_index: 9
 	quest_links: [
 		{
 			id: "4AB71382C803BD92"
@@ -206,7 +206,6 @@
 	quests: [
 		{
 			dependencies: [
-				"77582C534A994D7C"
 				"7E09D4E00BFA4970"
 				"386DB3C9E646764D"
 			]

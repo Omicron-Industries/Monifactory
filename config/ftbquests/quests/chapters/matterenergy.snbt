@@ -7,23 +7,13 @@
 	icon: "ae2:controller"
 	id: "118959024F296F70"
 	order_index: 0
-	quest_links: [
-		{
-			id: "14426BB19924AD5E"
-			linked_quest: "5C4E189A3E401566"
-			shape: "hexagon"
-			x: -1.25d
-			y: -5.5d
-		}
-		{
-			id: "18610CBC0D967EA8"
-			linked_quest: "6D03BB4A6A4BBA27"
-			shape: "hexagon"
-			size: 1.25d
-			x: 2.0d
-			y: -7.75d
-		}
-	]
+	quest_links: [{
+		id: "14426BB19924AD5E"
+		linked_quest: "5C4E189A3E401566"
+		shape: "hexagon"
+		x: -1.25d
+		y: -5.5d
+	}]
 	quests: [
 		{
 			dependencies: ["4174A6C6403DD245"]
@@ -211,7 +201,6 @@
 			y: -6.25d
 		}
 		{
-			dependencies: ["6D03BB4A6A4BBA27"]
 			description: [
 				"This compass will lead you to the nearest meteor impact. Use your favorite mining tools to smash through the &6Skystone&r shell and get to the juicy center where a &6Mysterious Cube&r with the plates are found."
 				""
@@ -247,10 +236,7 @@
 			y: -7.75d
 		}
 		{
-			dependencies: [
-				"073533F489D121FF"
-				"3781AD70E71CA0D7"
-			]
+			dependencies: ["073533F489D121FF"]
 			description: [
 				"With ten slots for Storage Cells, you can store a huge number of items inside this single block, and search through them all with a &6Terminal&r. You just gotta make all those Storage Cells."
 				""
@@ -275,10 +261,7 @@
 			y: -0.75d
 		}
 		{
-			dependencies: [
-				"2823D7B4C8F900CA"
-				"7E59E0E33962D787"
-			]
+			dependencies: ["7E59E0E33962D787"]
 			description: [
 				"A &6P2P Tunnel&r (&aPoint-to-Point Tunnel&r) is a powerful tool from &bApplied Energistics 2&r that can be used to send items, redstone, or fluids from one location to another using your ME system, without the need to use any cell storage space."
 				""
@@ -441,7 +424,6 @@
 			y: 2.25d
 		}
 		{
-			dependencies: ["417D97D9E3562F45"]
 			description: [
 				"Encode them in a &aPattern Encoding Terminal&r."
 				""
@@ -1695,10 +1677,10 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["6D03BB4A6A4BBA27"]
 			description: ["Fluix can be made via in-world crafting, by dropping &6Redstone&r, &6Nether Quartz&r, and a &6Charged Certus Quartz Crystal&r in the same block of &9Water&r. Alternatively, there is a recipe that uses power in a &3Mixer&r."]
 			id: "491180694DA10086"
 			shape: "hexagon"
+			size: 1.5d
 			tasks: [{
 				id: "68188F6A8A7F508F"
 				item: "ae2:fluix_crystal"

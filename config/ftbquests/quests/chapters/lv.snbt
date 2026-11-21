@@ -29,7 +29,7 @@
 			y: 2.25d
 		}
 	]
-	order_index: 1
+	order_index: 2
 	quest_links: [{
 		id: "1C5CEAA15B04F2FA"
 		linked_quest: "34876F54406B6A04"
@@ -232,27 +232,7 @@
 			size: 1.75d
 			tasks: [{
 				id: "7AE6F9DF96ADD8D2"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_electrolyzer"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_electrolyzer"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_electrolyzer"
-							}
-						]
-					}
-				}
-				title: "LV, MV, or HV Electrolyzer"
+				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
 			title: "Electrolyzer"
@@ -583,7 +563,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 1.75d
+			size: 1.5d
 			tasks: [
 				{
 					id: "50E21C8C3D4281DD"
@@ -1377,7 +1357,6 @@
 			tasks: [{
 				id: "302CBE00E5451E5E"
 				item: "gtceu:lv_extractor"
-				title: "LV, MV, or HV Extractor"
 				type: "item"
 			}]
 			title: "&2Extractor"
@@ -1412,27 +1391,7 @@
 			size: 1.5d
 			tasks: [{
 				id: "29E5699EC44EAFB5"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_macerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_macerator"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_macerator"
-							}
-						]
-					}
-				}
-				title: "LV, MV, or HV Macerator"
+				item: "gtceu:lv_macerator"
 				type: "item"
 			}]
 			title: "&2Macerator"
@@ -1482,27 +1441,7 @@
 			size: 1.75d
 			tasks: [{
 				id: "03C18BA6D84BA956"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "gtceu:lv_pump"
-							}
-							{
-								Count: 1b
-								id: "gtceu:mv_pump"
-							}
-							{
-								Count: 1b
-								id: "gtceu:hv_pump"
-							}
-						]
-					}
-				}
-				title: "LV, MV, or HV Pump"
+				item: "gtceu:lv_pump"
 				type: "item"
 			}]
 			title: "&2Pumps"
@@ -1757,8 +1696,8 @@
 		{
 			dependencies: [
 				"53347AAAE4495F95"
-				"5D9399DD7DF6F153"
 				"0381464BDF6B67E5"
+				"6C8DE5DC18CDADF0"
 			]
 			description: [
 				"&6Diodes&r are a component in the next Circuit tiers. They are made in an &3Assembler&r from liquid &9Glass&r, &6Fine Copper Wire&r and &6Gallium Arsenide&r. "
@@ -2060,20 +1999,6 @@
 			}]
 			x: 2.0d
 			y: 4.0d
-		}
-		{
-			dependencies: ["500E619D568C07C2"]
-			id: "5D9399DD7DF6F153"
-			shape: "hexagon"
-			size: 1.75d
-			tasks: [{
-				count: 32L
-				id: "6B45DAABF4C7B1A4"
-				item: { Count: 32, id: "gtceu:annealed_copper_ingot" }
-				type: "item"
-			}]
-			x: 13.0d
-			y: 7.0d
 		}
 		{
 			dependencies: ["6AE36CD4F39DAB08"]
@@ -2429,6 +2354,17 @@
 		}
 		{
 			dependencies: ["0381464BDF6B67E5"]
+			description: [
+				"&2Super and Quantum Tanks are the high-tier GT Fluid storage solution.&r"
+				""
+				"The first tier holds &64,000 buckets&r, and higher tiers hold more. They can also be used like Drums to put fluids in and out of machines."
+				""
+				"You can conveniently configure &cvoiding&r for them to always void, start voiding at 95%% capacity, or never void."
+				""
+				"The item equivalent are &3Super Chests&r, which are used in certain &6Microminer&r recipes."
+				""
+				"Higher-tier versions of these are called &3Quantum Tanks&r and &3Quantum Chests&r. They all require their respective tier &3Hermetic Casings&r to craft."
+			]
 			id: "55AA34EB02352B2E"
 			size: 1.25d
 			tasks: [
@@ -2451,6 +2387,105 @@
 			title: "Cheaper hulls and bigger storage"
 			x: 16.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["6AE36CD4F39DAB08"]
+			description: [
+				"&aLV Batteries&r were very simple to make, but more effective forms of power storage will be more complex to build, so we'll need to lay the groundwork now."
+				""
+				"For the &6Antimony&r you'll need, smelt &6Stibnite Ore&r or process &6Tetrahedrite Ore&r and &6Realgar Ore&r."
+			]
+			icon: "gtceu:lv_canner"
+			id: "74935A3553451178"
+			rewards: [{
+				id: "1BE0BCDCAD59B0D7"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [
+				{
+					id: "738E125A32EE6F95"
+					item: "gtceu:lv_canner"
+					type: "item"
+				}
+				{
+					id: "4D63025FF7ECE794"
+					item: "gtceu:antimony_dust"
+					type: "item"
+				}
+				{
+					id: "508B2CC77AAF69B7"
+					item: "gtceu:battery_alloy_ingot"
+					type: "item"
+				}
+			]
+			title: "Canner"
+			x: -2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["3054D3CE8F49AB20"]
+			description: [
+				"All this &9Phenol&r needed for MV circuits and all the &6Steel&r needed for everything else may be putting stress onto your coal supply, so it may be worth looking into building a &9Greenhouse&r, and converting &6Wood&r into &6Charcoal&r to help solve the issue."
+				""
+				"Providing it with &6Fertilizer&r will significantly increase its output."
+			]
+			id: "3A71D736AE5C17E2"
+			rewards: [{
+				id: "1FE4BFEFDB4C34FC"
+				item: "kubejs:moni_quarter"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "64DDAB8716E84F19"
+				item: "gtceu:greenhouse"
+				type: "item"
+			}]
+			title: "&9Infiniter Wood"
+			x: 20.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3054D3CE8F49AB20"]
+			description: ["Now that you have some &6MV circuits&r, you can make a &6Factory Augment&r that lets you &2smelt multiple items at once&r with your furnaces!"]
+			id: "6DAA25CA26AE05E9"
+			optional: true
+			shape: "square"
+			size: 1.25d
+			subtitle: "Multi smelter, sort of!"
+			tasks: [{
+				id: "530D4E4EF55BAC5F"
+				item: "ironfurnaces:augment_factory"
+				type: "item"
+			}]
+			title: "Factory Augment"
+			x: 20.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["500E619D568C07C2"]
+			description: ["&6Annealed Copper&r is made &2in an Arc Furnace&r by treating &6Copper&r with &9Oxygen&r. It has less power loss than regular Copper when used as a cable, and is also required for more advanced electronic components."]
+			id: "6C8DE5DC18CDADF0"
+			rewards: [{
+				id: "613E0382FE4BD7E8"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.75d
+			tasks: [{
+				count: 32L
+				id: "0676AE8DAE7AAF77"
+				item: "gtceu:annealed_copper_ingot"
+				type: "item"
+			}]
+			title: "Annealed Copper"
+			x: 12.0d
+			y: 7.0d
 		}
 	]
 	title: "LV"

@@ -29,10 +29,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"1B04AA7D9AEB2CFA"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["1B04AA7D9AEB2CFA"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Although it requires &6Blue Steel&r to make and takes up far more space, the &6Large Steam Turbine&r is far more scalable than its predecessor."
@@ -765,10 +762,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"63B27CA5BB60B740"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["63B27CA5BB60B740"]
 			dependency_requirement: "one_completed"
 			description: [
 				"[\"\",{\"text\":\"By this point, the \"},{\"underlined\":\"true\",\"text\":\"Distillation Tower\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7641AE777370BE1A\"}},{\"text\":\" should be within reach.\"}]"
@@ -787,10 +781,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"7976402E2E5FD625"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["7976402E2E5FD625"]
 			dependency_requirement: "one_completed"
 			description: ["The &6Advanced Steam Turbine Generator II&r, as expected, consumes even more &9Steam&r to produce even more power.\nAt this point the demand for &9Steam&r may get out of hand a little, so you may benefit from looking into the &3Large Steel boiler&3."]
 			id: "1B04AA7D9AEB2CFA"
@@ -838,10 +829,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"2BCE3E3E0B8180F7"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["2BCE3E3E0B8180F7"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Just like last time, the &6Advanced Gas Turbine Generator II&r is equivalent to 4 turbines of the previous tier."
@@ -1236,10 +1224,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"3467DBD5B3D84F51"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["3467DBD5B3D84F51"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The &6Advanced Lapotronic Generator II&r will burn its gems &e4x&r as fast, in exchange for &e4x&r the EU/t. This results in the same total EU per gem."
