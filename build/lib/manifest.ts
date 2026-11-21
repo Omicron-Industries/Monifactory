@@ -1,5 +1,6 @@
 import z from "zod"
 import { readDatafileJSON } from "./json_datafile.ts"
+import { cacheForever } from "./cache.ts"
 
 const zCFID = z.number().int().positive()
 
@@ -11,6 +12,7 @@ const zManifestFile = z.object({
 export type ManifestFileEntry = z.infer<typeof zManifestFile>
 
 const zManifest = z.object({
+    name: z.string(),
     minecraft: z.object({
         version: z.string().nonempty(),
         modLoaders: z.tuple([
@@ -25,4 +27,6 @@ const zManifest = z.object({
 })
 export type Manifest = z.infer<typeof zManifest>
 
-export const readManifest = (): Manifest => zManifest.parse(readDatafileJSON("manifest.json"))
+export const readManifest = cacheForever(
+    (): Manifest => zManifest.parse(readDatafileJSON("manifest.json"))
+)
