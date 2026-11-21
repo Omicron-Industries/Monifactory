@@ -134,6 +134,14 @@ ServerEvents.recipes(event => {
         .outputFluids("gtceu:alkylbenzene 1000", "gtceu:ethylene 1000")
         .duration(160)
         .EUt(GTValues.VA[GTValues.LV])
+    // To avoid a recipe conflict with the original GTM recipe
+    // `styrene_from_ethylbenzene`, redefine the GTM recipe and add
+    // a circuit `1` to it.
+    event.recipes.gtceu.chemical_reactor("styrene_from_ethylbenzene")
+        .inputFluids("gtceu:ethylbenzene 1000")
+        .circuit(1)
+        .outputFluids("gtceu:styrene 1000", "gtceu:hydrogen 2000")
+        .duration(30).EUt(GTValues.VA[GTValues.LV])
 
     event.recipes.gtceu.chemical_reactor("alkylbenzene_from_cumene")
         .inputFluids("gtceu:phosphoric_acid 100", "gtceu:cumene 1000", "gtceu:dodecene 1000", )

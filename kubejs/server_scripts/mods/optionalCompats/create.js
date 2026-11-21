@@ -207,8 +207,6 @@ if (Platform.isLoaded("create")) {
             ]
         }
         rockCrushing("minecraft", "dripstone_block", 60)
-        rockCrushing("minecraft", "tuff", 60)
-        rockCrushing("minecraft", "calcite", 60)
         rockCrushing("create", "asurine", 60)
         rockCrushing("create", "crimsite", 60)
         rockCrushing("create", "limestone", 60)

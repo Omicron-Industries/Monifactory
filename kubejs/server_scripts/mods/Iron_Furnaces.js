@@ -2,6 +2,14 @@
  * Custom recipes for the Iron Furnaces mod
  */
 ServerEvents.recipes(event => {
+    // Change this recipe to require a circuit 1. NOT an EBF.
+    // Done to avoid conflicts with iron furnaces.
+    event.recipes.gtceu.assembler("blast_furnace")
+        .itemInputs("minecraft:furnace", "3x gtceu:iron_plate")
+        .itemOutputs("minecraft:blast_furnace")
+        .duration(80)
+        .EUt(6)
+        .circuit(1)
 
     event.remove({ output: ["ironfurnaces:rainbow_plating", "ironfurnaces:rainbow_core", "ironfurnaces:million_furnace", "ironfurnaces:augment_factory", "ironfurnaces:iron_furnace", "ironfurnaces:silver_furnace", "ironfurnaces:copper_furnace", "ironfurnaces:gold_furnace", "ironfurnaces:diamond_furnace", "ironfurnaces:obsidian_furnace", "ironfurnaces:netherite_furnace"] })
     const furnaces = [
