@@ -10,7 +10,6 @@ if (Platform.isLoaded("create")) {
         event.remove({ type: "create:deploying" })
         event.remove({ type: "create:milling" })
         event.remove({ type: "create:crushing" })
-        event.remove({ type: "create:mechanical_crafting" })
 
         /* Some addons (like Steam'n Rails) use the create propeller in their crafting recipes.
         As it is nukelisted, this line makes them use the iron rotor (which should be close enough) */

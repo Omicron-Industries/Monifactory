@@ -335,6 +335,7 @@ if (Platform.isLoaded("create")) {
     global.itemNukeList.push(
         "create:millstone",
         "create:crushing_wheel",
+        "create:mechanical_crafter",
         "create:mechanical_plough",
         "create:mechanical_mixer",
         "create:mechanical_saw",
@@ -356,6 +357,7 @@ if (Platform.isLoaded("create")) {
         // Remove the hand crank since it's easy to abuse contraptions using it
         "create:hand_crank",
         // Remove a few more items that are useless without their machines
+        "create:crafter_slot_cover",
         "create:wheat_flour",
         "create:dough",
         "create:cinder_flour",
