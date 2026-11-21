@@ -24,15 +24,12 @@
 			y: -5.75d
 		}
 	]
-	order_index: 4
+	order_index: 1
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"1B04AA7D9AEB2CFA"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["1B04AA7D9AEB2CFA"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Although it requires &6Blue Steel&r to make and takes up far more space, the &6Large Steam Turbine&r is far more scalable than its predecessor."
@@ -136,7 +133,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
+			dependencies: ["604CCBE824D03A74"]
 			description: [
 				"&6Steam Turbine Generators&r are the easiest way to start generating &eEU&r with &bGregTech&r."
 				""
@@ -144,6 +141,7 @@
 			]
 			id: "34876F54406B6A04"
 			progression_mode: "flexible"
+			size: 1.75d
 			tasks: [{
 				id: "1433B9815BA2C6F1"
 				item: "gtceu:lv_steam_turbine"
@@ -153,10 +151,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"6974AA409CC355E6"
-				"785C6332FC7A07A5"
-			]
+			dependencies: ["6974AA409CC355E6"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The Large Combustion Engine is much like an &5EV&r upgrade to an &6HV&r Combustion Generator, but with a few differences."
@@ -259,10 +254,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"677D081CD7612FB0"
-				"605062720747B482"
-			]
+			dependencies: ["677D081CD7612FB0"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The Extreme Combustion Engine is a direct upgrade to the Large Combustion Engine."
@@ -361,10 +353,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"7E276DF48E9085A4"
-				"785C6332FC7A07A5"
-			]
+			dependencies: ["7E276DF48E9085A4"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The &6Large Gas Turbine&r is a big upgrade to &6Advanced Gas Turbine Generator II&rs, providing &e8x&r as much power for &e8x&r the fuel consumption."
@@ -619,7 +608,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["2D10F2E538486624"]
 			dependency_requirement: "one_completed"
 			description: [
 				"&3Large Plasma Turbines&r are a potent late game method of generating &aEU&r. However, they require some investment."
@@ -725,7 +713,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
 			description: [
 				"&6Gas Turbine Generators&r are another good &eEU&r generation choice when starting out, and scale better into the midgame than &9Steam&r-based power."
 				""
@@ -741,7 +728,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1A30472430354F1E"]
 			description: [
 				"It's a little difficult to produce energy using combustion in &7LV&r, but if you have easy access to a nearby &9Oil&r spout it may be beneficial to you; &6Combustion Generators&r can use both &9Raw Oil&r and &9Light Oil&r for power."
 				""
@@ -776,10 +762,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"63B27CA5BB60B740"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["63B27CA5BB60B740"]
 			dependency_requirement: "one_completed"
 			description: [
 				"[\"\",{\"text\":\"By this point, the \"},{\"underlined\":\"true\",\"text\":\"Distillation Tower\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"7641AE777370BE1A\"}},{\"text\":\" should be within reach.\"}]"
@@ -798,10 +781,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"7976402E2E5FD625"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["7976402E2E5FD625"]
 			dependency_requirement: "one_completed"
 			description: ["The &6Advanced Steam Turbine Generator II&r, as expected, consumes even more &9Steam&r to produce even more power.\nAt this point the demand for &9Steam&r may get out of hand a little, so you may benefit from looking into the &3Large Steel boiler&3."]
 			id: "1B04AA7D9AEB2CFA"
@@ -849,10 +829,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"2BCE3E3E0B8180F7"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["2BCE3E3E0B8180F7"]
 			dependency_requirement: "one_completed"
 			description: [
 				"Just like last time, the &6Advanced Gas Turbine Generator II&r is equivalent to 4 turbines of the previous tier."
@@ -1001,10 +978,8 @@
 		}
 		{
 			dependencies: [
-				"15607184B546F5EE"
-				"22E50A6923EBF5CB"
-				"4E9530E62A4B673B"
 				"425D1C34A82B054D"
+				"4E9530E62A4B673B"
 			]
 			description: [
 				"The &3Large Naquadah Reactor&r is an upgraded reactor that can generate immense amounts of EU energy from burning liquid &6Naquadah Fuels&r. These fuels are more complicated than the fuel rods, but will generate massive amounts of power in return."
@@ -1119,10 +1094,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"062B4DDD703338D1"
-				"113E9543ADB1666B"
-			]
 			description: [
 				"The &3Antimatter Collider&r is a large multiblock that can generate more energy than you will be able to transport."
 				""
@@ -1253,10 +1224,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"3467DBD5B3D84F51"
-				"15E34DEC491FAB81"
-			]
+			dependencies: ["3467DBD5B3D84F51"]
 			dependency_requirement: "one_completed"
 			description: [
 				"The &6Advanced Lapotronic Generator II&r will burn its gems &e4x&r as fast, in exchange for &e4x&r the EU/t. This results in the same total EU per gem."

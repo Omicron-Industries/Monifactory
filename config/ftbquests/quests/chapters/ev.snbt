@@ -1,0 +1,13 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ev"
+	group: "18F0ED1F9A002C08"
+	hide_quest_until_deps_complete: true
+	icon: "kubejs:ev_universal_circuit"
+	id: "041775F4B3C070ED"
+	order_index: 11
+	quest_links: [ ]
+	quests: [ ]
+	title: "EV"
+}

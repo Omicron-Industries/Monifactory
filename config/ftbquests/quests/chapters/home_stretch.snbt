@@ -5,7 +5,7 @@
 	group: "18F0ED1F9A002C08"
 	icon: "gtceu:infinity_ingot"
 	id: "457D17593A814D73"
-	order_index: 7
+	order_index: 10
 	quest_links: [
 		{
 			id: "54018A95BECC356C"

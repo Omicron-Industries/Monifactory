@@ -5,7 +5,7 @@
 	group: "18F0ED1F9A002C08"
 	icon: "gtceu:tungsten_steel_ingot"
 	id: "7489B5042AFE2290"
-	order_index: 4
+	order_index: 8
 	quest_links: [
 		{
 			id: "4864F8F7C33860D9"
@@ -84,31 +84,10 @@
 			y: 2.75d
 		}
 		{
-			id: "3402D483AEEB7A4B"
-			linked_quest: "3115EAF1F70A613E"
-			shape: "hexagon"
-			x: -13.75d
-			y: 8.75d
-		}
-		{
-			id: "5138206A04C3BBCD"
-			linked_quest: "5C78349343BA40D7"
-			shape: "hexagon"
-			x: -12.25d
-			y: 8.75d
-		}
-		{
 			id: "3AD37D413E66BDEE"
 			linked_quest: "56924FC6B029BA0F"
 			x: -1.25d
 			y: -8.75d
-		}
-		{
-			id: "6100D90CF10C7FEC"
-			linked_quest: "399AE4E449872B8A"
-			shape: "hexagon"
-			x: -9.75d
-			y: -5.5d
 		}
 		{
 			id: "78CBAAFFCED49F1C"
@@ -150,7 +129,6 @@
 	]
 	quests: [
 		{
-			dependencies: ["004344AC70AE88F1"]
 			description: ["&6Luminessence&r is used in a number of things beyond just Extended Crafting Tables, such as Nether Stars."]
 			disable_toast: true
 			id: "588048A00A6250FB"
@@ -606,7 +584,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["15E34DEC491FAB81"]
 			description: ["You'll need an &3HV Chemical Reactor&r for processing &6Titanium&r."]
 			id: "78DCEF2FF2E1AC8C"
 			rewards: [{
@@ -657,10 +634,7 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"53C00EA9D9BEE776"
-				"399AE4E449872B8A"
-			]
+			dependencies: ["53C00EA9D9BEE776"]
 			dependency_requirement: "one_completed"
 			description: [
 				"&6Radon&r will be needed in large quantities."
@@ -936,7 +910,6 @@
 			y: -0.25d
 		}
 		{
-			dependencies: ["15E34DEC491FAB81"]
 			description: [
 				"Note: this quest accepts LV/MV/HV/EV &3Gas Collectors&r."
 				""
@@ -1069,7 +1042,6 @@
 			y: -2.25d
 		}
 		{
-			dependencies: ["3E51686E2DBD380F"]
 			description: [
 				"&9Nitrogen Dioxide&r, &9Oxygen&r, and &9Water&r will create &9Nitric Acid&r, the next step in your chemical journey."
 				""
@@ -1104,7 +1076,6 @@
 			y: -1.75d
 		}
 		{
-			dependencies: ["5357A16B5BF62C96"]
 			description: [
 				"There are several paths to &9Acetic Acid&r. The simplest is combining &9Oxygen&r, &9Hydrogen&r, and &6Carbon&r, but one of the several other methods may appeal to you more, especially if you have a &3Distillation Tower&r."
 				""
@@ -1205,7 +1176,6 @@
 			y: -1.75d
 		}
 		{
-			dependencies: ["48E83C38B37DFEE6"]
 			description: [
 				"Petrochemistry is the category of organic chemistry pertaining to petroleum, otherwise known as &9Oil&r."
 				""
@@ -2011,7 +1981,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["417D97D9E3562F45"]
 			description: [
 				"&6Carbon Fibers&r are useful for a variety of things."
 				""
@@ -2034,10 +2003,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"5B9F1EE13E397DEE"
-				"349869EBF2D9FAF1"
-			]
+			dependencies: ["5B9F1EE13E397DEE"]
 			description: [
 				"&2A System-on-Chip can be engraved with HV power and Phosphorus Boules. This can be used in the best recipe for tier one circuits in the EV Circuit Assembler."
 				""
@@ -2444,7 +2410,6 @@
 			y: -0.25d
 		}
 		{
-			dependencies: ["6FB3E3D9CA0F4B30"]
 			description: [
 				"&9Rubber&r has been sufficient for making cables so far, but you will soon discover that this basic type of rubber won't withstand more than &2Extreme Voltage&r. Higher quality rubber is necessary to properly insulate your wires."
 				""
@@ -2618,7 +2583,6 @@
 			y: 3.75d
 		}
 		{
-			dependencies: ["508452E1A3E09B56"]
 			description: [
 				"&2The Large Ore Drilling Plants mine ores from under them in a large radius. They require Drilling Fluid to operate."
 				""
@@ -2697,7 +2661,6 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["508452E1A3E09B56"]
 			description: [
 				"As you continue to progress, crafting times for more advanced &3Electric Blast Furnace&r recipes will continue to increase. More advanced coils increase the operating temperature so you can smelt more advanced materials, &2and they also grant energy efficiency bonuses and speed bonuses to overclocking.&r"
 				""
@@ -2725,7 +2688,6 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["5BC6DB754207D4A8"]
 			description: [
 				"&2Large Turbines are decently powerful in GTm. They are quite complex to run, but can generate lots of power when done well and scale very well.&r"
 				""
@@ -2763,7 +2725,6 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["2977E1AF13E42DCB"]
 			description: [
 				"&2Fluid Rigs will harvest fluids from underground fluid veins. Note that the fluid veins are simply simulated and don't exist in the world. &r"
 				""
@@ -3668,7 +3629,6 @@
 		}
 		{
 			dependencies: [
-				"7A67E519745A8361"
 				"3000798ACA51BFDC"
 				"2DCD08F30EC049D1"
 			]
@@ -3705,10 +3665,7 @@
 			y: -2.25d
 		}
 		{
-			dependencies: [
-				"4F4D0F44B615AF4C"
-				"78DCEF2FF2E1AC8C"
-			]
+			dependencies: ["78DCEF2FF2E1AC8C"]
 			description: [
 				"Like &9Sodium Persulfate&r and &9Iron III Chloride&r before it, &9Oxalic Acid&r is used as an etchant for &6Circuit Boards&r."
 				""
@@ -3820,6 +3777,45 @@
 			}]
 			x: -7.25d
 			y: 7.75d
+		}
+		{
+			dependencies: ["1349044BF8C04A12"]
+			description: [
+				"Obtaining &6Grains of Infinity&r will require you to mine all the way down to Bedrock level."
+				""
+				"Fire on bedrock will convert into Grains after a short time. Make sure the grains don't burn in surrounding fires."
+				""
+				"You can automate grains of infinity using an &bMV&r &3Rock Breaker&r at a low Y coordinate with &6Lava&r and &6Fluid of the Void&r adjacent to the machine. You could alternatively use a &3Rock Cycle Simulator&r to bypass the fluid adjacency requirements."
+			]
+			icon: "enderio:grains_of_infinity"
+			id: "1CA6D620309F2B9E"
+			rewards: [{
+				id: "67D69429C7C3148B"
+				item: "kubejs:moni_nickel"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1E07B0FCC2B8D3EF"
+					item: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6E822A9514AED405"
+					item: "enderio:grains_of_infinity"
+					type: "item"
+				}
+			]
+			title: "Grains Of Infinity"
+			x: 12.0d
+			y: 2.25d
 		}
 	]
 	title: "Scaling Up"
