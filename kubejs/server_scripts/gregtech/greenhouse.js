@@ -101,6 +101,10 @@ ServerEvents.recipes(event => {
     if (Platform.isLoaded("integrateddynamics") && Platform.isLoaded("integratedtunnels")) {
         Greenhouse("integrateddynamics", "menril_sapling", 1280, ["64x integrateddynamics:menril_log", "16x integrateddynamics:crystalized_menril_chunk", "4x integrateddynamics:menril_berries"], 2, 4)
     }
+    // Add Twisted Saplings if applicable.
+    if (Platform.isLoaded("architects_palette")) {
+        Greenhouse("architects_palette", "twisted_sapling", 1280, ["64x architects_palette:twisted_log", "16x architects_palette:twisted_sapling"], 2, 4)
+    }
 
     // //// Crops //////
     Greenhouse("minecraft", "sugar_cane", 320, ["32x minecraft:sugar_cane"], 2, 0)
