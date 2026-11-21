@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
     }
     // Add Twisted Saplings if applicable.
     if (Platform.isLoaded("architects_palette")) {
-        Greenhouse("architects_palette", "twisted_sapling", 1280, ["64x architects_palette:twisted_log", "16x architects_palette:twisted_sapling"], 2, 4)
+        Greenhouse("architects_palette", "twisted_sapling", 1280, ["64x architects_palette:twisted_log"], 2, 4)
     }
 
     // //// Crops //////
