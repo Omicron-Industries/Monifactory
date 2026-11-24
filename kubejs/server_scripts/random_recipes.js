@@ -608,6 +608,15 @@ ServerEvents.recipes(event => {
         .duration(50)
         .EUt(GTValues.VA[GTValues.MV])
 
+    // Potassium to Potassium Hydroxide
+    event.recipes.gtceu.chemical_reactor("k_to_koh")
+        .itemInputs("gtceu:potassium_dust")
+        .inputFluids("minecraft:water 1000")
+        .itemOutputs("3x gtceu:potassium_hydroxide_dust")
+        .outputFluids("gtceu:hydrogen 1000")
+        .duration(50)
+        .EUt(GTValues.VA[GTValues.MV])
+
     // Patchouli Books that needed tweaking
     event.shapeless(Item.of("patchouli:guide_book", '{"patchouli:book":"laserio:laseriobook"}'), ["minecraft:book", "laserio:card_item"]).id("laserio:my_book_recipe_shapeless")
 
