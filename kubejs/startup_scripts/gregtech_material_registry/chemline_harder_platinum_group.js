@@ -43,12 +43,6 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .formula("(NH4)2PtCl6")
             .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 
-        event.create("potassium_bisulfate")
-            .dust()
-            .color(0xfdbd68)
-            .components("potassium", "hydrogen", "sulfur", "4x oxygen")
-            .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
-
         event.create("potassium_pyrosulfate")
             .dust()
             .color(0xfbbb66)
@@ -102,4 +96,11 @@ GTCEuStartupEvents.registry("gtceu:material", event => {
             .flags(GTMaterialFlags.DISABLE_DECOMPOSITION)
             .components("carbon", "3x hydrogen", "oxygen", "sodium")
     }
+
+    // Add these to all modes
+    event.create("potassium_bisulfate")
+        .dust()
+        .color(0xfdbd68)
+        .components("potassium", "hydrogen", "sulfur", "4x oxygen")
+        .ignoredTagPrefixes([TagPrefix.dustTiny, TagPrefix.dustSmall])
 })
