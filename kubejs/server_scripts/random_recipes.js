@@ -893,4 +893,13 @@ ServerEvents.recipes(event => {
         S: "gtceu:hp_steam_solid_boiler",
         L: "gtceu:hp_steam_liquid_boiler"
     }).addMaterialInfo()
+
+    // Alternate nitric acid route via acid-salt displacement
+    event.recipes.gtceu.chemical_reactor("nitric_acid_from_saltpeter")
+        .itemInputs("5x gtceu:saltpeter_dust")
+        .inputFluids("gtceu:sulfuric_acid 1000")
+        .itemOutputs("7x gtceu:potassium_bisulfate_dust")
+        .outputFluids("gtceu:nitric_acid 1000")
+        .duration(3 * GTValues.SECONDS)
+        .EUt(GTValues.VA[GTValues.LV])
 })
