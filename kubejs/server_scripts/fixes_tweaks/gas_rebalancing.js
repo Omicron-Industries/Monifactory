@@ -1,7 +1,12 @@
 /**
- * Buffs producing Wood Tar from Charcoal to make it actually even remotely doable in any tier beyond HV.
+ * Rebalancing tweaks on various Gas-related things.
  */
 ServerEvents.recipes(event => {
+    event.recipes.gtceu.gas_turbine("nitrobenzene")
+        .inputFluids("gtceu:nitrobenzene 1")
+        .duration(70)    // 75% more than default GT
+        .EUt(-GTValues.V[GTValues.LV])
+
     // Buff Charcoal Extraction to take 2.4s each instead of 6.4s
     event.remove({ id: "gtceu:extractor/charcoal_extraction" })
     event.recipes.gtceu.extractor("charcoal_extraction")
