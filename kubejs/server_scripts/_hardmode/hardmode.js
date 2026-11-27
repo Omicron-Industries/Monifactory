@@ -17,7 +17,7 @@ ServerEvents.recipes(event => {
             B: "#forge:bolts/iron",
             W: "#minecraft:planks",
             S: "#forge:springs/iron",
-            P: "#forge:paper"
+            P: "minecraft:paper"
         })
     }
 
