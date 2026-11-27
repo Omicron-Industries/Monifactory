@@ -2125,21 +2125,21 @@
 		{
 			dependencies: ["34876F54406B6A04"]
 			description: [
-				"Now that you have a &6Baisc Steam Turbine&r, you'll need &9Steam&r to fuel it. The best way to make &9Steam&r is &bGregTech's&r &6Large Bronze Boiler&r. This is almost certainly the first multiblock you will build during your playthrough."
+				"Now that you have a &3Baisc Steam Turbine&r, you'll need &9Steam&r to fuel it. The best way to make &9Steam&r is &bGregTech's&r &3Large Bronze Boiler&r. This is one of the first of many multiblocks you will build during your playthrough."
 				""
-				"If this craft seems quite expensive, thats because it is. However, it's definitely a worthwhile investment as the &6Large Bronze Boiler&r produces enough steam to power 12.5 &7LV&r &6Steam Turbines&r, giving you 12.5 &7LV&r amps of power to work with."
+				"If this craft seems quite expensive, thats because it is. However, it's definitely a worthwhile investment as the &3Large Bronze Boiler&r produces enough steam to power 12.5 &7LV&r &3Steam Turbines&r, giving you 12.5 &7LV&r amps of power to work with."
 				""
-				"The &6Large Bronze Boiler&r needs 5mb/t of &9Water&r when running at full throttle so you will need two &6Water Collectors&r to sustain it. You can fuel the boiler using &6Sugar Cane&r produced by &6Snad&r or using &6Coal Blocks&r from manual mining."
+				"The &3Large Bronze Boiler&r needs 5mb/t of &9Water&r when running at full throttle so you will need two &3Water Collectors&r to sustain it. You can fuel the boiler using &6Sugar Cane&r produced by &6Snad&r or using &6Coal Blocks&r from manual mining."
 				""
-				"&c&lWARNING:&r The &9Large Bronze Boiler&r will explode if there is no &9Water&r in the boiler and it exceeds a temperature of 373K."
+				"&c&lWARNING:&r The &3Large Bronze Boiler&r will explode if there is no &9Water&r in the boiler and it exceeds a temperature of 373K."
 				""
 				"More information on building the boiler is on the next page."
 				""
 				"{@pagebreak}"
 				""
-				"Multiblocks are somewhat flexible with their design as you can decide where the hatches are placed with some restrictions. The most important ones that you need to consider are that the &7LV&r &6Output Hatch&r needs to be on the same layer as the control block, that all other hatches need to be in the bottom layer of the mutliblock, and that the block in front of the &7LV&r &6Muffler Hatch&r must be air."
+				"Multiblocks are somewhat flexible with their design as you can decide where the hatches are placed with some restrictions. The most important ones that you need to consider are that the &7LV&r &3Output Hatch&r needs to be on the same layer as the control block, that all other hatches need to be in the bottom layer of the mutliblock, and that the block in front of the &7LV&r &3Muffler Hatch&r must be air."
 				""
-				"You will also need to perform maintenance on the mutliblock so that it can function. To do this you will need to craft some tools and then click on the GUI element in the &6Maintenance Hatch&r."
+				"You will also need to perform maintenance on the mutliblock so that it can function. To do this you will need to craft some tools and then click on the GUI element in the &3Maintenance Hatch&r."
 				""
 				"[ \"A more detailed explanation of maintenance and muffler hatches can be found \", { \"text\": \"here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0523F4AB9A794390\" } }, \".\" ]"
 			]
