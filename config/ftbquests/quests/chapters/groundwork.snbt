@@ -1321,7 +1321,7 @@
 				""
 				"&3Distillation towers&r require &5EV&r circuits in Hard or Expert mode."
 				""
-				"The Distillation Tower is a highly flexible multiblock structure, able to be anywhere from &62 blocks high to 13 high&r (12 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. &cIf the number of fluid outputs from the recipe exceeds the number of available hatches or those hatches are too small to hold the output, the recipe will not run&r. "
+				"The Distillation Tower is a highly flexible multiblock structure, able to be anywhere from &62 blocks high to 13 high&r (12 fluid outputs). The way that it works is that each level of the tower after the first will output an additional fluid from the recipe. &cIf the number of fluid outputs from the recipe exceeds the number of available hatches, the fluids with no output hatch will be voided. If those hatches are too small to hold the output, the recipe will not run&r. "
 				"{@pagebreak}"
 				"What you need the Distillation Tower for initially is to break down &9Oil&r and &9Fermented Biomass&r into useful resources.&9 Oil&r distillation, with its four outputs, will require a &efive-block-high Distillation Tower&r (the quest materials are for such a tower; if you want to build it bigger, you will need &ean additional 7 casings and 1 fluid output per floor&r)."
 				""
