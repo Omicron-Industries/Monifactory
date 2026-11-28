@@ -2,7 +2,7 @@
  * Shows content of ME cells in tooltips when SHIFT is pressed. Useful to
  * see what the items or fluids are called when they take up most of your
  * cell without taking it out to a chest
- * 
+ *
  * Only Item and Fluid cells are supported
  */
 
@@ -75,17 +75,17 @@ ItemEvents.tooltip((event) => {
                 let displayAmt;
                 let name;
                 switch (key["#c"]) {
-                    case "ae2:f":
-                        name = Text.join("[", Fluid.of(key.id).fluidStack.name, "]");
-                        displayAmt = formatAmount(amt / 1000) + " B";
-                        break;
-                    case "ae2:i":
-                        name = Item.of(key.id).displayName;
-                        displayAmt = formatAmount(amt);
-                        break;
-                    default:
-                        // Ignore other types, as they shouldn't even appear in supported cells
-                        continue;
+                case "ae2:f":
+                    name = Text.join("[", Fluid.of(key.id).fluidStack.name, "]");
+                    displayAmt = formatAmount(amt / 1000) + " B";
+                    break;
+                case "ae2:i":
+                    name = Item.of(key.id).displayName;
+                    displayAmt = formatAmount(amt);
+                    break;
+                default:
+                    // Ignore other types, as they shouldn't even appear in supported cells
+                    continue;
                 }
                 text.add(i + 2, [Text.gray(` - ${displayAmt} `), name]);
             }
@@ -95,7 +95,7 @@ ItemEvents.tooltip((event) => {
                 text.add(amountToShow + 2, [
                     Text.gray(` And ${remaining} more (hold [`),
                     Text.white("Ctrl"),
-                    Text.gray(`] to show all)`),
+                    Text.gray("] to show all)"),
                 ]);
             }
         },
