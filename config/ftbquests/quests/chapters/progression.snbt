@@ -982,7 +982,7 @@
 			shape: "hexagon"
 			subtitle: "With all of the components made, it's time to craft &6Electronic Circuits&r."
 			tasks: [{
-				count: 32L
+				count: 16L
 				id: "5DED56006806D2E0"
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
