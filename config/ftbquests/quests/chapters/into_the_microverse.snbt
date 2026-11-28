@@ -439,7 +439,9 @@
 				""
 				"&9Liquid Ender Air&r can be sent into a &2Distillation Tower&r to break it down into its components."
 				""
-				"&2Liquid Air and Liquid Nether Air give different useful components too."
+				"Now is a good time to mention that the &3ME Input Hatch&r and &3ME Output Hatch&r have an incredibly large capacity for fluids which allows you to import the 200 Buckets of &9Liquid Ender Air&r required per recipe."
+				""
+				"&2Liquid Air and Liquid Nether Air give different useful components too.&r"
 			]
 			icon: "gtceu:liquid_ender_air_bucket"
 			id: "399AE4E449872B8A"
