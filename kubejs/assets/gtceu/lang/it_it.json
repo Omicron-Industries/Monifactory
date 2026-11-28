@@ -467,7 +467,6 @@
     "gtceu.jei.ore_vein.mars/zinc": "Vena di Zinco (Marte)",
     "gtceu.jei.ore_vein.mars/emerald": "Vena di Smeraldo (Marte)",
     "gtceu.jei.ore_vein.mars/basaltic_mineral_sands": "Vein di Sabbia Ferrica",
-    "gtceu.jei.ore_vein.mars/coltan": "Vena di Coltan",
     "gtceu.jei.ore_vein.mars/arsenopyrite": "Vena di Arsenopirite",
     "gtceu.jei.ore_vein.mars/carnotite": "Vena di Carnotite",
     "gtceu.jei.ore_vein.mars/borax": "Vena di Borace",
@@ -478,10 +477,8 @@
     "gtceu.jei.ore_vein.venus/cuprorhodsite": "Vena di Cuprorhodsite",
     "gtceu.jei.ore_vein.venus/garnet": "Vena di Granato",
     "gtceu.jei.ore_vein.venus/dilithium": "Vena di Sali di Dilitio",
-    "gtceu.jei.ore_vein.venus/gallite": "Vena di Gallite",
     "gtceu.jei.ore_vein.mercury/copper-silver": "Vein Rame-Argento",
     "gtceu.jei.ore_vein.mercury/mercury": "Vena di Mercurio",
-    "gtceu.jei.ore_vein.mercury/wolframite": "Vena di Wolframite",
     "gtceu.jei.ore_vein.mercury/mineral_sands": "Vena di Sabbie Mischiate (Mercurio)",
     "gtceu.jei.ore_vein.mercury/platinum_group": "Vena di Gruppo del Platino (Mercurio)",
     "gtceu.jei.ore_vein.mercury/thorium": "Vena di Torio",
@@ -580,7 +577,5 @@
     "material.gtceu.pyrope_slurry": "Pyrope Slurry",
     "material.gtceu.emerald_slurry": "Emerald Slurry",
     "material.gtceu.anorthite_slurry": "Anorthite Slurry",
-    "material.gtceu.titanite_slurry": "Titanite Slurry",
-    "material.gtceu.uncracked_ethyl_cyanoacrylate": "Uncracked Ethyl Cyanoacrylate",
-    "material.gtceu.ethyl_cyanoacetate": "Ethyl Cyanoacetate"
+    "material.gtceu.titanite_slurry": "Titanite Slurry"
 }
