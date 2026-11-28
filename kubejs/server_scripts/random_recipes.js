@@ -893,4 +893,19 @@ ServerEvents.recipes(event => {
         S: "gtceu:hp_steam_solid_boiler",
         L: "gtceu:hp_steam_liquid_boiler"
     }).addMaterialInfo()
+
+    // Move Nightvision Goggles to LV
+    event.remove({ output: "gtceu:nightvision_goggles" })
+    event.recipes.gtceu.shaped("gtceu:nightvision_goggles", [
+        "CSC",
+        "RBR",
+        "GDG"
+    ], {
+        C: "#gtceu:circuits/ulv",
+        S: "gtceu:steel_screw",
+        R: "gtceu:rubber_ring",
+        B: "gtceu:lv_sodium_battery",
+        G: "gtceu:glass_plate",
+        D: "#gtceu:tools/crafting_screwdrivers"
+    })
 })
