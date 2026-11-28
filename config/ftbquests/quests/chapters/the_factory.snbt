@@ -1242,6 +1242,7 @@
 			]
 			icon: "enderio:grains_of_infinity"
 			id: "1CA6D620309F2B9E"
+			optional: true
 			rewards: [{
 				id: "67D69429C7C3148B"
 				item: "kubejs:moni_nickel"
@@ -1250,25 +1251,20 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "1E07B0FCC2B8D3EF"
-					item: {
-						Count: 1
-						id: "minecraft:flint_and_steel"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "6E822A9514AED405"
+					item: "enderio:grains_of_infinity"
+					optional_task: true
 					type: "item"
 				}
 				{
-					id: "6E822A9514AED405"
-					item: "enderio:grains_of_infinity"
-					type: "item"
+					id: "7E7F37211DCFBAC7"
+					optional_task: true
+					type: "checkmark"
 				}
 			]
 			title: "Grains Of Nihility"
-			x: 6.25d
-			y: 9.5d
+			x: -5.25d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3BD20358F137E7C6"]
@@ -1299,7 +1295,10 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["025543EDB0A4AC22"]
+			dependencies: [
+				"025543EDB0A4AC22"
+				"1CA6D620309F2B9E"
+			]
 			description: [
 				"The first tier of &bEnder IO&r &6capacitors&r. These (or stronger versions) are required to make &bEnder IO&r machines run. They're also used as components in a variety of recipes."
 				""
@@ -2594,7 +2593,7 @@
 				item: "thermal:device_fisher"
 				type: "item"
 			}]
-			x: -5.25d
+			x: -4.0d
 			y: 9.0d
 		}
 		{
