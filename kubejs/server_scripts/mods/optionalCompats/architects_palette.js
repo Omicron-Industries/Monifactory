@@ -72,12 +72,6 @@ if (Platform.isLoaded("architects_palette")) {
             .duration(20)
             .EUt(GTValues.VA[GTValues.ULV])
 
-        event.recipes.gtceu.mixer("sunmetal_blend_9x")
-            .itemInputs("9x minecraft:soul_sand", "gtceu:gold_dust")
-            .itemOutputs("36x architects_palette:sunmetal_blend")
-            .duration(100)
-            .EUt(GTValues.VA[GTValues.ULV])
-
         event.recipes.gtceu.mixer("nether_brass_blend")
             .itemInputs("minecraft:soul_sand", "gtceu:copper_dust", "gtceu:tiny_iron_dust")
             .itemOutputs("4x architects_palette:nether_brass_blend")
@@ -277,7 +271,7 @@ if (Platform.isLoaded("architects_palette")) {
             .EUt(GTValues.VA[GTValues.LV])
 
         event.recipes.gtceu.atomic_reconstruction("twisted_sapling")
-            .itemInputs("#minecraft:saplings")
+            .itemInputs("minecraft:acacia_sapling")
             .itemOutputs("architects_palette:twisted_sapling")
             .duration(20)
             .EUt(GTValues.VA[GTValues.LV])
@@ -327,12 +321,6 @@ if (Platform.isLoaded("architects_palette")) {
         event.recipes.gtceu.atomic_reconstruction("esoterrack")
             .itemInputs("minecraft:andesite")
             .itemOutputs("architects_palette:esoterrack")
-            .duration(20)
-            .EUt(GTValues.VA[GTValues.LV])
-
-        event.recipes.gtceu.atomic_reconstruction("moonshale")
-            .itemInputs("minecraft:stone")
-            .itemOutputs("architects_palette:moonshale")
             .duration(20)
             .EUt(GTValues.VA[GTValues.LV])
 

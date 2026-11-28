@@ -50,6 +50,7 @@ ServerEvents.tags("item", event => {
     })
 
     event.remove("forge:gears/wood", "enderio:wood_gear")
+    event.remove("minecraft:planks", "gtceu:treated_wood_plate")
     event.remove("forge:gears/stone", "enderio:stone_gear")
     event.remove("forge:gears/iron", "enderio:iron_gear")
     event.remove("forge:gears/dark_steel", "enderio:dark_bimetal_gear")
