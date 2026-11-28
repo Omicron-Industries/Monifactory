@@ -1582,11 +1582,14 @@
 				type: "checkmark"
 			}]
 			title: "A Primer on Power"
-			x: 0.0d
+			x: -1.0d
 			y: 16.0d
 		}
 		{
-			dependencies: ["5A94534682807314"]
+			dependencies: [
+				"5A94534682807314"
+				"31C410E41CBD3287"
+			]
 			description: [
 				"Now that you have everything you need to power your machines, it's time to put it all together."
 				""
@@ -2118,6 +2121,84 @@
 			title: "Connecting Pipes and Cables"
 			x: -9.0d
 			y: 8.5d
+		}
+		{
+			dependencies: ["34876F54406B6A04"]
+			description: [
+				"Now that you have a &3Baisc Steam Turbine&r, you'll need &9Steam&r to fuel it. The best way to make &9Steam&r is &bGregTech's&r &3Large Bronze Boiler&r. This is one of the first of many multiblocks you will build during your playthrough."
+				""
+				"If this craft seems quite expensive, thats because it is. However, it's definitely a worthwhile investment as the &3Large Bronze Boiler&r produces enough steam to power 12.5 &7LV&r &3Steam Turbines&r, giving you 12.5 &7LV&r amps of power to work with."
+				""
+				"The &3Large Bronze Boiler&r needs 5mb/t of &9Water&r when running at full throttle so you will need two &3Water Collectors&r to sustain it. You can fuel the boiler using &6Sugar Cane&r produced by &6Snad&r or using &6Coal Blocks&r from manual mining."
+				""
+				"&c&lWARNING:&r The &3Large Bronze Boiler&r will explode if there is no &9Water&r in the boiler and it exceeds a temperature of 373K."
+				""
+				"More information on building the boiler is on the next page."
+				""
+				"{@pagebreak}"
+				""
+				"Multiblocks are somewhat flexible with their design as you can decide where the hatches are placed with some restrictions. The most important ones that you need to consider are that the &7LV&r &3Output Hatch&r needs to be on the same layer as the control block, that all other hatches need to be in the bottom layer of the mutliblock, and that the block in front of the &7LV&r &3Muffler Hatch&r must be air."
+				""
+				"You will also need to perform maintenance on the mutliblock so that it can function. To do this you will need to craft some tools and then click on the GUI element in the &3Maintenance Hatch&r."
+				""
+				"[ \"A more detailed explanation of maintenance and muffler hatches can be found \", { \"text\": \"here\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"0523F4AB9A794390\" } }, \".\" ]"
+			]
+			icon: "gtceu:bronze_large_boiler"
+			id: "31C410E41CBD3287"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2CFEDF928BA479CD"
+					item: "gtceu:bronze_large_boiler"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "168CABADE720B74F"
+					item: { Count: 23, id: "gtceu:steam_machine_casing" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5114ED9005432D5D"
+					item: "gtceu:bronze_pipe_casing"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "42426A57ED3505FA"
+					item: { Count: 5, id: "gtceu:bronze_firebox_casing" }
+					type: "item"
+				}
+				{
+					id: "29C3E26F67DF19A3"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "610DACFEB4848A79"
+					item: "gtceu:lv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "3D06459D3D04255E"
+					item: "gtceu:lv_input_bus"
+					type: "item"
+				}
+				{
+					id: "642C63F93D8F2CD6"
+					item: "gtceu:lv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "4563781D308DB91D"
+					item: "gtceu:lv_output_hatch"
+					type: "item"
+				}
+			]
+			title: "Large Bronze Boiler"
+			x: 1.0d
+			y: 16.0d
 		}
 	]
 	title: "Genesis"
